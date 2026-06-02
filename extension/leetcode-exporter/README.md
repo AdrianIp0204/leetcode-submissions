@@ -45,7 +45,7 @@ Browser extensions cannot safely run `git` by themselves. Use the local watcher 
 powershell -ExecutionPolicy Bypass -File scripts\install-windows-auto-sync.ps1
 ```
 
-That installs a Windows Scheduled Task named `LeetCodeSubmissionsAutoSync`. It watches `Downloads\leetcode-submissions`, copies exports into the repo, commits changes, and pushes.
+That installs a local watcher named `LeetCodeSubmissionsAutoSync`. It watches `Downloads\leetcode-submissions`, copies exports into the repo, commits changes, and pushes. It prefers a current-user Scheduled Task, but falls back to a per-user Startup launcher when Task Scheduler is blocked.
 
 For a one-off foreground run:
 
@@ -59,5 +59,5 @@ If folder saving is unavailable in your browser, use **Download Files** and move
 
 - The extension can only see code visible in the current browser tab.
 - Past accepted collection needs your logged-in LeetCode browser session. It uses the session implicitly for LeetCode requests but does not read or store cookies.
-- It cannot run `git` directly. The scheduled local watcher handles commits/pushes.
+- It cannot run `git` directly. The local watcher handles commits/pushes.
 - It may need small selector fixes if LeetCode changes its UI.
