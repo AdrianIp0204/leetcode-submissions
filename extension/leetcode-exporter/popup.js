@@ -58,8 +58,24 @@ async function getActiveTab() {
   return tab;
 }
 
-async function sendTabMessage(message) {
-  const tab = await getActiveTab();
+function isMissingContentScriptError(error) {
+  return /receiving end does not exist|could not establish connection/i.test(
+    error?.message || String(error),
+  );
+}
+
+async function injectContentScript(tabId) {
+  if (!chrome.scripting?.executeScript) {
+    throw new Error("Reload the extension from chrome://extensions, then refresh the LeetCode tab.");
+  }
+
+  await chrome.scripting.executeScript({
+    target: { tabId },
+    files: ["content.js"],
+  });
+}
+
+async function sendTabMessageOnce(tab, message) {
   if (!/^https:\/\/(www\.)?leetcode\.com\//.test(tab.url || "")) {
     throw new Error("Open a LeetCode page first.");
   }
@@ -67,6 +83,19 @@ async function sendTabMessage(message) {
   const response = await chrome.tabs.sendMessage(tab.id, message);
   if (!response?.ok) throw new Error(response?.error || "The page did not return a solution.");
   return response.payload;
+}
+
+async function sendTabMessage(message) {
+  const tab = await getActiveTab();
+
+  try {
+    return await sendTabMessageOnce(tab, message);
+  } catch (error) {
+    if (!isMissingContentScriptError(error)) throw error;
+
+    await injectContentScript(tab.id);
+    return sendTabMessageOnce(tab, message);
+  }
 }
 
 async function collectCurrentSolution() {

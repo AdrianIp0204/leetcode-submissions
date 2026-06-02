@@ -1,4 +1,7 @@
 (() => {
+  if (window.__leetcodeRepoExporterContentLoaded) return;
+  window.__leetcodeRepoExporterContentLoaded = true;
+
   const SOURCE = "leetcode-repo-exporter-content";
 
   const languageExtensions = {
