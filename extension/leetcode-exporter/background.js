@@ -48,9 +48,23 @@ async function downloadOne(relativePath, contents) {
   });
 }
 
-async function downloadExport(payload) {
-  await downloadOne(payload.path, `${payload.code || ""}\n`);
-  await downloadOne(payload.readmePath, payload.readme || "");
+function timestampForFilename() {
+  return new Date().toISOString().replace(/[:.]/g, "-");
+}
+
+async function downloadExportBundle(exports, reason = "manual") {
+  if (!exports.length) return null;
+
+  const bundle = {
+    schema: "leetcode-submissions.export-bundle.v1",
+    exportedAt: new Date().toISOString(),
+    reason,
+    exports,
+  };
+  const digest = hashString(JSON.stringify(exports.map((payload) => payload.key || exportKey(payload))));
+  const filename = `queue/leetcode-exports-${timestampForFilename()}-${digest}.json`;
+
+  return downloadOne(filename, `${JSON.stringify(bundle, null, 2)}\n`);
 }
 
 async function addExports(exports, reason = "manual") {
@@ -62,6 +76,11 @@ async function addExports(exports, reason = "manual") {
 
   for (const payload of exports.filter(Boolean)) {
     if (!payload.path || !payload.code) continue;
+    if (!/^accepted$/i.test(String(payload.status || ""))) {
+      skipped.push(payload);
+      continue;
+    }
+
     const key = payload.key || exportKey(payload);
     if (next[key]) {
       skipped.push(payload);
@@ -80,11 +99,7 @@ async function addExports(exports, reason = "manual") {
 
   await storageSet({ exportsByKey: next });
 
-  if (settings.autoDownload) {
-    for (const payload of added) {
-      await downloadExport(payload);
-    }
-  }
+  if (settings.autoDownload) await downloadExportBundle(added, reason);
 
   return {
     added: added.length,
@@ -139,10 +154,8 @@ chrome.runtime.onMessage.addListener((message, _sender, sendResponse) => {
     if (message?.type === "download-exports") {
       const exportsByKey = await getExportsByKey();
       const exports = Object.values(exportsByKey);
-      for (const payload of exports) {
-        await downloadExport(payload);
-      }
-      return { downloaded: exports.length };
+      const bundleId = await downloadExportBundle(exports, "manual-queue-download");
+      return { downloaded: exports.length, bundles: bundleId ? 1 : 0 };
     }
 
     if (message?.type === "clear-exports") {

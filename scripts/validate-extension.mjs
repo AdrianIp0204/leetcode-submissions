@@ -44,7 +44,7 @@ async function main() {
     await access(path.join(extensionDir, file));
   }
 
-  for (const file of ["content.js", "page-bridge.js", "popup.js"]) {
+  for (const file of ["background.js", "content.js", "page-bridge.js", "popup.js"]) {
     run("node", ["--check", path.join(extensionDir, file)]);
   }
 

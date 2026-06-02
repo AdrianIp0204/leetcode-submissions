@@ -8,7 +8,7 @@ It is intentionally boring:
 - Does not store or read LeetCode cookies.
 - Does not use a GitHub token.
 - Does not make network requests except to LeetCode from your active logged-in LeetCode page.
-- Can auto-download collected files under `Downloads/leetcode-submissions/`.
+- Can hand collected exports to the local sync watcher with one small JSON download.
 
 ## Install In Chrome Or Edge
 
@@ -25,14 +25,14 @@ extension/leetcode-exporter
 ## Use
 
 1. Open a LeetCode problem page or accepted submission page.
-2. Keep **Auto collect accepted pages** and **Auto download collected files** enabled.
-3. When an accepted solution is visible, the extension queues and downloads it automatically.
+2. Keep **Auto collect accepted pages** and **Auto hand off to local sync** enabled.
+3. When an accepted solution is visible, the extension queues it and creates one sync handoff bundle automatically.
 4. To backfill older solutions, open any LeetCode page while logged in and click **Collect Past Accepted**.
 
-Automatic downloads land here:
+Automatic handoff bundles land here:
 
 ```text
-Downloads/leetcode-submissions/submissions/...
+Downloads/leetcode-submissions/queue/...
 ```
 
 If you prefer direct folder saving, use **Save Queue To Repo** and select the cloned `leetcode-submissions` repo root.
@@ -45,7 +45,7 @@ Browser extensions cannot safely run `git` by themselves. Use the local watcher 
 powershell -ExecutionPolicy Bypass -File scripts\install-windows-auto-sync.ps1
 ```
 
-That installs a local watcher named `LeetCodeSubmissionsAutoSync`. It watches `Downloads\leetcode-submissions`, copies exports into the repo, commits changes, and pushes. It prefers a current-user Scheduled Task, but falls back to a per-user Startup launcher when Task Scheduler is blocked.
+That installs a local watcher named `LeetCodeSubmissionsAutoSync`. It watches `Downloads\leetcode-submissions`, expands handoff bundles into `submissions\...`, commits changes, and pushes. It prefers a current-user Scheduled Task, but falls back to a per-user Startup launcher when Task Scheduler is blocked.
 
 For a one-off foreground run:
 
@@ -53,7 +53,7 @@ For a one-off foreground run:
 npm run sync:auto -- --push
 ```
 
-If folder saving is unavailable in your browser, use **Download Files** and move the downloaded `leetcode-submissions/submissions/...` folder into the cloned repo.
+If folder saving is unavailable in your browser, use **Hand Off Queue To Sync** while the watcher is running.
 
 ## Limitations
 
