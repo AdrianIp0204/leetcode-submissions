@@ -23,7 +23,8 @@ if (-not $NoPush) {
 
 $Action = New-ScheduledTaskAction -Execute $Node -Argument $Arguments -WorkingDirectory $RepoRoot
 $Trigger = New-ScheduledTaskTrigger -AtLogOn
-$Principal = New-ScheduledTaskPrincipal -UserId $env:USERNAME -LogonType Interactive -RunLevel LeastPrivilege
+$CurrentUser = [System.Security.Principal.WindowsIdentity]::GetCurrent().Name
+$Principal = New-ScheduledTaskPrincipal -UserId $CurrentUser -LogonType Interactive -RunLevel Limited
 $Settings = New-ScheduledTaskSettingsSet -AllowStartIfOnBatteries -DontStopIfGoingOnBatteries -RestartCount 3 -RestartInterval (New-TimeSpan -Minutes 1)
 
 Register-ScheduledTask -TaskName $TaskName -Action $Action -Trigger $Trigger -Principal $Principal -Settings $Settings -Description "Automatically commits and pushes LeetCode exports downloaded by the first-party extension." -Force | Out-Null
