@@ -26,7 +26,7 @@ extension/leetcode-exporter
 
 1. Open a LeetCode problem page or accepted submission page.
 2. Keep **Auto collect accepted pages** and **Auto hand off to local sync** enabled.
-3. When an accepted solution is visible, the extension queues it and creates one sync handoff bundle automatically.
+3. When a new accepted submission appears, the extension queues that accepted submission and creates one sync handoff bundle automatically.
 4. To backfill older solutions, open any LeetCode page while logged in and click **Collect Past Accepted**.
 
 Automatic handoff bundles land here:
@@ -54,6 +54,8 @@ npm run sync:auto -- --push
 ```
 
 If folder saving is unavailable in your browser, use **Hand Off Queue To Sync** while the watcher is running.
+
+After updating this repo with `git pull`, you do not need to download or unpack the extension again. Open `chrome://extensions` or `edge://extensions` and click reload on **LeetCode Repo Exporter** so the browser rereads the updated unpacked folder.
 
 ## Limitations
 

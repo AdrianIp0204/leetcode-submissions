@@ -99,6 +99,58 @@
     return /\bRuntime\b/.test(body) && /\bMemory\b/.test(body);
   }
 
+  function findSubmissionIdFromLocation() {
+    return (
+      location.pathname.match(/\/submissions\/(?:detail\/)?(\d+)/)?.[1] ||
+      location.pathname.match(/\/problems\/[^/]+\/submissions\/(\d+)/)?.[1] ||
+      ""
+    );
+  }
+
+  function findAcceptedAutoSignal() {
+    if (!hasAcceptedResultSignal()) return "";
+
+    const submissionId = findSubmissionIdFromLocation();
+    if (submissionId) return `submission:${submissionId}`;
+
+    const statusElements = [...document.querySelectorAll("div,span,p")].filter(
+      (element) => element.textContent?.trim() === "Accepted",
+    );
+
+    for (const element of statusElements) {
+      let current = element;
+      for (let depth = 0; current && depth < 5; depth += 1) {
+        const value = current.textContent?.replace(/\s+/g, " ").trim() || "";
+        if (value.includes("Accepted") && value.includes("Runtime") && value.includes("Memory")) {
+          return `result:${findProblemSlug()}:${hashString(value.slice(0, 500))}`;
+        }
+        current = current.parentElement;
+      }
+    }
+
+    return `result:${findProblemSlug()}:accepted`;
+  }
+
+  function isEditorMutation(mutation) {
+    const target =
+      mutation.target instanceof Element ? mutation.target : mutation.target.parentElement;
+    if (!target) return false;
+
+    return Boolean(
+      target.closest(
+        [
+          "textarea",
+          "[contenteditable='true']",
+          ".monaco-editor",
+          ".view-lines",
+          ".inputarea",
+          "[class*='CodeMirror']",
+          "[data-cy='code-area']",
+        ].join(","),
+      ),
+    );
+  }
+
   function inferLanguageFromSource(source) {
     if (/^\s*class\s+Solution\b/m.test(source) && /\bpublic:/.test(source)) return "cpp";
     if (/^\s*class\s+Solution\b/m.test(source) && /\bpublic\s+/.test(source)) return "java";
@@ -362,6 +414,41 @@
     });
   }
 
+  async function collectLatestAcceptedSubmissionForPage() {
+    const slug = findProblemSlug();
+    if (!slug || slug === "leetcode-solution") {
+      throw new Error("Could not identify the current LeetCode problem.");
+    }
+
+    const data = await fetchLeetCodeGraphql(submissionListQuery, {
+      offset: 0,
+      limit: 10,
+      lastKey: null,
+      questionSlug: slug,
+    });
+    const submissions = data.submissionList?.submissions;
+    if (!Array.isArray(submissions)) {
+      throw new Error("LeetCode did not return your submission list. Check that you are logged in.");
+    }
+
+    const accepted = submissions.find((submission) => submission.statusDisplay === "Accepted");
+    if (!accepted) {
+      throw new Error("No accepted submission was found for this problem yet.");
+    }
+
+    const detailsData = await fetchLeetCodeGraphql(submissionDetailsQuery, {
+      submissionId: Number(accepted.id),
+    });
+    const exported = exportFromSubmission(accepted, detailsData.submissionDetails);
+    if (!exported) throw new Error("Could not read the latest accepted submission code.");
+    return exported;
+  }
+
+  async function collectAutoAcceptedSolution() {
+    if (findSubmissionIdFromLocation()) return collectSolution();
+    return collectLatestAcceptedSubmissionForPage();
+  }
+
   function sleep(ms) {
     return new Promise((resolve) => window.setTimeout(resolve, ms));
   }
@@ -439,17 +526,30 @@
 
   let autoTimer = null;
   let lastAutoKey = "";
+  let lastAutoSignal = "";
+  let lastAutoCheckAt = 0;
+  const AUTO_CAPTURE_MIN_CHECK_MS = 15_000;
 
   async function maybeAutoCapture() {
     const settings = await chrome.storage.local.get({ autoCapture: true });
     if (!settings.autoCapture) return;
 
     try {
-      if (!hasAcceptedResultSignal()) return;
-      const payload = await collectSolution();
+      const autoSignal = findAcceptedAutoSignal();
+      if (!autoSignal) return;
+
+      const now = Date.now();
+      if (autoSignal === lastAutoSignal && now - lastAutoCheckAt < AUTO_CAPTURE_MIN_CHECK_MS) {
+        return;
+      }
+      lastAutoSignal = autoSignal;
+      lastAutoCheckAt = now;
+
+      const payload = await collectAutoAcceptedSolution();
       if (payload.status !== "Accepted") return;
-      if (payload.key === lastAutoKey) return;
-      lastAutoKey = payload.key;
+      const autoKey = payload.submissionId ? `submission:${payload.submissionId}` : payload.key;
+      if (autoKey === lastAutoKey) return;
+      lastAutoKey = autoKey;
       chrome.runtime.sendMessage({ type: "auto-captured-solution", payload }, () => {
         void chrome.runtime.lastError;
       });
@@ -467,10 +567,12 @@
   window.addEventListener("popstate", () => scheduleAutoCapture(1800));
   scheduleAutoCapture(1800);
 
-  const observer = new MutationObserver(() => scheduleAutoCapture());
+  const observer = new MutationObserver((mutations) => {
+    if (mutations.length > 0 && mutations.every(isEditorMutation)) return;
+    scheduleAutoCapture();
+  });
   observer.observe(document.documentElement, {
     childList: true,
     subtree: true,
-    characterData: true,
   });
 })();

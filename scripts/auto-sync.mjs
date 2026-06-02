@@ -1,13 +1,15 @@
 #!/usr/bin/env node
 
 import { existsSync } from "node:fs";
-import { copyFile, mkdir, readFile, readdir, rename, writeFile } from "node:fs/promises";
+import { copyFile, mkdir, readFile, readdir, rename, rm, stat, writeFile } from "node:fs/promises";
 import { spawnSync } from "node:child_process";
 import os from "node:os";
 import path from "node:path";
 import process from "node:process";
 
 const root = process.cwd();
+const syncLockDir = path.join(root, ".git", "leetcode-auto-sync.lock");
+const staleLockMs = 10 * 60 * 1000;
 
 function hasFlag(name) {
   return process.argv.includes(`--${name}`);
@@ -36,6 +38,52 @@ function run(command, args, options = {}) {
 
 function gitOutput(args) {
   return run("git", args, { capture: true }).stdout.trim();
+}
+
+async function acquireSyncLock() {
+  try {
+    await mkdir(syncLockDir);
+    await writeFile(
+      path.join(syncLockDir, "owner.txt"),
+      `pid=${process.pid}\ncreatedAt=${new Date().toISOString()}\n`,
+      "utf8",
+    );
+    return true;
+  } catch (error) {
+    if (error.code !== "EEXIST") throw error;
+
+    try {
+      const info = await stat(syncLockDir);
+      if (Date.now() - info.mtimeMs > staleLockMs) {
+        await rm(syncLockDir, { recursive: true, force: true });
+        return acquireSyncLock();
+      }
+    } catch {
+      return false;
+    }
+
+    return false;
+  }
+}
+
+async function releaseSyncLock() {
+  await rm(syncLockDir, { recursive: true, force: true });
+}
+
+function gitBusyReason() {
+  const gitDir = path.join(root, ".git");
+  const busyPaths = [
+    "index.lock",
+    "HEAD.lock",
+    "MERGE_HEAD",
+    "CHERRY_PICK_HEAD",
+    "REVERT_HEAD",
+    "rebase-apply",
+    "rebase-merge",
+  ].filter((relativePath) => existsSync(path.join(gitDir, relativePath)));
+
+  if (!busyPaths.length) return "";
+  return busyPaths.join(", ");
 }
 
 function ensureRepoRoot() {
@@ -170,33 +218,54 @@ async function importExportBundles(inbox) {
 }
 
 async function syncOnce({ inbox, push }) {
-  const imported = await importExportBundles(inbox);
-  const copied = await copyTree(inbox, root);
-  const statusBeforeAdd = gitOutput(["status", "--porcelain"]);
+  if (!(await acquireSyncLock())) {
+    console.log("Another auto-sync run is active; skipped this interval.");
+    return;
+  }
 
-  if (!statusBeforeAdd) {
-    if (imported.bundles > 0 || copied > 0) {
-      console.log(
-        `Imported ${imported.exports} bundled exports and copied ${copied} legacy files; no git changes.`,
-      );
-    } else {
-      console.log("No downloaded files or git changes.");
+  try {
+    const busyBeforeImport = gitBusyReason();
+    if (busyBeforeImport) {
+      console.log(`Git is busy (${busyBeforeImport}); skipped this interval.`);
+      return;
     }
-    return;
+
+    const imported = await importExportBundles(inbox);
+    const copied = await copyTree(inbox, root);
+    const busyBeforeCommit = gitBusyReason();
+    if (busyBeforeCommit) {
+      console.log(`Git became busy (${busyBeforeCommit}); leaving files uncommitted for next interval.`);
+      return;
+    }
+
+    const statusBeforeAdd = gitOutput(["status", "--porcelain"]);
+
+    if (!statusBeforeAdd) {
+      if (imported.bundles > 0 || copied > 0) {
+        console.log(
+          `Imported ${imported.exports} bundled exports and copied ${copied} legacy files; no git changes.`,
+        );
+      } else {
+        console.log("No downloaded files or git changes.");
+      }
+      return;
+    }
+
+    run("git", ["add", "."]);
+    const staged = gitOutput(["diff", "--cached", "--name-only"]);
+    if (!staged) {
+      console.log("No staged changes after applying .gitignore.");
+      return;
+    }
+
+    const stamp = new Date().toISOString().replace(/:\d{2}\.\d{3}Z$/, "Z");
+    run("git", ["commit", "-m", `Auto-sync LeetCode submissions ${stamp}`]);
+
+    if (push) run("git", ["push"]);
+    else console.log("Committed locally. Push skipped; start with --push to publish automatically.");
+  } finally {
+    await releaseSyncLock();
   }
-
-  run("git", ["add", "."]);
-  const staged = gitOutput(["diff", "--cached", "--name-only"]);
-  if (!staged) {
-    console.log("No staged changes after applying .gitignore.");
-    return;
-  }
-
-  const stamp = new Date().toISOString().replace(/:\d{2}\.\d{3}Z$/, "Z");
-  run("git", ["commit", "-m", `Auto-sync LeetCode submissions ${stamp}`]);
-
-  if (push) run("git", ["push"]);
-  else console.log("Committed locally. Push skipped; start with --push to publish automatically.");
 }
 
 async function main() {
