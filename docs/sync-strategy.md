@@ -1,0 +1,48 @@
+# Sync Strategy
+
+Privacy-first recommendation:
+
+1. Keep this repository private while the solutions are still rough.
+2. Commit accepted solution files locally under `submissions/`.
+3. Use the public LeetCode GraphQL endpoint only for profile stats and recent accepted metadata.
+4. Use a local daily sync job only after the local workflow feels right.
+5. Make the repository public later only after a curation pass.
+
+## Why Not A Browser Extension
+
+Most LeetCode sync extensions need access to the logged-in LeetCode page and GitHub. Even when open source, that creates a wide trust surface: browser cookies, page contents, GitHub tokens, and all future extension updates.
+
+That is not the right default for a portfolio repo.
+
+## What Public Sync Can And Cannot Do
+
+Public LeetCode data can provide:
+
+- Solved counts by difficulty.
+- Ranking and contest ranking.
+- Recent accepted submission titles, slugs, timestamps, and language.
+
+Public LeetCode data cannot provide:
+
+- Your submitted source code.
+- Full private submission history.
+- Editorial/private problem content.
+
+## Actual Solution Code Options
+
+Best default: after solving, save or paste the accepted solution into this repo and let a local helper commit it.
+
+Possible later option: authenticated local scraper using a LeetCode session cookie stored only on the Mac. This can be convenient, but it is still a credential-bearing workflow and should be treated carefully.
+
+Bad default: GitHub Actions with a LeetCode session cookie stored in GitHub Secrets. That moves the sensitive credential off the Mac and gives little privacy upside.
+
+## Portfolio Rules
+
+Before making this public:
+
+- Remove throwaway drafts and embarrassing scratch files.
+- Keep solution explanations concise and honest.
+- Link to LeetCode problems instead of copying full problem statements.
+- Add complexity notes and the key idea for stronger problems.
+- Prefer a smaller set of clean, representative solutions over a raw mirror.
+

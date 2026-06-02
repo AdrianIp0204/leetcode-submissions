@@ -1,0 +1,8 @@
+{
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "fetch:public": "node scripts/fetch-public-profile.mjs",
+    "sync:daily": "node scripts/daily-sync.mjs"
+  }
+}

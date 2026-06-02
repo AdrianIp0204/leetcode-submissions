@@ -3,6 +3,13 @@
 .idea/
 .vscode/
 
+# Local sync config and credentials
+.env
+.leetcode-sync.json
+cookies*.txt
+*.cookie
+leetcode-session*
+
 # Python
 __pycache__/
 *.py[cod]
@@ -24,4 +31,3 @@ build/
 *.o
 *.out
 cmake-build-*/
-
