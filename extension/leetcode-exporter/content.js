@@ -530,7 +530,11 @@
   let lastAutoKey = "";
   let lastAutoSignal = "";
   let lastAutoCheckAt = 0;
+  let lastSubmitActionAt = 0;
   const AUTO_CAPTURE_MIN_CHECK_MS = 15_000;
+  const AUTO_CAPTURE_RECENT_SUBMIT_MIN_CHECK_MS = 2_500;
+  const AUTO_CAPTURE_SUBMIT_WINDOW_MS = 120_000;
+  const AUTO_CAPTURE_SUBMISSION_CLOCK_SKEW_MS = 20_000;
 
   function isExtensionContextInvalidated(error) {
     return /Extension context invalidated/i.test(error?.message || String(error));
@@ -544,6 +548,54 @@
     return true;
   }
 
+  function isSubmissionDetailPage() {
+    return Boolean(findSubmissionIdFromLocation());
+  }
+
+  function isRecentSubmitWindow(now = Date.now()) {
+    return lastSubmitActionAt > 0 && now - lastSubmitActionAt < AUTO_CAPTURE_SUBMIT_WINDOW_MS;
+  }
+
+  function submittedAtMs(payload) {
+    const value = Date.parse(payload?.submittedAt || "");
+    return Number.isFinite(value) ? value : 0;
+  }
+
+  function isFreshAutoPayload(payload, now = Date.now()) {
+    if (isSubmissionDetailPage()) return true;
+    if (!isRecentSubmitWindow(now)) return false;
+
+    const submittedAt = submittedAtMs(payload);
+    if (!submittedAt) return false;
+    return submittedAt >= lastSubmitActionAt - AUTO_CAPTURE_SUBMISSION_CLOCK_SKEW_MS;
+  }
+
+  function looksLikeSubmitControl(target) {
+    const element = target instanceof Element ? target : target?.parentElement;
+    const control = element?.closest?.("button,[role='button'],a");
+    if (!control) return false;
+
+    const label = [
+      control.textContent,
+      control.getAttribute("aria-label"),
+      control.getAttribute("title"),
+      control.getAttribute("data-e2e-locator"),
+      control.getAttribute("data-cy"),
+    ]
+      .filter(Boolean)
+      .join(" ");
+
+    return /\bsubmit\b/i.test(label);
+  }
+
+  function noteSubmitAction() {
+    lastSubmitActionAt = Date.now();
+    lastAutoCheckAt = 0;
+    scheduleAutoCapture(2500);
+    window.setTimeout(() => scheduleAutoCapture(0), 7000);
+    window.setTimeout(() => scheduleAutoCapture(0), 15000);
+  }
+
   async function maybeAutoCapture() {
     if (autoCaptureStopped) return;
     try {
@@ -554,17 +606,30 @@
       if (!autoSignal) return;
 
       const now = Date.now();
-      if (autoSignal === lastAutoSignal && now - lastAutoCheckAt < AUTO_CAPTURE_MIN_CHECK_MS) {
+      const onSubmissionDetailPage = isSubmissionDetailPage();
+      const recentSubmit = isRecentSubmitWindow(now);
+      if (!onSubmissionDetailPage && !recentSubmit) {
+        lastAutoSignal = autoSignal;
+        lastAutoCheckAt = now;
+        return;
+      }
+
+      const minCheckMs = recentSubmit
+        ? AUTO_CAPTURE_RECENT_SUBMIT_MIN_CHECK_MS
+        : AUTO_CAPTURE_MIN_CHECK_MS;
+      if (autoSignal === lastAutoSignal && now - lastAutoCheckAt < minCheckMs) {
         return;
       }
       lastAutoSignal = autoSignal;
       lastAutoCheckAt = now;
 
       const payload = await collectAutoAcceptedSolution();
+      if (!isFreshAutoPayload(payload, now)) return;
       if (payload.status !== "Accepted") return;
       const autoKey = payload.submissionId ? `submission:${payload.submissionId}` : payload.key;
       if (autoKey === lastAutoKey) return;
       lastAutoKey = autoKey;
+      lastSubmitActionAt = 0;
       chrome.runtime.sendMessage({ type: "auto-captured-solution", payload }, () => {
         void chrome.runtime.lastError;
       });
@@ -579,6 +644,22 @@
     window.clearTimeout(autoTimer);
     autoTimer = window.setTimeout(maybeAutoCapture, delay);
   }
+
+  document.addEventListener(
+    "click",
+    (event) => {
+      if (looksLikeSubmitControl(event.target)) noteSubmitAction();
+    },
+    true,
+  );
+
+  document.addEventListener(
+    "keydown",
+    (event) => {
+      if ((event.ctrlKey || event.metaKey) && event.key === "Enter") noteSubmitAction();
+    },
+    true,
+  );
 
   window.addEventListener("load", () => scheduleAutoCapture(1800));
   window.addEventListener("popstate", () => scheduleAutoCapture(1800));
