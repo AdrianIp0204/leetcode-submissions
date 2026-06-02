@@ -1,0 +1,27 @@
+# OS/editor noise
+.DS_Store
+.idea/
+.vscode/
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+
+# JavaScript / TypeScript
+node_modules/
+dist/
+coverage/
+
+# Java / Kotlin
+*.class
+out/
+build/
+
+# C / C++
+*.o
+*.out
+cmake-build-*/
+
