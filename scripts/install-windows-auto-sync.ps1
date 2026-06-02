@@ -1,5 +1,5 @@
 param(
-  [int]$IntervalSeconds = 300,
+  [int]$IntervalSeconds = 30,
   [switch]$NoPush
 )
 
@@ -64,7 +64,7 @@ shell.Run """$CmdPath""", 0, False
   $Shortcut.TargetPath = $WScript
   $Shortcut.Arguments = "`"$VbsPath`""
   $Shortcut.WorkingDirectory = $RepoRoot
-  $Shortcut.Description = "Automatically commits and pushes LeetCode exports downloaded by the first-party extension."
+  $Shortcut.Description = "Automatically commits and pushes LeetCode exports handed off by the first-party extension."
   $Shortcut.WindowStyle = 7
   $Shortcut.Save()
 
@@ -83,7 +83,7 @@ try {
   $Settings = New-ScheduledTaskSettingsSet -AllowStartIfOnBatteries -DontStopIfGoingOnBatteries -RestartCount 3 -RestartInterval (New-TimeSpan -Minutes 1)
 
   Stop-ExistingWatcher
-  Register-ScheduledTask -TaskName $TaskName -Action $Action -Trigger $Trigger -Principal $Principal -Settings $Settings -Description "Automatically commits and pushes LeetCode exports downloaded by the first-party extension." -Force | Out-Null
+  Register-ScheduledTask -TaskName $TaskName -Action $Action -Trigger $Trigger -Principal $Principal -Settings $Settings -Description "Automatically commits and pushes LeetCode exports handed off by the first-party extension." -Force | Out-Null
   Start-ScheduledTask -TaskName $TaskName
   Write-Host "Installed and started scheduled task: $TaskName"
 } catch {

@@ -109,7 +109,7 @@ async function collectCurrentSolution() {
     elements.path.textContent = currentExport.path;
     elements.result.hidden = false;
 
-    await sendRuntimeMessage({
+    const stored = await sendRuntimeMessage({
       type: "store-exports",
       payload: { exports: [currentExport], reason: "manual-current" },
     });
@@ -117,6 +117,8 @@ async function collectCurrentSolution() {
 
     if (currentExport.status !== "Accepted") {
       setMessage("Collected code. Status was not clearly Accepted, so review before committing.");
+    } else if (stored.autoDownloaded) {
+      setMessage("Collected accepted solution and handed it to local sync.");
     } else {
       setMessage("Collected accepted solution and queued it.");
     }
@@ -146,7 +148,9 @@ async function collectPastAccepted() {
     await refreshState();
 
     setMessage(
-      `Scanned ${result.scanned} submissions; added ${stored.added}, skipped ${stored.skipped}.`,
+      `Scanned ${result.scanned} submissions; added ${stored.added}, skipped ${stored.skipped}. ${
+        stored.autoDownloaded ? "Handed new exports to local sync." : ""
+      }`.trim(),
     );
   } catch (error) {
     setMessage(error.message || String(error));
@@ -253,11 +257,15 @@ async function downloadFiles() {
 
 async function downloadQueue() {
   setBusy(true);
-  setMessage("Downloading queued exports...");
+  setMessage("Creating a local-sync handoff bundle...");
 
   try {
     const result = await sendRuntimeMessage({ type: "download-exports" });
-    setMessage(`Downloaded ${result.downloaded} queued exports.`);
+    if (result.bundles) {
+      setMessage(`Handed ${result.downloaded} queued exports to local sync.`);
+    } else {
+      setMessage("No queued exports to hand off.");
+    }
   } catch (error) {
     setMessage(error.message || String(error));
   } finally {

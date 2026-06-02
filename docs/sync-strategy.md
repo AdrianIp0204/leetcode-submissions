@@ -18,7 +18,7 @@ This repo uses a first-party extension with a narrower boundary:
 - It does not read or store cookies.
 - It does not hold a GitHub token.
 - It can fetch past accepted submissions only through the current logged-in LeetCode browser session.
-- It downloads exports locally; a separate local watcher handles git.
+- It downloads a local handoff bundle; a separate local watcher handles git.
 
 ## What Public Sync Can And Cannot Do
 
@@ -39,9 +39,9 @@ Public LeetCode data cannot provide:
 
 Best default: after solving, save or paste the accepted solution into this repo and let a local helper commit it.
 
-Current first-party extension option: use `extension/leetcode-exporter` on the computer where you solve LeetCode. It can auto-capture accepted visible solutions, backfill past accepted submissions, and download exports. It does not hold a GitHub token or run `git`.
+Current first-party extension option: use `extension/leetcode-exporter` on the computer where you solve LeetCode. It can auto-capture accepted visible solutions, backfill past accepted submissions, and create one local handoff bundle for the watcher. It does not hold a GitHub token or run `git`.
 
-Current local watcher option: use `scripts/auto-sync.mjs` or `scripts/install-windows-auto-sync.ps1` to copy extension downloads into the repo, commit, and push.
+Current local watcher option: use `scripts/auto-sync.mjs` or `scripts/install-windows-auto-sync.ps1` to expand extension handoff bundles into the repo, commit, and push.
 
 Possible later option: authenticated local scraper using a LeetCode session cookie stored only on the Mac. This can be convenient, but it is still a credential-bearing workflow and should be treated carefully.
 

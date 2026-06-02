@@ -99,16 +99,30 @@
     return /\bRuntime\b/.test(body) && /\bMemory\b/.test(body);
   }
 
+  function inferLanguageFromSource(source) {
+    if (/^\s*class\s+Solution\b/m.test(source) && /\bpublic:/.test(source)) return "cpp";
+    if (/^\s*class\s+Solution\b/m.test(source) && /\bpublic\s+/.test(source)) return "java";
+    if (/^\s*def\s+\w+/.test(source) || /\bself\b/.test(source)) return "python3";
+    if (/\bfunction\b|=>|\bconst\b|\blet\b/.test(source)) return "javascript";
+    return "txt";
+  }
+
   function normalizeLanguage(value, source) {
     const raw = String(value || "").trim();
     const lower = raw.toLowerCase().replace(/\s+/g, "");
-    if (!lower && source.includes("class Solution")) return "cpp";
-    if (!lower && source.includes("def ") && source.includes("self")) return "python3";
-    if (lower === "python") return "python3";
-    if (lower === "python3") return "python3";
-    if (lower === "c++") return "cpp";
-    if (lower === "golang") return "go";
-    return lower || "txt";
+    const aliases = {
+      "c#": "csharp",
+      "c++": "cpp",
+      golang: "go",
+      javascript: "javascript",
+      js: "javascript",
+      python: "python3",
+      python3: "python3",
+      typescript: "typescript",
+      ts: "typescript",
+    };
+    const normalized = aliases[lower] || lower;
+    return languageExtensions[normalized] ? normalized : inferLanguageFromSource(source);
   }
 
   function findLanguage(pagePayload, source) {
@@ -116,7 +130,6 @@
     const visibleLanguage = [
       text('[data-cy="lang-select"]'),
       text("button[aria-haspopup='listbox']"),
-      text("[class*='lang']"),
     ].find(Boolean);
 
     return normalizeLanguage(modelLanguage || visibleLanguage, source);

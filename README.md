@@ -75,10 +75,10 @@ It runs only on LeetCode, does not use a GitHub token, auto-captures accepted vi
 
 ## Automatic Local Sync
 
-The extension downloads exports under:
+The extension downloads one small handoff bundle under:
 
 ```text
-Downloads/leetcode-submissions/
+Downloads/leetcode-submissions/queue/
 ```
 
 On Windows, install the local watcher once from a cloned repo:
