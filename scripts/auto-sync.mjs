@@ -201,7 +201,7 @@ async function archiveBundle(bundlePath) {
 }
 
 function isExportBundleFile(name) {
-  return /\.json(?:\.dropboxignore)?$/i.test(name);
+  return /\.json(?:\.dropboxignore)?$/i.test(name) || /^leetcode-exports-.+\.txt(?:\.dropboxignore)?$/i.test(name);
 }
 
 async function importExportBundles(inbox) {

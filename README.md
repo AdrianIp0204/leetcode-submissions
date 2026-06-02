@@ -89,8 +89,9 @@ powershell -ExecutionPolicy Bypass -File scripts\install-windows-auto-sync.ps1
 
 It copies downloaded exports into the repo, commits changes, and pushes. The installer first tries a current-user Scheduled Task. If Windows blocks Task Scheduler access, it falls back to a normal per-user Startup launcher and starts the watcher immediately. This keeps GitHub credentials out of the extension.
 
-Dropbox may show the one handoff bundle as `*.json.dropboxignore`; that is still
-valid. The watcher imports those renamed bundles, moves them into the queue's
-`processed/` folder, and commits/pushes only when the solution code is new or
-changed. If the same solution already exists in the repo, the bundle is archived
-without creating a duplicate commit.
+Dropbox or Chrome may show the one handoff bundle as `*.json.dropboxignore` or
+`leetcode-exports-*.txt`; those are still valid if the contents are the JSON
+export bundle. The watcher imports those renamed bundles, moves them into the
+queue's `processed/` folder, and commits/pushes only when the solution code is
+new or changed. If the same solution already exists in the repo, the bundle is
+archived without creating a duplicate commit.

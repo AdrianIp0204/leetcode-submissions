@@ -29,8 +29,8 @@ async function getExportsByKey() {
   return exportsByKey;
 }
 
-async function downloadOne(relativePath, contents) {
-  const url = `data:text/plain;charset=utf-8,${encodeURIComponent(contents)}`;
+async function downloadOne(relativePath, contents, contentType = "text/plain") {
+  const url = `data:${contentType};charset=utf-8,${encodeURIComponent(contents)}`;
   return new Promise((resolve, reject) => {
     chrome.downloads.download(
       {
@@ -64,7 +64,7 @@ async function downloadExportBundle(exports, reason = "manual") {
   const digest = hashString(JSON.stringify(exports.map((payload) => payload.key || exportKey(payload))));
   const filename = `queue/leetcode-exports-${timestampForFilename()}-${digest}.json`;
 
-  return downloadOne(filename, `${JSON.stringify(bundle, null, 2)}\n`);
+  return downloadOne(filename, `${JSON.stringify(bundle, null, 2)}\n`, "application/json");
 }
 
 async function addExports(exports, reason = "manual") {
