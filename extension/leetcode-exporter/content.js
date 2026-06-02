@@ -525,16 +525,31 @@
   });
 
   let autoTimer = null;
+  let observer = null;
+  let autoCaptureStopped = false;
   let lastAutoKey = "";
   let lastAutoSignal = "";
   let lastAutoCheckAt = 0;
   const AUTO_CAPTURE_MIN_CHECK_MS = 15_000;
 
-  async function maybeAutoCapture() {
-    const settings = await chrome.storage.local.get({ autoCapture: true });
-    if (!settings.autoCapture) return;
+  function isExtensionContextInvalidated(error) {
+    return /Extension context invalidated/i.test(error?.message || String(error));
+  }
 
+  function stopAutoCaptureForInvalidatedContext(error) {
+    if (!isExtensionContextInvalidated(error)) return false;
+    autoCaptureStopped = true;
+    window.clearTimeout(autoTimer);
+    observer?.disconnect();
+    return true;
+  }
+
+  async function maybeAutoCapture() {
+    if (autoCaptureStopped) return;
     try {
+      const settings = await chrome.storage.local.get({ autoCapture: true });
+      if (!settings.autoCapture) return;
+
       const autoSignal = findAcceptedAutoSignal();
       if (!autoSignal) return;
 
@@ -553,12 +568,14 @@
       chrome.runtime.sendMessage({ type: "auto-captured-solution", payload }, () => {
         void chrome.runtime.lastError;
       });
-    } catch {
+    } catch (error) {
+      if (stopAutoCaptureForInvalidatedContext(error)) return;
       // Most LeetCode pages do not expose an accepted solution; ignore quiet auto-capture misses.
     }
   }
 
   function scheduleAutoCapture(delay = 1200) {
+    if (autoCaptureStopped) return;
     window.clearTimeout(autoTimer);
     autoTimer = window.setTimeout(maybeAutoCapture, delay);
   }
@@ -567,7 +584,7 @@
   window.addEventListener("popstate", () => scheduleAutoCapture(1800));
   scheduleAutoCapture(1800);
 
-  const observer = new MutationObserver((mutations) => {
+  observer = new MutationObserver((mutations) => {
     if (mutations.length > 0 && mutations.every(isEditorMutation)) return;
     scheduleAutoCapture();
   });
