@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>LeetCode Repo Exporter</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1>LeetCode Exporter</h1>
+        <p>Save the visible solution into your private repo.</p>
+      </header>
+
+      <button id="collect" type="button">Collect Current Solution</button>
+
+      <section id="result" hidden>
+        <dl>
+          <div>
+            <dt>Problem</dt>
+            <dd id="problem">-</dd>
+          </div>
+          <div>
+            <dt>Status</dt>
+            <dd id="status">-</dd>
+          </div>
+          <div>
+            <dt>File</dt>
+            <dd id="path">-</dd>
+          </div>
+        </dl>
+
+        <div class="actions">
+          <button id="save" type="button">Save To Repo Folder</button>
+          <button id="download" type="button">Download Files</button>
+          <button id="copy" type="button">Copy Solution</button>
+          <button id="commands" type="button">Copy Git Commands</button>
+        </div>
+      </section>
+
+      <p id="message" role="status"></p>
+    </main>
+
+    <script src="popup.js"></script>
+  </body>
+</html>

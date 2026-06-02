@@ -33,6 +33,8 @@ Public LeetCode data cannot provide:
 
 Best default: after solving, save or paste the accepted solution into this repo and let a local helper commit it.
 
+Current first-party extension option: use `extension/leetcode-exporter` on the computer where you solve LeetCode. It can save the visible solution into the cloned repo folder, but it does not hold a GitHub token or run `git`.
+
 Possible later option: authenticated local scraper using a LeetCode session cookie stored only on the Mac. This can be convenient, but it is still a credential-bearing workflow and should be treated carefully.
 
 Bad default: GitHub Actions with a LeetCode session cookie stored in GitHub Secrets. That moves the sensitive credential off the Mac and gives little privacy upside.

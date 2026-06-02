@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "LeetCode Repo Exporter",
+  "version": "0.1.0",
+  "description": "First-party exporter for saving visible LeetCode solutions into a local repo.",
+  "permissions": ["activeTab", "downloads"],
+  "host_permissions": ["https://leetcode.com/*", "https://www.leetcode.com/*"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Export LeetCode solution"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://leetcode.com/*", "https://www.leetcode.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["page-bridge.js"],
+      "matches": ["https://leetcode.com/*", "https://www.leetcode.com/*"]
+    }
+  ]
+}

@@ -10,6 +10,7 @@ The current plan is privacy-first: avoid browser extensions, avoid storing LeetC
 - `notes/` - short explanations, patterns, mistakes, or follow-up ideas.
 - `profile/` - public LeetCode metadata snapshots, if a username is configured.
 - `scripts/` - local sync helpers.
+- `extension/leetcode-exporter/` - first-party unpacked browser extension for saving visible LeetCode solutions.
 
 ## Suggested Naming
 
@@ -61,3 +62,13 @@ npm run sync:daily -- --push
 The tracked public config uses LeetCode username `AdrianIp`. For private local overrides, copy `config/leetcode-sync.example.json` to `.leetcode-sync.json`. The copied file is ignored by git.
 
 See `docs/sync-strategy.md` for the privacy tradeoffs and public-portfolio rules.
+
+## First-Party Browser Extension
+
+For the computer where you solve LeetCode, load the local extension from:
+
+```text
+extension/leetcode-exporter
+```
+
+It runs only on LeetCode, does not use a GitHub token, and saves/copies only the solution visible in the active browser tab. See `extension/leetcode-exporter/README.md`.
