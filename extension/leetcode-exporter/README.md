@@ -61,6 +61,14 @@ If folder saving is unavailable in your browser, use **Hand Off Queue To Sync** 
 
 After updating this repo with `git pull`, you do not need to download or unpack the extension again. Open `chrome://extensions` or `edge://extensions` and click reload on **LeetCode Repo Exporter** so the browser rereads the updated unpacked folder.
 
+The popup shows the loaded extension version under the title. If Chrome still
+shows an older version after `git pull` and reload, remove that unpacked
+extension entry and load this exact folder again:
+
+```text
+C:\Users\dream\leetcode-submissions\extension\leetcode-exporter
+```
+
 ## Limitations
 
 - The extension can only see code visible in the current browser tab.

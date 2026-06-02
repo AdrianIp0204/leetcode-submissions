@@ -19,7 +19,10 @@ const elements = {
   clearQueue: document.getElementById("clearQueue"),
   queueCount: document.getElementById("queueCount"),
   message: document.getElementById("message"),
+  extensionVersion: document.getElementById("extensionVersion"),
 };
+
+elements.extensionVersion.textContent = chrome.runtime.getManifest().version;
 
 function setMessage(value) {
   elements.message.textContent = value;
