@@ -160,13 +160,28 @@ function safeRepoPath(relativePath) {
   return targetPath;
 }
 
+function canonicalSolutionCode(value) {
+  return `${String(value || "")
+    .replace(/\r\n/g, "\n")
+    .replace(/\r/g, "\n")
+    .replace(/\s+$/u, "")}\n`;
+}
+
 async function writeExport(payload) {
-  if (!/^accepted$/i.test(String(payload.status || ""))) return 0;
-  if (!payload.path || !payload.code) return 0;
+  if (!/^accepted$/i.test(String(payload.status || ""))) return { files: 0, skippedDuplicates: 0 };
+  if (!payload.path || !payload.code) return { files: 0, skippedDuplicates: 0 };
 
   const solutionPath = safeRepoPath(payload.path);
+  const nextCode = canonicalSolutionCode(payload.code);
+  if (existsSync(solutionPath)) {
+    const currentCode = canonicalSolutionCode(await readFile(solutionPath, "utf8"));
+    if (currentCode === nextCode) {
+      return { files: 0, skippedDuplicates: 1 };
+    }
+  }
+
   await mkdir(path.dirname(solutionPath), { recursive: true });
-  await writeFile(solutionPath, `${payload.code.replace(/\s+$/u, "")}\n`, "utf8");
+  await writeFile(solutionPath, nextCode, "utf8");
 
   let written = 1;
   if (payload.readmePath && payload.readme) {
@@ -176,7 +191,7 @@ async function writeExport(payload) {
     written += 1;
   }
 
-  return written;
+  return { files: written, skippedDuplicates: 0 };
 }
 
 async function archiveBundle(bundlePath) {
@@ -194,6 +209,7 @@ async function importExportBundles(inbox) {
   let bundles = 0;
   let exports = 0;
   let files = 0;
+  let skippedDuplicates = 0;
 
   for (const queueDir of queueDirs) {
     if (!existsSync(queueDir)) continue;
@@ -209,7 +225,9 @@ async function importExportBundles(inbox) {
       }
 
       for (const payload of bundle.exports) {
-        files += await writeExport(payload);
+        const result = await writeExport(payload);
+        files += result.files;
+        skippedDuplicates += result.skippedDuplicates;
       }
 
       exports += bundle.exports.length;
@@ -218,7 +236,7 @@ async function importExportBundles(inbox) {
     }
   }
 
-  return { bundles, exports, files };
+  return { bundles, exports, files, skippedDuplicates };
 }
 
 async function syncOnce({ inbox, push }) {
@@ -247,7 +265,7 @@ async function syncOnce({ inbox, push }) {
     if (!statusBeforeAdd) {
       if (imported.bundles > 0 || copied > 0) {
         console.log(
-          `Imported ${imported.exports} bundled exports and copied ${copied} legacy files; no git changes.`,
+          `Imported ${imported.exports} bundled exports, skipped ${imported.skippedDuplicates} duplicate exports, and copied ${copied} legacy files; no git changes.`,
         );
       } else {
         console.log("No downloaded files or git changes.");

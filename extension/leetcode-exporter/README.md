@@ -38,6 +38,9 @@ Downloads/leetcode-submissions/queue/...
 If Dropbox or Windows appends `.dropboxignore` to a queue bundle, the watcher
 still imports it. Older raw `README.dropboxignore` or `solution.dropboxignore`
 downloads can be ignored or deleted; they are legacy artifacts, not repo files.
+After import, the watcher commits and pushes only when a solution is new or the
+solution code changed. Re-exporting the same existing solution is treated as a
+duplicate and will not create a README-only metadata commit.
 
 If you prefer direct folder saving, use **Save Queue To Repo** and select the cloned `leetcode-submissions` repo root.
 
