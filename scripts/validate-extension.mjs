@@ -31,6 +31,7 @@ async function main() {
   }
 
   const requiredFiles = [
+    "background.js",
     "content.js",
     "page-bridge.js",
     "popup.html",

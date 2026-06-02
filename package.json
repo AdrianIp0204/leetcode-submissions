@@ -3,6 +3,7 @@
   "type": "module",
   "scripts": {
     "fetch:public": "node scripts/fetch-public-profile.mjs",
+    "sync:auto": "node scripts/auto-sync.mjs",
     "sync:daily": "node scripts/daily-sync.mjs",
     "validate:extension": "node scripts/validate-extension.mjs"
   }

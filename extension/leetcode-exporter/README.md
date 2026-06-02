@@ -1,14 +1,14 @@
 # LeetCode Repo Exporter
 
-First-party browser extension for saving the solution visible in your LeetCode browser tab into this repo.
+First-party browser extension for saving accepted LeetCode solutions into this repo.
 
 It is intentionally boring:
 
 - Runs only on `leetcode.com`.
 - Does not store or read LeetCode cookies.
 - Does not use a GitHub token.
-- Does not make network requests.
-- Saves files only when you click a button.
+- Does not make network requests except to LeetCode from your active logged-in LeetCode page.
+- Can auto-download collected files under `Downloads/leetcode-submissions/`.
 
 ## Install In Chrome Or Edge
 
@@ -25,14 +25,32 @@ extension/leetcode-exporter
 ## Use
 
 1. Open a LeetCode problem page or accepted submission page.
-2. Click the extension icon.
-3. Click **Collect Current Solution**.
-4. Click **Save To Repo Folder** and select the cloned `leetcode-submissions` repo root.
-5. Review the generated files under `submissions/`.
-6. Commit and push from the repo:
+2. Keep **Auto collect accepted pages** and **Auto download collected files** enabled.
+3. When an accepted solution is visible, the extension queues and downloads it automatically.
+4. To backfill older solutions, open any LeetCode page while logged in and click **Collect Past Accepted**.
+
+Automatic downloads land here:
+
+```text
+Downloads/leetcode-submissions/submissions/...
+```
+
+If you prefer direct folder saving, use **Save Queue To Repo** and select the cloned `leetcode-submissions` repo root.
+
+## No-Repeated-Command Sync
+
+Browser extensions cannot safely run `git` by themselves. Use the local watcher once on the computer where you solve LeetCode:
+
+```powershell
+powershell -ExecutionPolicy Bypass -File scripts\install-windows-auto-sync.ps1
+```
+
+That installs a Windows Scheduled Task named `LeetCodeSubmissionsAutoSync`. It watches `Downloads\leetcode-submissions`, copies exports into the repo, commits changes, and pushes.
+
+For a one-off foreground run:
 
 ```bash
-npm run sync:daily -- --push
+npm run sync:auto -- --push
 ```
 
 If folder saving is unavailable in your browser, use **Download Files** and move the downloaded `leetcode-submissions/submissions/...` folder into the cloned repo.
@@ -40,7 +58,6 @@ If folder saving is unavailable in your browser, use **Download Files** and move
 ## Limitations
 
 - The extension can only see code visible in the current browser tab.
-- It cannot sync source code from LeetCode's private submission history unless that code is opened/visible in the tab.
-- It cannot run `git` directly. Browser extensions need a separate native helper for that, and that is a bigger trust surface.
+- Past accepted collection needs your logged-in LeetCode browser session. It uses the session implicitly for LeetCode requests but does not read or store cookies.
+- It cannot run `git` directly. The scheduled local watcher handles commits/pushes.
 - It may need small selector fixes if LeetCode changes its UI.
-

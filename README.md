@@ -2,7 +2,7 @@
 
 Private sync repo for LeetCode solutions, public profile snapshots, notes, and revision history.
 
-The current plan is privacy-first: avoid browser extensions, avoid storing LeetCode login cookies in GitHub, and keep this private until the solutions are curated enough to become portfolio material.
+The current plan is privacy-first: use only this first-party extension, avoid storing LeetCode login cookies in GitHub, and keep this private until the solutions are curated enough to become portfolio material.
 
 ## Layout
 
@@ -71,4 +71,20 @@ For the computer where you solve LeetCode, load the local extension from:
 extension/leetcode-exporter
 ```
 
-It runs only on LeetCode, does not use a GitHub token, and saves/copies only the solution visible in the active browser tab. See `extension/leetcode-exporter/README.md`.
+It runs only on LeetCode, does not use a GitHub token, auto-captures accepted visible solutions, and can backfill past accepted submissions from your logged-in LeetCode browser session. See `extension/leetcode-exporter/README.md`.
+
+## Automatic Local Sync
+
+The extension downloads exports under:
+
+```text
+Downloads/leetcode-submissions/
+```
+
+On Windows, install the local watcher once from a cloned repo:
+
+```powershell
+powershell -ExecutionPolicy Bypass -File scripts\install-windows-auto-sync.ps1
+```
+
+It creates a Scheduled Task that copies downloaded exports into the repo, commits changes, and pushes. This keeps GitHub credentials out of the extension.

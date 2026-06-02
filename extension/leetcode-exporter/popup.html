@@ -10,10 +10,29 @@
     <main>
       <header>
         <h1>LeetCode Exporter</h1>
-        <p>Save the visible solution into your private repo.</p>
+        <p>Save accepted solutions into your private repo.</p>
       </header>
 
       <button id="collect" type="button">Collect Current Solution</button>
+
+      <section class="settings">
+        <label>
+          <input id="autoCapture" type="checkbox" />
+          Auto collect accepted pages
+        </label>
+        <label>
+          <input id="autoDownload" type="checkbox" />
+          Auto download collected files
+        </label>
+      </section>
+
+      <section class="history">
+        <div class="inline">
+          <label for="historyLimit">Past accepted</label>
+          <input id="historyLimit" type="number" min="1" max="300" step="1" value="100" />
+        </div>
+        <button id="history" type="button">Collect Past Accepted</button>
+      </section>
 
       <section id="result" hidden>
         <dl>
@@ -36,6 +55,15 @@
           <button id="download" type="button">Download Files</button>
           <button id="copy" type="button">Copy Solution</button>
           <button id="commands" type="button">Copy Git Commands</button>
+        </div>
+      </section>
+
+      <section class="queue">
+        <p><strong id="queueCount">0</strong> queued exports</p>
+        <div class="actions">
+          <button id="saveQueue" type="button">Save Queue To Repo</button>
+          <button id="downloadQueue" type="button">Download Queue</button>
+          <button id="clearQueue" type="button">Clear Queue</button>
         </div>
       </section>
 

@@ -60,8 +60,46 @@ button:disabled {
   color: white;
 }
 
-#result {
+#result,
+.history,
+.queue,
+.settings {
   margin-top: 14px;
+}
+
+.settings {
+  display: grid;
+  gap: 8px;
+}
+
+label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  line-height: 1.35;
+}
+
+input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+}
+
+.inline {
+  display: grid;
+  grid-template-columns: 1fr 76px;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+input[type="number"] {
+  min-height: 32px;
+  border: 1px solid color-mix(in srgb, CanvasText 18%, Canvas 82%);
+  border-radius: 6px;
+  background: Canvas;
+  color: CanvasText;
+  font: inherit;
+  padding: 0 8px;
 }
 
 dl {
@@ -92,6 +130,10 @@ dd {
   grid-template-columns: 1fr 1fr;
   gap: 8px;
   margin-top: 14px;
+}
+
+.queue .actions {
+  grid-template-columns: 1fr;
 }
 
 #message {

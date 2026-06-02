@@ -2,6 +2,10 @@ let currentExport = null;
 
 const elements = {
   collect: document.getElementById("collect"),
+  history: document.getElementById("history"),
+  historyLimit: document.getElementById("historyLimit"),
+  autoCapture: document.getElementById("autoCapture"),
+  autoDownload: document.getElementById("autoDownload"),
   result: document.getElementById("result"),
   problem: document.getElementById("problem"),
   status: document.getElementById("status"),
@@ -10,6 +14,10 @@ const elements = {
   download: document.getElementById("download"),
   copy: document.getElementById("copy"),
   commands: document.getElementById("commands"),
+  saveQueue: document.getElementById("saveQueue"),
+  downloadQueue: document.getElementById("downloadQueue"),
+  clearQueue: document.getElementById("clearQueue"),
+  queueCount: document.getElementById("queueCount"),
   message: document.getElementById("message"),
 };
 
@@ -19,10 +27,29 @@ function setMessage(value) {
 
 function setBusy(isBusy) {
   elements.collect.disabled = isBusy;
+  elements.history.disabled = isBusy;
   elements.save.disabled = isBusy || !currentExport;
   elements.download.disabled = isBusy || !currentExport;
   elements.copy.disabled = isBusy || !currentExport;
   elements.commands.disabled = isBusy || !currentExport;
+  elements.saveQueue.disabled = isBusy;
+  elements.downloadQueue.disabled = isBusy;
+  elements.clearQueue.disabled = isBusy;
+}
+
+function sendRuntimeMessage(message) {
+  return chrome.runtime.sendMessage(message).then((response) => {
+    if (!response?.ok) throw new Error(response?.error || "Extension background task failed.");
+    return response.payload;
+  });
+}
+
+async function refreshState() {
+  const state = await sendRuntimeMessage({ type: "get-state" });
+  elements.autoCapture.checked = Boolean(state.settings.autoCapture);
+  elements.autoDownload.checked = Boolean(state.settings.autoDownload);
+  elements.queueCount.textContent = String(state.count || 0);
+  return state;
 }
 
 async function getActiveTab() {
@@ -31,33 +58,68 @@ async function getActiveTab() {
   return tab;
 }
 
+async function sendTabMessage(message) {
+  const tab = await getActiveTab();
+  if (!/^https:\/\/(www\.)?leetcode\.com\//.test(tab.url || "")) {
+    throw new Error("Open a LeetCode page first.");
+  }
+
+  const response = await chrome.tabs.sendMessage(tab.id, message);
+  if (!response?.ok) throw new Error(response?.error || "The page did not return a solution.");
+  return response.payload;
+}
+
 async function collectCurrentSolution() {
   setBusy(true);
   setMessage("Reading the current LeetCode page...");
 
   try {
-    const tab = await getActiveTab();
-    if (!/^https:\/\/(www\.)?leetcode\.com\//.test(tab.url || "")) {
-      throw new Error("Open a LeetCode page first.");
-    }
-
-    const response = await chrome.tabs.sendMessage(tab.id, { type: "collect-solution" });
-    if (!response?.ok) throw new Error(response?.error || "The page did not return a solution.");
-
-    currentExport = response.payload;
+    currentExport = await sendTabMessage({ type: "collect-solution" });
     elements.problem.textContent = currentExport.title;
     elements.status.textContent = currentExport.status;
     elements.path.textContent = currentExport.path;
     elements.result.hidden = false;
 
+    await sendRuntimeMessage({
+      type: "store-exports",
+      payload: { exports: [currentExport], reason: "manual-current" },
+    });
+    await refreshState();
+
     if (currentExport.status !== "Accepted") {
       setMessage("Collected code. Status was not clearly Accepted, so review before committing.");
     } else {
-      setMessage("Collected accepted solution.");
+      setMessage("Collected accepted solution and queued it.");
     }
   } catch (error) {
     currentExport = null;
     elements.result.hidden = true;
+    setMessage(error.message || String(error));
+  } finally {
+    setBusy(false);
+  }
+}
+
+async function collectPastAccepted() {
+  setBusy(true);
+  setMessage("Fetching accepted submission history...");
+
+  try {
+    const limit = Number(elements.historyLimit.value || 100);
+    const result = await sendTabMessage({
+      type: "collect-history",
+      payload: { limit },
+    });
+    const stored = await sendRuntimeMessage({
+      type: "store-exports",
+      payload: { exports: result.exports, reason: "history-backfill" },
+    });
+    await refreshState();
+
+    setMessage(
+      `Scanned ${result.scanned} submissions; added ${stored.added}, skipped ${stored.skipped}.`,
+    );
+  } catch (error) {
     setMessage(error.message || String(error));
   } finally {
     setBusy(false);
@@ -79,21 +141,43 @@ async function writeNestedFile(rootHandle, relativePath, contents) {
   await writable.close();
 }
 
-async function saveToRepoFolder() {
-  if (!currentExport) return;
+async function saveExportsToRepoFolder(exports) {
   if (!window.showDirectoryPicker) {
-    setMessage("Folder saving is unavailable here. Use Download Files instead.");
-    return;
+    throw new Error("Folder saving is unavailable here. Use Download Queue instead.");
   }
 
+  const root = await window.showDirectoryPicker({ mode: "readwrite" });
+  for (const payload of exports) {
+    await writeNestedFile(root, payload.path, `${payload.code}\n`);
+    await writeNestedFile(root, payload.readmePath, payload.readme);
+  }
+
+  return exports.length;
+}
+
+async function saveToRepoFolder() {
+  if (!currentExport) return;
   setBusy(true);
   setMessage("Choose the cloned leetcode-submissions repo root.");
 
   try {
-    const root = await window.showDirectoryPicker({ mode: "readwrite" });
-    await writeNestedFile(root, currentExport.path, `${currentExport.code}\n`);
-    await writeNestedFile(root, currentExport.readmePath, currentExport.readme);
-    setMessage("Saved solution and README into the selected repo folder.");
+    const count = await saveExportsToRepoFolder([currentExport]);
+    setMessage(`Saved ${count} export into the selected repo folder.`);
+  } catch (error) {
+    setMessage(error.name === "AbortError" ? "Save cancelled." : error.message || String(error));
+  } finally {
+    setBusy(false);
+  }
+}
+
+async function saveQueueToRepoFolder() {
+  setBusy(true);
+  setMessage("Choose the cloned leetcode-submissions repo root.");
+
+  try {
+    const state = await refreshState();
+    const count = await saveExportsToRepoFolder(state.exports || []);
+    setMessage(`Saved ${count} queued exports into the selected repo folder.`);
   } catch (error) {
     setMessage(error.name === "AbortError" ? "Save cancelled." : error.message || String(error));
   } finally {
@@ -110,6 +194,7 @@ function downloadOne(filename, contents) {
         url,
         filename: `leetcode-submissions/${filename}`,
         saveAs: false,
+        conflictAction: "overwrite",
       },
       (downloadId) => {
         window.setTimeout(() => URL.revokeObjectURL(url), 5000);
@@ -130,6 +215,34 @@ async function downloadFiles() {
     await downloadOne(currentExport.path, `${currentExport.code}\n`);
     await downloadOne(currentExport.readmePath, currentExport.readme);
     setMessage("Downloaded solution and README under Downloads/leetcode-submissions.");
+  } catch (error) {
+    setMessage(error.message || String(error));
+  } finally {
+    setBusy(false);
+  }
+}
+
+async function downloadQueue() {
+  setBusy(true);
+  setMessage("Downloading queued exports...");
+
+  try {
+    const result = await sendRuntimeMessage({ type: "download-exports" });
+    setMessage(`Downloaded ${result.downloaded} queued exports.`);
+  } catch (error) {
+    setMessage(error.message || String(error));
+  } finally {
+    setBusy(false);
+  }
+}
+
+async function clearQueue() {
+  setBusy(true);
+
+  try {
+    await sendRuntimeMessage({ type: "clear-exports" });
+    await refreshState();
+    setMessage("Cleared queued exports.");
   } catch (error) {
     setMessage(error.message || String(error));
   } finally {
@@ -158,10 +271,29 @@ async function copyGitCommands() {
   setMessage("Copied git commands for the saved files.");
 }
 
+async function saveSettings() {
+  await sendRuntimeMessage({
+    type: "set-settings",
+    payload: {
+      autoCapture: elements.autoCapture.checked,
+      autoDownload: elements.autoDownload.checked,
+    },
+  });
+  await refreshState();
+  setMessage("Updated extension settings.");
+}
+
 elements.collect.addEventListener("click", collectCurrentSolution);
+elements.history.addEventListener("click", collectPastAccepted);
 elements.save.addEventListener("click", saveToRepoFolder);
 elements.download.addEventListener("click", downloadFiles);
 elements.copy.addEventListener("click", copySolution);
 elements.commands.addEventListener("click", copyGitCommands);
+elements.saveQueue.addEventListener("click", saveQueueToRepoFolder);
+elements.downloadQueue.addEventListener("click", downloadQueue);
+elements.clearQueue.addEventListener("click", clearQueue);
+elements.autoCapture.addEventListener("change", saveSettings);
+elements.autoDownload.addEventListener("change", saveSettings);
 
 setBusy(false);
+refreshState().catch((error) => setMessage(error.message || String(error)));

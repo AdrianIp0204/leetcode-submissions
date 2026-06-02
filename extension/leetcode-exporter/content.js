@@ -71,6 +71,15 @@
     return { frontendId: match[1], title: match[2].trim() };
   }
 
+  function hashString(value) {
+    let hash = 0;
+    for (let index = 0; index < value.length; index += 1) {
+      hash = (hash << 5) - hash + value.charCodeAt(index);
+      hash |= 0;
+    }
+    return Math.abs(hash).toString(36);
+  }
+
   function findAcceptedStatus() {
     const body = document.body?.textContent || "";
     if (/\bAccepted\b/.test(body)) return "Accepted";
@@ -78,6 +87,13 @@
     if (/\bRuntime Error\b/.test(body)) return "Runtime Error";
     if (/\bTime Limit Exceeded\b/.test(body)) return "Time Limit Exceeded";
     return "Unknown";
+  }
+
+  function hasAcceptedResultSignal() {
+    const body = document.body?.textContent || "";
+    if (!/\bAccepted\b/.test(body)) return false;
+    if (/\/submissions(\/|$)/.test(location.pathname)) return true;
+    return /\bRuntime\b/.test(body) && /\bMemory\b/.test(body);
   }
 
   function normalizeLanguage(value, source) {
@@ -154,14 +170,27 @@
     });
   }
 
-  function buildReadme({ title, problemUrl, language, status, exportedAt }) {
-    return [
+  function isoFromUnixSeconds(value) {
+    const seconds = Number(value);
+    if (!Number.isFinite(seconds)) return "";
+    return new Date(seconds * 1000).toISOString();
+  }
+
+  function buildReadme({ title, problemUrl, language, status, exportedAt, submittedAt, submissionId }) {
+    const lines = [
       `# ${title}`,
       "",
       `- LeetCode: ${problemUrl}`,
       `- Language: ${language}`,
       `- Exported at: ${exportedAt}`,
       `- Submission status seen by extension: ${status}`,
+    ];
+
+    if (submittedAt) lines.push(`- Submitted at: ${submittedAt}`);
+    if (submissionId) lines.push(`- Submission ID: ${submissionId}`);
+
+    return [
+      ...lines,
       "",
       "## Key Idea",
       "",
@@ -173,6 +202,31 @@
       "- Space: TODO",
       "",
     ].join("\n");
+  }
+
+  function buildExport({ source, title, slug, frontendId, language, status, exportedAt, submittedAt, problemUrl, code, submissionId }) {
+    const folderPrefix = frontendId ? String(frontendId).padStart(4, "0") : "0000";
+    const folder = `${folderPrefix}-${slug || sanitizeSlug(title) || "leetcode-solution"}`;
+    const extension = languageExtensions[language] || "txt";
+    const path = `submissions/${folder}/solution.${extension}`;
+
+    return {
+      source,
+      title,
+      slug,
+      frontendId,
+      language,
+      status,
+      exportedAt,
+      submittedAt,
+      submissionId,
+      problemUrl,
+      path,
+      readmePath: `submissions/${folder}/README.md`,
+      code,
+      readme: buildReadme({ title, problemUrl, language, status, exportedAt, submittedAt, submissionId }),
+      key: `${path}:${hashString(code || "")}`,
+    };
   }
 
   async function collectSolution() {
@@ -189,15 +243,12 @@
     const slug = findProblemSlug();
     const rawTitle = findTitle();
     const { frontendId, title } = splitFrontendIdAndTitle(rawTitle);
-    const folderPrefix = frontendId ? frontendId.padStart(4, "0") : "0000";
-    const folder = `${folderPrefix}-${slug || sanitizeSlug(title) || "leetcode-solution"}`;
     const language = findLanguage(pagePayload, source);
-    const extension = languageExtensions[language] || "txt";
     const status = findAcceptedStatus();
     const exportedAt = new Date().toISOString();
     const problemUrl = slug ? `https://leetcode.com/problems/${slug}/` : location.href;
 
-    return {
+    return buildExport({
       source: SOURCE,
       title,
       slug,
@@ -206,20 +257,204 @@
       status,
       exportedAt,
       problemUrl,
-      path: `submissions/${folder}/solution.${extension}`,
-      readmePath: `submissions/${folder}/README.md`,
       code: source,
-      readme: buildReadme({ title, problemUrl, language, status, exportedAt }),
+    });
+  }
+
+  async function fetchLeetCodeGraphql(query, variables) {
+    const response = await fetch("https://leetcode.com/graphql/", {
+      method: "POST",
+      credentials: "include",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ query, variables }),
+    });
+
+    if (!response.ok) {
+      throw new Error(`LeetCode request failed: HTTP ${response.status}`);
+    }
+
+    const body = await response.json();
+    if (body.errors?.length) {
+      throw new Error(body.errors.map((error) => error.message).join("; "));
+    }
+
+    return body.data || {};
+  }
+
+  const submissionListQuery = `query submissions($offset: Int!, $limit: Int!, $lastKey: String, $questionSlug: String) {
+    submissionList(offset: $offset, limit: $limit, lastKey: $lastKey, questionSlug: $questionSlug) {
+      lastKey
+      hasNext
+      submissions {
+        id
+        title
+        titleSlug
+        statusDisplay
+        lang
+        timestamp
+        url
+      }
+    }
+  }`;
+
+  const submissionDetailsQuery = `query submissionDetails($submissionId: Int!) {
+    submissionDetails(submissionId: $submissionId) {
+      id
+      code
+      runtime
+      memory
+      statusDisplay
+      timestamp
+      question {
+        questionFrontendId
+        title
+        titleSlug
+      }
+      lang {
+        name
+        verboseName
+      }
+    }
+  }`;
+
+  function exportFromSubmission(summary, details) {
+    const code = String(details?.code || "").trimEnd();
+    if (!code) return null;
+
+    const question = details?.question || {};
+    const title = question.title || summary.title || "LeetCode Solution";
+    const slug = sanitizeSlug(question.titleSlug || summary.titleSlug || title);
+    const frontendId = question.questionFrontendId || "";
+    const language = normalizeLanguage(details?.lang?.name || details?.lang?.verboseName || summary.lang, code);
+    const status = details?.statusDisplay || summary.statusDisplay || "Accepted";
+    const exportedAt = new Date().toISOString();
+    const submittedAt = isoFromUnixSeconds(details?.timestamp || summary.timestamp);
+    const problemUrl = slug ? `https://leetcode.com/problems/${slug}/` : `https://leetcode.com${summary.url || ""}`;
+
+    return buildExport({
+      source: "leetcode-repo-exporter-history",
+      title,
+      slug,
+      frontendId,
+      language,
+      status,
+      exportedAt,
+      submittedAt,
+      problemUrl,
+      code,
+      submissionId: details?.id || summary.id,
+    });
+  }
+
+  function sleep(ms) {
+    return new Promise((resolve) => window.setTimeout(resolve, ms));
+  }
+
+  async function collectAcceptedHistory({ limit = 100 } = {}) {
+    const maxAccepted = Math.max(1, Math.min(Number(limit) || 100, 300));
+    const pageLimit = 20;
+    const exports = [];
+    const seenIds = new Set();
+    let offset = 0;
+    let lastKey = null;
+    let scanned = 0;
+
+    for (let page = 0; page < 25 && exports.length < maxAccepted; page += 1) {
+      const data = await fetchLeetCodeGraphql(submissionListQuery, {
+        offset,
+        limit: pageLimit,
+        lastKey,
+        questionSlug: null,
+      });
+      const list = data.submissionList;
+      const submissions = list?.submissions;
+
+      if (!Array.isArray(submissions)) {
+        throw new Error("LeetCode did not return your submission list. Check that you are logged in.");
+      }
+
+      if (submissions.length === 0) break;
+      scanned += submissions.length;
+
+      for (const submission of submissions) {
+        if (exports.length >= maxAccepted) break;
+        if (submission.statusDisplay !== "Accepted") continue;
+        if (seenIds.has(submission.id)) continue;
+        seenIds.add(submission.id);
+
+        const detailsData = await fetchLeetCodeGraphql(submissionDetailsQuery, {
+          submissionId: Number(submission.id),
+        });
+        const exported = exportFromSubmission(submission, detailsData.submissionDetails);
+        if (exported) exports.push(exported);
+        await sleep(250);
+      }
+
+      if (!list.hasNext) break;
+      offset += pageLimit;
+      lastKey = list.lastKey || null;
+    }
+
+    return {
+      scanned,
+      exports,
     };
   }
 
   chrome.runtime.onMessage.addListener((message, _sender, sendResponse) => {
-    if (message?.type !== "collect-solution") return false;
+    if (message?.type === "collect-solution") {
+      collectSolution()
+        .then((payload) => sendResponse({ ok: true, payload }))
+        .catch((error) => sendResponse({ ok: false, error: error.message || String(error) }));
 
-    collectSolution()
-      .then((payload) => sendResponse({ ok: true, payload }))
-      .catch((error) => sendResponse({ ok: false, error: error.message || String(error) }));
+      return true;
+    }
 
-    return true;
+    if (message?.type === "collect-history") {
+      collectAcceptedHistory(message.payload || {})
+        .then((payload) => sendResponse({ ok: true, payload }))
+        .catch((error) => sendResponse({ ok: false, error: error.message || String(error) }));
+
+      return true;
+    }
+
+    return false;
+  });
+
+  let autoTimer = null;
+  let lastAutoKey = "";
+
+  async function maybeAutoCapture() {
+    const settings = await chrome.storage.local.get({ autoCapture: true });
+    if (!settings.autoCapture) return;
+
+    try {
+      if (!hasAcceptedResultSignal()) return;
+      const payload = await collectSolution();
+      if (payload.status !== "Accepted") return;
+      if (payload.key === lastAutoKey) return;
+      lastAutoKey = payload.key;
+      chrome.runtime.sendMessage({ type: "auto-captured-solution", payload }, () => {
+        void chrome.runtime.lastError;
+      });
+    } catch {
+      // Most LeetCode pages do not expose an accepted solution; ignore quiet auto-capture misses.
+    }
+  }
+
+  function scheduleAutoCapture(delay = 1200) {
+    window.clearTimeout(autoTimer);
+    autoTimer = window.setTimeout(maybeAutoCapture, delay);
+  }
+
+  window.addEventListener("load", () => scheduleAutoCapture(1800));
+  window.addEventListener("popstate", () => scheduleAutoCapture(1800));
+  scheduleAutoCapture(1800);
+
+  const observer = new MutationObserver(() => scheduleAutoCapture());
+  observer.observe(document.documentElement, {
+    childList: true,
+    subtree: true,
+    characterData: true,
   });
 })();
