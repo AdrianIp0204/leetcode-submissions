@@ -35,6 +35,10 @@ Automatic handoff bundles land here:
 Downloads/leetcode-submissions/queue/...
 ```
 
+If Dropbox or Windows appends `.dropboxignore` to a queue bundle, the watcher
+still imports it. Older raw `README.dropboxignore` or `solution.dropboxignore`
+downloads can be ignored or deleted; they are legacy artifacts, not repo files.
+
 If you prefer direct folder saving, use **Save Queue To Repo** and select the cloned `leetcode-submissions` repo root.
 
 ## No-Repeated-Command Sync

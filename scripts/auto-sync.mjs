@@ -185,6 +185,10 @@ async function archiveBundle(bundlePath) {
   await rename(bundlePath, path.join(processedDir, `${Date.now()}-${path.basename(bundlePath)}`));
 }
 
+function isExportBundleFile(name) {
+  return /\.json(?:\.dropboxignore)?$/i.test(name);
+}
+
 async function importExportBundles(inbox) {
   const queueDirs = ["queue", "_queue", ".queue"].map((name) => path.join(inbox, name));
   let bundles = 0;
@@ -196,7 +200,7 @@ async function importExportBundles(inbox) {
 
     const entries = await readdir(queueDir, { withFileTypes: true });
     for (const entry of entries) {
-      if (!entry.isFile() || !entry.name.endsWith(".json")) continue;
+      if (!entry.isFile() || !isExportBundleFile(entry.name)) continue;
 
       const bundlePath = path.join(queueDir, entry.name);
       const bundle = JSON.parse(await readFile(bundlePath, "utf8"));
