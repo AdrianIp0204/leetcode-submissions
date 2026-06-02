@@ -7,6 +7,7 @@ import process from "node:process";
 
 const root = process.cwd();
 const defaultConfigPath = path.join(root, ".leetcode-sync.json");
+const trackedConfigPath = path.join(root, "config", "leetcode-sync.json");
 
 function readArg(name) {
   const prefix = `--${name}=`;
@@ -18,7 +19,7 @@ function readArg(name) {
 }
 
 async function readConfig() {
-  const configPath = readArg("config") || defaultConfigPath;
+  const configPath = readArg("config") || (existsSync(defaultConfigPath) ? defaultConfigPath : trackedConfigPath);
   if (!existsSync(configPath)) return {};
   return JSON.parse(await readFile(configPath, "utf8"));
 }

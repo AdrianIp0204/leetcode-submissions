@@ -21,6 +21,7 @@ Public LeetCode data can provide:
 - Solved counts by difficulty.
 - Ranking and contest ranking.
 - Recent accepted submission titles, slugs, timestamps, and language.
+- Profile metadata for the configured public username, currently `AdrianIp`.
 
 Public LeetCode data cannot provide:
 
@@ -45,4 +46,3 @@ Before making this public:
 - Link to LeetCode problems instead of copying full problem statements.
 - Add complexity notes and the key idea for stronger problems.
 - Prefer a smaller set of clean, representative solutions over a raw mirror.
-

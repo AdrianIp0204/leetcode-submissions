@@ -32,7 +32,7 @@ submissions/0001-two-sum/solution.ts
 Public LeetCode data can be fetched without a browser extension or login cookie:
 
 ```bash
-npm run fetch:public -- --username your-leetcode-username
+npm run fetch:public
 ```
 
 That writes:
@@ -58,6 +58,6 @@ To also push to GitHub:
 npm run sync:daily -- --push
 ```
 
-For a local config, copy `config/leetcode-sync.example.json` to `.leetcode-sync.json`. The copied file is ignored by git.
+The tracked public config uses LeetCode username `AdrianIp`. For private local overrides, copy `config/leetcode-sync.example.json` to `.leetcode-sync.json`. The copied file is ignored by git.
 
 See `docs/sync-strategy.md` for the privacy tradeoffs and public-portfolio rules.
