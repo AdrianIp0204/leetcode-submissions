@@ -2,7 +2,7 @@
 
 - LeetCode: https://leetcode.com/problems/concatenation-of-array/
 - Language: python3
-- Exported at: 2026-06-03T06:34:30.651Z
+- Exported at: 2026-06-03T06:36:04.396Z
 - Submission status seen by extension: Accepted
 
 ## Key Idea
