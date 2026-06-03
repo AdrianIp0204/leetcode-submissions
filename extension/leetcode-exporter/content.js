@@ -83,20 +83,91 @@
     return Math.abs(hash).toString(36);
   }
 
-  function findAcceptedStatus() {
-    const body = document.body?.textContent || "";
-    if (/\bAccepted\b/.test(body)) return "Accepted";
-    if (/\bWrong Answer\b/.test(body)) return "Wrong Answer";
-    if (/\bRuntime Error\b/.test(body)) return "Runtime Error";
-    if (/\bTime Limit Exceeded\b/.test(body)) return "Time Limit Exceeded";
-    return "Unknown";
+  const submissionStatuses = [
+    "Wrong Answer",
+    "Runtime Error",
+    "Time Limit Exceeded",
+    "Memory Limit Exceeded",
+    "Compile Error",
+    "Output Limit Exceeded",
+    "Presentation Error",
+    "Internal Error",
+    "Accepted",
+  ];
+
+  function regexEscape(value) {
+    return String(value).replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
   }
 
-  function hasAcceptedResultSignal() {
-    const body = document.body?.textContent || "";
-    if (!/\bAccepted\b/.test(body)) return false;
-    if (/\/submissions(\/|$)/.test(location.pathname)) return true;
-    return /\bRuntime\b/.test(body) && /\bMemory\b/.test(body);
+  function findStatusInText(value) {
+    const text = String(value || "").replace(/\s+/g, " ").trim();
+    if (!text) return "";
+
+    const matches = submissionStatuses
+      .map((status) => {
+        const match = text.match(new RegExp(`\\b${regexEscape(status)}\\b`, "i"));
+        return match ? { status, index: match.index ?? 0 } : null;
+      })
+      .filter(Boolean)
+      .sort((left, right) => left.index - right.index);
+
+    return matches[0]?.status || "";
+  }
+
+  function findVisibleSubmissionStatus() {
+    const exactStatusElements = [...document.querySelectorAll("div,span,p,h3")].filter((element) => {
+      const value = element.textContent?.replace(/\s+/g, " ").trim() || "";
+      return value.length > 0 && value.length <= 60;
+    });
+
+    for (const element of exactStatusElements) {
+      const value = element.textContent?.replace(/\s+/g, " ").trim() || "";
+      const status = submissionStatuses.find(
+        (candidate) => candidate.toLowerCase() === value.toLowerCase(),
+      );
+      if (!status) continue;
+
+      let current = element;
+      for (let depth = 0; current && depth < 5; depth += 1) {
+        const context = current.textContent?.replace(/\s+/g, " ").trim() || "";
+        if (
+          /runtime|memory|testcase|stdout|input|output|expected|submission|result/i.test(context) ||
+          /\/submissions(\/|$)/.test(location.pathname)
+        ) {
+          return status;
+        }
+        current = current.parentElement;
+      }
+    }
+
+    const resultSelectors = [
+      "[data-e2e-locator*='submission']",
+      "[data-e2e-locator*='result']",
+      "[data-cy*='submission']",
+      "[data-cy*='result']",
+      "[class*='submission']",
+      "[class*='result']",
+      "[class*='judge']",
+      "[class*='runtime']",
+      "[class*='memory']",
+    ];
+
+    for (const selector of resultSelectors) {
+      for (const element of document.querySelectorAll(selector)) {
+        const value = element.textContent?.replace(/\s+/g, " ").trim() || "";
+        if (!value || value.length > 1200) continue;
+        const status = findStatusInText(value);
+        if (!status) continue;
+        if (
+          /runtime|memory|testcase|stdout|input|output|expected|submission|result/i.test(value) ||
+          /\/submissions(\/|$)/.test(location.pathname)
+        ) {
+          return status;
+        }
+      }
+    }
+
+    return "Unknown";
   }
 
   function findSubmissionIdFromLocation() {
@@ -107,28 +178,33 @@
     );
   }
 
-  function findAcceptedAutoSignal() {
-    if (!hasAcceptedResultSignal()) return "";
+  function findSubmissionAutoSignal() {
+    const status = findVisibleSubmissionStatus();
+    if (status === "Unknown") return "";
 
     const submissionId = findSubmissionIdFromLocation();
     if (submissionId) return `submission:${submissionId}`;
 
-    const statusElements = [...document.querySelectorAll("div,span,p")].filter(
-      (element) => element.textContent?.trim() === "Accepted",
-    );
+    const statusElements = [...document.querySelectorAll("div,span,p,h3")].filter((element) => {
+      const value = element.textContent?.replace(/\s+/g, " ").trim() || "";
+      return value.toLowerCase() === status.toLowerCase();
+    });
 
     for (const element of statusElements) {
       let current = element;
       for (let depth = 0; current && depth < 5; depth += 1) {
         const value = current.textContent?.replace(/\s+/g, " ").trim() || "";
-        if (value.includes("Accepted") && value.includes("Runtime") && value.includes("Memory")) {
+        if (
+          value.includes(status) &&
+          /runtime|memory|testcase|stdout|input|output|expected/i.test(value)
+        ) {
           return `result:${findProblemSlug()}:${hashString(value.slice(0, 500))}`;
         }
         current = current.parentElement;
       }
     }
 
-    return `result:${findProblemSlug()}:accepted`;
+    return `result:${findProblemSlug()}:${sanitizeSlug(status)}`;
   }
 
   function isEditorMutation(mutation) {
@@ -272,11 +348,28 @@
     ].join("\n");
   }
 
+  function isAcceptedStatus(status) {
+    return /^accepted$/i.test(String(status || ""));
+  }
+
+  function attemptKey({ status, exportedAt, submittedAt, submissionId }) {
+    const id = submissionId ? `submission-${submissionId}` : submittedAt || exportedAt;
+    return `${String(id || "unknown")
+      .replace(/[:.]/g, "-")
+      .replace(/[^a-zA-Z0-9_-]+/g, "-")
+      .replace(/^-+|-+$/g, "")
+      .slice(0, 80)}-${sanitizeSlug(status || "unknown") || "unknown"}`;
+  }
+
   function buildExport({ source, title, slug, frontendId, language, status, exportedAt, submittedAt, problemUrl, code, submissionId }) {
     const folderPrefix = frontendId ? String(frontendId).padStart(4, "0") : "0000";
     const folder = `${folderPrefix}-${slug || sanitizeSlug(title) || "leetcode-solution"}`;
     const extension = languageExtensions[language] || "txt";
-    const path = `submissions/${folder}/solution.${extension}`;
+    const basePath = `submissions/${folder}`;
+    const targetDir = isAcceptedStatus(status)
+      ? basePath
+      : `${basePath}/attempts/${attemptKey({ status, exportedAt, submittedAt, submissionId })}`;
+    const path = `${targetDir}/solution.${extension}`;
 
     return {
       source,
@@ -290,7 +383,7 @@
       submissionId,
       problemUrl,
       path,
-      readmePath: `submissions/${folder}/README.md`,
+      readmePath: `${targetDir}/README.md`,
       code,
       readme: buildReadme({ title, problemUrl, language, status, exportedAt, submittedAt, submissionId }),
       key: `${path}:${hashString(code || "")}`,
@@ -300,6 +393,17 @@
   async function collectSolution() {
     if (!location.hostname.endsWith("leetcode.com")) {
       throw new Error("Open a LeetCode page first.");
+    }
+
+    const submissionId = findSubmissionIdFromLocation();
+    if (submissionId) return collectSubmissionById(submissionId);
+
+    if (findVisibleSubmissionStatus() !== "Unknown") {
+      try {
+        return await collectLatestSubmissionForPage();
+      } catch {
+        // Fall back to the visible editor/code extraction path below.
+      }
     }
 
     const pagePayload = await readPageContext();
@@ -312,7 +416,7 @@
     const rawTitle = findTitle();
     const { frontendId, title } = splitFrontendIdAndTitle(rawTitle);
     const language = findLanguage(pagePayload, source);
-    const status = findAcceptedStatus();
+    const status = findVisibleSubmissionStatus();
     const exportedAt = new Date().toISOString();
     const problemUrl = slug ? `https://leetcode.com/problems/${slug}/` : location.href;
 
@@ -394,7 +498,7 @@
     const slug = sanitizeSlug(question.titleSlug || summary.titleSlug || title);
     const frontendId = question.questionFrontendId || "";
     const language = normalizeLanguage(details?.lang?.name || details?.lang?.verboseName || summary.lang, code);
-    const status = details?.statusDisplay || summary.statusDisplay || "Accepted";
+    const status = details?.statusDisplay || summary.statusDisplay || "Unknown";
     const exportedAt = new Date().toISOString();
     const submittedAt = isoFromUnixSeconds(details?.timestamp || summary.timestamp);
     const problemUrl = slug ? `https://leetcode.com/problems/${slug}/` : `https://leetcode.com${summary.url || ""}`;
@@ -414,7 +518,16 @@
     });
   }
 
-  async function collectLatestAcceptedSubmissionForPage() {
+  async function collectSubmissionById(submissionId) {
+    const detailsData = await fetchLeetCodeGraphql(submissionDetailsQuery, {
+      submissionId: Number(submissionId),
+    });
+    const exported = exportFromSubmission({ id: submissionId }, detailsData.submissionDetails);
+    if (!exported) throw new Error("Could not read the submission code.");
+    return exported;
+  }
+
+  async function collectLatestSubmissionForPage({ acceptedOnly = false } = {}) {
     const slug = findProblemSlug();
     if (!slug || slug === "leetcode-solution") {
       throw new Error("Could not identify the current LeetCode problem.");
@@ -431,22 +544,36 @@
       throw new Error("LeetCode did not return your submission list. Check that you are logged in.");
     }
 
-    const accepted = submissions.find((submission) => submission.statusDisplay === "Accepted");
-    if (!accepted) {
-      throw new Error("No accepted submission was found for this problem yet.");
+    const sortedSubmissions = [...submissions].sort(
+      (left, right) => Number(right.timestamp || 0) - Number(left.timestamp || 0),
+    );
+    const selected = acceptedOnly
+      ? sortedSubmissions.find((submission) => submission.statusDisplay === "Accepted")
+      : sortedSubmissions[0];
+    if (!selected) {
+      throw new Error(
+        acceptedOnly
+          ? "No accepted submission was found for this problem yet."
+          : "No submission was found for this problem yet.",
+      );
     }
 
     const detailsData = await fetchLeetCodeGraphql(submissionDetailsQuery, {
-      submissionId: Number(accepted.id),
+      submissionId: Number(selected.id),
     });
-    const exported = exportFromSubmission(accepted, detailsData.submissionDetails);
-    if (!exported) throw new Error("Could not read the latest accepted submission code.");
+    const exported = exportFromSubmission(selected, detailsData.submissionDetails);
+    if (!exported) throw new Error("Could not read the latest submission code.");
     return exported;
   }
 
-  async function collectAutoAcceptedSolution() {
-    if (findSubmissionIdFromLocation()) return collectSolution();
-    return collectLatestAcceptedSubmissionForPage();
+  async function collectLatestAcceptedSubmissionForPage() {
+    return collectLatestSubmissionForPage({ acceptedOnly: true });
+  }
+
+  async function collectAutoSubmission() {
+    const submissionId = findSubmissionIdFromLocation();
+    if (submissionId) return collectSubmissionById(submissionId);
+    return collectLatestSubmissionForPage();
   }
 
   function sleep(ms) {
@@ -602,7 +729,7 @@
       const settings = await chrome.storage.local.get({ autoCapture: true });
       if (!settings.autoCapture) return;
 
-      const autoSignal = findAcceptedAutoSignal();
+      const autoSignal = findSubmissionAutoSignal();
       if (!autoSignal) return;
 
       const now = Date.now();
@@ -623,9 +750,8 @@
       lastAutoSignal = autoSignal;
       lastAutoCheckAt = now;
 
-      const payload = await collectAutoAcceptedSolution();
+      const payload = await collectAutoSubmission();
       if (!isFreshAutoPayload(payload, now)) return;
-      if (payload.status !== "Accepted") return;
       const autoKey = payload.submissionId ? `submission:${payload.submissionId}` : payload.key;
       if (autoKey === lastAutoKey) return;
       lastAutoKey = autoKey;

@@ -1,6 +1,6 @@
 # Submissions
 
-Put accepted LeetCode solutions here.
+Put LeetCode submissions here.
 
 Recommended folder pattern:
 
@@ -10,3 +10,5 @@ Recommended folder pattern:
 0206-reverse-linked-list/
 ```
 
+Accepted submissions use the problem folder's canonical `solution.*`.
+Non-accepted attempts live under that problem folder's `attempts/` directory.
