@@ -3,7 +3,7 @@
 - LeetCode: https://leetcode.com/problems/earliest-finish-time-for-land-and-water-rides-ii/
 - Language: python3
 - Exported at: 2026-06-03T06:28:39.859Z
-- Submission status seen by extension: Accepted
+- Submission status seen by extension: Unknown (legacy visible-page capture before status fix; verify in LeetCode)
 
 ## Key Idea
 

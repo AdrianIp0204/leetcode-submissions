@@ -118,12 +118,10 @@ async function collectCurrentSolution() {
     });
     await refreshState();
 
-    if (currentExport.status !== "Accepted") {
-      setMessage("Collected code. Status was not clearly Accepted, so review before committing.");
-    } else if (stored.autoDownloaded) {
-      setMessage("Collected accepted solution and handed it to local sync.");
+    if (stored.autoDownloaded) {
+      setMessage(`Collected ${currentExport.status} submission and handed it to local sync.`);
     } else {
-      setMessage("Collected accepted solution and queued it.");
+      setMessage(`Collected ${currentExport.status} submission and queued it.`);
     }
   } catch (error) {
     currentExport = null;

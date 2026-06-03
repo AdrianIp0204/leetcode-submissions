@@ -168,7 +168,6 @@ function canonicalSolutionCode(value) {
 }
 
 async function writeExport(payload) {
-  if (!/^accepted$/i.test(String(payload.status || ""))) return { files: 0, skippedDuplicates: 0 };
   if (!payload.path || !payload.code) return { files: 0, skippedDuplicates: 0 };
 
   const solutionPath = safeRepoPath(payload.path);

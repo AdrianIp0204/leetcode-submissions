@@ -76,10 +76,6 @@ async function addExports(exports, reason = "manual") {
 
   for (const payload of exports.filter(Boolean)) {
     if (!payload.path || !payload.code) continue;
-    if (!/^accepted$/i.test(String(payload.status || ""))) {
-      skipped.push(payload);
-      continue;
-    }
 
     const key = payload.key || exportKey(payload);
     if (next[key]) {

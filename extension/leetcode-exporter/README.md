@@ -1,6 +1,6 @@
 # LeetCode Repo Exporter
 
-First-party browser extension for saving accepted LeetCode solutions into this repo.
+First-party browser extension for saving LeetCode submissions into this repo.
 
 It is intentionally boring:
 
@@ -24,10 +24,14 @@ extension/leetcode-exporter
 
 ## Use
 
-1. Open a LeetCode problem page or accepted submission page.
-2. Keep **Auto collect accepted pages** and **Auto hand off to local sync** enabled.
-3. When a new accepted submission appears, the extension queues that accepted submission and creates one sync handoff bundle automatically.
+1. Open a LeetCode problem page or submission page.
+2. Keep **Auto collect submission results** and **Auto hand off to local sync** enabled.
+3. When a new submission result appears, the extension queues that submission and creates one sync handoff bundle automatically.
 4. To backfill older solutions, open any LeetCode page while logged in and click **Collect Past Accepted**.
+
+Accepted submissions are written as the canonical `submissions/<problem>/solution.*`.
+Non-accepted attempts are kept under `submissions/<problem>/attempts/...` so a
+failed attempt does not overwrite the accepted solution.
 
 Automatic handoff bundles land here:
 
