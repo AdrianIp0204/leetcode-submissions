@@ -1,21 +1,21 @@
 class Solution:
     def earliestFinishTime(self, StartL: List[int], DurationL: List[int], StartW: List[int], DurationW: List[int]) -> int:
-        minL, minW = 500000, 500000
-        pathL, pathW = 0, 0
-        n, m = len(StartL), len(StartW)
+        earliestL = float("inf")
+        for s, d in zip(StartL, DurationL):
+            earliestL = min(earliestL, s + d)
 
-        for i in range(n):
-            totL = StartL[i] + DurationL[i]
-            if totL < minL:
-                for j in range(m):
-                    pathL = max(totL, StartW[j]) + DurationW[j]
-                    if pathL < minL:
-                        minL = pathL
-        for i in range(m):
-            totW = StartW[i] + DurationW[i]
-            if totW < minW:
-                for j in range(n):
-                    pathW = max(totW, StartL[j]) + DurationL[j]
-                    if pathW < minW:
-                        minW = pathW
-        return min(minL, minW)
+        earliestW = float("inf")
+        for s, d in zip(StartW, DurationW):
+            earliestW = min(earliestW, s + d)
+
+        ans = float("inf")
+
+        for s, d in zip(StartW, DurationW):
+            finish = max(earliestL, s) + d
+            ans = min(ans, finish)
+
+        for s, d in zip(StartL, DurationL):
+            finish = max(earliestW, s) + d
+            ans = min(ans, finish)
+
+        return ans
