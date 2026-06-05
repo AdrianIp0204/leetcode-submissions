@@ -35,9 +35,14 @@ function isoFromUnixSeconds(value) {
   return new Date(seconds * 1000).toISOString();
 }
 
+function statMap(items = []) {
+  return Object.fromEntries(items.map((item) => [item.difficulty, item]));
+}
+
 function renderMarkdown(snapshot) {
   const profile = snapshot.profile;
-  const stats = snapshot.solvedByDifficulty;
+  const acceptedStats = snapshot.solvedByDifficulty;
+  const totalStats = snapshot.totalByDifficulty ?? [];
   const contest = snapshot.contestRanking;
   const lines = [
     "# LeetCode Public Snapshot",
@@ -51,8 +56,15 @@ function renderMarkdown(snapshot) {
   if (profile.realName) lines.push(`- Display name: ${profile.realName}`);
 
   lines.push("", "## Solved", "");
-  for (const item of stats) {
+  for (const item of acceptedStats) {
     lines.push(`- ${item.difficulty}: ${item.count} solved / ${item.submissions} accepted submissions`);
+  }
+
+  if (totalStats.length > 0) {
+    lines.push("", "## Total Attempts", "");
+    for (const item of totalStats) {
+      lines.push(`- ${item.difficulty}: ${item.count} attempted problems / ${item.submissions} total submissions`);
+    }
   }
 
   if (contest) {
@@ -107,6 +119,11 @@ async function main() {
           count
           submissions
         }
+        totalSubmissionNum {
+          difficulty
+          count
+          submissions
+        }
       }
     }
     recentAcSubmissionList(username: $username, limit: $limit) {
@@ -149,14 +166,26 @@ async function main() {
     process.exit(3);
   }
 
+  const solvedByDifficulty = user.submitStatsGlobal?.acSubmissionNum ?? [];
+  const totalByDifficulty = user.submitStatsGlobal?.totalSubmissionNum ?? [];
+  const acceptedByDifficulty = statMap(solvedByDifficulty);
+  const attemptedByDifficulty = statMap(totalByDifficulty);
+
   const snapshot = {
     fetchedAt: new Date().toISOString(),
     username: user.username,
     profile: user.profile,
-    solvedByDifficulty: user.submitStatsGlobal?.acSubmissionNum ?? [],
+    solvedByDifficulty,
+    totalByDifficulty,
+    summary: {
+      accepted: acceptedByDifficulty,
+      total: attemptedByDifficulty,
+    },
     contestRanking: body.data?.userContestRanking ?? null,
     recentAccepted: (body.data?.recentAcSubmissionList ?? []).map((item) => ({
       ...item,
+      title: String(item.title || "").trim(),
+      titleSlug: String(item.titleSlug || "").trim(),
       acceptedAt: isoFromUnixSeconds(item.timestamp),
     })),
     source: "LeetCode public GraphQL; no login cookie or browser extension used.",

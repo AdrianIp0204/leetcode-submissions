@@ -34,6 +34,8 @@ Public LeetCode data can be fetched without a browser extension or login cookie:
 
 ```bash
 npm run fetch:public
+npm run sync:health
+npm run recommend:next
 ```
 
 That writes:
@@ -41,9 +43,12 @@ That writes:
 ```text
 profile/leetcode-public.json
 profile/recent-accepted.md
+profile/sync-health.md
+notes/next-problems.md
 ```
 
 This only syncs public stats and recent accepted metadata. It does not fetch source code.
+If `profile/sync-health.md` says the repo is behind the public solved count, use the extension's **Collect Past Accepted** button while logged in before trusting local pattern coverage.
 
 ## Daily Local Commit Helper
 
@@ -72,6 +77,7 @@ extension/leetcode-exporter
 ```
 
 It runs only on LeetCode, does not use a GitHub token, auto-captures accepted visible solutions, and can backfill past accepted submissions from your logged-in LeetCode browser session. See `extension/leetcode-exporter/README.md`.
+Generated READMEs include difficulty, tags, runtime/memory when LeetCode exposes them, plus short reflection fields for pattern, key idea, mistake/edge case, and complexity.
 
 ## Automatic Local Sync
 

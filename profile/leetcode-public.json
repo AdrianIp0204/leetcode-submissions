@@ -1,10 +1,10 @@
 {
-  "fetchedAt": "2026-06-02T10:28:16.613Z",
+  "fetchedAt": "2026-06-05T14:02:13.400Z",
   "username": "AdrianIp",
   "profile": {
     "realName": "AdrianIp",
     "userAvatar": "https://assets.leetcode.com/users/default_avatar.jpg",
-    "ranking": 3897884,
+    "ranking": 1917473,
     "reputation": 0,
     "countryName": null,
     "company": null,
@@ -15,186 +15,254 @@
   "solvedByDifficulty": [
     {
       "difficulty": "All",
-      "count": 29,
-      "submissions": 30
+      "count": 83,
+      "submissions": 93
     },
     {
       "difficulty": "Easy",
-      "count": 21,
-      "submissions": 22
+      "count": 66,
+      "submissions": 76
     },
     {
       "difficulty": "Medium",
-      "count": 6,
-      "submissions": 6
+      "count": 13,
+      "submissions": 13
     },
     {
       "difficulty": "Hard",
-      "count": 2,
-      "submissions": 2
+      "count": 4,
+      "submissions": 4
     }
   ],
+  "totalByDifficulty": [
+    {
+      "difficulty": "All",
+      "count": 84,
+      "submissions": 129
+    },
+    {
+      "difficulty": "Easy",
+      "count": 66,
+      "submissions": 93
+    },
+    {
+      "difficulty": "Medium",
+      "count": 13,
+      "submissions": 26
+    },
+    {
+      "difficulty": "Hard",
+      "count": 5,
+      "submissions": 10
+    }
+  ],
+  "summary": {
+    "accepted": {
+      "All": {
+        "difficulty": "All",
+        "count": 83,
+        "submissions": 93
+      },
+      "Easy": {
+        "difficulty": "Easy",
+        "count": 66,
+        "submissions": 76
+      },
+      "Medium": {
+        "difficulty": "Medium",
+        "count": 13,
+        "submissions": 13
+      },
+      "Hard": {
+        "difficulty": "Hard",
+        "count": 4,
+        "submissions": 4
+      }
+    },
+    "total": {
+      "All": {
+        "difficulty": "All",
+        "count": 84,
+        "submissions": 129
+      },
+      "Easy": {
+        "difficulty": "Easy",
+        "count": 66,
+        "submissions": 93
+      },
+      "Medium": {
+        "difficulty": "Medium",
+        "count": 13,
+        "submissions": 26
+      },
+      "Hard": {
+        "difficulty": "Hard",
+        "count": 5,
+        "submissions": 10
+      }
+    }
+  },
   "contestRanking": null,
   "recentAccepted": [
     {
-      "title": "Difference Between Element Sum and Digit Sum of an Array",
-      "titleSlug": "difference-between-element-sum-and-digit-sum-of-an-array",
-      "timestamp": "1780392418",
+      "title": "Best Time to Buy and Sell Stock",
+      "titleSlug": "best-time-to-buy-and-sell-stock",
+      "timestamp": "1780667490",
       "statusDisplay": "Accepted",
       "lang": "python3",
-      "acceptedAt": "2026-06-02T09:26:58.000Z"
+      "acceptedAt": "2026-06-05T13:51:30.000Z"
     },
     {
-      "title": "Divide Two Integers",
-      "titleSlug": "divide-two-integers",
-      "timestamp": "1780391503",
+      "title": "Valid Anagram",
+      "titleSlug": "valid-anagram",
+      "timestamp": "1780666835",
       "statusDisplay": "Accepted",
       "lang": "python3",
-      "acceptedAt": "2026-06-02T09:11:43.000Z"
+      "acceptedAt": "2026-06-05T13:40:35.000Z"
     },
     {
-      "title": "Earliest Finish Time for Land and Water Rides I",
-      "titleSlug": "earliest-finish-time-for-land-and-water-rides-i",
-      "timestamp": "1780387987",
+      "title": "Contains Duplicate",
+      "titleSlug": "contains-duplicate",
+      "timestamp": "1780666477",
       "statusDisplay": "Accepted",
       "lang": "python3",
-      "acceptedAt": "2026-06-02T08:13:07.000Z"
+      "acceptedAt": "2026-06-05T13:34:37.000Z"
     },
     {
-      "title": "Number of Employees Who Met the Target",
-      "titleSlug": "number-of-employees-who-met-the-target",
-      "timestamp": "1780384163",
+      "title": "Count Symmetric Integers",
+      "titleSlug": "count-symmetric-integers",
+      "timestamp": "1780665995",
       "statusDisplay": "Accepted",
       "lang": "python3",
-      "acceptedAt": "2026-06-02T07:09:23.000Z"
+      "acceptedAt": "2026-06-05T13:26:35.000Z"
     },
     {
-      "title": "Minimum Cost of Buying Candies With Discount",
-      "titleSlug": "minimum-cost-of-buying-candies-with-discount",
-      "timestamp": "1780324081",
+      "title": "Check If Two String Arrays are Equivalent",
+      "titleSlug": "check-if-two-string-arrays-are-equivalent",
+      "timestamp": "1780664879",
       "statusDisplay": "Accepted",
       "lang": "python3",
-      "acceptedAt": "2026-06-01T14:28:01.000Z"
+      "acceptedAt": "2026-06-05T13:07:59.000Z"
     },
     {
-      "title": "Find First Palindromic String in the Array",
-      "titleSlug": "find-first-palindromic-string-in-the-array",
-      "timestamp": "1780320742",
+      "title": "Neither Minimum nor Maximum",
+      "titleSlug": "neither-minimum-nor-maximum",
+      "timestamp": "1780664355",
       "statusDisplay": "Accepted",
       "lang": "python3",
-      "acceptedAt": "2026-06-01T13:32:22.000Z"
+      "acceptedAt": "2026-06-05T12:59:15.000Z"
     },
     {
-      "title": "Longest Common Prefix",
-      "titleSlug": "longest-common-prefix",
-      "timestamp": "1780227576",
+      "title": "Maximum Sum With Exactly K Elements",
+      "titleSlug": "maximum-sum-with-exactly-k-elements",
+      "timestamp": "1780664123",
       "statusDisplay": "Accepted",
       "lang": "python3",
-      "acceptedAt": "2026-05-31T11:39:36.000Z"
+      "acceptedAt": "2026-06-05T12:55:23.000Z"
     },
     {
-      "title": "Add Two Numbers",
-      "titleSlug": "add-two-numbers",
-      "timestamp": "1780217803",
+      "title": "Running Sum of 1d Array",
+      "titleSlug": "running-sum-of-1d-array",
+      "timestamp": "1780663645",
       "statusDisplay": "Accepted",
       "lang": "python3",
-      "acceptedAt": "2026-05-31T08:56:43.000Z"
+      "acceptedAt": "2026-06-05T12:47:25.000Z"
     },
     {
-      "title": "Count the Digits That Divide a Number",
-      "titleSlug": "count-the-digits-that-divide-a-number",
-      "timestamp": "1780212197",
+      "title": "Split a String in Balanced Strings",
+      "titleSlug": "split-a-string-in-balanced-strings",
+      "timestamp": "1780639409",
       "statusDisplay": "Accepted",
       "lang": "python3",
-      "acceptedAt": "2026-05-31T07:23:17.000Z"
+      "acceptedAt": "2026-06-05T06:03:29.000Z"
     },
     {
-      "title": "Check if the Sentence Is Pangram",
-      "titleSlug": "check-if-the-sentence-is-pangram",
-      "timestamp": "1780209610",
+      "title": "Number of Changing Keys",
+      "titleSlug": "number-of-changing-keys",
+      "timestamp": "1780636527",
       "statusDisplay": "Accepted",
       "lang": "python3",
-      "acceptedAt": "2026-05-31T06:40:10.000Z"
+      "acceptedAt": "2026-06-05T05:15:27.000Z"
     },
     {
-      "title": "Maximum Number of Words Found in Sentences",
-      "titleSlug": "maximum-number-of-words-found-in-sentences",
-      "timestamp": "1780199103",
+      "title": "Type of Triangle",
+      "titleSlug": "type-of-triangle",
+      "timestamp": "1780635985",
       "statusDisplay": "Accepted",
       "lang": "python3",
-      "acceptedAt": "2026-05-31T03:45:03.000Z"
+      "acceptedAt": "2026-06-05T05:06:25.000Z"
     },
     {
-      "title": "Reverse Integer",
-      "titleSlug": "reverse-integer",
-      "timestamp": "1780197807",
+      "title": "Richest Customer Wealth",
+      "titleSlug": "richest-customer-wealth",
+      "timestamp": "1780635095",
       "statusDisplay": "Accepted",
       "lang": "python3",
-      "acceptedAt": "2026-05-31T03:23:27.000Z"
+      "acceptedAt": "2026-06-05T04:51:35.000Z"
     },
     {
-      "title": "Count Primes",
-      "titleSlug": "count-primes",
-      "timestamp": "1780140953",
+      "title": "Sign of the Product of an Array",
+      "titleSlug": "sign-of-the-product-of-an-array",
+      "timestamp": "1780634333",
       "statusDisplay": "Accepted",
       "lang": "python3",
-      "acceptedAt": "2026-05-30T11:35:53.000Z"
+      "acceptedAt": "2026-06-05T04:38:53.000Z"
     },
     {
-      "title": "Number of Ways to Rearrange Sticks With K Sticks Visible",
-      "titleSlug": "number-of-ways-to-rearrange-sticks-with-k-sticks-visible",
-      "timestamp": "1780122804",
+      "title": "Baseball Game",
+      "titleSlug": "baseball-game",
+      "timestamp": "1780634034",
       "statusDisplay": "Accepted",
       "lang": "python3",
-      "acceptedAt": "2026-05-30T06:33:24.000Z"
+      "acceptedAt": "2026-06-05T04:33:54.000Z"
     },
     {
-      "title": "Pascal's Triangle",
-      "titleSlug": "pascals-triangle",
-      "timestamp": "1780113249",
+      "title": "Total Waviness of Numbers in Range II",
+      "titleSlug": "total-waviness-of-numbers-in-range-ii",
+      "timestamp": "1780632111",
       "statusDisplay": "Accepted",
       "lang": "python3",
-      "acceptedAt": "2026-05-30T03:54:09.000Z"
+      "acceptedAt": "2026-06-05T04:01:51.000Z"
     },
     {
-      "title": "Permutation Sequence",
-      "titleSlug": "permutation-sequence",
-      "timestamp": "1780111548",
+      "title": "Three Consecutive Odds",
+      "titleSlug": "three-consecutive-odds",
+      "timestamp": "1780624678",
       "statusDisplay": "Accepted",
       "lang": "python3",
-      "acceptedAt": "2026-05-30T03:25:48.000Z"
+      "acceptedAt": "2026-06-05T01:57:58.000Z"
     },
     {
-      "title": "Self Dividing Numbers",
-      "titleSlug": "self-dividing-numbers",
-      "timestamp": "1780064790",
+      "title": "Maximum Odd Binary Number",
+      "titleSlug": "maximum-odd-binary-number",
+      "timestamp": "1780562869",
       "statusDisplay": "Accepted",
       "lang": "python3",
-      "acceptedAt": "2026-05-29T14:26:30.000Z"
+      "acceptedAt": "2026-06-04T08:47:49.000Z"
     },
     {
-      "title": "Smallest Integer Divisible by K",
-      "titleSlug": "smallest-integer-divisible-by-k",
-      "timestamp": "1780057113",
+      "title": "Height Checker",
+      "titleSlug": "height-checker",
+      "timestamp": "1780562366",
       "statusDisplay": "Accepted",
       "lang": "python3",
-      "acceptedAt": "2026-05-29T12:18:33.000Z"
+      "acceptedAt": "2026-06-04T08:39:26.000Z"
     },
     {
-      "title": "Ugly Number",
-      "titleSlug": "ugly-number",
-      "timestamp": "1780051154",
+      "title": "Maximum Product of Two Elements in an Array",
+      "titleSlug": "maximum-product-of-two-elements-in-an-array",
+      "timestamp": "1780561843",
       "statusDisplay": "Accepted",
       "lang": "python3",
-      "acceptedAt": "2026-05-29T10:39:14.000Z"
+      "acceptedAt": "2026-06-04T08:30:43.000Z"
     },
     {
-      "title": "Palindrome Number",
-      "titleSlug": "palindrome-number",
-      "timestamp": "1780050376",
+      "title": "Counting Words With a Given Prefix",
+      "titleSlug": "counting-words-with-a-given-prefix",
+      "timestamp": "1780561634",
       "statusDisplay": "Accepted",
       "lang": "python3",
-      "acceptedAt": "2026-05-29T10:26:16.000Z"
+      "acceptedAt": "2026-06-04T08:27:14.000Z"
     }
   ],
   "source": "LeetCode public GraphQL; no login cookie or browser extension used."

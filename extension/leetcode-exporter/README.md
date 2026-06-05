@@ -32,6 +32,9 @@ extension/leetcode-exporter
 Accepted submissions are written as the canonical `submissions/<problem>/solution.*`.
 Non-accepted attempts are kept under `submissions/<problem>/attempts/...` so a
 failed attempt does not overwrite the accepted solution.
+When LeetCode exposes the data, generated READMEs now include difficulty, tags,
+runtime, and memory, plus short reflection fields for pattern, key idea,
+mistake/edge case, and complexity.
 
 Automatic handoff bundles land here:
 
@@ -66,6 +69,18 @@ npm run sync:auto -- --push
 ```
 
 If folder saving is unavailable in your browser, use **Hand Off Queue To Sync** while the watcher is running.
+
+For repo-level checks after syncing:
+
+```bash
+npm run fetch:public
+npm run sync:health
+npm run recommend:next
+```
+
+`profile/sync-health.md` warns when public solved count is ahead of the local
+repo. `notes/next-problems.md` gives a small pattern-focused queue based on the
+local repo plus public recent accepted evidence.
 
 After updating this repo with `git pull`, you do not need to download or unpack the extension again. Open `chrome://extensions` or `edge://extensions` and click reload on **LeetCode Repo Exporter** so the browser rereads the updated unpacked folder.
 

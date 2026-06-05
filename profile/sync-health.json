@@ -1,0 +1,285 @@
+{
+  "generatedAt": "2026-06-05T14:02:13.574Z",
+  "username": "AdrianIp",
+  "profileFetchedAt": "2026-06-05T14:02:13.400Z",
+  "publicAcceptedSolved": 83,
+  "publicAcceptedSubmissions": 93,
+  "publicAttemptedProblems": 84,
+  "publicTotalSubmissions": 129,
+  "localProblemFolders": 54,
+  "localCanonicalSolutions": 54,
+  "estimatedSolvedGap": 29,
+  "status": "behind",
+  "knownLocalProblems": [
+    {
+      "folder": "0001-two-sum",
+      "slug": "two-sum",
+      "hasCanonicalSolution": true
+    },
+    {
+      "folder": "0002-add-two-numbers",
+      "slug": "add-two-numbers",
+      "hasCanonicalSolution": true
+    },
+    {
+      "folder": "0003-longest-substring-without-repeating-characters",
+      "slug": "longest-substring-without-repeating-characters",
+      "hasCanonicalSolution": true
+    },
+    {
+      "folder": "0004-median-of-two-sorted-arrays",
+      "slug": "median-of-two-sorted-arrays",
+      "hasCanonicalSolution": true
+    },
+    {
+      "folder": "0005-longest-palindromic-substring",
+      "slug": "longest-palindromic-substring",
+      "hasCanonicalSolution": true
+    },
+    {
+      "folder": "0007-reverse-integer",
+      "slug": "reverse-integer",
+      "hasCanonicalSolution": true
+    },
+    {
+      "folder": "0009-palindrome-number",
+      "slug": "palindrome-number",
+      "hasCanonicalSolution": true
+    },
+    {
+      "folder": "0012-integer-to-roman",
+      "slug": "integer-to-roman",
+      "hasCanonicalSolution": true
+    },
+    {
+      "folder": "0013-roman-to-integer",
+      "slug": "roman-to-integer",
+      "hasCanonicalSolution": true
+    },
+    {
+      "folder": "0014-longest-common-prefix",
+      "slug": "longest-common-prefix",
+      "hasCanonicalSolution": true
+    },
+    {
+      "folder": "0020-valid-parentheses",
+      "slug": "valid-parentheses",
+      "hasCanonicalSolution": true
+    },
+    {
+      "folder": "0029-divide-two-integers",
+      "slug": "divide-two-integers",
+      "hasCanonicalSolution": true
+    },
+    {
+      "folder": "0060-permutation-sequence",
+      "slug": "permutation-sequence",
+      "hasCanonicalSolution": true
+    },
+    {
+      "folder": "0118-pascals-triangle",
+      "slug": "pascals-triangle",
+      "hasCanonicalSolution": true
+    },
+    {
+      "folder": "0175-combine-two-tables",
+      "slug": "combine-two-tables",
+      "hasCanonicalSolution": true
+    },
+    {
+      "folder": "0204-count-primes",
+      "slug": "count-primes",
+      "hasCanonicalSolution": true
+    },
+    {
+      "folder": "0258-add-digits",
+      "slug": "add-digits",
+      "hasCanonicalSolution": true
+    },
+    {
+      "folder": "0263-ugly-number",
+      "slug": "ugly-number",
+      "hasCanonicalSolution": true
+    },
+    {
+      "folder": "0387-first-unique-character-in-a-string",
+      "slug": "first-unique-character-in-a-string",
+      "hasCanonicalSolution": true
+    },
+    {
+      "folder": "0728-self-dividing-numbers",
+      "slug": "self-dividing-numbers",
+      "hasCanonicalSolution": true
+    },
+    {
+      "folder": "0771-jewels-and-stones",
+      "slug": "jewels-and-stones",
+      "hasCanonicalSolution": true
+    },
+    {
+      "folder": "1015-smallest-integer-divisible-by-k",
+      "slug": "smallest-integer-divisible-by-k",
+      "hasCanonicalSolution": true
+    },
+    {
+      "folder": "1021-remove-outermost-parentheses",
+      "slug": "remove-outermost-parentheses",
+      "hasCanonicalSolution": true
+    },
+    {
+      "folder": "1051-height-checker",
+      "slug": "height-checker",
+      "hasCanonicalSolution": true
+    },
+    {
+      "folder": "1108-defanging-an-ip-address",
+      "slug": "defanging-an-ip-address",
+      "hasCanonicalSolution": true
+    },
+    {
+      "folder": "1221-split-a-string-in-balanced-strings",
+      "slug": "split-a-string-in-balanced-strings",
+      "hasCanonicalSolution": true
+    },
+    {
+      "folder": "1486-xor-operation-in-an-array",
+      "slug": "xor-operation-in-an-array",
+      "hasCanonicalSolution": true
+    },
+    {
+      "folder": "1502-can-make-arithmetic-progression-from-sequence",
+      "slug": "can-make-arithmetic-progression-from-sequence",
+      "hasCanonicalSolution": true
+    },
+    {
+      "folder": "1550-three-consecutive-odds",
+      "slug": "three-consecutive-odds",
+      "hasCanonicalSolution": true
+    },
+    {
+      "folder": "1768-merge-strings-alternately",
+      "slug": "merge-strings-alternately",
+      "hasCanonicalSolution": true
+    },
+    {
+      "folder": "1822-sign-of-the-product-of-an-array",
+      "slug": "sign-of-the-product-of-an-array",
+      "hasCanonicalSolution": true
+    },
+    {
+      "folder": "1832-check-if-the-sentence-is-pangram",
+      "slug": "check-if-the-sentence-is-pangram",
+      "hasCanonicalSolution": true
+    },
+    {
+      "folder": "1866-number-of-ways-to-rearrange-sticks-with-k-sticks-visible",
+      "slug": "number-of-ways-to-rearrange-sticks-with-k-sticks-visible",
+      "hasCanonicalSolution": true
+    },
+    {
+      "folder": "1929-concatenation-of-array",
+      "slug": "concatenation-of-array",
+      "hasCanonicalSolution": true
+    },
+    {
+      "folder": "2108-find-first-palindromic-string-in-the-array",
+      "slug": "find-first-palindromic-string-in-the-array",
+      "hasCanonicalSolution": true
+    },
+    {
+      "folder": "2114-maximum-number-of-words-found-in-sentences",
+      "slug": "maximum-number-of-words-found-in-sentences",
+      "hasCanonicalSolution": true
+    },
+    {
+      "folder": "2119-a-number-after-a-double-reversal",
+      "slug": "a-number-after-a-double-reversal",
+      "hasCanonicalSolution": true
+    },
+    {
+      "folder": "2144-minimum-cost-of-buying-candies-with-discount",
+      "slug": "minimum-cost-of-buying-candies-with-discount",
+      "hasCanonicalSolution": true
+    },
+    {
+      "folder": "2185-counting-words-with-a-given-prefix",
+      "slug": "counting-words-with-a-given-prefix",
+      "hasCanonicalSolution": true
+    },
+    {
+      "folder": "2469-convert-the-temperature",
+      "slug": "convert-the-temperature",
+      "hasCanonicalSolution": true
+    },
+    {
+      "folder": "2485-find-the-pivot-integer",
+      "slug": "find-the-pivot-integer",
+      "hasCanonicalSolution": true
+    },
+    {
+      "folder": "2520-count-the-digits-that-divide-a-number",
+      "slug": "count-the-digits-that-divide-a-number",
+      "hasCanonicalSolution": true
+    },
+    {
+      "folder": "2535-difference-between-element-sum-and-digit-sum-of-an-array",
+      "slug": "difference-between-element-sum-and-digit-sum-of-an-array",
+      "hasCanonicalSolution": true
+    },
+    {
+      "folder": "2652-sum-multiples",
+      "slug": "sum-multiples",
+      "hasCanonicalSolution": true
+    },
+    {
+      "folder": "2769-find-the-maximum-achievable-number",
+      "slug": "find-the-maximum-achievable-number",
+      "hasCanonicalSolution": true
+    },
+    {
+      "folder": "2798-number-of-employees-who-met-the-target",
+      "slug": "number-of-employees-who-met-the-target",
+      "hasCanonicalSolution": true
+    },
+    {
+      "folder": "2894-divisible-and-non-divisible-sums-difference",
+      "slug": "divisible-and-non-divisible-sums-difference",
+      "hasCanonicalSolution": true
+    },
+    {
+      "folder": "2942-find-words-containing-character",
+      "slug": "find-words-containing-character",
+      "hasCanonicalSolution": true
+    },
+    {
+      "folder": "2974-minimum-number-game",
+      "slug": "minimum-number-game",
+      "hasCanonicalSolution": true
+    },
+    {
+      "folder": "3024-type-of-triangle",
+      "slug": "type-of-triangle",
+      "hasCanonicalSolution": true
+    },
+    {
+      "folder": "3110-score-of-a-string",
+      "slug": "score-of-a-string",
+      "hasCanonicalSolution": true
+    },
+    {
+      "folder": "3633-earliest-finish-time-for-land-and-water-rides-i",
+      "slug": "earliest-finish-time-for-land-and-water-rides-i",
+      "hasCanonicalSolution": true
+    },
+    {
+      "folder": "3635-earliest-finish-time-for-land-and-water-rides-ii",
+      "slug": "earliest-finish-time-for-land-and-water-rides-ii",
+      "hasCanonicalSolution": true
+    },
+    {
+      "folder": "3753-total-waviness-of-numbers-in-range-ii",
+      "slug": "total-waviness-of-numbers-in-range-ii",
+      "hasCanonicalSolution": true
+    }
+  ]
+}

@@ -3,8 +3,10 @@
   "type": "module",
   "scripts": {
     "fetch:public": "node scripts/fetch-public-profile.mjs",
+    "recommend:next": "node scripts/recommend-next.mjs",
     "sync:auto": "node scripts/auto-sync.mjs",
     "sync:daily": "node scripts/daily-sync.mjs",
+    "sync:health": "node scripts/sync-health.mjs",
     "validate:extension": "node scripts/validate-extension.mjs"
   }
 }

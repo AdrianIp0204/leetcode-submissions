@@ -320,7 +320,19 @@
     return new Date(seconds * 1000).toISOString();
   }
 
-  function buildReadme({ title, problemUrl, language, status, exportedAt, submittedAt, submissionId }) {
+  function buildReadme({
+    title,
+    problemUrl,
+    language,
+    status,
+    exportedAt,
+    submittedAt,
+    submissionId,
+    difficulty,
+    tags = [],
+    runtime,
+    memory,
+  }) {
     const lines = [
       `# ${title}`,
       "",
@@ -330,13 +342,25 @@
       `- Submission status seen by extension: ${status}`,
     ];
 
+    if (difficulty) lines.push(`- Difficulty: ${difficulty}`);
+    if (tags.length) lines.push(`- Tags: ${tags.join(", ")}`);
+    if (runtime) lines.push(`- Runtime: ${runtime}`);
+    if (memory) lines.push(`- Memory: ${memory}`);
     if (submittedAt) lines.push(`- Submitted at: ${submittedAt}`);
     if (submissionId) lines.push(`- Submission ID: ${submissionId}`);
 
     return [
       ...lines,
       "",
+      "## Pattern",
+      "",
+      "TODO",
+      "",
       "## Key Idea",
+      "",
+      "TODO",
+      "",
+      "## Mistake / Edge Case",
       "",
       "TODO",
       "",
@@ -361,7 +385,23 @@
       .slice(0, 80)}-${sanitizeSlug(status || "unknown") || "unknown"}`;
   }
 
-  function buildExport({ source, title, slug, frontendId, language, status, exportedAt, submittedAt, problemUrl, code, submissionId }) {
+  function buildExport({
+    source,
+    title,
+    slug,
+    frontendId,
+    language,
+    status,
+    exportedAt,
+    submittedAt,
+    problemUrl,
+    code,
+    submissionId,
+    difficulty,
+    tags = [],
+    runtime,
+    memory,
+  }) {
     const folderPrefix = frontendId ? String(frontendId).padStart(4, "0") : "0000";
     const folder = `${folderPrefix}-${slug || sanitizeSlug(title) || "leetcode-solution"}`;
     const extension = languageExtensions[language] || "txt";
@@ -381,13 +421,35 @@
       exportedAt,
       submittedAt,
       submissionId,
+      difficulty,
+      tags,
+      runtime,
+      memory,
       problemUrl,
       path,
       readmePath: `${targetDir}/README.md`,
       code,
-      readme: buildReadme({ title, problemUrl, language, status, exportedAt, submittedAt, submissionId }),
+      readme: buildReadme({
+        title,
+        problemUrl,
+        language,
+        status,
+        exportedAt,
+        submittedAt,
+        submissionId,
+        difficulty,
+        tags,
+        runtime,
+        memory,
+      }),
       key: `${path}:${hashString(code || "")}`,
     };
+  }
+
+  function tagNames(question) {
+    return (question?.topicTags || [])
+      .map((tag) => tag?.name)
+      .filter(Boolean);
   }
 
   async function collectSolution() {
@@ -418,18 +480,21 @@
     const language = findLanguage(pagePayload, source);
     const status = findVisibleSubmissionStatus();
     const exportedAt = new Date().toISOString();
+    const metadata = slug ? await fetchQuestionMetadata(slug).catch(() => null) : null;
     const problemUrl = slug ? `https://leetcode.com/problems/${slug}/` : location.href;
 
     return buildExport({
       source: SOURCE,
-      title,
-      slug,
-      frontendId,
+      title: metadata?.title || title,
+      slug: metadata?.titleSlug || slug,
+      frontendId: metadata?.questionFrontendId || frontendId,
       language,
       status,
       exportedAt,
       problemUrl,
       code: source,
+      difficulty: metadata?.difficulty || "",
+      tags: tagNames(metadata),
     });
   }
 
@@ -481,6 +546,11 @@
         questionFrontendId
         title
         titleSlug
+        difficulty
+        topicTags {
+          name
+          slug
+        }
       }
       lang {
         name
@@ -488,6 +558,24 @@
       }
     }
   }`;
+
+  const questionMetadataQuery = `query questionMetadata($titleSlug: String!) {
+    question(titleSlug: $titleSlug) {
+      questionFrontendId
+      title
+      titleSlug
+      difficulty
+      topicTags {
+        name
+        slug
+      }
+    }
+  }`;
+
+  async function fetchQuestionMetadata(titleSlug) {
+    const data = await fetchLeetCodeGraphql(questionMetadataQuery, { titleSlug });
+    return data.question || null;
+  }
 
   function exportFromSubmission(summary, details) {
     const code = String(details?.code || "").trimEnd();
@@ -515,6 +603,10 @@
       problemUrl,
       code,
       submissionId: details?.id || summary.id,
+      difficulty: question.difficulty || "",
+      tags: tagNames(question),
+      runtime: details?.runtime || "",
+      memory: details?.memory || "",
     });
   }
 

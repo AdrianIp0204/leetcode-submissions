@@ -43,6 +43,12 @@ Current first-party extension option: use `extension/leetcode-exporter` on the c
 
 Current local watcher option: use `scripts/auto-sync.mjs` or `scripts/install-windows-auto-sync.ps1` to expand extension handoff bundles into the repo, commit, and push.
 
+Current planning option: run `npm run fetch:public`, `npm run sync:health`, and
+`npm run recommend:next` to compare public solved counts against local problem
+folders and generate a pattern-focused next-problem queue. This is a guidance
+tool, not a full source-code sync; the extension backfill is still needed when
+the repo falls behind the public profile.
+
 Possible later option: authenticated local scraper using a LeetCode session cookie stored only on the Mac. This can be convenient, but it is still a credential-bearing workflow and should be treated carefully.
 
 Bad default: GitHub Actions with a LeetCode session cookie stored in GitHub Secrets. That moves the sensitive credential off the Mac and gives little privacy upside.
