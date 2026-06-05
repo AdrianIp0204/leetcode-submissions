@@ -1,15 +1,15 @@
 {
-  "generatedAt": "2026-06-05T14:02:13.574Z",
+  "generatedAt": "2026-06-05T14:13:26.198Z",
   "username": "AdrianIp",
-  "profileFetchedAt": "2026-06-05T14:02:13.400Z",
+  "profileFetchedAt": "2026-06-05T14:13:26.030Z",
   "publicAcceptedSolved": 83,
   "publicAcceptedSubmissions": 93,
   "publicAttemptedProblems": 84,
   "publicTotalSubmissions": 129,
-  "localProblemFolders": 54,
-  "localCanonicalSolutions": 54,
-  "estimatedSolvedGap": 29,
-  "status": "behind",
+  "localProblemFolders": 83,
+  "localCanonicalSolutions": 83,
+  "estimatedSolvedGap": 0,
+  "status": "ok",
   "knownLocalProblems": [
     {
       "folder": "0001-two-sum",
@@ -34,6 +34,11 @@
     {
       "folder": "0005-longest-palindromic-substring",
       "slug": "longest-palindromic-substring",
+      "hasCanonicalSolution": true
+    },
+    {
+      "folder": "0006-zigzag-conversion",
+      "slug": "zigzag-conversion",
       "hasCanonicalSolution": true
     },
     {
@@ -82,13 +87,38 @@
       "hasCanonicalSolution": true
     },
     {
+      "folder": "0121-best-time-to-buy-and-sell-stock",
+      "slug": "best-time-to-buy-and-sell-stock",
+      "hasCanonicalSolution": true
+    },
+    {
+      "folder": "0172-factorial-trailing-zeroes",
+      "slug": "factorial-trailing-zeroes",
+      "hasCanonicalSolution": true
+    },
+    {
       "folder": "0175-combine-two-tables",
       "slug": "combine-two-tables",
       "hasCanonicalSolution": true
     },
     {
+      "folder": "0181-employees-earning-more-than-their-managers",
+      "slug": "employees-earning-more-than-their-managers",
+      "hasCanonicalSolution": true
+    },
+    {
       "folder": "0204-count-primes",
       "slug": "count-primes",
+      "hasCanonicalSolution": true
+    },
+    {
+      "folder": "0217-contains-duplicate",
+      "slug": "contains-duplicate",
+      "hasCanonicalSolution": true
+    },
+    {
+      "folder": "0242-valid-anagram",
+      "slug": "valid-anagram",
       "hasCanonicalSolution": true
     },
     {
@@ -107,6 +137,21 @@
       "hasCanonicalSolution": true
     },
     {
+      "folder": "0657-robot-return-to-origin",
+      "slug": "robot-return-to-origin",
+      "hasCanonicalSolution": true
+    },
+    {
+      "folder": "0682-baseball-game",
+      "slug": "baseball-game",
+      "hasCanonicalSolution": true
+    },
+    {
+      "folder": "0709-to-lower-case",
+      "slug": "to-lower-case",
+      "hasCanonicalSolution": true
+    },
+    {
       "folder": "0728-self-dividing-numbers",
       "slug": "self-dividing-numbers",
       "hasCanonicalSolution": true
@@ -114,6 +159,11 @@
     {
       "folder": "0771-jewels-and-stones",
       "slug": "jewels-and-stones",
+      "hasCanonicalSolution": true
+    },
+    {
+      "folder": "0977-squares-of-a-sorted-array",
+      "slug": "squares-of-a-sorted-array",
       "hasCanonicalSolution": true
     },
     {
@@ -142,6 +192,31 @@
       "hasCanonicalSolution": true
     },
     {
+      "folder": "1281-subtract-the-product-and-sum-of-digits-of-an-integer",
+      "slug": "subtract-the-product-and-sum-of-digits-of-an-integer",
+      "hasCanonicalSolution": true
+    },
+    {
+      "folder": "1323-maximum-69-number",
+      "slug": "maximum-69-number",
+      "hasCanonicalSolution": true
+    },
+    {
+      "folder": "1464-maximum-product-of-two-elements-in-an-array",
+      "slug": "maximum-product-of-two-elements-in-an-array",
+      "hasCanonicalSolution": true
+    },
+    {
+      "folder": "1470-shuffle-the-array",
+      "slug": "shuffle-the-array",
+      "hasCanonicalSolution": true
+    },
+    {
+      "folder": "1480-running-sum-of-1d-array",
+      "slug": "running-sum-of-1d-array",
+      "hasCanonicalSolution": true
+    },
+    {
       "folder": "1486-xor-operation-in-an-array",
       "slug": "xor-operation-in-an-array",
       "hasCanonicalSolution": true
@@ -157,6 +232,21 @@
       "hasCanonicalSolution": true
     },
     {
+      "folder": "1588-sum-of-all-odd-length-subarrays",
+      "slug": "sum-of-all-odd-length-subarrays",
+      "hasCanonicalSolution": true
+    },
+    {
+      "folder": "1662-check-if-two-string-arrays-are-equivalent",
+      "slug": "check-if-two-string-arrays-are-equivalent",
+      "hasCanonicalSolution": true
+    },
+    {
+      "folder": "1672-richest-customer-wealth",
+      "slug": "richest-customer-wealth",
+      "hasCanonicalSolution": true
+    },
+    {
       "folder": "1768-merge-strings-alternately",
       "slug": "merge-strings-alternately",
       "hasCanonicalSolution": true
@@ -169,6 +259,11 @@
     {
       "folder": "1832-check-if-the-sentence-is-pangram",
       "slug": "check-if-the-sentence-is-pangram",
+      "hasCanonicalSolution": true
+    },
+    {
+      "folder": "1837-sum-of-digits-in-base-k",
+      "slug": "sum-of-digits-in-base-k",
       "hasCanonicalSolution": true
     },
     {
@@ -207,6 +302,11 @@
       "hasCanonicalSolution": true
     },
     {
+      "folder": "2235-add-two-integers",
+      "slug": "add-two-integers",
+      "hasCanonicalSolution": true
+    },
+    {
       "folder": "2469-convert-the-temperature",
       "slug": "convert-the-temperature",
       "hasCanonicalSolution": true
@@ -222,6 +322,11 @@
       "hasCanonicalSolution": true
     },
     {
+      "folder": "2523-closest-prime-numbers-in-range",
+      "slug": "closest-prime-numbers-in-range",
+      "hasCanonicalSolution": true
+    },
+    {
       "folder": "2535-difference-between-element-sum-and-digit-sum-of-an-array",
       "slug": "difference-between-element-sum-and-digit-sum-of-an-array",
       "hasCanonicalSolution": true
@@ -232,6 +337,16 @@
       "hasCanonicalSolution": true
     },
     {
+      "folder": "2656-maximum-sum-with-exactly-k-elements",
+      "slug": "maximum-sum-with-exactly-k-elements",
+      "hasCanonicalSolution": true
+    },
+    {
+      "folder": "2733-neither-minimum-nor-maximum",
+      "slug": "neither-minimum-nor-maximum",
+      "hasCanonicalSolution": true
+    },
+    {
       "folder": "2769-find-the-maximum-achievable-number",
       "slug": "find-the-maximum-achievable-number",
       "hasCanonicalSolution": true
@@ -239,6 +354,16 @@
     {
       "folder": "2798-number-of-employees-who-met-the-target",
       "slug": "number-of-employees-who-met-the-target",
+      "hasCanonicalSolution": true
+    },
+    {
+      "folder": "2843-count-symmetric-integers",
+      "slug": "count-symmetric-integers",
+      "hasCanonicalSolution": true
+    },
+    {
+      "folder": "2864-maximum-odd-binary-number",
+      "slug": "maximum-odd-binary-number",
       "hasCanonicalSolution": true
     },
     {
@@ -257,6 +382,11 @@
       "hasCanonicalSolution": true
     },
     {
+      "folder": "3019-number-of-changing-keys",
+      "slug": "number-of-changing-keys",
+      "hasCanonicalSolution": true
+    },
+    {
       "folder": "3024-type-of-triangle",
       "slug": "type-of-triangle",
       "hasCanonicalSolution": true
@@ -267,6 +397,16 @@
       "hasCanonicalSolution": true
     },
     {
+      "folder": "3232-find-if-digit-game-can-be-won",
+      "slug": "find-if-digit-game-can-be-won",
+      "hasCanonicalSolution": true
+    },
+    {
+      "folder": "3492-maximum-containers-on-a-ship",
+      "slug": "maximum-containers-on-a-ship",
+      "hasCanonicalSolution": true
+    },
+    {
       "folder": "3633-earliest-finish-time-for-land-and-water-rides-i",
       "slug": "earliest-finish-time-for-land-and-water-rides-i",
       "hasCanonicalSolution": true
@@ -274,6 +414,11 @@
     {
       "folder": "3635-earliest-finish-time-for-land-and-water-rides-ii",
       "slug": "earliest-finish-time-for-land-and-water-rides-ii",
+      "hasCanonicalSolution": true
+    },
+    {
+      "folder": "3751-total-waviness-of-numbers-in-range-i",
+      "slug": "total-waviness-of-numbers-in-range-i",
       "hasCanonicalSolution": true
     },
     {
