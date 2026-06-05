@@ -1,11 +1,24 @@
 # Find the Maximum Achievable Number
 
 - LeetCode: https://leetcode.com/problems/find-the-maximum-achievable-number/
-- Language: python3
-- Exported at: 2026-06-03T02:03:43.194Z
-- Submission status seen by extension: Unknown (legacy visible-page capture before status fix; verify in LeetCode)
+- Language: cpp
+- Exported at: 2026-06-05T14:10:02.677Z
+- Submission status seen by extension: Accepted
+- Difficulty: Easy
+- Tags: Math
+- Memory: 9600000
+- Submitted at: 2026-06-03T10:59:13.000Z
+- Submission ID: 2021161569
+
+## Pattern
+
+TODO
 
 ## Key Idea
+
+TODO
+
+## Mistake / Edge Case
 
 TODO
 

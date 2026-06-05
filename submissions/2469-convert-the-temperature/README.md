@@ -1,11 +1,24 @@
 # Convert the Temperature
 
 - LeetCode: https://leetcode.com/problems/convert-the-temperature/
-- Language: python3
-- Exported at: 2026-06-03T02:07:28.303Z
-- Submission status seen by extension: Unknown (legacy visible-page capture before status fix; verify in LeetCode)
+- Language: cpp
+- Exported at: 2026-06-05T14:10:03.189Z
+- Submission status seen by extension: Accepted
+- Difficulty: Easy
+- Tags: Math
+- Memory: 8268000
+- Submitted at: 2026-06-03T10:57:31.000Z
+- Submission ID: 2021160234
+
+## Pattern
+
+TODO
 
 ## Key Idea
+
+TODO
+
+## Mistake / Edge Case
 
 TODO
 

@@ -1,6 +1,9 @@
 class Solution {
 public:
     bool isSameAfterReversals(int n) {
-        return n==0||n%10;
+        if (n%10==0 && n!=0){
+            return false;
+        }
+        return true;
     }
 };
