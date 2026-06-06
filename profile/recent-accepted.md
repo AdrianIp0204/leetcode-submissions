@@ -2,26 +2,28 @@
 
 - Username: AdrianIp
 - Profile: https://leetcode.com/u/AdrianIp/
-- Fetched at: 2026-06-06T05:03:18.071Z
+- Fetched at: 2026-06-06T05:44:00.410Z
 - Ranking: 1917473
 - Display name: AdrianIp
 
 ## Solved
 
-- All: 89 solved / 99 accepted submissions
+- All: 91 solved / 101 accepted submissions
 - Easy: 70 solved / 80 accepted submissions
-- Medium: 15 solved / 15 accepted submissions
+- Medium: 17 solved / 17 accepted submissions
 - Hard: 4 solved / 4 accepted submissions
 
 ## Total Attempts
 
-- All: 90 attempted problems / 137 total submissions
+- All: 92 attempted problems / 140 total submissions
 - Easy: 70 attempted problems / 98 total submissions
-- Medium: 15 attempted problems / 29 total submissions
+- Medium: 17 attempted problems / 32 total submissions
 - Hard: 5 attempted problems / 10 total submissions
 
 ## Recent Accepted
 
+- 2026-06-06T05:31:28.000Z: [Password Strength](https://leetcode.com/problems/password-strength/) (python3)
+- 2026-06-06T05:18:15.000Z: [Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/) (python3)
 - 2026-06-06T04:58:19.000Z: [Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/) (python3)
 - 2026-06-06T04:34:35.000Z: [Group Anagrams](https://leetcode.com/problems/group-anagrams/) (python3)
 - 2026-06-06T03:53:51.000Z: [Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/) (python3)
@@ -40,5 +42,3 @@
 - 2026-06-05T05:15:27.000Z: [Number of Changing Keys](https://leetcode.com/problems/number-of-changing-keys/) (python3)
 - 2026-06-05T05:06:25.000Z: [Type of Triangle](https://leetcode.com/problems/type-of-triangle/) (python3)
 - 2026-06-05T04:51:35.000Z: [Richest Customer Wealth](https://leetcode.com/problems/richest-customer-wealth/) (python3)
-- 2026-06-05T04:38:53.000Z: [Sign of the Product of an Array](https://leetcode.com/problems/sign-of-the-product-of-an-array/) (python3)
-- 2026-06-05T04:33:54.000Z: [Baseball Game](https://leetcode.com/problems/baseball-game/) (python3)

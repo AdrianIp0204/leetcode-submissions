@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-06-06T05:03:18.071Z",
+  "fetchedAt": "2026-06-06T05:44:00.410Z",
   "username": "AdrianIp",
   "profile": {
     "realName": "AdrianIp",
@@ -15,8 +15,8 @@
   "solvedByDifficulty": [
     {
       "difficulty": "All",
-      "count": 89,
-      "submissions": 99
+      "count": 91,
+      "submissions": 101
     },
     {
       "difficulty": "Easy",
@@ -25,8 +25,8 @@
     },
     {
       "difficulty": "Medium",
-      "count": 15,
-      "submissions": 15
+      "count": 17,
+      "submissions": 17
     },
     {
       "difficulty": "Hard",
@@ -37,8 +37,8 @@
   "totalByDifficulty": [
     {
       "difficulty": "All",
-      "count": 90,
-      "submissions": 137
+      "count": 92,
+      "submissions": 140
     },
     {
       "difficulty": "Easy",
@@ -47,8 +47,8 @@
     },
     {
       "difficulty": "Medium",
-      "count": 15,
-      "submissions": 29
+      "count": 17,
+      "submissions": 32
     },
     {
       "difficulty": "Hard",
@@ -60,8 +60,8 @@
     "accepted": {
       "All": {
         "difficulty": "All",
-        "count": 89,
-        "submissions": 99
+        "count": 91,
+        "submissions": 101
       },
       "Easy": {
         "difficulty": "Easy",
@@ -70,8 +70,8 @@
       },
       "Medium": {
         "difficulty": "Medium",
-        "count": 15,
-        "submissions": 15
+        "count": 17,
+        "submissions": 17
       },
       "Hard": {
         "difficulty": "Hard",
@@ -82,8 +82,8 @@
     "total": {
       "All": {
         "difficulty": "All",
-        "count": 90,
-        "submissions": 137
+        "count": 92,
+        "submissions": 140
       },
       "Easy": {
         "difficulty": "Easy",
@@ -92,8 +92,8 @@
       },
       "Medium": {
         "difficulty": "Medium",
-        "count": 15,
-        "submissions": 29
+        "count": 17,
+        "submissions": 32
       },
       "Hard": {
         "difficulty": "Hard",
@@ -104,6 +104,22 @@
   },
   "contestRanking": null,
   "recentAccepted": [
+    {
+      "title": "Password Strength",
+      "titleSlug": "password-strength",
+      "timestamp": "1780723888",
+      "statusDisplay": "Accepted",
+      "lang": "python3",
+      "acceptedAt": "2026-06-06T05:31:28.000Z"
+    },
+    {
+      "title": "Longest Consecutive Sequence",
+      "titleSlug": "longest-consecutive-sequence",
+      "timestamp": "1780723095",
+      "statusDisplay": "Accepted",
+      "lang": "python3",
+      "acceptedAt": "2026-06-06T05:18:15.000Z"
+    },
     {
       "title": "Product of Array Except Self",
       "titleSlug": "product-of-array-except-self",
@@ -247,22 +263,6 @@
       "statusDisplay": "Accepted",
       "lang": "python3",
       "acceptedAt": "2026-06-05T04:51:35.000Z"
-    },
-    {
-      "title": "Sign of the Product of an Array",
-      "titleSlug": "sign-of-the-product-of-an-array",
-      "timestamp": "1780634333",
-      "statusDisplay": "Accepted",
-      "lang": "python3",
-      "acceptedAt": "2026-06-05T04:38:53.000Z"
-    },
-    {
-      "title": "Baseball Game",
-      "titleSlug": "baseball-game",
-      "timestamp": "1780634034",
-      "statusDisplay": "Accepted",
-      "lang": "python3",
-      "acceptedAt": "2026-06-05T04:33:54.000Z"
     }
   ],
   "source": "LeetCode public GraphQL; no login cookie or browser extension used."
