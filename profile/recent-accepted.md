@@ -2,26 +2,32 @@
 
 - Username: AdrianIp
 - Profile: https://leetcode.com/u/AdrianIp/
-- Fetched at: 2026-06-05T14:13:26.030Z
+- Fetched at: 2026-06-06T05:03:18.071Z
 - Ranking: 1917473
 - Display name: AdrianIp
 
 ## Solved
 
-- All: 83 solved / 93 accepted submissions
-- Easy: 66 solved / 76 accepted submissions
-- Medium: 13 solved / 13 accepted submissions
+- All: 89 solved / 99 accepted submissions
+- Easy: 70 solved / 80 accepted submissions
+- Medium: 15 solved / 15 accepted submissions
 - Hard: 4 solved / 4 accepted submissions
 
 ## Total Attempts
 
-- All: 84 attempted problems / 129 total submissions
-- Easy: 66 attempted problems / 93 total submissions
-- Medium: 13 attempted problems / 26 total submissions
+- All: 90 attempted problems / 137 total submissions
+- Easy: 70 attempted problems / 98 total submissions
+- Medium: 15 attempted problems / 29 total submissions
 - Hard: 5 attempted problems / 10 total submissions
 
 ## Recent Accepted
 
+- 2026-06-06T04:58:19.000Z: [Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/) (python3)
+- 2026-06-06T04:34:35.000Z: [Group Anagrams](https://leetcode.com/problems/group-anagrams/) (python3)
+- 2026-06-06T03:53:51.000Z: [Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/) (python3)
+- 2026-06-06T03:33:02.000Z: [Left and Right Sum Differences](https://leetcode.com/problems/left-and-right-sum-differences/) (python3)
+- 2026-06-06T03:15:31.000Z: [Count Operations to Obtain Zero](https://leetcode.com/problems/count-operations-to-obtain-zero/) (python3)
+- 2026-06-05T14:44:58.000Z: [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/) (python3)
 - 2026-06-05T13:51:30.000Z: [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) (python3)
 - 2026-06-05T13:40:35.000Z: [Valid Anagram](https://leetcode.com/problems/valid-anagram/) (python3)
 - 2026-06-05T13:34:37.000Z: [Contains Duplicate](https://leetcode.com/problems/contains-duplicate/) (python3)
@@ -36,9 +42,3 @@
 - 2026-06-05T04:51:35.000Z: [Richest Customer Wealth](https://leetcode.com/problems/richest-customer-wealth/) (python3)
 - 2026-06-05T04:38:53.000Z: [Sign of the Product of an Array](https://leetcode.com/problems/sign-of-the-product-of-an-array/) (python3)
 - 2026-06-05T04:33:54.000Z: [Baseball Game](https://leetcode.com/problems/baseball-game/) (python3)
-- 2026-06-05T04:01:51.000Z: [Total Waviness of Numbers in Range II](https://leetcode.com/problems/total-waviness-of-numbers-in-range-ii/) (python3)
-- 2026-06-05T01:57:58.000Z: [Three Consecutive Odds](https://leetcode.com/problems/three-consecutive-odds/) (python3)
-- 2026-06-04T08:47:49.000Z: [Maximum Odd Binary Number](https://leetcode.com/problems/maximum-odd-binary-number/) (python3)
-- 2026-06-04T08:39:26.000Z: [Height Checker](https://leetcode.com/problems/height-checker/) (python3)
-- 2026-06-04T08:30:43.000Z: [Maximum Product of Two Elements in an Array](https://leetcode.com/problems/maximum-product-of-two-elements-in-an-array/) (python3)
-- 2026-06-04T08:27:14.000Z: [Counting Words With a Given Prefix](https://leetcode.com/problems/counting-words-with-a-given-prefix/) (python3)

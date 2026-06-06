@@ -87,13 +87,19 @@ The extension downloads one small handoff bundle under:
 Downloads/leetcode-submissions/queue/
 ```
 
-On Windows, install the local watcher once from a cloned repo:
+On macOS, install the local watcher once from a cloned repo:
+
+```bash
+npm run install:macos:auto-sync
+```
+
+On Windows:
 
 ```powershell
 powershell -ExecutionPolicy Bypass -File scripts\install-windows-auto-sync.ps1
 ```
 
-It copies downloaded exports into the repo, commits changes, and pushes. The installer first tries a current-user Scheduled Task. If Windows blocks Task Scheduler access, it falls back to a normal per-user Startup launcher and starts the watcher immediately. This keeps GitHub credentials out of the extension.
+It copies downloaded exports into the repo, commits changes, and pushes. The macOS installer creates a user LaunchAgent. The Windows installer first tries a current-user Scheduled Task. If Windows blocks Task Scheduler access, it falls back to a normal per-user Startup launcher and starts the watcher immediately. This keeps GitHub credentials out of the extension.
 
 Dropbox or Chrome may show the one handoff bundle as `*.json.dropboxignore` or
 `leetcode-exports-*.txt`; those are still valid if the contents are the JSON

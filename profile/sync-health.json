@@ -1,15 +1,15 @@
 {
-  "generatedAt": "2026-06-05T14:13:26.198Z",
+  "generatedAt": "2026-06-06T05:08:51.143Z",
   "username": "AdrianIp",
-  "profileFetchedAt": "2026-06-05T14:13:26.030Z",
-  "publicAcceptedSolved": 83,
-  "publicAcceptedSubmissions": 93,
-  "publicAttemptedProblems": 84,
-  "publicTotalSubmissions": 129,
-  "localProblemFolders": 83,
-  "localCanonicalSolutions": 83,
-  "estimatedSolvedGap": 0,
-  "status": "ok",
+  "profileFetchedAt": "2026-06-06T05:03:18.071Z",
+  "publicAcceptedSolved": 89,
+  "publicAcceptedSubmissions": 99,
+  "publicAttemptedProblems": 90,
+  "publicTotalSubmissions": 137,
+  "localProblemFolders": 84,
+  "localCanonicalSolutions": 84,
+  "estimatedSolvedGap": 5,
+  "status": "behind",
   "knownLocalProblems": [
     {
       "folder": "0001-two-sum",
@@ -109,6 +109,11 @@
     {
       "folder": "0204-count-primes",
       "slug": "count-primes",
+      "hasCanonicalSolution": true
+    },
+    {
+      "folder": "0206-reverse-linked-list",
+      "slug": "reverse-linked-list",
       "hasCanonicalSolution": true
     },
     {

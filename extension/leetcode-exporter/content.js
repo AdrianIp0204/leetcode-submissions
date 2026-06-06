@@ -754,6 +754,7 @@
   const AUTO_CAPTURE_RECENT_SUBMIT_MIN_CHECK_MS = 2_500;
   const AUTO_CAPTURE_SUBMIT_WINDOW_MS = 120_000;
   const AUTO_CAPTURE_SUBMISSION_CLOCK_SKEW_MS = 20_000;
+  const AUTO_CAPTURE_RECENT_ACCEPTED_WINDOW_MS = 10 * 60_000;
 
   function isExtensionContextInvalidated(error) {
     return /Extension context invalidated/i.test(error?.message || String(error));
@@ -782,11 +783,27 @@
 
   function isFreshAutoPayload(payload, now = Date.now()) {
     if (isSubmissionDetailPage()) return true;
-    if (!isRecentSubmitWindow(now)) return false;
 
     const submittedAt = submittedAtMs(payload);
     if (!submittedAt) return false;
-    return submittedAt >= lastSubmitActionAt - AUTO_CAPTURE_SUBMISSION_CLOCK_SKEW_MS;
+    if (isRecentSubmitWindow(now)) {
+      return submittedAt >= lastSubmitActionAt - AUTO_CAPTURE_SUBMISSION_CLOCK_SKEW_MS;
+    }
+
+    return (
+      isAcceptedStatus(payload?.status) &&
+      now - submittedAt <= AUTO_CAPTURE_RECENT_ACCEPTED_WINDOW_MS
+    );
+  }
+
+  function shouldProbeAutoSignal(autoSignal, now = Date.now()) {
+    if (isSubmissionDetailPage() || isRecentSubmitWindow(now)) return true;
+    return autoSignal !== lastAutoSignal || now - lastAutoCheckAt >= AUTO_CAPTURE_MIN_CHECK_MS;
+  }
+
+  function rememberAutoSignal(autoSignal, now = Date.now()) {
+    lastAutoSignal = autoSignal;
+    lastAutoCheckAt = now;
   }
 
   function looksLikeSubmitControl(target) {
@@ -825,22 +842,15 @@
       if (!autoSignal) return;
 
       const now = Date.now();
-      const onSubmissionDetailPage = isSubmissionDetailPage();
-      const recentSubmit = isRecentSubmitWindow(now);
-      if (!onSubmissionDetailPage && !recentSubmit) {
-        lastAutoSignal = autoSignal;
-        lastAutoCheckAt = now;
-        return;
-      }
+      if (!shouldProbeAutoSignal(autoSignal, now)) return;
 
-      const minCheckMs = recentSubmit
+      const minCheckMs = isRecentSubmitWindow(now)
         ? AUTO_CAPTURE_RECENT_SUBMIT_MIN_CHECK_MS
         : AUTO_CAPTURE_MIN_CHECK_MS;
       if (autoSignal === lastAutoSignal && now - lastAutoCheckAt < minCheckMs) {
         return;
       }
-      lastAutoSignal = autoSignal;
-      lastAutoCheckAt = now;
+      rememberAutoSignal(autoSignal, now);
 
       const payload = await collectAutoSubmission();
       if (!isFreshAutoPayload(payload, now)) return;

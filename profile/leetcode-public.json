@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-06-05T14:13:26.030Z",
+  "fetchedAt": "2026-06-06T05:03:18.071Z",
   "username": "AdrianIp",
   "profile": {
     "realName": "AdrianIp",
@@ -15,18 +15,18 @@
   "solvedByDifficulty": [
     {
       "difficulty": "All",
-      "count": 83,
-      "submissions": 93
+      "count": 89,
+      "submissions": 99
     },
     {
       "difficulty": "Easy",
-      "count": 66,
-      "submissions": 76
+      "count": 70,
+      "submissions": 80
     },
     {
       "difficulty": "Medium",
-      "count": 13,
-      "submissions": 13
+      "count": 15,
+      "submissions": 15
     },
     {
       "difficulty": "Hard",
@@ -37,18 +37,18 @@
   "totalByDifficulty": [
     {
       "difficulty": "All",
-      "count": 84,
-      "submissions": 129
+      "count": 90,
+      "submissions": 137
     },
     {
       "difficulty": "Easy",
-      "count": 66,
-      "submissions": 93
+      "count": 70,
+      "submissions": 98
     },
     {
       "difficulty": "Medium",
-      "count": 13,
-      "submissions": 26
+      "count": 15,
+      "submissions": 29
     },
     {
       "difficulty": "Hard",
@@ -60,18 +60,18 @@
     "accepted": {
       "All": {
         "difficulty": "All",
-        "count": 83,
-        "submissions": 93
+        "count": 89,
+        "submissions": 99
       },
       "Easy": {
         "difficulty": "Easy",
-        "count": 66,
-        "submissions": 76
+        "count": 70,
+        "submissions": 80
       },
       "Medium": {
         "difficulty": "Medium",
-        "count": 13,
-        "submissions": 13
+        "count": 15,
+        "submissions": 15
       },
       "Hard": {
         "difficulty": "Hard",
@@ -82,18 +82,18 @@
     "total": {
       "All": {
         "difficulty": "All",
-        "count": 84,
-        "submissions": 129
+        "count": 90,
+        "submissions": 137
       },
       "Easy": {
         "difficulty": "Easy",
-        "count": 66,
-        "submissions": 93
+        "count": 70,
+        "submissions": 98
       },
       "Medium": {
         "difficulty": "Medium",
-        "count": 13,
-        "submissions": 26
+        "count": 15,
+        "submissions": 29
       },
       "Hard": {
         "difficulty": "Hard",
@@ -104,6 +104,54 @@
   },
   "contestRanking": null,
   "recentAccepted": [
+    {
+      "title": "Product of Array Except Self",
+      "titleSlug": "product-of-array-except-self",
+      "timestamp": "1780721899",
+      "statusDisplay": "Accepted",
+      "lang": "python3",
+      "acceptedAt": "2026-06-06T04:58:19.000Z"
+    },
+    {
+      "title": "Group Anagrams",
+      "titleSlug": "group-anagrams",
+      "timestamp": "1780720475",
+      "statusDisplay": "Accepted",
+      "lang": "python3",
+      "acceptedAt": "2026-06-06T04:34:35.000Z"
+    },
+    {
+      "title": "Merge Two Sorted Lists",
+      "titleSlug": "merge-two-sorted-lists",
+      "timestamp": "1780718031",
+      "statusDisplay": "Accepted",
+      "lang": "python3",
+      "acceptedAt": "2026-06-06T03:53:51.000Z"
+    },
+    {
+      "title": "Left and Right Sum Differences",
+      "titleSlug": "left-and-right-sum-differences",
+      "timestamp": "1780716782",
+      "statusDisplay": "Accepted",
+      "lang": "python3",
+      "acceptedAt": "2026-06-06T03:33:02.000Z"
+    },
+    {
+      "title": "Count Operations to Obtain Zero",
+      "titleSlug": "count-operations-to-obtain-zero",
+      "timestamp": "1780715731",
+      "statusDisplay": "Accepted",
+      "lang": "python3",
+      "acceptedAt": "2026-06-06T03:15:31.000Z"
+    },
+    {
+      "title": "Reverse Linked List",
+      "titleSlug": "reverse-linked-list",
+      "timestamp": "1780670698",
+      "statusDisplay": "Accepted",
+      "lang": "python3",
+      "acceptedAt": "2026-06-05T14:44:58.000Z"
+    },
     {
       "title": "Best Time to Buy and Sell Stock",
       "titleSlug": "best-time-to-buy-and-sell-stock",
@@ -215,54 +263,6 @@
       "statusDisplay": "Accepted",
       "lang": "python3",
       "acceptedAt": "2026-06-05T04:33:54.000Z"
-    },
-    {
-      "title": "Total Waviness of Numbers in Range II",
-      "titleSlug": "total-waviness-of-numbers-in-range-ii",
-      "timestamp": "1780632111",
-      "statusDisplay": "Accepted",
-      "lang": "python3",
-      "acceptedAt": "2026-06-05T04:01:51.000Z"
-    },
-    {
-      "title": "Three Consecutive Odds",
-      "titleSlug": "three-consecutive-odds",
-      "timestamp": "1780624678",
-      "statusDisplay": "Accepted",
-      "lang": "python3",
-      "acceptedAt": "2026-06-05T01:57:58.000Z"
-    },
-    {
-      "title": "Maximum Odd Binary Number",
-      "titleSlug": "maximum-odd-binary-number",
-      "timestamp": "1780562869",
-      "statusDisplay": "Accepted",
-      "lang": "python3",
-      "acceptedAt": "2026-06-04T08:47:49.000Z"
-    },
-    {
-      "title": "Height Checker",
-      "titleSlug": "height-checker",
-      "timestamp": "1780562366",
-      "statusDisplay": "Accepted",
-      "lang": "python3",
-      "acceptedAt": "2026-06-04T08:39:26.000Z"
-    },
-    {
-      "title": "Maximum Product of Two Elements in an Array",
-      "titleSlug": "maximum-product-of-two-elements-in-an-array",
-      "timestamp": "1780561843",
-      "statusDisplay": "Accepted",
-      "lang": "python3",
-      "acceptedAt": "2026-06-04T08:30:43.000Z"
-    },
-    {
-      "title": "Counting Words With a Given Prefix",
-      "titleSlug": "counting-words-with-a-given-prefix",
-      "timestamp": "1780561634",
-      "statusDisplay": "Accepted",
-      "lang": "python3",
-      "acceptedAt": "2026-06-04T08:27:14.000Z"
     }
   ],
   "source": "LeetCode public GraphQL; no login cookie or browser extension used."

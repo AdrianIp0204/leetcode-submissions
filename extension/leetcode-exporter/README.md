@@ -54,13 +54,21 @@ If you prefer direct folder saving, use **Save Queue To Repo** and select the cl
 
 ## No-Repeated-Command Sync
 
-Browser extensions cannot safely run `git` by themselves. Use the local watcher once on the computer where you solve LeetCode:
+Browser extensions cannot safely run `git` by themselves. Use the local watcher once on the computer where you solve LeetCode.
+
+macOS:
+
+```bash
+npm run install:macos:auto-sync
+```
+
+Windows:
 
 ```powershell
 powershell -ExecutionPolicy Bypass -File scripts\install-windows-auto-sync.ps1
 ```
 
-That installs a local watcher named `LeetCodeSubmissionsAutoSync`. It watches `Downloads\leetcode-submissions`, expands handoff bundles into `submissions\...`, commits changes, and pushes. It prefers a current-user Scheduled Task, but falls back to a per-user Startup launcher when Task Scheduler is blocked.
+That installs a local watcher. It watches `Downloads/leetcode-submissions` or `Downloads\leetcode-submissions`, expands handoff bundles into `submissions/...`, commits changes, and pushes. Windows prefers a current-user Scheduled Task, but falls back to a per-user Startup launcher when Task Scheduler is blocked.
 
 For a one-off foreground run:
 
