@@ -2,7 +2,7 @@
 
 - LeetCode: https://leetcode.com/problems/concatenation-of-array/
 - Language: python3
-- Exported at: 2026-06-05T14:10:10.562Z
+- Exported at: 2026-06-06T05:35:03.422Z
 - Submission status seen by extension: Accepted
 - Difficulty: Easy
 - Tags: Array, Simulation
