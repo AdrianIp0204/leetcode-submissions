@@ -330,7 +330,7 @@ async function syncOnce({ inbox, push }) {
 
     run("git", ["add", "--", ...syncManagedPaths]);
     const staged = gitStagedPaths().filter(isSyncManagedPath);
-    if (!staged) {
+    if (!staged.length) {
       console.log("No staged changes after applying .gitignore.");
       return;
     }
