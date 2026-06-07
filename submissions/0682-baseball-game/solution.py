@@ -10,5 +10,4 @@ class Solution:
                 n.append(n[-1] + n[-2])
             else:
                 n.append(int(x))
-            print(n)
         return sum(n)
