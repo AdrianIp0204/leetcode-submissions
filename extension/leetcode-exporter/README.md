@@ -50,6 +50,13 @@ After import, the watcher commits and pushes only when a solution is new or the
 solution code changed. Re-exporting the same existing solution is treated as a
 duplicate and will not create a README-only metadata commit.
 
+Version `0.4.2` keeps auto-capture probing through LeetCode SPA route changes,
+text-only result updates, and slower judge results after submit. It also keeps a
+separate "pending handoff" state, so if Chrome fails to create the local sync
+bundle, the export stays retryable instead of being silently skipped as a
+duplicate later. Use **Collect Past Accepted** once after upgrading if public
+sync health says the repo is behind.
+
 If you prefer direct folder saving, use **Save Queue To Repo** and select the cloned `leetcode-submissions` repo root.
 
 ## No-Repeated-Command Sync

@@ -118,7 +118,9 @@ async function collectCurrentSolution() {
     });
     await refreshState();
 
-    if (stored.autoDownloaded) {
+    if (stored.autoDownloadError) {
+      setMessage(`Collected ${currentExport.status} submission, but local handoff failed: ${stored.autoDownloadError}`);
+    } else if (stored.autoDownloaded) {
       setMessage(`Collected ${currentExport.status} submission and handed it to local sync.`);
     } else {
       setMessage(`Collected ${currentExport.status} submission and queued it.`);
@@ -148,11 +150,17 @@ async function collectPastAccepted() {
     });
     await refreshState();
 
-    setMessage(
-      `Scanned ${result.scanned} submissions; added ${stored.added}, skipped ${stored.skipped}. ${
-        stored.autoDownloaded ? "Handed new exports to local sync." : ""
-      }`.trim(),
-    );
+    if (stored.autoDownloadError) {
+      setMessage(
+        `Scanned ${result.scanned} submissions; added ${stored.added}, skipped ${stored.skipped}. Local handoff failed: ${stored.autoDownloadError}`,
+      );
+    } else {
+      setMessage(
+        `Scanned ${result.scanned} submissions; added ${stored.added}, skipped ${stored.skipped}. ${
+          stored.autoDownloaded ? `Handed ${stored.autoDownloaded} pending exports to local sync.` : ""
+        }`.trim(),
+      );
+    }
   } catch (error) {
     setMessage(error.message || String(error));
   } finally {
