@@ -750,11 +750,13 @@
   let lastAutoSignal = "";
   let lastAutoCheckAt = 0;
   let lastSubmitActionAt = 0;
+  let lastLocationHref = location.href;
   const AUTO_CAPTURE_MIN_CHECK_MS = 15_000;
   const AUTO_CAPTURE_RECENT_SUBMIT_MIN_CHECK_MS = 2_500;
   const AUTO_CAPTURE_SUBMIT_WINDOW_MS = 120_000;
   const AUTO_CAPTURE_SUBMISSION_CLOCK_SKEW_MS = 20_000;
   const AUTO_CAPTURE_RECENT_ACCEPTED_WINDOW_MS = 10 * 60_000;
+  const AUTO_CAPTURE_SUBMIT_PROBE_DELAYS_MS = [2500, 7000, 15000, 30000, 60000, 90000, 120000];
 
   function isExtensionContextInvalidated(error) {
     return /Extension context invalidated/i.test(error?.message || String(error));
@@ -827,9 +829,9 @@
   function noteSubmitAction() {
     lastSubmitActionAt = Date.now();
     lastAutoCheckAt = 0;
-    scheduleAutoCapture(2500);
-    window.setTimeout(() => scheduleAutoCapture(0), 7000);
-    window.setTimeout(() => scheduleAutoCapture(0), 15000);
+    for (const delay of AUTO_CAPTURE_SUBMIT_PROBE_DELAYS_MS) {
+      window.setTimeout(() => scheduleAutoCapture(0), delay);
+    }
   }
 
   async function maybeAutoCapture() {
@@ -858,8 +860,12 @@
       if (autoKey === lastAutoKey) return;
       lastAutoKey = autoKey;
       lastSubmitActionAt = 0;
-      chrome.runtime.sendMessage({ type: "auto-captured-solution", payload }, () => {
-        void chrome.runtime.lastError;
+      chrome.runtime.sendMessage({ type: "auto-captured-solution", payload }, (response) => {
+        const error = chrome.runtime.lastError;
+        if (error || !response?.ok || response?.payload?.autoDownloadError) {
+          lastAutoKey = "";
+          scheduleAutoCapture(AUTO_CAPTURE_RECENT_SUBMIT_MIN_CHECK_MS);
+        }
       });
     } catch (error) {
       if (stopAutoCaptureForInvalidatedContext(error)) return;
@@ -871,6 +877,25 @@
     if (autoCaptureStopped) return;
     window.clearTimeout(autoTimer);
     autoTimer = window.setTimeout(maybeAutoCapture, delay);
+  }
+
+  function noteLocationChange() {
+    if (location.href === lastLocationHref) return;
+    lastLocationHref = location.href;
+    lastAutoSignal = "";
+    lastAutoCheckAt = 0;
+    scheduleAutoCapture(900);
+  }
+
+  function patchHistoryMethod(methodName) {
+    const original = history[methodName];
+    if (typeof original !== "function") return;
+
+    history[methodName] = function patchedHistoryMethod(...args) {
+      const result = original.apply(this, args);
+      window.dispatchEvent(new Event("leetcode-repo-exporter-locationchange"));
+      return result;
+    };
   }
 
   document.addEventListener(
@@ -889,15 +914,26 @@
     true,
   );
 
+  patchHistoryMethod("pushState");
+  patchHistoryMethod("replaceState");
+
   window.addEventListener("load", () => scheduleAutoCapture(1800));
-  window.addEventListener("popstate", () => scheduleAutoCapture(1800));
+  window.addEventListener("popstate", () => {
+    noteLocationChange();
+    scheduleAutoCapture(1800);
+  });
+  window.addEventListener("hashchange", noteLocationChange);
+  window.addEventListener("leetcode-repo-exporter-locationchange", noteLocationChange);
   scheduleAutoCapture(1800);
+  window.setInterval(() => scheduleAutoCapture(0), 30_000);
 
   observer = new MutationObserver((mutations) => {
+    noteLocationChange();
     if (mutations.length > 0 && mutations.every(isEditorMutation)) return;
     scheduleAutoCapture();
   });
   observer.observe(document.documentElement, {
+    characterData: true,
     childList: true,
     subtree: true,
   });

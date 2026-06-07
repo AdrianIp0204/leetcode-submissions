@@ -67,6 +67,26 @@ async function downloadExportBundle(exports, reason = "manual") {
   return downloadOne(filename, `${JSON.stringify(bundle, null, 2)}\n`, "application/json");
 }
 
+function pendingHandoffExports(exportsByKey) {
+  return Object.values(exportsByKey).filter((payload) => !payload.handedOffAt);
+}
+
+function markHandedOff(exportsByKey, exports, reason) {
+  const handedOffAt = new Date().toISOString();
+  const next = { ...exportsByKey };
+
+  for (const payload of exports) {
+    if (!payload?.key || !next[payload.key]) continue;
+    next[payload.key] = {
+      ...next[payload.key],
+      handedOffAt,
+      handoffReason: reason,
+    };
+  }
+
+  return next;
+}
+
 async function addExports(exports, reason = "manual") {
   const existing = await getExportsByKey();
   const next = { ...existing };
@@ -93,20 +113,47 @@ async function addExports(exports, reason = "manual") {
     added.push(savedPayload);
   }
 
-  await storageSet({ exportsByKey: next });
+  let nextExportsByKey = next;
+  let autoDownloaded = 0;
+  let autoDownloadError = "";
 
-  if (settings.autoDownload) await downloadExportBundle(added, reason);
+  if (settings.autoDownload) {
+    const pending = pendingHandoffExports(nextExportsByKey);
+    if (pending.length) {
+      try {
+        const bundleId = await downloadExportBundle(pending, reason);
+        if (bundleId) {
+          nextExportsByKey = markHandedOff(nextExportsByKey, pending, reason);
+          autoDownloaded = pending.length;
+        }
+      } catch (error) {
+        autoDownloadError = error.message || String(error);
+      }
+    }
+  }
+
+  await storageSet({
+    exportsByKey: nextExportsByKey,
+    lastAutoDownloadError: autoDownloadError || null,
+    lastAutoDownloadErrorAt: autoDownloadError ? new Date().toISOString() : null,
+  });
 
   return {
     added: added.length,
     skipped: skipped.length,
-    total: Object.keys(next).length,
-    autoDownloaded: settings.autoDownload ? added.length : 0,
+    total: Object.keys(nextExportsByKey).length,
+    pendingHandoff: pendingHandoffExports(nextExportsByKey).length,
+    autoDownloaded,
+    autoDownloadError,
   };
 }
 
 async function getState() {
-  const settings = await storageGet(DEFAULT_SETTINGS);
+  const settings = await storageGet({
+    ...DEFAULT_SETTINGS,
+    lastAutoDownloadError: null,
+    lastAutoDownloadErrorAt: null,
+  });
   const exportsByKey = await getExportsByKey();
   const exports = Object.values(exportsByKey).sort((left, right) =>
     String(right.queuedAt || "").localeCompare(String(left.queuedAt || "")),
@@ -115,6 +162,9 @@ async function getState() {
   return {
     settings,
     count: exports.length,
+    pendingHandoffCount: pendingHandoffExports(exportsByKey).length,
+    lastAutoDownloadError: settings.lastAutoDownloadError,
+    lastAutoDownloadErrorAt: settings.lastAutoDownloadErrorAt,
     exports,
   };
 }
@@ -151,6 +201,13 @@ chrome.runtime.onMessage.addListener((message, _sender, sendResponse) => {
       const exportsByKey = await getExportsByKey();
       const exports = Object.values(exportsByKey);
       const bundleId = await downloadExportBundle(exports, "manual-queue-download");
+      if (bundleId) {
+        await storageSet({
+          exportsByKey: markHandedOff(exportsByKey, exports, "manual-queue-download"),
+          lastAutoDownloadError: null,
+          lastAutoDownloadErrorAt: null,
+        });
+      }
       return { downloaded: exports.length, bundles: bundleId ? 1 : 0 };
     }
 

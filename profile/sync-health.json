@@ -1,14 +1,14 @@
 {
-  "generatedAt": "2026-06-06T05:08:51.143Z",
+  "generatedAt": "2026-06-07T07:42:16.687Z",
   "username": "AdrianIp",
-  "profileFetchedAt": "2026-06-06T05:03:18.071Z",
-  "publicAcceptedSolved": 89,
-  "publicAcceptedSubmissions": 99,
-  "publicAttemptedProblems": 90,
-  "publicTotalSubmissions": 137,
-  "localProblemFolders": 84,
-  "localCanonicalSolutions": 84,
-  "estimatedSolvedGap": 5,
+  "profileFetchedAt": "2026-06-07T07:42:16.476Z",
+  "publicAcceptedSolved": 115,
+  "publicAcceptedSubmissions": 128,
+  "publicAttemptedProblems": 116,
+  "publicTotalSubmissions": 172,
+  "localProblemFolders": 91,
+  "localCanonicalSolutions": 91,
+  "estimatedSolvedGap": 24,
   "status": "behind",
   "knownLocalProblems": [
     {
@@ -72,8 +72,18 @@
       "hasCanonicalSolution": true
     },
     {
+      "folder": "0021-merge-two-sorted-lists",
+      "slug": "merge-two-sorted-lists",
+      "hasCanonicalSolution": true
+    },
+    {
       "folder": "0029-divide-two-integers",
       "slug": "divide-two-integers",
+      "hasCanonicalSolution": true
+    },
+    {
+      "folder": "0049-group-anagrams",
+      "slug": "group-anagrams",
       "hasCanonicalSolution": true
     },
     {
@@ -89,6 +99,11 @@
     {
       "folder": "0121-best-time-to-buy-and-sell-stock",
       "slug": "best-time-to-buy-and-sell-stock",
+      "hasCanonicalSolution": true
+    },
+    {
+      "folder": "0128-longest-consecutive-sequence",
+      "slug": "longest-consecutive-sequence",
       "hasCanonicalSolution": true
     },
     {
@@ -119,6 +134,11 @@
     {
       "folder": "0217-contains-duplicate",
       "slug": "contains-duplicate",
+      "hasCanonicalSolution": true
+    },
+    {
+      "folder": "0238-product-of-array-except-self",
+      "slug": "product-of-array-except-self",
       "hasCanonicalSolution": true
     },
     {
@@ -302,6 +322,11 @@
       "hasCanonicalSolution": true
     },
     {
+      "folder": "2169-count-operations-to-obtain-zero",
+      "slug": "count-operations-to-obtain-zero",
+      "hasCanonicalSolution": true
+    },
+    {
       "folder": "2185-counting-words-with-a-given-prefix",
       "slug": "counting-words-with-a-given-prefix",
       "hasCanonicalSolution": true
@@ -334,6 +359,11 @@
     {
       "folder": "2535-difference-between-element-sum-and-digit-sum-of-an-array",
       "slug": "difference-between-element-sum-and-digit-sum-of-an-array",
+      "hasCanonicalSolution": true
+    },
+    {
+      "folder": "2574-left-and-right-sum-differences",
+      "slug": "left-and-right-sum-differences",
       "hasCanonicalSolution": true
     },
     {
@@ -429,6 +459,11 @@
     {
       "folder": "3753-total-waviness-of-numbers-in-range-ii",
       "slug": "total-waviness-of-numbers-in-range-ii",
+      "hasCanonicalSolution": true
+    },
+    {
+      "folder": "3941-password-strength",
+      "slug": "password-strength",
       "hasCanonicalSolution": true
     }
   ]
