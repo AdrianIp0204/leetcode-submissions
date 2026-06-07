@@ -1,15 +1,15 @@
 # Shuffle the Array
 
 - LeetCode: https://leetcode.com/problems/shuffle-the-array/
-- Language: cpp
-- Exported at: 2026-06-05T14:10:01.346Z
+- Language: python3
+- Exported at: 2026-06-07T07:56:20.685Z
 - Submission status seen by extension: Accepted
 - Difficulty: Easy
 - Tags: Array
-- Runtime: 4
-- Memory: 13444000
-- Submitted at: 2026-06-03T11:37:31.000Z
-- Submission ID: 2021192092
+- Runtime: 63
+- Memory: 19252000
+- Submitted at: 2026-06-07T06:25:33.000Z
+- Submission ID: 2025065138
 
 ## Pattern
 
