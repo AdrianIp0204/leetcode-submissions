@@ -86,6 +86,38 @@ function gitBusyReason() {
   return busyPaths.join(", ");
 }
 
+const syncManagedPrefixes = ["submissions/", "notes/", "profile/"];
+
+function normalizeGitPath(value) {
+  return String(value || "").replace(/\\/g, "/").replace(/^\.\/+/, "");
+}
+
+function isSyncManagedPath(value) {
+  const normalized = normalizeGitPath(value);
+  return syncManagedPrefixes.some((prefix) => normalized.startsWith(prefix));
+}
+
+function splitGitLines(value) {
+  return String(value || "")
+    .split("\n")
+    .map((line) => line.trim())
+    .filter(Boolean);
+}
+
+function gitChangedPaths() {
+  const changed = [
+    ...splitGitLines(gitOutput(["diff", "--name-only"])),
+    ...splitGitLines(gitOutput(["diff", "--cached", "--name-only"])),
+    ...splitGitLines(gitOutput(["ls-files", "--others", "--exclude-standard"])),
+  ].map(normalizeGitPath);
+
+  return [...new Set(changed)];
+}
+
+function gitStagedPaths() {
+  return splitGitLines(gitOutput(["diff", "--cached", "--name-only"])).map(normalizeGitPath);
+}
+
 function ensureRepoRoot() {
   const result = run("git", ["rev-parse", "--show-toplevel"], {
     capture: true,
@@ -259,9 +291,9 @@ async function syncOnce({ inbox, push }) {
       return;
     }
 
-    const statusBeforeAdd = gitOutput(["status", "--porcelain"]);
+    const changedPaths = gitChangedPaths();
 
-    if (!statusBeforeAdd) {
+    if (!changedPaths.length) {
       if (imported.bundles > 0 || copied > 0) {
         console.log(
           `Imported ${imported.exports} bundled exports, skipped ${imported.skippedDuplicates} duplicate exports, and copied ${copied} legacy files; no git changes.`,
@@ -272,8 +304,32 @@ async function syncOnce({ inbox, push }) {
       return;
     }
 
-    run("git", ["add", "."]);
-    const staged = gitOutput(["diff", "--cached", "--name-only"]);
+    const syncManagedPaths = changedPaths.filter(isSyncManagedPath);
+    const unmanagedPaths = changedPaths.filter((filePath) => !isSyncManagedPath(filePath));
+
+    if (unmanagedPaths.length) {
+      console.log(
+        `Leaving ${unmanagedPaths.length} non-sync repo changes alone: ${unmanagedPaths
+          .slice(0, 5)
+          .join(", ")}${unmanagedPaths.length > 5 ? ", ..." : ""}`,
+      );
+    }
+
+    if (!syncManagedPaths.length) {
+      console.log("No sync-managed file changes to commit.");
+      return;
+    }
+
+    const unmanagedStaged = gitStagedPaths().filter((filePath) => !isSyncManagedPath(filePath));
+    if (unmanagedStaged.length) {
+      console.log(
+        `Unrelated staged changes are present (${unmanagedStaged.join(", ")}); leaving sync files uncommitted for the next interval.`,
+      );
+      return;
+    }
+
+    run("git", ["add", "--", ...syncManagedPaths]);
+    const staged = gitStagedPaths().filter(isSyncManagedPath);
     if (!staged) {
       console.log("No staged changes after applying .gitignore.");
       return;
