@@ -108,10 +108,10 @@ queue's `processed/` folder, and commits/pushes only when the solution code is
 new or changed. If the same solution already exists in the repo, the bundle is
 archived without creating a duplicate commit.
 
-Extension `0.4.4` no longer depends on LeetCode rendering a visible `Accepted`
-marker that matches local selectors. After a submit action, or while a recent
-accepted submission is still fresh, it polls LeetCode's own submission history
-from the logged-in page and hands off a bundle only after Chrome reports the
-download complete. If the watcher log only says `No downloaded files or git
-changes`, the git side is idle and the missing piece is the browser extension
-handoff.
+Extension `0.4.5` no longer depends on LeetCode rendering a visible `Accepted`
+marker or a recognizable submit button. It injects a page-context bridge that
+observes LeetCode's own submit/check network calls, records the exact submission
+id, waits for a terminal judge result, fetches that submission from the logged-in
+page, and hands off a bundle only after Chrome reports the download complete. If
+the watcher log only says `No downloaded files or git changes`, the git side is
+idle and the missing piece is the browser extension handoff.

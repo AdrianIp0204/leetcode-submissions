@@ -29,7 +29,7 @@ async function main() {
   if (!manifest.host_permissions?.includes("https://leetcode.com/*")) {
     throw new Error("Missing LeetCode host permission.");
   }
-  if (manifest.version !== "0.4.4") throw new Error("Expected extension version 0.4.4.");
+  if (manifest.version !== "0.4.5") throw new Error("Expected extension version 0.4.5.");
 
   const requiredFiles = [
     "background.js",
@@ -55,6 +55,23 @@ async function main() {
   }
   if (!content.includes("collectAutoPayloadForSignal")) {
     throw new Error("Auto-capture must route fallback signals through history collection.");
+  }
+  if (!content.includes("leetcode-repo-exporter-page-network") || !content.includes("network-submission:")) {
+    throw new Error("Auto-capture must listen for page-network submission IDs.");
+  }
+  if (!content.includes("isTerminalSubmissionStatus")) {
+    throw new Error("Auto-capture must wait for terminal judge statuses before handoff.");
+  }
+
+  const pageBridge = await readFile(path.join(extensionDir, "page-bridge.js"), "utf8");
+  if (!pageBridge.includes("installNetworkObserver") || !pageBridge.includes("window.fetch")) {
+    throw new Error("Page bridge must install a fetch observer for submit/check traffic.");
+  }
+  if (!pageBridge.includes("XMLHttpRequest") || !/submissions\\\/detail/.test(pageBridge)) {
+    throw new Error("Page bridge must observe XHR submission check traffic.");
+  }
+  if (!pageBridge.includes("submission_?id") || !pageBridge.includes("status_msg")) {
+    throw new Error("Page bridge must extract LeetCode submission IDs and judge statuses.");
   }
 
   const background = await readFile(path.join(extensionDir, "background.js"), "utf8");

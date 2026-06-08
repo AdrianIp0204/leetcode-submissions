@@ -3,6 +3,7 @@
   window.__leetcodeRepoExporterContentLoaded = true;
 
   const SOURCE = "leetcode-repo-exporter-content";
+  const PAGE_NETWORK_SOURCE = "leetcode-repo-exporter-page-network";
 
   const languageExtensions = {
     c: "c",
@@ -94,6 +95,22 @@
     "Internal Error",
     "Accepted",
   ];
+
+  function normalizeSubmissionStatus(value) {
+    const raw = String(value || "").replace(/[_-]+/g, " ").replace(/\s+/g, " ").trim();
+    if (!raw) return "";
+
+    const exact = submissionStatuses.find((status) => status.toLowerCase() === raw.toLowerCase());
+    if (exact) return exact;
+
+    if (/^ac$/i.test(raw)) return "Accepted";
+    if (/^wa$/i.test(raw)) return "Wrong Answer";
+    if (/^tle$/i.test(raw)) return "Time Limit Exceeded";
+    if (/^mle$/i.test(raw)) return "Memory Limit Exceeded";
+    if (/^re$/i.test(raw)) return "Runtime Error";
+    if (/^ce$/i.test(raw)) return "Compile Error";
+    return raw;
+  }
 
   function regexEscape(value) {
     return String(value).replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
@@ -374,6 +391,12 @@
 
   function isAcceptedStatus(status) {
     return /^accepted$/i.test(String(status || ""));
+  }
+
+  function isTerminalSubmissionStatus(status) {
+    const normalized = normalizeSubmissionStatus(status);
+    if (!normalized || /^unknown$/i.test(normalized)) return false;
+    return !/pending|started|judging|running|queued|state pending|state started/i.test(normalized);
   }
 
   function attemptKey({ status, exportedAt, submittedAt, submissionId }) {
@@ -764,6 +787,7 @@
   let lastAutoSignal = "";
   let lastAutoCheckAt = 0;
   let lastSubmitActionAt = 0;
+  let lastNetworkSubmission = null;
   let lastLocationHref = location.href;
   const AUTO_CAPTURE_MIN_CHECK_MS = 15_000;
   const AUTO_CAPTURE_RECENT_SUBMIT_MIN_CHECK_MS = 2_500;
@@ -801,11 +825,11 @@
     return Number.isFinite(value) ? value : 0;
   }
 
-  function isFreshAutoPayload(payload, now = Date.now()) {
+  function isFreshAutoPayload(payload, now = Date.now(), options = {}) {
     if (isSubmissionDetailPage()) return true;
 
     const submittedAt = submittedAtMs(payload);
-    if (!submittedAt) return false;
+    if (!submittedAt) return Boolean(options.directSubmission && isRecentSubmitWindow(now));
     if (isRecentSubmitWindow(now)) {
       return submittedAt >= lastSubmitActionAt - AUTO_CAPTURE_SUBMISSION_CLOCK_SKEW_MS;
     }
@@ -852,6 +876,17 @@
     }
   }
 
+  function networkSubmissionAutoSignal(now = Date.now()) {
+    if (!lastNetworkSubmission?.id) return "";
+    if (now - lastNetworkSubmission.seenAt > AUTO_CAPTURE_SUBMIT_WINDOW_MS) return "";
+    return [
+      "network-submission",
+      lastNetworkSubmission.id,
+      normalizeSubmissionStatus(lastNetworkSubmission.status) || "pending",
+      lastNetworkSubmission.updatedAt,
+    ].join(":");
+  }
+
   function fallbackAutoSignal(now = Date.now()) {
     if (!isProblemPage()) return "";
 
@@ -866,6 +901,10 @@
   }
 
   async function collectAutoPayloadForSignal(autoSignal, now = Date.now()) {
+    if (autoSignal.startsWith("network-submission:") && lastNetworkSubmission?.id) {
+      return collectSubmissionById(lastNetworkSubmission.id);
+    }
+
     if (autoSignal.startsWith("problem-poll:") && !isRecentSubmitWindow(now)) {
       return collectLatestAcceptedSubmissionForPage();
     }
@@ -880,7 +919,7 @@
       if (!settings.autoCapture) return;
 
       const now = Date.now();
-      const autoSignal = findSubmissionAutoSignal() || fallbackAutoSignal(now);
+      const autoSignal = networkSubmissionAutoSignal(now) || findSubmissionAutoSignal() || fallbackAutoSignal(now);
       if (!autoSignal) return;
 
       if (!shouldProbeAutoSignal(autoSignal, now)) return;
@@ -893,18 +932,31 @@
       }
       rememberAutoSignal(autoSignal, now);
 
+      const directSubmission = autoSignal.startsWith("network-submission:");
       const payload = await collectAutoPayloadForSignal(autoSignal, now);
-      if (!isFreshAutoPayload(payload, now)) return;
+      if (!isTerminalSubmissionStatus(payload?.status)) {
+        scheduleAutoCapture(AUTO_CAPTURE_RECENT_SUBMIT_MIN_CHECK_MS);
+        return;
+      }
+      if (!isFreshAutoPayload(payload, now, { directSubmission })) return;
       const autoKey = payload.submissionId ? `submission:${payload.submissionId}` : payload.key;
       if (autoKey === lastAutoKey) return;
       lastAutoKey = autoKey;
-      lastSubmitActionAt = 0;
       chrome.runtime.sendMessage({ type: "auto-captured-solution", payload }, (response) => {
         const error = chrome.runtime.lastError;
         if (error || !response?.ok || response?.payload?.autoDownloadError) {
           lastAutoKey = "";
+          if (directSubmission && lastNetworkSubmission) {
+            lastNetworkSubmission = {
+              ...lastNetworkSubmission,
+              updatedAt: Date.now(),
+            };
+          }
           scheduleAutoCapture(AUTO_CAPTURE_RECENT_SUBMIT_MIN_CHECK_MS);
+          return;
         }
+        lastSubmitActionAt = 0;
+        if (directSubmission) lastNetworkSubmission = null;
       });
     } catch (error) {
       if (stopAutoCaptureForInvalidatedContext(error)) return;
@@ -916,6 +968,37 @@
     if (autoCaptureStopped) return;
     window.clearTimeout(autoTimer);
     autoTimer = window.setTimeout(maybeAutoCapture, delay);
+  }
+
+  function noteNetworkSubmissionSignal(signal) {
+    const submissionId = String(signal?.submissionId || "").match(/\d+/)?.[0] || "";
+    const status = normalizeSubmissionStatus(signal?.status);
+    if (!submissionId && !signal?.kind) return;
+
+    noteSubmitAction();
+
+    if (submissionId) {
+      const now = Date.now();
+      const previous = lastNetworkSubmission?.id === submissionId ? lastNetworkSubmission : null;
+      lastNetworkSubmission = {
+        id: submissionId,
+        status,
+        kind: signal.kind || "network",
+        seenAt: previous?.seenAt || now,
+        updatedAt: now,
+      };
+    }
+
+    scheduleAutoCapture(isTerminalSubmissionStatus(status) ? 250 : AUTO_CAPTURE_RECENT_SUBMIT_MIN_CHECK_MS);
+  }
+
+  function installPageNetworkObserver() {
+    const script = document.createElement("script");
+    script.src = chrome.runtime.getURL("page-bridge.js");
+    script.dataset.mode = "network-observer";
+    script.onload = () => script.remove();
+    script.onerror = () => script.remove();
+    document.documentElement.appendChild(script);
   }
 
   function noteLocationChange() {
@@ -953,8 +1036,15 @@
     true,
   );
 
+  window.addEventListener("message", (event) => {
+    if (event.source !== window) return;
+    if (event.data?.source !== PAGE_NETWORK_SOURCE) return;
+    noteNetworkSubmissionSignal(event.data.payload || {});
+  });
+
   patchHistoryMethod("pushState");
   patchHistoryMethod("replaceState");
+  installPageNetworkObserver();
 
   window.addEventListener("load", () => scheduleAutoCapture(1800));
   window.addEventListener("popstate", () => {
