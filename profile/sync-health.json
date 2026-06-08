@@ -1,14 +1,14 @@
 {
-  "generatedAt": "2026-06-07T07:42:16.687Z",
+  "generatedAt": "2026-06-08T04:16:47.928Z",
   "username": "AdrianIp",
-  "profileFetchedAt": "2026-06-07T07:42:16.476Z",
-  "publicAcceptedSolved": 115,
-  "publicAcceptedSubmissions": 128,
-  "publicAttemptedProblems": 116,
-  "publicTotalSubmissions": 172,
-  "localProblemFolders": 91,
-  "localCanonicalSolutions": 91,
-  "estimatedSolvedGap": 24,
+  "profileFetchedAt": "2026-06-08T04:16:47.740Z",
+  "publicAcceptedSolved": 127,
+  "publicAcceptedSubmissions": 140,
+  "publicAttemptedProblems": 129,
+  "publicTotalSubmissions": 188,
+  "localProblemFolders": 115,
+  "localCanonicalSolutions": 115,
+  "estimatedSolvedGap": 12,
   "status": "behind",
   "knownLocalProblems": [
     {
@@ -52,6 +52,11 @@
       "hasCanonicalSolution": true
     },
     {
+      "folder": "0011-container-with-most-water",
+      "slug": "container-with-most-water",
+      "hasCanonicalSolution": true
+    },
+    {
       "folder": "0012-integer-to-roman",
       "slug": "integer-to-roman",
       "hasCanonicalSolution": true
@@ -77,6 +82,16 @@
       "hasCanonicalSolution": true
     },
     {
+      "folder": "0026-remove-duplicates-from-sorted-array",
+      "slug": "remove-duplicates-from-sorted-array",
+      "hasCanonicalSolution": true
+    },
+    {
+      "folder": "0028-find-the-index-of-the-first-occurrence-in-a-string",
+      "slug": "find-the-index-of-the-first-occurrence-in-a-string",
+      "hasCanonicalSolution": true
+    },
+    {
       "folder": "0029-divide-two-integers",
       "slug": "divide-two-integers",
       "hasCanonicalSolution": true
@@ -89,6 +104,11 @@
     {
       "folder": "0060-permutation-sequence",
       "slug": "permutation-sequence",
+      "hasCanonicalSolution": true
+    },
+    {
+      "folder": "0069-sqrtx",
+      "slug": "sqrtx",
       "hasCanonicalSolution": true
     },
     {
@@ -162,6 +182,26 @@
       "hasCanonicalSolution": true
     },
     {
+      "folder": "0413-arithmetic-slices",
+      "slug": "arithmetic-slices",
+      "hasCanonicalSolution": true
+    },
+    {
+      "folder": "0448-find-all-numbers-disappeared-in-an-array",
+      "slug": "find-all-numbers-disappeared-in-an-array",
+      "hasCanonicalSolution": true
+    },
+    {
+      "folder": "0485-max-consecutive-ones",
+      "slug": "max-consecutive-ones",
+      "hasCanonicalSolution": true
+    },
+    {
+      "folder": "0645-set-mismatch",
+      "slug": "set-mismatch",
+      "hasCanonicalSolution": true
+    },
+    {
       "folder": "0657-robot-return-to-origin",
       "slug": "robot-return-to-origin",
       "hasCanonicalSolution": true
@@ -217,6 +257,11 @@
       "hasCanonicalSolution": true
     },
     {
+      "folder": "1224-maximum-equal-frequency",
+      "slug": "maximum-equal-frequency",
+      "hasCanonicalSolution": true
+    },
+    {
       "folder": "1281-subtract-the-product-and-sum-of-digits-of-an-integer",
       "slug": "subtract-the-product-and-sum-of-digits-of-an-integer",
       "hasCanonicalSolution": true
@@ -224,6 +269,21 @@
     {
       "folder": "1323-maximum-69-number",
       "slug": "maximum-69-number",
+      "hasCanonicalSolution": true
+    },
+    {
+      "folder": "1365-how-many-numbers-are-smaller-than-the-current-number",
+      "slug": "how-many-numbers-are-smaller-than-the-current-number",
+      "hasCanonicalSolution": true
+    },
+    {
+      "folder": "1441-build-an-array-with-stack-operations",
+      "slug": "build-an-array-with-stack-operations",
+      "hasCanonicalSolution": true
+    },
+    {
+      "folder": "1450-number-of-students-doing-homework-at-a-given-time",
+      "slug": "number-of-students-doing-homework-at-a-given-time",
       "hasCanonicalSolution": true
     },
     {
@@ -327,8 +387,18 @@
       "hasCanonicalSolution": true
     },
     {
+      "folder": "2176-count-equal-and-divisible-pairs-in-an-array",
+      "slug": "count-equal-and-divisible-pairs-in-an-array",
+      "hasCanonicalSolution": true
+    },
+    {
       "folder": "2185-counting-words-with-a-given-prefix",
       "slug": "counting-words-with-a-given-prefix",
+      "hasCanonicalSolution": true
+    },
+    {
+      "folder": "2196-create-binary-tree-from-descriptions",
+      "slug": "create-binary-tree-from-descriptions",
       "hasCanonicalSolution": true
     },
     {
@@ -387,8 +457,18 @@
       "hasCanonicalSolution": true
     },
     {
+      "folder": "2778-sum-of-squares-of-special-elements",
+      "slug": "sum-of-squares-of-special-elements",
+      "hasCanonicalSolution": true
+    },
+    {
       "folder": "2798-number-of-employees-who-met-the-target",
       "slug": "number-of-employees-who-met-the-target",
+      "hasCanonicalSolution": true
+    },
+    {
+      "folder": "2840-check-if-strings-can-be-made-equal-with-operations-ii",
+      "slug": "check-if-strings-can-be-made-equal-with-operations-ii",
       "hasCanonicalSolution": true
     },
     {
@@ -432,13 +512,38 @@
       "hasCanonicalSolution": true
     },
     {
+      "folder": "3146-permutation-difference-between-two-strings",
+      "slug": "permutation-difference-between-two-strings",
+      "hasCanonicalSolution": true
+    },
+    {
       "folder": "3232-find-if-digit-game-can-be-won",
       "slug": "find-if-digit-game-can-be-won",
       "hasCanonicalSolution": true
     },
     {
+      "folder": "3289-the-two-sneaky-numbers-of-digitville",
+      "slug": "the-two-sneaky-numbers-of-digitville",
+      "hasCanonicalSolution": true
+    },
+    {
       "folder": "3492-maximum-containers-on-a-ship",
       "slug": "maximum-containers-on-a-ship",
+      "hasCanonicalSolution": true
+    },
+    {
+      "folder": "3512-minimum-operations-to-make-array-sum-divisible-by-k",
+      "slug": "minimum-operations-to-make-array-sum-divisible-by-k",
+      "hasCanonicalSolution": true
+    },
+    {
+      "folder": "3541-find-most-frequent-vowel-and-consonant",
+      "slug": "find-most-frequent-vowel-and-consonant",
+      "hasCanonicalSolution": true
+    },
+    {
+      "folder": "3622-check-divisibility-by-digit-sum-and-product",
+      "slug": "check-divisibility-by-digit-sum-and-product",
       "hasCanonicalSolution": true
     },
     {
@@ -452,6 +557,11 @@
       "hasCanonicalSolution": true
     },
     {
+      "folder": "3668-restore-finishing-order",
+      "slug": "restore-finishing-order",
+      "hasCanonicalSolution": true
+    },
+    {
       "folder": "3751-total-waviness-of-numbers-in-range-i",
       "slug": "total-waviness-of-numbers-in-range-i",
       "hasCanonicalSolution": true
@@ -462,8 +572,18 @@
       "hasCanonicalSolution": true
     },
     {
+      "folder": "3925-concatenate-array-with-reverse",
+      "slug": "concatenate-array-with-reverse",
+      "hasCanonicalSolution": true
+    },
+    {
       "folder": "3941-password-strength",
       "slug": "password-strength",
+      "hasCanonicalSolution": true
+    },
+    {
+      "folder": "3945-digit-frequency-score",
+      "slug": "digit-frequency-score",
       "hasCanonicalSolution": true
     }
   ]

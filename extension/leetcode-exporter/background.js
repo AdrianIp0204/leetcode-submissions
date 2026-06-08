@@ -3,6 +3,9 @@ const DEFAULT_SETTINGS = {
   autoDownload: true,
 };
 
+const DOWNLOAD_COMPLETE_TIMEOUT_MS = 30_000;
+const DOWNLOAD_POLL_MS = 250;
+
 function hashString(value) {
   let hash = 0;
   for (let index = 0; index < value.length; index += 1) {
@@ -29,9 +32,39 @@ async function getExportsByKey() {
   return exportsByKey;
 }
 
+function sleep(ms) {
+  return new Promise((resolve) => setTimeout(resolve, ms));
+}
+
+function searchDownloads(query) {
+  return new Promise((resolve, reject) => {
+    chrome.downloads.search(query, (items) => {
+      const error = chrome.runtime.lastError;
+      if (error) reject(new Error(error.message));
+      else resolve(items || []);
+    });
+  });
+}
+
+async function waitForDownloadComplete(downloadId) {
+  const startedAt = Date.now();
+
+  while (Date.now() - startedAt < DOWNLOAD_COMPLETE_TIMEOUT_MS) {
+    const [item] = await searchDownloads({ id: downloadId });
+    if (item?.state === "complete") return item;
+    if (item?.state === "interrupted") {
+      throw new Error(`Download interrupted${item.error ? `: ${item.error}` : ""}`);
+    }
+
+    await sleep(DOWNLOAD_POLL_MS);
+  }
+
+  throw new Error("Download did not complete before the local handoff timeout.");
+}
+
 async function downloadOne(relativePath, contents, contentType = "text/plain") {
   const url = `data:${contentType};charset=utf-8,${encodeURIComponent(contents)}`;
-  return new Promise((resolve, reject) => {
+  const downloadId = await new Promise((resolve, reject) => {
     chrome.downloads.download(
       {
         url,
@@ -46,6 +79,13 @@ async function downloadOne(relativePath, contents, contentType = "text/plain") {
       },
     );
   });
+
+  const item = await waitForDownloadComplete(downloadId);
+  return {
+    downloadId,
+    filename: item.filename || `leetcode-submissions/${relativePath}`,
+    state: item.state,
+  };
 }
 
 function timestampForFilename() {
@@ -116,15 +156,23 @@ async function addExports(exports, reason = "manual") {
   let nextExportsByKey = next;
   let autoDownloaded = 0;
   let autoDownloadError = "";
+  let lastHandoffBundle = null;
 
   if (settings.autoDownload) {
     const pending = pendingHandoffExports(nextExportsByKey);
     if (pending.length) {
       try {
-        const bundleId = await downloadExportBundle(pending, reason);
-        if (bundleId) {
+        const bundle = await downloadExportBundle(pending, reason);
+        if (bundle) {
           nextExportsByKey = markHandedOff(nextExportsByKey, pending, reason);
           autoDownloaded = pending.length;
+          lastHandoffBundle = {
+            downloadId: bundle.downloadId,
+            filename: bundle.filename,
+            completedAt: new Date().toISOString(),
+            reason,
+            exports: pending.length,
+          };
         }
       } catch (error) {
         autoDownloadError = error.message || String(error);
@@ -136,6 +184,7 @@ async function addExports(exports, reason = "manual") {
     exportsByKey: nextExportsByKey,
     lastAutoDownloadError: autoDownloadError || null,
     lastAutoDownloadErrorAt: autoDownloadError ? new Date().toISOString() : null,
+    ...(lastHandoffBundle ? { lastHandoffBundle } : {}),
   });
 
   return {
@@ -153,6 +202,7 @@ async function getState() {
     ...DEFAULT_SETTINGS,
     lastAutoDownloadError: null,
     lastAutoDownloadErrorAt: null,
+    lastHandoffBundle: null,
   });
   const exportsByKey = await getExportsByKey();
   const exports = Object.values(exportsByKey).sort((left, right) =>
@@ -165,6 +215,7 @@ async function getState() {
     pendingHandoffCount: pendingHandoffExports(exportsByKey).length,
     lastAutoDownloadError: settings.lastAutoDownloadError,
     lastAutoDownloadErrorAt: settings.lastAutoDownloadErrorAt,
+    lastHandoffBundle: settings.lastHandoffBundle,
     exports,
   };
 }
@@ -200,15 +251,22 @@ chrome.runtime.onMessage.addListener((message, _sender, sendResponse) => {
     if (message?.type === "download-exports") {
       const exportsByKey = await getExportsByKey();
       const exports = Object.values(exportsByKey);
-      const bundleId = await downloadExportBundle(exports, "manual-queue-download");
-      if (bundleId) {
+      const bundle = await downloadExportBundle(exports, "manual-queue-download");
+      if (bundle) {
         await storageSet({
           exportsByKey: markHandedOff(exportsByKey, exports, "manual-queue-download"),
           lastAutoDownloadError: null,
           lastAutoDownloadErrorAt: null,
+          lastHandoffBundle: {
+            downloadId: bundle.downloadId,
+            filename: bundle.filename,
+            completedAt: new Date().toISOString(),
+            reason: "manual-queue-download",
+            exports: exports.length,
+          },
         });
       }
-      return { downloaded: exports.length, bundles: bundleId ? 1 : 0 };
+      return { downloaded: exports.length, bundles: bundle ? 1 : 0 };
     }
 
     if (message?.type === "clear-exports") {

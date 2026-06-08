@@ -4,6 +4,7 @@ const elements = {
   collect: document.getElementById("collect"),
   history: document.getElementById("history"),
   historyLimit: document.getElementById("historyLimit"),
+  attemptLimit: document.getElementById("attemptLimit"),
   autoCapture: document.getElementById("autoCapture"),
   autoDownload: document.getElementById("autoDownload"),
   result: document.getElementById("result"),
@@ -140,9 +141,10 @@ async function collectPastAccepted() {
 
   try {
     const limit = Number(elements.historyLimit.value || 100);
+    const attemptLimit = Number(elements.attemptLimit.value || 25);
     const result = await sendTabMessage({
       type: "collect-history",
-      payload: { limit },
+      payload: { limit, attemptLimit },
     });
     const stored = await sendRuntimeMessage({
       type: "store-exports",
@@ -152,11 +154,11 @@ async function collectPastAccepted() {
 
     if (stored.autoDownloadError) {
       setMessage(
-        `Scanned ${result.scanned} submissions; added ${stored.added}, skipped ${stored.skipped}. Local handoff failed: ${stored.autoDownloadError}`,
+        `Scanned ${result.scanned}; found ${result.accepted} accepted and ${result.attempts} failed attempts. Added ${stored.added}, skipped ${stored.skipped}. Local handoff failed: ${stored.autoDownloadError}`,
       );
     } else {
       setMessage(
-        `Scanned ${result.scanned} submissions; added ${stored.added}, skipped ${stored.skipped}. ${
+        `Scanned ${result.scanned}; found ${result.accepted} accepted and ${result.attempts} failed attempts. Added ${stored.added}, skipped ${stored.skipped}. ${
           stored.autoDownloaded ? `Handed ${stored.autoDownloaded} pending exports to local sync.` : ""
         }`.trim(),
       );

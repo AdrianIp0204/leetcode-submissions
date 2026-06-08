@@ -27,7 +27,7 @@ extension/leetcode-exporter
 1. Open a LeetCode problem page or submission page.
 2. Keep **Auto collect submission results** and **Auto hand off to local sync** enabled.
 3. When a new submission result appears, the extension queues that submission and creates one sync handoff bundle automatically.
-4. To backfill older solutions, open any LeetCode page while logged in and click **Collect Past Accepted**.
+4. To backfill older solutions and recent failed attempts, open any LeetCode page while logged in and click **Collect Past Accepted**.
 
 Accepted submissions are written as the canonical `submissions/<problem>/solution.*`.
 Non-accepted attempts are kept under `submissions/<problem>/attempts/...` so a
@@ -50,12 +50,18 @@ After import, the watcher commits and pushes only when a solution is new or the
 solution code changed. Re-exporting the same existing solution is treated as a
 duplicate and will not create a README-only metadata commit.
 
-Version `0.4.2` keeps auto-capture probing through LeetCode SPA route changes,
-text-only result updates, and slower judge results after submit. It also keeps a
-separate "pending handoff" state, so if Chrome fails to create the local sync
-bundle, the export stays retryable instead of being silently skipped as a
-duplicate later. Use **Collect Past Accepted** once after upgrading if public
-sync health says the repo is behind.
+Version `0.4.4` keeps auto-capture probing through LeetCode SPA route changes,
+text-only result updates, slower judge results after submit, and result pages
+where the visible status text no longer matches the extension selectors. When a
+submit action or recent accepted submission is plausible, it polls LeetCode's
+own submission history from the logged-in page instead of waiting for a visible
+`Accepted` marker first. It also keeps a separate "pending handoff" state and
+waits for Chrome to report the handoff bundle download as complete, so failed or
+interrupted downloads stay retryable instead of being silently skipped as
+duplicates later. History backfill also captures a capped set of recent
+non-accepted attempts so failed submissions land under `attempts/` instead of
+being omitted. Use **Collect Past Accepted** once after upgrading if public sync
+health says the repo is behind or a failed attempt is missing.
 
 If you prefer direct folder saving, use **Save Queue To Repo** and select the cloned `leetcode-submissions` repo root.
 

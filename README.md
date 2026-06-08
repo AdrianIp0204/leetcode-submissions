@@ -76,7 +76,7 @@ For the computer where you solve LeetCode, load the local extension from:
 extension/leetcode-exporter
 ```
 
-It runs only on LeetCode, does not use a GitHub token, auto-captures accepted visible solutions, and can backfill past accepted submissions from your logged-in LeetCode browser session. See `extension/leetcode-exporter/README.md`.
+It runs only on LeetCode, does not use a GitHub token, auto-captures fresh submissions from your logged-in LeetCode page, and can backfill past accepted submissions from your browser session. See `extension/leetcode-exporter/README.md`.
 Generated READMEs include difficulty, tags, runtime/memory when LeetCode exposes them, plus short reflection fields for pattern, key idea, mistake/edge case, and complexity.
 
 ## Automatic Local Sync
@@ -107,3 +107,11 @@ export bundle. The watcher imports those renamed bundles, moves them into the
 queue's `processed/` folder, and commits/pushes only when the solution code is
 new or changed. If the same solution already exists in the repo, the bundle is
 archived without creating a duplicate commit.
+
+Extension `0.4.4` no longer depends on LeetCode rendering a visible `Accepted`
+marker that matches local selectors. After a submit action, or while a recent
+accepted submission is still fresh, it polls LeetCode's own submission history
+from the logged-in page and hands off a bundle only after Chrome reports the
+download complete. If the watcher log only says `No downloaded files or git
+changes`, the git side is idle and the missing piece is the browser extension
+handoff.

@@ -672,16 +672,22 @@
     return new Promise((resolve) => window.setTimeout(resolve, ms));
   }
 
-  async function collectAcceptedHistory({ limit = 100 } = {}) {
+  async function collectAcceptedHistory({ limit = 100, attemptLimit = 25 } = {}) {
     const maxAccepted = Math.max(1, Math.min(Number(limit) || 100, 300));
+    const maxAttempts = Math.max(0, Math.min(Number(attemptLimit) || 0, 100));
     const pageLimit = 20;
-    const exports = [];
+    const acceptedExports = [];
+    const attemptExports = [];
     const seenIds = new Set();
     let offset = 0;
     let lastKey = null;
     let scanned = 0;
 
-    for (let page = 0; page < 25 && exports.length < maxAccepted; page += 1) {
+    for (
+      let page = 0;
+      page < 25 && (acceptedExports.length < maxAccepted || attemptExports.length < maxAttempts);
+      page += 1
+    ) {
       const data = await fetchLeetCodeGraphql(submissionListQuery, {
         offset,
         limit: pageLimit,
@@ -699,16 +705,22 @@
       scanned += submissions.length;
 
       for (const submission of submissions) {
-        if (exports.length >= maxAccepted) break;
-        if (submission.statusDisplay !== "Accepted") continue;
         if (seenIds.has(submission.id)) continue;
+
+        const accepted = submission.statusDisplay === "Accepted";
+        if (accepted && acceptedExports.length >= maxAccepted) continue;
+        if (!accepted && attemptExports.length >= maxAttempts) continue;
+
         seenIds.add(submission.id);
 
         const detailsData = await fetchLeetCodeGraphql(submissionDetailsQuery, {
           submissionId: Number(submission.id),
         });
         const exported = exportFromSubmission(submission, detailsData.submissionDetails);
-        if (exported) exports.push(exported);
+        if (exported) {
+          if (accepted) acceptedExports.push(exported);
+          else attemptExports.push(exported);
+        }
         await sleep(250);
       }
 
@@ -719,7 +731,9 @@
 
     return {
       scanned,
-      exports,
+      accepted: acceptedExports.length,
+      attempts: attemptExports.length,
+      exports: [...acceptedExports, ...attemptExports],
     };
   }
 
@@ -772,6 +786,10 @@
 
   function isSubmissionDetailPage() {
     return Boolean(findSubmissionIdFromLocation());
+  }
+
+  function isProblemPage() {
+    return /\/problems\/[^/]+/.test(location.pathname);
   }
 
   function isRecentSubmitWindow(now = Date.now()) {
@@ -834,16 +852,37 @@
     }
   }
 
+  function fallbackAutoSignal(now = Date.now()) {
+    if (!isProblemPage()) return "";
+
+    const slug = findProblemSlug();
+    if (!slug || slug === "leetcode-solution") return "";
+
+    if (isRecentSubmitWindow(now)) {
+      return `submit-window:${slug}:${lastSubmitActionAt}`;
+    }
+
+    return `problem-poll:${slug}`;
+  }
+
+  async function collectAutoPayloadForSignal(autoSignal, now = Date.now()) {
+    if (autoSignal.startsWith("problem-poll:") && !isRecentSubmitWindow(now)) {
+      return collectLatestAcceptedSubmissionForPage();
+    }
+
+    return collectAutoSubmission();
+  }
+
   async function maybeAutoCapture() {
     if (autoCaptureStopped) return;
     try {
       const settings = await chrome.storage.local.get({ autoCapture: true });
       if (!settings.autoCapture) return;
 
-      const autoSignal = findSubmissionAutoSignal();
+      const now = Date.now();
+      const autoSignal = findSubmissionAutoSignal() || fallbackAutoSignal(now);
       if (!autoSignal) return;
 
-      const now = Date.now();
       if (!shouldProbeAutoSignal(autoSignal, now)) return;
 
       const minCheckMs = isRecentSubmitWindow(now)
@@ -854,7 +893,7 @@
       }
       rememberAutoSignal(autoSignal, now);
 
-      const payload = await collectAutoSubmission();
+      const payload = await collectAutoPayloadForSignal(autoSignal, now);
       if (!isFreshAutoPayload(payload, now)) return;
       const autoKey = payload.submissionId ? `submission:${payload.submissionId}` : payload.key;
       if (autoKey === lastAutoKey) return;
