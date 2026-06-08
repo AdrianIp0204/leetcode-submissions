@@ -2,7 +2,7 @@
 
 - LeetCode: https://leetcode.com/problems/digit-frequency-score/
 - Language: python3
-- Exported at: 2026-06-08T04:31:47.480Z
+- Exported at: 2026-06-08T06:13:12.393Z
 - Submission status seen by extension: Accepted
 - Difficulty: Easy
 - Tags: Hash Table, Math

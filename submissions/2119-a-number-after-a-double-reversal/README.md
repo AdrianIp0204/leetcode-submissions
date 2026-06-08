@@ -2,7 +2,7 @@
 
 - LeetCode: https://leetcode.com/problems/a-number-after-a-double-reversal/
 - Language: python3
-- Exported at: 2026-06-08T04:32:10.619Z
+- Exported at: 2026-06-08T06:13:36.706Z
 - Submission status seen by extension: Accepted
 - Difficulty: Easy
 - Tags: Math
