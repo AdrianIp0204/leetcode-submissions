@@ -2,13 +2,13 @@
 
 - LeetCode: https://leetcode.com/problems/a-number-after-a-double-reversal/
 - Language: python3
-- Exported at: 2026-06-07T07:56:52.573Z
+- Exported at: 2026-06-08T04:32:10.619Z
 - Submission status seen by extension: Accepted
 - Difficulty: Easy
 - Tags: Math
-- Memory: 19296000
-- Submitted at: 2026-06-04T07:59:49.000Z
-- Submission ID: 2022052203
+- Memory: 19184000
+- Submitted at: 2026-06-04T07:57:21.000Z
+- Submission ID: 2022050349
 
 ## Pattern
 
