@@ -8,6 +8,7 @@
     "sync:auto": "node scripts/auto-sync.mjs",
     "sync:daily": "node scripts/daily-sync.mjs",
     "sync:health": "node scripts/sync-health.mjs",
+    "test": "node --test tests/*.test.mjs",
     "validate:extension": "node scripts/validate-extension.mjs"
   }
 }

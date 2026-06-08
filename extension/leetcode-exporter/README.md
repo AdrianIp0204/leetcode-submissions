@@ -50,11 +50,15 @@ After import, the watcher commits and pushes only when a solution is new or the
 solution code changed. Re-exporting the same existing solution is treated as a
 duplicate and will not create a README-only metadata commit.
 
-Version `0.4.3` keeps auto-capture probing through LeetCode SPA route changes,
-text-only result updates, and slower judge results after submit. It also keeps a
-separate "pending handoff" state, so if Chrome fails to create the local sync
-bundle, the export stays retryable instead of being silently skipped as a
-duplicate later. History backfill now also captures a capped set of recent
+Version `0.4.4` keeps auto-capture probing through LeetCode SPA route changes,
+text-only result updates, slower judge results after submit, and result pages
+where the visible status text no longer matches the extension selectors. When a
+submit action or recent accepted submission is plausible, it polls LeetCode's
+own submission history from the logged-in page instead of waiting for a visible
+`Accepted` marker first. It also keeps a separate "pending handoff" state and
+waits for Chrome to report the handoff bundle download as complete, so failed or
+interrupted downloads stay retryable instead of being silently skipped as
+duplicates later. History backfill also captures a capped set of recent
 non-accepted attempts so failed submissions land under `attempts/` instead of
 being omitted. Use **Collect Past Accepted** once after upgrading if public sync
 health says the repo is behind or a failed attempt is missing.

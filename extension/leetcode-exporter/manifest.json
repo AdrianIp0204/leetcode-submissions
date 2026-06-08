@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "LeetCode Repo Exporter",
-  "version": "0.4.3",
+  "version": "0.4.4",
   "description": "First-party exporter for saving LeetCode submissions into a local repo.",
   "permissions": ["activeTab", "downloads", "scripting", "storage", "unlimitedStorage"],
   "host_permissions": ["https://leetcode.com/*", "https://www.leetcode.com/*"],

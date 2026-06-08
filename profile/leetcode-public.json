@@ -1,10 +1,10 @@
 {
-  "fetchedAt": "2026-06-07T08:04:28.339Z",
+  "fetchedAt": "2026-06-08T04:16:47.740Z",
   "username": "AdrianIp",
   "profile": {
     "realName": "AdrianIp",
     "userAvatar": "https://assets.leetcode.com/users/default_avatar.jpg",
-    "ranking": 1557591,
+    "ranking": 1319470,
     "reputation": 0,
     "countryName": null,
     "company": null,
@@ -15,18 +15,18 @@
   "solvedByDifficulty": [
     {
       "difficulty": "All",
-      "count": 115,
-      "submissions": 128
+      "count": 127,
+      "submissions": 140
     },
     {
       "difficulty": "Easy",
-      "count": 88,
-      "submissions": 101
+      "count": 99,
+      "submissions": 112
     },
     {
       "difficulty": "Medium",
-      "count": 22,
-      "submissions": 22
+      "count": 23,
+      "submissions": 23
     },
     {
       "difficulty": "Hard",
@@ -37,18 +37,18 @@
   "totalByDifficulty": [
     {
       "difficulty": "All",
-      "count": 116,
-      "submissions": 172
+      "count": 129,
+      "submissions": 188
     },
     {
       "difficulty": "Easy",
-      "count": 88,
-      "submissions": 121
+      "count": 100,
+      "submissions": 136
     },
     {
       "difficulty": "Medium",
-      "count": 22,
-      "submissions": 40
+      "count": 23,
+      "submissions": 41
     },
     {
       "difficulty": "Hard",
@@ -60,18 +60,18 @@
     "accepted": {
       "All": {
         "difficulty": "All",
-        "count": 115,
-        "submissions": 128
+        "count": 127,
+        "submissions": 140
       },
       "Easy": {
         "difficulty": "Easy",
-        "count": 88,
-        "submissions": 101
+        "count": 99,
+        "submissions": 112
       },
       "Medium": {
         "difficulty": "Medium",
-        "count": 22,
-        "submissions": 22
+        "count": 23,
+        "submissions": 23
       },
       "Hard": {
         "difficulty": "Hard",
@@ -82,18 +82,18 @@
     "total": {
       "All": {
         "difficulty": "All",
-        "count": 116,
-        "submissions": 172
+        "count": 129,
+        "submissions": 188
       },
       "Easy": {
         "difficulty": "Easy",
-        "count": 88,
-        "submissions": 121
+        "count": 100,
+        "submissions": 136
       },
       "Medium": {
         "difficulty": "Medium",
-        "count": 22,
-        "submissions": 40
+        "count": 23,
+        "submissions": 41
       },
       "Hard": {
         "difficulty": "Hard",
@@ -104,6 +104,102 @@
   },
   "contestRanking": null,
   "recentAccepted": [
+    {
+      "title": "Plus One",
+      "titleSlug": "plus-one",
+      "timestamp": "1780891493",
+      "statusDisplay": "Accepted",
+      "lang": "python3",
+      "acceptedAt": "2026-06-08T04:04:53.000Z"
+    },
+    {
+      "title": "Distribute Candies Among Children I",
+      "titleSlug": "distribute-candies-among-children-i",
+      "timestamp": "1780889029",
+      "statusDisplay": "Accepted",
+      "lang": "python3",
+      "acceptedAt": "2026-06-08T03:23:49.000Z"
+    },
+    {
+      "title": "Partition Array According to Given Pivot",
+      "titleSlug": "partition-array-according-to-given-pivot",
+      "timestamp": "1780885887",
+      "statusDisplay": "Accepted",
+      "lang": "python3",
+      "acceptedAt": "2026-06-08T02:31:27.000Z"
+    },
+    {
+      "title": "Number of Common Factors",
+      "titleSlug": "number-of-common-factors",
+      "timestamp": "1780884666",
+      "statusDisplay": "Accepted",
+      "lang": "python3",
+      "acceptedAt": "2026-06-08T02:11:06.000Z"
+    },
+    {
+      "title": "Find the Key of the Numbers",
+      "titleSlug": "find-the-key-of-the-numbers",
+      "timestamp": "1780883971",
+      "statusDisplay": "Accepted",
+      "lang": "python3",
+      "acceptedAt": "2026-06-08T01:59:31.000Z"
+    },
+    {
+      "title": "Smallest Number With All Set Bits",
+      "titleSlug": "smallest-number-with-all-set-bits",
+      "timestamp": "1780882758",
+      "statusDisplay": "Accepted",
+      "lang": "python3",
+      "acceptedAt": "2026-06-08T01:39:18.000Z"
+    },
+    {
+      "title": "Shuffle String",
+      "titleSlug": "shuffle-string",
+      "timestamp": "1780881956",
+      "statusDisplay": "Accepted",
+      "lang": "python3",
+      "acceptedAt": "2026-06-08T01:25:56.000Z"
+    },
+    {
+      "title": "Longest Palindrome",
+      "titleSlug": "longest-palindrome",
+      "timestamp": "1780827146",
+      "statusDisplay": "Accepted",
+      "lang": "python3",
+      "acceptedAt": "2026-06-07T10:12:26.000Z"
+    },
+    {
+      "title": "Find Numbers with Even Number of Digits",
+      "titleSlug": "find-numbers-with-even-number-of-digits",
+      "timestamp": "1780826238",
+      "statusDisplay": "Accepted",
+      "lang": "python3",
+      "acceptedAt": "2026-06-07T09:57:18.000Z"
+    },
+    {
+      "title": "Separate the Digits in an Array",
+      "titleSlug": "separate-the-digits-in-an-array",
+      "timestamp": "1780826099",
+      "statusDisplay": "Accepted",
+      "lang": "python3",
+      "acceptedAt": "2026-06-07T09:54:59.000Z"
+    },
+    {
+      "title": "Number of Strings That Appear as Substrings in Word",
+      "titleSlug": "number-of-strings-that-appear-as-substrings-in-word",
+      "timestamp": "1780825546",
+      "statusDisplay": "Accepted",
+      "lang": "python3",
+      "acceptedAt": "2026-06-07T09:45:46.000Z"
+    },
+    {
+      "title": "Find N Unique Integers Sum up to Zero",
+      "titleSlug": "find-n-unique-integers-sum-up-to-zero",
+      "timestamp": "1780825170",
+      "statusDisplay": "Accepted",
+      "lang": "python3",
+      "acceptedAt": "2026-06-07T09:39:30.000Z"
+    },
     {
       "title": "Build an Array With Stack Operations",
       "titleSlug": "build-an-array-with-stack-operations",
@@ -167,102 +263,6 @@
       "statusDisplay": "Accepted",
       "lang": "python3",
       "acceptedAt": "2026-06-07T04:15:15.000Z"
-    },
-    {
-      "title": "Sqrt(x)",
-      "titleSlug": "sqrtx",
-      "timestamp": "1780804898",
-      "statusDisplay": "Accepted",
-      "lang": "python3",
-      "acceptedAt": "2026-06-07T04:01:38.000Z"
-    },
-    {
-      "title": "Sum of Squares of Special Elements",
-      "titleSlug": "sum-of-squares-of-special-elements",
-      "timestamp": "1780803132",
-      "statusDisplay": "Accepted",
-      "lang": "python3",
-      "acceptedAt": "2026-06-07T03:32:12.000Z"
-    },
-    {
-      "title": "Number of Students Doing Homework at a Given Time",
-      "titleSlug": "number-of-students-doing-homework-at-a-given-time",
-      "timestamp": "1780802632",
-      "statusDisplay": "Accepted",
-      "lang": "python3",
-      "acceptedAt": "2026-06-07T03:23:52.000Z"
-    },
-    {
-      "title": "Permutation Difference between Two Strings",
-      "titleSlug": "permutation-difference-between-two-strings",
-      "timestamp": "1780802058",
-      "statusDisplay": "Accepted",
-      "lang": "python3",
-      "acceptedAt": "2026-06-07T03:14:18.000Z"
-    },
-    {
-      "title": "Restore Finishing Order",
-      "titleSlug": "restore-finishing-order",
-      "timestamp": "1780801745",
-      "statusDisplay": "Accepted",
-      "lang": "python3",
-      "acceptedAt": "2026-06-07T03:09:05.000Z"
-    },
-    {
-      "title": "The Two Sneaky Numbers of Digitville",
-      "titleSlug": "the-two-sneaky-numbers-of-digitville",
-      "timestamp": "1780801423",
-      "statusDisplay": "Accepted",
-      "lang": "python3",
-      "acceptedAt": "2026-06-07T03:03:43.000Z"
-    },
-    {
-      "title": "Create Binary Tree From Descriptions",
-      "titleSlug": "create-binary-tree-from-descriptions",
-      "timestamp": "1780801021",
-      "statusDisplay": "Accepted",
-      "lang": "python3",
-      "acceptedAt": "2026-06-07T02:57:01.000Z"
-    },
-    {
-      "title": "Arithmetic Slices",
-      "titleSlug": "arithmetic-slices",
-      "timestamp": "1780797723",
-      "statusDisplay": "Accepted",
-      "lang": "python3",
-      "acceptedAt": "2026-06-07T02:02:03.000Z"
-    },
-    {
-      "title": "Minimum Operations to Make Array Sum Divisible by K",
-      "titleSlug": "minimum-operations-to-make-array-sum-divisible-by-k",
-      "timestamp": "1780796009",
-      "statusDisplay": "Accepted",
-      "lang": "python3",
-      "acceptedAt": "2026-06-07T01:33:29.000Z"
-    },
-    {
-      "title": "Maximum Equal Frequency",
-      "titleSlug": "maximum-equal-frequency",
-      "timestamp": "1780745812",
-      "statusDisplay": "Accepted",
-      "lang": "python3",
-      "acceptedAt": "2026-06-06T11:36:52.000Z"
-    },
-    {
-      "title": "Find the Index of the First Occurrence in a String",
-      "titleSlug": "find-the-index-of-the-first-occurrence-in-a-string",
-      "timestamp": "1780740553",
-      "statusDisplay": "Accepted",
-      "lang": "python3",
-      "acceptedAt": "2026-06-06T10:09:13.000Z"
-    },
-    {
-      "title": "Check Divisibility by Digit Sum and Product",
-      "titleSlug": "check-divisibility-by-digit-sum-and-product",
-      "timestamp": "1780739073",
-      "statusDisplay": "Accepted",
-      "lang": "python3",
-      "acceptedAt": "2026-06-06T09:44:33.000Z"
     }
   ],
   "source": "LeetCode public GraphQL; no login cookie or browser extension used."

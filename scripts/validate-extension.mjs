@@ -29,6 +29,7 @@ async function main() {
   if (!manifest.host_permissions?.includes("https://leetcode.com/*")) {
     throw new Error("Missing LeetCode host permission.");
   }
+  if (manifest.version !== "0.4.4") throw new Error("Expected extension version 0.4.4.");
 
   const requiredFiles = [
     "background.js",
@@ -46,6 +47,19 @@ async function main() {
 
   for (const file of ["background.js", "content.js", "page-bridge.js", "popup.js"]) {
     run("node", ["--check", path.join(extensionDir, file)]);
+  }
+
+  const content = await readFile(path.join(extensionDir, "content.js"), "utf8");
+  if (!content.includes("fallbackAutoSignal") || !content.includes("problem-poll:")) {
+    throw new Error("Auto-capture must poll LeetCode history when visible result status is absent.");
+  }
+  if (!content.includes("collectAutoPayloadForSignal")) {
+    throw new Error("Auto-capture must route fallback signals through history collection.");
+  }
+
+  const background = await readFile(path.join(extensionDir, "background.js"), "utf8");
+  if (!background.includes("waitForDownloadComplete") || !background.includes("state === \"complete\"")) {
+    throw new Error("Handoff must wait for Chrome to complete the download before marking exports handed off.");
   }
 
   console.log("Extension manifest and JavaScript checks passed.");

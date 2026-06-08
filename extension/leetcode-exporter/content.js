@@ -788,6 +788,10 @@
     return Boolean(findSubmissionIdFromLocation());
   }
 
+  function isProblemPage() {
+    return /\/problems\/[^/]+/.test(location.pathname);
+  }
+
   function isRecentSubmitWindow(now = Date.now()) {
     return lastSubmitActionAt > 0 && now - lastSubmitActionAt < AUTO_CAPTURE_SUBMIT_WINDOW_MS;
   }
@@ -848,16 +852,37 @@
     }
   }
 
+  function fallbackAutoSignal(now = Date.now()) {
+    if (!isProblemPage()) return "";
+
+    const slug = findProblemSlug();
+    if (!slug || slug === "leetcode-solution") return "";
+
+    if (isRecentSubmitWindow(now)) {
+      return `submit-window:${slug}:${lastSubmitActionAt}`;
+    }
+
+    return `problem-poll:${slug}`;
+  }
+
+  async function collectAutoPayloadForSignal(autoSignal, now = Date.now()) {
+    if (autoSignal.startsWith("problem-poll:") && !isRecentSubmitWindow(now)) {
+      return collectLatestAcceptedSubmissionForPage();
+    }
+
+    return collectAutoSubmission();
+  }
+
   async function maybeAutoCapture() {
     if (autoCaptureStopped) return;
     try {
       const settings = await chrome.storage.local.get({ autoCapture: true });
       if (!settings.autoCapture) return;
 
-      const autoSignal = findSubmissionAutoSignal();
+      const now = Date.now();
+      const autoSignal = findSubmissionAutoSignal() || fallbackAutoSignal(now);
       if (!autoSignal) return;
 
-      const now = Date.now();
       if (!shouldProbeAutoSignal(autoSignal, now)) return;
 
       const minCheckMs = isRecentSubmitWindow(now)
@@ -868,7 +893,7 @@
       }
       rememberAutoSignal(autoSignal, now);
 
-      const payload = await collectAutoSubmission();
+      const payload = await collectAutoPayloadForSignal(autoSignal, now);
       if (!isFreshAutoPayload(payload, now)) return;
       const autoKey = payload.submissionId ? `submission:${payload.submissionId}` : payload.key;
       if (autoKey === lastAutoKey) return;
