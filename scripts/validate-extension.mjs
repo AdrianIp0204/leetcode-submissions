@@ -29,7 +29,7 @@ async function main() {
   if (!manifest.host_permissions?.includes("https://leetcode.com/*")) {
     throw new Error("Missing LeetCode host permission.");
   }
-  if (manifest.version !== "0.4.5") throw new Error("Expected extension version 0.4.5.");
+  if (manifest.version !== "0.4.6") throw new Error("Expected extension version 0.4.6.");
 
   const requiredFiles = [
     "background.js",

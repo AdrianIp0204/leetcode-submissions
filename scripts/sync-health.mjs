@@ -63,7 +63,7 @@ function renderMarkdown({ snapshot, health }) {
   if (health.estimatedSolvedGap > 0) {
     lines.push(
       `- Warning: LeetCode shows ${health.publicAcceptedSolved} solved problems, but this repo has ${health.localProblemFolders} local problem folders.`,
-      "- Run the extension's **Collect Past Accepted** while logged in, then let the local watcher import and push the queue.",
+      "- Run the extension's **Collect Submission History** while logged in, then let the local watcher import the queue.",
       "- Recommendation quality is limited until the repo catches up, because local pattern coverage is incomplete.",
     );
   } else {

@@ -29,14 +29,14 @@
 
       <section class="history">
         <div class="inline">
-          <label for="historyLimit">Past accepted</label>
-          <input id="historyLimit" type="number" min="1" max="300" step="1" value="100" />
+          <label for="historyLimit">Accepted limit</label>
+          <input id="historyLimit" type="number" min="1" max="500" step="1" value="300" />
         </div>
         <div class="inline">
-          <label for="attemptLimit">Recent failed</label>
-          <input id="attemptLimit" type="number" min="0" max="100" step="1" value="25" />
+          <label for="attemptLimit">Failed limit</label>
+          <input id="attemptLimit" type="number" min="0" max="500" step="1" value="300" />
         </div>
-        <button id="history" type="button">Collect Past Accepted</button>
+        <button id="history" type="button">Collect Submission History</button>
       </section>
 
       <section id="result" hidden>

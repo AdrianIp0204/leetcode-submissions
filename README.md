@@ -15,7 +15,7 @@ file says otherwise.
 
 ## Layout
 
-- `submissions/` - accepted solutions, usually grouped by problem id and slug.
+- `submissions/` - accepted solutions and preserved submission history, grouped by problem id and slug.
 - `notes/` - short explanations, patterns, mistakes, or follow-up ideas.
 - `profile/` - public LeetCode metadata snapshots, if a username is configured.
 - `reports/` - generated portfolio audit, weakness signals, and public-readiness checks.
@@ -40,7 +40,16 @@ submissions/0001-two-sum/solution.py
 submissions/0001-two-sum/solution.ts
 ```
 
-For failed attempts and alternative accepted solutions, use `notes/attempt-conventions.md`.
+For backfilled or auto-captured history, individual accepted submissions are
+preserved under `accepted/`, and failed attempts are preserved under
+`attempts/`:
+
+```text
+submissions/0001-two-sum/accepted/submission-123456-accepted/solution.py
+submissions/0001-two-sum/attempts/submission-123457-wrong-answer/solution.py
+```
+
+Use root `solution.*` files only for a curated/canonical solution when that is useful. For failed attempts and alternative accepted solutions, use `notes/attempt-conventions.md`.
 
 ## Public Profile Sync
 
@@ -65,7 +74,7 @@ reports/weakness-report.md
 ```
 
 This only syncs public stats and recent accepted metadata. It does not fetch source code.
-If `profile/sync-health.md` says the repo is behind the public solved count, use the extension's **Collect Past Accepted** button while logged in before trusting local pattern coverage.
+If `profile/sync-health.md` says the repo is behind the public solved count, use the extension's **Collect Submission History** button while logged in before trusting local pattern coverage.
 
 ## Daily Local Commit Helper
 
@@ -93,7 +102,7 @@ For the computer where you solve LeetCode, load the local extension from:
 extension/leetcode-exporter
 ```
 
-It runs only on LeetCode, does not use a GitHub token, auto-captures fresh submissions from your logged-in LeetCode page, and can backfill past accepted submissions from your browser session. See `extension/leetcode-exporter/README.md`.
+It runs only on LeetCode, does not use a GitHub token, auto-captures fresh submissions from your logged-in LeetCode page, and can backfill accepted plus recent failed submissions from your browser session. See `extension/leetcode-exporter/README.md`.
 Generated READMEs include difficulty, tags, runtime/memory when LeetCode exposes them, plus short reflection fields for pattern, key idea, mistake/edge case, and complexity.
 
 ## Automatic Local Sync
@@ -116,19 +125,22 @@ On Windows:
 powershell -ExecutionPolicy Bypass -File scripts\install-windows-auto-sync.ps1
 ```
 
-It copies downloaded exports into the repo, commits changes, and pushes. The macOS installer creates a user LaunchAgent. The Windows installer first tries a current-user Scheduled Task. If Windows blocks Task Scheduler access, it falls back to a normal per-user Startup launcher and starts the watcher immediately. This keeps GitHub credentials out of the extension.
+It copies downloaded exports into the repo and commits changes locally. Add `-- --push` when installing or running the watcher only after the repo is ready to publish. The macOS installer creates a user LaunchAgent. The Windows installer first tries a current-user Scheduled Task. If Windows blocks Task Scheduler access, it falls back to a normal per-user Startup launcher and starts the watcher immediately. This keeps GitHub credentials out of the extension.
 
 Dropbox or Chrome may show the one handoff bundle as `*.json.dropboxignore` or
 `leetcode-exports-*.txt`; those are still valid if the contents are the JSON
 export bundle. The watcher imports those renamed bundles, moves them into the
-queue's `processed/` folder, and commits/pushes only when the solution code is
+queue's `processed/` folder, and commits locally only when the solution code is
 new or changed. If the same solution already exists in the repo, the bundle is
 archived without creating a duplicate commit.
 
-Extension `0.4.5` no longer depends on LeetCode rendering a visible `Accepted`
+Extension `0.4.6` no longer depends on LeetCode rendering a visible `Accepted`
 marker or a recognizable submit button. It injects a page-context bridge that
 observes LeetCode's own submit/check network calls, records the exact submission
 id, waits for a terminal judge result, fetches that submission from the logged-in
-page, and hands off a bundle only after Chrome reports the download complete. If
-the watcher log only says `No downloaded files or git changes`, the git side is
-idle and the missing piece is the browser extension handoff.
+page, and hands off a bundle only after Chrome reports the download complete.
+Accepted history is preserved under `accepted/submission-id-accepted/` instead
+of overwriting `solution.*`, so multiple accepted solutions and same-code
+resubmissions can be archived. If the watcher log only says `No downloaded files
+or git changes`, the git side is idle and the missing piece is the browser
+extension handoff.

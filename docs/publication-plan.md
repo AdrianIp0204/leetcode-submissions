@@ -16,7 +16,7 @@ Do not publish until all of these are true:
 - `npm run audit:portfolio` reports no sensitive-material flags.
 - The top README clearly says the repo is Adrian's learning archive and that Morrow assists with review, notes, reports, and organization.
 - At least 15 representative problems have filled `Pattern`, `Key Idea`, `Mistake / Edge Case`, and `Complexity` sections.
-- Failed attempts are preserved for new work when the source exists.
+- Failed attempts and multiple accepted submissions are preserved when the real source exists.
 - No full LeetCode problem statements are copied into the repo.
 - The repo explains that old failed attempts cannot be backfilled unless the real source is available.
 
@@ -24,7 +24,7 @@ Do not publish until all of these are true:
 
 1. Preserve current accepted submissions exactly enough that the early learning trace stays honest.
 2. Fill reflections for representative problems first: early brute force, brittle accepted code, first clean pattern solutions, and harder pattern problems.
-3. Add new failed attempts under `attempts/` as they happen.
+3. Add new failed attempts under `attempts/` and accepted history under `accepted/` as they happen.
 4. Start a deliberate TypeScript track after the exam.
 5. Only then consider rewriting the public README for a wider audience.
 
@@ -41,3 +41,7 @@ Avoid language that implies Morrow solved the problems or that Adrian wrote ever
 Do not invent failed attempts.
 
 If a failed attempt source file exists, preserve it. If it does not exist, write a short note like "failed attempt not preserved; reconstructed from memory would be unreliable" instead of fabricating code.
+
+Backfilled accepted submissions should be preserved as real history under
+`submissions/<problem>/accepted/...`; do not collapse them into a single
+`solution.*` unless Adrian deliberately chooses a curated canonical solution.

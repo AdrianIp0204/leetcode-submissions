@@ -226,7 +226,7 @@ function renderMarkdown({ profile, health, recommendations, knownCount }) {
 
   if (health?.estimatedSolvedGap > 0) {
     lines.push(
-      `- Sync warning: repo appears ${health.estimatedSolvedGap} problems behind the public solved count. Run **Collect Past Accepted** before treating coverage as exact.`,
+      `- Sync warning: repo appears ${health.estimatedSolvedGap} problems behind the public solved count. Run **Collect Submission History** before treating coverage as exact.`,
     );
   }
 

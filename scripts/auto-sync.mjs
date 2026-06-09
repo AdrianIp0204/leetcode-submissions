@@ -199,7 +199,61 @@ function canonicalSolutionCode(value) {
     .replace(/\s+$/u, "")}\n`;
 }
 
-async function writeExport(payload) {
+function hashString(value) {
+  let hash = 0;
+  for (let index = 0; index < value.length; index += 1) {
+    hash = (hash << 5) - hash + value.charCodeAt(index);
+    hash |= 0;
+  }
+  return Math.abs(hash).toString(36);
+}
+
+function sanitizePathSegment(value) {
+  return String(value || "")
+    .replace(/[:.]/g, "-")
+    .replace(/[^a-zA-Z0-9_-]+/g, "-")
+    .replace(/^-+|-+$/g, "")
+    .slice(0, 80);
+}
+
+function isAcceptedStatus(value) {
+  return /^accepted$/i.test(String(value || "").trim());
+}
+
+function archiveSubmissionKey(payload) {
+  const identity =
+    payload.submissionId ||
+    payload.submittedAt ||
+    payload.exportedAt ||
+    `code-${hashString(payload.code || payload.path || "unknown")}`;
+  return `${sanitizePathSegment(`submission-${identity}`)}-accepted`;
+}
+
+function acceptedArchivePath(payload) {
+  if (!isAcceptedStatus(payload.status)) return "";
+
+  const solutionPath = normalizeGitPath(payload.path);
+  if (!solutionPath || /\/(?:accepted|attempts)\//.test(solutionPath)) return "";
+  if (!/^submissions\/[^/]+\/solution\.[^/]+$/.test(solutionPath)) return "";
+
+  const problemDir = path.posix.dirname(solutionPath);
+  const filename = path.posix.basename(solutionPath);
+  return `${problemDir}/accepted/${archiveSubmissionKey(payload)}/${filename}`;
+}
+
+function normalizeExportPayload(payload) {
+  const archivePath = acceptedArchivePath(payload);
+  if (!archivePath) return payload;
+
+  return {
+    ...payload,
+    path: archivePath,
+    readmePath: `${path.posix.dirname(archivePath)}/README.md`,
+  };
+}
+
+async function writeExport(inputPayload) {
+  const payload = normalizeExportPayload(inputPayload);
   if (!payload.path || !payload.code) return { files: 0, skippedDuplicates: 0 };
 
   const solutionPath = safeRepoPath(payload.path);

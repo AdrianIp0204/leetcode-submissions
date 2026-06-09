@@ -268,7 +268,7 @@ function renderReport({ generatedAt, profile, problems, trackedFileFlags }) {
     "",
     "1. Keep the repo private while cleanup is in progress.",
     "2. Add honest public framing to the README: Adrian owns the learning; Morrow assists with review, notes, reports, and curation.",
-    "3. Run the extension's Collect Past Accepted flow until the local source archive catches up with the public solved count.",
+    "3. Run the extension's Collect Submission History flow until the local source archive catches up with the public solved count.",
     "4. Fill reflections for the first 15-20 representative problems before touching every file.",
     "5. Start preserving failed attempts under `attempts/` for new work. Backfill old failed attempts only when real source exists.",
     "6. Add a TypeScript track after the exam instead of pretending it already exists.",

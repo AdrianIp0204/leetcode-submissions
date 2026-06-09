@@ -429,10 +429,12 @@
     const folder = `${folderPrefix}-${slug || sanitizeSlug(title) || "leetcode-solution"}`;
     const extension = languageExtensions[language] || "txt";
     const basePath = `submissions/${folder}`;
+    const submissionFolder = attemptKey({ status, exportedAt, submittedAt, submissionId });
     const targetDir = isAcceptedStatus(status)
-      ? basePath
-      : `${basePath}/attempts/${attemptKey({ status, exportedAt, submittedAt, submissionId })}`;
+      ? `${basePath}/accepted/${submissionFolder}`
+      : `${basePath}/attempts/${submissionFolder}`;
     const path = `${targetDir}/solution.${extension}`;
+    const identity = submissionId || submittedAt || exportedAt;
 
     return {
       source,
@@ -465,7 +467,7 @@
         runtime,
         memory,
       }),
-      key: `${path}:${hashString(code || "")}`,
+      key: `${path}:${identity}:${hashString(code || "")}`,
     };
   }
 
@@ -695,9 +697,9 @@
     return new Promise((resolve) => window.setTimeout(resolve, ms));
   }
 
-  async function collectAcceptedHistory({ limit = 100, attemptLimit = 25 } = {}) {
-    const maxAccepted = Math.max(1, Math.min(Number(limit) || 100, 300));
-    const maxAttempts = Math.max(0, Math.min(Number(attemptLimit) || 0, 100));
+  async function collectAcceptedHistory({ limit = 300, attemptLimit = 300 } = {}) {
+    const maxAccepted = Math.max(1, Math.min(Number(limit) || 300, 500));
+    const maxAttempts = Math.max(0, Math.min(Number(attemptLimit) || 0, 500));
     const pageLimit = 20;
     const acceptedExports = [];
     const attemptExports = [];

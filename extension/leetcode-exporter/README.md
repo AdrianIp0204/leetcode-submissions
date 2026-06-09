@@ -27,11 +27,13 @@ extension/leetcode-exporter
 1. Open a LeetCode problem page or submission page.
 2. Keep **Auto collect submission results** and **Auto hand off to local sync** enabled.
 3. When a new submission result appears, the extension queues that submission and creates one sync handoff bundle automatically.
-4. To backfill older solutions and recent failed attempts, open any LeetCode page while logged in and click **Collect Past Accepted**.
+4. To backfill older solutions and recent failed attempts, open any LeetCode page while logged in and click **Collect Submission History**.
 
-Accepted submissions are written as the canonical `submissions/<problem>/solution.*`.
-Non-accepted attempts are kept under `submissions/<problem>/attempts/...` so a
-failed attempt does not overwrite the accepted solution.
+Accepted submissions are preserved under
+`submissions/<problem>/accepted/submission-...-accepted/solution.*`.
+Non-accepted attempts are kept under `submissions/<problem>/attempts/...`.
+Root `solution.*` files are reserved for curated canonical solutions, not raw
+history backfill.
 When LeetCode exposes the data, generated READMEs now include difficulty, tags,
 runtime, and memory, plus short reflection fields for pattern, key idea,
 mistake/edge case, and complexity.
@@ -46,11 +48,11 @@ If Dropbox or Windows appends `.dropboxignore` to a queue bundle, or Chrome
 saves it as `leetcode-exports-*.txt`, the watcher still imports it. Older raw
 `README.dropboxignore` or `solution.dropboxignore` downloads can be ignored or
 deleted; they are legacy artifacts, not repo files.
-After import, the watcher commits and pushes only when a solution is new or the
+After import, the watcher commits locally only when a solution is new or the
 solution code changed. Re-exporting the same existing solution is treated as a
 duplicate and will not create a README-only metadata commit.
 
-Version `0.4.5` keeps auto-capture probing through LeetCode SPA route changes,
+Version `0.4.6` keeps auto-capture probing through LeetCode SPA route changes,
 text-only result updates, slower judge results after submit, and result pages
 where the visible status text no longer matches the extension selectors. It also
 injects a page-context network bridge, so the automatic path can see LeetCode's
@@ -58,11 +60,12 @@ own submit/check calls, record the exact submission id, and wait for a terminal
 judge result before fetching and handing off that submission. It keeps a
 separate "pending handoff" state and waits for Chrome to report the handoff
 bundle download as complete, so failed or interrupted downloads stay retryable
-instead of being silently skipped as duplicates later. History backfill also
-captures a capped set of recent non-accepted attempts so failed submissions land
-under `attempts/` instead of being omitted. Use **Collect Past Accepted** once
-after upgrading if public sync health says the repo is behind or a failed
-attempt is missing.
+instead of being silently skipped as duplicates later. Submission identity is
+part of the export key, so same-code resubmissions are preserved when LeetCode
+provides an id or timestamp. History backfill also captures a capped set of
+recent non-accepted attempts so failed submissions land under `attempts/`
+instead of being omitted. Use **Collect Submission History** once after upgrading
+if public sync health says the repo is behind or a failed attempt is missing.
 
 If you prefer direct folder saving, use **Save Queue To Repo** and select the cloned `leetcode-submissions` repo root.
 
@@ -70,25 +73,39 @@ If you prefer direct folder saving, use **Save Queue To Repo** and select the cl
 
 Browser extensions cannot safely run `git` by themselves. Use the local watcher once on the computer where you solve LeetCode.
 
-macOS:
+macOS local-only watcher:
 
 ```bash
 npm run install:macos:auto-sync
 ```
 
-Windows:
+macOS watcher with push enabled:
+
+```bash
+npm run install:macos:auto-sync -- --push
+```
+
+Windows local-only watcher:
 
 ```powershell
 powershell -ExecutionPolicy Bypass -File scripts\install-windows-auto-sync.ps1
 ```
 
-That installs a local watcher. It watches `Downloads/leetcode-submissions` or `Downloads\leetcode-submissions`, expands handoff bundles into `submissions/...`, commits changes, and pushes. Windows prefers a current-user Scheduled Task, but falls back to a per-user Startup launcher when Task Scheduler is blocked.
+Windows watcher with push enabled:
+
+```powershell
+powershell -ExecutionPolicy Bypass -File scripts\install-windows-auto-sync.ps1 -Push
+```
+
+That installs a local watcher. It watches `Downloads/leetcode-submissions` or `Downloads\leetcode-submissions`, expands handoff bundles into `submissions/...`, and commits changes locally. Windows prefers a current-user Scheduled Task, but falls back to a per-user Startup launcher when Task Scheduler is blocked.
 
 For a one-off foreground run:
 
 ```bash
-npm run sync:auto -- --push
+npm run sync:auto -- --once
 ```
+
+Add `--push` only when publishing is deliberate.
 
 If folder saving is unavailable in your browser, use **Hand Off Queue To Sync** while the watcher is running.
 
@@ -117,6 +134,6 @@ C:\Users\dream\leetcode-submissions\extension\leetcode-exporter
 ## Limitations
 
 - The extension can only see code visible in the current browser tab.
-- Past accepted collection needs your logged-in LeetCode browser session. It uses the session implicitly for LeetCode requests but does not read or store cookies.
-- It cannot run `git` directly. The local watcher handles commits/pushes.
+- Submission history collection needs your logged-in LeetCode browser session. It uses the session implicitly for LeetCode requests but does not read or store cookies.
+- It cannot run `git` directly. The local watcher handles commits and optional explicit pushes.
 - It may need small selector fixes if LeetCode changes its UI.

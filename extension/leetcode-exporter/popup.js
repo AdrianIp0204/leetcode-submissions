@@ -122,7 +122,7 @@ async function collectCurrentSolution() {
     if (stored.autoDownloadError) {
       setMessage(`Collected ${currentExport.status} submission, but local handoff failed: ${stored.autoDownloadError}`);
     } else if (stored.autoDownloaded) {
-      setMessage(`Collected ${currentExport.status} submission and handed it to local sync.`);
+      setMessage(`Collected ${currentExport.status} submission and handed it to local sync: ${stored.handoffFilename || "bundle downloaded"}.`);
     } else {
       setMessage(`Collected ${currentExport.status} submission and queued it.`);
     }
@@ -137,11 +137,11 @@ async function collectCurrentSolution() {
 
 async function collectPastAccepted() {
   setBusy(true);
-  setMessage("Fetching accepted submission history...");
+  setMessage("Fetching submission history...");
 
   try {
-    const limit = Number(elements.historyLimit.value || 100);
-    const attemptLimit = Number(elements.attemptLimit.value || 25);
+    const limit = Number(elements.historyLimit.value || 300);
+    const attemptLimit = Number(elements.attemptLimit.value || 300);
     const result = await sendTabMessage({
       type: "collect-history",
       payload: { limit, attemptLimit },
@@ -159,7 +159,7 @@ async function collectPastAccepted() {
     } else {
       setMessage(
         `Scanned ${result.scanned}; found ${result.accepted} accepted and ${result.attempts} failed attempts. Added ${stored.added}, skipped ${stored.skipped}. ${
-          stored.autoDownloaded ? `Handed ${stored.autoDownloaded} pending exports to local sync.` : ""
+          stored.autoDownloaded ? `Handed ${stored.autoDownloaded} pending exports to local sync: ${stored.handoffFilename || "bundle downloaded"}.` : ""
         }`.trim(),
       );
     }
@@ -273,7 +273,7 @@ async function downloadQueue() {
   try {
     const result = await sendRuntimeMessage({ type: "download-exports" });
     if (result.bundles) {
-      setMessage(`Handed ${result.downloaded} queued exports to local sync.`);
+      setMessage(`Handed ${result.downloaded} queued exports to local sync: ${result.filename || "bundle downloaded"}.`);
     } else {
       setMessage("No queued exports to hand off.");
     }
@@ -312,7 +312,6 @@ async function copyGitCommands() {
     `mkdir -p "${folder}"`,
     `git add "${folder}"`,
     `git commit -m '${commitMessage}'`,
-    "git push",
   ].join("\n");
 
   await navigator.clipboard.writeText(commands);

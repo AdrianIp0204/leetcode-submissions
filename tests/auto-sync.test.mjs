@@ -69,6 +69,7 @@ test("auto-sync imports extension bundle, archives it, and commits managed files
         readmePath: "submissions/9999-sync-smoke/README.md",
         code: "class Solution:\n    pass",
         readme: "# Sync Smoke\n",
+        submissionId: "999",
       },
     ],
   };
@@ -78,10 +79,19 @@ test("auto-sync imports extension bundle, archives it, and commits managed files
   assert.match(result.stdout, /Auto-push disabled/);
 
   assert.equal(
-    await readFile(path.join(root, "submissions", "9999-sync-smoke", "solution.py"), "utf8"),
+    await readFile(
+      path.join(root, "submissions", "9999-sync-smoke", "accepted", "submission-999-accepted", "solution.py"),
+      "utf8",
+    ),
     "class Solution:\n    pass\n",
   );
-  assert.equal(await readFile(path.join(root, "submissions", "9999-sync-smoke", "README.md"), "utf8"), "# Sync Smoke\n");
+  assert.equal(
+    await readFile(
+      path.join(root, "submissions", "9999-sync-smoke", "accepted", "submission-999-accepted", "README.md"),
+      "utf8",
+    ),
+    "# Sync Smoke\n",
+  );
 
   const processed = await readdir(path.join(queue, "processed"));
   assert.equal(processed.length, 1);
@@ -90,4 +100,60 @@ test("auto-sync imports extension bundle, archives it, and commits managed files
   const log = run("git", ["log", "--oneline", "-1"], root).stdout;
   assert.match(log, /Auto-sync LeetCode submissions/);
   assert.equal(existsSync(path.join(root, ".git", "leetcode-auto-sync.lock")), false);
+});
+
+test("auto-sync preserves multiple accepted submissions from legacy root solution paths", async (t) => {
+  const root = await createTempRepo(t);
+  const inbox = path.join(root, "tmp", "inbox");
+  const queue = path.join(inbox, "queue");
+  await mkdir(queue, { recursive: true });
+
+  const bundle = {
+    schema: "leetcode-submissions.export-bundle.v1",
+    exportedAt: "2026-06-09T00:00:00.000Z",
+    reason: "legacy-history-backfill",
+    exports: [
+      {
+        title: "Two Sum",
+        status: "Accepted",
+        language: "python3",
+        path: "submissions/0001-two-sum/solution.py",
+        readmePath: "submissions/0001-two-sum/README.md",
+        code: "class Solution:\n    def twoSum(self, nums, target):\n        return [0, 1]",
+        readme: "# Two Sum first\n",
+        submissionId: "111",
+        submittedAt: "2026-06-08T00:00:00.000Z",
+      },
+      {
+        title: "Two Sum",
+        status: "Accepted",
+        language: "python3",
+        path: "submissions/0001-two-sum/solution.py",
+        readmePath: "submissions/0001-two-sum/README.md",
+        code: "class Solution:\n    def twoSum(self, nums, target):\n        return [1, 0]",
+        readme: "# Two Sum second\n",
+        submissionId: "222",
+        submittedAt: "2026-06-09T00:00:00.000Z",
+      },
+    ],
+  };
+  await writeFile(path.join(queue, "leetcode-exports-legacy-accepted.json"), `${JSON.stringify(bundle)}\n`, "utf8");
+
+  run(process.execPath, ["scripts/auto-sync.mjs", "--once", "--inbox", inbox], root);
+
+  assert.equal(
+    await readFile(
+      path.join(root, "submissions", "0001-two-sum", "accepted", "submission-111-accepted", "solution.py"),
+      "utf8",
+    ),
+    "class Solution:\n    def twoSum(self, nums, target):\n        return [0, 1]\n",
+  );
+  assert.equal(
+    await readFile(
+      path.join(root, "submissions", "0001-two-sum", "accepted", "submission-222-accepted", "solution.py"),
+      "utf8",
+    ),
+    "class Solution:\n    def twoSum(self, nums, target):\n        return [1, 0]\n",
+  );
+  assert.equal(existsSync(path.join(root, "submissions", "0001-two-sum", "solution.py")), false);
 });
