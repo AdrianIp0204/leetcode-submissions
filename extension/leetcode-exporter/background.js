@@ -16,7 +16,9 @@ function hashString(value) {
 }
 
 function exportKey(payload) {
-  return `${payload.path}:${hashString(payload.code || "")}`;
+  const identity = payload.submissionId || payload.submittedAt || "";
+  const codeHash = hashString(payload.code || "");
+  return `${payload.path}:${identity || codeHash}:${codeHash}`;
 }
 
 function storageGet(defaults) {
@@ -193,6 +195,7 @@ async function addExports(exports, reason = "manual") {
     total: Object.keys(nextExportsByKey).length,
     pendingHandoff: pendingHandoffExports(nextExportsByKey).length,
     autoDownloaded,
+    handoffFilename: lastHandoffBundle?.filename || "",
     autoDownloadError,
   };
 }
@@ -266,7 +269,11 @@ chrome.runtime.onMessage.addListener((message, _sender, sendResponse) => {
           },
         });
       }
-      return { downloaded: exports.length, bundles: bundle ? 1 : 0 };
+      return {
+        downloaded: exports.length,
+        bundles: bundle ? 1 : 0,
+        filename: bundle?.filename || "",
+      };
     }
 
     if (message?.type === "clear-exports") {

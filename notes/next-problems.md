@@ -1,35 +1,36 @@
 # Next LeetCode Problems
 
-- Generated at: 2026-06-05T14:13:26.338Z
-- Public solved count: 83
-- Known solved by repo/public-recent evidence: 83
+- Generated at: 2026-06-09T11:55:03.050Z
+- Public solved count: 154
+- Known solved by repo/public-recent evidence: 148
+- Sync warning: repo appears 26 problems behind the public solved count. Run **Collect Submission History** before treating coverage as exact.
 
 ## Queue
 
-1. [206. Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/) - Easy, Linked list pointers
-   - Why: Pointer rewiring is a different muscle from array/string problems.
-2. [21. Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/) - Easy, Linked list merge
-   - Why: Foundation for list recursion and merge-style thinking.
-3. [49. Group Anagrams](https://leetcode.com/problems/group-anagrams/) - Medium, Hash key design
-   - Why: Forces you to choose a canonical representation, not just loop.
-4. [238. Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/) - Medium, Prefix/suffix
-   - Why: A core array invariant problem with no division crutch.
-5. [128. Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/) - Medium, Hash set sequence starts
-   - Why: Teaches how to avoid repeated work by detecting sequence starts.
-6. [15. 3Sum](https://leetcode.com/problems/3sum/) - Medium, Sort + two pointers
+1. [15. 3Sum](https://leetcode.com/problems/3sum/) - Medium, Sort + two pointers
    - Why: Classic duplicate-control and pointer-movement problem.
-7. [11. Container With Most Water](https://leetcode.com/problems/container-with-most-water/) - Medium, Two pointers
-   - Why: The proof behind moving the smaller side is more valuable than the code.
-8. [424. Longest Repeating Character Replacement](https://leetcode.com/problems/longest-repeating-character-replacement/) - Medium, Sliding window
+2. [424. Longest Repeating Character Replacement](https://leetcode.com/problems/longest-repeating-character-replacement/) - Medium, Sliding window
    - Why: Good first serious window invariant: window size minus max frequency.
-9. [150. Evaluate Reverse Polish Notation](https://leetcode.com/problems/evaluate-reverse-polish-notation/) - Medium, Stack
+3. [150. Evaluate Reverse Polish Notation](https://leetcode.com/problems/evaluate-reverse-polish-notation/) - Medium, Stack
    - Why: A direct stack simulation that catches order-of-operation mistakes.
-10. [739. Daily Temperatures](https://leetcode.com/problems/daily-temperatures/) - Medium, Monotonic stack
+4. [739. Daily Temperatures](https://leetcode.com/problems/daily-temperatures/) - Medium, Monotonic stack
    - Why: Important upgrade from simple stack to 'next greater' structure.
-11. [33. Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/) - Medium, Binary search invariant
+5. [33. Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/) - Medium, Binary search invariant
    - Why: Builds real binary-search boundary discipline.
-12. [200. Number of Islands](https://leetcode.com/problems/number-of-islands/) - Medium, Grid DFS/BFS
+6. [200. Number of Islands](https://leetcode.com/problems/number-of-islands/) - Medium, Grid DFS/BFS
    - Why: First must-have graph traversal shape.
+7. [102. Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/) - Medium, Tree BFS
+   - Why: Basic tree traversal with queue state.
+8. [98. Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree/) - Medium, Tree recursion bounds
+   - Why: Tests whether you preserve constraints through recursion.
+9. [207. Course Schedule](https://leetcode.com/problems/course-schedule/) - Medium, Topological sort
+   - Why: First serious directed-graph dependency problem.
+10. [198. House Robber](https://leetcode.com/problems/house-robber/) - Medium, Dynamic programming
+   - Why: Smallest useful DP recurrence: choose/take state compression.
+11. [322. Coin Change](https://leetcode.com/problems/coin-change/) - Medium, Dynamic programming
+   - Why: Good test of bottom-up recurrence and impossible states.
+12. [300. Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence/) - Medium, DP / binary search
+   - Why: A strong later target after simpler DP feels stable.
 
 ## Rule
 

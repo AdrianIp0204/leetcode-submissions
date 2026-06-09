@@ -1,0 +1,3130 @@
+{
+  "generatedAt": "2026-06-09T12:05:34.706Z",
+  "totals": {
+    "problemFolders": 154,
+    "publicSolved": 154,
+    "estimatedSolvedGap": 0,
+    "problemsWithAttempts": 0,
+    "problemsNeedingReflection": 149,
+    "problemsWithUnknownStatus": 9
+  },
+  "byLanguage": {
+    "cpp": 8,
+    "python": 150,
+    "sql-or-text": 2
+  },
+  "byPattern": {
+    "arrays-and-strings": 40,
+    "dynamic-programming": 2,
+    "hashing-and-counting": 9,
+    "linked-list": 2,
+    "math-and-digits": 57,
+    "sql": 2,
+    "stack": 3,
+    "tree-and-graph": 1,
+    "two-pointers": 3,
+    "uncategorized": 35
+  },
+  "problems": [
+    {
+      "id": 1,
+      "folder": "0001-two-sum",
+      "slug": "two-sum",
+      "title": "Two Sum",
+      "pattern": "math-and-digits",
+      "hasReadme": true,
+      "status": "Accepted",
+      "todoCount": 0,
+      "hasKeyIdea": true,
+      "hasComplexity": true,
+      "solutionFiles": [
+        "solution.py"
+      ],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": [
+        "python"
+      ]
+    },
+    {
+      "id": 2,
+      "folder": "0002-add-two-numbers",
+      "slug": "add-two-numbers",
+      "title": "Add Two Numbers",
+      "pattern": "math-and-digits",
+      "hasReadme": true,
+      "status": "Accepted",
+      "todoCount": 3,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [
+        "solution.py"
+      ],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": [
+        "python"
+      ]
+    },
+    {
+      "id": 3,
+      "folder": "0003-longest-substring-without-repeating-characters",
+      "slug": "longest-substring-without-repeating-characters",
+      "title": "Longest Substring Without Repeating Characters",
+      "pattern": "arrays-and-strings",
+      "hasReadme": true,
+      "status": "Unknown (legacy visible-page capture before status fix; verify in LeetCode)",
+      "todoCount": 3,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [
+        "solution.py"
+      ],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": [
+        "python"
+      ]
+    },
+    {
+      "id": 4,
+      "folder": "0004-median-of-two-sorted-arrays",
+      "slug": "median-of-two-sorted-arrays",
+      "title": "Median of Two Sorted Arrays",
+      "pattern": "arrays-and-strings",
+      "hasReadme": true,
+      "status": "Unknown (legacy visible-page capture before status fix; verify in LeetCode)",
+      "todoCount": 3,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [
+        "solution.py"
+      ],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": [
+        "python"
+      ]
+    },
+    {
+      "id": 5,
+      "folder": "0005-longest-palindromic-substring",
+      "slug": "longest-palindromic-substring",
+      "title": "Longest Palindromic Substring",
+      "pattern": "arrays-and-strings",
+      "hasReadme": true,
+      "status": "Unknown (legacy visible-page capture before status fix; verify in LeetCode)",
+      "todoCount": 3,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [
+        "solution.py"
+      ],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": [
+        "python"
+      ]
+    },
+    {
+      "id": 6,
+      "folder": "0006-zigzag-conversion",
+      "slug": "zigzag-conversion",
+      "title": "Zigzag Conversion",
+      "pattern": "uncategorized",
+      "hasReadme": true,
+      "status": "Accepted",
+      "todoCount": 5,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [
+        "solution.py"
+      ],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": [
+        "python"
+      ]
+    },
+    {
+      "id": 7,
+      "folder": "0007-reverse-integer",
+      "slug": "reverse-integer",
+      "title": "Reverse Integer",
+      "pattern": "math-and-digits",
+      "hasReadme": true,
+      "status": "Accepted",
+      "todoCount": 3,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [
+        "solution.py"
+      ],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": [
+        "python"
+      ]
+    },
+    {
+      "id": 9,
+      "folder": "0009-palindrome-number",
+      "slug": "palindrome-number",
+      "title": "Palindrome Number",
+      "pattern": "math-and-digits",
+      "hasReadme": true,
+      "status": "Accepted",
+      "todoCount": 5,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [
+        "solution.py"
+      ],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": [
+        "python"
+      ]
+    },
+    {
+      "id": 11,
+      "folder": "0011-container-with-most-water",
+      "slug": "container-with-most-water",
+      "title": "Container With Most Water",
+      "pattern": "two-pointers",
+      "hasReadme": true,
+      "status": "Accepted",
+      "todoCount": 5,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [
+        "solution.py"
+      ],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": [
+        "python"
+      ]
+    },
+    {
+      "id": 12,
+      "folder": "0012-integer-to-roman",
+      "slug": "integer-to-roman",
+      "title": "Integer to Roman",
+      "pattern": "math-and-digits",
+      "hasReadme": true,
+      "status": "Accepted",
+      "todoCount": 3,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [
+        "solution.py"
+      ],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": [
+        "python"
+      ]
+    },
+    {
+      "id": 13,
+      "folder": "0013-roman-to-integer",
+      "slug": "roman-to-integer",
+      "title": "Roman to Integer",
+      "pattern": "math-and-digits",
+      "hasReadme": true,
+      "status": "Accepted",
+      "todoCount": 3,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [
+        "solution.py"
+      ],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": [
+        "python"
+      ]
+    },
+    {
+      "id": 14,
+      "folder": "0014-longest-common-prefix",
+      "slug": "longest-common-prefix",
+      "title": "Longest Common Prefix",
+      "pattern": "arrays-and-strings",
+      "hasReadme": true,
+      "status": "Accepted",
+      "todoCount": 3,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [
+        "solution.py"
+      ],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": [
+        "python"
+      ]
+    },
+    {
+      "id": 20,
+      "folder": "0020-valid-parentheses",
+      "slug": "valid-parentheses",
+      "title": "Valid Parentheses",
+      "pattern": "stack",
+      "hasReadme": true,
+      "status": "Accepted",
+      "todoCount": 0,
+      "hasKeyIdea": true,
+      "hasComplexity": true,
+      "solutionFiles": [
+        "solution.py"
+      ],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": [
+        "python"
+      ]
+    },
+    {
+      "id": 21,
+      "folder": "0021-merge-two-sorted-lists",
+      "slug": "merge-two-sorted-lists",
+      "title": "Merge Two Sorted Lists",
+      "pattern": "uncategorized",
+      "hasReadme": true,
+      "status": "Accepted",
+      "todoCount": 5,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [
+        "solution.py"
+      ],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": [
+        "python"
+      ]
+    },
+    {
+      "id": 26,
+      "folder": "0026-remove-duplicates-from-sorted-array",
+      "slug": "remove-duplicates-from-sorted-array",
+      "title": "Remove Duplicates from Sorted Array",
+      "pattern": "arrays-and-strings",
+      "hasReadme": true,
+      "status": "Accepted",
+      "todoCount": 5,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [
+        "solution.py"
+      ],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": [
+        "python"
+      ]
+    },
+    {
+      "id": 28,
+      "folder": "0028-find-the-index-of-the-first-occurrence-in-a-string",
+      "slug": "find-the-index-of-the-first-occurrence-in-a-string",
+      "title": "Find the Index of the First Occurrence in a String",
+      "pattern": "arrays-and-strings",
+      "hasReadme": true,
+      "status": "Accepted",
+      "todoCount": 5,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [
+        "solution.py"
+      ],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": [
+        "python"
+      ]
+    },
+    {
+      "id": 29,
+      "folder": "0029-divide-two-integers",
+      "slug": "divide-two-integers",
+      "title": "Divide Two Integers",
+      "pattern": "uncategorized",
+      "hasReadme": true,
+      "status": "Accepted",
+      "todoCount": 3,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [
+        "solution.py"
+      ],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": [
+        "python"
+      ]
+    },
+    {
+      "id": 49,
+      "folder": "0049-group-anagrams",
+      "slug": "group-anagrams",
+      "title": "Group Anagrams",
+      "pattern": "uncategorized",
+      "hasReadme": true,
+      "status": "Accepted",
+      "todoCount": 0,
+      "hasKeyIdea": true,
+      "hasComplexity": true,
+      "solutionFiles": [
+        "solution.py"
+      ],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": [
+        "python"
+      ]
+    },
+    {
+      "id": 58,
+      "folder": "0058-length-of-last-word",
+      "slug": "length-of-last-word",
+      "title": "Length of Last Word",
+      "pattern": "arrays-and-strings",
+      "hasReadme": true,
+      "status": "Accepted",
+      "todoCount": 5,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [
+        "solution.py"
+      ],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": [
+        "python"
+      ]
+    },
+    {
+      "id": 60,
+      "folder": "0060-permutation-sequence",
+      "slug": "permutation-sequence",
+      "title": "Permutation Sequence",
+      "pattern": "dynamic-programming",
+      "hasReadme": true,
+      "status": "Accepted",
+      "todoCount": 3,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [
+        "solution.py"
+      ],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": [
+        "python"
+      ]
+    },
+    {
+      "id": 66,
+      "folder": "0066-plus-one",
+      "slug": "plus-one",
+      "title": "Plus One",
+      "pattern": "uncategorized",
+      "hasReadme": true,
+      "status": "Accepted",
+      "todoCount": 5,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [
+        "solution.py"
+      ],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": [
+        "python"
+      ]
+    },
+    {
+      "id": 69,
+      "folder": "0069-sqrtx",
+      "slug": "sqrtx",
+      "title": "Sqrt(x)",
+      "pattern": "uncategorized",
+      "hasReadme": true,
+      "status": "Accepted",
+      "todoCount": 5,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [
+        "solution.py"
+      ],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": [
+        "python"
+      ]
+    },
+    {
+      "id": 83,
+      "folder": "0083-remove-duplicates-from-sorted-list",
+      "slug": "remove-duplicates-from-sorted-list",
+      "title": "Remove Duplicates from Sorted List",
+      "pattern": "linked-list",
+      "hasReadme": true,
+      "status": "Accepted",
+      "todoCount": 5,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [
+        "solution.py"
+      ],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": [
+        "python"
+      ]
+    },
+    {
+      "id": 118,
+      "folder": "0118-pascals-triangle",
+      "slug": "pascals-triangle",
+      "title": "Pascal's Triangle",
+      "pattern": "math-and-digits",
+      "hasReadme": true,
+      "status": "Accepted",
+      "todoCount": 3,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [
+        "solution.py"
+      ],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": [
+        "python"
+      ]
+    },
+    {
+      "id": 121,
+      "folder": "0121-best-time-to-buy-and-sell-stock",
+      "slug": "best-time-to-buy-and-sell-stock",
+      "title": "Best Time to Buy and Sell Stock",
+      "pattern": "uncategorized",
+      "hasReadme": true,
+      "status": "Accepted",
+      "todoCount": 5,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [
+        "solution.py"
+      ],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": [
+        "python"
+      ]
+    },
+    {
+      "id": 125,
+      "folder": "0125-valid-palindrome",
+      "slug": "valid-palindrome",
+      "title": "Valid Palindrome",
+      "pattern": "two-pointers",
+      "hasReadme": true,
+      "status": "Accepted",
+      "todoCount": 5,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [
+        "solution.py"
+      ],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": [
+        "python"
+      ]
+    },
+    {
+      "id": 128,
+      "folder": "0128-longest-consecutive-sequence",
+      "slug": "longest-consecutive-sequence",
+      "title": "Longest Consecutive Sequence",
+      "pattern": "uncategorized",
+      "hasReadme": true,
+      "status": "Accepted",
+      "todoCount": 5,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [
+        "solution.py"
+      ],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": [
+        "python"
+      ]
+    },
+    {
+      "id": 136,
+      "folder": "0136-single-number",
+      "slug": "single-number",
+      "title": "Single Number",
+      "pattern": "math-and-digits",
+      "hasReadme": true,
+      "status": "Accepted",
+      "todoCount": 5,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [
+        "solution.py"
+      ],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": [
+        "python"
+      ]
+    },
+    {
+      "id": 172,
+      "folder": "0172-factorial-trailing-zeroes",
+      "slug": "factorial-trailing-zeroes",
+      "title": "Factorial Trailing Zeroes",
+      "pattern": "uncategorized",
+      "hasReadme": true,
+      "status": "Accepted",
+      "todoCount": 5,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [
+        "solution.py"
+      ],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": [
+        "python"
+      ]
+    },
+    {
+      "id": 175,
+      "folder": "0175-combine-two-tables",
+      "slug": "combine-two-tables",
+      "title": "Combine Two Tables",
+      "pattern": "sql",
+      "hasReadme": true,
+      "status": "Accepted",
+      "todoCount": 3,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [
+        "solution.txt"
+      ],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": [
+        "sql-or-text"
+      ]
+    },
+    {
+      "id": 181,
+      "folder": "0181-employees-earning-more-than-their-managers",
+      "slug": "employees-earning-more-than-their-managers",
+      "title": "Employees Earning More Than Their Managers",
+      "pattern": "sql",
+      "hasReadme": true,
+      "status": "Accepted",
+      "todoCount": 5,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [
+        "solution.txt"
+      ],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": [
+        "sql-or-text"
+      ]
+    },
+    {
+      "id": 204,
+      "folder": "0204-count-primes",
+      "slug": "count-primes",
+      "title": "Count Primes",
+      "pattern": "uncategorized",
+      "hasReadme": true,
+      "status": "Accepted",
+      "todoCount": 3,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [
+        "solution.py"
+      ],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": [
+        "python"
+      ]
+    },
+    {
+      "id": 206,
+      "folder": "0206-reverse-linked-list",
+      "slug": "reverse-linked-list",
+      "title": "Reverse Linked List",
+      "pattern": "linked-list",
+      "hasReadme": true,
+      "status": "Accepted",
+      "todoCount": 0,
+      "hasKeyIdea": true,
+      "hasComplexity": true,
+      "solutionFiles": [
+        "solution.py"
+      ],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": [
+        "python"
+      ]
+    },
+    {
+      "id": 217,
+      "folder": "0217-contains-duplicate",
+      "slug": "contains-duplicate",
+      "title": "Contains Duplicate",
+      "pattern": "hashing-and-counting",
+      "hasReadme": true,
+      "status": "Accepted",
+      "todoCount": 5,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [
+        "solution.py"
+      ],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": [
+        "python"
+      ]
+    },
+    {
+      "id": 219,
+      "folder": "0219-contains-duplicate-ii",
+      "slug": "contains-duplicate-ii",
+      "title": "Contains Duplicate II",
+      "pattern": "hashing-and-counting",
+      "hasReadme": true,
+      "status": "Accepted",
+      "todoCount": 5,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [
+        "solution.py"
+      ],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": [
+        "python"
+      ]
+    },
+    {
+      "id": 238,
+      "folder": "0238-product-of-array-except-self",
+      "slug": "product-of-array-except-self",
+      "title": "Product of Array Except Self",
+      "pattern": "arrays-and-strings",
+      "hasReadme": true,
+      "status": "Accepted",
+      "todoCount": 0,
+      "hasKeyIdea": true,
+      "hasComplexity": true,
+      "solutionFiles": [
+        "solution.py"
+      ],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": [
+        "python"
+      ]
+    },
+    {
+      "id": 242,
+      "folder": "0242-valid-anagram",
+      "slug": "valid-anagram",
+      "title": "Valid Anagram",
+      "pattern": "hashing-and-counting",
+      "hasReadme": true,
+      "status": "Accepted",
+      "todoCount": 5,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [
+        "solution.py"
+      ],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": [
+        "python"
+      ]
+    },
+    {
+      "id": 258,
+      "folder": "0258-add-digits",
+      "slug": "add-digits",
+      "title": "Add Digits",
+      "pattern": "math-and-digits",
+      "hasReadme": true,
+      "status": "Accepted",
+      "todoCount": 3,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [
+        "solution.py"
+      ],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": [
+        "python"
+      ]
+    },
+    {
+      "id": 263,
+      "folder": "0263-ugly-number",
+      "slug": "ugly-number",
+      "title": "Ugly Number",
+      "pattern": "math-and-digits",
+      "hasReadme": true,
+      "status": "Accepted",
+      "todoCount": 3,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [
+        "solution.py"
+      ],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": [
+        "python"
+      ]
+    },
+    {
+      "id": 268,
+      "folder": "0268-missing-number",
+      "slug": "missing-number",
+      "title": "Missing Number",
+      "pattern": "math-and-digits",
+      "hasReadme": true,
+      "status": "Accepted",
+      "todoCount": 5,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [
+        "solution.py"
+      ],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": [
+        "python"
+      ]
+    },
+    {
+      "id": 283,
+      "folder": "0283-move-zeroes",
+      "slug": "move-zeroes",
+      "title": "Move Zeroes",
+      "pattern": "uncategorized",
+      "hasReadme": true,
+      "status": "Accepted",
+      "todoCount": 5,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [
+        "solution.py"
+      ],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": [
+        "python"
+      ]
+    },
+    {
+      "id": 292,
+      "folder": "0292-nim-game",
+      "slug": "nim-game",
+      "title": "Nim Game",
+      "pattern": "uncategorized",
+      "hasReadme": true,
+      "status": "Accepted",
+      "todoCount": 5,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [
+        "solution.cpp",
+        "solution.py"
+      ],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": [
+        "cpp",
+        "python"
+      ]
+    },
+    {
+      "id": 342,
+      "folder": "0342-power-of-four",
+      "slug": "power-of-four",
+      "title": "Power of Four",
+      "pattern": "uncategorized",
+      "hasReadme": true,
+      "status": "Accepted",
+      "todoCount": 5,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [
+        "solution.py"
+      ],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": [
+        "python"
+      ]
+    },
+    {
+      "id": 344,
+      "folder": "0344-reverse-string",
+      "slug": "reverse-string",
+      "title": "Reverse String",
+      "pattern": "arrays-and-strings",
+      "hasReadme": true,
+      "status": "Accepted",
+      "todoCount": 5,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [
+        "solution.py"
+      ],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": [
+        "python"
+      ]
+    },
+    {
+      "id": 347,
+      "folder": "0347-top-k-frequent-elements",
+      "slug": "top-k-frequent-elements",
+      "title": "Top K Frequent Elements",
+      "pattern": "hashing-and-counting",
+      "hasReadme": true,
+      "status": "Accepted",
+      "todoCount": 5,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [
+        "solution.py"
+      ],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": [
+        "python"
+      ]
+    },
+    {
+      "id": 349,
+      "folder": "0349-intersection-of-two-arrays",
+      "slug": "intersection-of-two-arrays",
+      "title": "Intersection of Two Arrays",
+      "pattern": "arrays-and-strings",
+      "hasReadme": true,
+      "status": "Accepted",
+      "todoCount": 5,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [
+        "solution.py"
+      ],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": [
+        "python"
+      ]
+    },
+    {
+      "id": 387,
+      "folder": "0387-first-unique-character-in-a-string",
+      "slug": "first-unique-character-in-a-string",
+      "title": "First Unique Character in a String",
+      "pattern": "arrays-and-strings",
+      "hasReadme": true,
+      "status": "Accepted",
+      "todoCount": 3,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [
+        "solution.py"
+      ],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": [
+        "python"
+      ]
+    },
+    {
+      "id": 409,
+      "folder": "0409-longest-palindrome",
+      "slug": "longest-palindrome",
+      "title": "Longest Palindrome",
+      "pattern": "two-pointers",
+      "hasReadme": true,
+      "status": "Accepted",
+      "todoCount": 5,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [
+        "solution.py"
+      ],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": [
+        "python"
+      ]
+    },
+    {
+      "id": 412,
+      "folder": "0412-fizz-buzz",
+      "slug": "fizz-buzz",
+      "title": "Fizz Buzz",
+      "pattern": "uncategorized",
+      "hasReadme": true,
+      "status": "Accepted",
+      "todoCount": 5,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [
+        "solution.py"
+      ],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": [
+        "python"
+      ]
+    },
+    {
+      "id": 413,
+      "folder": "0413-arithmetic-slices",
+      "slug": "arithmetic-slices",
+      "title": "Arithmetic Slices",
+      "pattern": "dynamic-programming",
+      "hasReadme": true,
+      "status": "Accepted",
+      "todoCount": 5,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [
+        "solution.py"
+      ],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": [
+        "python"
+      ]
+    },
+    {
+      "id": 414,
+      "folder": "0414-third-maximum-number",
+      "slug": "third-maximum-number",
+      "title": "Third Maximum Number",
+      "pattern": "math-and-digits",
+      "hasReadme": true,
+      "status": "Accepted",
+      "todoCount": 5,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [
+        "solution.py"
+      ],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": [
+        "python"
+      ]
+    },
+    {
+      "id": 448,
+      "folder": "0448-find-all-numbers-disappeared-in-an-array",
+      "slug": "find-all-numbers-disappeared-in-an-array",
+      "title": "Find All Numbers Disappeared in an Array",
+      "pattern": "arrays-and-strings",
+      "hasReadme": true,
+      "status": "Accepted",
+      "todoCount": 5,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [
+        "solution.py"
+      ],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": [
+        "python"
+      ]
+    },
+    {
+      "id": 451,
+      "folder": "0451-sort-characters-by-frequency",
+      "slug": "sort-characters-by-frequency",
+      "title": "Sort Characters By Frequency",
+      "pattern": "hashing-and-counting",
+      "hasReadme": true,
+      "status": "Accepted",
+      "todoCount": 5,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [
+        "solution.py"
+      ],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": [
+        "python"
+      ]
+    },
+    {
+      "id": 485,
+      "folder": "0485-max-consecutive-ones",
+      "slug": "max-consecutive-ones",
+      "title": "Max Consecutive Ones",
+      "pattern": "uncategorized",
+      "hasReadme": true,
+      "status": "Accepted",
+      "todoCount": 5,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [
+        "solution.py"
+      ],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": [
+        "python"
+      ]
+    },
+    {
+      "id": 628,
+      "folder": "0628-maximum-product-of-three-numbers",
+      "slug": "maximum-product-of-three-numbers",
+      "title": "Maximum Product of Three Numbers",
+      "pattern": "math-and-digits",
+      "hasReadme": true,
+      "status": "Accepted",
+      "todoCount": 5,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [
+        "solution.py"
+      ],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": [
+        "python"
+      ]
+    },
+    {
+      "id": 645,
+      "folder": "0645-set-mismatch",
+      "slug": "set-mismatch",
+      "title": "Set Mismatch",
+      "pattern": "hashing-and-counting",
+      "hasReadme": true,
+      "status": "Accepted",
+      "todoCount": 5,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [
+        "solution.py"
+      ],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": [
+        "python"
+      ]
+    },
+    {
+      "id": 657,
+      "folder": "0657-robot-return-to-origin",
+      "slug": "robot-return-to-origin",
+      "title": "Robot Return to Origin",
+      "pattern": "uncategorized",
+      "hasReadme": true,
+      "status": "Accepted",
+      "todoCount": 5,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [
+        "solution.py"
+      ],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": [
+        "python"
+      ]
+    },
+    {
+      "id": 682,
+      "folder": "0682-baseball-game",
+      "slug": "baseball-game",
+      "title": "Baseball Game",
+      "pattern": "stack",
+      "hasReadme": true,
+      "status": "Accepted",
+      "todoCount": 5,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [
+        "solution.py"
+      ],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": [
+        "python"
+      ]
+    },
+    {
+      "id": 692,
+      "folder": "0692-top-k-frequent-words",
+      "slug": "top-k-frequent-words",
+      "title": "Top K Frequent Words",
+      "pattern": "hashing-and-counting",
+      "hasReadme": true,
+      "status": "Accepted",
+      "todoCount": 5,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [
+        "solution.py"
+      ],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": [
+        "python"
+      ]
+    },
+    {
+      "id": 709,
+      "folder": "0709-to-lower-case",
+      "slug": "to-lower-case",
+      "title": "To Lower Case",
+      "pattern": "uncategorized",
+      "hasReadme": true,
+      "status": "Accepted",
+      "todoCount": 5,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [
+        "solution.py"
+      ],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": [
+        "python"
+      ]
+    },
+    {
+      "id": 728,
+      "folder": "0728-self-dividing-numbers",
+      "slug": "self-dividing-numbers",
+      "title": "Self Dividing Numbers",
+      "pattern": "math-and-digits",
+      "hasReadme": true,
+      "status": "Accepted",
+      "todoCount": 3,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [
+        "solution.py"
+      ],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": [
+        "python"
+      ]
+    },
+    {
+      "id": 747,
+      "folder": "0747-largest-number-at-least-twice-of-others",
+      "slug": "largest-number-at-least-twice-of-others",
+      "title": "Largest Number At Least Twice of Others",
+      "pattern": "math-and-digits",
+      "hasReadme": true,
+      "status": "Accepted",
+      "todoCount": 5,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [
+        "solution.py"
+      ],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": [
+        "python"
+      ]
+    },
+    {
+      "id": 771,
+      "folder": "0771-jewels-and-stones",
+      "slug": "jewels-and-stones",
+      "title": "Jewels and Stones",
+      "pattern": "uncategorized",
+      "hasReadme": true,
+      "status": "Unknown (legacy visible-page capture before status fix; verify in LeetCode)",
+      "todoCount": 3,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [
+        "solution.py"
+      ],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": [
+        "python"
+      ]
+    },
+    {
+      "id": 819,
+      "folder": "0819-most-common-word",
+      "slug": "most-common-word",
+      "title": "Most Common Word",
+      "pattern": "arrays-and-strings",
+      "hasReadme": true,
+      "status": "Accepted",
+      "todoCount": 5,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [
+        "solution.py"
+      ],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": [
+        "python"
+      ]
+    },
+    {
+      "id": 884,
+      "folder": "0884-uncommon-words-from-two-sentences",
+      "slug": "uncommon-words-from-two-sentences",
+      "title": "Uncommon Words from Two Sentences",
+      "pattern": "uncategorized",
+      "hasReadme": true,
+      "status": "Accepted",
+      "todoCount": 5,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [
+        "solution.py"
+      ],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": [
+        "python"
+      ]
+    },
+    {
+      "id": 977,
+      "folder": "0977-squares-of-a-sorted-array",
+      "slug": "squares-of-a-sorted-array",
+      "title": "Squares of a Sorted Array",
+      "pattern": "arrays-and-strings",
+      "hasReadme": true,
+      "status": "Accepted",
+      "todoCount": 5,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [
+        "solution.py"
+      ],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": [
+        "python"
+      ]
+    },
+    {
+      "id": 1002,
+      "folder": "1002-find-common-characters",
+      "slug": "find-common-characters",
+      "title": "Find Common Characters",
+      "pattern": "uncategorized",
+      "hasReadme": true,
+      "status": "Accepted",
+      "todoCount": 5,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [
+        "solution.py"
+      ],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": [
+        "python"
+      ]
+    },
+    {
+      "id": 1015,
+      "folder": "1015-smallest-integer-divisible-by-k",
+      "slug": "smallest-integer-divisible-by-k",
+      "title": "Smallest Integer Divisible by K",
+      "pattern": "math-and-digits",
+      "hasReadme": true,
+      "status": "Accepted",
+      "todoCount": 3,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [
+        "solution.py"
+      ],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": [
+        "python"
+      ]
+    },
+    {
+      "id": 1021,
+      "folder": "1021-remove-outermost-parentheses",
+      "slug": "remove-outermost-parentheses",
+      "title": "Remove Outermost Parentheses",
+      "pattern": "stack",
+      "hasReadme": true,
+      "status": "Accepted",
+      "todoCount": 3,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [
+        "solution.py"
+      ],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": [
+        "python"
+      ]
+    },
+    {
+      "id": 1051,
+      "folder": "1051-height-checker",
+      "slug": "height-checker",
+      "title": "Height Checker",
+      "pattern": "uncategorized",
+      "hasReadme": true,
+      "status": "Accepted",
+      "todoCount": 3,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [
+        "solution.py"
+      ],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": [
+        "python"
+      ]
+    },
+    {
+      "id": 1108,
+      "folder": "1108-defanging-an-ip-address",
+      "slug": "defanging-an-ip-address",
+      "title": "Defanging an IP Address",
+      "pattern": "uncategorized",
+      "hasReadme": true,
+      "status": "Accepted",
+      "todoCount": 3,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [
+        "solution.py"
+      ],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": [
+        "python"
+      ]
+    },
+    {
+      "id": 1221,
+      "folder": "1221-split-a-string-in-balanced-strings",
+      "slug": "split-a-string-in-balanced-strings",
+      "title": "Split a String in Balanced Strings",
+      "pattern": "arrays-and-strings",
+      "hasReadme": true,
+      "status": "Accepted",
+      "todoCount": 3,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [
+        "solution.py"
+      ],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": [
+        "python"
+      ]
+    },
+    {
+      "id": 1224,
+      "folder": "1224-maximum-equal-frequency",
+      "slug": "maximum-equal-frequency",
+      "title": "Maximum Equal Frequency",
+      "pattern": "hashing-and-counting",
+      "hasReadme": true,
+      "status": "Accepted",
+      "todoCount": 5,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [
+        "solution.py"
+      ],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": [
+        "python"
+      ]
+    },
+    {
+      "id": 1281,
+      "folder": "1281-subtract-the-product-and-sum-of-digits-of-an-integer",
+      "slug": "subtract-the-product-and-sum-of-digits-of-an-integer",
+      "title": "Subtract the Product and Sum of Digits of an Integer",
+      "pattern": "math-and-digits",
+      "hasReadme": true,
+      "status": "Accepted",
+      "todoCount": 5,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [
+        "solution.cpp"
+      ],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": [
+        "cpp"
+      ]
+    },
+    {
+      "id": 1295,
+      "folder": "1295-find-numbers-with-even-number-of-digits",
+      "slug": "find-numbers-with-even-number-of-digits",
+      "title": "Find Numbers with Even Number of Digits",
+      "pattern": "math-and-digits",
+      "hasReadme": true,
+      "status": "Accepted",
+      "todoCount": 5,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [
+        "solution.py"
+      ],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": [
+        "python"
+      ]
+    },
+    {
+      "id": 1304,
+      "folder": "1304-find-n-unique-integers-sum-up-to-zero",
+      "slug": "find-n-unique-integers-sum-up-to-zero",
+      "title": "Find N Unique Integers Sum up to Zero",
+      "pattern": "math-and-digits",
+      "hasReadme": true,
+      "status": "Accepted",
+      "todoCount": 5,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [
+        "solution.py"
+      ],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": [
+        "python"
+      ]
+    },
+    {
+      "id": 1323,
+      "folder": "1323-maximum-69-number",
+      "slug": "maximum-69-number",
+      "title": "Maximum 69 Number",
+      "pattern": "math-and-digits",
+      "hasReadme": true,
+      "status": "Accepted",
+      "todoCount": 5,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [
+        "solution.py"
+      ],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": [
+        "python"
+      ]
+    },
+    {
+      "id": 1365,
+      "folder": "1365-how-many-numbers-are-smaller-than-the-current-number",
+      "slug": "how-many-numbers-are-smaller-than-the-current-number",
+      "title": "How Many Numbers Are Smaller Than the Current Number",
+      "pattern": "math-and-digits",
+      "hasReadme": true,
+      "status": "Accepted",
+      "todoCount": 5,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [
+        "solution.py"
+      ],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": [
+        "python"
+      ]
+    },
+    {
+      "id": 1431,
+      "folder": "1431-kids-with-the-greatest-number-of-candies",
+      "slug": "kids-with-the-greatest-number-of-candies",
+      "title": "Kids With the Greatest Number of Candies",
+      "pattern": "math-and-digits",
+      "hasReadme": true,
+      "status": "Accepted",
+      "todoCount": 5,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [
+        "solution.py"
+      ],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": [
+        "python"
+      ]
+    },
+    {
+      "id": 1441,
+      "folder": "1441-build-an-array-with-stack-operations",
+      "slug": "build-an-array-with-stack-operations",
+      "title": "Build an Array With Stack Operations",
+      "pattern": "arrays-and-strings",
+      "hasReadme": true,
+      "status": "Accepted",
+      "todoCount": 5,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [
+        "solution.py"
+      ],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": [
+        "python"
+      ]
+    },
+    {
+      "id": 1450,
+      "folder": "1450-number-of-students-doing-homework-at-a-given-time",
+      "slug": "number-of-students-doing-homework-at-a-given-time",
+      "title": "Number of Students Doing Homework at a Given Time",
+      "pattern": "math-and-digits",
+      "hasReadme": true,
+      "status": "Accepted",
+      "todoCount": 5,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [
+        "solution.py"
+      ],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": [
+        "python"
+      ]
+    },
+    {
+      "id": 1464,
+      "folder": "1464-maximum-product-of-two-elements-in-an-array",
+      "slug": "maximum-product-of-two-elements-in-an-array",
+      "title": "Maximum Product of Two Elements in an Array",
+      "pattern": "arrays-and-strings",
+      "hasReadme": true,
+      "status": "Accepted",
+      "todoCount": 5,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [
+        "solution.py"
+      ],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": [
+        "python"
+      ]
+    },
+    {
+      "id": 1470,
+      "folder": "1470-shuffle-the-array",
+      "slug": "shuffle-the-array",
+      "title": "Shuffle the Array",
+      "pattern": "arrays-and-strings",
+      "hasReadme": true,
+      "status": "Accepted",
+      "todoCount": 5,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [
+        "solution.cpp",
+        "solution.py"
+      ],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": [
+        "cpp",
+        "python"
+      ]
+    },
+    {
+      "id": 1480,
+      "folder": "1480-running-sum-of-1d-array",
+      "slug": "running-sum-of-1d-array",
+      "title": "Running Sum of 1d Array",
+      "pattern": "arrays-and-strings",
+      "hasReadme": true,
+      "status": "Accepted",
+      "todoCount": 5,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [
+        "solution.py"
+      ],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": [
+        "python"
+      ]
+    },
+    {
+      "id": 1486,
+      "folder": "1486-xor-operation-in-an-array",
+      "slug": "xor-operation-in-an-array",
+      "title": "XOR Operation in an Array",
+      "pattern": "arrays-and-strings",
+      "hasReadme": true,
+      "status": "Unknown (legacy visible-page capture before status fix; verify in LeetCode)",
+      "todoCount": 3,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [
+        "solution.py"
+      ],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": [
+        "python"
+      ]
+    },
+    {
+      "id": 1502,
+      "folder": "1502-can-make-arithmetic-progression-from-sequence",
+      "slug": "can-make-arithmetic-progression-from-sequence",
+      "title": "Can Make Arithmetic Progression From Sequence",
+      "pattern": "uncategorized",
+      "hasReadme": true,
+      "status": "Accepted",
+      "todoCount": 3,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [
+        "solution.py"
+      ],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": [
+        "python"
+      ]
+    },
+    {
+      "id": 1528,
+      "folder": "1528-shuffle-string",
+      "slug": "shuffle-string",
+      "title": "Shuffle String",
+      "pattern": "arrays-and-strings",
+      "hasReadme": true,
+      "status": "Accepted",
+      "todoCount": 5,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [
+        "solution.py"
+      ],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": [
+        "python"
+      ]
+    },
+    {
+      "id": 1550,
+      "folder": "1550-three-consecutive-odds",
+      "slug": "three-consecutive-odds",
+      "title": "Three Consecutive Odds",
+      "pattern": "uncategorized",
+      "hasReadme": true,
+      "status": "Accepted",
+      "todoCount": 3,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [
+        "solution.py"
+      ],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": [
+        "python"
+      ]
+    },
+    {
+      "id": 1588,
+      "folder": "1588-sum-of-all-odd-length-subarrays",
+      "slug": "sum-of-all-odd-length-subarrays",
+      "title": "Sum of All Odd Length Subarrays",
+      "pattern": "math-and-digits",
+      "hasReadme": true,
+      "status": "Accepted",
+      "todoCount": 5,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [
+        "solution.py"
+      ],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": [
+        "python"
+      ]
+    },
+    {
+      "id": 1662,
+      "folder": "1662-check-if-two-string-arrays-are-equivalent",
+      "slug": "check-if-two-string-arrays-are-equivalent",
+      "title": "Check If Two String Arrays are Equivalent",
+      "pattern": "arrays-and-strings",
+      "hasReadme": true,
+      "status": "Accepted",
+      "todoCount": 5,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [
+        "solution.py"
+      ],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": [
+        "python"
+      ]
+    },
+    {
+      "id": 1672,
+      "folder": "1672-richest-customer-wealth",
+      "slug": "richest-customer-wealth",
+      "title": "Richest Customer Wealth",
+      "pattern": "uncategorized",
+      "hasReadme": true,
+      "status": "Accepted",
+      "todoCount": 5,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [
+        "solution.py"
+      ],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": [
+        "python"
+      ]
+    },
+    {
+      "id": 1768,
+      "folder": "1768-merge-strings-alternately",
+      "slug": "merge-strings-alternately",
+      "title": "Merge Strings Alternately",
+      "pattern": "arrays-and-strings",
+      "hasReadme": true,
+      "status": "Accepted",
+      "todoCount": 3,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [
+        "solution.py"
+      ],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": [
+        "python"
+      ]
+    },
+    {
+      "id": 1822,
+      "folder": "1822-sign-of-the-product-of-an-array",
+      "slug": "sign-of-the-product-of-an-array",
+      "title": "Sign of the Product of an Array",
+      "pattern": "arrays-and-strings",
+      "hasReadme": true,
+      "status": "Accepted",
+      "todoCount": 3,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [
+        "solution.py"
+      ],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": [
+        "python"
+      ]
+    },
+    {
+      "id": 1832,
+      "folder": "1832-check-if-the-sentence-is-pangram",
+      "slug": "check-if-the-sentence-is-pangram",
+      "title": "Check if the Sentence Is Pangram",
+      "pattern": "arrays-and-strings",
+      "hasReadme": true,
+      "status": "Accepted",
+      "todoCount": 3,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [
+        "solution.py"
+      ],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": [
+        "python"
+      ]
+    },
+    {
+      "id": 1837,
+      "folder": "1837-sum-of-digits-in-base-k",
+      "slug": "sum-of-digits-in-base-k",
+      "title": "Sum of Digits in Base K",
+      "pattern": "math-and-digits",
+      "hasReadme": true,
+      "status": "Accepted",
+      "todoCount": 5,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [
+        "solution.py"
+      ],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": [
+        "python"
+      ]
+    },
+    {
+      "id": 1866,
+      "folder": "1866-number-of-ways-to-rearrange-sticks-with-k-sticks-visible",
+      "slug": "number-of-ways-to-rearrange-sticks-with-k-sticks-visible",
+      "title": "Number of Ways to Rearrange Sticks With K Sticks Visible",
+      "pattern": "math-and-digits",
+      "hasReadme": true,
+      "status": "Accepted",
+      "todoCount": 3,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [
+        "solution.py"
+      ],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": [
+        "python"
+      ]
+    },
+    {
+      "id": 1929,
+      "folder": "1929-concatenation-of-array",
+      "slug": "concatenation-of-array",
+      "title": "Concatenation of Array",
+      "pattern": "arrays-and-strings",
+      "hasReadme": true,
+      "status": "Accepted",
+      "todoCount": 5,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [
+        "solution.py"
+      ],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": [
+        "python"
+      ]
+    },
+    {
+      "id": 1967,
+      "folder": "1967-number-of-strings-that-appear-as-substrings-in-word",
+      "slug": "number-of-strings-that-appear-as-substrings-in-word",
+      "title": "Number of Strings That Appear as Substrings in Word",
+      "pattern": "arrays-and-strings",
+      "hasReadme": true,
+      "status": "Accepted",
+      "todoCount": 5,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [
+        "solution.py"
+      ],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": [
+        "python"
+      ]
+    },
+    {
+      "id": 2011,
+      "folder": "2011-final-value-of-variable-after-performing-operations",
+      "slug": "final-value-of-variable-after-performing-operations",
+      "title": "Final Value of Variable After Performing Operations",
+      "pattern": "uncategorized",
+      "hasReadme": true,
+      "status": "Accepted",
+      "todoCount": 5,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [
+        "solution.py"
+      ],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": [
+        "python"
+      ]
+    },
+    {
+      "id": 2108,
+      "folder": "2108-find-first-palindromic-string-in-the-array",
+      "slug": "find-first-palindromic-string-in-the-array",
+      "title": "Find First Palindromic String in the Array",
+      "pattern": "arrays-and-strings",
+      "hasReadme": true,
+      "status": "Accepted",
+      "todoCount": 3,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [
+        "solution.py"
+      ],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": [
+        "python"
+      ]
+    },
+    {
+      "id": 2114,
+      "folder": "2114-maximum-number-of-words-found-in-sentences",
+      "slug": "maximum-number-of-words-found-in-sentences",
+      "title": "Maximum Number of Words Found in Sentences",
+      "pattern": "math-and-digits",
+      "hasReadme": true,
+      "status": "Accepted",
+      "todoCount": 3,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [
+        "solution.py"
+      ],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": [
+        "python"
+      ]
+    },
+    {
+      "id": 2119,
+      "folder": "2119-a-number-after-a-double-reversal",
+      "slug": "a-number-after-a-double-reversal",
+      "title": "A Number After a Double Reversal",
+      "pattern": "math-and-digits",
+      "hasReadme": true,
+      "status": "Accepted",
+      "todoCount": 5,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [
+        "solution.cpp",
+        "solution.py"
+      ],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": [
+        "cpp",
+        "python"
+      ]
+    },
+    {
+      "id": 2144,
+      "folder": "2144-minimum-cost-of-buying-candies-with-discount",
+      "slug": "minimum-cost-of-buying-candies-with-discount",
+      "title": "Minimum Cost of Buying Candies With Discount",
+      "pattern": "math-and-digits",
+      "hasReadme": true,
+      "status": "Accepted",
+      "todoCount": 3,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [
+        "solution.py"
+      ],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": [
+        "python"
+      ]
+    },
+    {
+      "id": 2160,
+      "folder": "2160-minimum-sum-of-four-digit-number-after-splitting-digits",
+      "slug": "minimum-sum-of-four-digit-number-after-splitting-digits",
+      "title": "Minimum Sum of Four Digit Number After Splitting Digits",
+      "pattern": "math-and-digits",
+      "hasReadme": true,
+      "status": "Accepted",
+      "todoCount": 5,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [
+        "solution.py"
+      ],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": [
+        "python"
+      ]
+    },
+    {
+      "id": 2161,
+      "folder": "2161-partition-array-according-to-given-pivot",
+      "slug": "partition-array-according-to-given-pivot",
+      "title": "Partition Array According to Given Pivot",
+      "pattern": "arrays-and-strings",
+      "hasReadme": true,
+      "status": "Accepted",
+      "todoCount": 5,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [
+        "solution.py"
+      ],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": [
+        "python"
+      ]
+    },
+    {
+      "id": 2169,
+      "folder": "2169-count-operations-to-obtain-zero",
+      "slug": "count-operations-to-obtain-zero",
+      "title": "Count Operations to Obtain Zero",
+      "pattern": "math-and-digits",
+      "hasReadme": true,
+      "status": "Accepted",
+      "todoCount": 5,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [
+        "solution.py"
+      ],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": [
+        "python"
+      ]
+    },
+    {
+      "id": 2176,
+      "folder": "2176-count-equal-and-divisible-pairs-in-an-array",
+      "slug": "count-equal-and-divisible-pairs-in-an-array",
+      "title": "Count Equal and Divisible Pairs in an Array",
+      "pattern": "arrays-and-strings",
+      "hasReadme": true,
+      "status": "Accepted",
+      "todoCount": 5,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [
+        "solution.py"
+      ],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": [
+        "python"
+      ]
+    },
+    {
+      "id": 2185,
+      "folder": "2185-counting-words-with-a-given-prefix",
+      "slug": "counting-words-with-a-given-prefix",
+      "title": "Counting Words With a Given Prefix",
+      "pattern": "arrays-and-strings",
+      "hasReadme": true,
+      "status": "Accepted",
+      "todoCount": 3,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [
+        "solution.py"
+      ],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": [
+        "python"
+      ]
+    },
+    {
+      "id": 2196,
+      "folder": "2196-create-binary-tree-from-descriptions",
+      "slug": "create-binary-tree-from-descriptions",
+      "title": "Create Binary Tree From Descriptions",
+      "pattern": "tree-and-graph",
+      "hasReadme": true,
+      "status": "Accepted",
+      "todoCount": 5,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [
+        "solution.py"
+      ],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": [
+        "python"
+      ]
+    },
+    {
+      "id": 2235,
+      "folder": "2235-add-two-integers",
+      "slug": "add-two-integers",
+      "title": "Add Two Integers",
+      "pattern": "uncategorized",
+      "hasReadme": true,
+      "status": "Accepted",
+      "todoCount": 5,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [
+        "solution.cpp"
+      ],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": [
+        "cpp"
+      ]
+    },
+    {
+      "id": 2427,
+      "folder": "2427-number-of-common-factors",
+      "slug": "number-of-common-factors",
+      "title": "Number of Common Factors",
+      "pattern": "math-and-digits",
+      "hasReadme": true,
+      "status": "Accepted",
+      "todoCount": 5,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [
+        "solution.py"
+      ],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": [
+        "python"
+      ]
+    },
+    {
+      "id": 2469,
+      "folder": "2469-convert-the-temperature",
+      "slug": "convert-the-temperature",
+      "title": "Convert the Temperature",
+      "pattern": "math-and-digits",
+      "hasReadme": true,
+      "status": "Accepted",
+      "todoCount": 5,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [
+        "solution.cpp",
+        "solution.py"
+      ],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": [
+        "cpp",
+        "python"
+      ]
+    },
+    {
+      "id": 2485,
+      "folder": "2485-find-the-pivot-integer",
+      "slug": "find-the-pivot-integer",
+      "title": "Find the Pivot Integer",
+      "pattern": "math-and-digits",
+      "hasReadme": true,
+      "status": "Accepted",
+      "todoCount": 3,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [
+        "solution.py"
+      ],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": [
+        "python"
+      ]
+    },
+    {
+      "id": 2520,
+      "folder": "2520-count-the-digits-that-divide-a-number",
+      "slug": "count-the-digits-that-divide-a-number",
+      "title": "Count the Digits That Divide a Number",
+      "pattern": "math-and-digits",
+      "hasReadme": true,
+      "status": "Accepted",
+      "todoCount": 3,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [
+        "solution.py"
+      ],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": [
+        "python"
+      ]
+    },
+    {
+      "id": 2523,
+      "folder": "2523-closest-prime-numbers-in-range",
+      "slug": "closest-prime-numbers-in-range",
+      "title": "Closest Prime Numbers in Range",
+      "pattern": "math-and-digits",
+      "hasReadme": true,
+      "status": "Accepted",
+      "todoCount": 5,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [
+        "solution.py"
+      ],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": [
+        "python"
+      ]
+    },
+    {
+      "id": 2535,
+      "folder": "2535-difference-between-element-sum-and-digit-sum-of-an-array",
+      "slug": "difference-between-element-sum-and-digit-sum-of-an-array",
+      "title": "Difference Between Element Sum and Digit Sum of an Array",
+      "pattern": "arrays-and-strings",
+      "hasReadme": true,
+      "status": "Accepted",
+      "todoCount": 3,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [
+        "solution.py"
+      ],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": [
+        "python"
+      ]
+    },
+    {
+      "id": 2553,
+      "folder": "2553-separate-the-digits-in-an-array",
+      "slug": "separate-the-digits-in-an-array",
+      "title": "Separate the Digits in an Array",
+      "pattern": "arrays-and-strings",
+      "hasReadme": true,
+      "status": "Accepted",
+      "todoCount": 5,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [
+        "solution.py"
+      ],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": [
+        "python"
+      ]
+    },
+    {
+      "id": 2574,
+      "folder": "2574-left-and-right-sum-differences",
+      "slug": "left-and-right-sum-differences",
+      "title": "Left and Right Sum Differences",
+      "pattern": "math-and-digits",
+      "hasReadme": true,
+      "status": "Accepted",
+      "todoCount": 5,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [
+        "solution.py"
+      ],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": [
+        "python"
+      ]
+    },
+    {
+      "id": 2652,
+      "folder": "2652-sum-multiples",
+      "slug": "sum-multiples",
+      "title": "Sum Multiples",
+      "pattern": "math-and-digits",
+      "hasReadme": true,
+      "status": "Accepted",
+      "todoCount": 5,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [
+        "solution.cpp",
+        "solution.py"
+      ],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": [
+        "cpp",
+        "python"
+      ]
+    },
+    {
+      "id": 2656,
+      "folder": "2656-maximum-sum-with-exactly-k-elements",
+      "slug": "maximum-sum-with-exactly-k-elements",
+      "title": "Maximum Sum With Exactly K Elements",
+      "pattern": "math-and-digits",
+      "hasReadme": true,
+      "status": "Accepted",
+      "todoCount": 5,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [
+        "solution.py"
+      ],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": [
+        "python"
+      ]
+    },
+    {
+      "id": 2733,
+      "folder": "2733-neither-minimum-nor-maximum",
+      "slug": "neither-minimum-nor-maximum",
+      "title": "Neither Minimum nor Maximum",
+      "pattern": "uncategorized",
+      "hasReadme": true,
+      "status": "Accepted",
+      "todoCount": 5,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [
+        "solution.py"
+      ],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": [
+        "python"
+      ]
+    },
+    {
+      "id": 2769,
+      "folder": "2769-find-the-maximum-achievable-number",
+      "slug": "find-the-maximum-achievable-number",
+      "title": "Find the Maximum Achievable Number",
+      "pattern": "math-and-digits",
+      "hasReadme": true,
+      "status": "Accepted",
+      "todoCount": 5,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [
+        "solution.cpp",
+        "solution.py"
+      ],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": [
+        "cpp",
+        "python"
+      ]
+    },
+    {
+      "id": 2778,
+      "folder": "2778-sum-of-squares-of-special-elements",
+      "slug": "sum-of-squares-of-special-elements",
+      "title": "Sum of Squares of Special Elements",
+      "pattern": "math-and-digits",
+      "hasReadme": true,
+      "status": "Accepted",
+      "todoCount": 5,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [
+        "solution.py"
+      ],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": [
+        "python"
+      ]
+    },
+    {
+      "id": 2798,
+      "folder": "2798-number-of-employees-who-met-the-target",
+      "slug": "number-of-employees-who-met-the-target",
+      "title": "Number of Employees Who Met the Target",
+      "pattern": "math-and-digits",
+      "hasReadme": true,
+      "status": "Accepted",
+      "todoCount": 3,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [
+        "solution.py"
+      ],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": [
+        "python"
+      ]
+    },
+    {
+      "id": 2840,
+      "folder": "2840-check-if-strings-can-be-made-equal-with-operations-ii",
+      "slug": "check-if-strings-can-be-made-equal-with-operations-ii",
+      "title": "Check if Strings Can be Made Equal With Operations II",
+      "pattern": "arrays-and-strings",
+      "hasReadme": true,
+      "status": "Accepted",
+      "todoCount": 5,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [
+        "solution.py"
+      ],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": [
+        "python"
+      ]
+    },
+    {
+      "id": 2843,
+      "folder": "2843-count-symmetric-integers",
+      "slug": "count-symmetric-integers",
+      "title": "Count Symmetric Integers",
+      "pattern": "uncategorized",
+      "hasReadme": true,
+      "status": "Accepted",
+      "todoCount": 5,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [
+        "solution.py"
+      ],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": [
+        "python"
+      ]
+    },
+    {
+      "id": 2864,
+      "folder": "2864-maximum-odd-binary-number",
+      "slug": "maximum-odd-binary-number",
+      "title": "Maximum Odd Binary Number",
+      "pattern": "math-and-digits",
+      "hasReadme": true,
+      "status": "Accepted",
+      "todoCount": 5,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [
+        "solution.py"
+      ],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": [
+        "python"
+      ]
+    },
+    {
+      "id": 2894,
+      "folder": "2894-divisible-and-non-divisible-sums-difference",
+      "slug": "divisible-and-non-divisible-sums-difference",
+      "title": "Divisible and Non-divisible Sums Difference",
+      "pattern": "uncategorized",
+      "hasReadme": true,
+      "status": "Unknown (legacy visible-page capture before status fix; verify in LeetCode)",
+      "todoCount": 3,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [
+        "solution.py"
+      ],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": [
+        "python"
+      ]
+    },
+    {
+      "id": 2928,
+      "folder": "2928-distribute-candies-among-children-i",
+      "slug": "distribute-candies-among-children-i",
+      "title": "Distribute Candies Among Children I",
+      "pattern": "math-and-digits",
+      "hasReadme": true,
+      "status": "Accepted",
+      "todoCount": 5,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [
+        "solution.py"
+      ],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": [
+        "python"
+      ]
+    },
+    {
+      "id": 2942,
+      "folder": "2942-find-words-containing-character",
+      "slug": "find-words-containing-character",
+      "title": "Find Words Containing Character",
+      "pattern": "uncategorized",
+      "hasReadme": true,
+      "status": "Unknown (legacy visible-page capture before status fix; verify in LeetCode)",
+      "todoCount": 3,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [
+        "solution.py"
+      ],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": [
+        "python"
+      ]
+    },
+    {
+      "id": 2974,
+      "folder": "2974-minimum-number-game",
+      "slug": "minimum-number-game",
+      "title": "Minimum Number Game",
+      "pattern": "math-and-digits",
+      "hasReadme": true,
+      "status": "Accepted",
+      "todoCount": 3,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [
+        "solution.py"
+      ],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": [
+        "python"
+      ]
+    },
+    {
+      "id": 3019,
+      "folder": "3019-number-of-changing-keys",
+      "slug": "number-of-changing-keys",
+      "title": "Number of Changing Keys",
+      "pattern": "math-and-digits",
+      "hasReadme": true,
+      "status": "Accepted",
+      "todoCount": 5,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [
+        "solution.py"
+      ],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": [
+        "python"
+      ]
+    },
+    {
+      "id": 3024,
+      "folder": "3024-type-of-triangle",
+      "slug": "type-of-triangle",
+      "title": "Type of Triangle",
+      "pattern": "math-and-digits",
+      "hasReadme": true,
+      "status": "Accepted",
+      "todoCount": 3,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [
+        "solution.py"
+      ],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": [
+        "python"
+      ]
+    },
+    {
+      "id": 3110,
+      "folder": "3110-score-of-a-string",
+      "slug": "score-of-a-string",
+      "title": "Score of a String",
+      "pattern": "arrays-and-strings",
+      "hasReadme": true,
+      "status": "Unknown (legacy visible-page capture before status fix; verify in LeetCode)",
+      "todoCount": 3,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [
+        "solution.py"
+      ],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": [
+        "python"
+      ]
+    },
+    {
+      "id": 3120,
+      "folder": "3120-count-the-number-of-special-characters-i",
+      "slug": "count-the-number-of-special-characters-i",
+      "title": "Count the Number of Special Characters I",
+      "pattern": "math-and-digits",
+      "hasReadme": true,
+      "status": "Accepted",
+      "todoCount": 5,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [
+        "solution.py"
+      ],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": [
+        "python"
+      ]
+    },
+    {
+      "id": 3136,
+      "folder": "3136-valid-word",
+      "slug": "valid-word",
+      "title": "Valid Word",
+      "pattern": "arrays-and-strings",
+      "hasReadme": true,
+      "status": "Accepted",
+      "todoCount": 5,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [
+        "solution.py"
+      ],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": [
+        "python"
+      ]
+    },
+    {
+      "id": 3146,
+      "folder": "3146-permutation-difference-between-two-strings",
+      "slug": "permutation-difference-between-two-strings",
+      "title": "Permutation Difference between Two Strings",
+      "pattern": "arrays-and-strings",
+      "hasReadme": true,
+      "status": "Accepted",
+      "todoCount": 5,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [
+        "solution.py"
+      ],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": [
+        "python"
+      ]
+    },
+    {
+      "id": 3232,
+      "folder": "3232-find-if-digit-game-can-be-won",
+      "slug": "find-if-digit-game-can-be-won",
+      "title": "Find if Digit Game Can Be Won",
+      "pattern": "math-and-digits",
+      "hasReadme": true,
+      "status": "Accepted",
+      "todoCount": 5,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [
+        "solution.py"
+      ],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": [
+        "python"
+      ]
+    },
+    {
+      "id": 3270,
+      "folder": "3270-find-the-key-of-the-numbers",
+      "slug": "find-the-key-of-the-numbers",
+      "title": "Find the Key of the Numbers",
+      "pattern": "math-and-digits",
+      "hasReadme": true,
+      "status": "Accepted",
+      "todoCount": 5,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [
+        "solution.py"
+      ],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": [
+        "python"
+      ]
+    },
+    {
+      "id": 3289,
+      "folder": "3289-the-two-sneaky-numbers-of-digitville",
+      "slug": "the-two-sneaky-numbers-of-digitville",
+      "title": "The Two Sneaky Numbers of Digitville",
+      "pattern": "math-and-digits",
+      "hasReadme": true,
+      "status": "Accepted",
+      "todoCount": 5,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [
+        "solution.py"
+      ],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": [
+        "python"
+      ]
+    },
+    {
+      "id": 3370,
+      "folder": "3370-smallest-number-with-all-set-bits",
+      "slug": "smallest-number-with-all-set-bits",
+      "title": "Smallest Number With All Set Bits",
+      "pattern": "math-and-digits",
+      "hasReadme": true,
+      "status": "Accepted",
+      "todoCount": 5,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [
+        "solution.py"
+      ],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": [
+        "python"
+      ]
+    },
+    {
+      "id": 3492,
+      "folder": "3492-maximum-containers-on-a-ship",
+      "slug": "maximum-containers-on-a-ship",
+      "title": "Maximum Containers on a Ship",
+      "pattern": "math-and-digits",
+      "hasReadme": true,
+      "status": "Accepted",
+      "todoCount": 5,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [
+        "solution.py"
+      ],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": [
+        "python"
+      ]
+    },
+    {
+      "id": 3512,
+      "folder": "3512-minimum-operations-to-make-array-sum-divisible-by-k",
+      "slug": "minimum-operations-to-make-array-sum-divisible-by-k",
+      "title": "Minimum Operations to Make Array Sum Divisible by K",
+      "pattern": "arrays-and-strings",
+      "hasReadme": true,
+      "status": "Accepted",
+      "todoCount": 5,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [
+        "solution.py"
+      ],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": [
+        "python"
+      ]
+    },
+    {
+      "id": 3541,
+      "folder": "3541-find-most-frequent-vowel-and-consonant",
+      "slug": "find-most-frequent-vowel-and-consonant",
+      "title": "Find Most Frequent Vowel and Consonant",
+      "pattern": "hashing-and-counting",
+      "hasReadme": true,
+      "status": "Accepted",
+      "todoCount": 5,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [
+        "solution.py"
+      ],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": [
+        "python"
+      ]
+    },
+    {
+      "id": 3622,
+      "folder": "3622-check-divisibility-by-digit-sum-and-product",
+      "slug": "check-divisibility-by-digit-sum-and-product",
+      "title": "Check Divisibility by Digit Sum and Product",
+      "pattern": "math-and-digits",
+      "hasReadme": true,
+      "status": "Accepted",
+      "todoCount": 5,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [
+        "solution.py"
+      ],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": [
+        "python"
+      ]
+    },
+    {
+      "id": 3633,
+      "folder": "3633-earliest-finish-time-for-land-and-water-rides-i",
+      "slug": "earliest-finish-time-for-land-and-water-rides-i",
+      "title": "Earliest Finish Time for Land and Water Rides I",
+      "pattern": "uncategorized",
+      "hasReadme": true,
+      "status": "Accepted",
+      "todoCount": 3,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [
+        "solution.py"
+      ],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": [
+        "python"
+      ]
+    },
+    {
+      "id": 3635,
+      "folder": "3635-earliest-finish-time-for-land-and-water-rides-ii",
+      "slug": "earliest-finish-time-for-land-and-water-rides-ii",
+      "title": "Earliest Finish Time for Land and Water Rides II",
+      "pattern": "uncategorized",
+      "hasReadme": true,
+      "status": "Unknown (legacy visible-page capture before status fix; verify in LeetCode)",
+      "todoCount": 3,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [
+        "solution.py"
+      ],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": [
+        "python"
+      ]
+    },
+    {
+      "id": 3668,
+      "folder": "3668-restore-finishing-order",
+      "slug": "restore-finishing-order",
+      "title": "Restore Finishing Order",
+      "pattern": "uncategorized",
+      "hasReadme": true,
+      "status": "Accepted",
+      "todoCount": 5,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [
+        "solution.py"
+      ],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": [
+        "python"
+      ]
+    },
+    {
+      "id": 3689,
+      "folder": "3689-maximum-total-subarray-value-i",
+      "slug": "maximum-total-subarray-value-i",
+      "title": "Maximum Total Subarray Value I",
+      "pattern": "arrays-and-strings",
+      "hasReadme": true,
+      "status": "Accepted",
+      "todoCount": 5,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [
+        "solution.py"
+      ],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": [
+        "python"
+      ]
+    },
+    {
+      "id": 3751,
+      "folder": "3751-total-waviness-of-numbers-in-range-i",
+      "slug": "total-waviness-of-numbers-in-range-i",
+      "title": "Total Waviness of Numbers in Range I",
+      "pattern": "math-and-digits",
+      "hasReadme": true,
+      "status": "Accepted",
+      "todoCount": 5,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [
+        "solution.py"
+      ],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": [
+        "python"
+      ]
+    },
+    {
+      "id": 3753,
+      "folder": "3753-total-waviness-of-numbers-in-range-ii",
+      "slug": "total-waviness-of-numbers-in-range-ii",
+      "title": "Total Waviness of Numbers in Range II",
+      "pattern": "math-and-digits",
+      "hasReadme": true,
+      "status": "Accepted",
+      "todoCount": 3,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [
+        "solution.py"
+      ],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": [
+        "python"
+      ]
+    },
+    {
+      "id": 3925,
+      "folder": "3925-concatenate-array-with-reverse",
+      "slug": "concatenate-array-with-reverse",
+      "title": "Concatenate Array With Reverse",
+      "pattern": "arrays-and-strings",
+      "hasReadme": true,
+      "status": "Accepted",
+      "todoCount": 5,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [
+        "solution.py"
+      ],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": [
+        "python"
+      ]
+    },
+    {
+      "id": 3941,
+      "folder": "3941-password-strength",
+      "slug": "password-strength",
+      "title": "Password Strength",
+      "pattern": "uncategorized",
+      "hasReadme": true,
+      "status": "Accepted",
+      "todoCount": 5,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [
+        "solution.py"
+      ],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": [
+        "python"
+      ]
+    },
+    {
+      "id": 3945,
+      "folder": "3945-digit-frequency-score",
+      "slug": "digit-frequency-score",
+      "title": "Digit Frequency Score",
+      "pattern": "math-and-digits",
+      "hasReadme": true,
+      "status": "Accepted",
+      "todoCount": 5,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [
+        "solution.py"
+      ],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": [
+        "python"
+      ]
+    }
+  ],
+  "trackedFileFlags": [],
+  "weaknessSignals": [
+    "149 of 154 problem READMEs still need real reflection.",
+    "9 submissions have unknown or missing status metadata.",
+    "No failed attempts are preserved yet, so the repo cannot fully show the early struggle-to-improvement arc.",
+    "No TypeScript solutions are present yet; future JS/TS learning should be visible as a new track.",
+    "Tree/graph/DP coverage is thin relative to array, string, math, and simple loop problems."
+  ]
+}

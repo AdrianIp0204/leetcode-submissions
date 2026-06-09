@@ -94,7 +94,7 @@ async function main() {
 
   const intervalSeconds = Math.max(30, Number(readArg("interval-seconds") || 30));
   const intervalMs = intervalSeconds * 1000;
-  const push = !hasFlag("no-push");
+  const push = hasFlag("push") || process.env.LEETCODE_SYNC_PUSH === "1";
 
   await mkdir(launchAgentsDir, { recursive: true });
   await mkdir(logsDir, { recursive: true });

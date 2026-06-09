@@ -1,6 +1,6 @@
 param(
   [int]$IntervalSeconds = 30,
-  [switch]$NoPush
+  [switch]$Push
 )
 
 $ErrorActionPreference = "Stop"
@@ -16,7 +16,7 @@ $TaskName = "LeetCodeSubmissionsAutoSync"
 $ScriptPath = Join-Path $RepoRoot "scripts\auto-sync.mjs"
 $IntervalMs = [Math]::Max(30000, $IntervalSeconds * 1000)
 $Arguments = "`"$ScriptPath`" --interval=$IntervalMs"
-$PushEnabled = -not $NoPush
+$PushEnabled = [bool]$Push
 
 if ($PushEnabled) {
   $Arguments += " --push"
@@ -64,7 +64,7 @@ shell.Run """$CmdPath""", 0, False
   $Shortcut.TargetPath = $WScript
   $Shortcut.Arguments = "`"$VbsPath`""
   $Shortcut.WorkingDirectory = $RepoRoot
-  $Shortcut.Description = "Automatically commits and pushes LeetCode exports handed off by the first-party extension."
+  $Shortcut.Description = "Automatically commits LeetCode exports handed off by the first-party extension."
   $Shortcut.WindowStyle = 7
   $Shortcut.Save()
 
@@ -83,7 +83,7 @@ try {
   $Settings = New-ScheduledTaskSettingsSet -AllowStartIfOnBatteries -DontStopIfGoingOnBatteries -RestartCount 3 -RestartInterval (New-TimeSpan -Minutes 1)
 
   Stop-ExistingWatcher
-  Register-ScheduledTask -TaskName $TaskName -Action $Action -Trigger $Trigger -Principal $Principal -Settings $Settings -Description "Automatically commits and pushes LeetCode exports handed off by the first-party extension." -Force | Out-Null
+  Register-ScheduledTask -TaskName $TaskName -Action $Action -Trigger $Trigger -Principal $Principal -Settings $Settings -Description "Automatically commits LeetCode exports handed off by the first-party extension." -Force | Out-Null
   Start-ScheduledTask -TaskName $TaskName
   Write-Host "Installed and started scheduled task: $TaskName"
 } catch {
