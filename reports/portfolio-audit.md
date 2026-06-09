@@ -1,12 +1,12 @@
 # Portfolio Audit
 
-- Generated at: 2026-06-09T12:47:52.091Z
+- Generated at: 2026-06-09T13:06:22.977Z
 - Local problem folders: 154
 - Public solved count: 154
 - Estimated solved-count gap: 0
 - Problems with real attempt files: 0
 - Problems with multiple languages or recorded language variants: 6
-- Problems needing reflection cleanup: 134
+- Problems needing reflection cleanup: 74
 - Problems with unknown/missing status metadata: 6
 
 ## Verdict
@@ -40,7 +40,7 @@ Do not publish yet. The main blockers are missing reflection fields, no preserve
 
 ## Weakness Signals
 
-- 134 of 154 problem READMEs still need real reflection.
+- 74 of 154 problem READMEs still need real reflection.
 - 6 submissions have unknown or missing status metadata.
 - No failed attempts are preserved yet, so the repo cannot fully show the early struggle-to-improvement arc.
 - No TypeScript solutions are present yet; future JS/TS learning should be visible as a new track.
@@ -67,26 +67,26 @@ The scan is heuristic. Review flagged files manually before making the repositor
 
 | Problem | Status | Needs |
 | --- | --- | --- |
-| [0006-zigzag-conversion](../submissions/0006-zigzag-conversion/) | Accepted | key idea, complexity, 5 TODO |
-| [0007-reverse-integer](../submissions/0007-reverse-integer/) | Accepted | key idea, complexity, 3 TODO |
-| [0009-palindrome-number](../submissions/0009-palindrome-number/) | Accepted | key idea, complexity, 5 TODO |
-| [0012-integer-to-roman](../submissions/0012-integer-to-roman/) | Accepted | key idea, complexity, 3 TODO |
-| [0013-roman-to-integer](../submissions/0013-roman-to-integer/) | Accepted | key idea, complexity, 3 TODO |
-| [0014-longest-common-prefix](../submissions/0014-longest-common-prefix/) | Accepted | key idea, complexity, 3 TODO |
-| [0026-remove-duplicates-from-sorted-array](../submissions/0026-remove-duplicates-from-sorted-array/) | Accepted | key idea, complexity, 5 TODO |
-| [0028-find-the-index-of-the-first-occurrence-in-a-string](../submissions/0028-find-the-index-of-the-first-occurrence-in-a-string/) | Accepted | key idea, complexity, 5 TODO |
-| [0029-divide-two-integers](../submissions/0029-divide-two-integers/) | Accepted | key idea, complexity, 3 TODO |
-| [0058-length-of-last-word](../submissions/0058-length-of-last-word/) | Accepted | key idea, complexity, 5 TODO |
-| [0060-permutation-sequence](../submissions/0060-permutation-sequence/) | Accepted | key idea, complexity, 3 TODO |
-| [0066-plus-one](../submissions/0066-plus-one/) | Accepted | key idea, complexity, 5 TODO |
-| [0069-sqrtx](../submissions/0069-sqrtx/) | Accepted | key idea, complexity, 5 TODO |
-| [0083-remove-duplicates-from-sorted-list](../submissions/0083-remove-duplicates-from-sorted-list/) | Accepted | key idea, complexity, 5 TODO |
-| [0118-pascals-triangle](../submissions/0118-pascals-triangle/) | Accepted | key idea, complexity, 3 TODO |
-| [0125-valid-palindrome](../submissions/0125-valid-palindrome/) | Accepted | key idea, complexity, 5 TODO |
-| [0136-single-number](../submissions/0136-single-number/) | Accepted | key idea, complexity, 5 TODO |
-| [0172-factorial-trailing-zeroes](../submissions/0172-factorial-trailing-zeroes/) | Accepted | key idea, complexity, 5 TODO |
-| [0175-combine-two-tables](../submissions/0175-combine-two-tables/) | Accepted | key idea, complexity, 3 TODO |
-| [0181-employees-earning-more-than-their-managers](../submissions/0181-employees-earning-more-than-their-managers/) | Accepted | key idea, complexity, 5 TODO |
+| [1365-how-many-numbers-are-smaller-than-the-current-number](../submissions/1365-how-many-numbers-are-smaller-than-the-current-number/) | Accepted | key idea, complexity, 5 TODO |
+| [1431-kids-with-the-greatest-number-of-candies](../submissions/1431-kids-with-the-greatest-number-of-candies/) | Accepted | key idea, complexity, 5 TODO |
+| [1441-build-an-array-with-stack-operations](../submissions/1441-build-an-array-with-stack-operations/) | Accepted | key idea, complexity, 5 TODO |
+| [1450-number-of-students-doing-homework-at-a-given-time](../submissions/1450-number-of-students-doing-homework-at-a-given-time/) | Accepted | key idea, complexity, 5 TODO |
+| [1464-maximum-product-of-two-elements-in-an-array](../submissions/1464-maximum-product-of-two-elements-in-an-array/) | Accepted | key idea, complexity, 5 TODO |
+| [1470-shuffle-the-array](../submissions/1470-shuffle-the-array/) | Accepted | key idea, complexity, 5 TODO |
+| [1480-running-sum-of-1d-array](../submissions/1480-running-sum-of-1d-array/) | Accepted | key idea, complexity, 5 TODO |
+| [1486-xor-operation-in-an-array](../submissions/1486-xor-operation-in-an-array/) | Unknown (legacy visible-page capture before status fix; verify in LeetCode) | key idea, complexity, 3 TODO |
+| [1502-can-make-arithmetic-progression-from-sequence](../submissions/1502-can-make-arithmetic-progression-from-sequence/) | Accepted | key idea, complexity, 3 TODO |
+| [1528-shuffle-string](../submissions/1528-shuffle-string/) | Accepted | key idea, complexity, 5 TODO |
+| [1550-three-consecutive-odds](../submissions/1550-three-consecutive-odds/) | Accepted | key idea, complexity, 3 TODO |
+| [1588-sum-of-all-odd-length-subarrays](../submissions/1588-sum-of-all-odd-length-subarrays/) | Accepted | key idea, complexity, 5 TODO |
+| [1662-check-if-two-string-arrays-are-equivalent](../submissions/1662-check-if-two-string-arrays-are-equivalent/) | Accepted | key idea, complexity, 5 TODO |
+| [1672-richest-customer-wealth](../submissions/1672-richest-customer-wealth/) | Accepted | key idea, complexity, 5 TODO |
+| [1768-merge-strings-alternately](../submissions/1768-merge-strings-alternately/) | Accepted | key idea, complexity, 3 TODO |
+| [1822-sign-of-the-product-of-an-array](../submissions/1822-sign-of-the-product-of-an-array/) | Accepted | key idea, complexity, 3 TODO |
+| [1832-check-if-the-sentence-is-pangram](../submissions/1832-check-if-the-sentence-is-pangram/) | Accepted | key idea, complexity, 3 TODO |
+| [1837-sum-of-digits-in-base-k](../submissions/1837-sum-of-digits-in-base-k/) | Accepted | key idea, complexity, 5 TODO |
+| [1929-concatenation-of-array](../submissions/1929-concatenation-of-array/) | Accepted | key idea, complexity, 5 TODO |
+| [1967-number-of-strings-that-appear-as-substrings-in-word](../submissions/1967-number-of-strings-that-appear-as-substrings-in-word/) | Accepted | key idea, complexity, 5 TODO |
 
 ## AI-Assisted Disclosure Draft
 
