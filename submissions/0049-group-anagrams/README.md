@@ -13,17 +13,21 @@
 
 ## Pattern
 
-TODO
+Hashing / canonical key.
 
 ## Key Idea
 
-TODO
+For each string, the code builds a frequency dictionary of its letters. Strings with the same frequency dictionary are anagrams, so they belong in the same group. This accepted version stores the dictionaries in a list and uses `index`, which works but is slower than using a tuple of counts or sorted string as a dictionary key.
 
 ## Mistake / Edge Case
 
-TODO
+The important design choice is the group key. A mutable dictionary cannot be used directly as a key in another Python dictionary, so this code keeps a list of seen frequency dictionaries; next time, convert the frequency to an immutable tuple.
 
 ## Complexity
 
-- Time: TODO
-- Space: TODO
+- Time: O(n * k * g) for this version, where `n` is number of strings, `k` is max string length, and `g` is number of groups scanned by `freq_list.index`.
+- Space: O(n * k)
+
+## What Adrian Should Remember
+
+When grouping things, spend time choosing the key; a good immutable key usually makes the solution simpler and faster.

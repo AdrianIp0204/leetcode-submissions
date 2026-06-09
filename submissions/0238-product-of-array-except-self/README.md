@@ -13,17 +13,21 @@
 
 ## Pattern
 
-TODO
+Prefix / suffix products.
 
 ## Key Idea
 
-TODO
+The result for each index is the product of everything to its left times the product of everything to its right. The first pass stores left products in `res`; the second pass walks backward with a running suffix product and multiplies it into each result. This avoids division and handles zero values naturally.
 
 ## Mistake / Edge Case
 
-TODO
+The invariant matters: before updating `pre`, `res[i]` should receive the product of values before `i`; before updating `suf`, `res[i]` should be multiplied by the product of values after `i`.
 
 ## Complexity
 
-- Time: TODO
-- Space: TODO
+- Time: O(n)
+- Space: O(1) extra space if the output array does not count.
+
+## What Adrian Should Remember
+
+Prefix/suffix problems often become simple if each pass has one clear invariant.
