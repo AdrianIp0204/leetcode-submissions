@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-06-09T13:07:30.638Z",
+  "generatedAt": "2026-06-09T13:59:10.872Z",
   "totals": {
     "problemFolders": 154,
     "publicSolved": 154,
     "estimatedSolvedGap": 0,
     "problemsWithAttempts": 0,
-    "problemsNeedingReflection": 74,
+    "problemsNeedingReflection": 0,
     "problemsWithUnknownStatus": 6
   },
   "byLanguage": {
@@ -1576,9 +1576,9 @@
       "pattern": "math-and-digits",
       "hasReadme": true,
       "status": "Accepted",
-      "todoCount": 5,
-      "hasKeyIdea": false,
-      "hasComplexity": false,
+      "todoCount": 0,
+      "hasKeyIdea": true,
+      "hasComplexity": true,
       "solutionFiles": [
         "solution.py"
       ],
@@ -1596,9 +1596,9 @@
       "pattern": "math-and-digits",
       "hasReadme": true,
       "status": "Accepted",
-      "todoCount": 5,
-      "hasKeyIdea": false,
-      "hasComplexity": false,
+      "todoCount": 0,
+      "hasKeyIdea": true,
+      "hasComplexity": true,
       "solutionFiles": [
         "solution.py"
       ],
@@ -1616,9 +1616,9 @@
       "pattern": "arrays-and-strings",
       "hasReadme": true,
       "status": "Accepted",
-      "todoCount": 5,
-      "hasKeyIdea": false,
-      "hasComplexity": false,
+      "todoCount": 0,
+      "hasKeyIdea": true,
+      "hasComplexity": true,
       "solutionFiles": [
         "solution.py"
       ],
@@ -1636,9 +1636,9 @@
       "pattern": "math-and-digits",
       "hasReadme": true,
       "status": "Accepted",
-      "todoCount": 5,
-      "hasKeyIdea": false,
-      "hasComplexity": false,
+      "todoCount": 0,
+      "hasKeyIdea": true,
+      "hasComplexity": true,
       "solutionFiles": [
         "solution.py"
       ],
@@ -1656,9 +1656,9 @@
       "pattern": "arrays-and-strings",
       "hasReadme": true,
       "status": "Accepted",
-      "todoCount": 5,
-      "hasKeyIdea": false,
-      "hasComplexity": false,
+      "todoCount": 0,
+      "hasKeyIdea": true,
+      "hasComplexity": true,
       "solutionFiles": [
         "solution.py"
       ],
@@ -1676,9 +1676,9 @@
       "pattern": "arrays-and-strings",
       "hasReadme": true,
       "status": "Accepted",
-      "todoCount": 5,
-      "hasKeyIdea": false,
-      "hasComplexity": false,
+      "todoCount": 0,
+      "hasKeyIdea": true,
+      "hasComplexity": true,
       "solutionFiles": [
         "solution.cpp",
         "solution.py"
@@ -1698,9 +1698,9 @@
       "pattern": "arrays-and-strings",
       "hasReadme": true,
       "status": "Accepted",
-      "todoCount": 5,
-      "hasKeyIdea": false,
-      "hasComplexity": false,
+      "todoCount": 0,
+      "hasKeyIdea": true,
+      "hasComplexity": true,
       "solutionFiles": [
         "solution.py"
       ],
@@ -1718,9 +1718,9 @@
       "pattern": "arrays-and-strings",
       "hasReadme": true,
       "status": "Unknown (legacy visible-page capture before status fix; verify in LeetCode)",
-      "todoCount": 3,
-      "hasKeyIdea": false,
-      "hasComplexity": false,
+      "todoCount": 0,
+      "hasKeyIdea": true,
+      "hasComplexity": true,
       "solutionFiles": [
         "solution.py"
       ],
@@ -1738,9 +1738,9 @@
       "pattern": "uncategorized",
       "hasReadme": true,
       "status": "Accepted",
-      "todoCount": 3,
-      "hasKeyIdea": false,
-      "hasComplexity": false,
+      "todoCount": 0,
+      "hasKeyIdea": true,
+      "hasComplexity": true,
       "solutionFiles": [
         "solution.py"
       ],
@@ -1758,9 +1758,9 @@
       "pattern": "arrays-and-strings",
       "hasReadme": true,
       "status": "Accepted",
-      "todoCount": 5,
-      "hasKeyIdea": false,
-      "hasComplexity": false,
+      "todoCount": 0,
+      "hasKeyIdea": true,
+      "hasComplexity": true,
       "solutionFiles": [
         "solution.py"
       ],
@@ -1778,9 +1778,9 @@
       "pattern": "uncategorized",
       "hasReadme": true,
       "status": "Accepted",
-      "todoCount": 3,
-      "hasKeyIdea": false,
-      "hasComplexity": false,
+      "todoCount": 0,
+      "hasKeyIdea": true,
+      "hasComplexity": true,
       "solutionFiles": [
         "solution.py"
       ],
@@ -1798,9 +1798,9 @@
       "pattern": "math-and-digits",
       "hasReadme": true,
       "status": "Accepted",
-      "todoCount": 5,
-      "hasKeyIdea": false,
-      "hasComplexity": false,
+      "todoCount": 0,
+      "hasKeyIdea": true,
+      "hasComplexity": true,
       "solutionFiles": [
         "solution.py"
       ],
@@ -1818,9 +1818,9 @@
       "pattern": "arrays-and-strings",
       "hasReadme": true,
       "status": "Accepted",
-      "todoCount": 5,
-      "hasKeyIdea": false,
-      "hasComplexity": false,
+      "todoCount": 0,
+      "hasKeyIdea": true,
+      "hasComplexity": true,
       "solutionFiles": [
         "solution.py"
       ],
@@ -1838,9 +1838,9 @@
       "pattern": "uncategorized",
       "hasReadme": true,
       "status": "Accepted",
-      "todoCount": 5,
-      "hasKeyIdea": false,
-      "hasComplexity": false,
+      "todoCount": 0,
+      "hasKeyIdea": true,
+      "hasComplexity": true,
       "solutionFiles": [
         "solution.py"
       ],
@@ -1858,9 +1858,9 @@
       "pattern": "arrays-and-strings",
       "hasReadme": true,
       "status": "Accepted",
-      "todoCount": 3,
-      "hasKeyIdea": false,
-      "hasComplexity": false,
+      "todoCount": 0,
+      "hasKeyIdea": true,
+      "hasComplexity": true,
       "solutionFiles": [
         "solution.py"
       ],
@@ -1878,9 +1878,9 @@
       "pattern": "arrays-and-strings",
       "hasReadme": true,
       "status": "Accepted",
-      "todoCount": 3,
-      "hasKeyIdea": false,
-      "hasComplexity": false,
+      "todoCount": 0,
+      "hasKeyIdea": true,
+      "hasComplexity": true,
       "solutionFiles": [
         "solution.py"
       ],
@@ -1898,9 +1898,9 @@
       "pattern": "arrays-and-strings",
       "hasReadme": true,
       "status": "Accepted",
-      "todoCount": 3,
-      "hasKeyIdea": false,
-      "hasComplexity": false,
+      "todoCount": 0,
+      "hasKeyIdea": true,
+      "hasComplexity": true,
       "solutionFiles": [
         "solution.py"
       ],
@@ -1918,9 +1918,9 @@
       "pattern": "math-and-digits",
       "hasReadme": true,
       "status": "Accepted",
-      "todoCount": 5,
-      "hasKeyIdea": false,
-      "hasComplexity": false,
+      "todoCount": 0,
+      "hasKeyIdea": true,
+      "hasComplexity": true,
       "solutionFiles": [
         "solution.py"
       ],
@@ -1958,9 +1958,9 @@
       "pattern": "arrays-and-strings",
       "hasReadme": true,
       "status": "Accepted",
-      "todoCount": 5,
-      "hasKeyIdea": false,
-      "hasComplexity": false,
+      "todoCount": 0,
+      "hasKeyIdea": true,
+      "hasComplexity": true,
       "solutionFiles": [
         "solution.py"
       ],
@@ -1978,9 +1978,9 @@
       "pattern": "arrays-and-strings",
       "hasReadme": true,
       "status": "Accepted",
-      "todoCount": 5,
-      "hasKeyIdea": false,
-      "hasComplexity": false,
+      "todoCount": 0,
+      "hasKeyIdea": true,
+      "hasComplexity": true,
       "solutionFiles": [
         "solution.py"
       ],
@@ -1998,9 +1998,9 @@
       "pattern": "uncategorized",
       "hasReadme": true,
       "status": "Accepted",
-      "todoCount": 5,
-      "hasKeyIdea": false,
-      "hasComplexity": false,
+      "todoCount": 0,
+      "hasKeyIdea": true,
+      "hasComplexity": true,
       "solutionFiles": [
         "solution.py"
       ],
@@ -2018,9 +2018,9 @@
       "pattern": "arrays-and-strings",
       "hasReadme": true,
       "status": "Accepted",
-      "todoCount": 3,
-      "hasKeyIdea": false,
-      "hasComplexity": false,
+      "todoCount": 0,
+      "hasKeyIdea": true,
+      "hasComplexity": true,
       "solutionFiles": [
         "solution.py"
       ],
@@ -2038,9 +2038,9 @@
       "pattern": "math-and-digits",
       "hasReadme": true,
       "status": "Accepted",
-      "todoCount": 3,
-      "hasKeyIdea": false,
-      "hasComplexity": false,
+      "todoCount": 0,
+      "hasKeyIdea": true,
+      "hasComplexity": true,
       "solutionFiles": [
         "solution.py"
       ],
@@ -2058,9 +2058,9 @@
       "pattern": "math-and-digits",
       "hasReadme": true,
       "status": "Accepted",
-      "todoCount": 5,
-      "hasKeyIdea": false,
-      "hasComplexity": false,
+      "todoCount": 0,
+      "hasKeyIdea": true,
+      "hasComplexity": true,
       "solutionFiles": [
         "solution.cpp",
         "solution.py"
@@ -2080,9 +2080,9 @@
       "pattern": "math-and-digits",
       "hasReadme": true,
       "status": "Accepted",
-      "todoCount": 3,
-      "hasKeyIdea": false,
-      "hasComplexity": false,
+      "todoCount": 0,
+      "hasKeyIdea": true,
+      "hasComplexity": true,
       "solutionFiles": [
         "solution.py"
       ],
@@ -2100,9 +2100,9 @@
       "pattern": "math-and-digits",
       "hasReadme": true,
       "status": "Accepted",
-      "todoCount": 5,
-      "hasKeyIdea": false,
-      "hasComplexity": false,
+      "todoCount": 0,
+      "hasKeyIdea": true,
+      "hasComplexity": true,
       "solutionFiles": [
         "solution.py"
       ],
@@ -2120,9 +2120,9 @@
       "pattern": "arrays-and-strings",
       "hasReadme": true,
       "status": "Accepted",
-      "todoCount": 5,
-      "hasKeyIdea": false,
-      "hasComplexity": false,
+      "todoCount": 0,
+      "hasKeyIdea": true,
+      "hasComplexity": true,
       "solutionFiles": [
         "solution.py"
       ],
@@ -2140,9 +2140,9 @@
       "pattern": "math-and-digits",
       "hasReadme": true,
       "status": "Accepted",
-      "todoCount": 5,
-      "hasKeyIdea": false,
-      "hasComplexity": false,
+      "todoCount": 0,
+      "hasKeyIdea": true,
+      "hasComplexity": true,
       "solutionFiles": [
         "solution.py"
       ],
@@ -2160,9 +2160,9 @@
       "pattern": "arrays-and-strings",
       "hasReadme": true,
       "status": "Accepted",
-      "todoCount": 5,
-      "hasKeyIdea": false,
-      "hasComplexity": false,
+      "todoCount": 0,
+      "hasKeyIdea": true,
+      "hasComplexity": true,
       "solutionFiles": [
         "solution.py"
       ],
@@ -2180,9 +2180,9 @@
       "pattern": "arrays-and-strings",
       "hasReadme": true,
       "status": "Accepted",
-      "todoCount": 3,
-      "hasKeyIdea": false,
-      "hasComplexity": false,
+      "todoCount": 0,
+      "hasKeyIdea": true,
+      "hasComplexity": true,
       "solutionFiles": [
         "solution.py"
       ],
@@ -2220,9 +2220,9 @@
       "pattern": "uncategorized",
       "hasReadme": true,
       "status": "Accepted",
-      "todoCount": 5,
-      "hasKeyIdea": false,
-      "hasComplexity": false,
+      "todoCount": 0,
+      "hasKeyIdea": true,
+      "hasComplexity": true,
       "solutionFiles": [
         "solution.cpp"
       ],
@@ -2240,9 +2240,9 @@
       "pattern": "math-and-digits",
       "hasReadme": true,
       "status": "Accepted",
-      "todoCount": 5,
-      "hasKeyIdea": false,
-      "hasComplexity": false,
+      "todoCount": 0,
+      "hasKeyIdea": true,
+      "hasComplexity": true,
       "solutionFiles": [
         "solution.py"
       ],
@@ -2260,9 +2260,9 @@
       "pattern": "math-and-digits",
       "hasReadme": true,
       "status": "Accepted",
-      "todoCount": 5,
-      "hasKeyIdea": false,
-      "hasComplexity": false,
+      "todoCount": 0,
+      "hasKeyIdea": true,
+      "hasComplexity": true,
       "solutionFiles": [
         "solution.cpp",
         "solution.py"
@@ -2282,9 +2282,9 @@
       "pattern": "math-and-digits",
       "hasReadme": true,
       "status": "Accepted",
-      "todoCount": 3,
-      "hasKeyIdea": false,
-      "hasComplexity": false,
+      "todoCount": 0,
+      "hasKeyIdea": true,
+      "hasComplexity": true,
       "solutionFiles": [
         "solution.py"
       ],
@@ -2302,9 +2302,9 @@
       "pattern": "math-and-digits",
       "hasReadme": true,
       "status": "Accepted",
-      "todoCount": 3,
-      "hasKeyIdea": false,
-      "hasComplexity": false,
+      "todoCount": 0,
+      "hasKeyIdea": true,
+      "hasComplexity": true,
       "solutionFiles": [
         "solution.py"
       ],
@@ -2342,9 +2342,9 @@
       "pattern": "arrays-and-strings",
       "hasReadme": true,
       "status": "Accepted",
-      "todoCount": 3,
-      "hasKeyIdea": false,
-      "hasComplexity": false,
+      "todoCount": 0,
+      "hasKeyIdea": true,
+      "hasComplexity": true,
       "solutionFiles": [
         "solution.py"
       ],
@@ -2362,9 +2362,9 @@
       "pattern": "arrays-and-strings",
       "hasReadme": true,
       "status": "Accepted",
-      "todoCount": 5,
-      "hasKeyIdea": false,
-      "hasComplexity": false,
+      "todoCount": 0,
+      "hasKeyIdea": true,
+      "hasComplexity": true,
       "solutionFiles": [
         "solution.py"
       ],
@@ -2382,9 +2382,9 @@
       "pattern": "math-and-digits",
       "hasReadme": true,
       "status": "Accepted",
-      "todoCount": 5,
-      "hasKeyIdea": false,
-      "hasComplexity": false,
+      "todoCount": 0,
+      "hasKeyIdea": true,
+      "hasComplexity": true,
       "solutionFiles": [
         "solution.py"
       ],
@@ -2402,9 +2402,9 @@
       "pattern": "math-and-digits",
       "hasReadme": true,
       "status": "Accepted",
-      "todoCount": 5,
-      "hasKeyIdea": false,
-      "hasComplexity": false,
+      "todoCount": 0,
+      "hasKeyIdea": true,
+      "hasComplexity": true,
       "solutionFiles": [
         "solution.cpp",
         "solution.py"
@@ -2424,9 +2424,9 @@
       "pattern": "math-and-digits",
       "hasReadme": true,
       "status": "Accepted",
-      "todoCount": 5,
-      "hasKeyIdea": false,
-      "hasComplexity": false,
+      "todoCount": 0,
+      "hasKeyIdea": true,
+      "hasComplexity": true,
       "solutionFiles": [
         "solution.py"
       ],
@@ -2444,9 +2444,9 @@
       "pattern": "uncategorized",
       "hasReadme": true,
       "status": "Accepted",
-      "todoCount": 5,
-      "hasKeyIdea": false,
-      "hasComplexity": false,
+      "todoCount": 0,
+      "hasKeyIdea": true,
+      "hasComplexity": true,
       "solutionFiles": [
         "solution.py"
       ],
@@ -2464,9 +2464,9 @@
       "pattern": "math-and-digits",
       "hasReadme": true,
       "status": "Accepted",
-      "todoCount": 5,
-      "hasKeyIdea": false,
-      "hasComplexity": false,
+      "todoCount": 0,
+      "hasKeyIdea": true,
+      "hasComplexity": true,
       "solutionFiles": [
         "solution.cpp",
         "solution.py"
@@ -2486,9 +2486,9 @@
       "pattern": "math-and-digits",
       "hasReadme": true,
       "status": "Accepted",
-      "todoCount": 5,
-      "hasKeyIdea": false,
-      "hasComplexity": false,
+      "todoCount": 0,
+      "hasKeyIdea": true,
+      "hasComplexity": true,
       "solutionFiles": [
         "solution.py"
       ],
@@ -2506,9 +2506,9 @@
       "pattern": "math-and-digits",
       "hasReadme": true,
       "status": "Accepted",
-      "todoCount": 3,
-      "hasKeyIdea": false,
-      "hasComplexity": false,
+      "todoCount": 0,
+      "hasKeyIdea": true,
+      "hasComplexity": true,
       "solutionFiles": [
         "solution.py"
       ],
@@ -2526,9 +2526,9 @@
       "pattern": "arrays-and-strings",
       "hasReadme": true,
       "status": "Accepted",
-      "todoCount": 5,
-      "hasKeyIdea": false,
-      "hasComplexity": false,
+      "todoCount": 0,
+      "hasKeyIdea": true,
+      "hasComplexity": true,
       "solutionFiles": [
         "solution.py"
       ],
@@ -2546,9 +2546,9 @@
       "pattern": "uncategorized",
       "hasReadme": true,
       "status": "Accepted",
-      "todoCount": 5,
-      "hasKeyIdea": false,
-      "hasComplexity": false,
+      "todoCount": 0,
+      "hasKeyIdea": true,
+      "hasComplexity": true,
       "solutionFiles": [
         "solution.py"
       ],
@@ -2566,9 +2566,9 @@
       "pattern": "math-and-digits",
       "hasReadme": true,
       "status": "Accepted",
-      "todoCount": 5,
-      "hasKeyIdea": false,
-      "hasComplexity": false,
+      "todoCount": 0,
+      "hasKeyIdea": true,
+      "hasComplexity": true,
       "solutionFiles": [
         "solution.py"
       ],
@@ -2586,9 +2586,9 @@
       "pattern": "uncategorized",
       "hasReadme": true,
       "status": "Unknown (legacy visible-page capture before status fix; verify in LeetCode)",
-      "todoCount": 3,
-      "hasKeyIdea": false,
-      "hasComplexity": false,
+      "todoCount": 0,
+      "hasKeyIdea": true,
+      "hasComplexity": true,
       "solutionFiles": [
         "solution.py"
       ],
@@ -2606,9 +2606,9 @@
       "pattern": "math-and-digits",
       "hasReadme": true,
       "status": "Accepted",
-      "todoCount": 5,
-      "hasKeyIdea": false,
-      "hasComplexity": false,
+      "todoCount": 0,
+      "hasKeyIdea": true,
+      "hasComplexity": true,
       "solutionFiles": [
         "solution.py"
       ],
@@ -2626,9 +2626,9 @@
       "pattern": "uncategorized",
       "hasReadme": true,
       "status": "Unknown (legacy visible-page capture before status fix; verify in LeetCode)",
-      "todoCount": 3,
-      "hasKeyIdea": false,
-      "hasComplexity": false,
+      "todoCount": 0,
+      "hasKeyIdea": true,
+      "hasComplexity": true,
       "solutionFiles": [
         "solution.py"
       ],
@@ -2646,9 +2646,9 @@
       "pattern": "math-and-digits",
       "hasReadme": true,
       "status": "Accepted",
-      "todoCount": 3,
-      "hasKeyIdea": false,
-      "hasComplexity": false,
+      "todoCount": 0,
+      "hasKeyIdea": true,
+      "hasComplexity": true,
       "solutionFiles": [
         "solution.py"
       ],
@@ -2666,9 +2666,9 @@
       "pattern": "math-and-digits",
       "hasReadme": true,
       "status": "Accepted",
-      "todoCount": 5,
-      "hasKeyIdea": false,
-      "hasComplexity": false,
+      "todoCount": 0,
+      "hasKeyIdea": true,
+      "hasComplexity": true,
       "solutionFiles": [
         "solution.py"
       ],
@@ -2686,9 +2686,9 @@
       "pattern": "math-and-digits",
       "hasReadme": true,
       "status": "Accepted",
-      "todoCount": 3,
-      "hasKeyIdea": false,
-      "hasComplexity": false,
+      "todoCount": 0,
+      "hasKeyIdea": true,
+      "hasComplexity": true,
       "solutionFiles": [
         "solution.py"
       ],
@@ -2706,9 +2706,9 @@
       "pattern": "arrays-and-strings",
       "hasReadme": true,
       "status": "Unknown (legacy visible-page capture before status fix; verify in LeetCode)",
-      "todoCount": 3,
-      "hasKeyIdea": false,
-      "hasComplexity": false,
+      "todoCount": 0,
+      "hasKeyIdea": true,
+      "hasComplexity": true,
       "solutionFiles": [
         "solution.py"
       ],
@@ -2726,9 +2726,9 @@
       "pattern": "math-and-digits",
       "hasReadme": true,
       "status": "Accepted",
-      "todoCount": 5,
-      "hasKeyIdea": false,
-      "hasComplexity": false,
+      "todoCount": 0,
+      "hasKeyIdea": true,
+      "hasComplexity": true,
       "solutionFiles": [
         "solution.py"
       ],
@@ -2746,9 +2746,9 @@
       "pattern": "arrays-and-strings",
       "hasReadme": true,
       "status": "Accepted",
-      "todoCount": 5,
-      "hasKeyIdea": false,
-      "hasComplexity": false,
+      "todoCount": 0,
+      "hasKeyIdea": true,
+      "hasComplexity": true,
       "solutionFiles": [
         "solution.py"
       ],
@@ -2766,9 +2766,9 @@
       "pattern": "arrays-and-strings",
       "hasReadme": true,
       "status": "Accepted",
-      "todoCount": 5,
-      "hasKeyIdea": false,
-      "hasComplexity": false,
+      "todoCount": 0,
+      "hasKeyIdea": true,
+      "hasComplexity": true,
       "solutionFiles": [
         "solution.py"
       ],
@@ -2786,9 +2786,9 @@
       "pattern": "math-and-digits",
       "hasReadme": true,
       "status": "Accepted",
-      "todoCount": 5,
-      "hasKeyIdea": false,
-      "hasComplexity": false,
+      "todoCount": 0,
+      "hasKeyIdea": true,
+      "hasComplexity": true,
       "solutionFiles": [
         "solution.py"
       ],
@@ -2806,9 +2806,9 @@
       "pattern": "math-and-digits",
       "hasReadme": true,
       "status": "Accepted",
-      "todoCount": 5,
-      "hasKeyIdea": false,
-      "hasComplexity": false,
+      "todoCount": 0,
+      "hasKeyIdea": true,
+      "hasComplexity": true,
       "solutionFiles": [
         "solution.py"
       ],
@@ -2826,9 +2826,9 @@
       "pattern": "math-and-digits",
       "hasReadme": true,
       "status": "Accepted",
-      "todoCount": 5,
-      "hasKeyIdea": false,
-      "hasComplexity": false,
+      "todoCount": 0,
+      "hasKeyIdea": true,
+      "hasComplexity": true,
       "solutionFiles": [
         "solution.py"
       ],
@@ -2846,9 +2846,9 @@
       "pattern": "math-and-digits",
       "hasReadme": true,
       "status": "Accepted",
-      "todoCount": 5,
-      "hasKeyIdea": false,
-      "hasComplexity": false,
+      "todoCount": 0,
+      "hasKeyIdea": true,
+      "hasComplexity": true,
       "solutionFiles": [
         "solution.py"
       ],
@@ -2866,9 +2866,9 @@
       "pattern": "math-and-digits",
       "hasReadme": true,
       "status": "Accepted",
-      "todoCount": 5,
-      "hasKeyIdea": false,
-      "hasComplexity": false,
+      "todoCount": 0,
+      "hasKeyIdea": true,
+      "hasComplexity": true,
       "solutionFiles": [
         "solution.py"
       ],
@@ -2886,9 +2886,9 @@
       "pattern": "arrays-and-strings",
       "hasReadme": true,
       "status": "Accepted",
-      "todoCount": 5,
-      "hasKeyIdea": false,
-      "hasComplexity": false,
+      "todoCount": 0,
+      "hasKeyIdea": true,
+      "hasComplexity": true,
       "solutionFiles": [
         "solution.py"
       ],
@@ -2906,9 +2906,9 @@
       "pattern": "hashing-and-counting",
       "hasReadme": true,
       "status": "Accepted",
-      "todoCount": 5,
-      "hasKeyIdea": false,
-      "hasComplexity": false,
+      "todoCount": 0,
+      "hasKeyIdea": true,
+      "hasComplexity": true,
       "solutionFiles": [
         "solution.py"
       ],
@@ -2926,9 +2926,9 @@
       "pattern": "math-and-digits",
       "hasReadme": true,
       "status": "Accepted",
-      "todoCount": 5,
-      "hasKeyIdea": false,
-      "hasComplexity": false,
+      "todoCount": 0,
+      "hasKeyIdea": true,
+      "hasComplexity": true,
       "solutionFiles": [
         "solution.py"
       ],
@@ -2946,9 +2946,9 @@
       "pattern": "uncategorized",
       "hasReadme": true,
       "status": "Accepted",
-      "todoCount": 3,
-      "hasKeyIdea": false,
-      "hasComplexity": false,
+      "todoCount": 0,
+      "hasKeyIdea": true,
+      "hasComplexity": true,
       "solutionFiles": [
         "solution.py"
       ],
@@ -2966,9 +2966,9 @@
       "pattern": "uncategorized",
       "hasReadme": true,
       "status": "Unknown (legacy visible-page capture before status fix; verify in LeetCode)",
-      "todoCount": 3,
-      "hasKeyIdea": false,
-      "hasComplexity": false,
+      "todoCount": 0,
+      "hasKeyIdea": true,
+      "hasComplexity": true,
       "solutionFiles": [
         "solution.py"
       ],
@@ -2986,9 +2986,9 @@
       "pattern": "uncategorized",
       "hasReadme": true,
       "status": "Accepted",
-      "todoCount": 5,
-      "hasKeyIdea": false,
-      "hasComplexity": false,
+      "todoCount": 0,
+      "hasKeyIdea": true,
+      "hasComplexity": true,
       "solutionFiles": [
         "solution.py"
       ],
@@ -3006,9 +3006,9 @@
       "pattern": "arrays-and-strings",
       "hasReadme": true,
       "status": "Accepted",
-      "todoCount": 5,
-      "hasKeyIdea": false,
-      "hasComplexity": false,
+      "todoCount": 0,
+      "hasKeyIdea": true,
+      "hasComplexity": true,
       "solutionFiles": [
         "solution.py"
       ],
@@ -3026,9 +3026,9 @@
       "pattern": "math-and-digits",
       "hasReadme": true,
       "status": "Accepted",
-      "todoCount": 5,
-      "hasKeyIdea": false,
-      "hasComplexity": false,
+      "todoCount": 0,
+      "hasKeyIdea": true,
+      "hasComplexity": true,
       "solutionFiles": [
         "solution.py"
       ],
@@ -3046,9 +3046,9 @@
       "pattern": "math-and-digits",
       "hasReadme": true,
       "status": "Accepted",
-      "todoCount": 3,
-      "hasKeyIdea": false,
-      "hasComplexity": false,
+      "todoCount": 0,
+      "hasKeyIdea": true,
+      "hasComplexity": true,
       "solutionFiles": [
         "solution.py"
       ],
@@ -3066,9 +3066,9 @@
       "pattern": "arrays-and-strings",
       "hasReadme": true,
       "status": "Accepted",
-      "todoCount": 5,
-      "hasKeyIdea": false,
-      "hasComplexity": false,
+      "todoCount": 0,
+      "hasKeyIdea": true,
+      "hasComplexity": true,
       "solutionFiles": [
         "solution.py"
       ],
@@ -3086,9 +3086,9 @@
       "pattern": "uncategorized",
       "hasReadme": true,
       "status": "Accepted",
-      "todoCount": 5,
-      "hasKeyIdea": false,
-      "hasComplexity": false,
+      "todoCount": 0,
+      "hasKeyIdea": true,
+      "hasComplexity": true,
       "solutionFiles": [
         "solution.py"
       ],
@@ -3106,9 +3106,9 @@
       "pattern": "math-and-digits",
       "hasReadme": true,
       "status": "Accepted",
-      "todoCount": 5,
-      "hasKeyIdea": false,
-      "hasComplexity": false,
+      "todoCount": 0,
+      "hasKeyIdea": true,
+      "hasComplexity": true,
       "solutionFiles": [
         "solution.py"
       ],
@@ -3121,7 +3121,7 @@
   ],
   "trackedFileFlags": [],
   "weaknessSignals": [
-    "74 of 154 problem READMEs still need real reflection.",
+    "0 of 154 problem READMEs still need real reflection.",
     "6 submissions have unknown or missing status metadata.",
     "No failed attempts are preserved yet, so the repo cannot fully show the early struggle-to-improvement arc.",
     "No TypeScript solutions are present yet; future JS/TS learning should be visible as a new track.",
