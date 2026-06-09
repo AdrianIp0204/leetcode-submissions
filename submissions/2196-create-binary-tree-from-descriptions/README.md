@@ -13,17 +13,21 @@
 
 ## Pattern
 
-TODO
+Hash map node construction / root detection.
 
 ## Key Idea
 
-TODO
+Create exactly one `TreeNode` object for each value and store it in a dictionary. For every description row, connect the child as either the left or right child of the parent and record that the child value has a parent. At the end, the root is the node that never appeared in the child set.
 
 ## Mistake / Edge Case
 
-TODO
+The key invariant is object identity: repeated appearances of the same value must reuse the same node object. Root detection should not depend on input order, only on the difference between all seen nodes and all seen children.
 
 ## Complexity
 
-- Time: TODO
-- Space: TODO
+- Time: O(n)
+- Space: O(n)
+
+## What Adrian Should Remember
+
+When constructing a graph or tree from edge descriptions, keep a node map and a separate way to identify roots.

@@ -13,17 +13,21 @@
 
 ## Pattern
 
-TODO
+One-pass minimum tracking.
 
 ## Key Idea
 
-TODO
+Track the cheapest price seen so far and the best profit that could be made by selling today. When the current price is lower than the saved minimum, update the minimum. Otherwise, compare `current - minimum` with the best profit.
 
 ## Mistake / Edge Case
 
-TODO
+The no-profit case should return 0, not a negative number. The code does that by initializing `res` to 0 and only updating it when a positive improvement appears.
 
 ## Complexity
 
-- Time: TODO
-- Space: TODO
+- Time: O(n)
+- Space: O(1)
+
+## What Adrian Should Remember
+
+For single-buy/single-sell stock problems, "best sell today" only needs the minimum price before today.
