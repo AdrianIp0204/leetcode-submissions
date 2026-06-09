@@ -13,17 +13,21 @@
 
 ## Pattern
 
-TODO
+Counter frequency ordering.
 
 ## Key Idea
 
-TODO
+The solution uses `Counter(s).most_common()` to get characters sorted by descending frequency, then repeats each character by its count and joins the pieces. This is a compact Python version of counting plus sorting by frequency. The local archive needs `Counter` imported from `collections` to run standalone.
 
 ## Mistake / Edge Case
 
-TODO
+Characters with the same frequency can appear in any order. The important requirement is grouping each character the correct number of times.
 
 ## Complexity
 
-- Time: TODO
-- Space: TODO
+- Time: O(n + k log k), where `k` is distinct characters
+- Space: O(n + k)
+
+## What Adrian Should Remember
+
+For frequency-sorted output, count first, sort the distinct keys, then expand back to the full string.

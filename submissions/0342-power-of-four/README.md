@@ -13,17 +13,21 @@
 
 ## Pattern
 
-TODO
+Logarithm check baseline.
 
 ## Key Idea
 
-TODO
+The solution checks whether `log(n, 4)` is an integer after rejecting non-positive numbers. This is concise and accepted, but it relies on floating-point behavior and the archive would need `log` imported to run standalone. A more robust integer pattern is to check that `n` is a power of two and its set bit is in a power-of-four position.
 
 ## Mistake / Edge Case
 
-TODO
+`n <= 0` must return `False`; logarithms are not defined for those values. Floating precision is the subtle risk with log-based power checks.
 
 ## Complexity
 
-- Time: TODO
-- Space: TODO
+- Time: O(1)
+- Space: O(1)
+
+## What Adrian Should Remember
+
+For power checks, logarithms are quick, but integer division or bit tests are usually safer.

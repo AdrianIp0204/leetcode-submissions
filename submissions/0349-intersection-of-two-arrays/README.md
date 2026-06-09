@@ -12,17 +12,21 @@
 
 ## Pattern
 
-TODO
+Set intersection.
 
 ## Key Idea
 
-TODO
+The solution converts both arrays into sets and uses `&` to keep only values present in both. This naturally removes duplicates, which matches the problem's output requirement. The final list order is not guaranteed, but LeetCode accepts any order for this problem.
 
 ## Mistake / Edge Case
 
-TODO
+If the problem required duplicate counts, this set approach would be wrong. Here it is correct because each intersection value should appear once.
 
 ## Complexity
 
-- Time: TODO
-- Space: TODO
+- Time: O(n + m)
+- Space: O(n + m)
+
+## What Adrian Should Remember
+
+When duplicates do not matter, sets usually make membership and intersection problems direct.

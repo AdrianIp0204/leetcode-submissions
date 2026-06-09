@@ -13,17 +13,21 @@
 
 ## Pattern
 
-TODO
+Hash map of latest index.
 
 ## Key Idea
 
-TODO
+The solution stores the most recent index where each value appeared. When the same value appears again, it checks whether the distance from the stored index is at most `k`; if not, it updates the index to the newer occurrence. Keeping only the latest index is enough because it gives the closest possible previous duplicate.
 
 ## Mistake / Edge Case
 
-TODO
+The check must happen before overwriting the stored index. If `k` is zero, no two distinct indices can be close enough, and the loop correctly returns `False`.
 
 ## Complexity
 
-- Time: TODO
-- Space: TODO
+- Time: O(n)
+- Space: O(n)
+
+## What Adrian Should Remember
+
+For "nearby duplicate", store the latest position, not a full list of positions.

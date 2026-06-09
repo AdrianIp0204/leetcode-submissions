@@ -13,17 +13,21 @@
 
 ## Pattern
 
-TODO
+Set dedupe plus sorting.
 
 ## Key Idea
 
-TODO
+The code removes duplicate values with a set, sorts the unique values, and returns the third largest if it exists. If there are fewer than three distinct values, it returns the maximum. This is concise and correct, though a one-pass solution could track the top three distinct values without sorting.
 
 ## Mistake / Edge Case
 
-TODO
+The problem asks for the third distinct maximum, not the third element after sorting with duplicates. Inputs like `[2, 2, 3, 1]` need deduplication first.
 
 ## Complexity
 
-- Time: TODO
-- Space: TODO
+- Time: O(n log n)
+- Space: O(n)
+
+## What Adrian Should Remember
+
+When the word "distinct" appears, decide where deduplication happens before ranking values.

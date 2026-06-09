@@ -13,17 +13,21 @@
 
 ## Pattern
 
-TODO
+Frequency map over expected range.
 
 ## Key Idea
 
-TODO
+The solution builds a count map for every expected number from `1` to `n`, then increments counts from the array. A count of `2` identifies the duplicated number, and a count of `0` identifies the missing number. The result is returned as `[duplicate, missing]`.
 
 ## Mistake / Edge Case
 
-TODO
+The output order matters: duplicate first, missing second. The map must include the whole expected range so the missing value can be detected even though it never appears in `nums`.
 
 ## Complexity
 
-- Time: TODO
-- Space: TODO
+- Time: O(n)
+- Space: O(n)
+
+## What Adrian Should Remember
+
+For mismatch problems, count both what appeared too many times and what never appeared.

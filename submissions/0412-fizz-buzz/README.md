@@ -13,17 +13,21 @@
 
 ## Pattern
 
-TODO
+Simulation with divisibility checks.
 
 ## Key Idea
 
-TODO
+The solution loops from `1` to `n` and appends the correct string for each number. It checks divisibility by both `3` and `5` before checking either one alone, so multiples of `15` become `"FizzBuzz"`. Everything else is converted to a normal number string.
 
 ## Mistake / Edge Case
 
-TODO
+Condition order matters. If the code checks `i % 3 == 0` first, multiples of `15` would stop at `"Fizz"` and never become `"FizzBuzz"`.
 
 ## Complexity
 
-- Time: TODO
-- Space: TODO
+- Time: O(n)
+- Space: O(n) for the output
+
+## What Adrian Should Remember
+
+When conditions overlap, test the most specific combined case first.

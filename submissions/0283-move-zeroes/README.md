@@ -13,17 +13,21 @@
 
 ## Pattern
 
-TODO
+In-place mutation baseline; intended pattern is two pointers.
 
 ## Key Idea
 
-TODO
+The code scans values and, whenever it sees `0`, removes one zero from the list and appends a zero at the end. This preserves the nonzero order for the accepted cases, but it is not the clean intended approach. A better in-place solution keeps a write pointer for nonzero values, then fills the rest with zeroes.
 
 ## Mistake / Edge Case
 
-TODO
+Mutating a list while iterating over it is risky because elements can be skipped as indices shift. `remove(0)` is also linear, so this accepted version can become slow.
 
 ## Complexity
 
-- Time: TODO
-- Space: TODO
+- Time: O(n^2), because `remove` shifts elements
+- Space: O(1)
+
+## What Adrian Should Remember
+
+For in-place array rearrangement, prefer explicit read/write pointers over removing while iterating.
