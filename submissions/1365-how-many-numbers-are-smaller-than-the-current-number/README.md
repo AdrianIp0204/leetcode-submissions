@@ -13,17 +13,21 @@
 
 ## Pattern
 
-TODO
+Brute force comparison.
 
 ## Key Idea
 
-TODO
+For each number, compare it with every number in the same array and count how many values are smaller. The solution keeps a running counter for the current element, appends it to the result, then resets before moving on. This is accepted for the easy constraints, but it is not the most scalable version; a sorted copy or counting array would reduce repeated comparisons.
 
 ## Mistake / Edge Case
 
-TODO
+The counter must be reset after each element. Equal values should not be counted as smaller, so the comparison has to be strict.
 
 ## Complexity
 
-- Time: TODO
-- Space: TODO
+- Time: O(n^2)
+- Space: O(n), for the result list
+
+## What Adrian Should Remember
+
+When a direct nested-loop solution passes, still notice whether sorting or counting would express the pattern better.

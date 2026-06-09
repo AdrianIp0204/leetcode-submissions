@@ -12,17 +12,21 @@
 
 ## Pattern
 
-TODO
+Simulation with skipped values.
 
 ## Key Idea
 
-TODO
+The stream starts at 1 and advances until each target value is reached. Values below the next target are simulated with Push then Pop, while target values are kept with Push. Because target is increasing, one pointer over the stream is enough.
 
 ## Mistake / Edge Case
 
-TODO
+After pushing a target value, advance the stream counter too; otherwise the next target is compared against the same number again.
 
 ## Complexity
 
-- Time: TODO
-- Space: TODO
+- Time: O(n + m), where m is the largest consumed stream value
+- Space: O(m), for the operation list
+
+## What Adrian Should Remember
+
+For simulation problems, track the real state being consumed instead of trying to infer operations backward.
