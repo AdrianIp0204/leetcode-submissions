@@ -2,43 +2,43 @@
 
 - Username: AdrianIp
 - Profile: https://leetcode.com/u/AdrianIp/
-- Fetched at: 2026-06-08T04:16:47.740Z
-- Ranking: 1319470
+- Fetched at: 2026-06-09T11:26:29.295Z
+- Ranking: 1041708
 - Display name: AdrianIp
 
 ## Solved
 
-- All: 127 solved / 140 accepted submissions
-- Easy: 99 solved / 112 accepted submissions
-- Medium: 23 solved / 23 accepted submissions
+- All: 154 solved / 169 accepted submissions
+- Easy: 122 solved / 137 accepted submissions
+- Medium: 27 solved / 27 accepted submissions
 - Hard: 5 solved / 5 accepted submissions
 
 ## Total Attempts
 
-- All: 129 attempted problems / 188 total submissions
-- Easy: 100 attempted problems / 136 total submissions
-- Medium: 23 attempted problems / 41 total submissions
+- All: 155 attempted problems / 223 total submissions
+- Easy: 122 attempted problems / 167 total submissions
+- Medium: 27 attempted problems / 45 total submissions
 - Hard: 6 attempted problems / 11 total submissions
 
 ## Recent Accepted
 
-- 2026-06-08T04:04:53.000Z: [Plus One](https://leetcode.com/problems/plus-one/) (python3)
-- 2026-06-08T03:23:49.000Z: [Distribute Candies Among Children I](https://leetcode.com/problems/distribute-candies-among-children-i/) (python3)
-- 2026-06-08T02:31:27.000Z: [Partition Array According to Given Pivot](https://leetcode.com/problems/partition-array-according-to-given-pivot/) (python3)
-- 2026-06-08T02:11:06.000Z: [Number of Common Factors](https://leetcode.com/problems/number-of-common-factors/) (python3)
-- 2026-06-08T01:59:31.000Z: [Find the Key of the Numbers](https://leetcode.com/problems/find-the-key-of-the-numbers/) (python3)
-- 2026-06-08T01:39:18.000Z: [Smallest Number With All Set Bits](https://leetcode.com/problems/smallest-number-with-all-set-bits/) (python3)
-- 2026-06-08T01:25:56.000Z: [Shuffle String](https://leetcode.com/problems/shuffle-string/) (python3)
-- 2026-06-07T10:12:26.000Z: [Longest Palindrome](https://leetcode.com/problems/longest-palindrome/) (python3)
-- 2026-06-07T09:57:18.000Z: [Find Numbers with Even Number of Digits](https://leetcode.com/problems/find-numbers-with-even-number-of-digits/) (python3)
-- 2026-06-07T09:54:59.000Z: [Separate the Digits in an Array](https://leetcode.com/problems/separate-the-digits-in-an-array/) (python3)
-- 2026-06-07T09:45:46.000Z: [Number of Strings That Appear as Substrings in Word](https://leetcode.com/problems/number-of-strings-that-appear-as-substrings-in-word/) (python3)
-- 2026-06-07T09:39:30.000Z: [Find N Unique Integers Sum up to Zero](https://leetcode.com/problems/find-n-unique-integers-sum-up-to-zero/) (python3)
-- 2026-06-07T07:36:06.000Z: [Build an Array With Stack Operations](https://leetcode.com/problems/build-an-array-with-stack-operations/) (python3)
-- 2026-06-07T07:06:00.000Z: [Find All Numbers Disappeared in an Array](https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/) (python3)
-- 2026-06-07T06:56:32.000Z: [How Many Numbers Are Smaller Than the Current Number](https://leetcode.com/problems/how-many-numbers-are-smaller-than-the-current-number/) (python3)
-- 2026-06-07T06:42:10.000Z: [Set Mismatch](https://leetcode.com/problems/set-mismatch/) (python3)
-- 2026-06-07T06:28:53.000Z: [Max Consecutive Ones](https://leetcode.com/problems/max-consecutive-ones/) (python3)
-- 2026-06-07T06:25:33.000Z: [Shuffle the Array](https://leetcode.com/problems/shuffle-the-array/) (python3)
-- 2026-06-07T06:14:34.000Z: [Concatenation of Array](https://leetcode.com/problems/concatenation-of-array/) (python3)
-- 2026-06-07T04:15:15.000Z: [Count Equal and Divisible Pairs in an Array](https://leetcode.com/problems/count-equal-and-divisible-pairs-in-an-array/) (python3)
+- 2026-06-09T06:09:38.000Z: [Intersection of Two Arrays](https://leetcode.com/problems/intersection-of-two-arrays/) (python3)
+- 2026-06-09T06:02:10.000Z: [Length of Last Word](https://leetcode.com/problems/length-of-last-word/) (python3)
+- 2026-06-09T05:58:49.000Z: [Sort Characters By Frequency](https://leetcode.com/problems/sort-characters-by-frequency/) (python3)
+- 2026-06-09T04:47:45.000Z: [Top K Frequent Words](https://leetcode.com/problems/top-k-frequent-words/) (python3)
+- 2026-06-09T03:51:15.000Z: [Uncommon Words from Two Sentences](https://leetcode.com/problems/uncommon-words-from-two-sentences/) (python3)
+- 2026-06-09T03:32:10.000Z: [Find Common Characters](https://leetcode.com/problems/find-common-characters/) (python3)
+- 2026-06-09T03:09:22.000Z: [Largest Number At Least Twice of Others](https://leetcode.com/problems/largest-number-at-least-twice-of-others/) (python3)
+- 2026-06-09T01:49:08.000Z: [Maximum Product of Three Numbers](https://leetcode.com/problems/maximum-product-of-three-numbers/) (python3)
+- 2026-06-09T01:42:19.000Z: [Single Number](https://leetcode.com/problems/single-number/) (python3)
+- 2026-06-09T01:25:36.000Z: [Maximum Total Subarray Value I](https://leetcode.com/problems/maximum-total-subarray-value-i/) (python3)
+- 2026-06-09T01:16:47.000Z: [Most Common Word](https://leetcode.com/problems/most-common-word/) (python3)
+- 2026-06-08T09:48:47.000Z: [Missing Number](https://leetcode.com/problems/missing-number/) (python3)
+- 2026-06-08T09:37:39.000Z: [Valid Word](https://leetcode.com/problems/valid-word/) (python3)
+- 2026-06-08T09:26:08.000Z: [Count the Number of Special Characters I](https://leetcode.com/problems/count-the-number-of-special-characters-i/) (python3)
+- 2026-06-08T09:14:06.000Z: [Nim Game](https://leetcode.com/problems/nim-game/) (cpp)
+- 2026-06-08T08:59:10.000Z: [Valid Palindrome](https://leetcode.com/problems/valid-palindrome/) (python3)
+- 2026-06-08T08:49:20.000Z: [Fizz Buzz](https://leetcode.com/problems/fizz-buzz/) (python3)
+- 2026-06-08T07:16:10.000Z: [Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/) (python3)
+- 2026-06-08T06:58:10.000Z: [Power of Four](https://leetcode.com/problems/power-of-four/) (python3)
+- 2026-06-08T06:52:18.000Z: [Reverse String](https://leetcode.com/problems/reverse-string/) (python3)

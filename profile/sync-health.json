@@ -1,14 +1,14 @@
 {
-  "generatedAt": "2026-06-08T04:16:47.928Z",
+  "generatedAt": "2026-06-09T11:26:29.480Z",
   "username": "AdrianIp",
-  "profileFetchedAt": "2026-06-08T04:16:47.740Z",
-  "publicAcceptedSolved": 127,
-  "publicAcceptedSubmissions": 140,
-  "publicAttemptedProblems": 129,
-  "publicTotalSubmissions": 188,
-  "localProblemFolders": 115,
-  "localCanonicalSolutions": 115,
-  "estimatedSolvedGap": 12,
+  "profileFetchedAt": "2026-06-09T11:26:29.295Z",
+  "publicAcceptedSolved": 154,
+  "publicAcceptedSubmissions": 169,
+  "publicAttemptedProblems": 155,
+  "publicTotalSubmissions": 223,
+  "localProblemFolders": 128,
+  "localCanonicalSolutions": 128,
+  "estimatedSolvedGap": 26,
   "status": "behind",
   "knownLocalProblems": [
     {
@@ -107,8 +107,18 @@
       "hasCanonicalSolution": true
     },
     {
+      "folder": "0066-plus-one",
+      "slug": "plus-one",
+      "hasCanonicalSolution": true
+    },
+    {
       "folder": "0069-sqrtx",
       "slug": "sqrtx",
+      "hasCanonicalSolution": true
+    },
+    {
+      "folder": "0083-remove-duplicates-from-sorted-list",
+      "slug": "remove-duplicates-from-sorted-list",
       "hasCanonicalSolution": true
     },
     {
@@ -179,6 +189,11 @@
     {
       "folder": "0387-first-unique-character-in-a-string",
       "slug": "first-unique-character-in-a-string",
+      "hasCanonicalSolution": true
+    },
+    {
+      "folder": "0409-longest-palindrome",
+      "slug": "longest-palindrome",
       "hasCanonicalSolution": true
     },
     {
@@ -267,6 +282,16 @@
       "hasCanonicalSolution": true
     },
     {
+      "folder": "1295-find-numbers-with-even-number-of-digits",
+      "slug": "find-numbers-with-even-number-of-digits",
+      "hasCanonicalSolution": true
+    },
+    {
+      "folder": "1304-find-n-unique-integers-sum-up-to-zero",
+      "slug": "find-n-unique-integers-sum-up-to-zero",
+      "hasCanonicalSolution": true
+    },
+    {
       "folder": "1323-maximum-69-number",
       "slug": "maximum-69-number",
       "hasCanonicalSolution": true
@@ -309,6 +334,11 @@
     {
       "folder": "1502-can-make-arithmetic-progression-from-sequence",
       "slug": "can-make-arithmetic-progression-from-sequence",
+      "hasCanonicalSolution": true
+    },
+    {
+      "folder": "1528-shuffle-string",
+      "slug": "shuffle-string",
       "hasCanonicalSolution": true
     },
     {
@@ -362,6 +392,11 @@
       "hasCanonicalSolution": true
     },
     {
+      "folder": "1967-number-of-strings-that-appear-as-substrings-in-word",
+      "slug": "number-of-strings-that-appear-as-substrings-in-word",
+      "hasCanonicalSolution": true
+    },
+    {
       "folder": "2108-find-first-palindromic-string-in-the-array",
       "slug": "find-first-palindromic-string-in-the-array",
       "hasCanonicalSolution": true
@@ -379,6 +414,11 @@
     {
       "folder": "2144-minimum-cost-of-buying-candies-with-discount",
       "slug": "minimum-cost-of-buying-candies-with-discount",
+      "hasCanonicalSolution": true
+    },
+    {
+      "folder": "2161-partition-array-according-to-given-pivot",
+      "slug": "partition-array-according-to-given-pivot",
       "hasCanonicalSolution": true
     },
     {
@@ -407,6 +447,11 @@
       "hasCanonicalSolution": true
     },
     {
+      "folder": "2427-number-of-common-factors",
+      "slug": "number-of-common-factors",
+      "hasCanonicalSolution": true
+    },
+    {
       "folder": "2469-convert-the-temperature",
       "slug": "convert-the-temperature",
       "hasCanonicalSolution": true
@@ -429,6 +474,11 @@
     {
       "folder": "2535-difference-between-element-sum-and-digit-sum-of-an-array",
       "slug": "difference-between-element-sum-and-digit-sum-of-an-array",
+      "hasCanonicalSolution": true
+    },
+    {
+      "folder": "2553-separate-the-digits-in-an-array",
+      "slug": "separate-the-digits-in-an-array",
       "hasCanonicalSolution": true
     },
     {
@@ -487,6 +537,11 @@
       "hasCanonicalSolution": true
     },
     {
+      "folder": "2928-distribute-candies-among-children-i",
+      "slug": "distribute-candies-among-children-i",
+      "hasCanonicalSolution": true
+    },
+    {
       "folder": "2942-find-words-containing-character",
       "slug": "find-words-containing-character",
       "hasCanonicalSolution": true
@@ -522,8 +577,18 @@
       "hasCanonicalSolution": true
     },
     {
+      "folder": "3270-find-the-key-of-the-numbers",
+      "slug": "find-the-key-of-the-numbers",
+      "hasCanonicalSolution": true
+    },
+    {
       "folder": "3289-the-two-sneaky-numbers-of-digitville",
       "slug": "the-two-sneaky-numbers-of-digitville",
+      "hasCanonicalSolution": true
+    },
+    {
+      "folder": "3370-smallest-number-with-all-set-bits",
+      "slug": "smallest-number-with-all-set-bits",
       "hasCanonicalSolution": true
     },
     {
