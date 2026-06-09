@@ -212,6 +212,11 @@ function renderReport({ generatedAt, profile, problems, trackedFileFlags }) {
   const fullStatementFlags = trackedFileFlags.filter((flag) => flag.kind === "possible_problem_statement");
   const sensitiveFlags = trackedFileFlags.filter((flag) => flag.kind === "possible_sensitive_material");
   const publicSolved = profile?.solvedByDifficulty?.find((item) => item.difficulty === "All")?.count ?? null;
+  const solvedGap = typeof publicSolved === "number" ? Math.max(0, publicSolved - problems.length) : null;
+  const weaknessLines = weaknessSummary(problems);
+  if (solvedGap > 0) {
+    weaknessLines.unshift(`${solvedGap} public solved problems are not yet represented by local source folders.`);
+  }
 
   const topTodoRows = todos.slice(0, 20).map((problem) => ({
     problem: `[${problem.folder}](../submissions/${problem.folder}/)`,
@@ -229,6 +234,7 @@ function renderReport({ generatedAt, profile, problems, trackedFileFlags }) {
     `- Generated at: ${generatedAt}`,
     `- Local problem folders: ${problems.length}`,
     `- Public solved count: ${publicSolved ?? "not available"}`,
+    `- Estimated solved-count gap: ${solvedGap ?? "not available"}`,
     `- Problems with real attempt files: ${withAttempts.length}`,
     `- Problems with multiple languages or recorded language variants: ${multiLanguage.length}`,
     `- Problems needing reflection cleanup: ${todos.length}`,
@@ -238,7 +244,7 @@ function renderReport({ generatedAt, profile, problems, trackedFileFlags }) {
     "",
     "This repo is worth making public later, but not as a raw dump. It already has a privacy-first sync system and a large accepted-solution archive. The public version should present the repo as a learning trace: accepted code, failed attempts when available, short reflections, weakness reports, and honest AI-assisted curation.",
     "",
-    "Do not publish yet. The main blockers are missing reflection fields, no preserved failed attempts, no TypeScript track, and no public-facing explanation of Adrian + Morrow's roles.",
+    `Do not publish yet. The main blockers are ${solvedGap > 0 ? "the source-code sync gap, " : ""}missing reflection fields, no preserved failed attempts, no TypeScript track, and public-facing explanation still needing a final pass.`,
     "",
     "## Language Coverage",
     "",
@@ -256,16 +262,17 @@ function renderReport({ generatedAt, profile, problems, trackedFileFlags }) {
     "",
     "## Weakness Signals",
     "",
-    ...weaknessSummary(problems).map((item) => `- ${item}`),
+    ...weaknessLines.map((item) => `- ${item}`),
     "",
     "## Cleanup Order",
     "",
     "1. Keep the repo private while cleanup is in progress.",
     "2. Add honest public framing to the README: Adrian owns the learning; Morrow assists with review, notes, reports, and curation.",
-    "3. Fill reflections for the first 15-20 representative problems before touching every file.",
-    "4. Start preserving failed attempts under `attempts/` for new work. Backfill old failed attempts only when real source exists.",
-    "5. Add a TypeScript track after the exam instead of pretending it already exists.",
-    "6. Publish only after the README, reports, and representative reflections make the learning arc clear.",
+    "3. Run the extension's Collect Past Accepted flow until the local source archive catches up with the public solved count.",
+    "4. Fill reflections for the first 15-20 representative problems before touching every file.",
+    "5. Start preserving failed attempts under `attempts/` for new work. Backfill old failed attempts only when real source exists.",
+    "6. Add a TypeScript track after the exam instead of pretending it already exists.",
+    "7. Publish only after the README, reports, and representative reflections make the learning arc clear.",
     "",
     "## Public Safety Scan",
     "",
@@ -408,10 +415,14 @@ async function main() {
   const profile = await readJsonIfExists(profilePath);
   const problems = await inspectProblems();
   const trackedFileFlags = await scanTrackedText();
+  const publicSolved = profile?.solvedByDifficulty?.find((item) => item.difficulty === "All")?.count ?? null;
+  const estimatedSolvedGap = typeof publicSolved === "number" ? Math.max(0, publicSolved - problems.length) : null;
   const audit = {
     generatedAt,
     totals: {
       problemFolders: problems.length,
+      publicSolved,
+      estimatedSolvedGap,
       problemsWithAttempts: problems.filter((problem) => problem.attemptFiles.length > 0).length,
       problemsNeedingReflection: problems.filter((problem) => problem.todoCount > 0 || !problem.hasKeyIdea || !problem.hasComplexity).length,
       problemsWithUnknownStatus: problems.filter((problem) => /unknown|not recorded/i.test(problem.status)).length,

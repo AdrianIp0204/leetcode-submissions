@@ -22,6 +22,8 @@ file says otherwise.
 - `scripts/` - local sync helpers.
 - `extension/leetcode-exporter/` - first-party unpacked browser extension for saving visible LeetCode solutions.
 
+See `docs/publication-plan.md` before making the repository public.
+
 ## Suggested Naming
 
 Use stable problem folders so sync tools and manual commits stay readable:
@@ -37,6 +39,8 @@ For multiple languages:
 submissions/0001-two-sum/solution.py
 submissions/0001-two-sum/solution.ts
 ```
+
+For failed attempts and alternative accepted solutions, use `notes/attempt-conventions.md`.
 
 ## Public Profile Sync
 
