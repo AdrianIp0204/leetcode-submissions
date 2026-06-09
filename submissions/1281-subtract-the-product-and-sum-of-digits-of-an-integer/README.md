@@ -12,17 +12,21 @@
 
 ## Pattern
 
-TODO
+Digit extraction.
 
 ## Key Idea
 
-TODO
+The C++ solution repeatedly takes the last digit with `n % 10`, adds it to the digit sum, multiplies it into the digit product, and removes it with `n /= 10`. After all digits are processed, it returns product minus sum. This is the direct arithmetic version without string conversion.
 
 ## Mistake / Edge Case
 
-TODO
+The product should start at `1`, not `0`; otherwise every multiplication stays zero. The loop assumes `n` is positive, which matches the problem constraints.
 
 ## Complexity
 
-- Time: TODO
-- Space: TODO
+- Time: O(d), where `d` is the number of digits
+- Space: O(1)
+
+## What Adrian Should Remember
+
+For digit math, initialize additive and multiplicative accumulators differently: sum at `0`, product at `1`.

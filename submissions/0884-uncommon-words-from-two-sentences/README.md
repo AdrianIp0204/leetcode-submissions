@@ -12,17 +12,21 @@
 
 ## Pattern
 
-TODO
+Combined frequency count.
 
 ## Key Idea
 
-TODO
+The solution joins the word lists from both sentences, counts every word with `Counter`, then returns words whose total count is exactly one. This matches the definition of uncommon: the word appears once across both sentences combined. The local archive needs `Counter` imported from `collections` to run standalone.
 
 ## Mistake / Edge Case
 
-TODO
+A word that appears once in each sentence has total count two, so it is not uncommon. Counting the combined stream avoids handling the two sentences separately.
 
 ## Complexity
 
-- Time: TODO
-- Space: TODO
+- Time: O(n + m), where `n` and `m` are the number of words in each sentence
+- Space: O(n + m)
+
+## What Adrian Should Remember
+
+When the definition depends on total appearances across inputs, combine first and count once.

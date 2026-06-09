@@ -13,17 +13,21 @@
 
 ## Pattern
 
-TODO
+Counter intersection.
 
 ## Key Idea
 
-TODO
+The solution starts with the character counts from the first word, then intersects those counts with each next word using `&`. Counter intersection keeps the minimum count for each character, which is exactly the number of times that character appears in every word. `elements()` expands the final counts back into a list.
 
 ## Mistake / Edge Case
 
-TODO
+Repeated common characters must be preserved, not just unique letters. The local archive needs `Counter` imported from `collections` to run standalone.
 
 ## Complexity
 
-- Time: TODO
-- Space: TODO
+- Time: O(total characters)
+- Space: O(k), where `k` is the character set size
+
+## What Adrian Should Remember
+
+For "common across all strings" with duplicates, intersect counts instead of intersecting sets.

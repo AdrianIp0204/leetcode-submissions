@@ -13,17 +13,21 @@
 
 ## Pattern
 
-TODO
+Coordinate simulation.
 
 ## Key Idea
 
-TODO
+The solution treats the robot's position as a complex number: horizontal moves change the real part and vertical moves change the imaginary part. After applying every move, the robot returns to origin exactly when the final position is `0`. This is a compact way to store two coordinates in one value.
 
 ## Mistake / Edge Case
 
-TODO
+Every move must have an equal opposite move overall; order does not matter for this problem. The `else` branch assumes any non-`R/L/U` move is `D`, which is fine under LeetCode's valid-input constraint.
 
 ## Complexity
 
-- Time: TODO
-- Space: TODO
+- Time: O(n)
+- Space: O(1)
+
+## What Adrian Should Remember
+
+For grid movement, track net displacement instead of storing the whole path unless the path itself matters.

@@ -12,17 +12,21 @@
 
 ## Pattern
 
-TODO
+Built-in string normalization.
 
 ## Key Idea
 
-TODO
+The solution uses Python's `lower()` to transform every uppercase character into lowercase. This is exactly what the problem asks for in Python. A manual version would convert ASCII codes, but that is not necessary here.
 
 ## Mistake / Edge Case
 
-TODO
+The result is a new string because Python strings are immutable. Non-letter characters remain unchanged.
 
 ## Complexity
 
-- Time: TODO
-- Space: TODO
+- Time: O(n)
+- Space: O(n)
+
+## What Adrian Should Remember
+
+Use language built-ins for direct string normalization unless the task is explicitly about implementing the conversion.

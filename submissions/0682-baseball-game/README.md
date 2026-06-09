@@ -13,17 +13,21 @@
 
 ## Pattern
 
-TODO
+Stack simulation.
 
 ## Key Idea
 
-TODO
+The list `n` acts as a stack of valid round scores. A number pushes a new score, `C` removes the previous valid score, `D` pushes double the previous score, and `+` pushes the sum of the previous two scores. Summing the stack at the end gives the total.
 
 ## Mistake / Edge Case
 
-TODO
+The operation order matters because later operations refer only to still-valid previous scores. The submitted code still has `print(n)`, which is harmless for acceptance but should be removed in polished code.
 
 ## Complexity
 
-- Time: TODO
-- Space: TODO
+- Time: O(n)
+- Space: O(n)
+
+## What Adrian Should Remember
+
+When operations undo or reuse recent values, a stack is usually the clean model.

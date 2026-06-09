@@ -12,17 +12,21 @@
 
 ## Pattern
 
-TODO
+Normalize text, filter, then count.
 
 ## Key Idea
 
-TODO
+The solution lowercases the paragraph, replaces non-lowercase-letter characters with spaces, splits into words, and counts only words not in the banned set. While counting, it keeps the best word seen so far. This avoids a second pass over the count map.
 
 ## Mistake / Edge Case
 
-TODO
+Punctuation and case must be removed before counting, otherwise `"Ball"` and `"ball,"` would look like different words. The banned list should be a set for fast lookup, which this solution does.
 
 ## Complexity
 
-- Time: TODO
-- Space: TODO
+- Time: O(n), where `n` is the paragraph length
+- Space: O(n)
+
+## What Adrian Should Remember
+
+For text-counting problems, normalize first; counting dirty tokens usually creates fake edge cases.

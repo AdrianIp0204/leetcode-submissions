@@ -12,17 +12,21 @@
 
 ## Pattern
 
-TODO
+Max scan baseline.
 
 ## Key Idea
 
-TODO
+The code finds the maximum value, then checks whether any other value is greater than half of that maximum. If such a value exists, the maximum is not at least twice every other number; otherwise it returns the index of the maximum. This captures the main comparison idea without sorting.
 
 ## Mistake / Edge Case
 
-TODO
+The submitted check is brittle if the maximum appears more than once, because `n != m` skips duplicate maximum values. A more robust version would track the largest and second largest distinct positions or compare every index except the chosen max index.
 
 ## Complexity
 
-- Time: TODO
-- Space: TODO
+- Time: O(n)
+- Space: O(1)
+
+## What Adrian Should Remember
+
+When a maximum must dominate every other element, compare against the second largest candidate, not just an arbitrary threshold loop.
