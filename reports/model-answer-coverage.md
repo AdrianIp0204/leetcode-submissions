@@ -1,9 +1,9 @@
 # Model Answer Coverage
 
-- Generated at: 2026-06-09T14:53:52.738Z
+- Generated at: 2026-06-09T23:41:56.229Z
 - Problems in repo: 154
-- Model-answer notes: 25
-- Missing model-answer notes: 129
+- Model-answer notes: 35
+- Missing model-answer notes: 119
 - Incomplete model-answer notes: 0
 - Notes without matching problem folder: 0
 
@@ -15,16 +15,6 @@ The model-answer track has started. Keep adding notes in batches, prioritizing r
 
 | Problem | Title | Reason |
 | --- | --- | --- |
-| [0002-add-two-numbers](../submissions/0002-add-two-numbers/) | Add Two Numbers | uncovered |
-| [0003-longest-substring-without-repeating-characters](../submissions/0003-longest-substring-without-repeating-characters/) | Longest Substring Without Repeating Characters | uncovered |
-| [0004-median-of-two-sorted-arrays](../submissions/0004-median-of-two-sorted-arrays/) | Median of Two Sorted Arrays | uncovered |
-| [0005-longest-palindromic-substring](../submissions/0005-longest-palindromic-substring/) | Longest Palindromic Substring | uncovered |
-| [0006-zigzag-conversion](../submissions/0006-zigzag-conversion/) | Zigzag Conversion | uncovered |
-| [0007-reverse-integer](../submissions/0007-reverse-integer/) | Reverse Integer | uncovered |
-| [0009-palindrome-number](../submissions/0009-palindrome-number/) | Palindrome Number | uncovered |
-| [0011-container-with-most-water](../submissions/0011-container-with-most-water/) | Container With Most Water | uncovered |
-| [0012-integer-to-roman](../submissions/0012-integer-to-roman/) | Integer to Roman | uncovered |
-| [0013-roman-to-integer](../submissions/0013-roman-to-integer/) | Roman to Integer | uncovered |
 | [0014-longest-common-prefix](../submissions/0014-longest-common-prefix/) | Longest Common Prefix | uncovered |
 | [0029-divide-two-integers](../submissions/0029-divide-two-integers/) | Divide Two Integers | uncovered |
 | [0058-length-of-last-word](../submissions/0058-length-of-last-word/) | Length of Last Word | uncovered |
@@ -45,12 +35,32 @@ The model-answer track has started. Keep adding notes in batches, prioritizing r
 | [0349-intersection-of-two-arrays](../submissions/0349-intersection-of-two-arrays/) | Intersection of Two Arrays | uncovered |
 | [0387-first-unique-character-in-a-string](../submissions/0387-first-unique-character-in-a-string/) | First Unique Character in a String | uncovered |
 | [0409-longest-palindrome](../submissions/0409-longest-palindrome/) | Longest Palindrome | uncovered |
+| [0412-fizz-buzz](../submissions/0412-fizz-buzz/) | Fizz Buzz | uncovered |
+| [0414-third-maximum-number](../submissions/0414-third-maximum-number/) | Third Maximum Number | uncovered |
+| [0448-find-all-numbers-disappeared-in-an-array](../submissions/0448-find-all-numbers-disappeared-in-an-array/) | Find All Numbers Disappeared in an Array | uncovered |
+| [0451-sort-characters-by-frequency](../submissions/0451-sort-characters-by-frequency/) | Sort Characters By Frequency | uncovered |
+| [0485-max-consecutive-ones](../submissions/0485-max-consecutive-ones/) | Max Consecutive Ones | uncovered |
+| [0628-maximum-product-of-three-numbers](../submissions/0628-maximum-product-of-three-numbers/) | Maximum Product of Three Numbers | uncovered |
+| [0645-set-mismatch](../submissions/0645-set-mismatch/) | Set Mismatch | uncovered |
+| [0657-robot-return-to-origin](../submissions/0657-robot-return-to-origin/) | Robot Return to Origin | uncovered |
+| [0682-baseball-game](../submissions/0682-baseball-game/) | Baseball Game | uncovered |
+| [0709-to-lower-case](../submissions/0709-to-lower-case/) | To Lower Case | uncovered |
 
 ## Existing Model Answers
 
 | Note | Title |
 | --- | --- |
 | [0001-two-sum](../notes/model-answers/0001-two-sum.md) | Two Sum |
+| [0002-add-two-numbers](../notes/model-answers/0002-add-two-numbers.md) | Add Two Numbers |
+| [0003-longest-substring-without-repeating-characters](../notes/model-answers/0003-longest-substring-without-repeating-characters.md) | Longest Substring Without Repeating Characters |
+| [0004-median-of-two-sorted-arrays](../notes/model-answers/0004-median-of-two-sorted-arrays.md) | Median of Two Sorted Arrays |
+| [0005-longest-palindromic-substring](../notes/model-answers/0005-longest-palindromic-substring.md) | Longest Palindromic Substring |
+| [0006-zigzag-conversion](../notes/model-answers/0006-zigzag-conversion.md) | Zigzag Conversion |
+| [0007-reverse-integer](../notes/model-answers/0007-reverse-integer.md) | Reverse Integer |
+| [0009-palindrome-number](../notes/model-answers/0009-palindrome-number.md) | Palindrome Number |
+| [0011-container-with-most-water](../notes/model-answers/0011-container-with-most-water.md) | Container With Most Water |
+| [0012-integer-to-roman](../notes/model-answers/0012-integer-to-roman.md) | Integer to Roman |
+| [0013-roman-to-integer](../notes/model-answers/0013-roman-to-integer.md) | Roman to Integer |
 | [0020-valid-parentheses](../notes/model-answers/0020-valid-parentheses.md) | Valid Parentheses |
 | [0021-merge-two-sorted-lists](../notes/model-answers/0021-merge-two-sorted-lists.md) | Merge Two Sorted Lists |
 | [0026-remove-duplicates-from-sorted-array](../notes/model-answers/0026-remove-duplicates-from-sorted-array.md) | Remove Duplicates from Sorted Array |
