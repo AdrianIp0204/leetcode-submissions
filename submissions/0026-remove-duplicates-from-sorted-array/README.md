@@ -12,17 +12,21 @@
 
 ## Pattern
 
-TODO
+Set-and-sort baseline; intended pattern is two pointers.
 
 ## Key Idea
 
-TODO
+The accepted code replaces the whole array with `sorted(set(nums))` and returns the new length. That works for the LeetCode contract because the input is sorted integers and only the first `k` elements matter afterward. It is not the intended in-place two-pointer solution, because it allocates a set and sorts instead of compacting unique values as it scans.
 
 ## Mistake / Edge Case
 
-TODO
+The slice assignment `nums[:] = ...` is what makes the caller's list change in place. Without that, rebinding `nums` would not satisfy the problem.
 
 ## Complexity
 
-- Time: TODO
-- Space: TODO
+- Time: O(n log n)
+- Space: O(n)
+
+## What Adrian Should Remember
+
+If an array is already sorted and the task says "in place", try a write pointer before reaching for `set`.

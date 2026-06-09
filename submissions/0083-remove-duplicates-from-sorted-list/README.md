@@ -13,17 +13,21 @@
 
 ## Pattern
 
-TODO
+Linked list scan with a dummy head.
 
 ## Key Idea
 
-TODO
+The solution walks the sorted list and appends a new node only when the value differs from the last value added to the result list. The dummy head makes it easy to return the built list at the end. It is accepted, but it allocates a new list instead of rewiring the existing nodes in place.
 
 ## Mistake / Edge Case
 
-TODO
+An empty input should return `None`, and repeated values should advance the input pointer without extending the output. The dummy value must be outside the possible node values, which is a slightly brittle assumption.
 
 ## Complexity
 
-- Time: TODO
-- Space: TODO
+- Time: O(n)
+- Space: O(n), because it builds new nodes
+
+## What Adrian Should Remember
+
+For sorted linked lists, compare the current node with the last kept value; for in-place practice, skip duplicate nodes by changing `next`.

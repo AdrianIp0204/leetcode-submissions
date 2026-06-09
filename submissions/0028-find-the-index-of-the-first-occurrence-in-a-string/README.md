@@ -12,17 +12,21 @@
 
 ## Pattern
 
-TODO
+Built-in substring search.
 
 ## Key Idea
 
-TODO
+The solution delegates the search to Python: first check whether `needle` is in `haystack`, then return `haystack.index(needle)` or `-1`. This is concise and accepted, but it does not practice the string-matching algorithms behind the problem. For learning, the next step would be a manual scan or KMP-style prefix table.
 
 ## Mistake / Edge Case
 
-TODO
+An empty `needle` should return `0`; Python's substring behavior handles that naturally. The main learning gap is that the code hides the matching loop inside built-ins.
 
 ## Complexity
 
-- Time: TODO
-- Space: TODO
+- Time: O(h * n) worst case conceptually, depending on Python's string-search implementation
+- Space: O(1)
+
+## What Adrian Should Remember
+
+Built-ins are fine for accepted code, but if the tag says string matching, know what loop the built-in is saving you from writing.

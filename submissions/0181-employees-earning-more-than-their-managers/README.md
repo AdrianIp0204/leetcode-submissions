@@ -13,17 +13,21 @@
 
 ## Pattern
 
-TODO
+Self join with filtering.
 
 ## Key Idea
 
-TODO
+The solution joins the employee table to itself, matching each employee's `managerId` to another row's `id`. After the merge, each row has both employee salary and manager salary, so the filter is just `salary > salary_manager`. The final rename keeps only the expected `Employee` column.
 
 ## Mistake / Edge Case
 
-TODO
+Employees without a manager should not appear, and the self join naturally drops them. The suffixes are important because both sides of the join have columns with the same names.
 
 ## Complexity
 
-- Time: TODO
-- Space: TODO
+- Time: O(n) expected for the merge and filter
+- Space: O(n)
+
+## What Adrian Should Remember
+
+When rows need to be compared against related rows in the same table, use a self join.

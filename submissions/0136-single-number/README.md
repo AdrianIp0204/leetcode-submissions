@@ -13,17 +13,21 @@
 
 ## Pattern
 
-TODO
+Bit manipulation with XOR.
 
 ## Key Idea
 
-TODO
+XOR cancels equal numbers because `a ^ a = 0`, and `0 ^ b = b`. Since every duplicate appears exactly twice, folding XOR across the whole array leaves only the single unpaired value. This is the intended constant-space trick.
 
 ## Mistake / Edge Case
 
-TODO
+This pattern depends on the exact constraint that every other value appears twice. If counts change to three times, XOR is no longer enough.
 
 ## Complexity
 
-- Time: TODO
-- Space: TODO
+- Time: O(n)
+- Space: O(1)
+
+## What Adrian Should Remember
+
+When pairs cancel and one value remains, XOR is often the cleanest constant-space tool.

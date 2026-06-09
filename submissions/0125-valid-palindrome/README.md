@@ -13,17 +13,21 @@
 
 ## Pattern
 
-TODO
+Filter then compare reversed copy.
 
 ## Key Idea
 
-TODO
+The solution lowercases the string, filters out characters that are not ASCII letters or digits, and compares the filtered list with its reverse. This is accepted and clear for the LeetCode character set. A lower-space two-pointer version would skip invalid characters from both ends without building the filtered list.
 
 ## Mistake / Edge Case
 
-TODO
+Case and punctuation should not affect the answer. The explicit `ord` checks are ASCII-specific, so `str.isalnum()` would be easier to read if broader character handling mattered.
 
 ## Complexity
 
-- Time: TODO
-- Space: TODO
+- Time: O(n)
+- Space: O(n)
+
+## What Adrian Should Remember
+
+For palindrome strings, decide first whether to normalize into a new string or use two pointers in place.

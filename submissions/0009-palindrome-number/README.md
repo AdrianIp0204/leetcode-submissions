@@ -13,17 +13,21 @@
 
 ## Pattern
 
-TODO
+Digit extraction baseline.
 
 ## Key Idea
 
-TODO
+This solution extracts digits by powers of ten, reconstructs the individual digit list, and compares it with its reverse. It works, but it is more complicated than necessary for the problem. A simpler version would either compare `str(x)` with its reverse, or reverse half of the integer arithmetically.
 
 ## Mistake / Edge Case
 
-TODO
+Negative numbers are not palindromes even if their absolute digits mirror, so the final `x > 0` check matters. `0` also needs a special case because `log10(0)` is undefined.
 
 ## Complexity
 
-- Time: TODO
-- Space: TODO
+- Time: O(d), where `d` is the number of digits
+- Space: O(d)
+
+## What Adrian Should Remember
+
+Before doing manual digit math, check whether the problem is testing the idea or just the representation.

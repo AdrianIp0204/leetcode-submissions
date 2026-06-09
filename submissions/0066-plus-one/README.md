@@ -12,17 +12,21 @@
 
 ## Pattern
 
-TODO
+Carry propagation.
 
 ## Key Idea
 
-TODO
+The solution adds one to the last digit and carries through the remaining digits from right to left. It builds the result in reverse order, appending `0` while the carry continues and appending `1` at the end if every digit was a `9`. Reversing at the end restores normal digit order.
 
 ## Mistake / Edge Case
 
-TODO
+The all-nines case, such as `[9, 9]`, needs a new leading `1`. This code also mutates the input list with `pop`, which is accepted here but worth noticing.
 
 ## Complexity
 
-- Time: TODO
-- Space: TODO
+- Time: O(n)
+- Space: O(n)
+
+## What Adrian Should Remember
+
+For digit-array arithmetic, write the carry rule first and then handle the leftover carry after the loop.
