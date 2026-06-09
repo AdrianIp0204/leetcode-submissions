@@ -13,17 +13,21 @@
 
 ## Pattern
 
-TODO
+Array duplication.
 
 ## Key Idea
 
-TODO
+The target output is the original array followed by itself. Extending the list with itself mutates and doubles it, then returns the result. This is concise, though `nums + nums` would avoid mutating the input name.
 
 ## Mistake / Edge Case
 
-TODO
+Make sure the second half is the original sequence, not a progressively extended copy beyond one duplication.
 
 ## Complexity
 
-- Time: TODO
-- Space: TODO
+- Time: O(n)
+- Space: O(n), for the doubled list contents
+
+## What Adrian Should Remember
+
+Mutation is fine when the platform ignores input after return, but note it when reading code later.

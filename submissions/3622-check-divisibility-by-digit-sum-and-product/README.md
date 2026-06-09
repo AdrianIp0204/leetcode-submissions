@@ -12,17 +12,21 @@
 
 ## Pattern
 
-TODO
+Digit aggregate divisibility.
 
 ## Key Idea
 
-TODO
+Extract each digit of `n`, adding it to a digit sum and multiplying it into a digit product. Then check whether the original number is divisible by the sum plus product. Keeping a copy of `n` preserves the original value while digits are consumed.
 
 ## Mistake / Edge Case
 
-TODO
+Use a separate variable for digit extraction so the original number is still available for the final modulo check.
 
 ## Complexity
 
-- Time: TODO
-- Space: TODO
+- Time: O(d)
+- Space: O(1)
+
+## What Adrian Should Remember
+
+When digit extraction mutates the number, save the original before the loop.

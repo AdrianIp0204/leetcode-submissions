@@ -12,17 +12,21 @@
 
 ## Pattern
 
-TODO
+Arithmetic progression sum.
 
 ## Key Idea
 
-TODO
+The best first choice is the current maximum. Each operation increases that chosen value by one, so the selected values form `max, max+1, ..., max+k-1`. The formula sums that arithmetic progression directly.
 
 ## Mistake / Edge Case
 
-TODO
+The sequence has exactly `k` terms, ending at `max + k - 1`.
 
 ## Complexity
 
-- Time: TODO
-- Space: TODO
+- Time: O(n), to find the maximum
+- Space: O(1)
+
+## What Adrian Should Remember
+
+If repeated greedy choices form a simple sequence, sum the sequence instead of simulating it.

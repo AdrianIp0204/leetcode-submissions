@@ -12,17 +12,21 @@
 
 ## Pattern
 
-TODO
+Separate frequency maps.
 
 ## Key Idea
 
-TODO
+Count vowels and consonants in separate dictionaries, then add the maximum vowel frequency and maximum consonant frequency. The dictionaries are seeded so `max` is safe even if one category is absent. This matches the required sum of category maxima.
 
 ## Mistake / Edge Case
 
-TODO
+Vowels and consonants must be counted separately; the most frequent overall character is not enough.
 
 ## Complexity
 
-- Time: TODO
-- Space: TODO
+- Time: O(n)
+- Space: O(1), bounded lowercase alphabet
+
+## What Adrian Should Remember
+
+When a problem asks for category maxima, keep the categories separate from the start.

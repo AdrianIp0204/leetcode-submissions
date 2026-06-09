@@ -12,17 +12,21 @@
 
 ## Pattern
 
-TODO
+Inclusion-exclusion counting.
 
 ## Key Idea
 
-TODO
+Without upper limits, the number of nonnegative triples summing to `n` is a stars-and-bars count. Subtract assignments where one child exceeds the limit, add back assignments where two exceed it, and subtract where all three exceed it. The helper `ways` returns zero for impossible negative remainders.
 
 ## Mistake / Edge Case
 
-TODO
+Use `limit + 1` when excluding a child that has gone over the limit.
 
 ## Complexity
 
-- Time: TODO
-- Space: TODO
+- Time: O(1)
+- Space: O(1)
+
+## What Adrian Should Remember
+
+For bounded distribution counts, inclusion-exclusion can replace nested enumeration.

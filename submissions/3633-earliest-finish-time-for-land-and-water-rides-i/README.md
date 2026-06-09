@@ -7,11 +7,23 @@
 - Submitted at: 2026-06-02T08:13:07.000Z
 - Submission ID: 2019945070
 
+## Pattern
+
+Two-order scheduling minimum.
+
 ## Key Idea
 
-TODO
+Compute the earliest possible finish time for any land ride and any water ride. Then test both orders: land first then each water ride, and water first then each land ride. The answer is the minimum finish time across those possibilities.
+
+## Mistake / Edge Case
+
+The second ride can start only after both its own start time and the first ride's finish time.
 
 ## Complexity
 
-- Time: TODO
-- Space: TODO
+- Time: O(n + m)
+- Space: O(1)
+
+## What Adrian Should Remember
+
+For two-stage scheduling, reduce each first-stage category to its earliest finish, then test the second stage.

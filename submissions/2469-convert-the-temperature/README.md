@@ -12,17 +12,21 @@
 
 ## Pattern
 
-TODO
+Formula translation.
 
 ## Key Idea
 
-TODO
+Apply the two required conversion formulas directly: Kelvin is Celsius plus 273.15, and Fahrenheit is Celsius times 1.8 plus 32. Both Python and C++ versions return the two values in the expected order. No iteration is involved.
 
 ## Mistake / Edge Case
 
-TODO
+Return Kelvin first and Fahrenheit second; order matters in the output list.
 
 ## Complexity
 
-- Time: TODO
-- Space: TODO
+- Time: O(1)
+- Space: O(1)
+
+## What Adrian Should Remember
+
+Formula problems are mostly about exact constants and output ordering.

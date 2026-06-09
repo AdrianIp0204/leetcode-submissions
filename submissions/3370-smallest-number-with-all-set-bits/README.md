@@ -12,17 +12,21 @@
 
 ## Pattern
 
-TODO
+Next all-ones mask.
 
 ## Key Idea
 
-TODO
+A number with all set bits has the form `2^k - 1`. Find the bit length needed to cover `n`, then return the all-ones value for that length. The logarithm expression is a compact way to compute that length for these constraints.
 
 ## Mistake / Edge Case
 
-TODO
+If `n` is already all ones, the same bit length should return `n`, not the next larger mask.
 
 ## Complexity
 
-- Time: TODO
-- Space: TODO
+- Time: O(1)
+- Space: O(1)
+
+## What Adrian Should Remember
+
+All-set-bit numbers are masks; think in powers of two minus one.

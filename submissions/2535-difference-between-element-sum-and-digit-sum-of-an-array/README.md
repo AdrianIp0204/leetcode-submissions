@@ -7,11 +7,23 @@
 - Submitted at: 2026-06-02T09:26:59.000Z
 - Submission ID: 2020010716
 
+## Pattern
+
+Digit expansion.
+
 ## Key Idea
 
-TODO
+Compute the normal element sum, then build a list of every decimal digit across the numbers. The absolute difference between the element sum and digit sum is the answer. Single-digit numbers can be added directly to the digit list.
+
+## Mistake / Edge Case
+
+For multi-digit numbers, split into characters and convert each digit back to an integer before summing.
 
 ## Complexity
 
-- Time: TODO
-- Space: TODO
+- Time: O(total digits)
+- Space: O(total digits)
+
+## What Adrian Should Remember
+
+Digit-sum problems become simple once numbers are expanded into their decimal digits.

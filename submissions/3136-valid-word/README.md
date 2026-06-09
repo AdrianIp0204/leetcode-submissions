@@ -12,17 +12,21 @@
 
 ## Pattern
 
-TODO
+Character validation with required flags.
 
 ## Key Idea
 
-TODO
+Reject words shorter than three characters. Then scan each character, rejecting anything outside digits or English letters while tracking whether at least one vowel and one consonant appear. Digits are allowed but do not satisfy either letter requirement.
 
 ## Mistake / Edge Case
 
-TODO
+A word with only vowels, only consonants, or only digits is not valid even if every character is allowed.
 
 ## Complexity
 
-- Time: TODO
-- Space: TODO
+- Time: O(n)
+- Space: O(1)
+
+## What Adrian Should Remember
+
+Validation problems often need both invalid-character rejection and positive requirement flags.

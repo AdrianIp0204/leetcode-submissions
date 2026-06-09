@@ -12,17 +12,21 @@
 
 ## Pattern
 
-TODO
+Digit sum.
 
 ## Key Idea
 
-TODO
+Convert the number to a string and sum each decimal digit. For this solution, the frequency-score behavior reduces to adding the digit characters directly. The implementation is intentionally compact.
 
 ## Mistake / Edge Case
 
-TODO
+Convert each digit character back to an integer before summing.
 
 ## Complexity
 
-- Time: TODO
-- Space: TODO
+- Time: O(d)
+- Space: O(d), for the string form
+
+## What Adrian Should Remember
+
+For small digit tasks, string conversion is often the clearest correct approach.

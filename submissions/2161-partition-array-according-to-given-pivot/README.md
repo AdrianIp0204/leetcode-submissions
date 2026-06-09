@@ -13,17 +13,21 @@
 
 ## Pattern
 
-TODO
+Stable three-way partition.
 
 ## Key Idea
 
-TODO
+Build separate lists for values smaller than, equal to, and greater than the pivot while scanning left to right. Concatenating those lists preserves relative order within each group. This matches the stable partition requirement directly.
 
 ## Mistake / Edge Case
 
-TODO
+All pivot-equal values belong in the middle group, not just one pivot instance.
 
 ## Complexity
 
-- Time: TODO
-- Space: TODO
+- Time: O(n)
+- Space: O(n)
+
+## What Adrian Should Remember
+
+When stability matters, append to buckets in scan order and concatenate them.

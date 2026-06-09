@@ -13,17 +13,21 @@
 
 ## Pattern
 
-TODO
+Unique-character category scoring.
 
 ## Key Idea
 
-TODO
+Convert the password to a set so each distinct character contributes once. Then add a category-specific score based on whether the character is lowercase, uppercase, digit, or other. The result is the sum over unique character categories.
 
 ## Mistake / Edge Case
 
-TODO
+Repeated characters should not add repeated strength because the set removes duplicates.
 
 ## Complexity
 
-- Time: TODO
-- Space: TODO
+- Time: O(n)
+- Space: O(n)
+
+## What Adrian Should Remember
+
+Check whether a scoring problem counts occurrences or distinct characters before looping.

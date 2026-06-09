@@ -12,17 +12,21 @@
 
 ## Pattern
 
-TODO
+Euclidean subtraction compression.
 
 ## Key Idea
 
-TODO
+Instead of subtracting the smaller number one step at a time, count how many full subtractions fit with integer division. Then keep the remainder and swap the values, just like Euclid's algorithm. This compresses many repeated operations into one loop iteration.
 
 ## Mistake / Edge Case
 
-TODO
+Stop when either number becomes zero; division by zero must never happen.
 
 ## Complexity
 
-- Time: TODO
-- Space: TODO
+- Time: O(log max(num1, num2))
+- Space: O(1)
+
+## What Adrian Should Remember
+
+Repeated subtraction between two numbers is often Euclid's algorithm hiding in plain sight.

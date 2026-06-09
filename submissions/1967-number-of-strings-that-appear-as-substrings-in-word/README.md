@@ -12,17 +12,21 @@
 
 ## Pattern
 
-TODO
+Substring membership count.
 
 ## Key Idea
 
-TODO
+Scan every pattern and use Python's substring check to see whether it appears in the word. Count each pattern independently. This is direct and matches the small constraints.
 
 ## Mistake / Edge Case
 
-TODO
+Count patterns, not distinct substrings; duplicate patterns would each be checked as separate entries.
 
 ## Complexity
 
-- Time: TODO
-- Space: TODO
+- Time: O(p * L), roughly patterns times word-search cost
+- Space: O(1)
+
+## What Adrian Should Remember
+
+Use the language's string membership operator for simple substring checks before overbuilding.

@@ -13,17 +13,21 @@
 
 ## Pattern
 
-TODO
+Frequency counting.
 
 ## Key Idea
 
-TODO
+Track how many times each number has appeared. When a count becomes greater than one, append that number to the result. The problem guarantees two repeated values, so this direct frequency map is enough.
 
 ## Mistake / Edge Case
 
-TODO
+Append only when the count crosses above one, not on the first occurrence.
 
 ## Complexity
 
-- Time: TODO
-- Space: TODO
+- Time: O(n)
+- Space: O(n)
+
+## What Adrian Should Remember
+
+For duplicate detection, count as you scan and react when a value repeats.

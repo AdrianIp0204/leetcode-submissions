@@ -12,17 +12,21 @@
 
 ## Pattern
 
-TODO
+Trailing-zero observation.
 
 ## Key Idea
 
-TODO
+Reversing twice preserves the number unless the first reversal drops trailing zeros. The only non-preserved positive numbers are those ending in zero. Zero itself remains zero, so it is a special allowed case.
 
 ## Mistake / Edge Case
 
-TODO
+Do not reject `0`; only nonzero values divisible by 10 fail.
 
 ## Complexity
 
-- Time: TODO
-- Space: TODO
+- Time: O(1)
+- Space: O(1)
+
+## What Adrian Should Remember
+
+Look for what information an operation destroys; here reversal destroys trailing zeros.

@@ -12,17 +12,21 @@
 
 ## Pattern
 
-TODO
+Row-sum maximum.
 
 ## Key Idea
 
-TODO
+Each customer is one row of account balances. Sum each row and keep the largest row sum seen so far. The variable `c` is the current best wealth.
 
 ## Mistake / Edge Case
 
-TODO
+Initialize the best value low enough for the constraints; zero works here because balances are non-negative.
 
 ## Complexity
 
-- Time: TODO
-- Space: TODO
+- Time: O(mn), total account entries
+- Space: O(1)
+
+## What Adrian Should Remember
+
+For matrix rows with independent scores, reduce each row and track the best.

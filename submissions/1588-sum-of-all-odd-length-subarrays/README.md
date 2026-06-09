@@ -13,17 +13,21 @@
 
 ## Pattern
 
-TODO
+Brute force odd-length subarray enumeration.
 
 ## Key Idea
 
-TODO
+Start with the sum of all length-one subarrays, then enumerate longer odd lengths and add each covered element. The nested loops effectively add every odd-length window to the answer. This passes, but the contribution-counting formula would be a stronger solution because each element's number of odd-length appearances can be counted directly.
 
 ## Mistake / Edge Case
 
-TODO
+Only odd lengths should be included. The special return for arrays of length one or two avoids unnecessary loops.
 
 ## Complexity
 
-- Time: TODO
-- Space: TODO
+- Time: O(n^3)
+- Space: O(1)
+
+## What Adrian Should Remember
+
+When a brute force subarray sum works, ask whether each element's contribution can be counted instead.

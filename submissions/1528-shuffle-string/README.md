@@ -12,17 +12,21 @@
 
 ## Pattern
 
-TODO
+Index-placement reconstruction.
 
 ## Key Idea
 
-TODO
+Create an empty result array with the same length as the string. For each character and target index, place the character directly into its final position. Joining the result array gives the restored string.
 
 ## Mistake / Edge Case
 
-TODO
+The indices describe target positions, not source positions to read from.
 
 ## Complexity
 
-- Time: TODO
-- Space: TODO
+- Time: O(n)
+- Space: O(n)
+
+## What Adrian Should Remember
+
+When every item comes with its final index, assign directly instead of searching.

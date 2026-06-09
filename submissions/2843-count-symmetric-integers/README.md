@@ -13,17 +13,21 @@
 
 ## Pattern
 
-TODO
+Digit-sum brute force.
 
 ## Key Idea
 
-TODO
+Scan every number in the range and consider only even-length numbers relevant to the constraints. For two-digit numbers, compare the two digits directly. For four-digit numbers, sum the last two digits and the first two digits, then compare.
 
 ## Mistake / Edge Case
 
-TODO
+Odd-length numbers are not symmetric by this problem's definition and should not be counted.
 
 ## Complexity
 
-- Time: TODO
-- Space: TODO
+- Time: O(high - low + 1)
+- Space: O(1)
+
+## What Adrian Should Remember
+
+For small numeric ranges, direct digit handling is often simpler than generalizing too early.

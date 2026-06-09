@@ -12,17 +12,21 @@
 
 ## Pattern
 
-TODO
+Modulo remainder.
 
 ## Key Idea
 
-TODO
+The sum's remainder modulo `k` is exactly how much must be removed through unit decrements to reach a divisible total. Returning `sum(nums) % k` gives the minimum number of operations. No per-element choice matters for this version.
 
 ## Mistake / Edge Case
 
-TODO
+A zero remainder means the array sum is already divisible and needs zero operations.
 
 ## Complexity
 
-- Time: TODO
-- Space: TODO
+- Time: O(n)
+- Space: O(1)
+
+## What Adrian Should Remember
+
+For divisibility by decrements, the remainder often is the answer.

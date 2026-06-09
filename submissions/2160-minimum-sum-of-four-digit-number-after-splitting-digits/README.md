@@ -12,17 +12,21 @@
 
 ## Pattern
 
-TODO
+Greedy digit distribution.
 
 ## Key Idea
 
-TODO
+To minimize the sum of two new numbers, put the smallest digits in the tens places and the larger digits in the ones places. The code removes zeros from the explicit digit list, handles short nonzero cases, then sorts the remaining digits and distributes them. The problem is normally four digits including zeros, so a clearer version would sort all four digits and return `10*d0 + 10*d1 + d2 + d3`.
 
 ## Mistake / Edge Case
 
-TODO
+Zeros are meaningful digits in the original problem; this solution still works for accepted cases here, but the zero filtering makes the reasoning less transparent.
 
 ## Complexity
 
-- Time: TODO
-- Space: TODO
+- Time: O(d log d), with d = 4 here
+- Space: O(d)
+
+## What Adrian Should Remember
+
+For digit-greedy problems, keep zeros in the model unless there is a deliberate reason to remove them.
