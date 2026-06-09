@@ -1,11 +1,11 @@
 # Weakness Report
 
-- Generated at: 2026-06-09T11:57:07.984Z
-- Problems audited: 128
+- Generated at: 2026-06-09T12:05:34.706Z
+- Problems audited: 154
 
 ## Current Diagnosis
 
-- Reflection debt is the largest public-readiness issue: 123 problem READMEs still need filled Key Idea and Complexity sections.
+- Reflection debt is the largest public-readiness issue: 149 problem READMEs still need filled Key Idea and Complexity sections.
 - Status metadata still needs cleanup for 9 older submissions.
 - Failed attempts preserved in repo: no. This weakens the learning-story side of the portfolio.
 - TypeScript track present: no. This should begin after the exam as part of learning JS/TS for Morrow/Core work.
