@@ -4,11 +4,21 @@ Private sync repo for LeetCode solutions, public profile snapshots, notes, and r
 
 The current plan is privacy-first: use only this first-party extension, avoid storing LeetCode login cookies in GitHub, and keep this private until the solutions are curated enough to become portfolio material.
 
+The public-facing direction is a learning trace, not a trophy shelf: accepted
+solutions, failed attempts when real source exists, short reflections, weakness
+reports, and a visible record of Adrian moving from struggling with Easy
+problems toward stronger algorithmic fluency.
+
+Reflection notes, reports, cleanup, and repo organization are AI-assisted with
+Morrow, Adrian's local AI collaborator. Solutions are Adrian's attempts unless a
+file says otherwise.
+
 ## Layout
 
 - `submissions/` - accepted solutions, usually grouped by problem id and slug.
 - `notes/` - short explanations, patterns, mistakes, or follow-up ideas.
 - `profile/` - public LeetCode metadata snapshots, if a username is configured.
+- `reports/` - generated portfolio audit, weakness signals, and public-readiness checks.
 - `scripts/` - local sync helpers.
 - `extension/leetcode-exporter/` - first-party unpacked browser extension for saving visible LeetCode solutions.
 
@@ -36,6 +46,7 @@ Public LeetCode data can be fetched without a browser extension or login cookie:
 npm run fetch:public
 npm run sync:health
 npm run recommend:next
+npm run audit:portfolio
 ```
 
 That writes:
@@ -45,6 +56,8 @@ profile/leetcode-public.json
 profile/recent-accepted.md
 profile/sync-health.md
 notes/next-problems.md
+reports/portfolio-audit.md
+reports/weakness-report.md
 ```
 
 This only syncs public stats and recent accepted metadata. It does not fetch source code.
