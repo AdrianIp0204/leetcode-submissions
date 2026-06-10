@@ -1,9 +1,9 @@
 # Model Answer Coverage
 
-- Generated at: 2026-06-10T07:11:33.860Z
+- Generated at: 2026-06-10T07:57:36.969Z
 - Problems in repo: 154
-- Model-answer notes: 145
-- Missing model-answer notes: 9
+- Model-answer notes: 154
+- Missing model-answer notes: 0
 - Incomplete model-answer notes: 0
 - Notes without matching problem folder: 0
 
@@ -13,17 +13,7 @@ The model-answer track has started. Keep adding notes in batches, prioritizing r
 
 ## Next Coverage Batch
 
-| Problem | Title | Reason |
-| --- | --- | --- |
-| [3633-earliest-finish-time-for-land-and-water-rides-i](../submissions/3633-earliest-finish-time-for-land-and-water-rides-i/) | Earliest Finish Time for Land and Water Rides I | uncovered |
-| [3635-earliest-finish-time-for-land-and-water-rides-ii](../submissions/3635-earliest-finish-time-for-land-and-water-rides-ii/) | Earliest Finish Time for Land and Water Rides II | uncovered |
-| [3668-restore-finishing-order](../submissions/3668-restore-finishing-order/) | Restore Finishing Order | uncovered |
-| [3689-maximum-total-subarray-value-i](../submissions/3689-maximum-total-subarray-value-i/) | Maximum Total Subarray Value I | uncovered |
-| [3751-total-waviness-of-numbers-in-range-i](../submissions/3751-total-waviness-of-numbers-in-range-i/) | Total Waviness of Numbers in Range I | uncovered |
-| [3753-total-waviness-of-numbers-in-range-ii](../submissions/3753-total-waviness-of-numbers-in-range-ii/) | Total Waviness of Numbers in Range II | uncovered |
-| [3925-concatenate-array-with-reverse](../submissions/3925-concatenate-array-with-reverse/) | Concatenate Array With Reverse | uncovered |
-| [3941-password-strength](../submissions/3941-password-strength/) | Password Strength | uncovered |
-| [3945-digit-frequency-score](../submissions/3945-digit-frequency-score/) | Digit Frequency Score | uncovered |
+Every problem currently has a model-answer note.
 
 ## Existing Model Answers
 
