@@ -1,9 +1,9 @@
 # Model Answer Coverage
 
-- Generated at: 2026-06-10T01:58:35.236Z
+- Generated at: 2026-06-10T02:43:18.202Z
 - Problems in repo: 154
-- Model-answer notes: 75
-- Missing model-answer notes: 79
+- Model-answer notes: 85
+- Missing model-answer notes: 69
 - Incomplete model-answer notes: 0
 - Notes without matching problem folder: 0
 
@@ -15,16 +15,6 @@ The model-answer track has started. Keep adding notes in batches, prioritizing r
 
 | Problem | Title | Reason |
 | --- | --- | --- |
-| [1281-subtract-the-product-and-sum-of-digits-of-an-integer](../submissions/1281-subtract-the-product-and-sum-of-digits-of-an-integer/) | Subtract the Product and Sum of Digits of an Integer | uncovered |
-| [1295-find-numbers-with-even-number-of-digits](../submissions/1295-find-numbers-with-even-number-of-digits/) | Find Numbers with Even Number of Digits | uncovered |
-| [1304-find-n-unique-integers-sum-up-to-zero](../submissions/1304-find-n-unique-integers-sum-up-to-zero/) | Find N Unique Integers Sum up to Zero | uncovered |
-| [1323-maximum-69-number](../submissions/1323-maximum-69-number/) | Maximum 69 Number | uncovered |
-| [1365-how-many-numbers-are-smaller-than-the-current-number](../submissions/1365-how-many-numbers-are-smaller-than-the-current-number/) | How Many Numbers Are Smaller Than the Current Number | uncovered |
-| [1431-kids-with-the-greatest-number-of-candies](../submissions/1431-kids-with-the-greatest-number-of-candies/) | Kids With the Greatest Number of Candies | uncovered |
-| [1441-build-an-array-with-stack-operations](../submissions/1441-build-an-array-with-stack-operations/) | Build an Array With Stack Operations | uncovered |
-| [1450-number-of-students-doing-homework-at-a-given-time](../submissions/1450-number-of-students-doing-homework-at-a-given-time/) | Number of Students Doing Homework at a Given Time | uncovered |
-| [1464-maximum-product-of-two-elements-in-an-array](../submissions/1464-maximum-product-of-two-elements-in-an-array/) | Maximum Product of Two Elements in an Array | uncovered |
-| [1470-shuffle-the-array](../submissions/1470-shuffle-the-array/) | Shuffle the Array | uncovered |
 | [1480-running-sum-of-1d-array](../submissions/1480-running-sum-of-1d-array/) | Running Sum of 1d Array | uncovered |
 | [1486-xor-operation-in-an-array](../submissions/1486-xor-operation-in-an-array/) | XOR Operation in an Array | uncovered |
 | [1502-can-make-arithmetic-progression-from-sequence](../submissions/1502-can-make-arithmetic-progression-from-sequence/) | Can Make Arithmetic Progression From Sequence | uncovered |
@@ -45,6 +35,16 @@ The model-answer track has started. Keep adding notes in batches, prioritizing r
 | [2119-a-number-after-a-double-reversal](../submissions/2119-a-number-after-a-double-reversal/) | A Number After a Double Reversal | uncovered |
 | [2144-minimum-cost-of-buying-candies-with-discount](../submissions/2144-minimum-cost-of-buying-candies-with-discount/) | Minimum Cost of Buying Candies With Discount | uncovered |
 | [2160-minimum-sum-of-four-digit-number-after-splitting-digits](../submissions/2160-minimum-sum-of-four-digit-number-after-splitting-digits/) | Minimum Sum of Four Digit Number After Splitting Digits | uncovered |
+| [2161-partition-array-according-to-given-pivot](../submissions/2161-partition-array-according-to-given-pivot/) | Partition Array According to Given Pivot | uncovered |
+| [2169-count-operations-to-obtain-zero](../submissions/2169-count-operations-to-obtain-zero/) | Count Operations to Obtain Zero | uncovered |
+| [2176-count-equal-and-divisible-pairs-in-an-array](../submissions/2176-count-equal-and-divisible-pairs-in-an-array/) | Count Equal and Divisible Pairs in an Array | uncovered |
+| [2185-counting-words-with-a-given-prefix](../submissions/2185-counting-words-with-a-given-prefix/) | Counting Words With a Given Prefix | uncovered |
+| [2235-add-two-integers](../submissions/2235-add-two-integers/) | Add Two Integers | uncovered |
+| [2427-number-of-common-factors](../submissions/2427-number-of-common-factors/) | Number of Common Factors | uncovered |
+| [2469-convert-the-temperature](../submissions/2469-convert-the-temperature/) | Convert the Temperature | uncovered |
+| [2485-find-the-pivot-integer](../submissions/2485-find-the-pivot-integer/) | Find the Pivot Integer | uncovered |
+| [2520-count-the-digits-that-divide-a-number](../submissions/2520-count-the-digits-that-divide-a-number/) | Count the Digits That Divide a Number | uncovered |
+| [2523-closest-prime-numbers-in-range](../submissions/2523-closest-prime-numbers-in-range/) | Closest Prime Numbers in Range | uncovered |
 
 ## Existing Model Answers
 
