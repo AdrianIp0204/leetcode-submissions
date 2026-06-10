@@ -1,9 +1,9 @@
 # Model Answer Coverage
 
-- Generated at: 2026-06-10T05:42:12.430Z
+- Generated at: 2026-06-10T06:26:42.553Z
 - Problems in repo: 154
-- Model-answer notes: 125
-- Missing model-answer notes: 29
+- Model-answer notes: 135
+- Missing model-answer notes: 19
 - Incomplete model-answer notes: 0
 - Notes without matching problem folder: 0
 
@@ -15,16 +15,6 @@ The model-answer track has started. Keep adding notes in batches, prioritizing r
 
 | Problem | Title | Reason |
 | --- | --- | --- |
-| [2843-count-symmetric-integers](../submissions/2843-count-symmetric-integers/) | Count Symmetric Integers | uncovered |
-| [2864-maximum-odd-binary-number](../submissions/2864-maximum-odd-binary-number/) | Maximum Odd Binary Number | uncovered |
-| [2894-divisible-and-non-divisible-sums-difference](../submissions/2894-divisible-and-non-divisible-sums-difference/) | Divisible and Non-divisible Sums Difference | uncovered |
-| [2928-distribute-candies-among-children-i](../submissions/2928-distribute-candies-among-children-i/) | Distribute Candies Among Children I | uncovered |
-| [2942-find-words-containing-character](../submissions/2942-find-words-containing-character/) | Find Words Containing Character | uncovered |
-| [2974-minimum-number-game](../submissions/2974-minimum-number-game/) | Minimum Number Game | uncovered |
-| [3019-number-of-changing-keys](../submissions/3019-number-of-changing-keys/) | Number of Changing Keys | uncovered |
-| [3024-type-of-triangle](../submissions/3024-type-of-triangle/) | Type of Triangle | uncovered |
-| [3110-score-of-a-string](../submissions/3110-score-of-a-string/) | Score of a String | uncovered |
-| [3120-count-the-number-of-special-characters-i](../submissions/3120-count-the-number-of-special-characters-i/) | Count the Number of Special Characters I | uncovered |
 | [3136-valid-word](../submissions/3136-valid-word/) | Valid Word | uncovered |
 | [3146-permutation-difference-between-two-strings](../submissions/3146-permutation-difference-between-two-strings/) | Permutation Difference between Two Strings | uncovered |
 | [3232-find-if-digit-game-can-be-won](../submissions/3232-find-if-digit-game-can-be-won/) | Find if Digit Game Can Be Won | uncovered |
