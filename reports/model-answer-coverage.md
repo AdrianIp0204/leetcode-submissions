@@ -1,9 +1,9 @@
 # Model Answer Coverage
 
-- Generated at: 2026-06-10T00:18:56.741Z
+- Generated at: 2026-06-10T00:26:52.122Z
 - Problems in repo: 154
-- Model-answer notes: 45
-- Missing model-answer notes: 109
+- Model-answer notes: 55
+- Missing model-answer notes: 99
 - Incomplete model-answer notes: 0
 - Notes without matching problem folder: 0
 
@@ -15,16 +15,6 @@ The model-answer track has started. Keep adding notes in batches, prioritizing r
 
 | Problem | Title | Reason |
 | --- | --- | --- |
-| [0204-count-primes](../submissions/0204-count-primes/) | Count Primes | uncovered |
-| [0219-contains-duplicate-ii](../submissions/0219-contains-duplicate-ii/) | Contains Duplicate II | uncovered |
-| [0258-add-digits](../submissions/0258-add-digits/) | Add Digits | uncovered |
-| [0263-ugly-number](../submissions/0263-ugly-number/) | Ugly Number | uncovered |
-| [0268-missing-number](../submissions/0268-missing-number/) | Missing Number | uncovered |
-| [0292-nim-game](../submissions/0292-nim-game/) | Nim Game | uncovered |
-| [0342-power-of-four](../submissions/0342-power-of-four/) | Power of Four | uncovered |
-| [0349-intersection-of-two-arrays](../submissions/0349-intersection-of-two-arrays/) | Intersection of Two Arrays | uncovered |
-| [0387-first-unique-character-in-a-string](../submissions/0387-first-unique-character-in-a-string/) | First Unique Character in a String | uncovered |
-| [0409-longest-palindrome](../submissions/0409-longest-palindrome/) | Longest Palindrome | uncovered |
 | [0412-fizz-buzz](../submissions/0412-fizz-buzz/) | Fizz Buzz | uncovered |
 | [0414-third-maximum-number](../submissions/0414-third-maximum-number/) | Third Maximum Number | uncovered |
 | [0448-find-all-numbers-disappeared-in-an-array](../submissions/0448-find-all-numbers-disappeared-in-an-array/) | Find All Numbers Disappeared in an Array | uncovered |
@@ -45,6 +35,16 @@ The model-answer track has started. Keep adding notes in batches, prioritizing r
 | [1051-height-checker](../submissions/1051-height-checker/) | Height Checker | uncovered |
 | [1108-defanging-an-ip-address](../submissions/1108-defanging-an-ip-address/) | Defanging an IP Address | uncovered |
 | [1221-split-a-string-in-balanced-strings](../submissions/1221-split-a-string-in-balanced-strings/) | Split a String in Balanced Strings | uncovered |
+| [1281-subtract-the-product-and-sum-of-digits-of-an-integer](../submissions/1281-subtract-the-product-and-sum-of-digits-of-an-integer/) | Subtract the Product and Sum of Digits of an Integer | uncovered |
+| [1295-find-numbers-with-even-number-of-digits](../submissions/1295-find-numbers-with-even-number-of-digits/) | Find Numbers with Even Number of Digits | uncovered |
+| [1304-find-n-unique-integers-sum-up-to-zero](../submissions/1304-find-n-unique-integers-sum-up-to-zero/) | Find N Unique Integers Sum up to Zero | uncovered |
+| [1323-maximum-69-number](../submissions/1323-maximum-69-number/) | Maximum 69 Number | uncovered |
+| [1365-how-many-numbers-are-smaller-than-the-current-number](../submissions/1365-how-many-numbers-are-smaller-than-the-current-number/) | How Many Numbers Are Smaller Than the Current Number | uncovered |
+| [1431-kids-with-the-greatest-number-of-candies](../submissions/1431-kids-with-the-greatest-number-of-candies/) | Kids With the Greatest Number of Candies | uncovered |
+| [1441-build-an-array-with-stack-operations](../submissions/1441-build-an-array-with-stack-operations/) | Build an Array With Stack Operations | uncovered |
+| [1450-number-of-students-doing-homework-at-a-given-time](../submissions/1450-number-of-students-doing-homework-at-a-given-time/) | Number of Students Doing Homework at a Given Time | uncovered |
+| [1464-maximum-product-of-two-elements-in-an-array](../submissions/1464-maximum-product-of-two-elements-in-an-array/) | Maximum Product of Two Elements in an Array | uncovered |
+| [1470-shuffle-the-array](../submissions/1470-shuffle-the-array/) | Shuffle the Array | uncovered |
 
 ## Existing Model Answers
 
@@ -81,17 +81,22 @@ The model-answer track has started. Keep adding notes in batches, prioritizing r
 | [0172-factorial-trailing-zeroes](../notes/model-answers/0172-factorial-trailing-zeroes.md) | Factorial Trailing Zeroes |
 | [0175-combine-two-tables](../notes/model-answers/0175-combine-two-tables.md) | Combine Two Tables |
 | [0181-employees-earning-more-than-their-managers](../notes/model-answers/0181-employees-earning-more-than-their-managers.md) | Employees Earning More Than Their Managers |
+| [0204-count-primes](../notes/model-answers/0204-count-primes.md) | Count Primes |
 | [0206-reverse-linked-list](../notes/model-answers/0206-reverse-linked-list.md) | Reverse Linked List |
 | [0217-contains-duplicate](../notes/model-answers/0217-contains-duplicate.md) | Contains Duplicate |
+| [0219-contains-duplicate-ii](../notes/model-answers/0219-contains-duplicate-ii.md) | Contains Duplicate II |
 | [0238-product-of-array-except-self](../notes/model-answers/0238-product-of-array-except-self.md) | Product of Array Except Self |
 | [0242-valid-anagram](../notes/model-answers/0242-valid-anagram.md) | Valid Anagram |
+| [0258-add-digits](../notes/model-answers/0258-add-digits.md) | Add Digits |
+| [0263-ugly-number](../notes/model-answers/0263-ugly-number.md) | Ugly Number |
+| [0268-missing-number](../notes/model-answers/0268-missing-number.md) | Missing Number |
 | [0283-move-zeroes](../notes/model-answers/0283-move-zeroes.md) | Move Zeroes |
+| [0292-nim-game](../notes/model-answers/0292-nim-game.md) | Nim Game |
+| [0342-power-of-four](../notes/model-answers/0342-power-of-four.md) | Power of Four |
 | [0344-reverse-string](../notes/model-answers/0344-reverse-string.md) | Reverse String |
 | [0347-top-k-frequent-elements](../notes/model-answers/0347-top-k-frequent-elements.md) | Top K Frequent Elements |
+| [0349-intersection-of-two-arrays](../notes/model-answers/0349-intersection-of-two-arrays.md) | Intersection of Two Arrays |
+| [0387-first-unique-character-in-a-string](../notes/model-answers/0387-first-unique-character-in-a-string.md) | First Unique Character in a String |
+| [0409-longest-palindrome](../notes/model-answers/0409-longest-palindrome.md) | Longest Palindrome |
 | [0413-arithmetic-slices](../notes/model-answers/0413-arithmetic-slices.md) | Arithmetic Slices |
 | [0692-top-k-frequent-words](../notes/model-answers/0692-top-k-frequent-words.md) | Top K Frequent Words |
-| [0977-squares-of-a-sorted-array](../notes/model-answers/0977-squares-of-a-sorted-array.md) | Squares of a Sorted Array |
-| [1015-smallest-integer-divisible-by-k](../notes/model-answers/1015-smallest-integer-divisible-by-k.md) | Smallest Integer Divisible by K |
-| [1224-maximum-equal-frequency](../notes/model-answers/1224-maximum-equal-frequency.md) | Maximum Equal Frequency |
-| [1866-number-of-ways-to-rearrange-sticks-with-k-sticks-visible](../notes/model-answers/1866-number-of-ways-to-rearrange-sticks-with-k-sticks-visible.md) | Number of Ways to Rearrange Sticks With K Sticks Visible |
-| [2196-create-binary-tree-from-descriptions](../notes/model-answers/2196-create-binary-tree-from-descriptions.md) | Create Binary Tree From Descriptions |
