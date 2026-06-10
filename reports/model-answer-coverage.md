@@ -1,9 +1,9 @@
 # Model Answer Coverage
 
-- Generated at: 2026-06-10T02:43:18.202Z
+- Generated at: 2026-06-10T03:26:40.590Z
 - Problems in repo: 154
-- Model-answer notes: 85
-- Missing model-answer notes: 69
+- Model-answer notes: 95
+- Missing model-answer notes: 59
 - Incomplete model-answer notes: 0
 - Notes without matching problem folder: 0
 
@@ -15,16 +15,6 @@ The model-answer track has started. Keep adding notes in batches, prioritizing r
 
 | Problem | Title | Reason |
 | --- | --- | --- |
-| [1480-running-sum-of-1d-array](../submissions/1480-running-sum-of-1d-array/) | Running Sum of 1d Array | uncovered |
-| [1486-xor-operation-in-an-array](../submissions/1486-xor-operation-in-an-array/) | XOR Operation in an Array | uncovered |
-| [1502-can-make-arithmetic-progression-from-sequence](../submissions/1502-can-make-arithmetic-progression-from-sequence/) | Can Make Arithmetic Progression From Sequence | uncovered |
-| [1528-shuffle-string](../submissions/1528-shuffle-string/) | Shuffle String | uncovered |
-| [1550-three-consecutive-odds](../submissions/1550-three-consecutive-odds/) | Three Consecutive Odds | uncovered |
-| [1588-sum-of-all-odd-length-subarrays](../submissions/1588-sum-of-all-odd-length-subarrays/) | Sum of All Odd Length Subarrays | uncovered |
-| [1662-check-if-two-string-arrays-are-equivalent](../submissions/1662-check-if-two-string-arrays-are-equivalent/) | Check If Two String Arrays are Equivalent | uncovered |
-| [1672-richest-customer-wealth](../submissions/1672-richest-customer-wealth/) | Richest Customer Wealth | uncovered |
-| [1768-merge-strings-alternately](../submissions/1768-merge-strings-alternately/) | Merge Strings Alternately | uncovered |
-| [1822-sign-of-the-product-of-an-array](../submissions/1822-sign-of-the-product-of-an-array/) | Sign of the Product of an Array | uncovered |
 | [1832-check-if-the-sentence-is-pangram](../submissions/1832-check-if-the-sentence-is-pangram/) | Check if the Sentence Is Pangram | uncovered |
 | [1837-sum-of-digits-in-base-k](../submissions/1837-sum-of-digits-in-base-k/) | Sum of Digits in Base K | uncovered |
 | [1929-concatenation-of-array](../submissions/1929-concatenation-of-array/) | Concatenation of Array | uncovered |
@@ -45,6 +35,16 @@ The model-answer track has started. Keep adding notes in batches, prioritizing r
 | [2485-find-the-pivot-integer](../submissions/2485-find-the-pivot-integer/) | Find the Pivot Integer | uncovered |
 | [2520-count-the-digits-that-divide-a-number](../submissions/2520-count-the-digits-that-divide-a-number/) | Count the Digits That Divide a Number | uncovered |
 | [2523-closest-prime-numbers-in-range](../submissions/2523-closest-prime-numbers-in-range/) | Closest Prime Numbers in Range | uncovered |
+| [2535-difference-between-element-sum-and-digit-sum-of-an-array](../submissions/2535-difference-between-element-sum-and-digit-sum-of-an-array/) | Difference Between Element Sum and Digit Sum of an Array | uncovered |
+| [2553-separate-the-digits-in-an-array](../submissions/2553-separate-the-digits-in-an-array/) | Separate the Digits in an Array | uncovered |
+| [2574-left-and-right-sum-differences](../submissions/2574-left-and-right-sum-differences/) | Left and Right Sum Differences | uncovered |
+| [2652-sum-multiples](../submissions/2652-sum-multiples/) | Sum Multiples | uncovered |
+| [2656-maximum-sum-with-exactly-k-elements](../submissions/2656-maximum-sum-with-exactly-k-elements/) | Maximum Sum With Exactly K Elements | uncovered |
+| [2733-neither-minimum-nor-maximum](../submissions/2733-neither-minimum-nor-maximum/) | Neither Minimum nor Maximum | uncovered |
+| [2769-find-the-maximum-achievable-number](../submissions/2769-find-the-maximum-achievable-number/) | Find the Maximum Achievable Number | uncovered |
+| [2778-sum-of-squares-of-special-elements](../submissions/2778-sum-of-squares-of-special-elements/) | Sum of Squares of Special Elements | uncovered |
+| [2798-number-of-employees-who-met-the-target](../submissions/2798-number-of-employees-who-met-the-target/) | Number of Employees Who Met the Target | uncovered |
+| [2840-check-if-strings-can-be-made-equal-with-operations-ii](../submissions/2840-check-if-strings-can-be-made-equal-with-operations-ii/) | Check if Strings Can be Made Equal With Operations II | uncovered |
 
 ## Existing Model Answers
 
