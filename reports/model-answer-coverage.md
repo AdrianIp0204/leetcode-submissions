@@ -1,9 +1,9 @@
 # Model Answer Coverage
 
-- Generated at: 2026-06-10T04:57:11.660Z
+- Generated at: 2026-06-10T05:42:12.430Z
 - Problems in repo: 154
-- Model-answer notes: 115
-- Missing model-answer notes: 39
+- Model-answer notes: 125
+- Missing model-answer notes: 29
 - Incomplete model-answer notes: 0
 - Notes without matching problem folder: 0
 
@@ -15,16 +15,6 @@ The model-answer track has started. Keep adding notes in batches, prioritizing r
 
 | Problem | Title | Reason |
 | --- | --- | --- |
-| [2535-difference-between-element-sum-and-digit-sum-of-an-array](../submissions/2535-difference-between-element-sum-and-digit-sum-of-an-array/) | Difference Between Element Sum and Digit Sum of an Array | uncovered |
-| [2553-separate-the-digits-in-an-array](../submissions/2553-separate-the-digits-in-an-array/) | Separate the Digits in an Array | uncovered |
-| [2574-left-and-right-sum-differences](../submissions/2574-left-and-right-sum-differences/) | Left and Right Sum Differences | uncovered |
-| [2652-sum-multiples](../submissions/2652-sum-multiples/) | Sum Multiples | uncovered |
-| [2656-maximum-sum-with-exactly-k-elements](../submissions/2656-maximum-sum-with-exactly-k-elements/) | Maximum Sum With Exactly K Elements | uncovered |
-| [2733-neither-minimum-nor-maximum](../submissions/2733-neither-minimum-nor-maximum/) | Neither Minimum nor Maximum | uncovered |
-| [2769-find-the-maximum-achievable-number](../submissions/2769-find-the-maximum-achievable-number/) | Find the Maximum Achievable Number | uncovered |
-| [2778-sum-of-squares-of-special-elements](../submissions/2778-sum-of-squares-of-special-elements/) | Sum of Squares of Special Elements | uncovered |
-| [2798-number-of-employees-who-met-the-target](../submissions/2798-number-of-employees-who-met-the-target/) | Number of Employees Who Met the Target | uncovered |
-| [2840-check-if-strings-can-be-made-equal-with-operations-ii](../submissions/2840-check-if-strings-can-be-made-equal-with-operations-ii/) | Check if Strings Can be Made Equal With Operations II | uncovered |
 | [2843-count-symmetric-integers](../submissions/2843-count-symmetric-integers/) | Count Symmetric Integers | uncovered |
 | [2864-maximum-odd-binary-number](../submissions/2864-maximum-odd-binary-number/) | Maximum Odd Binary Number | uncovered |
 | [2894-divisible-and-non-divisible-sums-difference](../submissions/2894-divisible-and-non-divisible-sums-difference/) | Divisible and Non-divisible Sums Difference | uncovered |
@@ -45,6 +35,15 @@ The model-answer track has started. Keep adding notes in batches, prioritizing r
 | [3512-minimum-operations-to-make-array-sum-divisible-by-k](../submissions/3512-minimum-operations-to-make-array-sum-divisible-by-k/) | Minimum Operations to Make Array Sum Divisible by K | uncovered |
 | [3541-find-most-frequent-vowel-and-consonant](../submissions/3541-find-most-frequent-vowel-and-consonant/) | Find Most Frequent Vowel and Consonant | uncovered |
 | [3622-check-divisibility-by-digit-sum-and-product](../submissions/3622-check-divisibility-by-digit-sum-and-product/) | Check Divisibility by Digit Sum and Product | uncovered |
+| [3633-earliest-finish-time-for-land-and-water-rides-i](../submissions/3633-earliest-finish-time-for-land-and-water-rides-i/) | Earliest Finish Time for Land and Water Rides I | uncovered |
+| [3635-earliest-finish-time-for-land-and-water-rides-ii](../submissions/3635-earliest-finish-time-for-land-and-water-rides-ii/) | Earliest Finish Time for Land and Water Rides II | uncovered |
+| [3668-restore-finishing-order](../submissions/3668-restore-finishing-order/) | Restore Finishing Order | uncovered |
+| [3689-maximum-total-subarray-value-i](../submissions/3689-maximum-total-subarray-value-i/) | Maximum Total Subarray Value I | uncovered |
+| [3751-total-waviness-of-numbers-in-range-i](../submissions/3751-total-waviness-of-numbers-in-range-i/) | Total Waviness of Numbers in Range I | uncovered |
+| [3753-total-waviness-of-numbers-in-range-ii](../submissions/3753-total-waviness-of-numbers-in-range-ii/) | Total Waviness of Numbers in Range II | uncovered |
+| [3925-concatenate-array-with-reverse](../submissions/3925-concatenate-array-with-reverse/) | Concatenate Array With Reverse | uncovered |
+| [3941-password-strength](../submissions/3941-password-strength/) | Password Strength | uncovered |
+| [3945-digit-frequency-score](../submissions/3945-digit-frequency-score/) | Digit Frequency Score | uncovered |
 
 ## Existing Model Answers
 
