@@ -1,9 +1,9 @@
 # Model Answer Coverage
 
-- Generated at: 2026-06-10T06:26:42.553Z
+- Generated at: 2026-06-10T07:11:33.860Z
 - Problems in repo: 154
-- Model-answer notes: 135
-- Missing model-answer notes: 19
+- Model-answer notes: 145
+- Missing model-answer notes: 9
 - Incomplete model-answer notes: 0
 - Notes without matching problem folder: 0
 
@@ -15,16 +15,6 @@ The model-answer track has started. Keep adding notes in batches, prioritizing r
 
 | Problem | Title | Reason |
 | --- | --- | --- |
-| [3136-valid-word](../submissions/3136-valid-word/) | Valid Word | uncovered |
-| [3146-permutation-difference-between-two-strings](../submissions/3146-permutation-difference-between-two-strings/) | Permutation Difference between Two Strings | uncovered |
-| [3232-find-if-digit-game-can-be-won](../submissions/3232-find-if-digit-game-can-be-won/) | Find if Digit Game Can Be Won | uncovered |
-| [3270-find-the-key-of-the-numbers](../submissions/3270-find-the-key-of-the-numbers/) | Find the Key of the Numbers | uncovered |
-| [3289-the-two-sneaky-numbers-of-digitville](../submissions/3289-the-two-sneaky-numbers-of-digitville/) | The Two Sneaky Numbers of Digitville | uncovered |
-| [3370-smallest-number-with-all-set-bits](../submissions/3370-smallest-number-with-all-set-bits/) | Smallest Number With All Set Bits | uncovered |
-| [3492-maximum-containers-on-a-ship](../submissions/3492-maximum-containers-on-a-ship/) | Maximum Containers on a Ship | uncovered |
-| [3512-minimum-operations-to-make-array-sum-divisible-by-k](../submissions/3512-minimum-operations-to-make-array-sum-divisible-by-k/) | Minimum Operations to Make Array Sum Divisible by K | uncovered |
-| [3541-find-most-frequent-vowel-and-consonant](../submissions/3541-find-most-frequent-vowel-and-consonant/) | Find Most Frequent Vowel and Consonant | uncovered |
-| [3622-check-divisibility-by-digit-sum-and-product](../submissions/3622-check-divisibility-by-digit-sum-and-product/) | Check Divisibility by Digit Sum and Product | uncovered |
 | [3633-earliest-finish-time-for-land-and-water-rides-i](../submissions/3633-earliest-finish-time-for-land-and-water-rides-i/) | Earliest Finish Time for Land and Water Rides I | uncovered |
 | [3635-earliest-finish-time-for-land-and-water-rides-ii](../submissions/3635-earliest-finish-time-for-land-and-water-rides-ii/) | Earliest Finish Time for Land and Water Rides II | uncovered |
 | [3668-restore-finishing-order](../submissions/3668-restore-finishing-order/) | Restore Finishing Order | uncovered |
