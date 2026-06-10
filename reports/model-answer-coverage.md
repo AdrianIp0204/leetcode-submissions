@@ -1,9 +1,9 @@
 # Model Answer Coverage
 
-- Generated at: 2026-06-10T03:26:40.590Z
+- Generated at: 2026-06-10T04:11:55.921Z
 - Problems in repo: 154
-- Model-answer notes: 95
-- Missing model-answer notes: 59
+- Model-answer notes: 105
+- Missing model-answer notes: 49
 - Incomplete model-answer notes: 0
 - Notes without matching problem folder: 0
 
@@ -15,16 +15,6 @@ The model-answer track has started. Keep adding notes in batches, prioritizing r
 
 | Problem | Title | Reason |
 | --- | --- | --- |
-| [1832-check-if-the-sentence-is-pangram](../submissions/1832-check-if-the-sentence-is-pangram/) | Check if the Sentence Is Pangram | uncovered |
-| [1837-sum-of-digits-in-base-k](../submissions/1837-sum-of-digits-in-base-k/) | Sum of Digits in Base K | uncovered |
-| [1929-concatenation-of-array](../submissions/1929-concatenation-of-array/) | Concatenation of Array | uncovered |
-| [1967-number-of-strings-that-appear-as-substrings-in-word](../submissions/1967-number-of-strings-that-appear-as-substrings-in-word/) | Number of Strings That Appear as Substrings in Word | uncovered |
-| [2011-final-value-of-variable-after-performing-operations](../submissions/2011-final-value-of-variable-after-performing-operations/) | Final Value of Variable After Performing Operations | uncovered |
-| [2108-find-first-palindromic-string-in-the-array](../submissions/2108-find-first-palindromic-string-in-the-array/) | Find First Palindromic String in the Array | uncovered |
-| [2114-maximum-number-of-words-found-in-sentences](../submissions/2114-maximum-number-of-words-found-in-sentences/) | Maximum Number of Words Found in Sentences | uncovered |
-| [2119-a-number-after-a-double-reversal](../submissions/2119-a-number-after-a-double-reversal/) | A Number After a Double Reversal | uncovered |
-| [2144-minimum-cost-of-buying-candies-with-discount](../submissions/2144-minimum-cost-of-buying-candies-with-discount/) | Minimum Cost of Buying Candies With Discount | uncovered |
-| [2160-minimum-sum-of-four-digit-number-after-splitting-digits](../submissions/2160-minimum-sum-of-four-digit-number-after-splitting-digits/) | Minimum Sum of Four Digit Number After Splitting Digits | uncovered |
 | [2161-partition-array-according-to-given-pivot](../submissions/2161-partition-array-according-to-given-pivot/) | Partition Array According to Given Pivot | uncovered |
 | [2169-count-operations-to-obtain-zero](../submissions/2169-count-operations-to-obtain-zero/) | Count Operations to Obtain Zero | uncovered |
 | [2176-count-equal-and-divisible-pairs-in-an-array](../submissions/2176-count-equal-and-divisible-pairs-in-an-array/) | Count Equal and Divisible Pairs in an Array | uncovered |
@@ -45,6 +35,16 @@ The model-answer track has started. Keep adding notes in batches, prioritizing r
 | [2778-sum-of-squares-of-special-elements](../submissions/2778-sum-of-squares-of-special-elements/) | Sum of Squares of Special Elements | uncovered |
 | [2798-number-of-employees-who-met-the-target](../submissions/2798-number-of-employees-who-met-the-target/) | Number of Employees Who Met the Target | uncovered |
 | [2840-check-if-strings-can-be-made-equal-with-operations-ii](../submissions/2840-check-if-strings-can-be-made-equal-with-operations-ii/) | Check if Strings Can be Made Equal With Operations II | uncovered |
+| [2843-count-symmetric-integers](../submissions/2843-count-symmetric-integers/) | Count Symmetric Integers | uncovered |
+| [2864-maximum-odd-binary-number](../submissions/2864-maximum-odd-binary-number/) | Maximum Odd Binary Number | uncovered |
+| [2894-divisible-and-non-divisible-sums-difference](../submissions/2894-divisible-and-non-divisible-sums-difference/) | Divisible and Non-divisible Sums Difference | uncovered |
+| [2928-distribute-candies-among-children-i](../submissions/2928-distribute-candies-among-children-i/) | Distribute Candies Among Children I | uncovered |
+| [2942-find-words-containing-character](../submissions/2942-find-words-containing-character/) | Find Words Containing Character | uncovered |
+| [2974-minimum-number-game](../submissions/2974-minimum-number-game/) | Minimum Number Game | uncovered |
+| [3019-number-of-changing-keys](../submissions/3019-number-of-changing-keys/) | Number of Changing Keys | uncovered |
+| [3024-type-of-triangle](../submissions/3024-type-of-triangle/) | Type of Triangle | uncovered |
+| [3110-score-of-a-string](../submissions/3110-score-of-a-string/) | Score of a String | uncovered |
+| [3120-count-the-number-of-special-characters-i](../submissions/3120-count-the-number-of-special-characters-i/) | Count the Number of Special Characters I | uncovered |
 
 ## Existing Model Answers
 
