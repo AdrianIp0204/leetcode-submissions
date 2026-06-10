@@ -1,9 +1,9 @@
 # Model Answer Coverage
 
-- Generated at: 2026-06-09T23:41:56.229Z
+- Generated at: 2026-06-10T00:18:56.741Z
 - Problems in repo: 154
-- Model-answer notes: 35
-- Missing model-answer notes: 119
+- Model-answer notes: 45
+- Missing model-answer notes: 109
 - Incomplete model-answer notes: 0
 - Notes without matching problem folder: 0
 
@@ -15,16 +15,6 @@ The model-answer track has started. Keep adding notes in batches, prioritizing r
 
 | Problem | Title | Reason |
 | --- | --- | --- |
-| [0014-longest-common-prefix](../submissions/0014-longest-common-prefix/) | Longest Common Prefix | uncovered |
-| [0029-divide-two-integers](../submissions/0029-divide-two-integers/) | Divide Two Integers | uncovered |
-| [0058-length-of-last-word](../submissions/0058-length-of-last-word/) | Length of Last Word | uncovered |
-| [0060-permutation-sequence](../submissions/0060-permutation-sequence/) | Permutation Sequence | uncovered |
-| [0066-plus-one](../submissions/0066-plus-one/) | Plus One | uncovered |
-| [0083-remove-duplicates-from-sorted-list](../submissions/0083-remove-duplicates-from-sorted-list/) | Remove Duplicates from Sorted List | uncovered |
-| [0118-pascals-triangle](../submissions/0118-pascals-triangle/) | Pascal's Triangle | uncovered |
-| [0172-factorial-trailing-zeroes](../submissions/0172-factorial-trailing-zeroes/) | Factorial Trailing Zeroes | uncovered |
-| [0175-combine-two-tables](../submissions/0175-combine-two-tables/) | Combine Two Tables | uncovered |
-| [0181-employees-earning-more-than-their-managers](../submissions/0181-employees-earning-more-than-their-managers/) | Employees Earning More Than Their Managers | uncovered |
 | [0204-count-primes](../submissions/0204-count-primes/) | Count Primes | uncovered |
 | [0219-contains-duplicate-ii](../submissions/0219-contains-duplicate-ii/) | Contains Duplicate II | uncovered |
 | [0258-add-digits](../submissions/0258-add-digits/) | Add Digits | uncovered |
@@ -45,6 +35,16 @@ The model-answer track has started. Keep adding notes in batches, prioritizing r
 | [0657-robot-return-to-origin](../submissions/0657-robot-return-to-origin/) | Robot Return to Origin | uncovered |
 | [0682-baseball-game](../submissions/0682-baseball-game/) | Baseball Game | uncovered |
 | [0709-to-lower-case](../submissions/0709-to-lower-case/) | To Lower Case | uncovered |
+| [0728-self-dividing-numbers](../submissions/0728-self-dividing-numbers/) | Self Dividing Numbers | uncovered |
+| [0747-largest-number-at-least-twice-of-others](../submissions/0747-largest-number-at-least-twice-of-others/) | Largest Number At Least Twice of Others | uncovered |
+| [0771-jewels-and-stones](../submissions/0771-jewels-and-stones/) | Jewels and Stones | uncovered |
+| [0819-most-common-word](../submissions/0819-most-common-word/) | Most Common Word | uncovered |
+| [0884-uncommon-words-from-two-sentences](../submissions/0884-uncommon-words-from-two-sentences/) | Uncommon Words from Two Sentences | uncovered |
+| [1002-find-common-characters](../submissions/1002-find-common-characters/) | Find Common Characters | uncovered |
+| [1021-remove-outermost-parentheses](../submissions/1021-remove-outermost-parentheses/) | Remove Outermost Parentheses | uncovered |
+| [1051-height-checker](../submissions/1051-height-checker/) | Height Checker | uncovered |
+| [1108-defanging-an-ip-address](../submissions/1108-defanging-an-ip-address/) | Defanging an IP Address | uncovered |
+| [1221-split-a-string-in-balanced-strings](../submissions/1221-split-a-string-in-balanced-strings/) | Split a String in Balanced Strings | uncovered |
 
 ## Existing Model Answers
 
@@ -61,16 +61,26 @@ The model-answer track has started. Keep adding notes in batches, prioritizing r
 | [0011-container-with-most-water](../notes/model-answers/0011-container-with-most-water.md) | Container With Most Water |
 | [0012-integer-to-roman](../notes/model-answers/0012-integer-to-roman.md) | Integer to Roman |
 | [0013-roman-to-integer](../notes/model-answers/0013-roman-to-integer.md) | Roman to Integer |
+| [0014-longest-common-prefix](../notes/model-answers/0014-longest-common-prefix.md) | Longest Common Prefix |
 | [0020-valid-parentheses](../notes/model-answers/0020-valid-parentheses.md) | Valid Parentheses |
 | [0021-merge-two-sorted-lists](../notes/model-answers/0021-merge-two-sorted-lists.md) | Merge Two Sorted Lists |
 | [0026-remove-duplicates-from-sorted-array](../notes/model-answers/0026-remove-duplicates-from-sorted-array.md) | Remove Duplicates from Sorted Array |
 | [0028-find-the-index-of-the-first-occurrence-in-a-string](../notes/model-answers/0028-find-the-index-of-the-first-occurrence-in-a-string.md) | Find the Index of the First Occurrence in a String |
+| [0029-divide-two-integers](../notes/model-answers/0029-divide-two-integers.md) | Divide Two Integers |
 | [0049-group-anagrams](../notes/model-answers/0049-group-anagrams.md) | Group Anagrams |
+| [0058-length-of-last-word](../notes/model-answers/0058-length-of-last-word.md) | Length of Last Word |
+| [0060-permutation-sequence](../notes/model-answers/0060-permutation-sequence.md) | Permutation Sequence |
+| [0066-plus-one](../notes/model-answers/0066-plus-one.md) | Plus One |
 | [0069-sqrtx](../notes/model-answers/0069-sqrtx.md) | Sqrt(x) |
+| [0083-remove-duplicates-from-sorted-list](../notes/model-answers/0083-remove-duplicates-from-sorted-list.md) | Remove Duplicates from Sorted List |
+| [0118-pascals-triangle](../notes/model-answers/0118-pascals-triangle.md) | Pascal's Triangle |
 | [0121-best-time-to-buy-and-sell-stock](../notes/model-answers/0121-best-time-to-buy-and-sell-stock.md) | Best Time to Buy and Sell Stock |
 | [0125-valid-palindrome](../notes/model-answers/0125-valid-palindrome.md) | Valid Palindrome |
 | [0128-longest-consecutive-sequence](../notes/model-answers/0128-longest-consecutive-sequence.md) | Longest Consecutive Sequence |
 | [0136-single-number](../notes/model-answers/0136-single-number.md) | Single Number |
+| [0172-factorial-trailing-zeroes](../notes/model-answers/0172-factorial-trailing-zeroes.md) | Factorial Trailing Zeroes |
+| [0175-combine-two-tables](../notes/model-answers/0175-combine-two-tables.md) | Combine Two Tables |
+| [0181-employees-earning-more-than-their-managers](../notes/model-answers/0181-employees-earning-more-than-their-managers.md) | Employees Earning More Than Their Managers |
 | [0206-reverse-linked-list](../notes/model-answers/0206-reverse-linked-list.md) | Reverse Linked List |
 | [0217-contains-duplicate](../notes/model-answers/0217-contains-duplicate.md) | Contains Duplicate |
 | [0238-product-of-array-except-self](../notes/model-answers/0238-product-of-array-except-self.md) | Product of Array Except Self |
