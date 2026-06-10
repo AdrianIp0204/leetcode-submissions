@@ -1,9 +1,9 @@
 # Model Answer Coverage
 
-- Generated at: 2026-06-10T01:12:25.902Z
+- Generated at: 2026-06-10T01:58:35.236Z
 - Problems in repo: 154
-- Model-answer notes: 65
-- Missing model-answer notes: 89
+- Model-answer notes: 75
+- Missing model-answer notes: 79
 - Incomplete model-answer notes: 0
 - Notes without matching problem folder: 0
 
@@ -15,16 +15,6 @@ The model-answer track has started. Keep adding notes in batches, prioritizing r
 
 | Problem | Title | Reason |
 | --- | --- | --- |
-| [0728-self-dividing-numbers](../submissions/0728-self-dividing-numbers/) | Self Dividing Numbers | uncovered |
-| [0747-largest-number-at-least-twice-of-others](../submissions/0747-largest-number-at-least-twice-of-others/) | Largest Number At Least Twice of Others | uncovered |
-| [0771-jewels-and-stones](../submissions/0771-jewels-and-stones/) | Jewels and Stones | uncovered |
-| [0819-most-common-word](../submissions/0819-most-common-word/) | Most Common Word | uncovered |
-| [0884-uncommon-words-from-two-sentences](../submissions/0884-uncommon-words-from-two-sentences/) | Uncommon Words from Two Sentences | uncovered |
-| [1002-find-common-characters](../submissions/1002-find-common-characters/) | Find Common Characters | uncovered |
-| [1021-remove-outermost-parentheses](../submissions/1021-remove-outermost-parentheses/) | Remove Outermost Parentheses | uncovered |
-| [1051-height-checker](../submissions/1051-height-checker/) | Height Checker | uncovered |
-| [1108-defanging-an-ip-address](../submissions/1108-defanging-an-ip-address/) | Defanging an IP Address | uncovered |
-| [1221-split-a-string-in-balanced-strings](../submissions/1221-split-a-string-in-balanced-strings/) | Split a String in Balanced Strings | uncovered |
 | [1281-subtract-the-product-and-sum-of-digits-of-an-integer](../submissions/1281-subtract-the-product-and-sum-of-digits-of-an-integer/) | Subtract the Product and Sum of Digits of an Integer | uncovered |
 | [1295-find-numbers-with-even-number-of-digits](../submissions/1295-find-numbers-with-even-number-of-digits/) | Find Numbers with Even Number of Digits | uncovered |
 | [1304-find-n-unique-integers-sum-up-to-zero](../submissions/1304-find-n-unique-integers-sum-up-to-zero/) | Find N Unique Integers Sum up to Zero | uncovered |
@@ -45,6 +35,16 @@ The model-answer track has started. Keep adding notes in batches, prioritizing r
 | [1672-richest-customer-wealth](../submissions/1672-richest-customer-wealth/) | Richest Customer Wealth | uncovered |
 | [1768-merge-strings-alternately](../submissions/1768-merge-strings-alternately/) | Merge Strings Alternately | uncovered |
 | [1822-sign-of-the-product-of-an-array](../submissions/1822-sign-of-the-product-of-an-array/) | Sign of the Product of an Array | uncovered |
+| [1832-check-if-the-sentence-is-pangram](../submissions/1832-check-if-the-sentence-is-pangram/) | Check if the Sentence Is Pangram | uncovered |
+| [1837-sum-of-digits-in-base-k](../submissions/1837-sum-of-digits-in-base-k/) | Sum of Digits in Base K | uncovered |
+| [1929-concatenation-of-array](../submissions/1929-concatenation-of-array/) | Concatenation of Array | uncovered |
+| [1967-number-of-strings-that-appear-as-substrings-in-word](../submissions/1967-number-of-strings-that-appear-as-substrings-in-word/) | Number of Strings That Appear as Substrings in Word | uncovered |
+| [2011-final-value-of-variable-after-performing-operations](../submissions/2011-final-value-of-variable-after-performing-operations/) | Final Value of Variable After Performing Operations | uncovered |
+| [2108-find-first-palindromic-string-in-the-array](../submissions/2108-find-first-palindromic-string-in-the-array/) | Find First Palindromic String in the Array | uncovered |
+| [2114-maximum-number-of-words-found-in-sentences](../submissions/2114-maximum-number-of-words-found-in-sentences/) | Maximum Number of Words Found in Sentences | uncovered |
+| [2119-a-number-after-a-double-reversal](../submissions/2119-a-number-after-a-double-reversal/) | A Number After a Double Reversal | uncovered |
+| [2144-minimum-cost-of-buying-candies-with-discount](../submissions/2144-minimum-cost-of-buying-candies-with-discount/) | Minimum Cost of Buying Candies With Discount | uncovered |
+| [2160-minimum-sum-of-four-digit-number-after-splitting-digits](../submissions/2160-minimum-sum-of-four-digit-number-after-splitting-digits/) | Minimum Sum of Four Digit Number After Splitting Digits | uncovered |
 
 ## Existing Model Answers
 
