@@ -1,9 +1,9 @@
 # Model Answer Coverage
 
-- Generated at: 2026-06-10T04:11:55.921Z
+- Generated at: 2026-06-10T04:57:11.660Z
 - Problems in repo: 154
-- Model-answer notes: 105
-- Missing model-answer notes: 49
+- Model-answer notes: 115
+- Missing model-answer notes: 39
 - Incomplete model-answer notes: 0
 - Notes without matching problem folder: 0
 
@@ -15,16 +15,6 @@ The model-answer track has started. Keep adding notes in batches, prioritizing r
 
 | Problem | Title | Reason |
 | --- | --- | --- |
-| [2161-partition-array-according-to-given-pivot](../submissions/2161-partition-array-according-to-given-pivot/) | Partition Array According to Given Pivot | uncovered |
-| [2169-count-operations-to-obtain-zero](../submissions/2169-count-operations-to-obtain-zero/) | Count Operations to Obtain Zero | uncovered |
-| [2176-count-equal-and-divisible-pairs-in-an-array](../submissions/2176-count-equal-and-divisible-pairs-in-an-array/) | Count Equal and Divisible Pairs in an Array | uncovered |
-| [2185-counting-words-with-a-given-prefix](../submissions/2185-counting-words-with-a-given-prefix/) | Counting Words With a Given Prefix | uncovered |
-| [2235-add-two-integers](../submissions/2235-add-two-integers/) | Add Two Integers | uncovered |
-| [2427-number-of-common-factors](../submissions/2427-number-of-common-factors/) | Number of Common Factors | uncovered |
-| [2469-convert-the-temperature](../submissions/2469-convert-the-temperature/) | Convert the Temperature | uncovered |
-| [2485-find-the-pivot-integer](../submissions/2485-find-the-pivot-integer/) | Find the Pivot Integer | uncovered |
-| [2520-count-the-digits-that-divide-a-number](../submissions/2520-count-the-digits-that-divide-a-number/) | Count the Digits That Divide a Number | uncovered |
-| [2523-closest-prime-numbers-in-range](../submissions/2523-closest-prime-numbers-in-range/) | Closest Prime Numbers in Range | uncovered |
 | [2535-difference-between-element-sum-and-digit-sum-of-an-array](../submissions/2535-difference-between-element-sum-and-digit-sum-of-an-array/) | Difference Between Element Sum and Digit Sum of an Array | uncovered |
 | [2553-separate-the-digits-in-an-array](../submissions/2553-separate-the-digits-in-an-array/) | Separate the Digits in an Array | uncovered |
 | [2574-left-and-right-sum-differences](../submissions/2574-left-and-right-sum-differences/) | Left and Right Sum Differences | uncovered |
@@ -45,6 +35,16 @@ The model-answer track has started. Keep adding notes in batches, prioritizing r
 | [3024-type-of-triangle](../submissions/3024-type-of-triangle/) | Type of Triangle | uncovered |
 | [3110-score-of-a-string](../submissions/3110-score-of-a-string/) | Score of a String | uncovered |
 | [3120-count-the-number-of-special-characters-i](../submissions/3120-count-the-number-of-special-characters-i/) | Count the Number of Special Characters I | uncovered |
+| [3136-valid-word](../submissions/3136-valid-word/) | Valid Word | uncovered |
+| [3146-permutation-difference-between-two-strings](../submissions/3146-permutation-difference-between-two-strings/) | Permutation Difference between Two Strings | uncovered |
+| [3232-find-if-digit-game-can-be-won](../submissions/3232-find-if-digit-game-can-be-won/) | Find if Digit Game Can Be Won | uncovered |
+| [3270-find-the-key-of-the-numbers](../submissions/3270-find-the-key-of-the-numbers/) | Find the Key of the Numbers | uncovered |
+| [3289-the-two-sneaky-numbers-of-digitville](../submissions/3289-the-two-sneaky-numbers-of-digitville/) | The Two Sneaky Numbers of Digitville | uncovered |
+| [3370-smallest-number-with-all-set-bits](../submissions/3370-smallest-number-with-all-set-bits/) | Smallest Number With All Set Bits | uncovered |
+| [3492-maximum-containers-on-a-ship](../submissions/3492-maximum-containers-on-a-ship/) | Maximum Containers on a Ship | uncovered |
+| [3512-minimum-operations-to-make-array-sum-divisible-by-k](../submissions/3512-minimum-operations-to-make-array-sum-divisible-by-k/) | Minimum Operations to Make Array Sum Divisible by K | uncovered |
+| [3541-find-most-frequent-vowel-and-consonant](../submissions/3541-find-most-frequent-vowel-and-consonant/) | Find Most Frequent Vowel and Consonant | uncovered |
+| [3622-check-divisibility-by-digit-sum-and-product](../submissions/3622-check-divisibility-by-digit-sum-and-product/) | Check Divisibility by Digit Sum and Product | uncovered |
 
 ## Existing Model Answers
 
