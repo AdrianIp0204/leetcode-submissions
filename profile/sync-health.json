@@ -1,15 +1,15 @@
 {
-  "generatedAt": "2026-06-09T11:55:03.060Z",
+  "generatedAt": "2026-06-12T16:16:52.925Z",
   "username": "AdrianIp",
   "profileFetchedAt": "2026-06-09T11:26:29.295Z",
   "publicAcceptedSolved": 154,
   "publicAcceptedSubmissions": 169,
   "publicAttemptedProblems": 155,
   "publicTotalSubmissions": 223,
-  "localProblemFolders": 128,
-  "localCanonicalSolutions": 128,
-  "estimatedSolvedGap": 26,
-  "status": "behind",
+  "localProblemFolders": 154,
+  "localCanonicalSolutions": 154,
+  "estimatedSolvedGap": 0,
+  "status": "ok",
   "knownLocalProblems": [
     {
       "folder": "0001-two-sum",
@@ -102,6 +102,11 @@
       "hasCanonicalSolution": true
     },
     {
+      "folder": "0058-length-of-last-word",
+      "slug": "length-of-last-word",
+      "hasCanonicalSolution": true
+    },
+    {
       "folder": "0060-permutation-sequence",
       "slug": "permutation-sequence",
       "hasCanonicalSolution": true
@@ -132,8 +137,18 @@
       "hasCanonicalSolution": true
     },
     {
+      "folder": "0125-valid-palindrome",
+      "slug": "valid-palindrome",
+      "hasCanonicalSolution": true
+    },
+    {
       "folder": "0128-longest-consecutive-sequence",
       "slug": "longest-consecutive-sequence",
+      "hasCanonicalSolution": true
+    },
+    {
+      "folder": "0136-single-number",
+      "slug": "single-number",
       "hasCanonicalSolution": true
     },
     {
@@ -167,6 +182,11 @@
       "hasCanonicalSolution": true
     },
     {
+      "folder": "0219-contains-duplicate-ii",
+      "slug": "contains-duplicate-ii",
+      "hasCanonicalSolution": true
+    },
+    {
       "folder": "0238-product-of-array-except-self",
       "slug": "product-of-array-except-self",
       "hasCanonicalSolution": true
@@ -187,6 +207,41 @@
       "hasCanonicalSolution": true
     },
     {
+      "folder": "0268-missing-number",
+      "slug": "missing-number",
+      "hasCanonicalSolution": true
+    },
+    {
+      "folder": "0283-move-zeroes",
+      "slug": "move-zeroes",
+      "hasCanonicalSolution": true
+    },
+    {
+      "folder": "0292-nim-game",
+      "slug": "nim-game",
+      "hasCanonicalSolution": true
+    },
+    {
+      "folder": "0342-power-of-four",
+      "slug": "power-of-four",
+      "hasCanonicalSolution": true
+    },
+    {
+      "folder": "0344-reverse-string",
+      "slug": "reverse-string",
+      "hasCanonicalSolution": true
+    },
+    {
+      "folder": "0347-top-k-frequent-elements",
+      "slug": "top-k-frequent-elements",
+      "hasCanonicalSolution": true
+    },
+    {
+      "folder": "0349-intersection-of-two-arrays",
+      "slug": "intersection-of-two-arrays",
+      "hasCanonicalSolution": true
+    },
+    {
       "folder": "0387-first-unique-character-in-a-string",
       "slug": "first-unique-character-in-a-string",
       "hasCanonicalSolution": true
@@ -197,8 +252,18 @@
       "hasCanonicalSolution": true
     },
     {
+      "folder": "0412-fizz-buzz",
+      "slug": "fizz-buzz",
+      "hasCanonicalSolution": true
+    },
+    {
       "folder": "0413-arithmetic-slices",
       "slug": "arithmetic-slices",
+      "hasCanonicalSolution": true
+    },
+    {
+      "folder": "0414-third-maximum-number",
+      "slug": "third-maximum-number",
       "hasCanonicalSolution": true
     },
     {
@@ -207,8 +272,18 @@
       "hasCanonicalSolution": true
     },
     {
+      "folder": "0451-sort-characters-by-frequency",
+      "slug": "sort-characters-by-frequency",
+      "hasCanonicalSolution": true
+    },
+    {
       "folder": "0485-max-consecutive-ones",
       "slug": "max-consecutive-ones",
+      "hasCanonicalSolution": true
+    },
+    {
+      "folder": "0628-maximum-product-of-three-numbers",
+      "slug": "maximum-product-of-three-numbers",
       "hasCanonicalSolution": true
     },
     {
@@ -227,6 +302,11 @@
       "hasCanonicalSolution": true
     },
     {
+      "folder": "0692-top-k-frequent-words",
+      "slug": "top-k-frequent-words",
+      "hasCanonicalSolution": true
+    },
+    {
       "folder": "0709-to-lower-case",
       "slug": "to-lower-case",
       "hasCanonicalSolution": true
@@ -237,13 +317,33 @@
       "hasCanonicalSolution": true
     },
     {
+      "folder": "0747-largest-number-at-least-twice-of-others",
+      "slug": "largest-number-at-least-twice-of-others",
+      "hasCanonicalSolution": true
+    },
+    {
       "folder": "0771-jewels-and-stones",
       "slug": "jewels-and-stones",
       "hasCanonicalSolution": true
     },
     {
+      "folder": "0819-most-common-word",
+      "slug": "most-common-word",
+      "hasCanonicalSolution": true
+    },
+    {
+      "folder": "0884-uncommon-words-from-two-sentences",
+      "slug": "uncommon-words-from-two-sentences",
+      "hasCanonicalSolution": true
+    },
+    {
       "folder": "0977-squares-of-a-sorted-array",
       "slug": "squares-of-a-sorted-array",
+      "hasCanonicalSolution": true
+    },
+    {
+      "folder": "1002-find-common-characters",
+      "slug": "find-common-characters",
       "hasCanonicalSolution": true
     },
     {
@@ -299,6 +399,11 @@
     {
       "folder": "1365-how-many-numbers-are-smaller-than-the-current-number",
       "slug": "how-many-numbers-are-smaller-than-the-current-number",
+      "hasCanonicalSolution": true
+    },
+    {
+      "folder": "1431-kids-with-the-greatest-number-of-candies",
+      "slug": "kids-with-the-greatest-number-of-candies",
       "hasCanonicalSolution": true
     },
     {
@@ -397,6 +502,11 @@
       "hasCanonicalSolution": true
     },
     {
+      "folder": "2011-final-value-of-variable-after-performing-operations",
+      "slug": "final-value-of-variable-after-performing-operations",
+      "hasCanonicalSolution": true
+    },
+    {
       "folder": "2108-find-first-palindromic-string-in-the-array",
       "slug": "find-first-palindromic-string-in-the-array",
       "hasCanonicalSolution": true
@@ -414,6 +524,11 @@
     {
       "folder": "2144-minimum-cost-of-buying-candies-with-discount",
       "slug": "minimum-cost-of-buying-candies-with-discount",
+      "hasCanonicalSolution": true
+    },
+    {
+      "folder": "2160-minimum-sum-of-four-digit-number-after-splitting-digits",
+      "slug": "minimum-sum-of-four-digit-number-after-splitting-digits",
       "hasCanonicalSolution": true
     },
     {
@@ -567,6 +682,16 @@
       "hasCanonicalSolution": true
     },
     {
+      "folder": "3120-count-the-number-of-special-characters-i",
+      "slug": "count-the-number-of-special-characters-i",
+      "hasCanonicalSolution": true
+    },
+    {
+      "folder": "3136-valid-word",
+      "slug": "valid-word",
+      "hasCanonicalSolution": true
+    },
+    {
       "folder": "3146-permutation-difference-between-two-strings",
       "slug": "permutation-difference-between-two-strings",
       "hasCanonicalSolution": true
@@ -624,6 +749,11 @@
     {
       "folder": "3668-restore-finishing-order",
       "slug": "restore-finishing-order",
+      "hasCanonicalSolution": true
+    },
+    {
+      "folder": "3689-maximum-total-subarray-value-i",
+      "slug": "maximum-total-subarray-value-i",
       "hasCanonicalSolution": true
     },
     {
