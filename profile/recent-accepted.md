@@ -2,43 +2,43 @@
 
 - Username: AdrianIp
 - Profile: https://leetcode.com/u/AdrianIp/
-- Fetched at: 2026-06-09T11:26:29.295Z
-- Ranking: 1041708
+- Fetched at: 2026-06-13T15:31:00.414Z
+- Ranking: 728784
 - Display name: AdrianIp
 
 ## Solved
 
-- All: 154 solved / 169 accepted submissions
-- Easy: 122 solved / 137 accepted submissions
-- Medium: 27 solved / 27 accepted submissions
-- Hard: 5 solved / 5 accepted submissions
+- All: 224 solved / 255 accepted submissions
+- Easy: 180 solved / 209 accepted submissions
+- Medium: 37 solved / 39 accepted submissions
+- Hard: 7 solved / 7 accepted submissions
 
 ## Total Attempts
 
-- All: 155 attempted problems / 223 total submissions
-- Easy: 122 attempted problems / 167 total submissions
-- Medium: 27 attempted problems / 45 total submissions
-- Hard: 6 attempted problems / 11 total submissions
+- All: 225 attempted problems / 326 total submissions
+- Easy: 180 attempted problems / 252 total submissions
+- Medium: 37 attempted problems / 60 total submissions
+- Hard: 8 attempted problems / 14 total submissions
 
 ## Recent Accepted
 
-- 2026-06-09T06:09:38.000Z: [Intersection of Two Arrays](https://leetcode.com/problems/intersection-of-two-arrays/) (python3)
-- 2026-06-09T06:02:10.000Z: [Length of Last Word](https://leetcode.com/problems/length-of-last-word/) (python3)
-- 2026-06-09T05:58:49.000Z: [Sort Characters By Frequency](https://leetcode.com/problems/sort-characters-by-frequency/) (python3)
-- 2026-06-09T04:47:45.000Z: [Top K Frequent Words](https://leetcode.com/problems/top-k-frequent-words/) (python3)
-- 2026-06-09T03:51:15.000Z: [Uncommon Words from Two Sentences](https://leetcode.com/problems/uncommon-words-from-two-sentences/) (python3)
-- 2026-06-09T03:32:10.000Z: [Find Common Characters](https://leetcode.com/problems/find-common-characters/) (python3)
-- 2026-06-09T03:09:22.000Z: [Largest Number At Least Twice of Others](https://leetcode.com/problems/largest-number-at-least-twice-of-others/) (python3)
-- 2026-06-09T01:49:08.000Z: [Maximum Product of Three Numbers](https://leetcode.com/problems/maximum-product-of-three-numbers/) (python3)
-- 2026-06-09T01:42:19.000Z: [Single Number](https://leetcode.com/problems/single-number/) (python3)
-- 2026-06-09T01:25:36.000Z: [Maximum Total Subarray Value I](https://leetcode.com/problems/maximum-total-subarray-value-i/) (python3)
-- 2026-06-09T01:16:47.000Z: [Most Common Word](https://leetcode.com/problems/most-common-word/) (python3)
-- 2026-06-08T09:48:47.000Z: [Missing Number](https://leetcode.com/problems/missing-number/) (python3)
-- 2026-06-08T09:37:39.000Z: [Valid Word](https://leetcode.com/problems/valid-word/) (python3)
-- 2026-06-08T09:26:08.000Z: [Count the Number of Special Characters I](https://leetcode.com/problems/count-the-number-of-special-characters-i/) (python3)
-- 2026-06-08T09:14:06.000Z: [Nim Game](https://leetcode.com/problems/nim-game/) (cpp)
-- 2026-06-08T08:59:10.000Z: [Valid Palindrome](https://leetcode.com/problems/valid-palindrome/) (python3)
-- 2026-06-08T08:49:20.000Z: [Fizz Buzz](https://leetcode.com/problems/fizz-buzz/) (python3)
-- 2026-06-08T07:16:10.000Z: [Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/) (python3)
-- 2026-06-08T06:58:10.000Z: [Power of Four](https://leetcode.com/problems/power-of-four/) (python3)
-- 2026-06-08T06:52:18.000Z: [Reverse String](https://leetcode.com/problems/reverse-string/) (python3)
+- 2026-06-13T14:49:17.000Z: [Minimum Average of Smallest and Largest Elements](https://leetcode.com/problems/minimum-average-of-smallest-and-largest-elements/) (python3)
+- 2026-06-13T14:35:26.000Z: [Count Number of Pairs With Absolute Difference K](https://leetcode.com/problems/count-number-of-pairs-with-absolute-difference-k/) (python3)
+- 2026-06-13T14:00:23.000Z: [Truncate Sentence](https://leetcode.com/problems/truncate-sentence/) (python3)
+- 2026-06-13T13:51:08.000Z: [Goal Parser Interpretation](https://leetcode.com/problems/goal-parser-interpretation/) (python3)
+- 2026-06-13T11:09:29.000Z: [Find Closest Person](https://leetcode.com/problems/find-closest-person/) (python3)
+- 2026-06-13T11:04:07.000Z: [Count Digit Appearances](https://leetcode.com/problems/count-digit-appearances/) (python3)
+- 2026-06-13T10:55:26.000Z: [Strictly Palindromic Number](https://leetcode.com/problems/strictly-palindromic-number/) (python3)
+- 2026-06-13T10:50:39.000Z: [Maximum Substrings With Distinct Start](https://leetcode.com/problems/maximum-substrings-with-distinct-start/) (python3)
+- 2026-06-13T10:45:31.000Z: [Sort Array by Increasing Frequency](https://leetcode.com/problems/sort-array-by-increasing-frequency/) (python3)
+- 2026-06-13T10:39:56.000Z: [Sort the People](https://leetcode.com/problems/sort-the-people/) (python3)
+- 2026-06-13T10:31:01.000Z: [Reverse String Prefix](https://leetcode.com/problems/reverse-string-prefix/) (python3)
+- 2026-06-13T10:25:39.000Z: [Compute Alternating Sum](https://leetcode.com/problems/compute-alternating-sum/) (python3)
+- 2026-06-13T10:20:25.000Z: [Build Array from Permutation](https://leetcode.com/problems/build-array-from-permutation/) (python3)
+- 2026-06-13T10:15:30.000Z: [Mirror Distance of an Integer](https://leetcode.com/problems/mirror-distance-of-an-integer/) (cpp)
+- 2026-06-13T10:07:54.000Z: [Find the Degree of Each Vertex](https://leetcode.com/problems/find-the-degree-of-each-vertex/) (python3)
+- 2026-06-13T04:47:16.000Z: [Intersection of Multiple Arrays](https://leetcode.com/problems/intersection-of-multiple-arrays/) (python3)
+- 2026-06-13T04:42:34.000Z: [Find the Difference of Two Arrays](https://leetcode.com/problems/find-the-difference-of-two-arrays/) (python3)
+- 2026-06-13T04:38:41.000Z: [Intersection of Two Arrays II](https://leetcode.com/problems/intersection-of-two-arrays-ii/) (python3)
+- 2026-06-13T04:30:18.000Z: [Minimum Common Value](https://leetcode.com/problems/minimum-common-value/) (python3)
+- 2026-06-13T04:23:40.000Z: [Minimum Element After Replacement With Digit Sum](https://leetcode.com/problems/minimum-element-after-replacement-with-digit-sum/) (python3)

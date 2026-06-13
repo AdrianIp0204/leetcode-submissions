@@ -1,15 +1,15 @@
 {
-  "generatedAt": "2026-06-12T16:33:34.445Z",
+  "generatedAt": "2026-06-13T15:32:27.803Z",
   "username": "AdrianIp",
-  "profileFetchedAt": "2026-06-09T11:26:29.295Z",
-  "publicAcceptedSolved": 154,
-  "publicAcceptedSubmissions": 169,
-  "publicAttemptedProblems": 155,
-  "publicTotalSubmissions": 223,
+  "profileFetchedAt": "2026-06-13T15:31:00.414Z",
+  "publicAcceptedSolved": 224,
+  "publicAcceptedSubmissions": 255,
+  "publicAttemptedProblems": 225,
+  "publicTotalSubmissions": 326,
   "localProblemFolders": 154,
   "localCanonicalSolutions": 154,
-  "estimatedSolvedGap": 0,
-  "status": "ok",
+  "estimatedSolvedGap": 70,
+  "status": "behind",
   "knownLocalProblems": [
     {
       "folder": "0001-two-sum",

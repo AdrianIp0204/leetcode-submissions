@@ -1,9 +1,9 @@
 # Portfolio Audit
 
-- Generated at: 2026-06-09T13:59:10.872Z
+- Generated at: 2026-06-13T15:32:38.104Z
 - Local problem folders: 154
-- Public solved count: 154
-- Estimated solved-count gap: 0
+- Public solved count: 224
+- Estimated solved-count gap: 70
 - Problems with real attempt files: 0
 - Problems with multiple languages or recorded language variants: 6
 - Problems needing reflection cleanup: 0
@@ -13,7 +13,7 @@
 
 This repo is worth making public later, but not as a raw dump. It already has a privacy-first sync system and a large accepted-solution archive. The public version should present the repo as a learning trace: accepted code, failed attempts when available, short reflections, weakness reports, and honest AI-assisted curation.
 
-Do not publish yet. The main blockers are no preserved failed attempts, no TypeScript track, public-facing explanation still needing a final pass.
+Do not publish yet. The main blockers are the source-code sync gap, no preserved failed attempts, no TypeScript track, public-facing explanation still needing a final pass.
 
 ## Language Coverage
 
@@ -40,6 +40,7 @@ Do not publish yet. The main blockers are no preserved failed attempts, no TypeS
 
 ## Weakness Signals
 
+- 70 public solved problems are not yet represented by local source folders.
 - 0 of 154 problem READMEs still need real reflection.
 - 6 submissions have unknown or missing status metadata.
 - No failed attempts are preserved yet, so the repo cannot fully show the early struggle-to-improvement arc.
