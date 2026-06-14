@@ -1,14 +1,14 @@
 # Weakness Report
 
-- Generated at: 2026-06-13T15:32:38.104Z
-- Problems audited: 154
+- Generated at: 2026-06-14T01:27:20.255Z
+- Problems audited: 225
 
 ## Current Diagnosis
 
 - Reflection debt is cleared for root problem READMEs; keep the habit for new accepted submissions.
 - Status metadata still needs cleanup for 6 older submissions.
-- Failed attempts preserved in repo: no. This weakens the learning-story side of the portfolio.
-- TypeScript track present: no. This should begin after the exam as part of learning JS/TS for Morrow/Core work.
+- Failed attempts preserved in repo: yes. This weakens the learning-story side of the portfolio.
+- TypeScript track present: yes. This should begin after the exam as part of learning JS/TS for Morrow/Core work.
 
 ## Weak Pattern Areas
 

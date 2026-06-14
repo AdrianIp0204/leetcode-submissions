@@ -1,11 +1,11 @@
 # Portfolio Audit
 
-- Generated at: 2026-06-13T15:32:38.104Z
-- Local problem folders: 154
+- Generated at: 2026-06-14T01:27:20.255Z
+- Local problem folders: 225
 - Public solved count: 224
-- Estimated solved-count gap: 70
-- Problems with real attempt files: 0
-- Problems with multiple languages or recorded language variants: 6
+- Estimated solved-count gap: 0
+- Problems with real attempt files: 34
+- Problems with multiple languages or recorded language variants: 40
 - Problems needing reflection cleanup: 0
 - Problems with unknown/missing status metadata: 6
 
@@ -13,38 +13,37 @@
 
 This repo is worth making public later, but not as a raw dump. It already has a privacy-first sync system and a large accepted-solution archive. The public version should present the repo as a learning trace: accepted code, failed attempts when available, short reflections, weakness reports, and honest AI-assisted curation.
 
-Do not publish yet. The main blockers are the source-code sync gap, no preserved failed attempts, no TypeScript track, public-facing explanation still needing a final pass.
+Do not publish yet. The main blockers are no preserved failed attempts, no TypeScript track, public-facing explanation still needing a final pass.
 
 ## Language Coverage
 
 | Language | Problems |
 | --- | --- |
-| cpp | 8 |
-| python | 150 |
+| cpp | 10 |
+| md | 34 |
+| python | 215 |
 | sql-or-text | 2 |
+| typescript | 4 |
 
 ## Pattern Coverage
 
 | Pattern | Problems |
 | --- | --- |
-| arrays-and-strings | 40 |
+| arrays-and-strings | 65 |
 | dynamic-programming | 2 |
 | hashing-and-counting | 9 |
 | linked-list | 2 |
-| math-and-digits | 57 |
+| math-and-digits | 72 |
 | sql | 2 |
 | stack | 3 |
 | tree-and-graph | 1 |
-| two-pointers | 3 |
-| uncategorized | 35 |
+| two-pointers | 4 |
+| uncategorized | 65 |
 
 ## Weakness Signals
 
-- 70 public solved problems are not yet represented by local source folders.
-- 0 of 154 problem READMEs still need real reflection.
+- 0 of 225 problem READMEs still need real reflection.
 - 6 submissions have unknown or missing status metadata.
-- No failed attempts are preserved yet, so the repo cannot fully show the early struggle-to-improvement arc.
-- No TypeScript solutions are present yet; future JS/TS learning should be visible as a new track.
 - Tree/graph/DP coverage is thin relative to array, string, math, and simple loop problems.
 
 ## Cleanup Order
