@@ -13,11 +13,11 @@
 
 ## Pattern
 
-TODO
+Directional membership counting
 
 ## Key Idea
 
-TODO
+Count elements of nums1 that appear in nums2, then count elements of nums2 that appear in nums1.
 
 ## Mistake / Edge Case
 
@@ -25,5 +25,5 @@ TODO
 
 ## Complexity
 
-- Time: TODO
-- Space: TODO
+- Time: O(n * m)
+- Space: O(1)

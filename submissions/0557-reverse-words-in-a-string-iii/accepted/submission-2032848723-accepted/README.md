@@ -12,11 +12,11 @@
 
 ## Pattern
 
-TODO
+Split string and reverse each word
 
 ## Key Idea
 
-TODO
+Split the sentence into words, replace each word with its slice-reversed form, and join the words back in order.
 
 ## Mistake / Edge Case
 
@@ -24,5 +24,5 @@ TODO
 
 ## Complexity
 
-- Time: TODO
-- Space: TODO
+- Time: O(n)
+- Space: O(n)

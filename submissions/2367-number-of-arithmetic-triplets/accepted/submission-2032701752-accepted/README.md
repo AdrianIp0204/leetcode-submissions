@@ -13,11 +13,11 @@
 
 ## Pattern
 
-TODO
+Triple enumeration
 
 ## Key Idea
 
-TODO
+Try ordered triples and count those where both adjacent differences equal diff.
 
 ## Mistake / Edge Case
 
@@ -25,5 +25,5 @@ TODO
 
 ## Complexity
 
-- Time: TODO
-- Space: TODO
+- Time: O(n^3)
+- Space: O(1)

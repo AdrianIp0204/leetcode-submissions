@@ -13,11 +13,11 @@
 
 ## Pattern
 
-TODO
+Frequency map and equal-count check
 
 ## Key Idea
 
-TODO
+Count characters, use one count as the reference, and reject any different count.
 
 ## Mistake / Edge Case
 
@@ -25,5 +25,5 @@ TODO
 
 ## Complexity
 
-- Time: TODO
-- Space: TODO
+- Time: O(n)
+- Space: O(k), where k is the number of distinct characters

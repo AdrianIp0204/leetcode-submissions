@@ -12,11 +12,11 @@
 
 ## Pattern
 
-TODO
+Closure over mutable state
 
 ## Key Idea
 
-TODO
+Return a function that closes over n and post-increments it on each call.
 
 ## Mistake / Edge Case
 
@@ -24,5 +24,5 @@ TODO
 
 ## Complexity
 
-- Time: TODO
-- Space: TODO
+- Time: O(1) per call
+- Space: O(1)

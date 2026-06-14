@@ -12,11 +12,11 @@
 
 ## Pattern
 
-TODO
+Mirrored index scan
 
 ## Key Idea
 
-TODO
+Scan indices from left to right and compare each character with its mirror from the right end.
 
 ## Mistake / Edge Case
 
@@ -24,5 +24,5 @@ TODO
 
 ## Complexity
 
-- Time: TODO
-- Space: TODO
+- Time: O(n)
+- Space: O(1)

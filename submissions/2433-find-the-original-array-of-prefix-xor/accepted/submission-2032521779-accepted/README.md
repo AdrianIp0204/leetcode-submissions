@@ -13,11 +13,11 @@
 
 ## Pattern
 
-TODO
+Prefix XOR inversion
 
 ## Key Idea
 
-TODO
+Track the previous restored prefix XOR; XOR it with the current prefix value to recover the original element in place.
 
 ## Mistake / Edge Case
 
@@ -25,5 +25,5 @@ TODO
 
 ## Complexity
 
-- Time: TODO
-- Space: TODO
+- Time: O(n)
+- Space: O(1) extra

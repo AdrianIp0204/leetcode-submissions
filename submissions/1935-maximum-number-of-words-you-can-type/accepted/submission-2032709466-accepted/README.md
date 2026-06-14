@@ -12,11 +12,11 @@
 
 ## Pattern
 
-TODO
+Word scan with forbidden characters
 
 ## Key Idea
 
-TODO
+Split text into words and exclude each word that contains at least one broken letter.
 
 ## Mistake / Edge Case
 
@@ -24,5 +24,5 @@ TODO
 
 ## Complexity
 
-- Time: TODO
-- Space: TODO
+- Time: O(w * b * m), where w is words, b is broken letters, and m is word length for membership checks
+- Space: O(w) for the split words

@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-06-14T03:43:29.872Z",
+  "generatedAt": "2026-06-14T15:35:46.350Z",
   "totals": {
-    "problemFolders": 227,
-    "publicSolved": 224,
+    "problemFolders": 248,
+    "publicSolved": 247,
     "estimatedSolvedGap": 0,
     "problemsWithAttempts": 34,
-    "problemsNeedingReflection": 0,
-    "problemsWithUnknownStatus": 6
+    "problemsNeedingReflection": 21,
+    "problemsWithUnknownStatus": 27
   },
   "byLanguage": {
     "cpp": 10,
@@ -16,16 +16,16 @@
     "typescript": 5
   },
   "byPattern": {
-    "arrays-and-strings": 66,
+    "arrays-and-strings": 71,
     "dynamic-programming": 2,
     "hashing-and-counting": 9,
     "linked-list": 2,
-    "math-and-digits": 72,
+    "math-and-digits": 83,
     "sql": 2,
     "stack": 3,
     "tree-and-graph": 1,
     "two-pointers": 4,
-    "uncategorized": 66
+    "uncategorized": 71
   },
   "problems": [
     {
@@ -1543,6 +1543,22 @@
       ]
     },
     {
+      "id": 557,
+      "folder": "0557-reverse-words-in-a-string-iii",
+      "slug": "reverse-words-in-a-string-iii",
+      "title": "Reverse Words In A String Iii",
+      "pattern": "arrays-and-strings",
+      "hasReadme": false,
+      "status": "Not recorded",
+      "todoCount": 0,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": []
+    },
+    {
       "id": 561,
       "folder": "0561-array-partition",
       "slug": "array-partition",
@@ -2149,6 +2165,22 @@
       ]
     },
     {
+      "id": 1207,
+      "folder": "1207-unique-number-of-occurrences",
+      "slug": "unique-number-of-occurrences",
+      "title": "Unique Number Of Occurrences",
+      "pattern": "math-and-digits",
+      "hasReadme": false,
+      "status": "Not recorded",
+      "todoCount": 0,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": []
+    },
+    {
       "id": 1221,
       "folder": "1221-split-a-string-in-balanced-strings",
       "slug": "split-a-string-in-balanced-strings",
@@ -2515,6 +2547,22 @@
       ]
     },
     {
+      "id": 1512,
+      "folder": "1512-number-of-good-pairs",
+      "slug": "number-of-good-pairs",
+      "title": "Number Of Good Pairs",
+      "pattern": "math-and-digits",
+      "hasReadme": false,
+      "status": "Not recorded",
+      "todoCount": 0,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": []
+    },
+    {
       "id": 1528,
       "folder": "1528-shuffle-string",
       "slug": "shuffle-string",
@@ -2653,6 +2701,38 @@
       "languages": [
         "python"
       ]
+    },
+    {
+      "id": 1684,
+      "folder": "1684-count-the-number-of-consistent-strings",
+      "slug": "count-the-number-of-consistent-strings",
+      "title": "Count The Number Of Consistent Strings",
+      "pattern": "arrays-and-strings",
+      "hasReadme": false,
+      "status": "Not recorded",
+      "todoCount": 0,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": []
+    },
+    {
+      "id": 1748,
+      "folder": "1748-sum-of-unique-elements",
+      "slug": "sum-of-unique-elements",
+      "title": "Sum Of Unique Elements",
+      "pattern": "math-and-digits",
+      "hasReadme": false,
+      "status": "Not recorded",
+      "todoCount": 0,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": []
     },
     {
       "id": 1768,
@@ -2813,6 +2893,38 @@
       "languages": [
         "python"
       ]
+    },
+    {
+      "id": 1935,
+      "folder": "1935-maximum-number-of-words-you-can-type",
+      "slug": "maximum-number-of-words-you-can-type",
+      "title": "Maximum Number Of Words You Can Type",
+      "pattern": "math-and-digits",
+      "hasReadme": false,
+      "status": "Not recorded",
+      "todoCount": 0,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": []
+    },
+    {
+      "id": 1941,
+      "folder": "1941-check-if-all-characters-have-equal-number-of-occurrences",
+      "slug": "check-if-all-characters-have-equal-number-of-occurrences",
+      "title": "Check If All Characters Have Equal Number Of Occurrences",
+      "pattern": "math-and-digits",
+      "hasReadme": false,
+      "status": "Not recorded",
+      "todoCount": 0,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": []
     },
     {
       "id": 1952,
@@ -3025,6 +3137,22 @@
       "languages": [
         "python"
       ]
+    },
+    {
+      "id": 2130,
+      "folder": "2130-maximum-twin-sum-of-a-linked-list",
+      "slug": "maximum-twin-sum-of-a-linked-list",
+      "title": "Maximum Twin Sum Of A Linked List",
+      "pattern": "math-and-digits",
+      "hasReadme": false,
+      "status": "Not recorded",
+      "todoCount": 0,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": []
     },
     {
       "id": 2144,
@@ -3255,6 +3383,22 @@
       ]
     },
     {
+      "id": 2367,
+      "folder": "2367-number-of-arithmetic-triplets",
+      "slug": "number-of-arithmetic-triplets",
+      "title": "Number Of Arithmetic Triplets",
+      "pattern": "math-and-digits",
+      "hasReadme": false,
+      "status": "Not recorded",
+      "todoCount": 0,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": []
+    },
+    {
       "id": 2390,
       "folder": "2390-removing-stars-from-a-string",
       "slug": "removing-stars-from-a-string",
@@ -3355,6 +3499,22 @@
       ]
     },
     {
+      "id": 2433,
+      "folder": "2433-find-the-original-array-of-prefix-xor",
+      "slug": "find-the-original-array-of-prefix-xor",
+      "title": "Find The Original Array Of Prefix Xor",
+      "pattern": "arrays-and-strings",
+      "hasReadme": false,
+      "status": "Not recorded",
+      "todoCount": 0,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": []
+    },
+    {
       "id": 2437,
       "folder": "2437-number-of-valid-clock-times",
       "slug": "number-of-valid-clock-times",
@@ -3373,6 +3533,38 @@
       "languages": [
         "python"
       ]
+    },
+    {
+      "id": 2441,
+      "folder": "2441-largest-positive-integer-that-exists-with-its-negative",
+      "slug": "largest-positive-integer-that-exists-with-its-negative",
+      "title": "Largest Positive Integer That Exists With Its Negative",
+      "pattern": "math-and-digits",
+      "hasReadme": false,
+      "status": "Not recorded",
+      "todoCount": 0,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": []
+    },
+    {
+      "id": 2465,
+      "folder": "2465-number-of-distinct-averages",
+      "slug": "number-of-distinct-averages",
+      "title": "Number Of Distinct Averages",
+      "pattern": "math-and-digits",
+      "hasReadme": false,
+      "status": "Not recorded",
+      "todoCount": 0,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": []
     },
     {
       "id": 2469,
@@ -3565,6 +3757,22 @@
       ]
     },
     {
+      "id": 2620,
+      "folder": "2620-counter",
+      "slug": "counter",
+      "title": "Counter",
+      "pattern": "uncategorized",
+      "hasReadme": false,
+      "status": "Not recorded",
+      "todoCount": 0,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": []
+    },
+    {
       "id": 2652,
       "folder": "2652-sum-multiples",
       "slug": "sum-multiples",
@@ -3605,6 +3813,38 @@
       "languages": [
         "python"
       ]
+    },
+    {
+      "id": 2657,
+      "folder": "2657-find-the-prefix-common-array-of-two-arrays",
+      "slug": "find-the-prefix-common-array-of-two-arrays",
+      "title": "Find The Prefix Common Array Of Two Arrays",
+      "pattern": "arrays-and-strings",
+      "hasReadme": false,
+      "status": "Not recorded",
+      "todoCount": 0,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": []
+    },
+    {
+      "id": 2667,
+      "folder": "2667-create-hello-world-function",
+      "slug": "create-hello-world-function",
+      "title": "Create Hello World Function",
+      "pattern": "uncategorized",
+      "hasReadme": false,
+      "status": "Not recorded",
+      "todoCount": 0,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": []
     },
     {
       "id": 2678,
@@ -3727,6 +3967,22 @@
       "languages": [
         "python"
       ]
+    },
+    {
+      "id": 2824,
+      "folder": "2824-count-pairs-whose-sum-is-less-than-target",
+      "slug": "count-pairs-whose-sum-is-less-than-target",
+      "title": "Count Pairs Whose Sum Is Less Than Target",
+      "pattern": "math-and-digits",
+      "hasReadme": false,
+      "status": "Not recorded",
+      "todoCount": 0,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": []
     },
     {
       "id": 2828,
@@ -3867,6 +4123,22 @@
       "languages": [
         "python"
       ]
+    },
+    {
+      "id": 2956,
+      "folder": "2956-find-common-elements-between-two-arrays",
+      "slug": "find-common-elements-between-two-arrays",
+      "title": "Find Common Elements Between Two Arrays",
+      "pattern": "arrays-and-strings",
+      "hasReadme": false,
+      "status": "Not recorded",
+      "todoCount": 0,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": []
     },
     {
       "id": 2974,
@@ -4457,6 +4729,22 @@
       ]
     },
     {
+      "id": 3684,
+      "folder": "3684-maximize-sum-of-at-most-k-distinct-elements",
+      "slug": "maximize-sum-of-at-most-k-distinct-elements",
+      "title": "Maximize Sum Of At Most K Distinct Elements",
+      "pattern": "math-and-digits",
+      "hasReadme": false,
+      "status": "Not recorded",
+      "todoCount": 0,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": []
+    },
+    {
       "id": 3689,
       "folder": "3689-maximum-total-subarray-value-i",
       "slug": "maximum-total-subarray-value-i",
@@ -4519,6 +4807,22 @@
       "languages": [
         "python"
       ]
+    },
+    {
+      "id": 3731,
+      "folder": "3731-find-missing-elements",
+      "slug": "find-missing-elements",
+      "title": "Find Missing Elements",
+      "pattern": "uncategorized",
+      "hasReadme": false,
+      "status": "Not recorded",
+      "todoCount": 0,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": []
     },
     {
       "id": 3751,
@@ -4641,6 +4945,22 @@
       ]
     },
     {
+      "id": 3884,
+      "folder": "3884-first-matching-character-from-both-ends",
+      "slug": "first-matching-character-from-both-ends",
+      "title": "First Matching Character From Both Ends",
+      "pattern": "uncategorized",
+      "hasReadme": false,
+      "status": "Not recorded",
+      "todoCount": 0,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": []
+    },
+    {
       "id": 3895,
       "folder": "3895-count-digit-appearances",
       "slug": "count-digit-appearances",
@@ -4707,6 +5027,22 @@
       ]
     },
     {
+      "id": 3936,
+      "folder": "3936-minimum-swaps-to-move-zeros-to-end",
+      "slug": "minimum-swaps-to-move-zeros-to-end",
+      "title": "Minimum Swaps To Move Zeros To End",
+      "pattern": "uncategorized",
+      "hasReadme": false,
+      "status": "Not recorded",
+      "todoCount": 0,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": []
+    },
+    {
       "id": 3941,
       "folder": "3941-password-strength",
       "slug": "password-strength",
@@ -4749,8 +5085,8 @@
   ],
   "trackedFileFlags": [],
   "weaknessSignals": [
-    "0 of 227 problem READMEs still need real reflection.",
-    "6 submissions have unknown or missing status metadata.",
+    "21 of 248 problem READMEs still need real reflection.",
+    "27 submissions have unknown or missing status metadata.",
     "Failed attempts are preserved when real source exists; keep capturing them for new work.",
     "A TypeScript track exists; expand it deliberately rather than scattering one-off language experiments.",
     "Tree/graph/DP coverage is thin relative to array, string, math, and simple loop problems."

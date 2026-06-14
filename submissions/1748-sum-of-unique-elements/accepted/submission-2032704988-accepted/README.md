@@ -13,11 +13,11 @@
 
 ## Pattern
 
-TODO
+Frequency map
 
 ## Key Idea
 
-TODO
+Count each number and sum only numbers that appear exactly once.
 
 ## Mistake / Edge Case
 
@@ -25,5 +25,5 @@ TODO
 
 ## Complexity
 
-- Time: TODO
-- Space: TODO
+- Time: O(n)
+- Space: O(k), where k is the number of distinct values

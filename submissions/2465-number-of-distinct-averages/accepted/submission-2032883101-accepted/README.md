@@ -12,11 +12,11 @@
 
 ## Pattern
 
-TODO
+Sorting and two pointers
 
 ## Key Idea
 
-TODO
+Sort the numbers, pair the current smallest with the current largest, and count distinct averages in a set.
 
 ## Mistake / Edge Case
 
@@ -24,5 +24,5 @@ TODO
 
 ## Complexity
 
-- Time: TODO
-- Space: TODO
+- Time: O(n log n)
+- Space: O(n)
