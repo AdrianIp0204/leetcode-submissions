@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-06-14T01:48:02.730Z",
+  "generatedAt": "2026-06-14T02:10:30.155Z",
   "username": "AdrianIp",
   "profileFetchedAt": "2026-06-14T00:55:22.956Z",
   "publicAcceptedSolved": 224,
   "publicAcceptedSubmissions": 255,
   "publicAttemptedProblems": 225,
   "publicTotalSubmissions": 326,
-  "localProblemFolders": 225,
-  "localCanonicalSolutions": 224,
+  "localProblemFolders": 227,
+  "localCanonicalSolutions": 226,
   "estimatedSolvedGap": 0,
   "status": "ok",
   "knownLocalProblems": [
@@ -872,6 +872,11 @@
       "hasCanonicalSolution": true
     },
     {
+      "folder": "2703-return-length-of-arguments-passed",
+      "slug": "return-length-of-arguments-passed",
+      "hasCanonicalSolution": true
+    },
+    {
       "folder": "2733-neither-minimum-nor-maximum",
       "slug": "neither-minimum-nor-maximum",
       "hasCanonicalSolution": true
@@ -1019,6 +1024,11 @@
     {
       "folder": "3492-maximum-containers-on-a-ship",
       "slug": "maximum-containers-on-a-ship",
+      "hasCanonicalSolution": true
+    },
+    {
+      "folder": "3498-reverse-degree-of-a-string",
+      "slug": "reverse-degree-of-a-string",
       "hasCanonicalSolution": true
     },
     {

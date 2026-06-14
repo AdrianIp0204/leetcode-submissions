@@ -1,7 +1,7 @@
 # Portfolio Audit
 
-- Generated at: 2026-06-14T01:48:02.702Z
-- Local problem folders: 225
+- Generated at: 2026-06-14T02:10:36.279Z
+- Local problem folders: 227
 - Public solved count: 224
 - Estimated solved-count gap: 0
 - Problems with real attempt files: 34
@@ -21,15 +21,15 @@ No publication-blocking issues were found by this audit. Keep the caveats below 
 | --- | --- |
 | cpp | 10 |
 | md | 34 |
-| python | 215 |
+| python | 216 |
 | sql-or-text | 2 |
-| typescript | 4 |
+| typescript | 5 |
 
 ## Pattern Coverage
 
 | Pattern | Problems |
 | --- | --- |
-| arrays-and-strings | 65 |
+| arrays-and-strings | 66 |
 | dynamic-programming | 2 |
 | hashing-and-counting | 9 |
 | linked-list | 2 |
@@ -38,11 +38,11 @@ No publication-blocking issues were found by this audit. Keep the caveats below 
 | stack | 3 |
 | tree-and-graph | 1 |
 | two-pointers | 4 |
-| uncategorized | 65 |
+| uncategorized | 66 |
 
 ## Weakness Signals
 
-- 0 of 225 problem READMEs still need real reflection.
+- 0 of 227 problem READMEs still need real reflection.
 - 6 submissions have unknown or missing status metadata.
 - Failed attempts are preserved when real source exists; keep capturing them for new work.
 - A TypeScript track exists; expand it deliberately rather than scattering one-off language experiments.
