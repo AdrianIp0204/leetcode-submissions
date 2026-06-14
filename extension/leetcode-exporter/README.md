@@ -12,7 +12,7 @@ It is intentionally boring:
 
 ## Install In Chrome Or Edge
 
-1. Clone or download this private repo on the computer where you solve LeetCode.
+1. Clone or download this repo on the computer where you solve LeetCode.
 2. Open `chrome://extensions` or `edge://extensions`.
 3. Turn on developer mode.
 4. Choose **Load unpacked**.
