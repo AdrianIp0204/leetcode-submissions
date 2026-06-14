@@ -4,29 +4,38 @@ This repo should become public only when it reads as a learning trace, not as a 
 
 ## Current Verdict
 
-Keep the repo private for now.
+Ready to publish as a learning archive once the current cleanup branch is merged
+into the public default branch and the release checklist below still passes.
 
-The archive is already valuable because it contains real accepted submissions and a working local sync system. The public version still needs enough reflection to show what Adrian learned, where the weak spots are, and where Morrow's AI-assisted curation begins and ends.
+The archive is valuable because it contains real accepted submissions, preserved
+history, model-answer notes, generated weakness reports, and a working local
+sync system. It should not be presented as proof of algorithmic mastery. The
+strong version is honest: Adrian owns the learning and solutions, while Morrow
+assists with review, notes, reports, and organization.
 
-## Public Release Gate
+## Public Release Checklist
 
-Do not publish until all of these are true:
+Before flipping GitHub visibility or treating the repo as portfolio material,
+verify all of these are true:
 
 - `npm test` passes.
-- `npm run audit:portfolio` reports no sensitive-material flags.
+- `npm run sync:health` reports no source-code sync gap.
+- `npm run audit:portfolio` reports no sensitive-material flags and no copied problem-statement flags.
+- `npm run audit:model-answers` reports no missing or incomplete model-answer notes.
 - The top README clearly says the repo is Adrian's learning archive and that Morrow assists with review, notes, reports, and organization.
-- At least 15 representative problems have filled `Pattern`, `Key Idea`, `Mistake / Edge Case`, and `Complexity` sections.
-- Failed attempts and multiple accepted submissions are preserved when the real source exists.
+- Root problem READMEs keep filled `Pattern`, `Key Idea`, `Mistake / Edge Case`, and `Complexity` sections.
+- Failed attempts and multiple accepted submissions are preserved when real source exists.
 - No full LeetCode problem statements are copied into the repo.
 - The repo explains that old failed attempts cannot be backfilled unless the real source is available.
+- The license/no-license status is explicit.
 
-## Cleanup Order
+## Maintenance Rules
 
-1. Preserve current accepted submissions exactly enough that the early learning trace stays honest.
-2. Fill reflections for representative problems first: early brute force, brittle accepted code, first clean pattern solutions, and harder pattern problems.
-3. Add new failed attempts under `attempts/` and accepted history under `accepted/` as they happen.
-4. Start a deliberate TypeScript track after the exam.
-5. Only then consider rewriting the public README for a wider audience.
+1. Preserve accepted submissions exactly enough that the learning trace stays honest.
+2. Add new failed attempts under `attempts/` and accepted history under `accepted/` as they happen.
+3. Keep generated reports current after meaningful sync or note updates.
+4. Expand the TypeScript track deliberately instead of scattering one-off language experiments.
+5. Update the front README if the repo's purpose changes.
 
 ## Honest AI-Assisted Framing
 

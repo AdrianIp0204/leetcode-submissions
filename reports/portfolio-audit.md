@@ -1,6 +1,6 @@
 # Portfolio Audit
 
-- Generated at: 2026-06-14T01:27:20.255Z
+- Generated at: 2026-06-14T01:48:02.702Z
 - Local problem folders: 225
 - Public solved count: 224
 - Estimated solved-count gap: 0
@@ -11,9 +11,9 @@
 
 ## Verdict
 
-This repo is worth making public later, but not as a raw dump. It already has a privacy-first sync system and a large accepted-solution archive. The public version should present the repo as a learning trace: accepted code, failed attempts when available, short reflections, weakness reports, and honest AI-assisted curation.
+Ready for public release as a learning archive. The repo has accepted code, preserved history, model-answer notes, short reflections, generated reports, and honest AI-assisted framing.
 
-Do not publish yet. The main blockers are no preserved failed attempts, no TypeScript track, public-facing explanation still needing a final pass.
+No publication-blocking issues were found by this audit. Keep the caveats below visible instead of turning the repo into a trophy shelf.
 
 ## Language Coverage
 
@@ -44,17 +44,19 @@ Do not publish yet. The main blockers are no preserved failed attempts, no TypeS
 
 - 0 of 225 problem READMEs still need real reflection.
 - 6 submissions have unknown or missing status metadata.
+- Failed attempts are preserved when real source exists; keep capturing them for new work.
+- A TypeScript track exists; expand it deliberately rather than scattering one-off language experiments.
 - Tree/graph/DP coverage is thin relative to array, string, math, and simple loop problems.
 
-## Cleanup Order
+## Release Checklist
 
-1. Keep the repo private while cleanup is in progress.
-2. Add honest public framing to the README: Adrian owns the learning; Morrow assists with review, notes, reports, and curation.
-3. Run the extension's Collect Submission History flow until the local source archive catches up with the public solved count.
+1. Merge the latest cleanup branch into the default branch before changing repository visibility.
+2. Keep the README framing honest: Adrian owns the learning; Morrow assists with review, notes, reports, and curation.
+3. Run the extension's Collect Submission History flow if the local source archive falls behind the public solved count.
 4. Keep root README reflections filled for new accepted submissions; current reflection debt is clear.
 5. Start preserving failed attempts under `attempts/` for new work. Backfill old failed attempts only when real source exists.
-6. Add a TypeScript track after the exam instead of pretending it already exists.
-7. Publish only after the README, reports, status metadata, and learning trace are coherent.
+6. Expand the TypeScript track deliberately instead of pretending the track is already mature.
+7. Keep reports current after meaningful sync or note changes.
 
 ## Public Safety Scan
 

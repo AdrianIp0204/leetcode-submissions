@@ -128,7 +128,7 @@ shows an older version after `git pull` and reload, remove that unpacked
 extension entry and load this exact folder again:
 
 ```text
-C:\Users\dream\leetcode-submissions\extension\leetcode-exporter
+<repo>\extension\leetcode-exporter
 ```
 
 ## Limitations
