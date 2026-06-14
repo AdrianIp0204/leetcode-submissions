@@ -1,17 +1,21 @@
 # LeetCode Submissions
 
-Private sync repo for LeetCode solutions, public profile snapshots, notes, and revision history.
+Adrian's LeetCode learning archive: accepted submissions, preserved source
+history, model-answer notes, short reflections, public profile snapshots,
+generated reports, and local sync tooling.
 
-The current plan is privacy-first: use only this first-party extension, avoid storing LeetCode login cookies in GitHub, and keep this private until the solutions are curated enough to become portfolio material.
-
-The public-facing direction is a learning trace, not a trophy shelf: accepted
-solutions, failed attempts when real source exists, short reflections, weakness
-reports, and a visible record of Adrian moving from struggling with Easy
-problems toward stronger algorithmic fluency.
+The public-facing direction is a learning trace, not a trophy shelf. It shows
+accepted solutions, failed attempts when real source exists, short reflections,
+weakness reports, and a visible record of Adrian moving from fragile early
+solutions toward stronger algorithmic fluency.
 
 Reflection notes, reports, cleanup, and repo organization are AI-assisted with
 Morrow, Adrian's local AI collaborator. Solutions are Adrian's attempts unless a
 file says otherwise.
+
+This repo links to LeetCode problems instead of copying full problem statements.
+The sync system is privacy-first: it avoids storing LeetCode login cookies or
+GitHub tokens in the browser extension.
 
 ## Layout
 
@@ -22,7 +26,8 @@ file says otherwise.
 - `scripts/` - local sync helpers.
 - `extension/leetcode-exporter/` - first-party unpacked browser extension for saving visible LeetCode solutions.
 
-See `docs/publication-plan.md` before making the repository public.
+See `docs/publication-plan.md` for the public-release checklist and ongoing
+maintenance rules.
 
 ## Suggested Naming
 
@@ -144,3 +149,8 @@ of overwriting `solution.*`, so multiple accepted solutions and same-code
 resubmissions can be archived. If the watcher log only says `No downloaded files
 or git changes`, the git side is idle and the missing piece is the browser
 extension handoff.
+
+## License
+
+No open-source license is currently granted. The code and notes are published as
+a portfolio and learning archive unless a separate license is added later.

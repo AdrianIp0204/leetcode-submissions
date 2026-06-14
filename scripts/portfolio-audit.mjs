@@ -193,8 +193,10 @@ function weaknessSummary(problems) {
   const observations = [];
   observations.push(`${missingReflection.length} of ${problems.length} problem READMEs still need real reflection.`);
   if (unknownStatus.length) observations.push(`${unknownStatus.length} submissions have unknown or missing status metadata.`);
-  if (!hasAttempts) observations.push("No failed attempts are preserved yet, so the repo cannot fully show the early struggle-to-improvement arc.");
-  if (!hasTypeScript) observations.push("No TypeScript solutions are present yet; future JS/TS learning should be visible as a new track.");
+  if (hasAttempts) observations.push("Failed attempts are preserved when real source exists; keep capturing them for new work.");
+  else observations.push("No failed attempts are preserved yet, so the repo cannot fully show the early struggle-to-improvement arc.");
+  if (hasTypeScript) observations.push("A TypeScript track exists; expand it deliberately rather than scattering one-off language experiments.");
+  else observations.push("No TypeScript solutions are present yet; future JS/TS learning should be visible as a new track.");
   if ((byPattern["tree-and-graph"] || 0) + (byPattern["dynamic-programming"] || 0) < solvedPatternCount * 0.15) {
     observations.push("Tree/graph/DP coverage is thin relative to array, string, math, and simple loop problems.");
   }
@@ -214,12 +216,14 @@ function renderReport({ generatedAt, profile, problems, trackedFileFlags }) {
   const publicSolved = profile?.solvedByDifficulty?.find((item) => item.difficulty === "All")?.count ?? null;
   const solvedGap = typeof publicSolved === "number" ? Math.max(0, publicSolved - problems.length) : null;
   const weaknessLines = weaknessSummary(problems);
+  const hasTypeScript = problems.some((problem) => problem.languages.includes("typescript"));
   const blockers = [
     solvedGap > 0 ? "the source-code sync gap" : "",
     todos.length > 0 ? "missing reflection fields" : "",
-    "no preserved failed attempts",
-    "no TypeScript track",
-    "public-facing explanation still needing a final pass",
+    withAttempts.length === 0 ? "no preserved failed attempts" : "",
+    !hasTypeScript ? "no TypeScript track" : "",
+    fullStatementFlags.length > 0 ? "possible copied problem-statement flags" : "",
+    sensitiveFlags.length > 0 ? "possible sensitive-material flags" : "",
   ].filter(Boolean);
   if (solvedGap > 0) {
     weaknessLines.unshift(`${solvedGap} public solved problems are not yet represented by local source folders.`);
@@ -249,9 +253,13 @@ function renderReport({ generatedAt, profile, problems, trackedFileFlags }) {
     "",
     "## Verdict",
     "",
-    "This repo is worth making public later, but not as a raw dump. It already has a privacy-first sync system and a large accepted-solution archive. The public version should present the repo as a learning trace: accepted code, failed attempts when available, short reflections, weakness reports, and honest AI-assisted curation.",
+    blockers.length
+      ? "This repo is close, but it should not be published until the blockers below are cleared. The public version should present the repo as a learning trace: accepted code, failed attempts when available, short reflections, weakness reports, and honest AI-assisted curation."
+      : "Ready for public release as a learning archive. The repo has accepted code, preserved history, model-answer notes, short reflections, generated reports, and honest AI-assisted framing.",
     "",
-    `Do not publish yet. The main blockers are ${blockers.join(", ")}.`,
+    blockers.length
+      ? `Current blockers: ${blockers.join(", ")}.`
+      : "No publication-blocking issues were found by this audit. Keep the caveats below visible instead of turning the repo into a trophy shelf.",
     "",
     "## Language Coverage",
     "",
@@ -271,17 +279,19 @@ function renderReport({ generatedAt, profile, problems, trackedFileFlags }) {
     "",
     ...weaknessLines.map((item) => `- ${item}`),
     "",
-    "## Cleanup Order",
+    "## Release Checklist",
     "",
-    "1. Keep the repo private while cleanup is in progress.",
-    "2. Add honest public framing to the README: Adrian owns the learning; Morrow assists with review, notes, reports, and curation.",
-    "3. Run the extension's Collect Submission History flow until the local source archive catches up with the public solved count.",
+    "1. Merge the latest cleanup branch into the default branch before changing repository visibility.",
+    "2. Keep the README framing honest: Adrian owns the learning; Morrow assists with review, notes, reports, and curation.",
+    "3. Run the extension's Collect Submission History flow if the local source archive falls behind the public solved count.",
     todos.length > 0
       ? "4. Continue filling root README reflections, starting with the First Reflection Batch below."
       : "4. Keep root README reflections filled for new accepted submissions; current reflection debt is clear.",
     "5. Start preserving failed attempts under `attempts/` for new work. Backfill old failed attempts only when real source exists.",
-    "6. Add a TypeScript track after the exam instead of pretending it already exists.",
-    "7. Publish only after the README, reports, status metadata, and learning trace are coherent.",
+    hasTypeScript
+      ? "6. Expand the TypeScript track deliberately instead of pretending the track is already mature."
+      : "6. Add a TypeScript track when it becomes a deliberate learning goal.",
+    "7. Keep reports current after meaningful sync or note changes.",
     "",
     "## Public Safety Scan",
     "",
@@ -341,8 +351,12 @@ function renderWeaknessReport({ generatedAt, problems }) {
       ? `- Reflection debt remains a public-readiness issue: ${needsReflection} problem READMEs still need filled Key Idea and Complexity sections.`
       : "- Reflection debt is cleared for root problem READMEs; keep the habit for new accepted submissions.",
     `- Status metadata still needs cleanup for ${unknownStatus} older submissions.`,
-    `- Failed attempts preserved in repo: ${hasAttempts ? "yes" : "no"}. This weakens the learning-story side of the portfolio.`,
-    `- TypeScript track present: ${hasTypeScript ? "yes" : "no"}. This should begin after the exam as part of learning JS/TS for Morrow/Core work.`,
+    hasAttempts
+      ? "- Failed attempts preserved in repo: yes. Keep capturing real failed attempts for new work instead of reconstructing old ones from memory."
+      : "- Failed attempts preserved in repo: no. This weakens the learning-story side of the portfolio.",
+    hasTypeScript
+      ? "- TypeScript track present: yes. Expand it deliberately as part of JS/TS fluency for Morrow/Core work."
+      : "- TypeScript track present: no. Add it only when it becomes a deliberate learning track.",
     "",
     "## Weak Pattern Areas",
     "",
