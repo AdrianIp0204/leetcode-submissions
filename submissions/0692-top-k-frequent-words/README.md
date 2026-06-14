@@ -12,17 +12,21 @@
 
 ## Pattern
 
-TODO
+Frequency map plus custom sort.
 
 ## Key Idea
 
-TODO
+The solution counts each word, then sorts the `(word, count)` pairs by descending count and ascending word. That matches the problem's tie-break rule exactly. After sorting, it returns the first `k` words from the ordered list.
 
 ## Mistake / Edge Case
 
-TODO
+The tie-breaker is lexicographic order, not original appearance order. The sort key `(-count, word)` is the important detail.
 
 ## Complexity
 
-- Time: TODO
-- Space: TODO
+- Time: O(n + u log u), where `u` is the number of unique words
+- Space: O(u)
+
+## What Adrian Should Remember
+
+For "top k" with a tie-breaker, write the sort key before coding the rest.

@@ -12,17 +12,21 @@
 
 ## Pattern
 
-TODO
+Join and compare.
 
 ## Key Idea
 
-TODO
+Concatenate each array of string chunks into one full string, then compare the two results. The ternary expression is unnecessary because the comparison already returns a boolean. The core idea is correct and direct for the problem constraints.
 
 ## Mistake / Edge Case
 
-TODO
+Chunk boundaries do not matter; only the final concatenated strings matter.
 
 ## Complexity
 
-- Time: TODO
-- Space: TODO
+- Time: O(n + m), total characters across both arrays
+- Space: O(n + m), for the joined strings
+
+## What Adrian Should Remember
+
+If boundaries are irrelevant, normalize both inputs into the same representation before comparing.

@@ -12,17 +12,21 @@
 
 ## Pattern
 
-TODO
+Direct arithmetic.
 
 ## Key Idea
 
-TODO
+Return the sum of the two integers. There is no hidden state or edge case beyond using the correct parameters. This is mostly a syntax and function-signature exercise.
 
 ## Mistake / Edge Case
 
-TODO
+Keep the return expression direct; no need for extra variables or casts.
 
 ## Complexity
 
-- Time: TODO
-- Space: TODO
+- Time: O(1)
+- Space: O(1)
+
+## What Adrian Should Remember
+
+For trivial API problems, the main task is matching the expected signature exactly.

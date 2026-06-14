@@ -13,17 +13,17 @@
 
 ## Pattern
 
-TODO
+String indexing by cycle.
 
 ## Key Idea
 
-TODO
+The zigzag pattern repeats every `2 * (numRows - 1)` characters. For each row, the code takes the vertical character at that row offset, then for middle rows also takes the diagonal character inside the same cycle. This avoids building a full grid and reads the answer directly in row order.
 
 ## Mistake / Edge Case
 
-TODO
+`numRows == 1` would make the cycle length zero, so it has to return the original string early. The middle-row diagonal index is the part most likely to go off by one.
 
 ## Complexity
 
-- Time: TODO
-- Space: TODO
+- Time: O(n) algorithmically, but repeated Python string concatenation can make the accepted code closer to O(n^2)
+- Space: O(n) for the output

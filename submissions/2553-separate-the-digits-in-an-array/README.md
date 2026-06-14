@@ -13,17 +13,21 @@
 
 ## Pattern
 
-TODO
+Digit extraction with order restore.
 
 ## Key Idea
 
-TODO
+For each number, extract digits from right to left using modulo and division, then reverse those extracted digits before appending them. Single-digit numbers can be appended as-is. This preserves the original left-to-right digit order in the final array.
 
 ## Mistake / Edge Case
 
-TODO
+Modulo extraction gives digits backwards, so reverse the temporary list before extending the result.
 
 ## Complexity
 
-- Time: TODO
-- Space: TODO
+- Time: O(total digits)
+- Space: O(total digits)
+
+## What Adrian Should Remember
+
+If you extract digits numerically, check whether the natural extraction order matches the output order.

@@ -13,17 +13,21 @@
 
 ## Pattern
 
-TODO
+Sort and choose middle.
 
 ## Key Idea
 
-TODO
+If fewer than three numbers exist, there is no value that is neither minimum nor maximum. Otherwise, sorting places a valid middle value at index one. Any middle value is acceptable.
 
 ## Mistake / Edge Case
 
-TODO
+Length two cannot work because both values are extremes.
 
 ## Complexity
 
-- Time: TODO
-- Space: TODO
+- Time: O(n log n)
+- Space: O(1) extra, aside from sort implementation details
+
+## What Adrian Should Remember
+
+When any non-extreme value is accepted, sorting gives a simple valid witness.

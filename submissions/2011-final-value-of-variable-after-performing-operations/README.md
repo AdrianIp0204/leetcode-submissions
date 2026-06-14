@@ -12,17 +12,21 @@
 
 ## Pattern
 
-TODO
+Operation simulation.
 
 ## Key Idea
 
-TODO
+Start from zero and scan the operation strings. Increment for either `++X` or `X++`, and decrement for the remaining decrement forms. The result is the final simulated value.
 
 ## Mistake / Edge Case
 
-TODO
+Both prefix and postfix forms mean the same thing for this final-value problem.
 
 ## Complexity
 
-- Time: TODO
-- Space: TODO
+- Time: O(n)
+- Space: O(1)
+
+## What Adrian Should Remember
+
+For tiny operation languages, classify the operation effect rather than its exact spelling.

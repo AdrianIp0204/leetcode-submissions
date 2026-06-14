@@ -12,17 +12,21 @@
 
 ## Pattern
 
-TODO
+Prefix sum.
 
 ## Key Idea
 
-TODO
+Keep a cumulative total while scanning the array from left to right. After adding the current number, append the cumulative total to the result. This records the prefix sum ending at each index.
 
 ## Mistake / Edge Case
 
-TODO
+Append after adding the current value, otherwise the result is shifted by one position.
 
 ## Complexity
 
-- Time: TODO
-- Space: TODO
+- Time: O(n)
+- Space: O(n), for the returned list
+
+## What Adrian Should Remember
+
+Prefix sums are just a running invariant: the variable should equal the sum up to the current index.

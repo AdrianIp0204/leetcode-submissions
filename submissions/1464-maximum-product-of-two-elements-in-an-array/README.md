@@ -12,17 +12,21 @@
 
 ## Pattern
 
-TODO
+Sort and take top two.
 
 ## Key Idea
 
-TODO
+The maximum product after subtracting one from each selected value comes from the two largest numbers. Sorting puts them at the end, and popping twice retrieves them. This mutates the input array, which is fine for LeetCode here but worth noticing.
 
 ## Mistake / Edge Case
 
-TODO
+Subtract after selecting the two largest values. Sorting ascending means the largest values are at the end.
 
 ## Complexity
 
-- Time: TODO
-- Space: TODO
+- Time: O(n log n)
+- Space: O(1) extra, aside from sort implementation details
+
+## What Adrian Should Remember
+
+When only the top two values matter, sorting is simple; a two-max scan is the leaner alternative.

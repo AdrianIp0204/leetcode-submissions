@@ -13,17 +13,21 @@
 
 ## Pattern
 
-TODO
+Two pointers / greedy.
 
 ## Key Idea
 
-TODO
+Start with the widest possible container and move the pointer at the shorter line. The width always shrinks, so the only chance to improve the area is to find a taller limiting side. Moving the taller side cannot help while the shorter side still caps the height.
 
 ## Mistake / Edge Case
 
-TODO
+Equal heights can move either side; the proof still works because the current height limit is being discarded. Keep the area update before moving a pointer so the current pair is counted.
 
 ## Complexity
 
-- Time: TODO
-- Space: TODO
+- Time: O(n)
+- Space: O(1)
+
+## What Adrian Should Remember
+
+For two-pointer greedy problems, know why one pointer is safe to move; here the shorter line is the limiting factor.

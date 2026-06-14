@@ -12,17 +12,21 @@
 
 ## Pattern
 
-TODO
+Partition by digit length.
 
 ## Key Idea
 
-TODO
+Separate one-digit numbers and two-digit numbers, sum each group, and compare the totals. Alice can win if one group sum is strictly larger than the other. The extra list `s` is unused for the final decision and could be removed.
 
 ## Mistake / Edge Case
 
-TODO
+Equal sums mean Alice cannot choose a strictly winning group.
 
 ## Complexity
 
-- Time: TODO
-- Space: TODO
+- Time: O(n)
+- Space: O(n), due to the temporary group lists
+
+## What Adrian Should Remember
+
+When only sums matter, separate running totals can replace storing whole groups.

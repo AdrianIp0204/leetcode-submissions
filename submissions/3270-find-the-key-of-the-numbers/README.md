@@ -13,17 +13,21 @@
 
 ## Pattern
 
-TODO
+Digit-wise minimum construction.
 
 ## Key Idea
 
-TODO
+Process four digit positions from right to left. At each position, take the minimum digit among the three numbers and place it into the same position of the result. Integer division advances all three numbers to the next digit.
 
 ## Mistake / Edge Case
 
-TODO
+Missing leading digits are effectively zero because repeated division eventually makes the number zero.
 
 ## Complexity
 
-- Time: TODO
-- Space: TODO
+- Time: O(1), exactly four digit positions
+- Space: O(1)
+
+## What Adrian Should Remember
+
+For fixed-width digit construction, use a place-value multiplier to rebuild the answer.

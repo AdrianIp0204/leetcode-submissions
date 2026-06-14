@@ -12,17 +12,21 @@
 
 ## Pattern
 
-TODO
+Algebraic offset.
 
 ## Key Idea
 
-TODO
+Each operation can move the target and original number toward each other by one, creating a total gap increase of two per operation. After `t` operations, the maximum achievable value is therefore `num + 2 * t`. Both implementations encode this formula directly.
 
 ## Mistake / Edge Case
 
-TODO
+The factor is two because both sides can change across the operation relationship.
 
 ## Complexity
 
-- Time: TODO
-- Space: TODO
+- Time: O(1)
+- Space: O(1)
+
+## What Adrian Should Remember
+
+For operation-count math problems, derive the per-operation change before simulating.

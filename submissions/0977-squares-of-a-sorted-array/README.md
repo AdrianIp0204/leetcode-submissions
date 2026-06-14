@@ -13,17 +13,21 @@
 
 ## Pattern
 
-TODO
+Two pointers from both ends.
 
 ## Key Idea
 
-TODO
+Because the input is sorted, the largest square must come from either the leftmost negative number or the rightmost positive number. The solution compares absolute values at both ends, writes the larger square into the result from right to left, and moves that pointer inward. This avoids sorting the squared values afterward.
 
 ## Mistake / Edge Case
 
-TODO
+Negative numbers can produce the largest squares, so scanning only from the positive end is wrong. Filling the result from the back keeps the output sorted.
 
 ## Complexity
 
-- Time: TODO
-- Space: TODO
+- Time: O(n)
+- Space: O(n)
+
+## What Adrian Should Remember
+
+For sorted arrays with negative values, compare both ends when magnitude matters.

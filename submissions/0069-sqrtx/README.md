@@ -13,17 +13,21 @@
 
 ## Pattern
 
-TODO
+Linear search baseline; intended pattern is binary search.
 
 ## Key Idea
 
-TODO
+The code increments `i` until `i * i` becomes larger than `x`, then returns `i - 1`. This is easy to reason about and accepted, but it ignores the binary-search tag. A cleaner learning solution would search the integer range and keep the largest midpoint whose square is not greater than `x`.
 
 ## Mistake / Edge Case
 
-TODO
+The answer is the floor of the square root, so the loop must return the last valid `i`, not the first invalid one. `x = 0` works because the loop runs once and returns `0`.
 
 ## Complexity
 
-- Time: TODO
-- Space: TODO
+- Time: O(sqrt(x))
+- Space: O(1)
+
+## What Adrian Should Remember
+
+If the answer is a boundary value in a sorted numeric range, practice binary search instead of linear stepping.

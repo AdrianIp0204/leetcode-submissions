@@ -12,17 +12,21 @@
 
 ## Pattern
 
-TODO
+Range spread times count.
 
 ## Key Idea
 
-TODO
+The value of any chosen subarray is driven by the difference between a maximum and a minimum. To maximize each choice, use the global maximum minus the global minimum, then repeat that best value `k` times. The formula returns the repeated total directly.
 
 ## Mistake / Edge Case
 
-TODO
+The same best spread can be used for each of the `k` selections under this problem's rules.
 
 ## Complexity
 
-- Time: TODO
-- Space: TODO
+- Time: O(n)
+- Space: O(1)
+
+## What Adrian Should Remember
+
+If repeated choices are independent, find the best single choice and multiply.

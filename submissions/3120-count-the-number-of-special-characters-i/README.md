@@ -12,17 +12,21 @@
 
 ## Pattern
 
-TODO
+Set membership with case pairing.
 
 ## Key Idea
 
-TODO
+Build the set of unique characters, then scan lowercase letters and check whether their uppercase counterpart also appears. Each lowercase letter contributes at most once because the set removes duplicates. Sorting is not required for correctness, but it makes the scan deterministic.
 
 ## Mistake / Edge Case
 
-TODO
+Count letters, not occurrences, so duplicates should not inflate the answer.
 
 ## Complexity
 
-- Time: TODO
-- Space: TODO
+- Time: O(n log n), because the set is sorted
+- Space: O(n)
+
+## What Adrian Should Remember
+
+For paired-case questions, a set lets you ask whether both forms exist.

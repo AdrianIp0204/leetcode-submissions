@@ -13,17 +13,21 @@
 
 ## Pattern
 
-TODO
+Prefix/suffix rolling sums.
 
 ## Key Idea
 
-TODO
+Start with the left sum at zero and the right sum as the total array sum. For each element, remove it from the right side, compare left and right, then add it to the left side. This gives each index's left/right difference in one pass.
 
 ## Mistake / Edge Case
 
-TODO
+Remove the current element from the right sum before computing the difference, because neither side includes the current index.
 
 ## Complexity
 
-- Time: TODO
-- Space: TODO
+- Time: O(n)
+- Space: O(n), for the result list
+
+## What Adrian Should Remember
+
+For left/right split problems, update the side sums in the order implied by index membership.

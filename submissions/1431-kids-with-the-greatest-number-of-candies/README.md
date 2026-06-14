@@ -12,17 +12,21 @@
 
 ## Pattern
 
-TODO
+Single-pass threshold check.
 
 ## Key Idea
 
-TODO
+First find the current maximum candy count. Each child can have the greatest number after receiving the extra candies if their current count plus the extra amount reaches at least that maximum. The result is a boolean list built in the same order as the input.
 
 ## Mistake / Edge Case
 
-TODO
+Use greater-than-or-equal, not only greater-than, because tying for the maximum still counts.
 
 ## Complexity
 
-- Time: TODO
-- Space: TODO
+- Time: O(n)
+- Space: O(n), for the returned boolean list
+
+## What Adrian Should Remember
+
+Compute the fixed benchmark once, then compare every candidate against it.

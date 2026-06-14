@@ -7,11 +7,23 @@
 - Submitted at: 2026-06-01T13:32:23.000Z
 - Submission ID: 2019148870
 
+## Pattern
+
+First-match scan.
+
 ## Key Idea
 
-TODO
+Scan the words in order and return the first word equal to its reverse. Reversing through `reversed` plus join gives a direct palindrome check. If no word matches, return the empty string.
+
+## Mistake / Edge Case
+
+Return immediately on the first palindrome, not the shortest or last palindrome.
 
 ## Complexity
 
-- Time: TODO
-- Space: TODO
+- Time: O(total characters checked)
+- Space: O(L), for the reversed word comparison
+
+## What Adrian Should Remember
+
+When the problem asks for the first valid item, preserve input order and exit early.

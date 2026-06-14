@@ -12,17 +12,21 @@
 
 ## Pattern
 
-TODO
+String split.
 
 ## Key Idea
 
-TODO
+The solution uses `s.split()` to ignore repeated spaces and trailing spaces, then takes the last word and returns its length. This is the simplest Pythonic version. A manual version would scan from the end, skip spaces, and count characters until the previous space.
 
 ## Mistake / Edge Case
 
-TODO
+Trailing spaces are the trap; splitting without arguments handles them correctly. The problem guarantees at least one word, so `[-1]` is safe under the LeetCode constraints.
 
 ## Complexity
 
-- Time: TODO
-- Space: TODO
+- Time: O(n)
+- Space: O(n), because `split()` builds a list of words
+
+## What Adrian Should Remember
+
+For string cleanup tasks, know whether a built-in removes empty chunks and trailing separators.

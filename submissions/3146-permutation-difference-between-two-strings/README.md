@@ -13,17 +13,21 @@
 
 ## Pattern
 
-TODO
+Index map comparison.
 
 ## Key Idea
 
-TODO
+Record each character's index in the first string. Then scan the second string and add the absolute difference between its current index and the stored original index. Because the strings are permutations, every character lookup should exist.
 
 ## Mistake / Edge Case
 
-TODO
+The index map assumes unique characters, matching this problem's constraints.
 
 ## Complexity
 
-- Time: TODO
-- Space: TODO
+- Time: O(n)
+- Space: O(n)
+
+## What Adrian Should Remember
+
+For permutation distance, build one position map and compare the other sequence against it.

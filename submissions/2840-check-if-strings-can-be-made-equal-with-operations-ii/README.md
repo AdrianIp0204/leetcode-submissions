@@ -13,17 +13,21 @@
 
 ## Pattern
 
-TODO
+Parity-position multiset comparison.
 
 ## Key Idea
 
-TODO
+The allowed operations can reorder characters within even positions and within odd positions separately. So the strings are transformable exactly when their sorted even-index characters match and their sorted odd-index characters match. The code checks those two multisets directly.
 
 ## Mistake / Edge Case
 
-TODO
+Even and odd positions cannot mix, so comparing the full sorted strings would be too weak.
 
 ## Complexity
 
-- Time: TODO
-- Space: TODO
+- Time: O(n log n)
+- Space: O(n)
+
+## What Adrian Should Remember
+
+When swaps preserve a class of positions, compare the contents inside each class.

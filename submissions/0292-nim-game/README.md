@@ -12,17 +12,21 @@
 
 ## Pattern
 
-TODO
+Game theory modulo rule.
 
 ## Key Idea
 
-TODO
+With one to three stones removable per turn, every multiple of four is losing if both players play perfectly. From any non-multiple of four, the first player can take enough stones to leave a multiple of four to the opponent. Both preserved Python and C++ variants implement this `n % 4 != 0` rule.
 
 ## Mistake / Edge Case
 
-TODO
+The trap is trying to simulate the game tree. The invariant is simpler: positions divisible by four are losing positions.
 
 ## Complexity
 
-- Time: TODO
-- Space: TODO
+- Time: O(1)
+- Space: O(1)
+
+## What Adrian Should Remember
+
+For small impartial games, look for losing-position cycles before simulating moves.

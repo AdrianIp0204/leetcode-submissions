@@ -12,17 +12,21 @@
 
 ## Pattern
 
-TODO
+Array plus reversed copy.
 
 ## Key Idea
 
-TODO
+The output is the original array followed by its reverse. Python slicing with `[::-1]` creates the reversed copy, and list concatenation builds the final result. The input list itself is not mutated.
 
 ## Mistake / Edge Case
 
-TODO
+The second half should be a reversed copy, not an in-place reversal that loses the original order.
 
 ## Complexity
 
-- Time: TODO
-- Space: TODO
+- Time: O(n)
+- Space: O(n)
+
+## What Adrian Should Remember
+
+Slicing is a concise way to express reversed-copy construction in Python.

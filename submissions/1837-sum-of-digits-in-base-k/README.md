@@ -12,17 +12,21 @@
 
 ## Pattern
 
-TODO
+Base conversion by repeated division.
 
 ## Key Idea
 
-TODO
+Repeatedly take `n % k` to get the next base-k digit and add it to the sum. Then divide `n` by `k` to move to the next digit. The loop ends when all digits have been consumed.
 
 ## Mistake / Edge Case
 
-TODO
+Use integer division after taking the remainder; reversing that order would lose the current digit.
 
 ## Complexity
 
-- Time: TODO
-- Space: TODO
+- Time: O(log_k n)
+- Space: O(1)
+
+## What Adrian Should Remember
+
+Digit extraction in any base is remainder, then integer division.

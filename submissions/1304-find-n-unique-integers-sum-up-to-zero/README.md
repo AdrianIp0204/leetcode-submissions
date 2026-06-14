@@ -12,17 +12,21 @@
 
 ## Pattern
 
-TODO
+Symmetric pair construction.
 
 ## Key Idea
 
-TODO
+The solution adds pairs `i` and `-i`, which cancel each other to zero. If `n` is odd, it also adds `0` as the middle value. This guarantees uniqueness and makes the total sum zero by construction.
 
 ## Mistake / Edge Case
 
-TODO
+Odd `n` needs the extra zero; even `n` does not. The loop count should create exactly `n // 2` positive-negative pairs.
 
 ## Complexity
 
-- Time: TODO
-- Space: TODO
+- Time: O(n)
+- Space: O(n)
+
+## What Adrian Should Remember
+
+When a sum must be zero, build canceling pairs instead of searching for numbers.

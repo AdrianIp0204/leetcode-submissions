@@ -13,17 +13,21 @@
 
 ## Pattern
 
-TODO
+Greedy bit arrangement.
 
 ## Key Idea
 
-TODO
+To make the binary number odd, the last bit must be `1`. To maximize the value, put all remaining `1` bits as far left as possible and fill the middle with zeros. The code counts ones and constructs that layout.
 
 ## Mistake / Edge Case
 
-TODO
+Reserve one `1` for the final odd bit before placing the leading ones.
 
 ## Complexity
 
-- Time: TODO
-- Space: TODO
+- Time: O(n)
+- Space: O(n)
+
+## What Adrian Should Remember
+
+For binary rearrangement, separate required low-order bits from value-maximizing high-order bits.

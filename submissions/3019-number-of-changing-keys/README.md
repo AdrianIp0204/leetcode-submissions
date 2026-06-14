@@ -13,17 +13,21 @@
 
 ## Pattern
 
-TODO
+Case-normalized adjacent comparison.
 
 ## Key Idea
 
-TODO
+Convert the string to lowercase so uppercase and lowercase versions of the same key are treated equally. Then count adjacent positions where the normalized character changes. The first character starts the sequence and does not count as a change.
 
 ## Mistake / Edge Case
 
-TODO
+Normalize before comparing, otherwise case changes would be counted incorrectly.
 
 ## Complexity
 
-- Time: TODO
-- Space: TODO
+- Time: O(n)
+- Space: O(n), because lowercasing creates a normalized string
+
+## What Adrian Should Remember
+
+Normalize input first when the problem says two forms should be treated as the same.

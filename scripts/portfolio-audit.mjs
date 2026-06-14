@@ -214,6 +214,13 @@ function renderReport({ generatedAt, profile, problems, trackedFileFlags }) {
   const publicSolved = profile?.solvedByDifficulty?.find((item) => item.difficulty === "All")?.count ?? null;
   const solvedGap = typeof publicSolved === "number" ? Math.max(0, publicSolved - problems.length) : null;
   const weaknessLines = weaknessSummary(problems);
+  const blockers = [
+    solvedGap > 0 ? "the source-code sync gap" : "",
+    todos.length > 0 ? "missing reflection fields" : "",
+    "no preserved failed attempts",
+    "no TypeScript track",
+    "public-facing explanation still needing a final pass",
+  ].filter(Boolean);
   if (solvedGap > 0) {
     weaknessLines.unshift(`${solvedGap} public solved problems are not yet represented by local source folders.`);
   }
@@ -244,7 +251,7 @@ function renderReport({ generatedAt, profile, problems, trackedFileFlags }) {
     "",
     "This repo is worth making public later, but not as a raw dump. It already has a privacy-first sync system and a large accepted-solution archive. The public version should present the repo as a learning trace: accepted code, failed attempts when available, short reflections, weakness reports, and honest AI-assisted curation.",
     "",
-    `Do not publish yet. The main blockers are ${solvedGap > 0 ? "the source-code sync gap, " : ""}missing reflection fields, no preserved failed attempts, no TypeScript track, and public-facing explanation still needing a final pass.`,
+    `Do not publish yet. The main blockers are ${blockers.join(", ")}.`,
     "",
     "## Language Coverage",
     "",
@@ -269,10 +276,12 @@ function renderReport({ generatedAt, profile, problems, trackedFileFlags }) {
     "1. Keep the repo private while cleanup is in progress.",
     "2. Add honest public framing to the README: Adrian owns the learning; Morrow assists with review, notes, reports, and curation.",
     "3. Run the extension's Collect Submission History flow until the local source archive catches up with the public solved count.",
-    "4. Fill reflections for the first 15-20 representative problems before touching every file.",
+    todos.length > 0
+      ? "4. Continue filling root README reflections, starting with the First Reflection Batch below."
+      : "4. Keep root README reflections filled for new accepted submissions; current reflection debt is clear.",
     "5. Start preserving failed attempts under `attempts/` for new work. Backfill old failed attempts only when real source exists.",
     "6. Add a TypeScript track after the exam instead of pretending it already exists.",
-    "7. Publish only after the README, reports, and representative reflections make the learning arc clear.",
+    "7. Publish only after the README, reports, status metadata, and learning trace are coherent.",
     "",
     "## Public Safety Scan",
     "",
@@ -328,7 +337,9 @@ function renderWeaknessReport({ generatedAt, problems }) {
     "",
     "## Current Diagnosis",
     "",
-    `- Reflection debt is the largest public-readiness issue: ${needsReflection} problem READMEs still need filled Key Idea and Complexity sections.`,
+    needsReflection > 0
+      ? `- Reflection debt remains a public-readiness issue: ${needsReflection} problem READMEs still need filled Key Idea and Complexity sections.`
+      : "- Reflection debt is cleared for root problem READMEs; keep the habit for new accepted submissions.",
     `- Status metadata still needs cleanup for ${unknownStatus} older submissions.`,
     `- Failed attempts preserved in repo: ${hasAttempts ? "yes" : "no"}. This weakens the learning-story side of the portfolio.`,
     `- TypeScript track present: ${hasTypeScript ? "yes" : "no"}. This should begin after the exam as part of learning JS/TS for Morrow/Core work.`,

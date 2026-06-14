@@ -12,17 +12,21 @@
 
 ## Pattern
 
-TODO
+String digit counting.
 
 ## Key Idea
 
-TODO
+The solution converts each number to a string and checks whether the string length is even. Every number with an even digit count increments the answer. This is simple and readable; an arithmetic version would repeatedly divide by ten to count digits.
 
 ## Mistake / Edge Case
 
-TODO
+The check is about digit count, not whether the number itself is even. String conversion makes that distinction clear.
 
 ## Complexity
 
-- Time: TODO
-- Space: TODO
+- Time: O(total digits)
+- Space: O(d) per converted number
+
+## What Adrian Should Remember
+
+If the property is about the written digits, string conversion is often acceptable for simple constraints.

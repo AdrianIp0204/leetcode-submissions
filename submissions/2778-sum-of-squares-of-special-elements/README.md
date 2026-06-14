@@ -12,17 +12,21 @@
 
 ## Pattern
 
-TODO
+Index divisibility filter.
 
 ## Key Idea
 
-TODO
+The problem uses 1-based positions. While enumerating with zero-based indices, test whether the array length is divisible by `i + 1`. Add the square of values at special positions.
 
 ## Mistake / Edge Case
 
-TODO
+Convert the zero-based index to a one-based position before the divisibility test.
 
 ## Complexity
 
-- Time: TODO
-- Space: TODO
+- Time: O(n)
+- Space: O(1)
+
+## What Adrian Should Remember
+
+Whenever a problem states 1-indexed positions, make the conversion visible in the code.

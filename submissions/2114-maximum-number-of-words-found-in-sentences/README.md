@@ -7,11 +7,23 @@
 - Submitted at: 2026-05-31T03:45:04.000Z
 - Submission ID: 2017763806
 
+## Pattern
+
+String split maximum.
+
 ## Key Idea
 
-TODO
+Each sentence's word count is one plus its spaces, or simply the length after splitting by spaces. The solution tracks the largest split length seen. Starting from one works because each sentence has at least one word.
+
+## Mistake / Edge Case
+
+A sentence with no spaces still has one word.
 
 ## Complexity
 
-- Time: TODO
-- Space: TODO
+- Time: O(total characters)
+- Space: O(w), for each split result
+
+## What Adrian Should Remember
+
+For simple sentence counts, splitting is acceptable, but counting spaces can be even lighter.

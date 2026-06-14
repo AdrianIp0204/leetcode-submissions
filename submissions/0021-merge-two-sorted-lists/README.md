@@ -12,17 +12,21 @@
 
 ## Pattern
 
-TODO
+Linked list merge with dummy head.
 
 ## Key Idea
 
-TODO
+Use a dummy node so the output list always has a stable starting point. Compare the current values from both lists, append the smaller value, and move that source pointer forward. Once one list is empty, append the remaining values from the other list.
 
 ## Mistake / Edge Case
 
-TODO
+This solution creates new nodes instead of rewiring the original nodes, which is accepted but uses extra memory. Empty input lists are handled naturally because `res.next` stays `None` unless a node is appended.
 
 ## Complexity
 
-- Time: TODO
-- Space: TODO
+- Time: O(n + m)
+- Space: O(n + m), because this version allocates new nodes
+
+## What Adrian Should Remember
+
+A dummy head removes awkward special cases at the front of a linked-list result.

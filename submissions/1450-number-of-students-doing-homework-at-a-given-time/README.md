@@ -12,17 +12,21 @@
 
 ## Pattern
 
-TODO
+Interval containment count.
 
 ## Key Idea
 
-TODO
+Each student's active homework window is inclusive from start to end. Zip the two time arrays together and count windows where the query time lies inside the interval. No sorting is needed because every interval is independent.
 
 ## Mistake / Edge Case
 
-TODO
+The end time is inclusive, so `s <= query <= e` is the right check.
 
 ## Complexity
 
-- Time: TODO
-- Space: TODO
+- Time: O(n)
+- Space: O(1)
+
+## What Adrian Should Remember
+
+Translate interval wording into the exact inequality before coding.

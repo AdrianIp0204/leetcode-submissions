@@ -13,17 +13,21 @@
 
 ## Pattern
 
-TODO
+Sorting with negative-number case.
 
 ## Key Idea
 
-TODO
+After sorting, the maximum product is either the three largest numbers or the largest number times the two smallest numbers. The second case matters because two negative numbers produce a positive product. Taking the max of those two candidates covers both positive-heavy and negative-heavy inputs.
 
 ## Mistake / Edge Case
 
-TODO
+Do not ignore negative values. `[-10, -10, 5, 2]` is won by the two smallest negatives times the largest positive.
 
 ## Complexity
 
-- Time: TODO
-- Space: TODO
+- Time: O(n log n)
+- Space: O(1) extra beyond the in-place sort
+
+## What Adrian Should Remember
+
+When products involve signs, the smallest values can be part of the maximum answer.

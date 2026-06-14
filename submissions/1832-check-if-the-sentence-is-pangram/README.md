@@ -7,11 +7,23 @@
 - Submitted at: 2026-05-31T06:40:11.000Z
 - Submission ID: 2017897843
 
+## Pattern
+
+Seen-letter tracking.
+
 ## Key Idea
 
-TODO
+Build a dictionary of all lowercase letters marked unseen. Scan the sentence and mark each newly seen letter, increasing a count only the first time. The sentence is a pangram once all 26 letters have appeared.
+
+## Mistake / Edge Case
+
+Repeated letters should not increase the count after the first sighting.
 
 ## Complexity
 
-- Time: TODO
-- Space: TODO
+- Time: O(n)
+- Space: O(1), fixed alphabet size
+
+## What Adrian Should Remember
+
+For alphabet coverage, a set or fixed dictionary makes the invariant explicit.

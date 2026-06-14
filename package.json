@@ -3,6 +3,7 @@
   "type": "module",
   "scripts": {
     "audit:portfolio": "node scripts/portfolio-audit.mjs",
+    "audit:model-answers": "node scripts/model-answer-audit.mjs",
     "fetch:public": "node scripts/fetch-public-profile.mjs",
     "install:macos:auto-sync": "node scripts/install-macos-auto-sync.mjs",
     "recommend:next": "node scripts/recommend-next.mjs",

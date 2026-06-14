@@ -12,17 +12,21 @@
 
 ## Pattern
 
-TODO
+Dynamic programming / run length.
 
 ## Key Idea
 
-TODO
+Track the current difference and how many arithmetic slices can be extended inside the current run. When the next difference matches, every previous extendable slice gains one more element and a new length-3 slice appears, so `comb` contributes to the answer and then grows. When the difference changes, the run resets.
 
 ## Mistake / Edge Case
 
-TODO
+Arrays shorter than 3 cannot contain an arithmetic slice. This solution scans by popping from the end, so it mutates `nums`; the same idea can be written with indices if the original list should remain unchanged.
 
 ## Complexity
 
-- Time: TODO
-- Space: TODO
+- Time: O(n)
+- Space: O(1)
+
+## What Adrian Should Remember
+
+For "count subarrays in a continuing run", store how many valid pieces end at the current position, not every subarray itself.
