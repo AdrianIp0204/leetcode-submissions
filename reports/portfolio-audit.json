@@ -1,29 +1,31 @@
 {
-  "generatedAt": "2026-06-13T15:32:38.104Z",
+  "generatedAt": "2026-06-14T01:27:20.255Z",
   "totals": {
-    "problemFolders": 154,
+    "problemFolders": 225,
     "publicSolved": 224,
-    "estimatedSolvedGap": 70,
-    "problemsWithAttempts": 0,
+    "estimatedSolvedGap": 0,
+    "problemsWithAttempts": 34,
     "problemsNeedingReflection": 0,
     "problemsWithUnknownStatus": 6
   },
   "byLanguage": {
-    "cpp": 8,
-    "python": 150,
-    "sql-or-text": 2
+    "cpp": 10,
+    "md": 34,
+    "python": 215,
+    "sql-or-text": 2,
+    "typescript": 4
   },
   "byPattern": {
-    "arrays-and-strings": 40,
+    "arrays-and-strings": 65,
     "dynamic-programming": 2,
     "hashing-and-counting": 9,
     "linked-list": 2,
-    "math-and-digits": 57,
+    "math-and-digits": 72,
     "sql": 2,
     "stack": 3,
     "tree-and-graph": 1,
-    "two-pointers": 3,
-    "uncategorized": 35
+    "two-pointers": 4,
+    "uncategorized": 65
   },
   "problems": [
     {
@@ -41,8 +43,12 @@
         "solution.py"
       ],
       "acceptedVariantFiles": [],
-      "attemptFiles": [],
+      "attemptFiles": [
+        "attempts/submission-2003603461-wrong-answer/README.md",
+        "attempts/submission-2003603461-wrong-answer/solution.py"
+      ],
       "languages": [
+        "md",
         "python"
       ]
     },
@@ -61,8 +67,12 @@
         "solution.py"
       ],
       "acceptedVariantFiles": [],
-      "attemptFiles": [],
+      "attemptFiles": [
+        "attempts/submission-2017998737-wrong-answer/README.md",
+        "attempts/submission-2017998737-wrong-answer/solution.py"
+      ],
       "languages": [
+        "md",
         "python"
       ]
     },
@@ -181,8 +191,12 @@
         "solution.py"
       ],
       "acceptedVariantFiles": [],
-      "attemptFiles": [],
+      "attemptFiles": [
+        "attempts/submission-2003642729-runtime-error/README.md",
+        "attempts/submission-2003642729-runtime-error/solution.py"
+      ],
       "languages": [
+        "md",
         "python"
       ]
     },
@@ -201,8 +215,12 @@
         "solution.py"
       ],
       "acceptedVariantFiles": [],
-      "attemptFiles": [],
+      "attemptFiles": [
+        "attempts/submission-2023906525-time-limit-exceeded/README.md",
+        "attempts/submission-2023906525-time-limit-exceeded/solution.py"
+      ],
       "languages": [
+        "md",
         "python"
       ]
     },
@@ -267,6 +285,30 @@
       ]
     },
     {
+      "id": 15,
+      "folder": "0015-3sum",
+      "slug": "3sum",
+      "title": "3Sum",
+      "pattern": "uncategorized",
+      "hasReadme": true,
+      "status": "Accepted",
+      "todoCount": 0,
+      "hasKeyIdea": true,
+      "hasComplexity": true,
+      "solutionFiles": [
+        "solution.py"
+      ],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [
+        "attempts/submission-2029329121-wrong-answer/README.md",
+        "attempts/submission-2029329121-wrong-answer/solution.py"
+      ],
+      "languages": [
+        "md",
+        "python"
+      ]
+    },
+    {
       "id": 20,
       "folder": "0020-valid-parentheses",
       "slug": "valid-parentheses",
@@ -281,8 +323,22 @@
         "solution.py"
       ],
       "acceptedVariantFiles": [],
-      "attemptFiles": [],
+      "attemptFiles": [
+        "attempts/submission-2005386407-wrong-answer/README.md",
+        "attempts/submission-2005386407-wrong-answer/solution.py",
+        "attempts/submission-2005388212-wrong-answer/README.md",
+        "attempts/submission-2005388212-wrong-answer/solution.py",
+        "attempts/submission-2005411866-runtime-error/README.md",
+        "attempts/submission-2005411866-runtime-error/solution.py",
+        "attempts/submission-2005415662-runtime-error/README.md",
+        "attempts/submission-2005415662-runtime-error/solution.py",
+        "attempts/submission-2005418446-wrong-answer/README.md",
+        "attempts/submission-2005418446-wrong-answer/solution.py",
+        "attempts/submission-2005419854-wrong-answer/README.md",
+        "attempts/submission-2005419854-wrong-answer/solution.py"
+      ],
       "languages": [
+        "md",
         "python"
       ]
     },
@@ -361,8 +417,12 @@
         "solution.py"
       ],
       "acceptedVariantFiles": [],
-      "attemptFiles": [],
+      "attemptFiles": [
+        "attempts/submission-2019983130-wrong-answer/README.md",
+        "attempts/submission-2019983130-wrong-answer/solution.py"
+      ],
       "languages": [
+        "md",
         "python"
       ]
     },
@@ -451,6 +511,26 @@
       "folder": "0069-sqrtx",
       "slug": "sqrtx",
       "title": "Sqrt(x)",
+      "pattern": "uncategorized",
+      "hasReadme": true,
+      "status": "Accepted",
+      "todoCount": 0,
+      "hasKeyIdea": true,
+      "hasComplexity": true,
+      "solutionFiles": [
+        "solution.py"
+      ],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": [
+        "python"
+      ]
+    },
+    {
+      "id": 70,
+      "folder": "0070-climbing-stairs",
+      "slug": "climbing-stairs",
+      "title": "Climbing Stairs",
       "pattern": "uncategorized",
       "hasReadme": true,
       "status": "Accepted",
@@ -561,8 +641,12 @@
         "solution.py"
       ],
       "acceptedVariantFiles": [],
-      "attemptFiles": [],
+      "attemptFiles": [
+        "attempts/submission-2023854133-output-limit-exceeded/README.md",
+        "attempts/submission-2023854133-output-limit-exceeded/solution.py"
+      ],
       "languages": [
+        "md",
         "python"
       ]
     },
@@ -571,6 +655,86 @@
       "folder": "0136-single-number",
       "slug": "single-number",
       "title": "Single Number",
+      "pattern": "math-and-digits",
+      "hasReadme": true,
+      "status": "Accepted",
+      "todoCount": 0,
+      "hasKeyIdea": true,
+      "hasComplexity": true,
+      "solutionFiles": [
+        "solution.py"
+      ],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": [
+        "python"
+      ]
+    },
+    {
+      "id": 151,
+      "folder": "0151-reverse-words-in-a-string",
+      "slug": "reverse-words-in-a-string",
+      "title": "Reverse Words in a String",
+      "pattern": "arrays-and-strings",
+      "hasReadme": true,
+      "status": "Accepted",
+      "todoCount": 0,
+      "hasKeyIdea": true,
+      "hasComplexity": true,
+      "solutionFiles": [
+        "solution.py"
+      ],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": [
+        "python"
+      ]
+    },
+    {
+      "id": 167,
+      "folder": "0167-two-sum-ii-input-array-is-sorted",
+      "slug": "two-sum-ii-input-array-is-sorted",
+      "title": "Two Sum II - Input Array Is Sorted",
+      "pattern": "arrays-and-strings",
+      "hasReadme": true,
+      "status": "Accepted",
+      "todoCount": 0,
+      "hasKeyIdea": true,
+      "hasComplexity": true,
+      "solutionFiles": [
+        "solution.py"
+      ],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": [
+        "python"
+      ]
+    },
+    {
+      "id": 168,
+      "folder": "0168-excel-sheet-column-title",
+      "slug": "excel-sheet-column-title",
+      "title": "Excel Sheet Column Title",
+      "pattern": "uncategorized",
+      "hasReadme": true,
+      "status": "Accepted",
+      "todoCount": 0,
+      "hasKeyIdea": true,
+      "hasComplexity": true,
+      "solutionFiles": [
+        "solution.py"
+      ],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": [
+        "python"
+      ]
+    },
+    {
+      "id": 171,
+      "folder": "0171-excel-sheet-column-number",
+      "slug": "excel-sheet-column-number",
+      "title": "Excel Sheet Column Number",
       "pattern": "math-and-digits",
       "hasReadme": true,
       "status": "Accepted",
@@ -647,6 +811,26 @@
       ]
     },
     {
+      "id": 190,
+      "folder": "0190-reverse-bits",
+      "slug": "reverse-bits",
+      "title": "Reverse Bits",
+      "pattern": "uncategorized",
+      "hasReadme": true,
+      "status": "Accepted",
+      "todoCount": 0,
+      "hasKeyIdea": true,
+      "hasComplexity": true,
+      "solutionFiles": [
+        "solution.py"
+      ],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": [
+        "python"
+      ]
+    },
+    {
       "id": 204,
       "folder": "0204-count-primes",
       "slug": "count-primes",
@@ -661,8 +845,36 @@
         "solution.py"
       ],
       "acceptedVariantFiles": [],
-      "attemptFiles": [],
+      "attemptFiles": [
+        "attempts/submission-2017187994-time-limit-exceeded/README.md",
+        "attempts/submission-2017187994-time-limit-exceeded/solution.py"
+      ],
       "languages": [
+        "md",
+        "python"
+      ]
+    },
+    {
+      "id": 205,
+      "folder": "0205-isomorphic-strings",
+      "slug": "isomorphic-strings",
+      "title": "Isomorphic Strings",
+      "pattern": "arrays-and-strings",
+      "hasReadme": true,
+      "status": "Accepted",
+      "todoCount": 0,
+      "hasKeyIdea": true,
+      "hasComplexity": true,
+      "solutionFiles": [
+        "solution.py"
+      ],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [
+        "attempts/submission-2028732967-wrong-answer/README.md",
+        "attempts/submission-2028732967-wrong-answer/solution.py"
+      ],
+      "languages": [
+        "md",
         "python"
       ]
     },
@@ -727,6 +939,58 @@
       ]
     },
     {
+      "id": 224,
+      "folder": "0224-basic-calculator",
+      "slug": "basic-calculator",
+      "title": "Basic Calculator",
+      "pattern": "uncategorized",
+      "hasReadme": true,
+      "status": "Runtime Error",
+      "todoCount": 0,
+      "hasKeyIdea": true,
+      "hasComplexity": true,
+      "solutionFiles": [],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [
+        "attempts/submission-2004422806-wrong-answer/README.md",
+        "attempts/submission-2004422806-wrong-answer/solution.py",
+        "attempts/submission-2004430780-runtime-error/README.md",
+        "attempts/submission-2004430780-runtime-error/solution.py",
+        "attempts/submission-2004435799-runtime-error/README.md",
+        "attempts/submission-2004435799-runtime-error/solution.py",
+        "attempts/submission-2004437375-runtime-error/README.md",
+        "attempts/submission-2004437375-runtime-error/solution.py",
+        "attempts/submission-2004440475-runtime-error/README.md",
+        "attempts/submission-2004440475-runtime-error/solution.py",
+        "attempts/submission-2004469927-runtime-error/README.md",
+        "attempts/submission-2004469927-runtime-error/solution.py"
+      ],
+      "languages": [
+        "md",
+        "python"
+      ]
+    },
+    {
+      "id": 234,
+      "folder": "0234-palindrome-linked-list",
+      "slug": "palindrome-linked-list",
+      "title": "Palindrome Linked List",
+      "pattern": "two-pointers",
+      "hasReadme": true,
+      "status": "Accepted",
+      "todoCount": 0,
+      "hasKeyIdea": true,
+      "hasComplexity": true,
+      "solutionFiles": [
+        "solution.py"
+      ],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": [
+        "python"
+      ]
+    },
+    {
       "id": 238,
       "folder": "0238-product-of-array-except-self",
       "slug": "product-of-array-except-self",
@@ -741,8 +1005,12 @@
         "solution.py"
       ],
       "acceptedVariantFiles": [],
-      "attemptFiles": [],
+      "attemptFiles": [
+        "attempts/submission-2023834880-time-limit-exceeded/README.md",
+        "attempts/submission-2023834880-time-limit-exceeded/solution.py"
+      ],
       "languages": [
+        "md",
         "python"
       ]
     },
@@ -781,8 +1049,12 @@
         "solution.py"
       ],
       "acceptedVariantFiles": [],
-      "attemptFiles": [],
+      "attemptFiles": [
+        "attempts/submission-2005455341-wrong-answer/README.md",
+        "attempts/submission-2005455341-wrong-answer/solution.py"
+      ],
       "languages": [
+        "md",
         "python"
       ]
     },
@@ -909,6 +1181,26 @@
       ]
     },
     {
+      "id": 345,
+      "folder": "0345-reverse-vowels-of-a-string",
+      "slug": "reverse-vowels-of-a-string",
+      "title": "Reverse Vowels of a String",
+      "pattern": "arrays-and-strings",
+      "hasReadme": true,
+      "status": "Accepted",
+      "todoCount": 0,
+      "hasKeyIdea": true,
+      "hasComplexity": true,
+      "solutionFiles": [
+        "solution.py"
+      ],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": [
+        "python"
+      ]
+    },
+    {
       "id": 347,
       "folder": "0347-top-k-frequent-elements",
       "slug": "top-k-frequent-elements",
@@ -949,6 +1241,26 @@
       ]
     },
     {
+      "id": 350,
+      "folder": "0350-intersection-of-two-arrays-ii",
+      "slug": "intersection-of-two-arrays-ii",
+      "title": "Intersection of Two Arrays II",
+      "pattern": "arrays-and-strings",
+      "hasReadme": true,
+      "status": "Accepted",
+      "todoCount": 0,
+      "hasKeyIdea": true,
+      "hasComplexity": true,
+      "solutionFiles": [
+        "solution.py"
+      ],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": [
+        "python"
+      ]
+    },
+    {
       "id": 387,
       "folder": "0387-first-unique-character-in-a-string",
       "slug": "first-unique-character-in-a-string",
@@ -963,8 +1275,38 @@
         "solution.py"
       ],
       "acceptedVariantFiles": [],
-      "attemptFiles": [],
+      "attemptFiles": [
+        "attempts/submission-2015160574-wrong-answer/README.md",
+        "attempts/submission-2015160574-wrong-answer/solution.py",
+        "attempts/submission-2015164674-time-limit-exceeded/README.md",
+        "attempts/submission-2015164674-time-limit-exceeded/solution.py"
+      ],
       "languages": [
+        "md",
+        "python"
+      ]
+    },
+    {
+      "id": 389,
+      "folder": "0389-find-the-difference",
+      "slug": "find-the-difference",
+      "title": "Find the Difference",
+      "pattern": "uncategorized",
+      "hasReadme": true,
+      "status": "Accepted",
+      "todoCount": 0,
+      "hasKeyIdea": true,
+      "hasComplexity": true,
+      "solutionFiles": [
+        "solution.py"
+      ],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [
+        "attempts/submission-2028750153-runtime-error/README.md",
+        "attempts/submission-2028750153-runtime-error/solution.py"
+      ],
+      "languages": [
+        "md",
         "python"
       ]
     },
@@ -1023,8 +1365,12 @@
         "solution.py"
       ],
       "acceptedVariantFiles": [],
-      "attemptFiles": [],
+      "attemptFiles": [
+        "attempts/submission-2024824782-wrong-answer/README.md",
+        "attempts/submission-2024824782-wrong-answer/solution.py"
+      ],
       "languages": [
+        "md",
         "python"
       ]
     },
@@ -1109,6 +1455,140 @@
       ]
     },
     {
+      "id": 507,
+      "folder": "0507-perfect-number",
+      "slug": "perfect-number",
+      "title": "Perfect Number",
+      "pattern": "math-and-digits",
+      "hasReadme": true,
+      "status": "Accepted",
+      "todoCount": 0,
+      "hasKeyIdea": true,
+      "hasComplexity": true,
+      "solutionFiles": [
+        "solution.ts"
+      ],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [
+        "attempts/submission-2029791989-wrong-answer/README.md",
+        "attempts/submission-2029791989-wrong-answer/solution.ts"
+      ],
+      "languages": [
+        "md",
+        "typescript"
+      ]
+    },
+    {
+      "id": 509,
+      "folder": "0509-fibonacci-number",
+      "slug": "fibonacci-number",
+      "title": "Fibonacci Number",
+      "pattern": "math-and-digits",
+      "hasReadme": true,
+      "status": "Accepted",
+      "todoCount": 0,
+      "hasKeyIdea": true,
+      "hasComplexity": true,
+      "solutionFiles": [
+        "solution.py"
+      ],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": [
+        "python"
+      ]
+    },
+    {
+      "id": 520,
+      "folder": "0520-detect-capital",
+      "slug": "detect-capital",
+      "title": "Detect Capital",
+      "pattern": "uncategorized",
+      "hasReadme": true,
+      "status": "Accepted",
+      "todoCount": 0,
+      "hasKeyIdea": true,
+      "hasComplexity": true,
+      "solutionFiles": [
+        "solution.py"
+      ],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": [
+        "python"
+      ]
+    },
+    {
+      "id": 551,
+      "folder": "0551-student-attendance-record-i",
+      "slug": "student-attendance-record-i",
+      "title": "Student Attendance Record I",
+      "pattern": "uncategorized",
+      "hasReadme": true,
+      "status": "Accepted",
+      "todoCount": 0,
+      "hasKeyIdea": true,
+      "hasComplexity": true,
+      "solutionFiles": [
+        "solution.py"
+      ],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [
+        "attempts/submission-2030537415-wrong-answer/README.md",
+        "attempts/submission-2030537415-wrong-answer/solution.py"
+      ],
+      "languages": [
+        "md",
+        "python"
+      ]
+    },
+    {
+      "id": 561,
+      "folder": "0561-array-partition",
+      "slug": "array-partition",
+      "title": "Array Partition",
+      "pattern": "arrays-and-strings",
+      "hasReadme": true,
+      "status": "Accepted",
+      "todoCount": 0,
+      "hasKeyIdea": true,
+      "hasComplexity": true,
+      "solutionFiles": [
+        "solution.py"
+      ],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": [
+        "python"
+      ]
+    },
+    {
+      "id": 605,
+      "folder": "0605-can-place-flowers",
+      "slug": "can-place-flowers",
+      "title": "Can Place Flowers",
+      "pattern": "uncategorized",
+      "hasReadme": true,
+      "status": "Accepted",
+      "todoCount": 0,
+      "hasKeyIdea": true,
+      "hasComplexity": true,
+      "solutionFiles": [
+        "solution.py"
+      ],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [
+        "attempts/submission-2030508624-wrong-answer/README.md",
+        "attempts/submission-2030508624-wrong-answer/solution.py",
+        "attempts/submission-2030521544-wrong-answer/README.md",
+        "attempts/submission-2030521544-wrong-answer/solution.py"
+      ],
+      "languages": [
+        "md",
+        "python"
+      ]
+    },
+    {
       "id": 628,
       "folder": "0628-maximum-product-of-three-numbers",
       "slug": "maximum-product-of-three-numbers",
@@ -1143,8 +1623,12 @@
         "solution.py"
       ],
       "acceptedVariantFiles": [],
-      "attemptFiles": [],
+      "attemptFiles": [
+        "attempts/submission-2025076646-wrong-answer/README.md",
+        "attempts/submission-2025076646-wrong-answer/solution.py"
+      ],
       "languages": [
+        "md",
         "python"
       ]
     },
@@ -1309,6 +1793,26 @@
       ]
     },
     {
+      "id": 867,
+      "folder": "0867-transpose-matrix",
+      "slug": "transpose-matrix",
+      "title": "Transpose Matrix",
+      "pattern": "uncategorized",
+      "hasReadme": true,
+      "status": "Accepted",
+      "todoCount": 0,
+      "hasKeyIdea": true,
+      "hasComplexity": true,
+      "solutionFiles": [
+        "solution.py"
+      ],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": [
+        "python"
+      ]
+    },
+    {
       "id": 884,
       "folder": "0884-uncommon-words-from-two-sentences",
       "slug": "uncommon-words-from-two-sentences",
@@ -1329,6 +1833,86 @@
       ]
     },
     {
+      "id": 896,
+      "folder": "0896-monotonic-array",
+      "slug": "monotonic-array",
+      "title": "Monotonic Array",
+      "pattern": "arrays-and-strings",
+      "hasReadme": true,
+      "status": "Accepted",
+      "todoCount": 0,
+      "hasKeyIdea": true,
+      "hasComplexity": true,
+      "solutionFiles": [
+        "solution.py"
+      ],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": [
+        "python"
+      ]
+    },
+    {
+      "id": 917,
+      "folder": "0917-reverse-only-letters",
+      "slug": "reverse-only-letters",
+      "title": "Reverse Only Letters",
+      "pattern": "uncategorized",
+      "hasReadme": true,
+      "status": "Accepted",
+      "todoCount": 0,
+      "hasKeyIdea": true,
+      "hasComplexity": true,
+      "solutionFiles": [
+        "solution.py"
+      ],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": [
+        "python"
+      ]
+    },
+    {
+      "id": 932,
+      "folder": "0932-beautiful-array",
+      "slug": "beautiful-array",
+      "title": "Beautiful Array",
+      "pattern": "arrays-and-strings",
+      "hasReadme": true,
+      "status": "Accepted",
+      "todoCount": 0,
+      "hasKeyIdea": true,
+      "hasComplexity": true,
+      "solutionFiles": [
+        "solution.py"
+      ],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": [
+        "python"
+      ]
+    },
+    {
+      "id": 942,
+      "folder": "0942-di-string-match",
+      "slug": "di-string-match",
+      "title": "DI String Match",
+      "pattern": "arrays-and-strings",
+      "hasReadme": true,
+      "status": "Accepted",
+      "todoCount": 0,
+      "hasKeyIdea": true,
+      "hasComplexity": true,
+      "solutionFiles": [
+        "solution.ts"
+      ],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": [
+        "typescript"
+      ]
+    },
+    {
       "id": 977,
       "folder": "0977-squares-of-a-sorted-array",
       "slug": "squares-of-a-sorted-array",
@@ -1345,6 +1929,30 @@
       "acceptedVariantFiles": [],
       "attemptFiles": [],
       "languages": [
+        "python"
+      ]
+    },
+    {
+      "id": 989,
+      "folder": "0989-add-to-array-form-of-integer",
+      "slug": "add-to-array-form-of-integer",
+      "title": "Add to Array-Form of Integer",
+      "pattern": "arrays-and-strings",
+      "hasReadme": true,
+      "status": "Accepted",
+      "todoCount": 0,
+      "hasKeyIdea": true,
+      "hasComplexity": true,
+      "solutionFiles": [
+        "solution.py"
+      ],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [
+        "attempts/submission-2031295830-runtime-error/README.md",
+        "attempts/submission-2031295830-runtime-error/solution.py"
+      ],
+      "languages": [
+        "md",
         "python"
       ]
     },
@@ -1383,8 +1991,16 @@
         "solution.py"
       ],
       "acceptedVariantFiles": [],
-      "attemptFiles": [],
+      "attemptFiles": [
+        "attempts/submission-2016353686-wrong-answer/README.md",
+        "attempts/submission-2016353686-wrong-answer/solution.py",
+        "attempts/submission-2016386924-wrong-answer/README.md",
+        "attempts/submission-2016386924-wrong-answer/solution.py",
+        "attempts/submission-2016392961-wrong-answer/README.md",
+        "attempts/submission-2016392961-wrong-answer/solution.py"
+      ],
       "languages": [
+        "md",
         "python"
       ]
     },
@@ -1409,11 +2025,95 @@
       ]
     },
     {
+      "id": 1025,
+      "folder": "1025-divisor-game",
+      "slug": "divisor-game",
+      "title": "Divisor Game",
+      "pattern": "uncategorized",
+      "hasReadme": true,
+      "status": "Accepted",
+      "todoCount": 0,
+      "hasKeyIdea": true,
+      "hasComplexity": true,
+      "solutionFiles": [
+        "solution.py"
+      ],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": [
+        "python"
+      ]
+    },
+    {
+      "id": 1037,
+      "folder": "1037-valid-boomerang",
+      "slug": "valid-boomerang",
+      "title": "Valid Boomerang",
+      "pattern": "uncategorized",
+      "hasReadme": true,
+      "status": "Accepted",
+      "todoCount": 0,
+      "hasKeyIdea": true,
+      "hasComplexity": true,
+      "solutionFiles": [
+        "solution.py"
+      ],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [
+        "attempts/submission-2031301557-runtime-error/README.md",
+        "attempts/submission-2031301557-runtime-error/solution.py"
+      ],
+      "languages": [
+        "md",
+        "python"
+      ]
+    },
+    {
+      "id": 1046,
+      "folder": "1046-last-stone-weight",
+      "slug": "last-stone-weight",
+      "title": "Last Stone Weight",
+      "pattern": "uncategorized",
+      "hasReadme": true,
+      "status": "Accepted",
+      "todoCount": 0,
+      "hasKeyIdea": true,
+      "hasComplexity": true,
+      "solutionFiles": [
+        "solution.py"
+      ],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": [
+        "python"
+      ]
+    },
+    {
       "id": 1051,
       "folder": "1051-height-checker",
       "slug": "height-checker",
       "title": "Height Checker",
       "pattern": "uncategorized",
+      "hasReadme": true,
+      "status": "Accepted",
+      "todoCount": 0,
+      "hasKeyIdea": true,
+      "hasComplexity": true,
+      "solutionFiles": [
+        "solution.py"
+      ],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": [
+        "python"
+      ]
+    },
+    {
+      "id": 1071,
+      "folder": "1071-greatest-common-divisor-of-strings",
+      "slug": "greatest-common-divisor-of-strings",
+      "title": "Greatest Common Divisor of Strings",
+      "pattern": "arrays-and-strings",
       "hasReadme": true,
       "status": "Accepted",
       "todoCount": 0,
@@ -1589,11 +2289,55 @@
       ]
     },
     {
+      "id": 1408,
+      "folder": "1408-string-matching-in-an-array",
+      "slug": "string-matching-in-an-array",
+      "title": "String Matching in an Array",
+      "pattern": "arrays-and-strings",
+      "hasReadme": true,
+      "status": "Accepted",
+      "todoCount": 0,
+      "hasKeyIdea": true,
+      "hasComplexity": true,
+      "solutionFiles": [
+        "solution.py"
+      ],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [
+        "attempts/submission-2030560967-wrong-answer/README.md",
+        "attempts/submission-2030560967-wrong-answer/solution.py"
+      ],
+      "languages": [
+        "md",
+        "python"
+      ]
+    },
+    {
       "id": 1431,
       "folder": "1431-kids-with-the-greatest-number-of-candies",
       "slug": "kids-with-the-greatest-number-of-candies",
       "title": "Kids With the Greatest Number of Candies",
       "pattern": "math-and-digits",
+      "hasReadme": true,
+      "status": "Accepted",
+      "todoCount": 0,
+      "hasKeyIdea": true,
+      "hasComplexity": true,
+      "solutionFiles": [
+        "solution.py"
+      ],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": [
+        "python"
+      ]
+    },
+    {
+      "id": 1436,
+      "folder": "1436-destination-city",
+      "slug": "destination-city",
+      "title": "Destination City",
+      "pattern": "uncategorized",
       "hasReadme": true,
       "status": "Accepted",
       "todoCount": 0,
@@ -1731,6 +2475,26 @@
       ]
     },
     {
+      "id": 1496,
+      "folder": "1496-path-crossing",
+      "slug": "path-crossing",
+      "title": "Path Crossing",
+      "pattern": "uncategorized",
+      "hasReadme": true,
+      "status": "Accepted",
+      "todoCount": 0,
+      "hasKeyIdea": true,
+      "hasComplexity": true,
+      "solutionFiles": [
+        "solution.py"
+      ],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": [
+        "python"
+      ]
+    },
+    {
       "id": 1502,
       "folder": "1502-can-make-arithmetic-progression-from-sequence",
       "slug": "can-make-arithmetic-progression-from-sequence",
@@ -1811,6 +2575,26 @@
       ]
     },
     {
+      "id": 1636,
+      "folder": "1636-sort-array-by-increasing-frequency",
+      "slug": "sort-array-by-increasing-frequency",
+      "title": "Sort Array by Increasing Frequency",
+      "pattern": "arrays-and-strings",
+      "hasReadme": true,
+      "status": "Accepted",
+      "todoCount": 0,
+      "hasKeyIdea": true,
+      "hasComplexity": true,
+      "solutionFiles": [
+        "solution.py"
+      ],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": [
+        "python"
+      ]
+    },
+    {
       "id": 1662,
       "folder": "1662-check-if-two-string-arrays-are-equivalent",
       "slug": "check-if-two-string-arrays-are-equivalent",
@@ -1851,10 +2635,50 @@
       ]
     },
     {
+      "id": 1678,
+      "folder": "1678-goal-parser-interpretation",
+      "slug": "goal-parser-interpretation",
+      "title": "Goal Parser Interpretation",
+      "pattern": "uncategorized",
+      "hasReadme": true,
+      "status": "Accepted",
+      "todoCount": 0,
+      "hasKeyIdea": true,
+      "hasComplexity": true,
+      "solutionFiles": [
+        "solution.py"
+      ],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": [
+        "python"
+      ]
+    },
+    {
       "id": 1768,
       "folder": "1768-merge-strings-alternately",
       "slug": "merge-strings-alternately",
       "title": "Merge Strings Alternately",
+      "pattern": "arrays-and-strings",
+      "hasReadme": true,
+      "status": "Accepted",
+      "todoCount": 0,
+      "hasKeyIdea": true,
+      "hasComplexity": true,
+      "solutionFiles": [
+        "solution.py"
+      ],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": [
+        "python"
+      ]
+    },
+    {
+      "id": 1816,
+      "folder": "1816-truncate-sentence",
+      "slug": "truncate-sentence",
+      "title": "Truncate Sentence",
       "pattern": "arrays-and-strings",
       "hasReadme": true,
       "status": "Accepted",
@@ -1951,6 +2775,26 @@
       ]
     },
     {
+      "id": 1920,
+      "folder": "1920-build-array-from-permutation",
+      "slug": "build-array-from-permutation",
+      "title": "Build Array from Permutation",
+      "pattern": "arrays-and-strings",
+      "hasReadme": true,
+      "status": "Accepted",
+      "todoCount": 0,
+      "hasKeyIdea": true,
+      "hasComplexity": true,
+      "solutionFiles": [
+        "solution.py"
+      ],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": [
+        "python"
+      ]
+    },
+    {
       "id": 1929,
       "folder": "1929-concatenation-of-array",
       "slug": "concatenation-of-array",
@@ -1967,6 +2811,30 @@
       "acceptedVariantFiles": [],
       "attemptFiles": [],
       "languages": [
+        "python"
+      ]
+    },
+    {
+      "id": 1952,
+      "folder": "1952-three-divisors",
+      "slug": "three-divisors",
+      "title": "Three Divisors",
+      "pattern": "uncategorized",
+      "hasReadme": true,
+      "status": "Accepted",
+      "todoCount": 0,
+      "hasKeyIdea": true,
+      "hasComplexity": true,
+      "solutionFiles": [
+        "solution.py"
+      ],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [
+        "attempts/submission-2030613955-wrong-answer/README.md",
+        "attempts/submission-2030613955-wrong-answer/solution.py"
+      ],
+      "languages": [
+        "md",
         "python"
       ]
     },
@@ -1991,10 +2859,70 @@
       ]
     },
     {
+      "id": 1979,
+      "folder": "1979-find-greatest-common-divisor-of-array",
+      "slug": "find-greatest-common-divisor-of-array",
+      "title": "Find Greatest Common Divisor of Array",
+      "pattern": "arrays-and-strings",
+      "hasReadme": true,
+      "status": "Accepted",
+      "todoCount": 0,
+      "hasKeyIdea": true,
+      "hasComplexity": true,
+      "solutionFiles": [
+        "solution.py"
+      ],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": [
+        "python"
+      ]
+    },
+    {
+      "id": 2006,
+      "folder": "2006-count-number-of-pairs-with-absolute-difference-k",
+      "slug": "count-number-of-pairs-with-absolute-difference-k",
+      "title": "Count Number of Pairs With Absolute Difference K",
+      "pattern": "math-and-digits",
+      "hasReadme": true,
+      "status": "Accepted",
+      "todoCount": 0,
+      "hasKeyIdea": true,
+      "hasComplexity": true,
+      "solutionFiles": [
+        "solution.py"
+      ],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": [
+        "python"
+      ]
+    },
+    {
       "id": 2011,
       "folder": "2011-final-value-of-variable-after-performing-operations",
       "slug": "final-value-of-variable-after-performing-operations",
       "title": "Final Value of Variable After Performing Operations",
+      "pattern": "uncategorized",
+      "hasReadme": true,
+      "status": "Accepted",
+      "todoCount": 0,
+      "hasKeyIdea": true,
+      "hasComplexity": true,
+      "solutionFiles": [
+        "solution.py"
+      ],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": [
+        "python"
+      ]
+    },
+    {
+      "id": 2085,
+      "folder": "2085-count-common-words-with-one-occurrence",
+      "slug": "count-common-words-with-one-occurrence",
+      "title": "Count Common Words With One Occurrence",
       "pattern": "uncategorized",
       "hasReadme": true,
       "status": "Accepted",
@@ -2045,8 +2973,14 @@
         "solution.py"
       ],
       "acceptedVariantFiles": [],
-      "attemptFiles": [],
+      "attemptFiles": [
+        "attempts/submission-2017760376-wrong-answer/README.md",
+        "attempts/submission-2017760376-wrong-answer/solution.py",
+        "attempts/submission-2017762801-wrong-answer/README.md",
+        "attempts/submission-2017762801-wrong-answer/solution.py"
+      ],
       "languages": [
+        "md",
         "python"
       ]
     },
@@ -2069,6 +3003,26 @@
       "attemptFiles": [],
       "languages": [
         "cpp",
+        "python"
+      ]
+    },
+    {
+      "id": 2129,
+      "folder": "2129-capitalize-the-title",
+      "slug": "capitalize-the-title",
+      "title": "Capitalize the Title",
+      "pattern": "uncategorized",
+      "hasReadme": true,
+      "status": "Accepted",
+      "todoCount": 0,
+      "hasKeyIdea": true,
+      "hasComplexity": true,
+      "solutionFiles": [
+        "solution.py"
+      ],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": [
         "python"
       ]
     },
@@ -2187,8 +3141,12 @@
         "solution.py"
       ],
       "acceptedVariantFiles": [],
-      "attemptFiles": [],
+      "attemptFiles": [
+        "attempts/submission-2022068483-wrong-answer/README.md",
+        "attempts/submission-2022068483-wrong-answer/solution.py"
+      ],
       "languages": [
+        "md",
         "python"
       ]
     },
@@ -2198,6 +3156,26 @@
       "slug": "create-binary-tree-from-descriptions",
       "title": "Create Binary Tree From Descriptions",
       "pattern": "tree-and-graph",
+      "hasReadme": true,
+      "status": "Accepted",
+      "todoCount": 0,
+      "hasKeyIdea": true,
+      "hasComplexity": true,
+      "solutionFiles": [
+        "solution.py"
+      ],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": [
+        "python"
+      ]
+    },
+    {
+      "id": 2215,
+      "folder": "2215-find-the-difference-of-two-arrays",
+      "slug": "find-the-difference-of-two-arrays",
+      "title": "Find the Difference of Two Arrays",
+      "pattern": "arrays-and-strings",
       "hasReadme": true,
       "status": "Accepted",
       "todoCount": 0,
@@ -2233,10 +3211,154 @@
       ]
     },
     {
+      "id": 2248,
+      "folder": "2248-intersection-of-multiple-arrays",
+      "slug": "intersection-of-multiple-arrays",
+      "title": "Intersection of Multiple Arrays",
+      "pattern": "arrays-and-strings",
+      "hasReadme": true,
+      "status": "Accepted",
+      "todoCount": 0,
+      "hasKeyIdea": true,
+      "hasComplexity": true,
+      "solutionFiles": [
+        "solution.py"
+      ],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [
+        "attempts/submission-2031359053-wrong-answer/README.md",
+        "attempts/submission-2031359053-wrong-answer/solution.py"
+      ],
+      "languages": [
+        "md",
+        "python"
+      ]
+    },
+    {
+      "id": 2309,
+      "folder": "2309-greatest-english-letter-in-upper-and-lower-case",
+      "slug": "greatest-english-letter-in-upper-and-lower-case",
+      "title": "Greatest English Letter in Upper and Lower Case",
+      "pattern": "uncategorized",
+      "hasReadme": true,
+      "status": "Accepted",
+      "todoCount": 0,
+      "hasKeyIdea": true,
+      "hasComplexity": true,
+      "solutionFiles": [
+        "solution.py"
+      ],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": [
+        "python"
+      ]
+    },
+    {
+      "id": 2390,
+      "folder": "2390-removing-stars-from-a-string",
+      "slug": "removing-stars-from-a-string",
+      "title": "Removing Stars From a String",
+      "pattern": "arrays-and-strings",
+      "hasReadme": true,
+      "status": "Accepted",
+      "todoCount": 0,
+      "hasKeyIdea": true,
+      "hasComplexity": true,
+      "solutionFiles": [
+        "solution.py"
+      ],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": [
+        "python"
+      ]
+    },
+    {
+      "id": 2396,
+      "folder": "2396-strictly-palindromic-number",
+      "slug": "strictly-palindromic-number",
+      "title": "Strictly Palindromic Number",
+      "pattern": "math-and-digits",
+      "hasReadme": true,
+      "status": "Accepted",
+      "todoCount": 0,
+      "hasKeyIdea": true,
+      "hasComplexity": true,
+      "solutionFiles": [
+        "solution.py"
+      ],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": [
+        "python"
+      ]
+    },
+    {
+      "id": 2413,
+      "folder": "2413-smallest-even-multiple",
+      "slug": "smallest-even-multiple",
+      "title": "Smallest Even Multiple",
+      "pattern": "uncategorized",
+      "hasReadme": true,
+      "status": "Accepted",
+      "todoCount": 0,
+      "hasKeyIdea": true,
+      "hasComplexity": true,
+      "solutionFiles": [
+        "solution.cpp"
+      ],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": [
+        "cpp"
+      ]
+    },
+    {
+      "id": 2418,
+      "folder": "2418-sort-the-people",
+      "slug": "sort-the-people",
+      "title": "Sort the People",
+      "pattern": "uncategorized",
+      "hasReadme": true,
+      "status": "Accepted",
+      "todoCount": 0,
+      "hasKeyIdea": true,
+      "hasComplexity": true,
+      "solutionFiles": [
+        "solution.py"
+      ],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": [
+        "python"
+      ]
+    },
+    {
       "id": 2427,
       "folder": "2427-number-of-common-factors",
       "slug": "number-of-common-factors",
       "title": "Number of Common Factors",
+      "pattern": "math-and-digits",
+      "hasReadme": true,
+      "status": "Accepted",
+      "todoCount": 0,
+      "hasKeyIdea": true,
+      "hasComplexity": true,
+      "solutionFiles": [
+        "solution.py"
+      ],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": [
+        "python"
+      ]
+    },
+    {
+      "id": 2437,
+      "folder": "2437-number-of-valid-clock-times",
+      "slug": "number-of-valid-clock-times",
+      "title": "Number of Valid Clock Times",
       "pattern": "math-and-digits",
       "hasReadme": true,
       "status": "Accepted",
@@ -2271,6 +3393,26 @@
       "attemptFiles": [],
       "languages": [
         "cpp",
+        "python"
+      ]
+    },
+    {
+      "id": 2481,
+      "folder": "2481-minimum-cuts-to-divide-a-circle",
+      "slug": "minimum-cuts-to-divide-a-circle",
+      "title": "Minimum Cuts to Divide a Circle",
+      "pattern": "uncategorized",
+      "hasReadme": true,
+      "status": "Accepted",
+      "todoCount": 0,
+      "hasKeyIdea": true,
+      "hasComplexity": true,
+      "solutionFiles": [
+        "solution.py"
+      ],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": [
         "python"
       ]
     },
@@ -2355,6 +3497,30 @@
       ]
     },
     {
+      "id": 2540,
+      "folder": "2540-minimum-common-value",
+      "slug": "minimum-common-value",
+      "title": "Minimum Common Value",
+      "pattern": "uncategorized",
+      "hasReadme": true,
+      "status": "Accepted",
+      "todoCount": 0,
+      "hasKeyIdea": true,
+      "hasComplexity": true,
+      "solutionFiles": [
+        "solution.py"
+      ],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [
+        "attempts/submission-2031345294-time-limit-exceeded/README.md",
+        "attempts/submission-2031345294-time-limit-exceeded/solution.py"
+      ],
+      "languages": [
+        "md",
+        "python"
+      ]
+    },
+    {
       "id": 2553,
       "folder": "2553-separate-the-digits-in-an-array",
       "slug": "separate-the-digits-in-an-array",
@@ -2389,8 +3555,12 @@
         "solution.py"
       ],
       "acceptedVariantFiles": [],
-      "attemptFiles": [],
+      "attemptFiles": [
+        "attempts/submission-2023778519-wrong-answer/README.md",
+        "attempts/submission-2023778519-wrong-answer/solution.py"
+      ],
       "languages": [
+        "md",
         "python"
       ]
     },
@@ -2421,6 +3591,26 @@
       "folder": "2656-maximum-sum-with-exactly-k-elements",
       "slug": "maximum-sum-with-exactly-k-elements",
       "title": "Maximum Sum With Exactly K Elements",
+      "pattern": "math-and-digits",
+      "hasReadme": true,
+      "status": "Accepted",
+      "todoCount": 0,
+      "hasKeyIdea": true,
+      "hasComplexity": true,
+      "solutionFiles": [
+        "solution.py"
+      ],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": [
+        "python"
+      ]
+    },
+    {
+      "id": 2678,
+      "folder": "2678-number-of-senior-citizens",
+      "slug": "number-of-senior-citizens",
+      "title": "Number of Senior Citizens",
       "pattern": "math-and-digits",
       "hasReadme": true,
       "status": "Accepted",
@@ -2504,6 +3694,26 @@
       "slug": "number-of-employees-who-met-the-target",
       "title": "Number of Employees Who Met the Target",
       "pattern": "math-and-digits",
+      "hasReadme": true,
+      "status": "Accepted",
+      "todoCount": 0,
+      "hasKeyIdea": true,
+      "hasComplexity": true,
+      "solutionFiles": [
+        "solution.py"
+      ],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": [
+        "python"
+      ]
+    },
+    {
+      "id": 2828,
+      "folder": "2828-check-if-a-string-is-an-acronym-of-words",
+      "slug": "check-if-a-string-is-an-acronym-of-words",
+      "title": "Check if a String Is an Acronym of Words",
+      "pattern": "arrays-and-strings",
       "hasReadme": true,
       "status": "Accepted",
       "todoCount": 0,
@@ -2739,6 +3949,26 @@
       ]
     },
     {
+      "id": 3121,
+      "folder": "3121-count-the-number-of-special-characters-ii",
+      "slug": "count-the-number-of-special-characters-ii",
+      "title": "Count the Number of Special Characters II",
+      "pattern": "math-and-digits",
+      "hasReadme": true,
+      "status": "Accepted",
+      "todoCount": 0,
+      "hasKeyIdea": true,
+      "hasComplexity": true,
+      "solutionFiles": [
+        "solution.py"
+      ],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": [
+        "python"
+      ]
+    },
+    {
       "id": 3136,
       "folder": "3136-valid-word",
       "slug": "valid-word",
@@ -2776,6 +4006,70 @@
       "attemptFiles": [],
       "languages": [
         "python"
+      ]
+    },
+    {
+      "id": 3168,
+      "folder": "3168-minimum-number-of-chairs-in-a-waiting-room",
+      "slug": "minimum-number-of-chairs-in-a-waiting-room",
+      "title": "Minimum Number of Chairs in a Waiting Room",
+      "pattern": "math-and-digits",
+      "hasReadme": true,
+      "status": "Accepted",
+      "todoCount": 0,
+      "hasKeyIdea": true,
+      "hasComplexity": true,
+      "solutionFiles": [
+        "solution.py"
+      ],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": [
+        "python"
+      ]
+    },
+    {
+      "id": 3194,
+      "folder": "3194-minimum-average-of-smallest-and-largest-elements",
+      "slug": "minimum-average-of-smallest-and-largest-elements",
+      "title": "Minimum Average of Smallest and Largest Elements",
+      "pattern": "uncategorized",
+      "hasReadme": true,
+      "status": "Accepted",
+      "todoCount": 0,
+      "hasKeyIdea": true,
+      "hasComplexity": true,
+      "solutionFiles": [
+        "solution.py"
+      ],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": [
+        "python"
+      ]
+    },
+    {
+      "id": 3210,
+      "folder": "3210-find-the-encrypted-string",
+      "slug": "find-the-encrypted-string",
+      "title": "Find the Encrypted String",
+      "pattern": "arrays-and-strings",
+      "hasReadme": true,
+      "status": "Accepted",
+      "todoCount": 0,
+      "hasKeyIdea": true,
+      "hasComplexity": true,
+      "solutionFiles": [
+        "solution.ts"
+      ],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [
+        "attempts/submission-2028639686-wrong-answer/README.md",
+        "attempts/submission-2028639686-wrong-answer/solution.ts"
+      ],
+      "languages": [
+        "md",
+        "typescript"
       ]
     },
     {
@@ -2819,10 +4113,70 @@
       ]
     },
     {
+      "id": 3274,
+      "folder": "3274-check-if-two-chessboard-squares-have-the-same-color",
+      "slug": "check-if-two-chessboard-squares-have-the-same-color",
+      "title": "Check if Two Chessboard Squares Have the Same Color",
+      "pattern": "uncategorized",
+      "hasReadme": true,
+      "status": "Accepted",
+      "todoCount": 0,
+      "hasKeyIdea": true,
+      "hasComplexity": true,
+      "solutionFiles": [
+        "solution.ts"
+      ],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": [
+        "typescript"
+      ]
+    },
+    {
+      "id": 3280,
+      "folder": "3280-convert-date-to-binary",
+      "slug": "convert-date-to-binary",
+      "title": "Convert Date to Binary",
+      "pattern": "uncategorized",
+      "hasReadme": true,
+      "status": "Accepted",
+      "todoCount": 0,
+      "hasKeyIdea": true,
+      "hasComplexity": true,
+      "solutionFiles": [
+        "solution.py"
+      ],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": [
+        "python"
+      ]
+    },
+    {
       "id": 3289,
       "folder": "3289-the-two-sneaky-numbers-of-digitville",
       "slug": "the-two-sneaky-numbers-of-digitville",
       "title": "The Two Sneaky Numbers of Digitville",
+      "pattern": "math-and-digits",
+      "hasReadme": true,
+      "status": "Accepted",
+      "todoCount": 0,
+      "hasKeyIdea": true,
+      "hasComplexity": true,
+      "solutionFiles": [
+        "solution.py"
+      ],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": [
+        "python"
+      ]
+    },
+    {
+      "id": 3300,
+      "folder": "3300-minimum-element-after-replacement-with-digit-sum",
+      "slug": "minimum-element-after-replacement-with-digit-sum",
+      "title": "Minimum Element After Replacement With Digit Sum",
       "pattern": "math-and-digits",
       "hasReadme": true,
       "status": "Accepted",
@@ -2899,11 +4253,71 @@
       ]
     },
     {
+      "id": 3516,
+      "folder": "3516-find-closest-person",
+      "slug": "find-closest-person",
+      "title": "Find Closest Person",
+      "pattern": "uncategorized",
+      "hasReadme": true,
+      "status": "Accepted",
+      "todoCount": 0,
+      "hasKeyIdea": true,
+      "hasComplexity": true,
+      "solutionFiles": [
+        "solution.py"
+      ],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": [
+        "python"
+      ]
+    },
+    {
       "id": 3541,
       "folder": "3541-find-most-frequent-vowel-and-consonant",
       "slug": "find-most-frequent-vowel-and-consonant",
       "title": "Find Most Frequent Vowel and Consonant",
       "pattern": "hashing-and-counting",
+      "hasReadme": true,
+      "status": "Accepted",
+      "todoCount": 0,
+      "hasKeyIdea": true,
+      "hasComplexity": true,
+      "solutionFiles": [
+        "solution.py"
+      ],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": [
+        "python"
+      ]
+    },
+    {
+      "id": 3558,
+      "folder": "3558-number-of-ways-to-assign-edge-weights-i",
+      "slug": "number-of-ways-to-assign-edge-weights-i",
+      "title": "Number of Ways to Assign Edge Weights I",
+      "pattern": "math-and-digits",
+      "hasReadme": true,
+      "status": "Accepted",
+      "todoCount": 0,
+      "hasKeyIdea": true,
+      "hasComplexity": true,
+      "solutionFiles": [
+        "solution.py"
+      ],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": [
+        "python"
+      ]
+    },
+    {
+      "id": 3559,
+      "folder": "3559-number-of-ways-to-assign-edge-weights-ii",
+      "slug": "number-of-ways-to-assign-edge-weights-ii",
+      "title": "Number of Ways to Assign Edge Weights II",
+      "pattern": "math-and-digits",
       "hasReadme": true,
       "status": "Accepted",
       "todoCount": 0,
@@ -2953,8 +4367,12 @@
         "solution.py"
       ],
       "acceptedVariantFiles": [],
-      "attemptFiles": [],
+      "attemptFiles": [
+        "attempts/submission-2019944381-wrong-answer/README.md",
+        "attempts/submission-2019944381-wrong-answer/solution.py"
+      ],
       "languages": [
+        "md",
         "python"
       ]
     },
@@ -3019,6 +4437,50 @@
       ]
     },
     {
+      "id": 3691,
+      "folder": "3691-maximum-total-subarray-value-ii",
+      "slug": "maximum-total-subarray-value-ii",
+      "title": "Maximum Total Subarray Value II",
+      "pattern": "arrays-and-strings",
+      "hasReadme": true,
+      "status": "Accepted",
+      "todoCount": 0,
+      "hasKeyIdea": true,
+      "hasComplexity": true,
+      "solutionFiles": [
+        "solution.py"
+      ],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [
+        "attempts/submission-2028563412-time-limit-exceeded/README.md",
+        "attempts/submission-2028563412-time-limit-exceeded/solution.py"
+      ],
+      "languages": [
+        "md",
+        "python"
+      ]
+    },
+    {
+      "id": 3701,
+      "folder": "3701-compute-alternating-sum",
+      "slug": "compute-alternating-sum",
+      "title": "Compute Alternating Sum",
+      "pattern": "math-and-digits",
+      "hasReadme": true,
+      "status": "Accepted",
+      "todoCount": 0,
+      "hasKeyIdea": true,
+      "hasComplexity": true,
+      "solutionFiles": [
+        "solution.py"
+      ],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": [
+        "python"
+      ]
+    },
+    {
       "id": 3751,
       "folder": "3751-total-waviness-of-numbers-in-range-i",
       "slug": "total-waviness-of-numbers-in-range-i",
@@ -3044,6 +4506,132 @@
       "slug": "total-waviness-of-numbers-in-range-ii",
       "title": "Total Waviness of Numbers in Range II",
       "pattern": "math-and-digits",
+      "hasReadme": true,
+      "status": "Accepted",
+      "todoCount": 0,
+      "hasKeyIdea": true,
+      "hasComplexity": true,
+      "solutionFiles": [
+        "solution.py"
+      ],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": [
+        "python"
+      ]
+    },
+    {
+      "id": 3760,
+      "folder": "3760-maximum-substrings-with-distinct-start",
+      "slug": "maximum-substrings-with-distinct-start",
+      "title": "Maximum Substrings With Distinct Start",
+      "pattern": "arrays-and-strings",
+      "hasReadme": true,
+      "status": "Accepted",
+      "todoCount": 0,
+      "hasKeyIdea": true,
+      "hasComplexity": true,
+      "solutionFiles": [
+        "solution.py"
+      ],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": [
+        "python"
+      ]
+    },
+    {
+      "id": 3783,
+      "folder": "3783-mirror-distance-of-an-integer",
+      "slug": "mirror-distance-of-an-integer",
+      "title": "Mirror Distance of an Integer",
+      "pattern": "math-and-digits",
+      "hasReadme": true,
+      "status": "Accepted",
+      "todoCount": 0,
+      "hasKeyIdea": true,
+      "hasComplexity": true,
+      "solutionFiles": [
+        "solution.cpp"
+      ],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": [
+        "cpp"
+      ]
+    },
+    {
+      "id": 3794,
+      "folder": "3794-reverse-string-prefix",
+      "slug": "reverse-string-prefix",
+      "title": "Reverse String Prefix",
+      "pattern": "arrays-and-strings",
+      "hasReadme": true,
+      "status": "Accepted",
+      "todoCount": 0,
+      "hasKeyIdea": true,
+      "hasComplexity": true,
+      "solutionFiles": [
+        "solution.py"
+      ],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": [
+        "python"
+      ]
+    },
+    {
+      "id": 3838,
+      "folder": "3838-weighted-word-mapping",
+      "slug": "weighted-word-mapping",
+      "title": "Weighted Word Mapping",
+      "pattern": "arrays-and-strings",
+      "hasReadme": true,
+      "status": "Accepted",
+      "todoCount": 0,
+      "hasKeyIdea": true,
+      "hasComplexity": true,
+      "solutionFiles": [
+        "solution.py"
+      ],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": [
+        "python"
+      ]
+    },
+    {
+      "id": 3895,
+      "folder": "3895-count-digit-appearances",
+      "slug": "count-digit-appearances",
+      "title": "Count Digit Appearances",
+      "pattern": "math-and-digits",
+      "hasReadme": true,
+      "status": "Accepted",
+      "todoCount": 0,
+      "hasKeyIdea": true,
+      "hasComplexity": true,
+      "solutionFiles": [
+        "solution.py"
+      ],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [
+        "attempts/submission-2031692645-wrong-answer/README.md",
+        "attempts/submission-2031692645-wrong-answer/solution.py",
+        "attempts/submission-2031695948-wrong-answer/README.md",
+        "attempts/submission-2031695948-wrong-answer/solution.py"
+      ],
+      "languages": [
+        "md",
+        "python"
+      ]
+    },
+    {
+      "id": 3898,
+      "folder": "3898-find-the-degree-of-each-vertex",
+      "slug": "find-the-degree-of-each-vertex",
+      "title": "Find the Degree of Each Vertex",
+      "pattern": "uncategorized",
       "hasReadme": true,
       "status": "Accepted",
       "todoCount": 0,
@@ -3121,10 +4709,8 @@
   ],
   "trackedFileFlags": [],
   "weaknessSignals": [
-    "0 of 154 problem READMEs still need real reflection.",
+    "0 of 225 problem READMEs still need real reflection.",
     "6 submissions have unknown or missing status metadata.",
-    "No failed attempts are preserved yet, so the repo cannot fully show the early struggle-to-improvement arc.",
-    "No TypeScript solutions are present yet; future JS/TS learning should be visible as a new track.",
     "Tree/graph/DP coverage is thin relative to array, string, math, and simple loop problems."
   ]
 }
