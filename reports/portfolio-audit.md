@@ -1,61 +1,62 @@
 # Portfolio Audit
 
-- Generated at: 2026-06-13T15:32:38.104Z
-- Local problem folders: 154
+- Generated at: 2026-06-14T03:43:29.872Z
+- Local problem folders: 227
 - Public solved count: 224
-- Estimated solved-count gap: 70
-- Problems with real attempt files: 0
-- Problems with multiple languages or recorded language variants: 6
+- Estimated solved-count gap: 0
+- Problems with real attempt files: 34
+- Problems with multiple languages or recorded language variants: 40
 - Problems needing reflection cleanup: 0
 - Problems with unknown/missing status metadata: 6
 
 ## Verdict
 
-This repo is worth making public later, but not as a raw dump. It already has a privacy-first sync system and a large accepted-solution archive. The public version should present the repo as a learning trace: accepted code, failed attempts when available, short reflections, weakness reports, and honest AI-assisted curation.
+Ready for public release as a learning archive. The repo has accepted code, preserved history, model-answer notes, short reflections, generated reports, and honest AI-assisted framing.
 
-Do not publish yet. The main blockers are the source-code sync gap, no preserved failed attempts, no TypeScript track, public-facing explanation still needing a final pass.
+No publication-blocking issues were found by this audit. Keep the caveats below visible instead of turning the repo into a trophy shelf.
 
 ## Language Coverage
 
 | Language | Problems |
 | --- | --- |
-| cpp | 8 |
-| python | 150 |
+| cpp | 10 |
+| md | 34 |
+| python | 216 |
 | sql-or-text | 2 |
+| typescript | 5 |
 
 ## Pattern Coverage
 
 | Pattern | Problems |
 | --- | --- |
-| arrays-and-strings | 40 |
+| arrays-and-strings | 66 |
 | dynamic-programming | 2 |
 | hashing-and-counting | 9 |
 | linked-list | 2 |
-| math-and-digits | 57 |
+| math-and-digits | 72 |
 | sql | 2 |
 | stack | 3 |
 | tree-and-graph | 1 |
-| two-pointers | 3 |
-| uncategorized | 35 |
+| two-pointers | 4 |
+| uncategorized | 66 |
 
 ## Weakness Signals
 
-- 70 public solved problems are not yet represented by local source folders.
-- 0 of 154 problem READMEs still need real reflection.
+- 0 of 227 problem READMEs still need real reflection.
 - 6 submissions have unknown or missing status metadata.
-- No failed attempts are preserved yet, so the repo cannot fully show the early struggle-to-improvement arc.
-- No TypeScript solutions are present yet; future JS/TS learning should be visible as a new track.
+- Failed attempts are preserved when real source exists; keep capturing them for new work.
+- A TypeScript track exists; expand it deliberately rather than scattering one-off language experiments.
 - Tree/graph/DP coverage is thin relative to array, string, math, and simple loop problems.
 
-## Cleanup Order
+## Release Checklist
 
-1. Keep the repo private while cleanup is in progress.
-2. Add honest public framing to the README: Adrian owns the learning; Morrow assists with review, notes, reports, and curation.
-3. Run the extension's Collect Submission History flow until the local source archive catches up with the public solved count.
+1. Merge the latest cleanup branch into the default branch before changing repository visibility.
+2. Keep the README framing honest: Adrian owns the learning; Morrow assists with review, notes, reports, and curation.
+3. Run the extension's Collect Submission History flow if the local source archive falls behind the public solved count.
 4. Keep root README reflections filled for new accepted submissions; current reflection debt is clear.
 5. Start preserving failed attempts under `attempts/` for new work. Backfill old failed attempts only when real source exists.
-6. Add a TypeScript track after the exam instead of pretending it already exists.
-7. Publish only after the README, reports, status metadata, and learning trace are coherent.
+6. Expand the TypeScript track deliberately instead of pretending the track is already mature.
+7. Keep reports current after meaningful sync or note changes.
 
 ## Public Safety Scan
 

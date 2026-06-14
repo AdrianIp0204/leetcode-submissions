@@ -1,0 +1,32 @@
+# Compute Alternating Sum
+
+- LeetCode: https://leetcode.com/problems/compute-alternating-sum/
+- Language: python3
+- Exported at: 2026-06-13T10:25:41.301Z
+- Submission status seen by extension: Accepted
+- Difficulty: Easy
+- Tags: Array, Simulation
+- Memory: 19092000
+- Submitted at: 2026-06-13T10:25:40.000Z
+- Submission ID: 2031663127
+
+## Pattern
+
+parity-index accumulation.
+
+## Key Idea
+
+Add values at even indexes and subtract values at odd indexes.
+
+## Mistake / Edge Case
+
+Index parity is zero-based in the accepted code, so index 0 is added.
+
+## Complexity
+
+- Time: O(n)
+- Space: O(1)
+
+## What Adrian Should Remember
+
+Alternating sums are usually a sign determined by index parity.

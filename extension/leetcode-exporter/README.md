@@ -12,7 +12,7 @@ It is intentionally boring:
 
 ## Install In Chrome Or Edge
 
-1. Clone or download this private repo on the computer where you solve LeetCode.
+1. Clone or download this repo on the computer where you solve LeetCode.
 2. Open `chrome://extensions` or `edge://extensions`.
 3. Turn on developer mode.
 4. Choose **Load unpacked**.
@@ -128,7 +128,7 @@ shows an older version after `git pull` and reload, remove that unpacked
 extension entry and load this exact folder again:
 
 ```text
-C:\Users\dream\leetcode-submissions\extension\leetcode-exporter
+<repo>\extension\leetcode-exporter
 ```
 
 ## Limitations

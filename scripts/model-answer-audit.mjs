@@ -141,7 +141,9 @@ function renderReport({ generatedAt, problems, notes }) {
     "",
     covered.length === 0
       ? "No model-answer track exists yet. Start with core patterns before trying to cover every easy problem."
-      : "The model-answer track has started. Keep adding notes in batches, prioritizing reusable patterns over simple one-line problems.",
+      : missing.length === 0 && incomplete.length === 0
+        ? "Every current problem has a complete model-answer note. Keep the track current as new submissions arrive."
+        : "The model-answer track is active. Keep adding notes in batches, prioritizing reusable patterns over simple one-line problems.",
     "",
     "## Next Coverage Batch",
     "",
