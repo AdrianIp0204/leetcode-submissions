@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-06-14T15:35:46.219Z",
+  "generatedAt": "2026-06-15T15:31:14.394Z",
   "username": "AdrianIp",
-  "profileFetchedAt": "2026-06-14T15:30:48.771Z",
-  "publicAcceptedSolved": 247,
-  "publicAcceptedSubmissions": 281,
-  "publicAttemptedProblems": 248,
-  "publicTotalSubmissions": 352,
-  "localProblemFolders": 248,
+  "profileFetchedAt": "2026-06-15T15:31:14.221Z",
+  "publicAcceptedSolved": 263,
+  "publicAcceptedSubmissions": 297,
+  "publicAttemptedProblems": 264,
+  "publicTotalSubmissions": 369,
+  "localProblemFolders": 264,
   "localCanonicalSolutions": 226,
   "estimatedSolvedGap": 0,
   "status": "ok",
@@ -272,6 +272,11 @@
       "hasCanonicalSolution": true
     },
     {
+      "folder": "0326-power-of-three",
+      "slug": "power-of-three",
+      "hasCanonicalSolution": false
+    },
+    {
       "folder": "0342-power-of-four",
       "slug": "power-of-four",
       "hasCanonicalSolution": true
@@ -330,6 +335,11 @@
       "folder": "0414-third-maximum-number",
       "slug": "third-maximum-number",
       "hasCanonicalSolution": true
+    },
+    {
+      "folder": "0442-find-all-duplicates-in-an-array",
+      "slug": "find-all-duplicates-in-an-array",
+      "hasCanonicalSolution": false
     },
     {
       "folder": "0448-find-all-numbers-disappeared-in-an-array",
@@ -425,6 +435,11 @@
       "folder": "0771-jewels-and-stones",
       "slug": "jewels-and-stones",
       "hasCanonicalSolution": true
+    },
+    {
+      "folder": "0804-unique-morse-code-words",
+      "slug": "unique-morse-code-words",
+      "hasCanonicalSolution": false
     },
     {
       "folder": "0819-most-common-word",
@@ -557,6 +572,11 @@
       "hasCanonicalSolution": true
     },
     {
+      "folder": "1399-count-largest-group",
+      "slug": "count-largest-group",
+      "hasCanonicalSolution": false
+    },
+    {
       "folder": "1408-string-matching-in-an-array",
       "slug": "string-matching-in-an-array",
       "hasCanonicalSolution": true
@@ -622,6 +642,11 @@
       "hasCanonicalSolution": true
     },
     {
+      "folder": "1534-count-good-triplets",
+      "slug": "count-good-triplets",
+      "hasCanonicalSolution": false
+    },
+    {
       "folder": "1550-three-consecutive-odds",
       "slug": "three-consecutive-odds",
       "hasCanonicalSolution": true
@@ -654,6 +679,11 @@
     {
       "folder": "1684-count-the-number-of-consistent-strings",
       "slug": "count-the-number-of-consistent-strings",
+      "hasCanonicalSolution": false
+    },
+    {
+      "folder": "1704-determine-if-string-halves-are-alike",
+      "slug": "determine-if-string-halves-are-alike",
       "hasCanonicalSolution": false
     },
     {
@@ -727,6 +757,11 @@
       "hasCanonicalSolution": true
     },
     {
+      "folder": "1995-count-special-quadruplets",
+      "slug": "count-special-quadruplets",
+      "hasCanonicalSolution": false
+    },
+    {
       "folder": "2006-count-number-of-pairs-with-absolute-difference-k",
       "slug": "count-number-of-pairs-with-absolute-difference-k",
       "hasCanonicalSolution": true
@@ -740,6 +775,11 @@
       "folder": "2085-count-common-words-with-one-occurrence",
       "slug": "count-common-words-with-one-occurrence",
       "hasCanonicalSolution": true
+    },
+    {
+      "folder": "2095-delete-the-middle-node-of-a-linked-list",
+      "slug": "delete-the-middle-node-of-a-linked-list",
+      "hasCanonicalSolution": false
     },
     {
       "folder": "2108-find-first-palindromic-string-in-the-array",
@@ -820,6 +860,11 @@
       "folder": "2309-greatest-english-letter-in-upper-and-lower-case",
       "slug": "greatest-english-letter-in-upper-and-lower-case",
       "hasCanonicalSolution": true
+    },
+    {
+      "folder": "2315-count-asterisks",
+      "slug": "count-asterisks",
+      "hasCanonicalSolution": false
     },
     {
       "folder": "2367-number-of-arithmetic-triplets",
@@ -952,6 +997,11 @@
       "hasCanonicalSolution": true
     },
     {
+      "folder": "2716-minimize-string-length",
+      "slug": "minimize-string-length",
+      "hasCanonicalSolution": false
+    },
+    {
       "folder": "2733-neither-minimum-nor-maximum",
       "slug": "neither-minimum-nor-maximum",
       "hasCanonicalSolution": true
@@ -1022,6 +1072,11 @@
       "hasCanonicalSolution": true
     },
     {
+      "folder": "3005-count-elements-with-maximum-frequency",
+      "slug": "count-elements-with-maximum-frequency",
+      "hasCanonicalSolution": false
+    },
+    {
       "folder": "3019-number-of-changing-keys",
       "slug": "number-of-changing-keys",
       "hasCanonicalSolution": true
@@ -1055,6 +1110,11 @@
       "folder": "3146-permutation-difference-between-two-strings",
       "slug": "permutation-difference-between-two-strings",
       "hasCanonicalSolution": true
+    },
+    {
+      "folder": "3162-find-the-number-of-good-pairs-i",
+      "slug": "find-the-number-of-good-pairs-i",
+      "hasCanonicalSolution": false
     },
     {
       "folder": "3168-minimum-number-of-chairs-in-a-waiting-room",
@@ -1107,6 +1167,11 @@
       "hasCanonicalSolution": true
     },
     {
+      "folder": "3467-transform-array-by-parity",
+      "slug": "transform-array-by-parity",
+      "hasCanonicalSolution": false
+    },
+    {
       "folder": "3492-maximum-containers-on-a-ship",
       "slug": "maximum-containers-on-a-ship",
       "hasCanonicalSolution": true
@@ -1125,6 +1190,11 @@
       "folder": "3516-find-closest-person",
       "slug": "find-closest-person",
       "hasCanonicalSolution": true
+    },
+    {
+      "folder": "3527-find-the-most-common-response",
+      "slug": "find-the-most-common-response",
+      "hasCanonicalSolution": false
     },
     {
       "folder": "3541-find-most-frequent-vowel-and-consonant",
@@ -1210,6 +1280,16 @@
       "folder": "3794-reverse-string-prefix",
       "slug": "reverse-string-prefix",
       "hasCanonicalSolution": true
+    },
+    {
+      "folder": "3803-count-residue-prefixes",
+      "slug": "count-residue-prefixes",
+      "hasCanonicalSolution": false
+    },
+    {
+      "folder": "3833-count-dominant-indices",
+      "slug": "count-dominant-indices",
+      "hasCanonicalSolution": false
     },
     {
       "folder": "3838-weighted-word-mapping",
