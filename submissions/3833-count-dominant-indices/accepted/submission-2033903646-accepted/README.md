@@ -13,17 +13,17 @@
 
 ## Pattern
 
-TODO
+Prefix/suffix aggregate scan
 
 ## Key Idea
 
-TODO
+Maintain the sum of values to the right and compare each value against the average of that remaining suffix without using division.
 
 ## Mistake / Edge Case
 
-TODO
+The submitted loop checks indices before the final element because it needs a non-empty suffix.
 
 ## Complexity
 
-- Time: TODO
-- Space: TODO
+- Time: O(n)
+- Space: O(1)

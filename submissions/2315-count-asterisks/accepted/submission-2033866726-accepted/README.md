@@ -12,17 +12,17 @@
 
 ## Pattern
 
-TODO
+Delimited-string scanning
 
 ## Key Idea
 
-TODO
+Split on the pipe delimiter and count asterisks only in the even-indexed segments outside paired delimiters.
 
 ## Mistake / Edge Case
 
-TODO
+Only every other segment contributes; delimiter-enclosed segments are skipped.
 
 ## Complexity
 
-- Time: TODO
-- Space: TODO
+- Time: O(n)
+- Space: O(n)

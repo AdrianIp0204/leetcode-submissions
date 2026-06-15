@@ -12,17 +12,17 @@
 
 ## Pattern
 
-TODO
+Unique-character counting
 
 ## Key Idea
 
-TODO
+The minimum remaining length is the number of distinct characters.
 
 ## Mistake / Edge Case
 
-TODO
+Duplicates do not affect the answer once a character has been seen.
 
 ## Complexity
 
-- Time: TODO
-- Space: TODO
+- Time: O(n)
+- Space: O(k)

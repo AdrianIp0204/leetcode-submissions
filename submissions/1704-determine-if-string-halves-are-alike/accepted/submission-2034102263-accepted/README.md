@@ -13,17 +13,17 @@
 
 ## Pattern
 
-TODO
+Counting with balance
 
 ## Key Idea
 
-TODO
+Add one for each vowel in the first half and subtract one for each vowel in the second half; the halves match when the balance is zero.
 
 ## Mistake / Edge Case
 
-TODO
+Include uppercase vowels in the lookup set.
 
 ## Complexity
 
-- Time: TODO
-- Space: TODO
+- Time: O(n)
+- Space: O(1)

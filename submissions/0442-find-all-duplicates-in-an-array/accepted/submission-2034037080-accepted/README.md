@@ -13,17 +13,17 @@
 
 ## Pattern
 
-TODO
+Frequency counting
 
 ## Key Idea
 
-TODO
+Count each value and return the values whose count is exactly two.
 
 ## Mistake / Edge Case
 
-TODO
+The submitted approach uses extra hash-table space instead of the in-place marking trick.
 
 ## Complexity
 
-- Time: TODO
-- Space: TODO
+- Time: O(n)
+- Space: O(n)

@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-06-14T15:35:46.350Z",
+  "generatedAt": "2026-06-15T15:34:48.545Z",
   "totals": {
-    "problemFolders": 248,
-    "publicSolved": 247,
+    "problemFolders": 264,
+    "publicSolved": 263,
     "estimatedSolvedGap": 0,
     "problemsWithAttempts": 34,
-    "problemsNeedingReflection": 21,
-    "problemsWithUnknownStatus": 27
+    "problemsNeedingReflection": 37,
+    "problemsWithUnknownStatus": 43
   },
   "byLanguage": {
     "cpp": 10,
@@ -16,16 +16,16 @@
     "typescript": 5
   },
   "byPattern": {
-    "arrays-and-strings": 71,
+    "arrays-and-strings": 75,
     "dynamic-programming": 2,
-    "hashing-and-counting": 9,
-    "linked-list": 2,
-    "math-and-digits": 83,
+    "hashing-and-counting": 10,
+    "linked-list": 3,
+    "math-and-digits": 84,
     "sql": 2,
     "stack": 3,
     "tree-and-graph": 1,
     "two-pointers": 4,
-    "uncategorized": 71
+    "uncategorized": 80
   },
   "problems": [
     {
@@ -1141,6 +1141,22 @@
       ]
     },
     {
+      "id": 326,
+      "folder": "0326-power-of-three",
+      "slug": "power-of-three",
+      "title": "Power Of Three",
+      "pattern": "uncategorized",
+      "hasReadme": false,
+      "status": "Not recorded",
+      "todoCount": 0,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": []
+    },
+    {
       "id": 342,
       "folder": "0342-power-of-four",
       "slug": "power-of-four",
@@ -1393,6 +1409,22 @@
       "languages": [
         "python"
       ]
+    },
+    {
+      "id": 442,
+      "folder": "0442-find-all-duplicates-in-an-array",
+      "slug": "find-all-duplicates-in-an-array",
+      "title": "Find All Duplicates In An Array",
+      "pattern": "arrays-and-strings",
+      "hasReadme": false,
+      "status": "Not recorded",
+      "todoCount": 0,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": []
     },
     {
       "id": 448,
@@ -1787,6 +1819,22 @@
       "languages": [
         "python"
       ]
+    },
+    {
+      "id": 804,
+      "folder": "0804-unique-morse-code-words",
+      "slug": "unique-morse-code-words",
+      "title": "Unique Morse Code Words",
+      "pattern": "uncategorized",
+      "hasReadme": false,
+      "status": "Not recorded",
+      "todoCount": 0,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": []
     },
     {
       "id": 819,
@@ -2321,6 +2369,22 @@
       ]
     },
     {
+      "id": 1399,
+      "folder": "1399-count-largest-group",
+      "slug": "count-largest-group",
+      "title": "Count Largest Group",
+      "pattern": "uncategorized",
+      "hasReadme": false,
+      "status": "Not recorded",
+      "todoCount": 0,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": []
+    },
+    {
       "id": 1408,
       "folder": "1408-string-matching-in-an-array",
       "slug": "string-matching-in-an-array",
@@ -2583,6 +2647,22 @@
       ]
     },
     {
+      "id": 1534,
+      "folder": "1534-count-good-triplets",
+      "slug": "count-good-triplets",
+      "title": "Count Good Triplets",
+      "pattern": "uncategorized",
+      "hasReadme": false,
+      "status": "Not recorded",
+      "todoCount": 0,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": []
+    },
+    {
       "id": 1550,
       "folder": "1550-three-consecutive-odds",
       "slug": "three-consecutive-odds",
@@ -2707,6 +2787,22 @@
       "folder": "1684-count-the-number-of-consistent-strings",
       "slug": "count-the-number-of-consistent-strings",
       "title": "Count The Number Of Consistent Strings",
+      "pattern": "arrays-and-strings",
+      "hasReadme": false,
+      "status": "Not recorded",
+      "todoCount": 0,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": []
+    },
+    {
+      "id": 1704,
+      "folder": "1704-determine-if-string-halves-are-alike",
+      "slug": "determine-if-string-halves-are-alike",
+      "title": "Determine If String Halves Are Alike",
       "pattern": "arrays-and-strings",
       "hasReadme": false,
       "status": "Not recorded",
@@ -2991,6 +3087,22 @@
       ]
     },
     {
+      "id": 1995,
+      "folder": "1995-count-special-quadruplets",
+      "slug": "count-special-quadruplets",
+      "title": "Count Special Quadruplets",
+      "pattern": "uncategorized",
+      "hasReadme": false,
+      "status": "Not recorded",
+      "todoCount": 0,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": []
+    },
+    {
       "id": 2006,
       "folder": "2006-count-number-of-pairs-with-absolute-difference-k",
       "slug": "count-number-of-pairs-with-absolute-difference-k",
@@ -3049,6 +3161,22 @@
       "languages": [
         "python"
       ]
+    },
+    {
+      "id": 2095,
+      "folder": "2095-delete-the-middle-node-of-a-linked-list",
+      "slug": "delete-the-middle-node-of-a-linked-list",
+      "title": "Delete The Middle Node Of A Linked List",
+      "pattern": "linked-list",
+      "hasReadme": false,
+      "status": "Not recorded",
+      "todoCount": 0,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": []
     },
     {
       "id": 2108,
@@ -3381,6 +3509,22 @@
       "languages": [
         "python"
       ]
+    },
+    {
+      "id": 2315,
+      "folder": "2315-count-asterisks",
+      "slug": "count-asterisks",
+      "title": "Count Asterisks",
+      "pattern": "uncategorized",
+      "hasReadme": false,
+      "status": "Not recorded",
+      "todoCount": 0,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": []
     },
     {
       "id": 2367,
@@ -3887,6 +4031,22 @@
       ]
     },
     {
+      "id": 2716,
+      "folder": "2716-minimize-string-length",
+      "slug": "minimize-string-length",
+      "title": "Minimize String Length",
+      "pattern": "arrays-and-strings",
+      "hasReadme": false,
+      "status": "Not recorded",
+      "todoCount": 0,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": []
+    },
+    {
       "id": 2733,
       "folder": "2733-neither-minimum-nor-maximum",
       "slug": "neither-minimum-nor-maximum",
@@ -4161,6 +4321,22 @@
       ]
     },
     {
+      "id": 3005,
+      "folder": "3005-count-elements-with-maximum-frequency",
+      "slug": "count-elements-with-maximum-frequency",
+      "title": "Count Elements With Maximum Frequency",
+      "pattern": "hashing-and-counting",
+      "hasReadme": false,
+      "status": "Not recorded",
+      "todoCount": 0,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": []
+    },
+    {
       "id": 3019,
       "folder": "3019-number-of-changing-keys",
       "slug": "number-of-changing-keys",
@@ -4299,6 +4475,22 @@
       "languages": [
         "python"
       ]
+    },
+    {
+      "id": 3162,
+      "folder": "3162-find-the-number-of-good-pairs-i",
+      "slug": "find-the-number-of-good-pairs-i",
+      "title": "Find The Number Of Good Pairs I",
+      "pattern": "math-and-digits",
+      "hasReadme": false,
+      "status": "Not recorded",
+      "todoCount": 0,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": []
     },
     {
       "id": 3168,
@@ -4505,6 +4697,22 @@
       ]
     },
     {
+      "id": 3467,
+      "folder": "3467-transform-array-by-parity",
+      "slug": "transform-array-by-parity",
+      "title": "Transform Array By Parity",
+      "pattern": "arrays-and-strings",
+      "hasReadme": false,
+      "status": "Not recorded",
+      "todoCount": 0,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": []
+    },
+    {
       "id": 3492,
       "folder": "3492-maximum-containers-on-a-ship",
       "slug": "maximum-containers-on-a-ship",
@@ -4583,6 +4791,22 @@
       "languages": [
         "python"
       ]
+    },
+    {
+      "id": 3527,
+      "folder": "3527-find-the-most-common-response",
+      "slug": "find-the-most-common-response",
+      "title": "Find The Most Common Response",
+      "pattern": "uncategorized",
+      "hasReadme": false,
+      "status": "Not recorded",
+      "todoCount": 0,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": []
     },
     {
       "id": 3541,
@@ -4925,6 +5149,38 @@
       ]
     },
     {
+      "id": 3803,
+      "folder": "3803-count-residue-prefixes",
+      "slug": "count-residue-prefixes",
+      "title": "Count Residue Prefixes",
+      "pattern": "uncategorized",
+      "hasReadme": false,
+      "status": "Not recorded",
+      "todoCount": 0,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": []
+    },
+    {
+      "id": 3833,
+      "folder": "3833-count-dominant-indices",
+      "slug": "count-dominant-indices",
+      "title": "Count Dominant Indices",
+      "pattern": "uncategorized",
+      "hasReadme": false,
+      "status": "Not recorded",
+      "todoCount": 0,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": []
+    },
+    {
       "id": 3838,
       "folder": "3838-weighted-word-mapping",
       "slug": "weighted-word-mapping",
@@ -5085,8 +5341,8 @@
   ],
   "trackedFileFlags": [],
   "weaknessSignals": [
-    "21 of 248 problem READMEs still need real reflection.",
-    "27 submissions have unknown or missing status metadata.",
+    "37 of 264 problem READMEs still need real reflection.",
+    "43 submissions have unknown or missing status metadata.",
     "Failed attempts are preserved when real source exists; keep capturing them for new work.",
     "A TypeScript track exists; expand it deliberately rather than scattering one-off language experiments.",
     "Tree/graph/DP coverage is thin relative to array, string, math, and simple loop problems."

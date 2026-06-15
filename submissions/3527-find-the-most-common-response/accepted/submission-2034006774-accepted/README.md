@@ -13,17 +13,17 @@
 
 ## Pattern
 
-TODO
+Per-row deduplication and counting
 
 ## Key Idea
 
-TODO
+Within each response list, count a word at most once, then choose the globally highest count with lexicographic tie-break.
 
 ## Mistake / Edge Case
 
-TODO
+Reset the per-row `seen` set for each response list so duplicates inside one row do not inflate the count.
 
 ## Complexity
 
-- Time: TODO
-- Space: TODO
+- Time: O(total responses + u log u)
+- Space: O(u)

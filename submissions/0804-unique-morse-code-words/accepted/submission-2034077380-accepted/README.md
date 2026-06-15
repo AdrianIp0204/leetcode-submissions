@@ -12,17 +12,17 @@
 
 ## Pattern
 
-TODO
+Set of transformed strings
 
 ## Key Idea
 
-TODO
+Map each character to its Morse code fragment, join the fragments for a word, and count unique transformed strings.
 
 ## Mistake / Edge Case
 
-TODO
+Build the full transformation before inserting it into the set so different words with the same transformation collapse together.
 
 ## Complexity
 
-- Time: TODO
-- Space: TODO
+- Time: O(total characters)
+- Space: O(number of words * transformed length)
