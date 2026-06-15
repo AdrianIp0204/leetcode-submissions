@@ -12,11 +12,11 @@
 
 ## Pattern
 
-TODO
+Distinct values and greedy sorting
 
 ## Key Idea
 
-TODO
+Remove duplicates, sort descending, and take the largest k values.
 
 ## Mistake / Edge Case
 
@@ -24,5 +24,5 @@ TODO
 
 ## Complexity
 
-- Time: TODO
-- Space: TODO
+- Time: O(n log n)
+- Space: O(n)

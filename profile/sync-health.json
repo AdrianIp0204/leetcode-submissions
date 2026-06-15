@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-06-14T03:41:11.425Z",
+  "generatedAt": "2026-06-14T15:35:46.219Z",
   "username": "AdrianIp",
-  "profileFetchedAt": "2026-06-14T00:55:22.956Z",
-  "publicAcceptedSolved": 224,
-  "publicAcceptedSubmissions": 255,
-  "publicAttemptedProblems": 225,
-  "publicTotalSubmissions": 326,
-  "localProblemFolders": 227,
+  "profileFetchedAt": "2026-06-14T15:30:48.771Z",
+  "publicAcceptedSolved": 247,
+  "publicAcceptedSubmissions": 281,
+  "publicAttemptedProblems": 248,
+  "publicTotalSubmissions": 352,
+  "localProblemFolders": 248,
   "localCanonicalSolutions": 226,
   "estimatedSolvedGap": 0,
   "status": "ok",
@@ -367,6 +367,11 @@
       "hasCanonicalSolution": true
     },
     {
+      "folder": "0557-reverse-words-in-a-string-iii",
+      "slug": "reverse-words-in-a-string-iii",
+      "hasCanonicalSolution": false
+    },
+    {
       "folder": "0561-array-partition",
       "slug": "array-partition",
       "hasCanonicalSolution": true
@@ -512,6 +517,11 @@
       "hasCanonicalSolution": true
     },
     {
+      "folder": "1207-unique-number-of-occurrences",
+      "slug": "unique-number-of-occurrences",
+      "hasCanonicalSolution": false
+    },
+    {
       "folder": "1221-split-a-string-in-balanced-strings",
       "slug": "split-a-string-in-balanced-strings",
       "hasCanonicalSolution": true
@@ -602,6 +612,11 @@
       "hasCanonicalSolution": true
     },
     {
+      "folder": "1512-number-of-good-pairs",
+      "slug": "number-of-good-pairs",
+      "hasCanonicalSolution": false
+    },
+    {
       "folder": "1528-shuffle-string",
       "slug": "shuffle-string",
       "hasCanonicalSolution": true
@@ -635,6 +650,16 @@
       "folder": "1678-goal-parser-interpretation",
       "slug": "goal-parser-interpretation",
       "hasCanonicalSolution": true
+    },
+    {
+      "folder": "1684-count-the-number-of-consistent-strings",
+      "slug": "count-the-number-of-consistent-strings",
+      "hasCanonicalSolution": false
+    },
+    {
+      "folder": "1748-sum-of-unique-elements",
+      "slug": "sum-of-unique-elements",
+      "hasCanonicalSolution": false
     },
     {
       "folder": "1768-merge-strings-alternately",
@@ -675,6 +700,16 @@
       "folder": "1929-concatenation-of-array",
       "slug": "concatenation-of-array",
       "hasCanonicalSolution": true
+    },
+    {
+      "folder": "1935-maximum-number-of-words-you-can-type",
+      "slug": "maximum-number-of-words-you-can-type",
+      "hasCanonicalSolution": false
+    },
+    {
+      "folder": "1941-check-if-all-characters-have-equal-number-of-occurrences",
+      "slug": "check-if-all-characters-have-equal-number-of-occurrences",
+      "hasCanonicalSolution": false
     },
     {
       "folder": "1952-three-divisors",
@@ -725,6 +760,11 @@
       "folder": "2129-capitalize-the-title",
       "slug": "capitalize-the-title",
       "hasCanonicalSolution": true
+    },
+    {
+      "folder": "2130-maximum-twin-sum-of-a-linked-list",
+      "slug": "maximum-twin-sum-of-a-linked-list",
+      "hasCanonicalSolution": false
     },
     {
       "folder": "2144-minimum-cost-of-buying-candies-with-discount",
@@ -782,6 +822,11 @@
       "hasCanonicalSolution": true
     },
     {
+      "folder": "2367-number-of-arithmetic-triplets",
+      "slug": "number-of-arithmetic-triplets",
+      "hasCanonicalSolution": false
+    },
+    {
       "folder": "2390-removing-stars-from-a-string",
       "slug": "removing-stars-from-a-string",
       "hasCanonicalSolution": true
@@ -807,9 +852,24 @@
       "hasCanonicalSolution": true
     },
     {
+      "folder": "2433-find-the-original-array-of-prefix-xor",
+      "slug": "find-the-original-array-of-prefix-xor",
+      "hasCanonicalSolution": false
+    },
+    {
       "folder": "2437-number-of-valid-clock-times",
       "slug": "number-of-valid-clock-times",
       "hasCanonicalSolution": true
+    },
+    {
+      "folder": "2441-largest-positive-integer-that-exists-with-its-negative",
+      "slug": "largest-positive-integer-that-exists-with-its-negative",
+      "hasCanonicalSolution": false
+    },
+    {
+      "folder": "2465-number-of-distinct-averages",
+      "slug": "number-of-distinct-averages",
+      "hasCanonicalSolution": false
     },
     {
       "folder": "2469-convert-the-temperature",
@@ -857,6 +917,11 @@
       "hasCanonicalSolution": true
     },
     {
+      "folder": "2620-counter",
+      "slug": "counter",
+      "hasCanonicalSolution": false
+    },
+    {
       "folder": "2652-sum-multiples",
       "slug": "sum-multiples",
       "hasCanonicalSolution": true
@@ -865,6 +930,16 @@
       "folder": "2656-maximum-sum-with-exactly-k-elements",
       "slug": "maximum-sum-with-exactly-k-elements",
       "hasCanonicalSolution": true
+    },
+    {
+      "folder": "2657-find-the-prefix-common-array-of-two-arrays",
+      "slug": "find-the-prefix-common-array-of-two-arrays",
+      "hasCanonicalSolution": false
+    },
+    {
+      "folder": "2667-create-hello-world-function",
+      "slug": "create-hello-world-function",
+      "hasCanonicalSolution": false
     },
     {
       "folder": "2678-number-of-senior-citizens",
@@ -895,6 +970,11 @@
       "folder": "2798-number-of-employees-who-met-the-target",
       "slug": "number-of-employees-who-met-the-target",
       "hasCanonicalSolution": true
+    },
+    {
+      "folder": "2824-count-pairs-whose-sum-is-less-than-target",
+      "slug": "count-pairs-whose-sum-is-less-than-target",
+      "hasCanonicalSolution": false
     },
     {
       "folder": "2828-check-if-a-string-is-an-acronym-of-words",
@@ -930,6 +1010,11 @@
       "folder": "2942-find-words-containing-character",
       "slug": "find-words-containing-character",
       "hasCanonicalSolution": true
+    },
+    {
+      "folder": "2956-find-common-elements-between-two-arrays",
+      "slug": "find-common-elements-between-two-arrays",
+      "hasCanonicalSolution": false
     },
     {
       "folder": "2974-minimum-number-game",
@@ -1077,6 +1162,11 @@
       "hasCanonicalSolution": true
     },
     {
+      "folder": "3684-maximize-sum-of-at-most-k-distinct-elements",
+      "slug": "maximize-sum-of-at-most-k-distinct-elements",
+      "hasCanonicalSolution": false
+    },
+    {
       "folder": "3689-maximum-total-subarray-value-i",
       "slug": "maximum-total-subarray-value-i",
       "hasCanonicalSolution": true
@@ -1090,6 +1180,11 @@
       "folder": "3701-compute-alternating-sum",
       "slug": "compute-alternating-sum",
       "hasCanonicalSolution": true
+    },
+    {
+      "folder": "3731-find-missing-elements",
+      "slug": "find-missing-elements",
+      "hasCanonicalSolution": false
     },
     {
       "folder": "3751-total-waviness-of-numbers-in-range-i",
@@ -1122,6 +1217,11 @@
       "hasCanonicalSolution": true
     },
     {
+      "folder": "3884-first-matching-character-from-both-ends",
+      "slug": "first-matching-character-from-both-ends",
+      "hasCanonicalSolution": false
+    },
+    {
       "folder": "3895-count-digit-appearances",
       "slug": "count-digit-appearances",
       "hasCanonicalSolution": true
@@ -1135,6 +1235,11 @@
       "folder": "3925-concatenate-array-with-reverse",
       "slug": "concatenate-array-with-reverse",
       "hasCanonicalSolution": true
+    },
+    {
+      "folder": "3936-minimum-swaps-to-move-zeros-to-end",
+      "slug": "minimum-swaps-to-move-zeros-to-end",
+      "hasCanonicalSolution": false
     },
     {
       "folder": "3941-password-strength",

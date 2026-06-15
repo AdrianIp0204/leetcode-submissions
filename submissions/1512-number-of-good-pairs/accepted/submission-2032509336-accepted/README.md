@@ -12,11 +12,11 @@
 
 ## Pattern
 
-TODO
+Pair enumeration
 
 ## Key Idea
 
-TODO
+Scan every pair with the second index after the first and count equal values.
 
 ## Mistake / Edge Case
 
@@ -24,5 +24,5 @@ TODO
 
 ## Complexity
 
-- Time: TODO
-- Space: TODO
+- Time: O(n^2)
+- Space: O(1)

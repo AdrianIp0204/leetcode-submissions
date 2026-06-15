@@ -13,11 +13,11 @@
 
 ## Pattern
 
-TODO
+Seen set with running common count
 
 ## Key Idea
 
-TODO
+Process both arrays one prefix position at a time, adding unseen values and incrementing the common count when a value appears again from the other prefix.
 
 ## Mistake / Edge Case
 
@@ -25,5 +25,5 @@ TODO
 
 ## Complexity
 
-- Time: TODO
-- Space: TODO
+- Time: O(n)
+- Space: O(n)

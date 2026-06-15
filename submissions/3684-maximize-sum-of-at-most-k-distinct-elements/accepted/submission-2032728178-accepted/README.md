@@ -13,11 +13,11 @@
 
 ## Pattern
 
-TODO
+Distinct values with max heap
 
 ## Key Idea
 
-TODO
+Negate the distinct values into a heap and pop up to k largest original values.
 
 ## Mistake / Edge Case
 
@@ -25,5 +25,5 @@ TODO
 
 ## Complexity
 
-- Time: TODO
-- Space: TODO
+- Time: O(n + u log u), where u is the number of distinct values
+- Space: O(u)

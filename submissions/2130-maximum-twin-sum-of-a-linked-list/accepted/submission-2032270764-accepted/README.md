@@ -13,11 +13,11 @@
 
 ## Pattern
 
-TODO
+Slow/fast pointers with in-place first-half reversal
 
 ## Key Idea
 
-TODO
+Reverse the first half while finding the midpoint, then walk the reversed first half and second half together to maximize twin sums.
 
 ## Mistake / Edge Case
 
@@ -25,5 +25,5 @@ TODO
 
 ## Complexity
 
-- Time: TODO
-- Space: TODO
+- Time: O(n)
+- Space: O(1)

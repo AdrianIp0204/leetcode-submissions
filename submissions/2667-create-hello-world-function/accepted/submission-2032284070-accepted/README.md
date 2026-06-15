@@ -12,11 +12,11 @@
 
 ## Pattern
 
-TODO
+Function factory
 
 ## Key Idea
 
-TODO
+Return a function that ignores its arguments and always returns the fixed string.
 
 ## Mistake / Edge Case
 
@@ -24,5 +24,5 @@ TODO
 
 ## Complexity
 
-- Time: TODO
-- Space: TODO
+- Time: O(1) per call
+- Space: O(1)

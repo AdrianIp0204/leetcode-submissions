@@ -13,11 +13,11 @@
 
 ## Pattern
 
-TODO
+Sorting with membership check
 
 ## Key Idea
 
-TODO
+Sort descending and return the first positive value whose negative is also present.
 
 ## Mistake / Edge Case
 
@@ -25,5 +25,5 @@ TODO
 
 ## Complexity
 
-- Time: TODO
-- Space: TODO
+- Time: O(n log n + n^2) with list membership checks
+- Space: O(1) extra, ignoring sort internals

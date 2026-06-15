@@ -1,11 +1,11 @@
 {
-  "fetchedAt": "2026-06-14T00:55:22.956Z",
+  "fetchedAt": "2026-06-14T15:30:48.771Z",
   "username": "AdrianIp",
   "profile": {
     "realName": "AdrianIp",
     "userAvatar": "https://assets.leetcode.com/users/default_avatar.jpg",
-    "ranking": 728784,
-    "reputation": 0,
+    "ranking": 649362,
+    "reputation": 2,
     "countryName": null,
     "company": null,
     "school": null,
@@ -15,18 +15,18 @@
   "solvedByDifficulty": [
     {
       "difficulty": "All",
-      "count": 224,
-      "submissions": 255
+      "count": 247,
+      "submissions": 281
     },
     {
       "difficulty": "Easy",
-      "count": 180,
-      "submissions": 209
+      "count": 200,
+      "submissions": 232
     },
     {
       "difficulty": "Medium",
-      "count": 37,
-      "submissions": 39
+      "count": 40,
+      "submissions": 42
     },
     {
       "difficulty": "Hard",
@@ -37,18 +37,18 @@
   "totalByDifficulty": [
     {
       "difficulty": "All",
-      "count": 225,
-      "submissions": 326
+      "count": 248,
+      "submissions": 352
     },
     {
       "difficulty": "Easy",
-      "count": 180,
-      "submissions": 252
+      "count": 200,
+      "submissions": 275
     },
     {
       "difficulty": "Medium",
-      "count": 37,
-      "submissions": 60
+      "count": 40,
+      "submissions": 63
     },
     {
       "difficulty": "Hard",
@@ -60,18 +60,18 @@
     "accepted": {
       "All": {
         "difficulty": "All",
-        "count": 224,
-        "submissions": 255
+        "count": 247,
+        "submissions": 281
       },
       "Easy": {
         "difficulty": "Easy",
-        "count": 180,
-        "submissions": 209
+        "count": 200,
+        "submissions": 232
       },
       "Medium": {
         "difficulty": "Medium",
-        "count": 37,
-        "submissions": 39
+        "count": 40,
+        "submissions": 42
       },
       "Hard": {
         "difficulty": "Hard",
@@ -82,18 +82,18 @@
     "total": {
       "All": {
         "difficulty": "All",
-        "count": 225,
-        "submissions": 326
+        "count": 248,
+        "submissions": 352
       },
       "Easy": {
         "difficulty": "Easy",
-        "count": 180,
-        "submissions": 252
+        "count": 200,
+        "submissions": 275
       },
       "Medium": {
         "difficulty": "Medium",
-        "count": 37,
-        "submissions": 60
+        "count": 40,
+        "submissions": 63
       },
       "Hard": {
         "difficulty": "Hard",
@@ -105,164 +105,164 @@
   "contestRanking": null,
   "recentAccepted": [
     {
-      "title": "Minimum Average of Smallest and Largest Elements",
-      "titleSlug": "minimum-average-of-smallest-and-largest-elements",
-      "timestamp": "1781362157",
+      "title": "Number of Distinct Averages",
+      "titleSlug": "number-of-distinct-averages",
+      "timestamp": "1781445811",
       "statusDisplay": "Accepted",
       "lang": "python3",
-      "acceptedAt": "2026-06-13T14:49:17.000Z"
+      "acceptedAt": "2026-06-14T14:03:31.000Z"
     },
     {
-      "title": "Count Number of Pairs With Absolute Difference K",
-      "titleSlug": "count-number-of-pairs-with-absolute-difference-k",
-      "timestamp": "1781361326",
+      "title": "Minimum Swaps to Move Zeros to End",
+      "titleSlug": "minimum-swaps-to-move-zeros-to-end",
+      "timestamp": "1781444930",
       "statusDisplay": "Accepted",
       "lang": "python3",
-      "acceptedAt": "2026-06-13T14:35:26.000Z"
+      "acceptedAt": "2026-06-14T13:48:50.000Z"
     },
     {
-      "title": "Truncate Sentence",
-      "titleSlug": "truncate-sentence",
-      "timestamp": "1781359223",
+      "title": "Largest Positive Integer That Exists With Its Negative",
+      "titleSlug": "largest-positive-integer-that-exists-with-its-negative",
+      "timestamp": "1781444315",
       "statusDisplay": "Accepted",
       "lang": "python3",
-      "acceptedAt": "2026-06-13T14:00:23.000Z"
+      "acceptedAt": "2026-06-14T13:38:35.000Z"
     },
     {
-      "title": "Goal Parser Interpretation",
-      "titleSlug": "goal-parser-interpretation",
-      "timestamp": "1781358668",
+      "title": "First Matching Character From Both Ends",
+      "titleSlug": "first-matching-character-from-both-ends",
+      "timestamp": "1781444074",
       "statusDisplay": "Accepted",
       "lang": "python3",
-      "acceptedAt": "2026-06-13T13:51:08.000Z"
+      "acceptedAt": "2026-06-14T13:34:34.000Z"
     },
     {
-      "title": "Find Closest Person",
-      "titleSlug": "find-closest-person",
-      "timestamp": "1781348969",
+      "title": "Reverse Words in a String III",
+      "titleSlug": "reverse-words-in-a-string-iii",
+      "timestamp": "1781443341",
       "statusDisplay": "Accepted",
       "lang": "python3",
-      "acceptedAt": "2026-06-13T11:09:29.000Z"
+      "acceptedAt": "2026-06-14T13:22:21.000Z"
     },
     {
-      "title": "Count Digit Appearances",
-      "titleSlug": "count-digit-appearances",
-      "timestamp": "1781348647",
+      "title": "Count Pairs Whose Sum is Less than Target",
+      "titleSlug": "count-pairs-whose-sum-is-less-than-target",
+      "timestamp": "1781443187",
       "statusDisplay": "Accepted",
       "lang": "python3",
-      "acceptedAt": "2026-06-13T11:04:07.000Z"
+      "acceptedAt": "2026-06-14T13:19:47.000Z"
     },
     {
-      "title": "Strictly Palindromic Number",
-      "titleSlug": "strictly-palindromic-number",
-      "timestamp": "1781348126",
+      "title": "Unique Number of Occurrences",
+      "titleSlug": "unique-number-of-occurrences",
+      "timestamp": "1781442075",
       "statusDisplay": "Accepted",
       "lang": "python3",
-      "acceptedAt": "2026-06-13T10:55:26.000Z"
+      "acceptedAt": "2026-06-14T13:01:15.000Z"
     },
     {
-      "title": "Maximum Substrings With Distinct Start",
-      "titleSlug": "maximum-substrings-with-distinct-start",
-      "timestamp": "1781347839",
+      "title": "Check if All Characters Have Equal Number of Occurrences",
+      "titleSlug": "check-if-all-characters-have-equal-number-of-occurrences",
+      "timestamp": "1781435789",
       "statusDisplay": "Accepted",
       "lang": "python3",
-      "acceptedAt": "2026-06-13T10:50:39.000Z"
+      "acceptedAt": "2026-06-14T11:16:29.000Z"
     },
     {
-      "title": "Sort Array by Increasing Frequency",
-      "titleSlug": "sort-array-by-increasing-frequency",
-      "timestamp": "1781347531",
+      "title": "Find Missing Elements",
+      "titleSlug": "find-missing-elements",
+      "timestamp": "1781435417",
       "statusDisplay": "Accepted",
       "lang": "python3",
-      "acceptedAt": "2026-06-13T10:45:31.000Z"
+      "acceptedAt": "2026-06-14T11:10:17.000Z"
     },
     {
-      "title": "Sort the People",
-      "titleSlug": "sort-the-people",
-      "timestamp": "1781347196",
+      "title": "Find Common Elements Between Two Arrays",
+      "titleSlug": "find-common-elements-between-two-arrays",
+      "timestamp": "1781435009",
       "statusDisplay": "Accepted",
       "lang": "python3",
-      "acceptedAt": "2026-06-13T10:39:56.000Z"
+      "acceptedAt": "2026-06-14T11:03:29.000Z"
     },
     {
-      "title": "Reverse String Prefix",
-      "titleSlug": "reverse-string-prefix",
-      "timestamp": "1781346661",
+      "title": "Maximize Sum of At Most K Distinct Elements",
+      "titleSlug": "maximize-sum-of-at-most-k-distinct-elements",
+      "timestamp": "1781434732",
       "statusDisplay": "Accepted",
       "lang": "python3",
-      "acceptedAt": "2026-06-13T10:31:01.000Z"
+      "acceptedAt": "2026-06-14T10:58:52.000Z"
     },
     {
-      "title": "Compute Alternating Sum",
-      "titleSlug": "compute-alternating-sum",
-      "timestamp": "1781346339",
+      "title": "Maximum Number of Words You Can Type",
+      "titleSlug": "maximum-number-of-words-you-can-type",
+      "timestamp": "1781433117",
       "statusDisplay": "Accepted",
       "lang": "python3",
-      "acceptedAt": "2026-06-13T10:25:39.000Z"
+      "acceptedAt": "2026-06-14T10:31:57.000Z"
     },
     {
-      "title": "Build Array from Permutation",
-      "titleSlug": "build-array-from-permutation",
-      "timestamp": "1781346025",
+      "title": "Sum of Unique Elements",
+      "titleSlug": "sum-of-unique-elements",
+      "timestamp": "1781432765",
       "statusDisplay": "Accepted",
       "lang": "python3",
-      "acceptedAt": "2026-06-13T10:20:25.000Z"
+      "acceptedAt": "2026-06-14T10:26:05.000Z"
     },
     {
-      "title": "Mirror Distance of an Integer",
-      "titleSlug": "mirror-distance-of-an-integer",
-      "timestamp": "1781345730",
-      "statusDisplay": "Accepted",
-      "lang": "cpp",
-      "acceptedAt": "2026-06-13T10:15:30.000Z"
-    },
-    {
-      "title": "Find the Degree of Each Vertex",
-      "titleSlug": "find-the-degree-of-each-vertex",
-      "timestamp": "1781345274",
+      "title": "Number of Arithmetic Triplets",
+      "titleSlug": "number-of-arithmetic-triplets",
+      "timestamp": "1781432512",
       "statusDisplay": "Accepted",
       "lang": "python3",
-      "acceptedAt": "2026-06-13T10:07:54.000Z"
+      "acceptedAt": "2026-06-14T10:21:52.000Z"
     },
     {
-      "title": "Intersection of Multiple Arrays",
-      "titleSlug": "intersection-of-multiple-arrays",
-      "timestamp": "1781326036",
+      "title": "Find the Prefix Common Array of Two Arrays",
+      "titleSlug": "find-the-prefix-common-array-of-two-arrays",
+      "timestamp": "1781431798",
       "statusDisplay": "Accepted",
       "lang": "python3",
-      "acceptedAt": "2026-06-13T04:47:16.000Z"
+      "acceptedAt": "2026-06-14T10:09:58.000Z"
     },
     {
-      "title": "Find the Difference of Two Arrays",
-      "titleSlug": "find-the-difference-of-two-arrays",
-      "timestamp": "1781325754",
+      "title": "Find The Original Array of Prefix Xor",
+      "titleSlug": "find-the-original-array-of-prefix-xor",
+      "timestamp": "1781419115",
       "statusDisplay": "Accepted",
       "lang": "python3",
-      "acceptedAt": "2026-06-13T04:42:34.000Z"
+      "acceptedAt": "2026-06-14T06:38:35.000Z"
     },
     {
-      "title": "Intersection of Two Arrays II",
-      "titleSlug": "intersection-of-two-arrays-ii",
-      "timestamp": "1781325521",
+      "title": "Count the Number of Consistent Strings",
+      "titleSlug": "count-the-number-of-consistent-strings",
+      "timestamp": "1781418634",
       "statusDisplay": "Accepted",
       "lang": "python3",
-      "acceptedAt": "2026-06-13T04:38:41.000Z"
+      "acceptedAt": "2026-06-14T06:30:34.000Z"
     },
     {
-      "title": "Minimum Common Value",
-      "titleSlug": "minimum-common-value",
-      "timestamp": "1781325018",
+      "title": "Number of Good Pairs",
+      "titleSlug": "number-of-good-pairs",
+      "timestamp": "1781418281",
       "statusDisplay": "Accepted",
       "lang": "python3",
-      "acceptedAt": "2026-06-13T04:30:18.000Z"
+      "acceptedAt": "2026-06-14T06:24:41.000Z"
     },
     {
-      "title": "Minimum Element After Replacement With Digit Sum",
-      "titleSlug": "minimum-element-after-replacement-with-digit-sum",
-      "timestamp": "1781324620",
+      "title": "Counter",
+      "titleSlug": "counter",
+      "timestamp": "1781405187",
       "statusDisplay": "Accepted",
-      "lang": "python3",
-      "acceptedAt": "2026-06-13T04:23:40.000Z"
+      "lang": "typescript",
+      "acceptedAt": "2026-06-14T02:46:27.000Z"
+    },
+    {
+      "title": "Create Hello World Function",
+      "titleSlug": "create-hello-world-function",
+      "timestamp": "1781404926",
+      "statusDisplay": "Accepted",
+      "lang": "javascript",
+      "acceptedAt": "2026-06-14T02:42:06.000Z"
     }
   ],
   "source": "LeetCode public GraphQL; no login cookie or browser extension used."

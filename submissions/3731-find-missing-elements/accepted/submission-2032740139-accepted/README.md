@@ -13,11 +13,11 @@
 
 ## Pattern
 
-TODO
+Range scan with membership check
 
 ## Key Idea
 
-TODO
+Scan values strictly between the minimum and maximum input values and collect those not present in nums.
 
 ## Mistake / Edge Case
 
@@ -25,5 +25,5 @@ TODO
 
 ## Complexity
 
-- Time: TODO
-- Space: TODO
+- Time: O(r * n), where r = max(nums) - min(nums)
+- Space: O(r) for the answer

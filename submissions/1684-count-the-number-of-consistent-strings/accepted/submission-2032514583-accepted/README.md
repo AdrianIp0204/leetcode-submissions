@@ -13,11 +13,11 @@
 
 ## Pattern
 
-TODO
+Set containment
 
 ## Key Idea
 
-TODO
+Convert allowed characters to a set and count words whose character set is a subset of it.
 
 ## Mistake / Edge Case
 
@@ -25,5 +25,5 @@ TODO
 
 ## Complexity
 
-- Time: TODO
-- Space: TODO
+- Time: O(total characters in words + len(allowed))
+- Space: O(a + w) for the allowed set and one word set

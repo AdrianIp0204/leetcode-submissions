@@ -12,11 +12,11 @@
 
 ## Pattern
 
-TODO
+Frequency map and set uniqueness
 
 ## Key Idea
 
-TODO
+Count each value, then compare the number of counts with the number of distinct counts.
 
 ## Mistake / Edge Case
 
@@ -24,5 +24,5 @@ TODO
 
 ## Complexity
 
-- Time: TODO
-- Space: TODO
+- Time: O(n)
+- Space: O(k), where k is the number of distinct values

@@ -2,43 +2,43 @@
 
 - Username: AdrianIp
 - Profile: https://leetcode.com/u/AdrianIp/
-- Fetched at: 2026-06-14T00:55:22.956Z
-- Ranking: 728784
+- Fetched at: 2026-06-14T15:30:48.771Z
+- Ranking: 649362
 - Display name: AdrianIp
 
 ## Solved
 
-- All: 224 solved / 255 accepted submissions
-- Easy: 180 solved / 209 accepted submissions
-- Medium: 37 solved / 39 accepted submissions
+- All: 247 solved / 281 accepted submissions
+- Easy: 200 solved / 232 accepted submissions
+- Medium: 40 solved / 42 accepted submissions
 - Hard: 7 solved / 7 accepted submissions
 
 ## Total Attempts
 
-- All: 225 attempted problems / 326 total submissions
-- Easy: 180 attempted problems / 252 total submissions
-- Medium: 37 attempted problems / 60 total submissions
+- All: 248 attempted problems / 352 total submissions
+- Easy: 200 attempted problems / 275 total submissions
+- Medium: 40 attempted problems / 63 total submissions
 - Hard: 8 attempted problems / 14 total submissions
 
 ## Recent Accepted
 
-- 2026-06-13T14:49:17.000Z: [Minimum Average of Smallest and Largest Elements](https://leetcode.com/problems/minimum-average-of-smallest-and-largest-elements/) (python3)
-- 2026-06-13T14:35:26.000Z: [Count Number of Pairs With Absolute Difference K](https://leetcode.com/problems/count-number-of-pairs-with-absolute-difference-k/) (python3)
-- 2026-06-13T14:00:23.000Z: [Truncate Sentence](https://leetcode.com/problems/truncate-sentence/) (python3)
-- 2026-06-13T13:51:08.000Z: [Goal Parser Interpretation](https://leetcode.com/problems/goal-parser-interpretation/) (python3)
-- 2026-06-13T11:09:29.000Z: [Find Closest Person](https://leetcode.com/problems/find-closest-person/) (python3)
-- 2026-06-13T11:04:07.000Z: [Count Digit Appearances](https://leetcode.com/problems/count-digit-appearances/) (python3)
-- 2026-06-13T10:55:26.000Z: [Strictly Palindromic Number](https://leetcode.com/problems/strictly-palindromic-number/) (python3)
-- 2026-06-13T10:50:39.000Z: [Maximum Substrings With Distinct Start](https://leetcode.com/problems/maximum-substrings-with-distinct-start/) (python3)
-- 2026-06-13T10:45:31.000Z: [Sort Array by Increasing Frequency](https://leetcode.com/problems/sort-array-by-increasing-frequency/) (python3)
-- 2026-06-13T10:39:56.000Z: [Sort the People](https://leetcode.com/problems/sort-the-people/) (python3)
-- 2026-06-13T10:31:01.000Z: [Reverse String Prefix](https://leetcode.com/problems/reverse-string-prefix/) (python3)
-- 2026-06-13T10:25:39.000Z: [Compute Alternating Sum](https://leetcode.com/problems/compute-alternating-sum/) (python3)
-- 2026-06-13T10:20:25.000Z: [Build Array from Permutation](https://leetcode.com/problems/build-array-from-permutation/) (python3)
-- 2026-06-13T10:15:30.000Z: [Mirror Distance of an Integer](https://leetcode.com/problems/mirror-distance-of-an-integer/) (cpp)
-- 2026-06-13T10:07:54.000Z: [Find the Degree of Each Vertex](https://leetcode.com/problems/find-the-degree-of-each-vertex/) (python3)
-- 2026-06-13T04:47:16.000Z: [Intersection of Multiple Arrays](https://leetcode.com/problems/intersection-of-multiple-arrays/) (python3)
-- 2026-06-13T04:42:34.000Z: [Find the Difference of Two Arrays](https://leetcode.com/problems/find-the-difference-of-two-arrays/) (python3)
-- 2026-06-13T04:38:41.000Z: [Intersection of Two Arrays II](https://leetcode.com/problems/intersection-of-two-arrays-ii/) (python3)
-- 2026-06-13T04:30:18.000Z: [Minimum Common Value](https://leetcode.com/problems/minimum-common-value/) (python3)
-- 2026-06-13T04:23:40.000Z: [Minimum Element After Replacement With Digit Sum](https://leetcode.com/problems/minimum-element-after-replacement-with-digit-sum/) (python3)
+- 2026-06-14T14:03:31.000Z: [Number of Distinct Averages](https://leetcode.com/problems/number-of-distinct-averages/) (python3)
+- 2026-06-14T13:48:50.000Z: [Minimum Swaps to Move Zeros to End](https://leetcode.com/problems/minimum-swaps-to-move-zeros-to-end/) (python3)
+- 2026-06-14T13:38:35.000Z: [Largest Positive Integer That Exists With Its Negative](https://leetcode.com/problems/largest-positive-integer-that-exists-with-its-negative/) (python3)
+- 2026-06-14T13:34:34.000Z: [First Matching Character From Both Ends](https://leetcode.com/problems/first-matching-character-from-both-ends/) (python3)
+- 2026-06-14T13:22:21.000Z: [Reverse Words in a String III](https://leetcode.com/problems/reverse-words-in-a-string-iii/) (python3)
+- 2026-06-14T13:19:47.000Z: [Count Pairs Whose Sum is Less than Target](https://leetcode.com/problems/count-pairs-whose-sum-is-less-than-target/) (python3)
+- 2026-06-14T13:01:15.000Z: [Unique Number of Occurrences](https://leetcode.com/problems/unique-number-of-occurrences/) (python3)
+- 2026-06-14T11:16:29.000Z: [Check if All Characters Have Equal Number of Occurrences](https://leetcode.com/problems/check-if-all-characters-have-equal-number-of-occurrences/) (python3)
+- 2026-06-14T11:10:17.000Z: [Find Missing Elements](https://leetcode.com/problems/find-missing-elements/) (python3)
+- 2026-06-14T11:03:29.000Z: [Find Common Elements Between Two Arrays](https://leetcode.com/problems/find-common-elements-between-two-arrays/) (python3)
+- 2026-06-14T10:58:52.000Z: [Maximize Sum of At Most K Distinct Elements](https://leetcode.com/problems/maximize-sum-of-at-most-k-distinct-elements/) (python3)
+- 2026-06-14T10:31:57.000Z: [Maximum Number of Words You Can Type](https://leetcode.com/problems/maximum-number-of-words-you-can-type/) (python3)
+- 2026-06-14T10:26:05.000Z: [Sum of Unique Elements](https://leetcode.com/problems/sum-of-unique-elements/) (python3)
+- 2026-06-14T10:21:52.000Z: [Number of Arithmetic Triplets](https://leetcode.com/problems/number-of-arithmetic-triplets/) (python3)
+- 2026-06-14T10:09:58.000Z: [Find the Prefix Common Array of Two Arrays](https://leetcode.com/problems/find-the-prefix-common-array-of-two-arrays/) (python3)
+- 2026-06-14T06:38:35.000Z: [Find The Original Array of Prefix Xor](https://leetcode.com/problems/find-the-original-array-of-prefix-xor/) (python3)
+- 2026-06-14T06:30:34.000Z: [Count the Number of Consistent Strings](https://leetcode.com/problems/count-the-number-of-consistent-strings/) (python3)
+- 2026-06-14T06:24:41.000Z: [Number of Good Pairs](https://leetcode.com/problems/number-of-good-pairs/) (python3)
+- 2026-06-14T02:46:27.000Z: [Counter](https://leetcode.com/problems/counter/) (typescript)
+- 2026-06-14T02:42:06.000Z: [Create Hello World Function](https://leetcode.com/problems/create-hello-world-function/) (javascript)

@@ -12,11 +12,11 @@
 
 ## Pattern
 
-TODO
+Sorting and two pointers
 
 ## Key Idea
 
-TODO
+After sorting, if the smallest current value plus largest current value is below target, count all pairs using that smallest value at once.
 
 ## Mistake / Edge Case
 
@@ -24,5 +24,5 @@ TODO
 
 ## Complexity
 
-- Time: TODO
-- Space: TODO
+- Time: O(n log n)
+- Space: O(1) extra, ignoring sort internals

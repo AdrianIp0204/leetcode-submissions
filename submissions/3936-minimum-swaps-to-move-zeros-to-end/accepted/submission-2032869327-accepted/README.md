@@ -13,11 +13,11 @@
 
 ## Pattern
 
-TODO
+Count zeros outside target suffix
 
 ## Key Idea
 
-TODO
+Count total zeros, then remove the final zero_count elements and subtract zeros already in that target suffix.
 
 ## Mistake / Edge Case
 
@@ -25,5 +25,5 @@ TODO
 
 ## Complexity
 
-- Time: TODO
-- Space: TODO
+- Time: O(n)
+- Space: O(1)
