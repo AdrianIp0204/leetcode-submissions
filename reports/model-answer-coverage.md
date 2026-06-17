@@ -1,19 +1,45 @@
 # Model Answer Coverage
 
-- Generated at: 2026-06-15T15:34:48.874Z
-- Problems in repo: 264
+- Generated at: 2026-06-17T16:03:53.247Z
+- Problems in repo: 289
 - Model-answer notes: 264
-- Missing model-answer notes: 0
+- Missing model-answer notes: 25
 - Incomplete model-answer notes: 0
 - Notes without matching problem folder: 0
 
 ## Verdict
 
-Every current problem has a complete model-answer note. Keep the track current as new submissions arrive.
+The model-answer track is active. Keep adding notes in batches, prioritizing reusable patterns over simple one-line problems.
 
 ## Next Coverage Batch
 
-Every problem currently has a model-answer note.
+| Problem | Title | Reason |
+| --- | --- | --- |
+| [0035-search-insert-position](../submissions/0035-search-insert-position/) | Search Insert Position | uncovered |
+| [0046-permutations](../submissions/0046-permutations/) | Permutations | uncovered |
+| [0050-powx-n](../submissions/0050-powx-n/) | Powx N | uncovered |
+| [0189-rotate-array](../submissions/0189-rotate-array/) | Rotate Array | uncovered |
+| [0231-power-of-two](../submissions/0231-power-of-two/) | Power Of Two | uncovered |
+| [0367-valid-perfect-square](../submissions/0367-valid-perfect-square/) | Valid Perfect Square | uncovered |
+| [0441-arranging-coins](../submissions/0441-arranging-coins/) | Arranging Coins | uncovered |
+| [0704-binary-search](../submissions/0704-binary-search/) | Binary Search | uncovered |
+| [0744-find-smallest-letter-greater-than-target](../submissions/0744-find-smallest-letter-greater-than-target/) | Find Smallest Letter Greater Than Target | uncovered |
+| [1374-generate-a-string-with-characters-that-have-odd-counts](../submissions/1374-generate-a-string-with-characters-that-have-odd-counts/) | Generate A String With Characters That Have Odd Counts | uncovered |
+| [1773-count-items-matching-a-rule](../submissions/1773-count-items-matching-a-rule/) | Count Items Matching A Rule | uncovered |
+| [1859-sorting-the-sentence](../submissions/1859-sorting-the-sentence/) | Sorting The Sentence | uncovered |
+| [2000-reverse-prefix-of-word](../submissions/2000-reverse-prefix-of-word/) | Reverse Prefix Of Word | uncovered |
+| [2032-two-out-of-three](../submissions/2032-two-out-of-three/) | Two Out Of Three | uncovered |
+| [2042-check-if-numbers-are-ascending-in-a-sentence](../submissions/2042-check-if-numbers-are-ascending-in-a-sentence/) | Check If Numbers Are Ascending In A Sentence | uncovered |
+| [2124-check-if-all-as-appears-before-all-bs](../submissions/2124-check-if-all-as-appears-before-all-bs/) | Check If All As Appears Before All Bs | uncovered |
+| [2710-remove-trailing-zeros-from-a-string](../submissions/2710-remove-trailing-zeros-from-a-string/) | Remove Trailing Zeros From A String | uncovered |
+| [2744-find-maximum-number-of-string-pairs](../submissions/2744-find-maximum-number-of-string-pairs/) | Find Maximum Number Of String Pairs | uncovered |
+| [2785-sort-vowels-in-a-string](../submissions/2785-sort-vowels-in-a-string/) | Sort Vowels In A String | uncovered |
+| [2810-faulty-keyboard](../submissions/2810-faulty-keyboard/) | Faulty Keyboard | uncovered |
+| [3174-clear-digits](../submissions/3174-clear-digits/) | Clear Digits | uncovered |
+| [3190-find-minimum-operations-to-make-all-elements-divisible-by-three](../submissions/3190-find-minimum-operations-to-make-all-elements-divisible-by-three/) | Find Minimum Operations To Make All Elements Divisible By Three | uncovered |
+| [3612-process-string-with-special-operations-i](../submissions/3612-process-string-with-special-operations-i/) | Process String With Special Operations I | uncovered |
+| [3614-process-string-with-special-operations-ii](../submissions/3614-process-string-with-special-operations-ii/) | Process String With Special Operations Ii | uncovered |
+| [3712-sum-of-elements-with-frequency-divisible-by-k](../submissions/3712-sum-of-elements-with-frequency-divisible-by-k/) | Sum Of Elements With Frequency Divisible By K | uncovered |
 
 ## Existing Model Answers
 

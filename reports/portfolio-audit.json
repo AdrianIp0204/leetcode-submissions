@@ -1,31 +1,32 @@
 {
-  "generatedAt": "2026-06-15T15:34:48.545Z",
+  "generatedAt": "2026-06-17T16:03:52.894Z",
   "totals": {
-    "problemFolders": 264,
-    "publicSolved": 263,
+    "problemFolders": 289,
+    "publicSolved": 288,
     "estimatedSolvedGap": 0,
-    "problemsWithAttempts": 34,
-    "problemsNeedingReflection": 37,
-    "problemsWithUnknownStatus": 43
+    "problemsWithAttempts": 38,
+    "problemsNeedingReflection": 62,
+    "problemsWithUnknownStatus": 68
   },
   "byLanguage": {
     "cpp": 10,
-    "md": 34,
-    "python": 216,
+    "md": 38,
+    "python": 220,
     "sql-or-text": 2,
     "typescript": 5
   },
   "byPattern": {
-    "arrays-and-strings": 75,
+    "arrays-and-strings": 85,
+    "binary-search": 1,
     "dynamic-programming": 2,
-    "hashing-and-counting": 10,
+    "hashing-and-counting": 11,
     "linked-list": 3,
-    "math-and-digits": 84,
+    "math-and-digits": 86,
     "sql": 2,
     "stack": 3,
     "tree-and-graph": 1,
     "two-pointers": 4,
-    "uncategorized": 80
+    "uncategorized": 91
   },
   "problems": [
     {
@@ -427,6 +428,38 @@
       ]
     },
     {
+      "id": 35,
+      "folder": "0035-search-insert-position",
+      "slug": "search-insert-position",
+      "title": "Search Insert Position",
+      "pattern": "uncategorized",
+      "hasReadme": false,
+      "status": "Not recorded",
+      "todoCount": 0,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": []
+    },
+    {
+      "id": 46,
+      "folder": "0046-permutations",
+      "slug": "permutations",
+      "title": "Permutations",
+      "pattern": "uncategorized",
+      "hasReadme": false,
+      "status": "Not recorded",
+      "todoCount": 0,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": []
+    },
+    {
       "id": 49,
       "folder": "0049-group-anagrams",
       "slug": "group-anagrams",
@@ -445,6 +478,22 @@
       "languages": [
         "python"
       ]
+    },
+    {
+      "id": 50,
+      "folder": "0050-powx-n",
+      "slug": "powx-n",
+      "title": "Powx N",
+      "pattern": "uncategorized",
+      "hasReadme": false,
+      "status": "Not recorded",
+      "todoCount": 0,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": []
     },
     {
       "id": 58,
@@ -811,6 +860,28 @@
       ]
     },
     {
+      "id": 189,
+      "folder": "0189-rotate-array",
+      "slug": "rotate-array",
+      "title": "Rotate Array",
+      "pattern": "arrays-and-strings",
+      "hasReadme": false,
+      "status": "Not recorded",
+      "todoCount": 0,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [
+        "attempts/submission-2034816349-runtime-error/README.md",
+        "attempts/submission-2034816349-runtime-error/solution.py"
+      ],
+      "languages": [
+        "md",
+        "python"
+      ]
+    },
+    {
       "id": 190,
       "folder": "0190-reverse-bits",
       "slug": "reverse-bits",
@@ -969,6 +1040,22 @@
         "md",
         "python"
       ]
+    },
+    {
+      "id": 231,
+      "folder": "0231-power-of-two",
+      "slug": "power-of-two",
+      "title": "Power Of Two",
+      "pattern": "uncategorized",
+      "hasReadme": false,
+      "status": "Not recorded",
+      "todoCount": 0,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": []
     },
     {
       "id": 234,
@@ -1277,6 +1364,28 @@
       ]
     },
     {
+      "id": 367,
+      "folder": "0367-valid-perfect-square",
+      "slug": "valid-perfect-square",
+      "title": "Valid Perfect Square",
+      "pattern": "uncategorized",
+      "hasReadme": false,
+      "status": "Not recorded",
+      "todoCount": 0,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [
+        "attempts/submission-2036505563-wrong-answer/README.md",
+        "attempts/submission-2036505563-wrong-answer/solution.py"
+      ],
+      "languages": [
+        "md",
+        "python"
+      ]
+    },
+    {
       "id": 387,
       "folder": "0387-first-unique-character-in-a-string",
       "slug": "first-unique-character-in-a-string",
@@ -1409,6 +1518,22 @@
       "languages": [
         "python"
       ]
+    },
+    {
+      "id": 441,
+      "folder": "0441-arranging-coins",
+      "slug": "arranging-coins",
+      "title": "Arranging Coins",
+      "pattern": "uncategorized",
+      "hasReadme": false,
+      "status": "Not recorded",
+      "todoCount": 0,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": []
     },
     {
       "id": 442,
@@ -1741,6 +1866,22 @@
       ]
     },
     {
+      "id": 704,
+      "folder": "0704-binary-search",
+      "slug": "binary-search",
+      "title": "Binary Search",
+      "pattern": "binary-search",
+      "hasReadme": false,
+      "status": "Not recorded",
+      "todoCount": 0,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": []
+    },
+    {
       "id": 709,
       "folder": "0709-to-lower-case",
       "slug": "to-lower-case",
@@ -1779,6 +1920,22 @@
       "languages": [
         "python"
       ]
+    },
+    {
+      "id": 744,
+      "folder": "0744-find-smallest-letter-greater-than-target",
+      "slug": "find-smallest-letter-greater-than-target",
+      "title": "Find Smallest Letter Greater Than Target",
+      "pattern": "uncategorized",
+      "hasReadme": false,
+      "status": "Not recorded",
+      "todoCount": 0,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": []
     },
     {
       "id": 747,
@@ -2369,6 +2526,22 @@
       ]
     },
     {
+      "id": 1374,
+      "folder": "1374-generate-a-string-with-characters-that-have-odd-counts",
+      "slug": "generate-a-string-with-characters-that-have-odd-counts",
+      "title": "Generate A String With Characters That Have Odd Counts",
+      "pattern": "arrays-and-strings",
+      "hasReadme": false,
+      "status": "Not recorded",
+      "todoCount": 0,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": []
+    },
+    {
       "id": 1399,
       "folder": "1399-count-largest-group",
       "slug": "count-largest-group",
@@ -2851,6 +3024,22 @@
       ]
     },
     {
+      "id": 1773,
+      "folder": "1773-count-items-matching-a-rule",
+      "slug": "count-items-matching-a-rule",
+      "title": "Count Items Matching A Rule",
+      "pattern": "uncategorized",
+      "hasReadme": false,
+      "status": "Not recorded",
+      "todoCount": 0,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": []
+    },
+    {
       "id": 1816,
       "folder": "1816-truncate-sentence",
       "slug": "truncate-sentence",
@@ -2929,6 +3118,22 @@
       "languages": [
         "python"
       ]
+    },
+    {
+      "id": 1859,
+      "folder": "1859-sorting-the-sentence",
+      "slug": "sorting-the-sentence",
+      "title": "Sorting The Sentence",
+      "pattern": "arrays-and-strings",
+      "hasReadme": false,
+      "status": "Not recorded",
+      "todoCount": 0,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": []
     },
     {
       "id": 1866,
@@ -3103,6 +3308,22 @@
       "languages": []
     },
     {
+      "id": 2000,
+      "folder": "2000-reverse-prefix-of-word",
+      "slug": "reverse-prefix-of-word",
+      "title": "Reverse Prefix Of Word",
+      "pattern": "arrays-and-strings",
+      "hasReadme": false,
+      "status": "Not recorded",
+      "todoCount": 0,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": []
+    },
+    {
       "id": 2006,
       "folder": "2006-count-number-of-pairs-with-absolute-difference-k",
       "slug": "count-number-of-pairs-with-absolute-difference-k",
@@ -3141,6 +3362,38 @@
       "languages": [
         "python"
       ]
+    },
+    {
+      "id": 2032,
+      "folder": "2032-two-out-of-three",
+      "slug": "two-out-of-three",
+      "title": "Two Out Of Three",
+      "pattern": "uncategorized",
+      "hasReadme": false,
+      "status": "Not recorded",
+      "todoCount": 0,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": []
+    },
+    {
+      "id": 2042,
+      "folder": "2042-check-if-numbers-are-ascending-in-a-sentence",
+      "slug": "check-if-numbers-are-ascending-in-a-sentence",
+      "title": "Check If Numbers Are Ascending In A Sentence",
+      "pattern": "arrays-and-strings",
+      "hasReadme": false,
+      "status": "Not recorded",
+      "todoCount": 0,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": []
     },
     {
       "id": 2085,
@@ -3245,6 +3498,22 @@
         "cpp",
         "python"
       ]
+    },
+    {
+      "id": 2124,
+      "folder": "2124-check-if-all-as-appears-before-all-bs",
+      "slug": "check-if-all-as-appears-before-all-bs",
+      "title": "Check If All As Appears Before All Bs",
+      "pattern": "hashing-and-counting",
+      "hasReadme": false,
+      "status": "Not recorded",
+      "todoCount": 0,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": []
     },
     {
       "id": 2129,
@@ -4031,6 +4300,22 @@
       ]
     },
     {
+      "id": 2710,
+      "folder": "2710-remove-trailing-zeros-from-a-string",
+      "slug": "remove-trailing-zeros-from-a-string",
+      "title": "Remove Trailing Zeros From A String",
+      "pattern": "arrays-and-strings",
+      "hasReadme": false,
+      "status": "Not recorded",
+      "todoCount": 0,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": []
+    },
+    {
       "id": 2716,
       "folder": "2716-minimize-string-length",
       "slug": "minimize-string-length",
@@ -4065,6 +4350,22 @@
       "languages": [
         "python"
       ]
+    },
+    {
+      "id": 2744,
+      "folder": "2744-find-maximum-number-of-string-pairs",
+      "slug": "find-maximum-number-of-string-pairs",
+      "title": "Find Maximum Number Of String Pairs",
+      "pattern": "arrays-and-strings",
+      "hasReadme": false,
+      "status": "Not recorded",
+      "todoCount": 0,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": []
     },
     {
       "id": 2769,
@@ -4109,6 +4410,22 @@
       ]
     },
     {
+      "id": 2785,
+      "folder": "2785-sort-vowels-in-a-string",
+      "slug": "sort-vowels-in-a-string",
+      "title": "Sort Vowels In A String",
+      "pattern": "arrays-and-strings",
+      "hasReadme": false,
+      "status": "Not recorded",
+      "todoCount": 0,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": []
+    },
+    {
       "id": 2798,
       "folder": "2798-number-of-employees-who-met-the-target",
       "slug": "number-of-employees-who-met-the-target",
@@ -4127,6 +4444,22 @@
       "languages": [
         "python"
       ]
+    },
+    {
+      "id": 2810,
+      "folder": "2810-faulty-keyboard",
+      "slug": "faulty-keyboard",
+      "title": "Faulty Keyboard",
+      "pattern": "uncategorized",
+      "hasReadme": false,
+      "status": "Not recorded",
+      "todoCount": 0,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": []
     },
     {
       "id": 2824,
@@ -4513,6 +4846,38 @@
       ]
     },
     {
+      "id": 3174,
+      "folder": "3174-clear-digits",
+      "slug": "clear-digits",
+      "title": "Clear Digits",
+      "pattern": "math-and-digits",
+      "hasReadme": false,
+      "status": "Not recorded",
+      "todoCount": 0,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": []
+    },
+    {
+      "id": 3190,
+      "folder": "3190-find-minimum-operations-to-make-all-elements-divisible-by-three",
+      "slug": "find-minimum-operations-to-make-all-elements-divisible-by-three",
+      "title": "Find Minimum Operations To Make All Elements Divisible By Three",
+      "pattern": "uncategorized",
+      "hasReadme": false,
+      "status": "Not recorded",
+      "todoCount": 0,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": []
+    },
+    {
       "id": 3194,
       "folder": "3194-minimum-average-of-smallest-and-largest-elements",
       "slug": "minimum-average-of-smallest-and-largest-elements",
@@ -4869,6 +5234,50 @@
       ]
     },
     {
+      "id": 3612,
+      "folder": "3612-process-string-with-special-operations-i",
+      "slug": "process-string-with-special-operations-i",
+      "title": "Process String With Special Operations I",
+      "pattern": "arrays-and-strings",
+      "hasReadme": false,
+      "status": "Not recorded",
+      "todoCount": 0,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [
+        "attempts/submission-2034730186-wrong-answer/README.md",
+        "attempts/submission-2034730186-wrong-answer/solution.py"
+      ],
+      "languages": [
+        "md",
+        "python"
+      ]
+    },
+    {
+      "id": 3614,
+      "folder": "3614-process-string-with-special-operations-ii",
+      "slug": "process-string-with-special-operations-ii",
+      "title": "Process String With Special Operations Ii",
+      "pattern": "arrays-and-strings",
+      "hasReadme": false,
+      "status": "Not recorded",
+      "todoCount": 0,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [
+        "attempts/submission-2035986330-memory-limit-exceeded/README.md",
+        "attempts/submission-2035986330-memory-limit-exceeded/solution.py"
+      ],
+      "languages": [
+        "md",
+        "python"
+      ]
+    },
+    {
       "id": 3622,
       "folder": "3622-check-divisibility-by-digit-sum-and-product",
       "slug": "check-divisibility-by-digit-sum-and-product",
@@ -5031,6 +5440,22 @@
       "languages": [
         "python"
       ]
+    },
+    {
+      "id": 3712,
+      "folder": "3712-sum-of-elements-with-frequency-divisible-by-k",
+      "slug": "sum-of-elements-with-frequency-divisible-by-k",
+      "title": "Sum Of Elements With Frequency Divisible By K",
+      "pattern": "math-and-digits",
+      "hasReadme": false,
+      "status": "Not recorded",
+      "todoCount": 0,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": []
     },
     {
       "id": 3731,
@@ -5341,8 +5766,8 @@
   ],
   "trackedFileFlags": [],
   "weaknessSignals": [
-    "37 of 264 problem READMEs still need real reflection.",
-    "43 submissions have unknown or missing status metadata.",
+    "62 of 289 problem READMEs still need real reflection.",
+    "68 submissions have unknown or missing status metadata.",
     "Failed attempts are preserved when real source exists; keep capturing them for new work.",
     "A TypeScript track exists; expand it deliberately rather than scattering one-off language experiments.",
     "Tree/graph/DP coverage is thin relative to array, string, math, and simple loop problems."
