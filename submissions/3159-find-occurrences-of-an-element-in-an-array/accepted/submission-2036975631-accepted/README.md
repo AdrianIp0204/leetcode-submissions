@@ -13,17 +13,19 @@
 
 ## Pattern
 
-TODO
+Occurrence index precomputation
 
 ## Key Idea
 
-TODO
+Collect all indices where `nums[i] == x`, then answer each 1-indexed occurrence
+query by indexing into that collected list when possible.
 
 ## Mistake / Edge Case
 
-TODO
+No subjective mistake recorded. Edge case: a query larger than the occurrence
+count returns `-1`.
 
 ## Complexity
 
-- Time: TODO
-- Space: TODO
+- Time: O(n + q)
+- Space: O(k + q), where k is the number of occurrences of `x`

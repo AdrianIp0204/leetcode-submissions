@@ -1,10 +1,10 @@
 {
-  "fetchedAt": "2026-06-17T16:03:51.167Z",
+  "fetchedAt": "2026-06-18T15:31:01.839Z",
   "username": "AdrianIp",
   "profile": {
     "realName": "AdrianIp",
     "userAvatar": "https://assets.leetcode.com/users/default_avatar.jpg",
-    "ranking": 513352,
+    "ranking": 487392,
     "reputation": 2,
     "countryName": "Hong Kong",
     "company": null,
@@ -15,18 +15,18 @@
   "solvedByDifficulty": [
     {
       "difficulty": "All",
-      "count": 288,
-      "submissions": 326
+      "count": 294,
+      "submissions": 333
     },
     {
       "difficulty": "Easy",
-      "count": 232,
-      "submissions": 268
+      "count": 236,
+      "submissions": 272
     },
     {
       "difficulty": "Medium",
-      "count": 48,
-      "submissions": 50
+      "count": 50,
+      "submissions": 53
     },
     {
       "difficulty": "Hard",
@@ -37,18 +37,18 @@
   "totalByDifficulty": [
     {
       "difficulty": "All",
-      "count": 289,
-      "submissions": 402
+      "count": 295,
+      "submissions": 410
     },
     {
       "difficulty": "Easy",
-      "count": 232,
-      "submissions": 313
+      "count": 236,
+      "submissions": 317
     },
     {
       "difficulty": "Medium",
-      "count": 48,
-      "submissions": 73
+      "count": 50,
+      "submissions": 77
     },
     {
       "difficulty": "Hard",
@@ -60,18 +60,18 @@
     "accepted": {
       "All": {
         "difficulty": "All",
-        "count": 288,
-        "submissions": 326
+        "count": 294,
+        "submissions": 333
       },
       "Easy": {
         "difficulty": "Easy",
-        "count": 232,
-        "submissions": 268
+        "count": 236,
+        "submissions": 272
       },
       "Medium": {
         "difficulty": "Medium",
-        "count": 48,
-        "submissions": 50
+        "count": 50,
+        "submissions": 53
       },
       "Hard": {
         "difficulty": "Hard",
@@ -82,18 +82,18 @@
     "total": {
       "All": {
         "difficulty": "All",
-        "count": 289,
-        "submissions": 402
+        "count": 295,
+        "submissions": 410
       },
       "Easy": {
         "difficulty": "Easy",
-        "count": 232,
-        "submissions": 313
+        "count": 236,
+        "submissions": 317
       },
       "Medium": {
         "difficulty": "Medium",
-        "count": 48,
-        "submissions": 73
+        "count": 50,
+        "submissions": 77
       },
       "Hard": {
         "difficulty": "Hard",
@@ -104,6 +104,54 @@
   },
   "contestRanking": null,
   "recentAccepted": [
+    {
+      "title": "Check If Digits Are Equal in String After Operations I",
+      "titleSlug": "check-if-digits-are-equal-in-string-after-operations-i",
+      "timestamp": "1781789281",
+      "statusDisplay": "Accepted",
+      "lang": "python3",
+      "acceptedAt": "2026-06-18T13:28:01.000Z"
+    },
+    {
+      "title": "Number of 1 Bits",
+      "titleSlug": "number-of-1-bits",
+      "timestamp": "1781788396",
+      "statusDisplay": "Accepted",
+      "lang": "python3",
+      "acceptedAt": "2026-06-18T13:13:16.000Z"
+    },
+    {
+      "title": "Find Occurrences of an Element in an Array",
+      "titleSlug": "find-occurrences-of-an-element-in-an-array",
+      "timestamp": "1781752688",
+      "statusDisplay": "Accepted",
+      "lang": "python3",
+      "acceptedAt": "2026-06-18T03:18:08.000Z"
+    },
+    {
+      "title": "Count the Number of Vowel Strings in Range",
+      "titleSlug": "count-the-number-of-vowel-strings-in-range",
+      "timestamp": "1781751863",
+      "statusDisplay": "Accepted",
+      "lang": "python3",
+      "acceptedAt": "2026-06-18T03:04:23.000Z"
+    },
+    {
+      "title": "Ransom Note",
+      "titleSlug": "ransom-note",
+      "timestamp": "1781751155",
+      "statusDisplay": "Accepted",
+      "lang": "python3",
+      "acceptedAt": "2026-06-18T02:52:35.000Z"
+    },
+    {
+      "title": "Angle Between Hands of a Clock",
+      "titleSlug": "angle-between-hands-of-a-clock",
+      "timestamp": "1781750317",
+      "statusDisplay": "Accepted",
+      "lang": "python3",
+      "acceptedAt": "2026-06-18T02:38:37.000Z"
+    },
     {
       "title": "Find Minimum Operations to Make All Elements Divisible by Three",
       "titleSlug": "find-minimum-operations-to-make-all-elements-divisible-by-three",
@@ -215,54 +263,6 @@
       "statusDisplay": "Accepted",
       "lang": "python3",
       "acceptedAt": "2026-06-17T06:36:40.000Z"
-    },
-    {
-      "title": "Process String with Special Operations II",
-      "titleSlug": "process-string-with-special-operations-ii",
-      "timestamp": "1781678118",
-      "statusDisplay": "Accepted",
-      "lang": "python3",
-      "acceptedAt": "2026-06-17T06:35:18.000Z"
-    },
-    {
-      "title": "Arranging Coins",
-      "titleSlug": "arranging-coins",
-      "timestamp": "1781677047",
-      "statusDisplay": "Accepted",
-      "lang": "python3",
-      "acceptedAt": "2026-06-17T06:17:27.000Z"
-    },
-    {
-      "title": "Find Smallest Letter Greater Than Target",
-      "titleSlug": "find-smallest-letter-greater-than-target",
-      "timestamp": "1781675971",
-      "statusDisplay": "Accepted",
-      "lang": "python3",
-      "acceptedAt": "2026-06-17T05:59:31.000Z"
-    },
-    {
-      "title": "Search Insert Position",
-      "titleSlug": "search-insert-position",
-      "timestamp": "1781675066",
-      "statusDisplay": "Accepted",
-      "lang": "python3",
-      "acceptedAt": "2026-06-17T05:44:26.000Z"
-    },
-    {
-      "title": "Binary Search",
-      "titleSlug": "binary-search",
-      "timestamp": "1781616928",
-      "statusDisplay": "Accepted",
-      "lang": "python3",
-      "acceptedAt": "2026-06-16T13:35:28.000Z"
-    },
-    {
-      "title": "Power of Two",
-      "titleSlug": "power-of-two",
-      "timestamp": "1781594160",
-      "statusDisplay": "Accepted",
-      "lang": "python3",
-      "acceptedAt": "2026-06-16T07:16:00.000Z"
     }
   ],
   "source": "LeetCode public GraphQL; no login cookie or browser extension used."

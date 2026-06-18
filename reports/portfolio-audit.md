@@ -1,13 +1,13 @@
 # Portfolio Audit
 
-- Generated at: 2026-06-17T16:03:52.894Z
-- Local problem folders: 289
-- Public solved count: 288
+- Generated at: 2026-06-18T15:33:06.384Z
+- Local problem folders: 295
+- Public solved count: 294
 - Estimated solved-count gap: 0
-- Problems with real attempt files: 38
-- Problems with multiple languages or recorded language variants: 44
-- Problems needing reflection cleanup: 62
-- Problems with unknown/missing status metadata: 68
+- Problems with real attempt files: 39
+- Problems with multiple languages or recorded language variants: 45
+- Problems needing reflection cleanup: 68
+- Problems with unknown/missing status metadata: 74
 
 ## Verdict
 
@@ -20,8 +20,8 @@ Current blockers: missing reflection fields.
 | Language | Problems |
 | --- | --- |
 | cpp | 10 |
-| md | 38 |
-| python | 220 |
+| md | 39 |
+| python | 221 |
 | sql-or-text | 2 |
 | typescript | 5 |
 
@@ -29,22 +29,22 @@ Current blockers: missing reflection fields.
 
 | Pattern | Problems |
 | --- | --- |
-| arrays-and-strings | 85 |
+| arrays-and-strings | 88 |
 | binary-search | 1 |
 | dynamic-programming | 2 |
 | hashing-and-counting | 11 |
 | linked-list | 3 |
-| math-and-digits | 86 |
+| math-and-digits | 87 |
 | sql | 2 |
 | stack | 3 |
 | tree-and-graph | 1 |
 | two-pointers | 4 |
-| uncategorized | 91 |
+| uncategorized | 93 |
 
 ## Weakness Signals
 
-- 62 of 289 problem READMEs still need real reflection.
-- 68 submissions have unknown or missing status metadata.
+- 68 of 295 problem READMEs still need real reflection.
+- 74 submissions have unknown or missing status metadata.
 - Failed attempts are preserved when real source exists; keep capturing them for new work.
 - A TypeScript track exists; expand it deliberately rather than scattering one-off language experiments.
 - Tree/graph/DP coverage is thin relative to array, string, math, and simple loop problems.
@@ -74,9 +74,11 @@ The scan is heuristic. Review flagged files manually before making the repositor
 | [0046-permutations](../submissions/0046-permutations/) | Not recorded | key idea, complexity |
 | [0050-powx-n](../submissions/0050-powx-n/) | Not recorded | key idea, complexity |
 | [0189-rotate-array](../submissions/0189-rotate-array/) | Not recorded | key idea, complexity |
+| [0191-number-of-1-bits](../submissions/0191-number-of-1-bits/) | Not recorded | key idea, complexity |
 | [0231-power-of-two](../submissions/0231-power-of-two/) | Not recorded | key idea, complexity |
 | [0326-power-of-three](../submissions/0326-power-of-three/) | Not recorded | key idea, complexity |
 | [0367-valid-perfect-square](../submissions/0367-valid-perfect-square/) | Not recorded | key idea, complexity |
+| [0383-ransom-note](../submissions/0383-ransom-note/) | Not recorded | key idea, complexity |
 | [0441-arranging-coins](../submissions/0441-arranging-coins/) | Not recorded | key idea, complexity |
 | [0442-find-all-duplicates-in-an-array](../submissions/0442-find-all-duplicates-in-an-array/) | Not recorded | key idea, complexity |
 | [0557-reverse-words-in-a-string-iii](../submissions/0557-reverse-words-in-a-string-iii/) | Not recorded | key idea, complexity |
@@ -84,12 +86,10 @@ The scan is heuristic. Review flagged files manually before making the repositor
 | [0744-find-smallest-letter-greater-than-target](../submissions/0744-find-smallest-letter-greater-than-target/) | Not recorded | key idea, complexity |
 | [0804-unique-morse-code-words](../submissions/0804-unique-morse-code-words/) | Not recorded | key idea, complexity |
 | [1207-unique-number-of-occurrences](../submissions/1207-unique-number-of-occurrences/) | Not recorded | key idea, complexity |
+| [1344-angle-between-hands-of-a-clock](../submissions/1344-angle-between-hands-of-a-clock/) | Not recorded | key idea, complexity |
 | [1374-generate-a-string-with-characters-that-have-odd-counts](../submissions/1374-generate-a-string-with-characters-that-have-odd-counts/) | Not recorded | key idea, complexity |
 | [1399-count-largest-group](../submissions/1399-count-largest-group/) | Not recorded | key idea, complexity |
 | [1512-number-of-good-pairs](../submissions/1512-number-of-good-pairs/) | Not recorded | key idea, complexity |
-| [1534-count-good-triplets](../submissions/1534-count-good-triplets/) | Not recorded | key idea, complexity |
-| [1684-count-the-number-of-consistent-strings](../submissions/1684-count-the-number-of-consistent-strings/) | Not recorded | key idea, complexity |
-| [1704-determine-if-string-halves-are-alike](../submissions/1704-determine-if-string-halves-are-alike/) | Not recorded | key idea, complexity |
 
 ## AI-Assisted Disclosure Draft
 

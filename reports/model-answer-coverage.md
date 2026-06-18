@@ -1,8 +1,8 @@
 # Model Answer Coverage
 
-- Generated at: 2026-06-17T16:03:53.247Z
-- Problems in repo: 289
-- Model-answer notes: 264
+- Generated at: 2026-06-18T15:33:06.733Z
+- Problems in repo: 295
+- Model-answer notes: 270
 - Missing model-answer notes: 25
 - Incomplete model-answer notes: 0
 - Notes without matching problem folder: 0
@@ -83,6 +83,7 @@ The model-answer track is active. Keep adding notes in batches, prioritizing reu
 | [0175-combine-two-tables](../notes/model-answers/0175-combine-two-tables.md) | Combine Two Tables |
 | [0181-employees-earning-more-than-their-managers](../notes/model-answers/0181-employees-earning-more-than-their-managers.md) | Employees Earning More Than Their Managers |
 | [0190-reverse-bits](../notes/model-answers/0190-reverse-bits.md) | Reverse Bits |
+| [0191-number-of-1-bits](../notes/model-answers/0191-number-of-1-bits.md) | Number Of 1 Bits |
 | [0204-count-primes](../notes/model-answers/0204-count-primes.md) | Count Primes |
 | [0205-isomorphic-strings](../notes/model-answers/0205-isomorphic-strings.md) | Isomorphic Strings |
 | [0206-reverse-linked-list](../notes/model-answers/0206-reverse-linked-list.md) | Reverse Linked List |
@@ -94,4 +95,3 @@ The model-answer track is active. Keep adding notes in batches, prioritizing reu
 | [0242-valid-anagram](../notes/model-answers/0242-valid-anagram.md) | Valid Anagram |
 | [0258-add-digits](../notes/model-answers/0258-add-digits.md) | Add Digits |
 | [0263-ugly-number](../notes/model-answers/0263-ugly-number.md) | Ugly Number |
-| [0268-missing-number](../notes/model-answers/0268-missing-number.md) | Missing Number |

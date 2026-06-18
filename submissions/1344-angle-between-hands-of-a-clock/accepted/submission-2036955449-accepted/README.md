@@ -12,17 +12,19 @@
 
 ## Pattern
 
-TODO
+Clock-angle math
 
 ## Key Idea
 
-TODO
+Compute each hand's absolute angle from 12 o'clock and use `min(diff, 360 -
+diff)` to return the smaller angle.
 
 ## Mistake / Edge Case
 
-TODO
+No subjective mistake recorded. Edge case: hour `12` should be treated as zero
+hours around the clock.
 
 ## Complexity
 
-- Time: TODO
-- Space: TODO
+- Time: O(1)
+- Space: O(1)

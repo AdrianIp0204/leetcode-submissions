@@ -13,17 +13,19 @@
 
 ## Pattern
 
-TODO
+Clock-angle math
 
 ## Key Idea
 
-TODO
+Compute the minute hand angle, include minute progress in the hour hand angle,
+then return the smaller arc between the hands.
 
 ## Mistake / Edge Case
 
-TODO
+No subjective mistake recorded. Edge case: compare the direct angle with its
+`360 - diff` complement.
 
 ## Complexity
 
-- Time: TODO
-- Space: TODO
+- Time: O(1)
+- Space: O(1)

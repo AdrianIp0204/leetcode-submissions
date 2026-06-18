@@ -13,17 +13,19 @@
 
 ## Pattern
 
-TODO
+Digit simulation
 
 ## Key Idea
 
-TODO
+Repeatedly replace adjacent digit pairs with their sum modulo 10 until two
+digits remain, then compare those final two digits.
 
 ## Mistake / Edge Case
 
-TODO
+No subjective mistake recorded. Edge case: each reduction shortens the current
+digit list by one.
 
 ## Complexity
 
-- Time: TODO
-- Space: TODO
+- Time: O(n^2)
+- Space: O(n)

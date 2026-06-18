@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-06-17T16:05:27.268Z",
+  "generatedAt": "2026-06-18T15:33:06.242Z",
   "username": "AdrianIp",
-  "profileFetchedAt": "2026-06-17T16:03:51.167Z",
-  "publicAcceptedSolved": 288,
-  "publicAcceptedSubmissions": 326,
-  "publicAttemptedProblems": 289,
-  "publicTotalSubmissions": 402,
-  "localProblemFolders": 289,
+  "profileFetchedAt": "2026-06-18T15:31:01.839Z",
+  "publicAcceptedSolved": 294,
+  "publicAcceptedSubmissions": 333,
+  "publicAttemptedProblems": 295,
+  "publicTotalSubmissions": 410,
+  "localProblemFolders": 295,
   "localCanonicalSolutions": 226,
   "estimatedSolvedGap": 0,
   "status": "ok",
@@ -222,6 +222,11 @@
       "hasCanonicalSolution": true
     },
     {
+      "folder": "0191-number-of-1-bits",
+      "slug": "number-of-1-bits",
+      "hasCanonicalSolution": false
+    },
+    {
       "folder": "0204-count-primes",
       "slug": "count-primes",
       "hasCanonicalSolution": true
@@ -334,6 +339,11 @@
     {
       "folder": "0367-valid-perfect-square",
       "slug": "valid-perfect-square",
+      "hasCanonicalSolution": false
+    },
+    {
+      "folder": "0383-ransom-note",
+      "slug": "ransom-note",
       "hasCanonicalSolution": false
     },
     {
@@ -610,6 +620,11 @@
       "folder": "1323-maximum-69-number",
       "slug": "maximum-69-number",
       "hasCanonicalSolution": true
+    },
+    {
+      "folder": "1344-angle-between-hands-of-a-clock",
+      "slug": "angle-between-hands-of-a-clock",
+      "hasCanonicalSolution": false
     },
     {
       "folder": "1365-how-many-numbers-are-smaller-than-the-current-number",
@@ -1042,6 +1057,11 @@
       "hasCanonicalSolution": true
     },
     {
+      "folder": "2586-count-the-number-of-vowel-strings-in-range",
+      "slug": "count-the-number-of-vowel-strings-in-range",
+      "hasCanonicalSolution": false
+    },
+    {
       "folder": "2620-counter",
       "slug": "counter",
       "hasCanonicalSolution": false
@@ -1212,6 +1232,11 @@
       "hasCanonicalSolution": true
     },
     {
+      "folder": "3159-find-occurrences-of-an-element-in-an-array",
+      "slug": "find-occurrences-of-an-element-in-an-array",
+      "hasCanonicalSolution": false
+    },
+    {
       "folder": "3162-find-the-number-of-good-pairs-i",
       "slug": "find-the-number-of-good-pairs-i",
       "hasCanonicalSolution": false
@@ -1275,6 +1300,11 @@
       "folder": "3370-smallest-number-with-all-set-bits",
       "slug": "smallest-number-with-all-set-bits",
       "hasCanonicalSolution": true
+    },
+    {
+      "folder": "3461-check-if-digits-are-equal-in-string-after-operations-i",
+      "slug": "check-if-digits-are-equal-in-string-after-operations-i",
+      "hasCanonicalSolution": false
     },
     {
       "folder": "3467-transform-array-by-parity",
