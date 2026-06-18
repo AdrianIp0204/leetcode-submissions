@@ -2,43 +2,43 @@
 
 - Username: AdrianIp
 - Profile: https://leetcode.com/u/AdrianIp/
-- Fetched at: 2026-06-14T15:30:48.771Z
-- Ranking: 649362
+- Fetched at: 2026-06-17T16:03:51.167Z
+- Ranking: 513352
 - Display name: AdrianIp
 
 ## Solved
 
-- All: 247 solved / 281 accepted submissions
-- Easy: 200 solved / 232 accepted submissions
-- Medium: 40 solved / 42 accepted submissions
-- Hard: 7 solved / 7 accepted submissions
+- All: 288 solved / 326 accepted submissions
+- Easy: 232 solved / 268 accepted submissions
+- Medium: 48 solved / 50 accepted submissions
+- Hard: 8 solved / 8 accepted submissions
 
 ## Total Attempts
 
-- All: 248 attempted problems / 352 total submissions
-- Easy: 200 attempted problems / 275 total submissions
-- Medium: 40 attempted problems / 63 total submissions
-- Hard: 8 attempted problems / 14 total submissions
+- All: 289 attempted problems / 402 total submissions
+- Easy: 232 attempted problems / 313 total submissions
+- Medium: 48 attempted problems / 73 total submissions
+- Hard: 9 attempted problems / 16 total submissions
 
 ## Recent Accepted
 
-- 2026-06-14T14:03:31.000Z: [Number of Distinct Averages](https://leetcode.com/problems/number-of-distinct-averages/) (python3)
-- 2026-06-14T13:48:50.000Z: [Minimum Swaps to Move Zeros to End](https://leetcode.com/problems/minimum-swaps-to-move-zeros-to-end/) (python3)
-- 2026-06-14T13:38:35.000Z: [Largest Positive Integer That Exists With Its Negative](https://leetcode.com/problems/largest-positive-integer-that-exists-with-its-negative/) (python3)
-- 2026-06-14T13:34:34.000Z: [First Matching Character From Both Ends](https://leetcode.com/problems/first-matching-character-from-both-ends/) (python3)
-- 2026-06-14T13:22:21.000Z: [Reverse Words in a String III](https://leetcode.com/problems/reverse-words-in-a-string-iii/) (python3)
-- 2026-06-14T13:19:47.000Z: [Count Pairs Whose Sum is Less than Target](https://leetcode.com/problems/count-pairs-whose-sum-is-less-than-target/) (python3)
-- 2026-06-14T13:01:15.000Z: [Unique Number of Occurrences](https://leetcode.com/problems/unique-number-of-occurrences/) (python3)
-- 2026-06-14T11:16:29.000Z: [Check if All Characters Have Equal Number of Occurrences](https://leetcode.com/problems/check-if-all-characters-have-equal-number-of-occurrences/) (python3)
-- 2026-06-14T11:10:17.000Z: [Find Missing Elements](https://leetcode.com/problems/find-missing-elements/) (python3)
-- 2026-06-14T11:03:29.000Z: [Find Common Elements Between Two Arrays](https://leetcode.com/problems/find-common-elements-between-two-arrays/) (python3)
-- 2026-06-14T10:58:52.000Z: [Maximize Sum of At Most K Distinct Elements](https://leetcode.com/problems/maximize-sum-of-at-most-k-distinct-elements/) (python3)
-- 2026-06-14T10:31:57.000Z: [Maximum Number of Words You Can Type](https://leetcode.com/problems/maximum-number-of-words-you-can-type/) (python3)
-- 2026-06-14T10:26:05.000Z: [Sum of Unique Elements](https://leetcode.com/problems/sum-of-unique-elements/) (python3)
-- 2026-06-14T10:21:52.000Z: [Number of Arithmetic Triplets](https://leetcode.com/problems/number-of-arithmetic-triplets/) (python3)
-- 2026-06-14T10:09:58.000Z: [Find the Prefix Common Array of Two Arrays](https://leetcode.com/problems/find-the-prefix-common-array-of-two-arrays/) (python3)
-- 2026-06-14T06:38:35.000Z: [Find The Original Array of Prefix Xor](https://leetcode.com/problems/find-the-original-array-of-prefix-xor/) (python3)
-- 2026-06-14T06:30:34.000Z: [Count the Number of Consistent Strings](https://leetcode.com/problems/count-the-number-of-consistent-strings/) (python3)
-- 2026-06-14T06:24:41.000Z: [Number of Good Pairs](https://leetcode.com/problems/number-of-good-pairs/) (python3)
-- 2026-06-14T02:46:27.000Z: [Counter](https://leetcode.com/problems/counter/) (typescript)
-- 2026-06-14T02:42:06.000Z: [Create Hello World Function](https://leetcode.com/problems/create-hello-world-function/) (javascript)
+- 2026-06-17T15:05:48.000Z: [Find Minimum Operations to Make All Elements Divisible by Three](https://leetcode.com/problems/find-minimum-operations-to-make-all-elements-divisible-by-three/) (python3)
+- 2026-06-17T15:00:52.000Z: [Valid Perfect Square](https://leetcode.com/problems/valid-perfect-square/) (python3)
+- 2026-06-17T14:49:33.000Z: [Sort Vowels in a String](https://leetcode.com/problems/sort-vowels-in-a-string/) (python3)
+- 2026-06-17T14:11:09.000Z: [Check if All A's Appears Before All B's](https://leetcode.com/problems/check-if-all-as-appears-before-all-bs/) (python3)
+- 2026-06-17T14:07:20.000Z: [Check if Numbers Are Ascending in a Sentence](https://leetcode.com/problems/check-if-numbers-are-ascending-in-a-sentence/) (python3)
+- 2026-06-17T13:57:06.000Z: [Sorting the Sentence](https://leetcode.com/problems/sorting-the-sentence/) (python3)
+- 2026-06-17T13:48:19.000Z: [Generate a String With Characters That Have Odd Counts](https://leetcode.com/problems/generate-a-string-with-characters-that-have-odd-counts/) (python3)
+- 2026-06-17T07:15:40.000Z: [Remove Trailing Zeros From a String](https://leetcode.com/problems/remove-trailing-zeros-from-a-string/) (python3)
+- 2026-06-17T07:13:24.000Z: [Faulty Keyboard](https://leetcode.com/problems/faulty-keyboard/) (python3)
+- 2026-06-17T07:09:34.000Z: [Find Maximum Number of String Pairs](https://leetcode.com/problems/find-maximum-number-of-string-pairs/) (python3)
+- 2026-06-17T07:01:07.000Z: [Clear Digits](https://leetcode.com/problems/clear-digits/) (python3)
+- 2026-06-17T06:55:46.000Z: [Count Items Matching a Rule](https://leetcode.com/problems/count-items-matching-a-rule/) (python3)
+- 2026-06-17T06:50:10.000Z: [Reverse Prefix of Word](https://leetcode.com/problems/reverse-prefix-of-word/) (python3)
+- 2026-06-17T06:36:40.000Z: [Permutations](https://leetcode.com/problems/permutations/) (python3)
+- 2026-06-17T06:35:18.000Z: [Process String with Special Operations II](https://leetcode.com/problems/process-string-with-special-operations-ii/) (python3)
+- 2026-06-17T06:17:27.000Z: [Arranging Coins](https://leetcode.com/problems/arranging-coins/) (python3)
+- 2026-06-17T05:59:31.000Z: [Find Smallest Letter Greater Than Target](https://leetcode.com/problems/find-smallest-letter-greater-than-target/) (python3)
+- 2026-06-17T05:44:26.000Z: [Search Insert Position](https://leetcode.com/problems/search-insert-position/) (python3)
+- 2026-06-16T13:35:28.000Z: [Binary Search](https://leetcode.com/problems/binary-search/) (python3)
+- 2026-06-16T07:16:00.000Z: [Power of Two](https://leetcode.com/problems/power-of-two/) (python3)

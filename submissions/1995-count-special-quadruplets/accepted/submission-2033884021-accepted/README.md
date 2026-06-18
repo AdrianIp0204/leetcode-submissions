@@ -13,17 +13,17 @@
 
 ## Pattern
 
-TODO
+Brute-force enumeration
 
 ## Key Idea
 
-TODO
+Try every increasing quadruplet and count the ones where the first three values sum to the fourth.
 
 ## Mistake / Edge Case
 
-TODO
+The four loops preserve index order, so the equality check only needs to compare values.
 
 ## Complexity
 
-- Time: TODO
-- Space: TODO
+- Time: O(n^4)
+- Space: O(1)

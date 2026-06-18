@@ -12,17 +12,17 @@
 
 ## Pattern
 
-TODO
+Parity partitioning
 
 ## Key Idea
 
-TODO
+Map even values to `0` and odd values to `1`, placing zeros at the front and ones at the back.
 
 ## Mistake / Edge Case
 
-TODO
+Only parity matters; the original numeric values are discarded.
 
 ## Complexity
 
-- Time: TODO
-- Space: TODO
+- Time: O(n)
+- Space: O(n)

@@ -13,17 +13,17 @@
 
 ## Pattern
 
-TODO
+Linked list traversal
 
 ## Key Idea
 
-TODO
+The submitted solution counts nodes, computes the middle index, and builds a new list that skips that index.
 
 ## Mistake / Edge Case
 
-TODO
+This accepted version copies nodes; the model pattern is to relink the original list in place with slow and fast pointers.
 
 ## Complexity
 
-- Time: TODO
-- Space: TODO
+- Time: O(n)
+- Space: O(n)

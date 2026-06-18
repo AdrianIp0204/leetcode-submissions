@@ -13,17 +13,17 @@
 
 ## Pattern
 
-TODO
+Brute-force enumeration
 
 ## Key Idea
 
-TODO
+Try every increasing triple and count the triples whose pairwise differences satisfy the three bounds.
 
 ## Mistake / Edge Case
 
-TODO
+Check the first bound before entering the innermost loop to avoid unnecessary work.
 
 ## Complexity
 
-- Time: TODO
-- Space: TODO
+- Time: O(n^3)
+- Space: O(1)

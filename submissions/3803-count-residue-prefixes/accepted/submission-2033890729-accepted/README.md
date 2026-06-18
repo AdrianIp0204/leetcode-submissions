@@ -13,17 +13,17 @@
 
 ## Pattern
 
-TODO
+Prefix scan with distinct-count state
 
 ## Key Idea
 
-TODO
+Track the number of scanned characters and distinct characters in the prefix, then count prefixes where the residue condition matches the distinct count.
 
 ## Mistake / Edge Case
 
-TODO
+Code-supported note: this solution stops once three distinct characters have appeared, matching the submitted logic.
 
 ## Complexity
 
-- Time: TODO
-- Space: TODO
+- Time: O(n)
+- Space: O(1)

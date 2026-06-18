@@ -13,17 +13,17 @@
 
 ## Pattern
 
-TODO
+Pair enumeration
 
 ## Key Idea
 
-TODO
+For each pair, test whether the first value is divisible by the second value multiplied by `k`.
 
 ## Mistake / Edge Case
 
-TODO
+Use `m * k` as the divisor; checking against `m` alone changes the condition.
 
 ## Complexity
 
-- Time: TODO
-- Space: TODO
+- Time: O(nm)
+- Space: O(1)

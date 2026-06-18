@@ -13,17 +13,17 @@
 
 ## Pattern
 
-TODO
+Digit-sum counting
 
 ## Key Idea
 
-TODO
+Group numbers by digit sum, track the largest group size, then count how many groups reach that size.
 
 ## Mistake / Edge Case
 
-TODO
+Mutating the loop value while computing its digit sum is safe here because the original value is not needed later in the iteration.
 
 ## Complexity
 
-- Time: TODO
-- Space: TODO
+- Time: O(n log n)
+- Space: O(log n)

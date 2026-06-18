@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-06-14T15:35:46.219Z",
+  "generatedAt": "2026-06-17T16:05:27.268Z",
   "username": "AdrianIp",
-  "profileFetchedAt": "2026-06-14T15:30:48.771Z",
-  "publicAcceptedSolved": 247,
-  "publicAcceptedSubmissions": 281,
-  "publicAttemptedProblems": 248,
-  "publicTotalSubmissions": 352,
-  "localProblemFolders": 248,
+  "profileFetchedAt": "2026-06-17T16:03:51.167Z",
+  "publicAcceptedSolved": 288,
+  "publicAcceptedSubmissions": 326,
+  "publicAttemptedProblems": 289,
+  "publicTotalSubmissions": 402,
+  "localProblemFolders": 289,
   "localCanonicalSolutions": 226,
   "estimatedSolvedGap": 0,
   "status": "ok",
@@ -102,9 +102,24 @@
       "hasCanonicalSolution": true
     },
     {
+      "folder": "0035-search-insert-position",
+      "slug": "search-insert-position",
+      "hasCanonicalSolution": false
+    },
+    {
+      "folder": "0046-permutations",
+      "slug": "permutations",
+      "hasCanonicalSolution": false
+    },
+    {
       "folder": "0049-group-anagrams",
       "slug": "group-anagrams",
       "hasCanonicalSolution": true
+    },
+    {
+      "folder": "0050-powx-n",
+      "slug": "powx-n",
+      "hasCanonicalSolution": false
     },
     {
       "folder": "0058-length-of-last-word",
@@ -197,6 +212,11 @@
       "hasCanonicalSolution": true
     },
     {
+      "folder": "0189-rotate-array",
+      "slug": "rotate-array",
+      "hasCanonicalSolution": false
+    },
+    {
       "folder": "0190-reverse-bits",
       "slug": "reverse-bits",
       "hasCanonicalSolution": true
@@ -229,6 +249,11 @@
     {
       "folder": "0224-basic-calculator",
       "slug": "basic-calculator",
+      "hasCanonicalSolution": false
+    },
+    {
+      "folder": "0231-power-of-two",
+      "slug": "power-of-two",
       "hasCanonicalSolution": false
     },
     {
@@ -272,6 +297,11 @@
       "hasCanonicalSolution": true
     },
     {
+      "folder": "0326-power-of-three",
+      "slug": "power-of-three",
+      "hasCanonicalSolution": false
+    },
+    {
       "folder": "0342-power-of-four",
       "slug": "power-of-four",
       "hasCanonicalSolution": true
@@ -302,6 +332,11 @@
       "hasCanonicalSolution": true
     },
     {
+      "folder": "0367-valid-perfect-square",
+      "slug": "valid-perfect-square",
+      "hasCanonicalSolution": false
+    },
+    {
       "folder": "0387-first-unique-character-in-a-string",
       "slug": "first-unique-character-in-a-string",
       "hasCanonicalSolution": true
@@ -330,6 +365,16 @@
       "folder": "0414-third-maximum-number",
       "slug": "third-maximum-number",
       "hasCanonicalSolution": true
+    },
+    {
+      "folder": "0441-arranging-coins",
+      "slug": "arranging-coins",
+      "hasCanonicalSolution": false
+    },
+    {
+      "folder": "0442-find-all-duplicates-in-an-array",
+      "slug": "find-all-duplicates-in-an-array",
+      "hasCanonicalSolution": false
     },
     {
       "folder": "0448-find-all-numbers-disappeared-in-an-array",
@@ -407,6 +452,11 @@
       "hasCanonicalSolution": true
     },
     {
+      "folder": "0704-binary-search",
+      "slug": "binary-search",
+      "hasCanonicalSolution": false
+    },
+    {
       "folder": "0709-to-lower-case",
       "slug": "to-lower-case",
       "hasCanonicalSolution": true
@@ -417,6 +467,11 @@
       "hasCanonicalSolution": true
     },
     {
+      "folder": "0744-find-smallest-letter-greater-than-target",
+      "slug": "find-smallest-letter-greater-than-target",
+      "hasCanonicalSolution": false
+    },
+    {
       "folder": "0747-largest-number-at-least-twice-of-others",
       "slug": "largest-number-at-least-twice-of-others",
       "hasCanonicalSolution": true
@@ -425,6 +480,11 @@
       "folder": "0771-jewels-and-stones",
       "slug": "jewels-and-stones",
       "hasCanonicalSolution": true
+    },
+    {
+      "folder": "0804-unique-morse-code-words",
+      "slug": "unique-morse-code-words",
+      "hasCanonicalSolution": false
     },
     {
       "folder": "0819-most-common-word",
@@ -557,6 +617,16 @@
       "hasCanonicalSolution": true
     },
     {
+      "folder": "1374-generate-a-string-with-characters-that-have-odd-counts",
+      "slug": "generate-a-string-with-characters-that-have-odd-counts",
+      "hasCanonicalSolution": false
+    },
+    {
+      "folder": "1399-count-largest-group",
+      "slug": "count-largest-group",
+      "hasCanonicalSolution": false
+    },
+    {
       "folder": "1408-string-matching-in-an-array",
       "slug": "string-matching-in-an-array",
       "hasCanonicalSolution": true
@@ -622,6 +692,11 @@
       "hasCanonicalSolution": true
     },
     {
+      "folder": "1534-count-good-triplets",
+      "slug": "count-good-triplets",
+      "hasCanonicalSolution": false
+    },
+    {
       "folder": "1550-three-consecutive-odds",
       "slug": "three-consecutive-odds",
       "hasCanonicalSolution": true
@@ -657,6 +732,11 @@
       "hasCanonicalSolution": false
     },
     {
+      "folder": "1704-determine-if-string-halves-are-alike",
+      "slug": "determine-if-string-halves-are-alike",
+      "hasCanonicalSolution": false
+    },
+    {
       "folder": "1748-sum-of-unique-elements",
       "slug": "sum-of-unique-elements",
       "hasCanonicalSolution": false
@@ -665,6 +745,11 @@
       "folder": "1768-merge-strings-alternately",
       "slug": "merge-strings-alternately",
       "hasCanonicalSolution": true
+    },
+    {
+      "folder": "1773-count-items-matching-a-rule",
+      "slug": "count-items-matching-a-rule",
+      "hasCanonicalSolution": false
     },
     {
       "folder": "1816-truncate-sentence",
@@ -685,6 +770,11 @@
       "folder": "1837-sum-of-digits-in-base-k",
       "slug": "sum-of-digits-in-base-k",
       "hasCanonicalSolution": true
+    },
+    {
+      "folder": "1859-sorting-the-sentence",
+      "slug": "sorting-the-sentence",
+      "hasCanonicalSolution": false
     },
     {
       "folder": "1866-number-of-ways-to-rearrange-sticks-with-k-sticks-visible",
@@ -727,6 +817,16 @@
       "hasCanonicalSolution": true
     },
     {
+      "folder": "1995-count-special-quadruplets",
+      "slug": "count-special-quadruplets",
+      "hasCanonicalSolution": false
+    },
+    {
+      "folder": "2000-reverse-prefix-of-word",
+      "slug": "reverse-prefix-of-word",
+      "hasCanonicalSolution": false
+    },
+    {
       "folder": "2006-count-number-of-pairs-with-absolute-difference-k",
       "slug": "count-number-of-pairs-with-absolute-difference-k",
       "hasCanonicalSolution": true
@@ -737,9 +837,24 @@
       "hasCanonicalSolution": true
     },
     {
+      "folder": "2032-two-out-of-three",
+      "slug": "two-out-of-three",
+      "hasCanonicalSolution": false
+    },
+    {
+      "folder": "2042-check-if-numbers-are-ascending-in-a-sentence",
+      "slug": "check-if-numbers-are-ascending-in-a-sentence",
+      "hasCanonicalSolution": false
+    },
+    {
       "folder": "2085-count-common-words-with-one-occurrence",
       "slug": "count-common-words-with-one-occurrence",
       "hasCanonicalSolution": true
+    },
+    {
+      "folder": "2095-delete-the-middle-node-of-a-linked-list",
+      "slug": "delete-the-middle-node-of-a-linked-list",
+      "hasCanonicalSolution": false
     },
     {
       "folder": "2108-find-first-palindromic-string-in-the-array",
@@ -755,6 +870,11 @@
       "folder": "2119-a-number-after-a-double-reversal",
       "slug": "a-number-after-a-double-reversal",
       "hasCanonicalSolution": true
+    },
+    {
+      "folder": "2124-check-if-all-as-appears-before-all-bs",
+      "slug": "check-if-all-as-appears-before-all-bs",
+      "hasCanonicalSolution": false
     },
     {
       "folder": "2129-capitalize-the-title",
@@ -820,6 +940,11 @@
       "folder": "2309-greatest-english-letter-in-upper-and-lower-case",
       "slug": "greatest-english-letter-in-upper-and-lower-case",
       "hasCanonicalSolution": true
+    },
+    {
+      "folder": "2315-count-asterisks",
+      "slug": "count-asterisks",
+      "hasCanonicalSolution": false
     },
     {
       "folder": "2367-number-of-arithmetic-triplets",
@@ -952,9 +1077,24 @@
       "hasCanonicalSolution": true
     },
     {
+      "folder": "2710-remove-trailing-zeros-from-a-string",
+      "slug": "remove-trailing-zeros-from-a-string",
+      "hasCanonicalSolution": false
+    },
+    {
+      "folder": "2716-minimize-string-length",
+      "slug": "minimize-string-length",
+      "hasCanonicalSolution": false
+    },
+    {
       "folder": "2733-neither-minimum-nor-maximum",
       "slug": "neither-minimum-nor-maximum",
       "hasCanonicalSolution": true
+    },
+    {
+      "folder": "2744-find-maximum-number-of-string-pairs",
+      "slug": "find-maximum-number-of-string-pairs",
+      "hasCanonicalSolution": false
     },
     {
       "folder": "2769-find-the-maximum-achievable-number",
@@ -967,9 +1107,19 @@
       "hasCanonicalSolution": true
     },
     {
+      "folder": "2785-sort-vowels-in-a-string",
+      "slug": "sort-vowels-in-a-string",
+      "hasCanonicalSolution": false
+    },
+    {
       "folder": "2798-number-of-employees-who-met-the-target",
       "slug": "number-of-employees-who-met-the-target",
       "hasCanonicalSolution": true
+    },
+    {
+      "folder": "2810-faulty-keyboard",
+      "slug": "faulty-keyboard",
+      "hasCanonicalSolution": false
     },
     {
       "folder": "2824-count-pairs-whose-sum-is-less-than-target",
@@ -1022,6 +1172,11 @@
       "hasCanonicalSolution": true
     },
     {
+      "folder": "3005-count-elements-with-maximum-frequency",
+      "slug": "count-elements-with-maximum-frequency",
+      "hasCanonicalSolution": false
+    },
+    {
       "folder": "3019-number-of-changing-keys",
       "slug": "number-of-changing-keys",
       "hasCanonicalSolution": true
@@ -1057,9 +1212,24 @@
       "hasCanonicalSolution": true
     },
     {
+      "folder": "3162-find-the-number-of-good-pairs-i",
+      "slug": "find-the-number-of-good-pairs-i",
+      "hasCanonicalSolution": false
+    },
+    {
       "folder": "3168-minimum-number-of-chairs-in-a-waiting-room",
       "slug": "minimum-number-of-chairs-in-a-waiting-room",
       "hasCanonicalSolution": true
+    },
+    {
+      "folder": "3174-clear-digits",
+      "slug": "clear-digits",
+      "hasCanonicalSolution": false
+    },
+    {
+      "folder": "3190-find-minimum-operations-to-make-all-elements-divisible-by-three",
+      "slug": "find-minimum-operations-to-make-all-elements-divisible-by-three",
+      "hasCanonicalSolution": false
     },
     {
       "folder": "3194-minimum-average-of-smallest-and-largest-elements",
@@ -1107,6 +1277,11 @@
       "hasCanonicalSolution": true
     },
     {
+      "folder": "3467-transform-array-by-parity",
+      "slug": "transform-array-by-parity",
+      "hasCanonicalSolution": false
+    },
+    {
       "folder": "3492-maximum-containers-on-a-ship",
       "slug": "maximum-containers-on-a-ship",
       "hasCanonicalSolution": true
@@ -1127,6 +1302,11 @@
       "hasCanonicalSolution": true
     },
     {
+      "folder": "3527-find-the-most-common-response",
+      "slug": "find-the-most-common-response",
+      "hasCanonicalSolution": false
+    },
+    {
       "folder": "3541-find-most-frequent-vowel-and-consonant",
       "slug": "find-most-frequent-vowel-and-consonant",
       "hasCanonicalSolution": true
@@ -1140,6 +1320,16 @@
       "folder": "3559-number-of-ways-to-assign-edge-weights-ii",
       "slug": "number-of-ways-to-assign-edge-weights-ii",
       "hasCanonicalSolution": true
+    },
+    {
+      "folder": "3612-process-string-with-special-operations-i",
+      "slug": "process-string-with-special-operations-i",
+      "hasCanonicalSolution": false
+    },
+    {
+      "folder": "3614-process-string-with-special-operations-ii",
+      "slug": "process-string-with-special-operations-ii",
+      "hasCanonicalSolution": false
     },
     {
       "folder": "3622-check-divisibility-by-digit-sum-and-product",
@@ -1182,6 +1372,11 @@
       "hasCanonicalSolution": true
     },
     {
+      "folder": "3712-sum-of-elements-with-frequency-divisible-by-k",
+      "slug": "sum-of-elements-with-frequency-divisible-by-k",
+      "hasCanonicalSolution": false
+    },
+    {
       "folder": "3731-find-missing-elements",
       "slug": "find-missing-elements",
       "hasCanonicalSolution": false
@@ -1210,6 +1405,16 @@
       "folder": "3794-reverse-string-prefix",
       "slug": "reverse-string-prefix",
       "hasCanonicalSolution": true
+    },
+    {
+      "folder": "3803-count-residue-prefixes",
+      "slug": "count-residue-prefixes",
+      "hasCanonicalSolution": false
+    },
+    {
+      "folder": "3833-count-dominant-indices",
+      "slug": "count-dominant-indices",
+      "hasCanonicalSolution": false
     },
     {
       "folder": "3838-weighted-word-mapping",

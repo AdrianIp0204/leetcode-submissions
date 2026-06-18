@@ -12,17 +12,17 @@
 
 ## Pattern
 
-TODO
+Frequency counting
 
 ## Key Idea
 
-TODO
+Count frequencies, find the maximum frequency, then sum the frequencies of values that reach that maximum.
 
 ## Mistake / Edge Case
 
-TODO
+Return the total number of elements with maximum frequency, not the number of distinct values with that frequency.
 
 ## Complexity
 
-- Time: TODO
-- Space: TODO
+- Time: O(n)
+- Space: O(k)

@@ -13,17 +13,17 @@
 
 ## Pattern
 
-TODO
+Math divisibility
 
 ## Key Idea
 
-TODO
+The largest power of three that fits in a signed 32-bit integer is divisible by every smaller positive power of three.
 
 ## Mistake / Edge Case
 
-TODO
+Reject zero and negative values before checking divisibility.
 
 ## Complexity
 
-- Time: TODO
-- Space: TODO
+- Time: O(1)
+- Space: O(1)
