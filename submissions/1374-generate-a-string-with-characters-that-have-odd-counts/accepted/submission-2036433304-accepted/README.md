@@ -12,17 +12,20 @@
 
 ## Pattern
 
-TODO
+Parity construction
 
 ## Key Idea
 
-TODO
+For odd `n`, return one character repeated `n` times. For even `n`, use
+`n - 1` copies of one character plus one different character so both counts are
+odd.
 
 ## Mistake / Edge Case
 
-TODO
+No subjective mistake recorded. Edge case: even lengths need two odd-count
+characters, not one even-count character.
 
 ## Complexity
 
-- Time: TODO
-- Space: TODO
+- Time: O(n)
+- Space: O(n)

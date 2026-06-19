@@ -12,17 +12,19 @@
 
 ## Pattern
 
-TODO
+Count independent fixes
 
 ## Key Idea
 
-TODO
+Each element can be handled independently: numbers divisible by three need no
+operation, and every other remainder contributes one operation.
 
 ## Mistake / Edge Case
 
-TODO
+No subjective mistake recorded. Edge case: count by remainder, not by the
+numeric size of the element.
 
 ## Complexity
 
-- Time: TODO
-- Space: TODO
+- Time: O(n)
+- Space: O(1)

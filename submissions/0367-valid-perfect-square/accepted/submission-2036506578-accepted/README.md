@@ -12,17 +12,19 @@
 
 ## Pattern
 
-TODO
+Binary search on answer
 
 ## Key Idea
 
-TODO
+Search possible square roots and compare `mid * mid` with `n`, moving the
+range right when the square is too small and left when it is too large.
 
 ## Mistake / Edge Case
 
-TODO
+No subjective mistake recorded. Edge case: small inputs need explicit handling
+before using `n // 2` as the upper bound.
 
 ## Complexity
 
-- Time: TODO
-- Space: TODO
+- Time: O(log n)
+- Space: O(1)

@@ -13,17 +13,19 @@
 
 ## Pattern
 
-TODO
+Collect and replace selected positions
 
 ## Key Idea
 
-TODO
+Collect vowel positions and vowel characters, sort only the vowel characters,
+then write them back into the original vowel positions.
 
 ## Mistake / Edge Case
 
-TODO
+No subjective mistake recorded. Edge case: consonants and non-vowels keep their
+original positions.
 
 ## Complexity
 
-- Time: TODO
-- Space: TODO
+- Time: O(n log n)
+- Space: O(n)

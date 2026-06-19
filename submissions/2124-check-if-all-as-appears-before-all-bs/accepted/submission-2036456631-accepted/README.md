@@ -12,17 +12,19 @@
 
 ## Pattern
 
-TODO
+State flag scan
 
 ## Key Idea
 
-TODO
+Track whether a `b` has been seen. Once the scan has entered the `b` region,
+any later `a` makes the string invalid.
 
 ## Mistake / Edge Case
 
-TODO
+No subjective mistake recorded. Edge case: strings with only one letter type are
+valid.
 
 ## Complexity
 
-- Time: TODO
-- Space: TODO
+- Time: O(n)
+- Space: O(1)
