@@ -1,10 +1,10 @@
 {
-  "fetchedAt": "2026-06-18T15:31:01.839Z",
+  "fetchedAt": "2026-06-19T15:37:09.570Z",
   "username": "AdrianIp",
   "profile": {
     "realName": "AdrianIp",
     "userAvatar": "https://assets.leetcode.com/users/default_avatar.jpg",
-    "ranking": 487392,
+    "ranking": 478540,
     "reputation": 2,
     "countryName": "Hong Kong",
     "company": null,
@@ -15,13 +15,13 @@
   "solvedByDifficulty": [
     {
       "difficulty": "All",
-      "count": 294,
-      "submissions": 333
+      "count": 300,
+      "submissions": 340
     },
     {
       "difficulty": "Easy",
-      "count": 236,
-      "submissions": 272
+      "count": 242,
+      "submissions": 279
     },
     {
       "difficulty": "Medium",
@@ -37,13 +37,13 @@
   "totalByDifficulty": [
     {
       "difficulty": "All",
-      "count": 295,
-      "submissions": 410
+      "count": 301,
+      "submissions": 417
     },
     {
       "difficulty": "Easy",
-      "count": 236,
-      "submissions": 317
+      "count": 242,
+      "submissions": 324
     },
     {
       "difficulty": "Medium",
@@ -60,13 +60,13 @@
     "accepted": {
       "All": {
         "difficulty": "All",
-        "count": 294,
-        "submissions": 333
+        "count": 300,
+        "submissions": 340
       },
       "Easy": {
         "difficulty": "Easy",
-        "count": 236,
-        "submissions": 272
+        "count": 242,
+        "submissions": 279
       },
       "Medium": {
         "difficulty": "Medium",
@@ -82,13 +82,13 @@
     "total": {
       "All": {
         "difficulty": "All",
-        "count": 295,
-        "submissions": 410
+        "count": 301,
+        "submissions": 417
       },
       "Easy": {
         "difficulty": "Easy",
-        "count": 236,
-        "submissions": 317
+        "count": 242,
+        "submissions": 324
       },
       "Medium": {
         "difficulty": "Medium",
@@ -104,6 +104,54 @@
   },
   "contestRanking": null,
   "recentAccepted": [
+    {
+      "title": "Create a New Column",
+      "titleSlug": "create-a-new-column",
+      "timestamp": "1781878933",
+      "statusDisplay": "Accepted",
+      "lang": "pythondata",
+      "acceptedAt": "2026-06-19T14:22:13.000Z"
+    },
+    {
+      "title": "Rename Columns",
+      "titleSlug": "rename-columns",
+      "timestamp": "1781878776",
+      "statusDisplay": "Accepted",
+      "lang": "pythondata",
+      "acceptedAt": "2026-06-19T14:19:36.000Z"
+    },
+    {
+      "title": "Modify Columns",
+      "titleSlug": "modify-columns",
+      "timestamp": "1781878501",
+      "statusDisplay": "Accepted",
+      "lang": "pythondata",
+      "acceptedAt": "2026-06-19T14:15:01.000Z"
+    },
+    {
+      "title": "Display the First Three Rows",
+      "titleSlug": "display-the-first-three-rows",
+      "timestamp": "1781878157",
+      "statusDisplay": "Accepted",
+      "lang": "pythondata",
+      "acceptedAt": "2026-06-19T14:09:17.000Z"
+    },
+    {
+      "title": "Find the Highest Altitude",
+      "titleSlug": "find-the-highest-altitude",
+      "timestamp": "1781844152",
+      "statusDisplay": "Accepted",
+      "lang": "python3",
+      "acceptedAt": "2026-06-19T04:42:32.000Z"
+    },
+    {
+      "title": "License Key Formatting",
+      "titleSlug": "license-key-formatting",
+      "timestamp": "1781843968",
+      "statusDisplay": "Accepted",
+      "lang": "python3",
+      "acceptedAt": "2026-06-19T04:39:28.000Z"
+    },
     {
       "title": "Check If Digits Are Equal in String After Operations I",
       "titleSlug": "check-if-digits-are-equal-in-string-after-operations-i",
@@ -215,54 +263,6 @@
       "statusDisplay": "Accepted",
       "lang": "python3",
       "acceptedAt": "2026-06-17T07:15:40.000Z"
-    },
-    {
-      "title": "Faulty Keyboard",
-      "titleSlug": "faulty-keyboard",
-      "timestamp": "1781680404",
-      "statusDisplay": "Accepted",
-      "lang": "python3",
-      "acceptedAt": "2026-06-17T07:13:24.000Z"
-    },
-    {
-      "title": "Find Maximum Number of String Pairs",
-      "titleSlug": "find-maximum-number-of-string-pairs",
-      "timestamp": "1781680174",
-      "statusDisplay": "Accepted",
-      "lang": "python3",
-      "acceptedAt": "2026-06-17T07:09:34.000Z"
-    },
-    {
-      "title": "Clear Digits",
-      "titleSlug": "clear-digits",
-      "timestamp": "1781679667",
-      "statusDisplay": "Accepted",
-      "lang": "python3",
-      "acceptedAt": "2026-06-17T07:01:07.000Z"
-    },
-    {
-      "title": "Count Items Matching a Rule",
-      "titleSlug": "count-items-matching-a-rule",
-      "timestamp": "1781679346",
-      "statusDisplay": "Accepted",
-      "lang": "python3",
-      "acceptedAt": "2026-06-17T06:55:46.000Z"
-    },
-    {
-      "title": "Reverse Prefix of Word",
-      "titleSlug": "reverse-prefix-of-word",
-      "timestamp": "1781679010",
-      "statusDisplay": "Accepted",
-      "lang": "python3",
-      "acceptedAt": "2026-06-17T06:50:10.000Z"
-    },
-    {
-      "title": "Permutations",
-      "titleSlug": "permutations",
-      "timestamp": "1781678200",
-      "statusDisplay": "Accepted",
-      "lang": "python3",
-      "acceptedAt": "2026-06-17T06:36:40.000Z"
     }
   ],
   "source": "LeetCode public GraphQL; no login cookie or browser extension used."

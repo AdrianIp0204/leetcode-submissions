@@ -2,26 +2,32 @@
 
 - Username: AdrianIp
 - Profile: https://leetcode.com/u/AdrianIp/
-- Fetched at: 2026-06-18T15:31:01.839Z
-- Ranking: 487392
+- Fetched at: 2026-06-19T15:37:09.570Z
+- Ranking: 478540
 - Display name: AdrianIp
 
 ## Solved
 
-- All: 294 solved / 333 accepted submissions
-- Easy: 236 solved / 272 accepted submissions
+- All: 300 solved / 340 accepted submissions
+- Easy: 242 solved / 279 accepted submissions
 - Medium: 50 solved / 53 accepted submissions
 - Hard: 8 solved / 8 accepted submissions
 
 ## Total Attempts
 
-- All: 295 attempted problems / 410 total submissions
-- Easy: 236 attempted problems / 317 total submissions
+- All: 301 attempted problems / 417 total submissions
+- Easy: 242 attempted problems / 324 total submissions
 - Medium: 50 attempted problems / 77 total submissions
 - Hard: 9 attempted problems / 16 total submissions
 
 ## Recent Accepted
 
+- 2026-06-19T14:22:13.000Z: [Create a New Column](https://leetcode.com/problems/create-a-new-column/) (pythondata)
+- 2026-06-19T14:19:36.000Z: [Rename Columns](https://leetcode.com/problems/rename-columns/) (pythondata)
+- 2026-06-19T14:15:01.000Z: [Modify Columns](https://leetcode.com/problems/modify-columns/) (pythondata)
+- 2026-06-19T14:09:17.000Z: [Display the First Three Rows](https://leetcode.com/problems/display-the-first-three-rows/) (pythondata)
+- 2026-06-19T04:42:32.000Z: [Find the Highest Altitude](https://leetcode.com/problems/find-the-highest-altitude/) (python3)
+- 2026-06-19T04:39:28.000Z: [License Key Formatting](https://leetcode.com/problems/license-key-formatting/) (python3)
 - 2026-06-18T13:28:01.000Z: [Check If Digits Are Equal in String After Operations I](https://leetcode.com/problems/check-if-digits-are-equal-in-string-after-operations-i/) (python3)
 - 2026-06-18T13:13:16.000Z: [Number of 1 Bits](https://leetcode.com/problems/number-of-1-bits/) (python3)
 - 2026-06-18T03:18:08.000Z: [Find Occurrences of an Element in an Array](https://leetcode.com/problems/find-occurrences-of-an-element-in-an-array/) (python3)
@@ -36,9 +42,3 @@
 - 2026-06-17T13:57:06.000Z: [Sorting the Sentence](https://leetcode.com/problems/sorting-the-sentence/) (python3)
 - 2026-06-17T13:48:19.000Z: [Generate a String With Characters That Have Odd Counts](https://leetcode.com/problems/generate-a-string-with-characters-that-have-odd-counts/) (python3)
 - 2026-06-17T07:15:40.000Z: [Remove Trailing Zeros From a String](https://leetcode.com/problems/remove-trailing-zeros-from-a-string/) (python3)
-- 2026-06-17T07:13:24.000Z: [Faulty Keyboard](https://leetcode.com/problems/faulty-keyboard/) (python3)
-- 2026-06-17T07:09:34.000Z: [Find Maximum Number of String Pairs](https://leetcode.com/problems/find-maximum-number-of-string-pairs/) (python3)
-- 2026-06-17T07:01:07.000Z: [Clear Digits](https://leetcode.com/problems/clear-digits/) (python3)
-- 2026-06-17T06:55:46.000Z: [Count Items Matching a Rule](https://leetcode.com/problems/count-items-matching-a-rule/) (python3)
-- 2026-06-17T06:50:10.000Z: [Reverse Prefix of Word](https://leetcode.com/problems/reverse-prefix-of-word/) (python3)
-- 2026-06-17T06:36:40.000Z: [Permutations](https://leetcode.com/problems/permutations/) (python3)
