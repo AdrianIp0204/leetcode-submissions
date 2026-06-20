@@ -2,26 +2,30 @@
 
 - Username: AdrianIp
 - Profile: https://leetcode.com/u/AdrianIp/
-- Fetched at: 2026-06-19T15:37:09.570Z
-- Ranking: 478540
+- Fetched at: 2026-06-20T15:31:00.916Z
+- Ranking: 460431
 - Display name: AdrianIp
 
 ## Solved
 
-- All: 300 solved / 340 accepted submissions
-- Easy: 242 solved / 279 accepted submissions
+- All: 304 solved / 346 accepted submissions
+- Easy: 245 solved / 284 accepted submissions
 - Medium: 50 solved / 53 accepted submissions
-- Hard: 8 solved / 8 accepted submissions
+- Hard: 9 solved / 9 accepted submissions
 
 ## Total Attempts
 
-- All: 301 attempted problems / 417 total submissions
-- Easy: 242 attempted problems / 324 total submissions
+- All: 305 attempted problems / 423 total submissions
+- Easy: 245 attempted problems / 329 total submissions
 - Medium: 50 attempted problems / 77 total submissions
-- Hard: 9 attempted problems / 16 total submissions
+- Hard: 10 attempted problems / 17 total submissions
 
 ## Recent Accepted
 
+- 2026-06-20T06:20:53.000Z: [Maximum Building Height](https://leetcode.com/problems/maximum-building-height/) (python3)
+- 2026-06-20T06:13:47.000Z: [Check If N and Its Double Exist](https://leetcode.com/problems/check-if-n-and-its-double-exist/) (python3)
+- 2026-06-20T06:07:38.000Z: [Find the Middle Index in Array](https://leetcode.com/problems/find-the-middle-index-in-array/) (python3)
+- 2026-06-20T06:06:41.000Z: [Find Pivot Index](https://leetcode.com/problems/find-pivot-index/) (python3)
 - 2026-06-19T14:22:13.000Z: [Create a New Column](https://leetcode.com/problems/create-a-new-column/) (pythondata)
 - 2026-06-19T14:19:36.000Z: [Rename Columns](https://leetcode.com/problems/rename-columns/) (pythondata)
 - 2026-06-19T14:15:01.000Z: [Modify Columns](https://leetcode.com/problems/modify-columns/) (pythondata)
@@ -38,7 +42,3 @@
 - 2026-06-17T15:00:52.000Z: [Valid Perfect Square](https://leetcode.com/problems/valid-perfect-square/) (python3)
 - 2026-06-17T14:49:33.000Z: [Sort Vowels in a String](https://leetcode.com/problems/sort-vowels-in-a-string/) (python3)
 - 2026-06-17T14:11:09.000Z: [Check if All A's Appears Before All B's](https://leetcode.com/problems/check-if-all-as-appears-before-all-bs/) (python3)
-- 2026-06-17T14:07:20.000Z: [Check if Numbers Are Ascending in a Sentence](https://leetcode.com/problems/check-if-numbers-are-ascending-in-a-sentence/) (python3)
-- 2026-06-17T13:57:06.000Z: [Sorting the Sentence](https://leetcode.com/problems/sorting-the-sentence/) (python3)
-- 2026-06-17T13:48:19.000Z: [Generate a String With Characters That Have Odd Counts](https://leetcode.com/problems/generate-a-string-with-characters-that-have-odd-counts/) (python3)
-- 2026-06-17T07:15:40.000Z: [Remove Trailing Zeros From a String](https://leetcode.com/problems/remove-trailing-zeros-from-a-string/) (python3)

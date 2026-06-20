@@ -1,9 +1,9 @@
 # Next LeetCode Problems
 
-- Generated at: 2026-06-19T15:37:10.185Z
-- Public solved count: 300
-- Known solved by repo/public-recent evidence: 301
-- Sync warning: repo appears 5 problems behind the public solved count. Run **Collect Submission History** before treating coverage as exact.
+- Generated at: 2026-06-20T15:31:01.255Z
+- Public solved count: 304
+- Known solved by repo/public-recent evidence: 305
+- Sync warning: repo appears 9 problems behind the public solved count. Run **Collect Submission History** before treating coverage as exact.
 
 ## Queue
 

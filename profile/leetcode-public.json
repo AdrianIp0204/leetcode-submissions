@@ -1,10 +1,10 @@
 {
-  "fetchedAt": "2026-06-19T15:37:09.570Z",
+  "fetchedAt": "2026-06-20T15:31:00.916Z",
   "username": "AdrianIp",
   "profile": {
     "realName": "AdrianIp",
     "userAvatar": "https://assets.leetcode.com/users/default_avatar.jpg",
-    "ranking": 478540,
+    "ranking": 460431,
     "reputation": 2,
     "countryName": "Hong Kong",
     "company": null,
@@ -15,13 +15,13 @@
   "solvedByDifficulty": [
     {
       "difficulty": "All",
-      "count": 300,
-      "submissions": 340
+      "count": 304,
+      "submissions": 346
     },
     {
       "difficulty": "Easy",
-      "count": 242,
-      "submissions": 279
+      "count": 245,
+      "submissions": 284
     },
     {
       "difficulty": "Medium",
@@ -30,20 +30,20 @@
     },
     {
       "difficulty": "Hard",
-      "count": 8,
-      "submissions": 8
+      "count": 9,
+      "submissions": 9
     }
   ],
   "totalByDifficulty": [
     {
       "difficulty": "All",
-      "count": 301,
-      "submissions": 417
+      "count": 305,
+      "submissions": 423
     },
     {
       "difficulty": "Easy",
-      "count": 242,
-      "submissions": 324
+      "count": 245,
+      "submissions": 329
     },
     {
       "difficulty": "Medium",
@@ -52,21 +52,21 @@
     },
     {
       "difficulty": "Hard",
-      "count": 9,
-      "submissions": 16
+      "count": 10,
+      "submissions": 17
     }
   ],
   "summary": {
     "accepted": {
       "All": {
         "difficulty": "All",
-        "count": 300,
-        "submissions": 340
+        "count": 304,
+        "submissions": 346
       },
       "Easy": {
         "difficulty": "Easy",
-        "count": 242,
-        "submissions": 279
+        "count": 245,
+        "submissions": 284
       },
       "Medium": {
         "difficulty": "Medium",
@@ -75,20 +75,20 @@
       },
       "Hard": {
         "difficulty": "Hard",
-        "count": 8,
-        "submissions": 8
+        "count": 9,
+        "submissions": 9
       }
     },
     "total": {
       "All": {
         "difficulty": "All",
-        "count": 301,
-        "submissions": 417
+        "count": 305,
+        "submissions": 423
       },
       "Easy": {
         "difficulty": "Easy",
-        "count": 242,
-        "submissions": 324
+        "count": 245,
+        "submissions": 329
       },
       "Medium": {
         "difficulty": "Medium",
@@ -97,13 +97,45 @@
       },
       "Hard": {
         "difficulty": "Hard",
-        "count": 9,
-        "submissions": 16
+        "count": 10,
+        "submissions": 17
       }
     }
   },
   "contestRanking": null,
   "recentAccepted": [
+    {
+      "title": "Maximum Building Height",
+      "titleSlug": "maximum-building-height",
+      "timestamp": "1781936453",
+      "statusDisplay": "Accepted",
+      "lang": "python3",
+      "acceptedAt": "2026-06-20T06:20:53.000Z"
+    },
+    {
+      "title": "Check If N and Its Double Exist",
+      "titleSlug": "check-if-n-and-its-double-exist",
+      "timestamp": "1781936027",
+      "statusDisplay": "Accepted",
+      "lang": "python3",
+      "acceptedAt": "2026-06-20T06:13:47.000Z"
+    },
+    {
+      "title": "Find the Middle Index in Array",
+      "titleSlug": "find-the-middle-index-in-array",
+      "timestamp": "1781935658",
+      "statusDisplay": "Accepted",
+      "lang": "python3",
+      "acceptedAt": "2026-06-20T06:07:38.000Z"
+    },
+    {
+      "title": "Find Pivot Index",
+      "titleSlug": "find-pivot-index",
+      "timestamp": "1781935601",
+      "statusDisplay": "Accepted",
+      "lang": "python3",
+      "acceptedAt": "2026-06-20T06:06:41.000Z"
+    },
     {
       "title": "Create a New Column",
       "titleSlug": "create-a-new-column",
@@ -231,38 +263,6 @@
       "statusDisplay": "Accepted",
       "lang": "python3",
       "acceptedAt": "2026-06-17T14:11:09.000Z"
-    },
-    {
-      "title": "Check if Numbers Are Ascending in a Sentence",
-      "titleSlug": "check-if-numbers-are-ascending-in-a-sentence",
-      "timestamp": "1781705240",
-      "statusDisplay": "Accepted",
-      "lang": "python3",
-      "acceptedAt": "2026-06-17T14:07:20.000Z"
-    },
-    {
-      "title": "Sorting the Sentence",
-      "titleSlug": "sorting-the-sentence",
-      "timestamp": "1781704626",
-      "statusDisplay": "Accepted",
-      "lang": "python3",
-      "acceptedAt": "2026-06-17T13:57:06.000Z"
-    },
-    {
-      "title": "Generate a String With Characters That Have Odd Counts",
-      "titleSlug": "generate-a-string-with-characters-that-have-odd-counts",
-      "timestamp": "1781704099",
-      "statusDisplay": "Accepted",
-      "lang": "python3",
-      "acceptedAt": "2026-06-17T13:48:19.000Z"
-    },
-    {
-      "title": "Remove Trailing Zeros From a String",
-      "titleSlug": "remove-trailing-zeros-from-a-string",
-      "timestamp": "1781680540",
-      "statusDisplay": "Accepted",
-      "lang": "python3",
-      "acceptedAt": "2026-06-17T07:15:40.000Z"
     }
   ],
   "source": "LeetCode public GraphQL; no login cookie or browser extension used."
