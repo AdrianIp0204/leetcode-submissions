@@ -1,10 +1,10 @@
 {
-  "fetchedAt": "2026-06-20T15:31:00.916Z",
+  "fetchedAt": "2026-06-21T15:35:42.901Z",
   "username": "AdrianIp",
   "profile": {
     "realName": "AdrianIp",
     "userAvatar": "https://assets.leetcode.com/users/default_avatar.jpg",
-    "ranking": 460431,
+    "ranking": 456281,
     "reputation": 2,
     "countryName": "Hong Kong",
     "company": null,
@@ -15,18 +15,18 @@
   "solvedByDifficulty": [
     {
       "difficulty": "All",
-      "count": 304,
-      "submissions": 346
+      "count": 306,
+      "submissions": 348
     },
     {
       "difficulty": "Easy",
-      "count": 245,
-      "submissions": 284
+      "count": 246,
+      "submissions": 285
     },
     {
       "difficulty": "Medium",
-      "count": 50,
-      "submissions": 53
+      "count": 51,
+      "submissions": 54
     },
     {
       "difficulty": "Hard",
@@ -37,18 +37,18 @@
   "totalByDifficulty": [
     {
       "difficulty": "All",
-      "count": 305,
-      "submissions": 423
+      "count": 307,
+      "submissions": 425
     },
     {
       "difficulty": "Easy",
-      "count": 245,
-      "submissions": 329
+      "count": 246,
+      "submissions": 330
     },
     {
       "difficulty": "Medium",
-      "count": 50,
-      "submissions": 77
+      "count": 51,
+      "submissions": 78
     },
     {
       "difficulty": "Hard",
@@ -60,18 +60,18 @@
     "accepted": {
       "All": {
         "difficulty": "All",
-        "count": 304,
-        "submissions": 346
+        "count": 306,
+        "submissions": 348
       },
       "Easy": {
         "difficulty": "Easy",
-        "count": 245,
-        "submissions": 284
+        "count": 246,
+        "submissions": 285
       },
       "Medium": {
         "difficulty": "Medium",
-        "count": 50,
-        "submissions": 53
+        "count": 51,
+        "submissions": 54
       },
       "Hard": {
         "difficulty": "Hard",
@@ -82,18 +82,18 @@
     "total": {
       "All": {
         "difficulty": "All",
-        "count": 305,
-        "submissions": 423
+        "count": 307,
+        "submissions": 425
       },
       "Easy": {
         "difficulty": "Easy",
-        "count": 245,
-        "submissions": 329
+        "count": 246,
+        "submissions": 330
       },
       "Medium": {
         "difficulty": "Medium",
-        "count": 50,
-        "submissions": 77
+        "count": 51,
+        "submissions": 78
       },
       "Hard": {
         "difficulty": "Hard",
@@ -104,6 +104,22 @@
   },
   "contestRanking": null,
   "recentAccepted": [
+    {
+      "title": "Maximum Ice Cream Bars",
+      "titleSlug": "maximum-ice-cream-bars",
+      "timestamp": "1782029087",
+      "statusDisplay": "Accepted",
+      "lang": "python3",
+      "acceptedAt": "2026-06-21T08:04:47.000Z"
+    },
+    {
+      "title": "Relative Sort Array",
+      "titleSlug": "relative-sort-array",
+      "timestamp": "1782028425",
+      "statusDisplay": "Accepted",
+      "lang": "python3",
+      "acceptedAt": "2026-06-21T07:53:45.000Z"
+    },
     {
       "title": "Maximum Building Height",
       "titleSlug": "maximum-building-height",
@@ -247,22 +263,6 @@
       "statusDisplay": "Accepted",
       "lang": "python3",
       "acceptedAt": "2026-06-17T15:00:52.000Z"
-    },
-    {
-      "title": "Sort Vowels in a String",
-      "titleSlug": "sort-vowels-in-a-string",
-      "timestamp": "1781707773",
-      "statusDisplay": "Accepted",
-      "lang": "python3",
-      "acceptedAt": "2026-06-17T14:49:33.000Z"
-    },
-    {
-      "title": "Check if All A's Appears Before All B's",
-      "titleSlug": "check-if-all-as-appears-before-all-bs",
-      "timestamp": "1781705469",
-      "statusDisplay": "Accepted",
-      "lang": "python3",
-      "acceptedAt": "2026-06-17T14:11:09.000Z"
     }
   ],
   "source": "LeetCode public GraphQL; no login cookie or browser extension used."

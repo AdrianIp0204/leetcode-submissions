@@ -2,26 +2,28 @@
 
 - Username: AdrianIp
 - Profile: https://leetcode.com/u/AdrianIp/
-- Fetched at: 2026-06-20T15:31:00.916Z
-- Ranking: 460431
+- Fetched at: 2026-06-21T15:35:42.901Z
+- Ranking: 456281
 - Display name: AdrianIp
 
 ## Solved
 
-- All: 304 solved / 346 accepted submissions
-- Easy: 245 solved / 284 accepted submissions
-- Medium: 50 solved / 53 accepted submissions
+- All: 306 solved / 348 accepted submissions
+- Easy: 246 solved / 285 accepted submissions
+- Medium: 51 solved / 54 accepted submissions
 - Hard: 9 solved / 9 accepted submissions
 
 ## Total Attempts
 
-- All: 305 attempted problems / 423 total submissions
-- Easy: 245 attempted problems / 329 total submissions
-- Medium: 50 attempted problems / 77 total submissions
+- All: 307 attempted problems / 425 total submissions
+- Easy: 246 attempted problems / 330 total submissions
+- Medium: 51 attempted problems / 78 total submissions
 - Hard: 10 attempted problems / 17 total submissions
 
 ## Recent Accepted
 
+- 2026-06-21T08:04:47.000Z: [Maximum Ice Cream Bars](https://leetcode.com/problems/maximum-ice-cream-bars/) (python3)
+- 2026-06-21T07:53:45.000Z: [Relative Sort Array](https://leetcode.com/problems/relative-sort-array/) (python3)
 - 2026-06-20T06:20:53.000Z: [Maximum Building Height](https://leetcode.com/problems/maximum-building-height/) (python3)
 - 2026-06-20T06:13:47.000Z: [Check If N and Its Double Exist](https://leetcode.com/problems/check-if-n-and-its-double-exist/) (python3)
 - 2026-06-20T06:07:38.000Z: [Find the Middle Index in Array](https://leetcode.com/problems/find-the-middle-index-in-array/) (python3)
@@ -40,5 +42,3 @@
 - 2026-06-18T02:38:37.000Z: [Angle Between Hands of a Clock](https://leetcode.com/problems/angle-between-hands-of-a-clock/) (python3)
 - 2026-06-17T15:05:48.000Z: [Find Minimum Operations to Make All Elements Divisible by Three](https://leetcode.com/problems/find-minimum-operations-to-make-all-elements-divisible-by-three/) (python3)
 - 2026-06-17T15:00:52.000Z: [Valid Perfect Square](https://leetcode.com/problems/valid-perfect-square/) (python3)
-- 2026-06-17T14:49:33.000Z: [Sort Vowels in a String](https://leetcode.com/problems/sort-vowels-in-a-string/) (python3)
-- 2026-06-17T14:11:09.000Z: [Check if All A's Appears Before All B's](https://leetcode.com/problems/check-if-all-as-appears-before-all-bs/) (python3)
