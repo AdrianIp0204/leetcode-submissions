@@ -13,17 +13,17 @@
 
 ## Pattern
 
-TODO
+Frequency counting
 
 ## Key Idea
 
-TODO
+Count the characters in `text`, then divide the counts for `l` and `o` by two because each `balloon` needs two of each.
 
 ## Mistake / Edge Case
 
-TODO
+No subjective mistake recorded. Edge case: if any required character is absent, no `balloon` can be formed.
 
 ## Complexity
 
-- Time: TODO
-- Space: TODO
+- Time: O(n), where n is the length of `text`
+- Space: O(k), where k is the number of distinct characters counted

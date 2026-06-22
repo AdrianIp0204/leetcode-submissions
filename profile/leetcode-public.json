@@ -1,10 +1,10 @@
 {
-  "fetchedAt": "2026-06-21T15:35:42.901Z",
+  "fetchedAt": "2026-06-22T15:30:43.236Z",
   "username": "AdrianIp",
   "profile": {
     "realName": "AdrianIp",
     "userAvatar": "https://assets.leetcode.com/users/default_avatar.jpg",
-    "ranking": 456281,
+    "ranking": 443573,
     "reputation": 2,
     "countryName": "Hong Kong",
     "company": null,
@@ -15,18 +15,18 @@
   "solvedByDifficulty": [
     {
       "difficulty": "All",
-      "count": 306,
-      "submissions": 348
+      "count": 312,
+      "submissions": 354
     },
     {
       "difficulty": "Easy",
-      "count": 246,
-      "submissions": 285
+      "count": 251,
+      "submissions": 290
     },
     {
       "difficulty": "Medium",
-      "count": 51,
-      "submissions": 54
+      "count": 52,
+      "submissions": 55
     },
     {
       "difficulty": "Hard",
@@ -37,18 +37,18 @@
   "totalByDifficulty": [
     {
       "difficulty": "All",
-      "count": 307,
-      "submissions": 425
+      "count": 313,
+      "submissions": 431
     },
     {
       "difficulty": "Easy",
-      "count": 246,
-      "submissions": 330
+      "count": 251,
+      "submissions": 335
     },
     {
       "difficulty": "Medium",
-      "count": 51,
-      "submissions": 78
+      "count": 52,
+      "submissions": 79
     },
     {
       "difficulty": "Hard",
@@ -60,18 +60,18 @@
     "accepted": {
       "All": {
         "difficulty": "All",
-        "count": 306,
-        "submissions": 348
+        "count": 312,
+        "submissions": 354
       },
       "Easy": {
         "difficulty": "Easy",
-        "count": 246,
-        "submissions": 285
+        "count": 251,
+        "submissions": 290
       },
       "Medium": {
         "difficulty": "Medium",
-        "count": 51,
-        "submissions": 54
+        "count": 52,
+        "submissions": 55
       },
       "Hard": {
         "difficulty": "Hard",
@@ -82,18 +82,18 @@
     "total": {
       "All": {
         "difficulty": "All",
-        "count": 307,
-        "submissions": 425
+        "count": 313,
+        "submissions": 431
       },
       "Easy": {
         "difficulty": "Easy",
-        "count": 246,
-        "submissions": 330
+        "count": 251,
+        "submissions": 335
       },
       "Medium": {
         "difficulty": "Medium",
-        "count": 51,
-        "submissions": 78
+        "count": 52,
+        "submissions": 79
       },
       "Hard": {
         "difficulty": "Hard",
@@ -104,6 +104,54 @@
   },
   "contestRanking": null,
   "recentAccepted": [
+    {
+      "title": "Change Data Type",
+      "titleSlug": "change-data-type",
+      "timestamp": "1782116969",
+      "statusDisplay": "Accepted",
+      "lang": "pythondata",
+      "acceptedAt": "2026-06-22T08:29:29.000Z"
+    },
+    {
+      "title": "Recyclable and Low Fat Products",
+      "titleSlug": "recyclable-and-low-fat-products",
+      "timestamp": "1782116734",
+      "statusDisplay": "Accepted",
+      "lang": "pythondata",
+      "acceptedAt": "2026-06-22T08:25:34.000Z"
+    },
+    {
+      "title": "Number of Unique Subjects Taught by Each Teacher",
+      "titleSlug": "number-of-unique-subjects-taught-by-each-teacher",
+      "timestamp": "1782116186",
+      "statusDisplay": "Accepted",
+      "lang": "pythondata",
+      "acceptedAt": "2026-06-22T08:16:26.000Z"
+    },
+    {
+      "title": "Reshape Data: Concatenate",
+      "titleSlug": "reshape-data-concatenate",
+      "timestamp": "1782115615",
+      "statusDisplay": "Accepted",
+      "lang": "pythondata",
+      "acceptedAt": "2026-06-22T08:06:55.000Z"
+    },
+    {
+      "title": "Combinations",
+      "titleSlug": "combinations",
+      "timestamp": "1782115452",
+      "statusDisplay": "Accepted",
+      "lang": "python3",
+      "acceptedAt": "2026-06-22T08:04:12.000Z"
+    },
+    {
+      "title": "Maximum Number of Balloons",
+      "titleSlug": "maximum-number-of-balloons",
+      "timestamp": "1782101570",
+      "statusDisplay": "Accepted",
+      "lang": "python3",
+      "acceptedAt": "2026-06-22T04:12:50.000Z"
+    },
     {
       "title": "Maximum Ice Cream Bars",
       "titleSlug": "maximum-ice-cream-bars",
@@ -215,54 +263,6 @@
       "statusDisplay": "Accepted",
       "lang": "python3",
       "acceptedAt": "2026-06-18T13:13:16.000Z"
-    },
-    {
-      "title": "Find Occurrences of an Element in an Array",
-      "titleSlug": "find-occurrences-of-an-element-in-an-array",
-      "timestamp": "1781752688",
-      "statusDisplay": "Accepted",
-      "lang": "python3",
-      "acceptedAt": "2026-06-18T03:18:08.000Z"
-    },
-    {
-      "title": "Count the Number of Vowel Strings in Range",
-      "titleSlug": "count-the-number-of-vowel-strings-in-range",
-      "timestamp": "1781751863",
-      "statusDisplay": "Accepted",
-      "lang": "python3",
-      "acceptedAt": "2026-06-18T03:04:23.000Z"
-    },
-    {
-      "title": "Ransom Note",
-      "titleSlug": "ransom-note",
-      "timestamp": "1781751155",
-      "statusDisplay": "Accepted",
-      "lang": "python3",
-      "acceptedAt": "2026-06-18T02:52:35.000Z"
-    },
-    {
-      "title": "Angle Between Hands of a Clock",
-      "titleSlug": "angle-between-hands-of-a-clock",
-      "timestamp": "1781750317",
-      "statusDisplay": "Accepted",
-      "lang": "python3",
-      "acceptedAt": "2026-06-18T02:38:37.000Z"
-    },
-    {
-      "title": "Find Minimum Operations to Make All Elements Divisible by Three",
-      "titleSlug": "find-minimum-operations-to-make-all-elements-divisible-by-three",
-      "timestamp": "1781708748",
-      "statusDisplay": "Accepted",
-      "lang": "python3",
-      "acceptedAt": "2026-06-17T15:05:48.000Z"
-    },
-    {
-      "title": "Valid Perfect Square",
-      "titleSlug": "valid-perfect-square",
-      "timestamp": "1781708452",
-      "statusDisplay": "Accepted",
-      "lang": "python3",
-      "acceptedAt": "2026-06-17T15:00:52.000Z"
     }
   ],
   "source": "LeetCode public GraphQL; no login cookie or browser extension used."
