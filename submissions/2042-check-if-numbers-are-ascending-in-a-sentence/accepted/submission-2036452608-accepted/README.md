@@ -12,17 +12,19 @@
 
 ## Pattern
 
-TODO
+One-pass numeric scan
 
 ## Key Idea
 
-TODO
+Split the sentence into tokens, parse numeric tokens, and ensure each parsed
+number is strictly larger than the previous parsed number.
 
 ## Mistake / Edge Case
 
-TODO
+No subjective mistake recorded. Edge case: equal adjacent numbers fail because
+the order must be strictly increasing.
 
 ## Complexity
 
-- Time: TODO
-- Space: TODO
+- Time: O(n)
+- Space: O(n)

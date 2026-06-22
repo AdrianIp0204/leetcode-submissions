@@ -13,17 +13,19 @@
 
 ## Pattern
 
-TODO
+Frequency counting
 
 ## Key Idea
 
-TODO
+Count required characters from `r` and available characters from `m`, then fail
+as soon as a requirement is larger than the available count.
 
 ## Mistake / Edge Case
 
-TODO
+No subjective mistake recorded. Edge case: missing characters default to count
+zero.
 
 ## Complexity
 
-- Time: TODO
-- Space: TODO
+- Time: O(r + m)
+- Space: O(u), where u is the number of distinct counted characters

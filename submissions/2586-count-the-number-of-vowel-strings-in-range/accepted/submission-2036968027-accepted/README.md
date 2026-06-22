@@ -12,17 +12,18 @@
 
 ## Pattern
 
-TODO
+Bounded scan
 
 ## Key Idea
 
-TODO
+Scan indices from `left` through `right` and count words whose first and last
+characters are both in the vowel set.
 
 ## Mistake / Edge Case
 
-TODO
+No subjective mistake recorded. Edge case: the right bound is inclusive.
 
 ## Complexity
 
-- Time: TODO
-- Space: TODO
+- Time: O(right - left + 1)
+- Space: O(1)

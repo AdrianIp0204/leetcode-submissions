@@ -13,17 +13,19 @@
 
 ## Pattern
 
-TODO
+Place by encoded index
 
 ## Key Idea
 
-TODO
+Split the sentence, read each word's trailing position digit, remove that digit,
+and place the word in a preallocated result array.
 
 ## Mistake / Edge Case
 
-TODO
+No subjective mistake recorded. Edge case: convert the trailing digit from
+one-based to zero-based indexing.
 
 ## Complexity
 
-- Time: TODO
-- Space: TODO
+- Time: O(n)
+- Space: O(n)

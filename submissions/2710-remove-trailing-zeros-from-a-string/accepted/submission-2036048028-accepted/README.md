@@ -12,17 +12,19 @@
 
 ## Pattern
 
-TODO
+Trim suffix
 
 ## Key Idea
 
-TODO
+Remove zero characters only from the end, stopping as soon as the last remaining
+character is not zero.
 
 ## Mistake / Edge Case
 
-TODO
+No subjective mistake recorded. Edge case: zeros in the middle of the string are
+preserved.
 
 ## Complexity
 
-- Time: TODO
-- Space: TODO
+- Time: O(n)
+- Space: O(n)

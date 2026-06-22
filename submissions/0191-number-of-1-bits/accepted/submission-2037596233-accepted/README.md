@@ -12,17 +12,17 @@
 
 ## Pattern
 
-TODO
+Bit counting
 
 ## Key Idea
 
-TODO
+Convert the integer to its binary representation and count the `1` digits.
 
 ## Mistake / Edge Case
 
-TODO
+No subjective mistake recorded. Edge case: zero has no set bits.
 
 ## Complexity
 
-- Time: TODO
-- Space: TODO
+- Time: O(b), where b is the number of bits in `n`
+- Space: O(b) for the formatted binary string
