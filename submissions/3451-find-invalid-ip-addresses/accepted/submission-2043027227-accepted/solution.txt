@@ -1,0 +1,15 @@
+import pandas as pd
+
+def find_invalid_ips(logs: pd.DataFrame) -> pd.DataFrame:
+    def verify(ip):
+        arr = ip.split('.')
+        if len(arr) != 4:
+            return ip
+        for n in arr:
+            if n[0] == "0":
+                return ip
+            elif int(n) > 255:
+                return ip
+        return None
+    logs['ip'] = logs['ip'].apply(verify)
+    return logs.dropna()['ip'].value_counts().reset_index().rename(columns={'count':'invalid_count'}).sort_values(by=['invalid_count', 'ip'], ascending=False)
