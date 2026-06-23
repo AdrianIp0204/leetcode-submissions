@@ -1,8 +1,8 @@
 # Model Answer Coverage
 
-- Generated at: 2026-06-22T15:32:14.859Z
-- Problems in repo: 308
-- Model-answer notes: 279
+- Generated at: 2026-06-23T15:36:02.162Z
+- Problems in repo: 326
+- Model-answer notes: 297
 - Missing model-answer notes: 29
 - Incomplete model-answer notes: 0
 - Notes without matching problem folder: 0
@@ -73,6 +73,7 @@ The model-answer track is active. Keep adding notes in batches, prioritizing reu
 | [0066-plus-one](../notes/model-answers/0066-plus-one.md) | Plus One |
 | [0069-sqrtx](../notes/model-answers/0069-sqrtx.md) | Sqrt(x) |
 | [0070-climbing-stairs](../notes/model-answers/0070-climbing-stairs.md) | Climbing Stairs |
+| [0077-combinations](../notes/model-answers/0077-combinations.md) | Combinations |
 | [0083-remove-duplicates-from-sorted-list](../notes/model-answers/0083-remove-duplicates-from-sorted-list.md) | Remove Duplicates from Sorted List |
 | [0118-pascals-triangle](../notes/model-answers/0118-pascals-triangle.md) | Pascal's Triangle |
 | [0121-best-time-to-buy-and-sell-stock](../notes/model-answers/0121-best-time-to-buy-and-sell-stock.md) | Best Time to Buy and Sell Stock |
@@ -98,4 +99,3 @@ The model-answer track is active. Keep adding notes in batches, prioritizing reu
 | [0238-product-of-array-except-self](../notes/model-answers/0238-product-of-array-except-self.md) | Product of Array Except Self |
 | [0242-valid-anagram](../notes/model-answers/0242-valid-anagram.md) | Valid Anagram |
 | [0258-add-digits](../notes/model-answers/0258-add-digits.md) | Add Digits |
-| [0263-ugly-number](../notes/model-answers/0263-ugly-number.md) | Ugly Number |

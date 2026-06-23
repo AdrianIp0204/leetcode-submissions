@@ -13,17 +13,17 @@
 
 ## Pattern
 
-TODO
+Dynamic programming with prefix sums
 
 ## Key Idea
 
-TODO
+Track counts by ending value for one comparison direction, reverse to switch direction, and use prefix sums to aggregate all smaller valid previous values in O(m) per length.
 
 ## Mistake / Edge Case
 
-TODO
+No subjective mistake recorded. Edge case: counts are kept modulo 1,000,000,007.
 
 ## Complexity
 
-- Time: TODO
-- Space: TODO
+- Time: O(n * m), where `m = r - l + 1`
+- Space: O(m)

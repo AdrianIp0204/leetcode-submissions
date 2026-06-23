@@ -13,17 +13,17 @@
 
 ## Pattern
 
-TODO
+Self-action filter
 
 ## Key Idea
 
-TODO
+Filter rows where `author_id == viewer_id`, keep unique authors, rename the column to `id`, and sort.
 
 ## Mistake / Edge Case
 
-TODO
+No subjective mistake recorded. Edge case: one author can appear in multiple matching rows, so duplicates must be removed.
 
 ## Complexity
 
-- Time: TODO
-- Space: TODO
+- Time: O(n log n)
+- Space: O(n)

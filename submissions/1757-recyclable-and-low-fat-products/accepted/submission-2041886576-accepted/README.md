@@ -13,17 +13,17 @@
 
 ## Pattern
 
-TODO
+Boolean filter
 
 ## Key Idea
 
-TODO
+Select products where both `low_fats` and `recyclable` are `Y`, then return only `product_id`.
 
 ## Mistake / Edge Case
 
-TODO
+No subjective mistake recorded. Edge case: the two flags are an AND condition.
 
 ## Complexity
 
-- Time: TODO
-- Space: TODO
+- Time: O(n)
+- Space: O(n)

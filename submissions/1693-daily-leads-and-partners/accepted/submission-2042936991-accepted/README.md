@@ -13,17 +13,17 @@
 
 ## Pattern
 
-TODO
+Grouped distinct counts
 
 ## Key Idea
 
-TODO
+Group by `make_name` and `date_id`, then count distinct `lead_id` and `partner_id` values.
 
 ## Mistake / Edge Case
 
-TODO
+No subjective mistake recorded. Edge case: repeated lead or partner ids within a group should count once.
 
 ## Complexity
 
-- Time: TODO
-- Space: TODO
+- Time: O(n) expected
+- Space: O(n)

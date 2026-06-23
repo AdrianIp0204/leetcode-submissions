@@ -13,17 +13,17 @@
 
 ## Pattern
 
-TODO
+Group-level date filter
 
 ## Key Idea
 
-TODO
+For each product, keep only groups whose sale dates are all in the accepted window, then join product names and remove duplicates.
 
 ## Mistake / Edge Case
 
-TODO
+No subjective mistake recorded. Edge case: a product with any sale outside the date window must be excluded.
 
 ## Complexity
 
-- Time: TODO
-- Space: TODO
+- Time: O(s + p) expected
+- Space: O(s + p)

@@ -1,14 +1,14 @@
 {
-  "generatedAt": "2026-06-22T15:32:14.395Z",
+  "generatedAt": "2026-06-23T15:36:01.697Z",
   "username": "AdrianIp",
-  "profileFetchedAt": "2026-06-22T15:30:43.236Z",
-  "publicAcceptedSolved": 312,
-  "publicAcceptedSubmissions": 354,
-  "publicAttemptedProblems": 313,
-  "publicTotalSubmissions": 431,
-  "localProblemFolders": 308,
+  "profileFetchedAt": "2026-06-23T15:31:20.993Z",
+  "publicAcceptedSolved": 333,
+  "publicAcceptedSubmissions": 377,
+  "publicAttemptedProblems": 334,
+  "publicTotalSubmissions": 459,
+  "localProblemFolders": 326,
   "localCanonicalSolutions": 226,
-  "estimatedSolvedGap": 4,
+  "estimatedSolvedGap": 7,
   "status": "behind",
   "knownLocalProblems": [
     {
@@ -145,6 +145,11 @@
       "folder": "0070-climbing-stairs",
       "slug": "climbing-stairs",
       "hasCanonicalSolution": true
+    },
+    {
+      "folder": "0077-combinations",
+      "slug": "combinations",
+      "hasCanonicalSolution": false
     },
     {
       "folder": "0083-remove-duplicates-from-sorted-list",
@@ -437,9 +442,19 @@
       "hasCanonicalSolution": true
     },
     {
+      "folder": "0577-employee-bonus",
+      "slug": "employee-bonus",
+      "hasCanonicalSolution": false
+    },
+    {
       "folder": "0605-can-place-flowers",
       "slug": "can-place-flowers",
       "hasCanonicalSolution": true
+    },
+    {
+      "folder": "0627-swap-sex-of-employees",
+      "slug": "swap-sex-of-employees",
+      "hasCanonicalSolution": false
     },
     {
       "folder": "0628-maximum-product-of-three-numbers",
@@ -592,6 +607,16 @@
       "hasCanonicalSolution": true
     },
     {
+      "folder": "1075-project-employees-i",
+      "slug": "project-employees-i",
+      "hasCanonicalSolution": false
+    },
+    {
+      "folder": "1084-sales-analysis-iii",
+      "slug": "sales-analysis-iii",
+      "hasCanonicalSolution": false
+    },
+    {
       "folder": "1108-defanging-an-ip-address",
       "slug": "defanging-an-ip-address",
       "hasCanonicalSolution": true
@@ -599,6 +624,11 @@
     {
       "folder": "1122-relative-sort-array",
       "slug": "relative-sort-array",
+      "hasCanonicalSolution": false
+    },
+    {
+      "folder": "1148-article-views-i",
+      "slug": "article-views-i",
       "hasCanonicalSolution": false
     },
     {
@@ -767,8 +797,18 @@
       "hasCanonicalSolution": true
     },
     {
+      "folder": "1683-invalid-tweets",
+      "slug": "invalid-tweets",
+      "hasCanonicalSolution": false
+    },
+    {
       "folder": "1684-count-the-number-of-consistent-strings",
       "slug": "count-the-number-of-consistent-strings",
+      "hasCanonicalSolution": false
+    },
+    {
+      "folder": "1693-daily-leads-and-partners",
+      "slug": "daily-leads-and-partners",
       "hasCanonicalSolution": false
     },
     {
@@ -782,8 +822,18 @@
       "hasCanonicalSolution": false
     },
     {
+      "folder": "1741-find-total-time-spent-by-each-employee",
+      "slug": "find-total-time-spent-by-each-employee",
+      "hasCanonicalSolution": false
+    },
+    {
       "folder": "1748-sum-of-unique-elements",
       "slug": "sum-of-unique-elements",
+      "hasCanonicalSolution": false
+    },
+    {
+      "folder": "1757-recyclable-and-low-fat-products",
+      "slug": "recyclable-and-low-fat-products",
       "hasCanonicalSolution": false
     },
     {
@@ -835,6 +885,11 @@
       "folder": "1866-number-of-ways-to-rearrange-sticks-with-k-sticks-visible",
       "slug": "number-of-ways-to-rearrange-sticks-with-k-sticks-visible",
       "hasCanonicalSolution": true
+    },
+    {
+      "folder": "1890-the-latest-login-in-2020",
+      "slug": "the-latest-login-in-2020",
+      "hasCanonicalSolution": false
     },
     {
       "folder": "1920-build-array-from-permutation",
@@ -1004,6 +1059,11 @@
     {
       "folder": "2315-count-asterisks",
       "slug": "count-asterisks",
+      "hasCanonicalSolution": false
+    },
+    {
+      "folder": "2356-number-of-unique-subjects-taught-by-each-teacher",
+      "slug": "number-of-unique-subjects-taught-by-each-teacher",
       "hasCanonicalSolution": false
     },
     {
@@ -1217,8 +1277,18 @@
       "hasCanonicalSolution": false
     },
     {
+      "folder": "2880-select-data",
+      "slug": "select-data",
+      "hasCanonicalSolution": false
+    },
+    {
       "folder": "2881-create-a-new-column",
       "slug": "create-a-new-column",
+      "hasCanonicalSolution": false
+    },
+    {
+      "folder": "2882-drop-duplicate-rows",
+      "slug": "drop-duplicate-rows",
       "hasCanonicalSolution": false
     },
     {
@@ -1229,6 +1299,16 @@
     {
       "folder": "2885-rename-columns",
       "slug": "rename-columns",
+      "hasCanonicalSolution": false
+    },
+    {
+      "folder": "2886-change-data-type",
+      "slug": "change-data-type",
+      "hasCanonicalSolution": false
+    },
+    {
+      "folder": "2888-reshape-data-concatenate",
+      "slug": "reshape-data-concatenate",
       "hasCanonicalSolution": false
     },
     {
@@ -1367,6 +1447,11 @@
       "hasCanonicalSolution": true
     },
     {
+      "folder": "3451-find-invalid-ip-addresses",
+      "slug": "find-invalid-ip-addresses",
+      "hasCanonicalSolution": false
+    },
+    {
       "folder": "3461-check-if-digits-are-equal-in-string-after-operations-i",
       "slug": "check-if-digits-are-equal-in-string-after-operations-i",
       "hasCanonicalSolution": false
@@ -1460,6 +1545,11 @@
       "folder": "3691-maximum-total-subarray-value-ii",
       "slug": "maximum-total-subarray-value-ii",
       "hasCanonicalSolution": true
+    },
+    {
+      "folder": "3699-number-of-zigzag-arrays-i",
+      "slug": "number-of-zigzag-arrays-i",
+      "hasCanonicalSolution": false
     },
     {
       "folder": "3701-compute-alternating-sum",

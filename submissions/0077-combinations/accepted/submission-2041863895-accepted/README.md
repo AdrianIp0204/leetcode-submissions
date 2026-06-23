@@ -13,17 +13,17 @@
 
 ## Pattern
 
-TODO
+Combination generation
 
 ## Key Idea
 
-TODO
+Use `itertools.combinations` over the ordered range `1..n` to enumerate each size-`k` combination once.
 
 ## Mistake / Edge Case
 
-TODO
+No subjective mistake recorded. Edge case: the generated range must include `n`.
 
 ## Complexity
 
-- Time: TODO
-- Space: TODO
+- Time: O(C(n, k) * k)
+- Space: O(C(n, k) * k)

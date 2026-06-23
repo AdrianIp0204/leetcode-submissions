@@ -12,17 +12,17 @@
 
 ## Pattern
 
-TODO
+Column dtype conversion
 
 ## Key Idea
 
-TODO
+Convert the `grade` column to integer with `astype(int)` and return the dataframe.
 
 ## Mistake / Edge Case
 
-TODO
+No subjective mistake recorded. Edge case: rows and columns stay the same; only the grade dtype changes.
 
 ## Complexity
 
-- Time: TODO
-- Space: TODO
+- Time: O(n)
+- Space: O(n)

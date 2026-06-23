@@ -13,17 +13,17 @@
 
 ## Pattern
 
-TODO
+Join plus nullable filter
 
 ## Key Idea
 
-TODO
+Join employees to bonuses, then keep rows where the bonus is missing or below 1000.
 
 ## Mistake / Edge Case
 
-TODO
+No subjective mistake recorded. Edge case: employees with no bonus row have a null bonus and should remain eligible.
 
 ## Complexity
 
-- Time: TODO
-- Space: TODO
+- Time: O(e + b) expected
+- Space: O(e + b)

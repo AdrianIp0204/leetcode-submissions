@@ -13,17 +13,17 @@
 
 ## Pattern
 
-TODO
+Date filter then grouped maximum
 
 ## Key Idea
 
-TODO
+Filter logins to timestamps in 2020, group by `user_id`, and take each user's maximum timestamp.
 
 ## Mistake / Edge Case
 
-TODO
+No subjective mistake recorded. Edge case: users with no 2020 login do not appear after the filter.
 
 ## Complexity
 
-- Time: TODO
-- Space: TODO
+- Time: O(n) expected
+- Space: O(n)

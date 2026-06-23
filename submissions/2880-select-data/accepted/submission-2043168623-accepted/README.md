@@ -12,17 +12,17 @@
 
 ## Pattern
 
-TODO
+Filter and projection
 
 ## Key Idea
 
-TODO
+Filter to `student_id == 101`, then return only the `name` and `age` columns.
 
 ## Mistake / Edge Case
 
-TODO
+No subjective mistake recorded. Edge case: the id column is used for filtering but is not part of the output.
 
 ## Complexity
 
-- Time: TODO
-- Space: TODO
+- Time: O(n)
+- Space: O(n)
