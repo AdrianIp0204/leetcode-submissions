@@ -1,0 +1,9 @@
+import pandas as pd
+
+def swap_salary(salary: pd.DataFrame) -> pd.DataFrame:
+    def swap(sex):
+        if sex == 'm':
+            return 'f'
+        return 'm'
+    salary['sex'] = salary['sex'].apply(swap)
+    return salary
