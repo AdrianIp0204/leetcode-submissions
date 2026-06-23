@@ -1,0 +1,4 @@
+import pandas as pd
+
+def sales_analysis(product: pd.DataFrame, sales: pd.DataFrame) -> pd.DataFrame:
+    return sales.groupby('product_id').filter(lambda x: x['sale_date'].between('2019-01-01', '2019-03-31').all()).reset_index().merge(product,on='product_id')[['product_id','product_name']]
