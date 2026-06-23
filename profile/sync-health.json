@@ -1,14 +1,14 @@
 {
-  "generatedAt": "2026-06-21T15:36:25.396Z",
+  "generatedAt": "2026-06-22T15:32:14.395Z",
   "username": "AdrianIp",
-  "profileFetchedAt": "2026-06-21T15:35:42.901Z",
-  "publicAcceptedSolved": 306,
-  "publicAcceptedSubmissions": 348,
-  "publicAttemptedProblems": 307,
-  "publicTotalSubmissions": 425,
-  "localProblemFolders": 295,
+  "profileFetchedAt": "2026-06-22T15:30:43.236Z",
+  "publicAcceptedSolved": 312,
+  "publicAcceptedSubmissions": 354,
+  "publicAttemptedProblems": 313,
+  "publicTotalSubmissions": 431,
+  "localProblemFolders": 308,
   "localCanonicalSolutions": 226,
-  "estimatedSolvedGap": 11,
+  "estimatedSolvedGap": 4,
   "status": "behind",
   "knownLocalProblems": [
     {
@@ -397,6 +397,11 @@
       "hasCanonicalSolution": true
     },
     {
+      "folder": "0482-license-key-formatting",
+      "slug": "license-key-formatting",
+      "hasCanonicalSolution": false
+    },
+    {
       "folder": "0485-max-consecutive-ones",
       "slug": "max-consecutive-ones",
       "hasCanonicalSolution": true
@@ -470,6 +475,11 @@
       "folder": "0709-to-lower-case",
       "slug": "to-lower-case",
       "hasCanonicalSolution": true
+    },
+    {
+      "folder": "0724-find-pivot-index",
+      "slug": "find-pivot-index",
+      "hasCanonicalSolution": false
     },
     {
       "folder": "0728-self-dividing-numbers",
@@ -587,6 +597,16 @@
       "hasCanonicalSolution": true
     },
     {
+      "folder": "1122-relative-sort-array",
+      "slug": "relative-sort-array",
+      "hasCanonicalSolution": false
+    },
+    {
+      "folder": "1189-maximum-number-of-balloons",
+      "slug": "maximum-number-of-balloons",
+      "hasCanonicalSolution": false
+    },
+    {
       "folder": "1207-unique-number-of-occurrences",
       "slug": "unique-number-of-occurrences",
       "hasCanonicalSolution": false
@@ -624,6 +644,11 @@
     {
       "folder": "1344-angle-between-hands-of-a-clock",
       "slug": "angle-between-hands-of-a-clock",
+      "hasCanonicalSolution": false
+    },
+    {
+      "folder": "1346-check-if-n-and-its-double-exist",
+      "slug": "check-if-n-and-its-double-exist",
       "hasCanonicalSolution": false
     },
     {
@@ -752,6 +777,11 @@
       "hasCanonicalSolution": false
     },
     {
+      "folder": "1732-find-the-highest-altitude",
+      "slug": "find-the-highest-altitude",
+      "hasCanonicalSolution": false
+    },
+    {
       "folder": "1748-sum-of-unique-elements",
       "slug": "sum-of-unique-elements",
       "hasCanonicalSolution": false
@@ -782,9 +812,19 @@
       "hasCanonicalSolution": true
     },
     {
+      "folder": "1833-maximum-ice-cream-bars",
+      "slug": "maximum-ice-cream-bars",
+      "hasCanonicalSolution": false
+    },
+    {
       "folder": "1837-sum-of-digits-in-base-k",
       "slug": "sum-of-digits-in-base-k",
       "hasCanonicalSolution": true
+    },
+    {
+      "folder": "1840-maximum-building-height",
+      "slug": "maximum-building-height",
+      "hasCanonicalSolution": false
     },
     {
       "folder": "1859-sorting-the-sentence",
@@ -830,6 +870,11 @@
       "folder": "1979-find-greatest-common-divisor-of-array",
       "slug": "find-greatest-common-divisor-of-array",
       "hasCanonicalSolution": true
+    },
+    {
+      "folder": "1991-find-the-middle-index-in-array",
+      "slug": "find-the-middle-index-in-array",
+      "hasCanonicalSolution": false
     },
     {
       "folder": "1995-count-special-quadruplets",
@@ -1165,6 +1210,26 @@
       "folder": "2864-maximum-odd-binary-number",
       "slug": "maximum-odd-binary-number",
       "hasCanonicalSolution": true
+    },
+    {
+      "folder": "2879-display-the-first-three-rows",
+      "slug": "display-the-first-three-rows",
+      "hasCanonicalSolution": false
+    },
+    {
+      "folder": "2881-create-a-new-column",
+      "slug": "create-a-new-column",
+      "hasCanonicalSolution": false
+    },
+    {
+      "folder": "2884-modify-columns",
+      "slug": "modify-columns",
+      "hasCanonicalSolution": false
+    },
+    {
+      "folder": "2885-rename-columns",
+      "slug": "rename-columns",
+      "hasCanonicalSolution": false
     },
     {
       "folder": "2894-divisible-and-non-divisible-sums-difference",

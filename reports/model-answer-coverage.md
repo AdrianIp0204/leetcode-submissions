@@ -1,9 +1,9 @@
 # Model Answer Coverage
 
-- Generated at: 2026-06-21T15:36:25.867Z
-- Problems in repo: 295
-- Model-answer notes: 278
-- Missing model-answer notes: 17
+- Generated at: 2026-06-22T15:32:14.859Z
+- Problems in repo: 308
+- Model-answer notes: 279
+- Missing model-answer notes: 29
 - Incomplete model-answer notes: 0
 - Notes without matching problem folder: 0
 
@@ -21,13 +21,25 @@ The model-answer track is active. Keep adding notes in batches, prioritizing reu
 | [0189-rotate-array](../submissions/0189-rotate-array/) | Rotate Array | uncovered |
 | [0231-power-of-two](../submissions/0231-power-of-two/) | Power Of Two | uncovered |
 | [0441-arranging-coins](../submissions/0441-arranging-coins/) | Arranging Coins | uncovered |
+| [0482-license-key-formatting](../submissions/0482-license-key-formatting/) | License Key Formatting | uncovered |
 | [0704-binary-search](../submissions/0704-binary-search/) | Binary Search | uncovered |
+| [0724-find-pivot-index](../submissions/0724-find-pivot-index/) | Find Pivot Index | uncovered |
 | [0744-find-smallest-letter-greater-than-target](../submissions/0744-find-smallest-letter-greater-than-target/) | Find Smallest Letter Greater Than Target | uncovered |
+| [1122-relative-sort-array](../submissions/1122-relative-sort-array/) | Relative Sort Array | uncovered |
+| [1346-check-if-n-and-its-double-exist](../submissions/1346-check-if-n-and-its-double-exist/) | Check If N And Its Double Exist | uncovered |
+| [1732-find-the-highest-altitude](../submissions/1732-find-the-highest-altitude/) | Find The Highest Altitude | uncovered |
 | [1773-count-items-matching-a-rule](../submissions/1773-count-items-matching-a-rule/) | Count Items Matching A Rule | uncovered |
+| [1833-maximum-ice-cream-bars](../submissions/1833-maximum-ice-cream-bars/) | Maximum Ice Cream Bars | uncovered |
+| [1840-maximum-building-height](../submissions/1840-maximum-building-height/) | Maximum Building Height | uncovered |
+| [1991-find-the-middle-index-in-array](../submissions/1991-find-the-middle-index-in-array/) | Find The Middle Index In Array | uncovered |
 | [2000-reverse-prefix-of-word](../submissions/2000-reverse-prefix-of-word/) | Reverse Prefix Of Word | uncovered |
 | [2032-two-out-of-three](../submissions/2032-two-out-of-three/) | Two Out Of Three | uncovered |
 | [2744-find-maximum-number-of-string-pairs](../submissions/2744-find-maximum-number-of-string-pairs/) | Find Maximum Number Of String Pairs | uncovered |
 | [2810-faulty-keyboard](../submissions/2810-faulty-keyboard/) | Faulty Keyboard | uncovered |
+| [2879-display-the-first-three-rows](../submissions/2879-display-the-first-three-rows/) | Display The First Three Rows | uncovered |
+| [2881-create-a-new-column](../submissions/2881-create-a-new-column/) | Create A New Column | uncovered |
+| [2884-modify-columns](../submissions/2884-modify-columns/) | Modify Columns | uncovered |
+| [2885-rename-columns](../submissions/2885-rename-columns/) | Rename Columns | uncovered |
 | [3174-clear-digits](../submissions/3174-clear-digits/) | Clear Digits | uncovered |
 | [3612-process-string-with-special-operations-i](../submissions/3612-process-string-with-special-operations-i/) | Process String With Special Operations I | uncovered |
 | [3614-process-string-with-special-operations-ii](../submissions/3614-process-string-with-special-operations-ii/) | Process String With Special Operations Ii | uncovered |

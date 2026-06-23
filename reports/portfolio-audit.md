@@ -1,13 +1,13 @@
 # Portfolio Audit
 
-- Generated at: 2026-06-21T15:36:25.534Z
-- Local problem folders: 295
-- Public solved count: 306
-- Estimated solved-count gap: 11
+- Generated at: 2026-06-22T15:32:14.530Z
+- Local problem folders: 308
+- Public solved count: 312
+- Estimated solved-count gap: 4
 - Problems with real attempt files: 39
 - Problems with multiple languages or recorded language variants: 45
-- Problems needing reflection cleanup: 68
-- Problems with unknown/missing status metadata: 74
+- Problems needing reflection cleanup: 81
+- Problems with unknown/missing status metadata: 87
 
 ## Verdict
 
@@ -29,23 +29,23 @@ Current blockers: the source-code sync gap, missing reflection fields.
 
 | Pattern | Problems |
 | --- | --- |
-| arrays-and-strings | 88 |
+| arrays-and-strings | 90 |
 | binary-search | 1 |
 | dynamic-programming | 2 |
 | hashing-and-counting | 11 |
 | linked-list | 3 |
-| math-and-digits | 87 |
+| math-and-digits | 88 |
 | sql | 2 |
 | stack | 3 |
 | tree-and-graph | 1 |
 | two-pointers | 4 |
-| uncategorized | 93 |
+| uncategorized | 103 |
 
 ## Weakness Signals
 
-- 11 public solved problems are not yet represented by local source folders.
-- 68 of 295 problem READMEs still need real reflection.
-- 74 submissions have unknown or missing status metadata.
+- 4 public solved problems are not yet represented by local source folders.
+- 81 of 308 problem READMEs still need real reflection.
+- 87 submissions have unknown or missing status metadata.
 - Failed attempts are preserved when real source exists; keep capturing them for new work.
 - A TypeScript track exists; expand it deliberately rather than scattering one-off language experiments.
 - Tree/graph/DP coverage is thin relative to array, string, math, and simple loop problems.
@@ -82,15 +82,15 @@ The scan is heuristic. Review flagged files manually before making the repositor
 | [0383-ransom-note](../submissions/0383-ransom-note/) | Not recorded | key idea, complexity |
 | [0441-arranging-coins](../submissions/0441-arranging-coins/) | Not recorded | key idea, complexity |
 | [0442-find-all-duplicates-in-an-array](../submissions/0442-find-all-duplicates-in-an-array/) | Not recorded | key idea, complexity |
+| [0482-license-key-formatting](../submissions/0482-license-key-formatting/) | Not recorded | key idea, complexity |
 | [0557-reverse-words-in-a-string-iii](../submissions/0557-reverse-words-in-a-string-iii/) | Not recorded | key idea, complexity |
 | [0704-binary-search](../submissions/0704-binary-search/) | Not recorded | key idea, complexity |
+| [0724-find-pivot-index](../submissions/0724-find-pivot-index/) | Not recorded | key idea, complexity |
 | [0744-find-smallest-letter-greater-than-target](../submissions/0744-find-smallest-letter-greater-than-target/) | Not recorded | key idea, complexity |
 | [0804-unique-morse-code-words](../submissions/0804-unique-morse-code-words/) | Not recorded | key idea, complexity |
+| [1122-relative-sort-array](../submissions/1122-relative-sort-array/) | Not recorded | key idea, complexity |
+| [1189-maximum-number-of-balloons](../submissions/1189-maximum-number-of-balloons/) | Not recorded | key idea, complexity |
 | [1207-unique-number-of-occurrences](../submissions/1207-unique-number-of-occurrences/) | Not recorded | key idea, complexity |
-| [1344-angle-between-hands-of-a-clock](../submissions/1344-angle-between-hands-of-a-clock/) | Not recorded | key idea, complexity |
-| [1374-generate-a-string-with-characters-that-have-odd-counts](../submissions/1374-generate-a-string-with-characters-that-have-odd-counts/) | Not recorded | key idea, complexity |
-| [1399-count-largest-group](../submissions/1399-count-largest-group/) | Not recorded | key idea, complexity |
-| [1512-number-of-good-pairs](../submissions/1512-number-of-good-pairs/) | Not recorded | key idea, complexity |
 
 ## AI-Assisted Disclosure Draft
 

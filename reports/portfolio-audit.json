@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-06-21T15:36:25.534Z",
+  "generatedAt": "2026-06-22T15:32:14.530Z",
   "totals": {
-    "problemFolders": 295,
-    "publicSolved": 306,
-    "estimatedSolvedGap": 11,
+    "problemFolders": 308,
+    "publicSolved": 312,
+    "estimatedSolvedGap": 4,
     "problemsWithAttempts": 39,
-    "problemsNeedingReflection": 68,
-    "problemsWithUnknownStatus": 74
+    "problemsNeedingReflection": 81,
+    "problemsWithUnknownStatus": 87
   },
   "byLanguage": {
     "cpp": 10,
@@ -16,17 +16,17 @@
     "typescript": 5
   },
   "byPattern": {
-    "arrays-and-strings": 88,
+    "arrays-and-strings": 90,
     "binary-search": 1,
     "dynamic-programming": 2,
     "hashing-and-counting": 11,
     "linked-list": 3,
-    "math-and-digits": 87,
+    "math-and-digits": 88,
     "sql": 2,
     "stack": 3,
     "tree-and-graph": 1,
     "two-pointers": 4,
-    "uncategorized": 93
+    "uncategorized": 103
   },
   "problems": [
     {
@@ -1624,6 +1624,22 @@
       ]
     },
     {
+      "id": 482,
+      "folder": "0482-license-key-formatting",
+      "slug": "license-key-formatting",
+      "title": "License Key Formatting",
+      "pattern": "uncategorized",
+      "hasReadme": false,
+      "status": "Not recorded",
+      "todoCount": 0,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": []
+    },
+    {
       "id": 485,
       "folder": "0485-max-consecutive-ones",
       "slug": "max-consecutive-ones",
@@ -1932,6 +1948,22 @@
       "languages": [
         "python"
       ]
+    },
+    {
+      "id": 724,
+      "folder": "0724-find-pivot-index",
+      "slug": "find-pivot-index",
+      "title": "Find Pivot Index",
+      "pattern": "uncategorized",
+      "hasReadme": false,
+      "status": "Not recorded",
+      "todoCount": 0,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": []
     },
     {
       "id": 728,
@@ -2402,6 +2434,38 @@
       ]
     },
     {
+      "id": 1122,
+      "folder": "1122-relative-sort-array",
+      "slug": "relative-sort-array",
+      "title": "Relative Sort Array",
+      "pattern": "arrays-and-strings",
+      "hasReadme": false,
+      "status": "Not recorded",
+      "todoCount": 0,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": []
+    },
+    {
+      "id": 1189,
+      "folder": "1189-maximum-number-of-balloons",
+      "slug": "maximum-number-of-balloons",
+      "title": "Maximum Number Of Balloons",
+      "pattern": "math-and-digits",
+      "hasReadme": false,
+      "status": "Not recorded",
+      "todoCount": 0,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": []
+    },
+    {
       "id": 1207,
       "folder": "1207-unique-number-of-occurrences",
       "slug": "unique-number-of-occurrences",
@@ -2542,6 +2606,22 @@
       "folder": "1344-angle-between-hands-of-a-clock",
       "slug": "angle-between-hands-of-a-clock",
       "title": "Angle Between Hands Of A Clock",
+      "pattern": "uncategorized",
+      "hasReadme": false,
+      "status": "Not recorded",
+      "todoCount": 0,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": []
+    },
+    {
+      "id": 1346,
+      "folder": "1346-check-if-n-and-its-double-exist",
+      "slug": "check-if-n-and-its-double-exist",
+      "title": "Check If N And Its Double Exist",
       "pattern": "uncategorized",
       "hasReadme": false,
       "status": "Not recorded",
@@ -3036,6 +3116,22 @@
       "languages": []
     },
     {
+      "id": 1732,
+      "folder": "1732-find-the-highest-altitude",
+      "slug": "find-the-highest-altitude",
+      "title": "Find The Highest Altitude",
+      "pattern": "uncategorized",
+      "hasReadme": false,
+      "status": "Not recorded",
+      "todoCount": 0,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": []
+    },
+    {
       "id": 1748,
       "folder": "1748-sum-of-unique-elements",
       "slug": "sum-of-unique-elements",
@@ -3148,6 +3244,22 @@
       ]
     },
     {
+      "id": 1833,
+      "folder": "1833-maximum-ice-cream-bars",
+      "slug": "maximum-ice-cream-bars",
+      "title": "Maximum Ice Cream Bars",
+      "pattern": "uncategorized",
+      "hasReadme": false,
+      "status": "Not recorded",
+      "todoCount": 0,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": []
+    },
+    {
       "id": 1837,
       "folder": "1837-sum-of-digits-in-base-k",
       "slug": "sum-of-digits-in-base-k",
@@ -3166,6 +3278,22 @@
       "languages": [
         "python"
       ]
+    },
+    {
+      "id": 1840,
+      "folder": "1840-maximum-building-height",
+      "slug": "maximum-building-height",
+      "title": "Maximum Building Height",
+      "pattern": "uncategorized",
+      "hasReadme": false,
+      "status": "Not recorded",
+      "todoCount": 0,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": []
     },
     {
       "id": 1859,
@@ -3338,6 +3466,22 @@
       "languages": [
         "python"
       ]
+    },
+    {
+      "id": 1991,
+      "folder": "1991-find-the-middle-index-in-array",
+      "slug": "find-the-middle-index-in-array",
+      "title": "Find The Middle Index In Array",
+      "pattern": "arrays-and-strings",
+      "hasReadme": false,
+      "status": "Not recorded",
+      "todoCount": 0,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": []
     },
     {
       "id": 1995,
@@ -4622,6 +4766,70 @@
       ]
     },
     {
+      "id": 2879,
+      "folder": "2879-display-the-first-three-rows",
+      "slug": "display-the-first-three-rows",
+      "title": "Display The First Three Rows",
+      "pattern": "uncategorized",
+      "hasReadme": false,
+      "status": "Not recorded",
+      "todoCount": 0,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": []
+    },
+    {
+      "id": 2881,
+      "folder": "2881-create-a-new-column",
+      "slug": "create-a-new-column",
+      "title": "Create A New Column",
+      "pattern": "uncategorized",
+      "hasReadme": false,
+      "status": "Not recorded",
+      "todoCount": 0,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": []
+    },
+    {
+      "id": 2884,
+      "folder": "2884-modify-columns",
+      "slug": "modify-columns",
+      "title": "Modify Columns",
+      "pattern": "uncategorized",
+      "hasReadme": false,
+      "status": "Not recorded",
+      "todoCount": 0,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": []
+    },
+    {
+      "id": 2885,
+      "folder": "2885-rename-columns",
+      "slug": "rename-columns",
+      "title": "Rename Columns",
+      "pattern": "uncategorized",
+      "hasReadme": false,
+      "status": "Not recorded",
+      "todoCount": 0,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": []
+    },
+    {
       "id": 2894,
       "folder": "2894-divisible-and-non-divisible-sums-difference",
       "slug": "divisible-and-non-divisible-sums-difference",
@@ -5868,8 +6076,8 @@
   ],
   "trackedFileFlags": [],
   "weaknessSignals": [
-    "68 of 295 problem READMEs still need real reflection.",
-    "74 submissions have unknown or missing status metadata.",
+    "81 of 308 problem READMEs still need real reflection.",
+    "87 submissions have unknown or missing status metadata.",
     "Failed attempts are preserved when real source exists; keep capturing them for new work.",
     "A TypeScript track exists; expand it deliberately rather than scattering one-off language experiments.",
     "Tree/graph/DP coverage is thin relative to array, string, math, and simple loop problems."
