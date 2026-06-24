@@ -1,12 +1,12 @@
 # Weakness Report
 
-- Generated at: 2026-06-23T15:36:01.829Z
-- Problems audited: 326
+- Generated at: 2026-06-24T15:36:05.188Z
+- Problems audited: 336
 
 ## Current Diagnosis
 
-- Reflection debt remains a public-readiness issue: 99 problem READMEs still need filled Key Idea and Complexity sections.
-- Status metadata still needs cleanup for 105 older submissions.
+- Reflection debt remains a public-readiness issue: 109 problem READMEs still need filled Key Idea and Complexity sections.
+- Status metadata still needs cleanup for 115 older submissions.
 - Failed attempts preserved in repo: yes. Keep capturing real failed attempts for new work instead of reconstructing old ones from memory.
 - TypeScript track present: yes. Expand it deliberately as part of JS/TS fluency for Morrow/Core work.
 

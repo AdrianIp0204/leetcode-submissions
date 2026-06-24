@@ -1,10 +1,10 @@
 {
-  "fetchedAt": "2026-06-23T15:31:20.993Z",
+  "fetchedAt": "2026-06-24T15:31:14.143Z",
   "username": "AdrianIp",
   "profile": {
     "realName": "AdrianIp",
     "userAvatar": "https://assets.leetcode.com/users/default_avatar.jpg",
-    "ranking": 417295,
+    "ranking": 380633,
     "reputation": 2,
     "countryName": "Hong Kong",
     "company": null,
@@ -15,254 +15,254 @@
   "solvedByDifficulty": [
     {
       "difficulty": "All",
-      "count": 333,
-      "submissions": 377
+      "count": 345,
+      "submissions": 399
     },
     {
       "difficulty": "Easy",
-      "count": 269,
-      "submissions": 310
+      "count": 278,
+      "submissions": 329
     },
     {
       "difficulty": "Medium",
-      "count": 53,
-      "submissions": 56
+      "count": 55,
+      "submissions": 58
     },
     {
       "difficulty": "Hard",
-      "count": 11,
-      "submissions": 11
+      "count": 12,
+      "submissions": 12
     }
   ],
   "totalByDifficulty": [
     {
       "difficulty": "All",
-      "count": 334,
-      "submissions": 459
+      "count": 346,
+      "submissions": 482
     },
     {
       "difficulty": "Easy",
-      "count": 269,
-      "submissions": 358
+      "count": 278,
+      "submissions": 378
     },
     {
       "difficulty": "Medium",
-      "count": 53,
-      "submissions": 81
+      "count": 55,
+      "submissions": 83
     },
     {
       "difficulty": "Hard",
-      "count": 12,
-      "submissions": 20
+      "count": 13,
+      "submissions": 21
     }
   ],
   "summary": {
     "accepted": {
       "All": {
         "difficulty": "All",
-        "count": 333,
-        "submissions": 377
+        "count": 345,
+        "submissions": 399
       },
       "Easy": {
         "difficulty": "Easy",
-        "count": 269,
-        "submissions": 310
+        "count": 278,
+        "submissions": 329
       },
       "Medium": {
         "difficulty": "Medium",
-        "count": 53,
-        "submissions": 56
+        "count": 55,
+        "submissions": 58
       },
       "Hard": {
         "difficulty": "Hard",
-        "count": 11,
-        "submissions": 11
+        "count": 12,
+        "submissions": 12
       }
     },
     "total": {
       "All": {
         "difficulty": "All",
-        "count": 334,
-        "submissions": 459
+        "count": 346,
+        "submissions": 482
       },
       "Easy": {
         "difficulty": "Easy",
-        "count": 269,
-        "submissions": 358
+        "count": 278,
+        "submissions": 378
       },
       "Medium": {
         "difficulty": "Medium",
-        "count": 53,
-        "submissions": 81
+        "count": 55,
+        "submissions": 83
       },
       "Hard": {
         "difficulty": "Hard",
-        "count": 12,
-        "submissions": 20
+        "count": 13,
+        "submissions": 21
       }
     }
   },
   "contestRanking": null,
   "recentAccepted": [
     {
-      "title": "Big Countries",
-      "titleSlug": "big-countries",
-      "timestamp": "1782218683",
+      "title": "Asteroid Collision",
+      "titleSlug": "asteroid-collision",
+      "timestamp": "1782284057",
       "statusDisplay": "Accepted",
-      "lang": "pythondata",
-      "acceptedAt": "2026-06-23T12:44:43.000Z"
+      "lang": "python3",
+      "acceptedAt": "2026-06-24T06:54:17.000Z"
     },
     {
-      "title": "Not Boring Movies",
-      "titleSlug": "not-boring-movies",
-      "timestamp": "1782218396",
+      "title": "Count Negative Numbers in a Sorted Matrix",
+      "titleSlug": "count-negative-numbers-in-a-sorted-matrix",
+      "timestamp": "1782282837",
       "statusDisplay": "Accepted",
-      "lang": "pythondata",
-      "acceptedAt": "2026-06-23T12:39:56.000Z"
+      "lang": "python3",
+      "acceptedAt": "2026-06-24T06:33:57.000Z"
     },
     {
-      "title": "Biggest Single Number",
-      "titleSlug": "biggest-single-number",
-      "timestamp": "1782218170",
+      "title": "Reshape Data: Concatenate",
+      "titleSlug": "reshape-data-concatenate",
+      "timestamp": "1782282303",
       "statusDisplay": "Accepted",
       "lang": "pythondata",
-      "acceptedAt": "2026-06-23T12:36:10.000Z"
+      "acceptedAt": "2026-06-24T06:25:03.000Z"
     },
     {
-      "title": "Product Sales Analysis III",
-      "titleSlug": "product-sales-analysis-iii",
-      "timestamp": "1782217861",
+      "title": "Change Data Type",
+      "titleSlug": "change-data-type",
+      "timestamp": "1782282274",
       "statusDisplay": "Accepted",
       "lang": "pythondata",
-      "acceptedAt": "2026-06-23T12:31:01.000Z"
+      "acceptedAt": "2026-06-24T06:24:34.000Z"
     },
     {
-      "title": "Product Sales Analysis I",
-      "titleSlug": "product-sales-analysis-i",
-      "timestamp": "1782217157",
+      "title": "Rename Columns",
+      "titleSlug": "rename-columns",
+      "timestamp": "1782282244",
       "statusDisplay": "Accepted",
       "lang": "pythondata",
-      "acceptedAt": "2026-06-23T12:19:17.000Z"
+      "acceptedAt": "2026-06-24T06:24:04.000Z"
     },
     {
-      "title": "Classes With at Least 5 Students",
-      "titleSlug": "classes-with-at-least-5-students",
-      "timestamp": "1782216885",
+      "title": "Modify Columns",
+      "titleSlug": "modify-columns",
+      "timestamp": "1782282201",
       "statusDisplay": "Accepted",
       "lang": "pythondata",
-      "acceptedAt": "2026-06-23T12:14:45.000Z"
-    },
-    {
-      "title": "Duplicate Emails",
-      "titleSlug": "duplicate-emails",
-      "timestamp": "1782216196",
-      "statusDisplay": "Accepted",
-      "lang": "pythondata",
-      "acceptedAt": "2026-06-23T12:03:16.000Z"
-    },
-    {
-      "title": "Delete Duplicate Emails",
-      "titleSlug": "delete-duplicate-emails",
-      "timestamp": "1782215861",
-      "statusDisplay": "Accepted",
-      "lang": "pythondata",
-      "acceptedAt": "2026-06-23T11:57:41.000Z"
-    },
-    {
-      "title": "Select Data",
-      "titleSlug": "select-data",
-      "timestamp": "1782205631",
-      "statusDisplay": "Accepted",
-      "lang": "pythondata",
-      "acceptedAt": "2026-06-23T09:07:11.000Z"
-    },
-    {
-      "title": "Invalid Tweets",
-      "titleSlug": "invalid-tweets",
-      "timestamp": "1782205407",
-      "statusDisplay": "Accepted",
-      "lang": "pythondata",
-      "acceptedAt": "2026-06-23T09:03:27.000Z"
-    },
-    {
-      "title": "Find Total Time Spent by Each Employee",
-      "titleSlug": "find-total-time-spent-by-each-employee",
-      "timestamp": "1782204965",
-      "statusDisplay": "Accepted",
-      "lang": "pythondata",
-      "acceptedAt": "2026-06-23T08:56:05.000Z"
-    },
-    {
-      "title": "Sales Analysis III",
-      "titleSlug": "sales-analysis-iii",
-      "timestamp": "1782204499",
-      "statusDisplay": "Accepted",
-      "lang": "pythondata",
-      "acceptedAt": "2026-06-23T08:48:19.000Z"
-    },
-    {
-      "title": "Project Employees I",
-      "titleSlug": "project-employees-i",
-      "timestamp": "1782203412",
-      "statusDisplay": "Accepted",
-      "lang": "pythondata",
-      "acceptedAt": "2026-06-23T08:30:12.000Z"
-    },
-    {
-      "title": "Article Views I",
-      "titleSlug": "article-views-i",
-      "timestamp": "1782202843",
-      "statusDisplay": "Accepted",
-      "lang": "pythondata",
-      "acceptedAt": "2026-06-23T08:20:43.000Z"
-    },
-    {
-      "title": "Find Invalid IP Addresses",
-      "titleSlug": "find-invalid-ip-addresses",
-      "timestamp": "1782197615",
-      "statusDisplay": "Accepted",
-      "lang": "pythondata",
-      "acceptedAt": "2026-06-23T06:53:35.000Z"
-    },
-    {
-      "title": "Employee Bonus",
-      "titleSlug": "employee-bonus",
-      "timestamp": "1782196068",
-      "statusDisplay": "Accepted",
-      "lang": "pythondata",
-      "acceptedAt": "2026-06-23T06:27:48.000Z"
+      "acceptedAt": "2026-06-24T06:23:21.000Z"
     },
     {
       "title": "Drop Duplicate Rows",
       "titleSlug": "drop-duplicate-rows",
-      "timestamp": "1782195406",
+      "timestamp": "1782282152",
       "statusDisplay": "Accepted",
       "lang": "pythondata",
-      "acceptedAt": "2026-06-23T06:16:46.000Z"
+      "acceptedAt": "2026-06-24T06:22:32.000Z"
     },
     {
-      "title": "Swap Sex of Employees",
-      "titleSlug": "swap-sex-of-employees",
-      "timestamp": "1782195064",
+      "title": "Create a New Column",
+      "titleSlug": "create-a-new-column",
+      "timestamp": "1782282113",
       "statusDisplay": "Accepted",
       "lang": "pythondata",
-      "acceptedAt": "2026-06-23T06:11:04.000Z"
+      "acceptedAt": "2026-06-24T06:21:53.000Z"
     },
     {
-      "title": "The Latest Login in 2020",
-      "titleSlug": "the-latest-login-in-2020",
-      "timestamp": "1782194275",
+      "title": "Select Data",
+      "titleSlug": "select-data",
+      "timestamp": "1782282079",
       "statusDisplay": "Accepted",
       "lang": "pythondata",
-      "acceptedAt": "2026-06-23T05:57:55.000Z"
+      "acceptedAt": "2026-06-24T06:21:19.000Z"
     },
     {
-      "title": "Number of ZigZag Arrays I",
-      "titleSlug": "number-of-zigzag-arrays-i",
-      "timestamp": "1782193752",
+      "title": "Display the First Three Rows",
+      "titleSlug": "display-the-first-three-rows",
+      "timestamp": "1782282059",
+      "statusDisplay": "Accepted",
+      "lang": "pythondata",
+      "acceptedAt": "2026-06-24T06:20:59.000Z"
+    },
+    {
+      "title": "Create a DataFrame from List",
+      "titleSlug": "create-a-dataframe-from-list",
+      "timestamp": "1782282025",
+      "statusDisplay": "Accepted",
+      "lang": "pythondata",
+      "acceptedAt": "2026-06-24T06:20:25.000Z"
+    },
+    {
+      "title": "Method Chaining",
+      "titleSlug": "method-chaining",
+      "timestamp": "1782281984",
+      "statusDisplay": "Accepted",
+      "lang": "pythondata",
+      "acceptedAt": "2026-06-24T06:19:44.000Z"
+    },
+    {
+      "title": "Reshape Data: Melt",
+      "titleSlug": "reshape-data-melt",
+      "timestamp": "1782281835",
+      "statusDisplay": "Accepted",
+      "lang": "pythondata",
+      "acceptedAt": "2026-06-24T06:17:15.000Z"
+    },
+    {
+      "title": "Reshape Data: Pivot",
+      "titleSlug": "reshape-data-pivot",
+      "timestamp": "1782281538",
+      "statusDisplay": "Accepted",
+      "lang": "pythondata",
+      "acceptedAt": "2026-06-24T06:12:18.000Z"
+    },
+    {
+      "title": "Fill Missing Data",
+      "titleSlug": "fill-missing-data",
+      "timestamp": "1782281312",
+      "statusDisplay": "Accepted",
+      "lang": "pythondata",
+      "acceptedAt": "2026-06-24T06:08:32.000Z"
+    },
+    {
+      "title": "Drop Missing Data",
+      "titleSlug": "drop-missing-data",
+      "timestamp": "1782281107",
+      "statusDisplay": "Accepted",
+      "lang": "pythondata",
+      "acceptedAt": "2026-06-24T06:05:07.000Z"
+    },
+    {
+      "title": "Get the Size of a DataFrame",
+      "titleSlug": "get-the-size-of-a-dataframe",
+      "timestamp": "1782280828",
+      "statusDisplay": "Accepted",
+      "lang": "pythondata",
+      "acceptedAt": "2026-06-24T06:00:28.000Z"
+    },
+    {
+      "title": "Evaluate Reverse Polish Notation",
+      "titleSlug": "evaluate-reverse-polish-notation",
+      "timestamp": "1782280582",
       "statusDisplay": "Accepted",
       "lang": "python3",
-      "acceptedAt": "2026-06-23T05:49:12.000Z"
+      "acceptedAt": "2026-06-24T05:56:22.000Z"
+    },
+    {
+      "title": "Number of ZigZag Arrays II",
+      "titleSlug": "number-of-zigzag-arrays-ii",
+      "timestamp": "1782277209",
+      "statusDisplay": "Accepted",
+      "lang": "python3",
+      "acceptedAt": "2026-06-24T05:00:09.000Z"
+    },
+    {
+      "title": "Create a DataFrame from List",
+      "titleSlug": "create-a-dataframe-from-list",
+      "timestamp": "1782276874",
+      "statusDisplay": "Accepted",
+      "lang": "pythondata",
+      "acceptedAt": "2026-06-24T04:54:34.000Z"
     }
   ],
   "source": "LeetCode public GraphQL; no login cookie or browser extension used."

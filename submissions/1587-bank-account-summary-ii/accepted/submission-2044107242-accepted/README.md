@@ -13,17 +13,19 @@
 
 ## Pattern
 
-TODO
+Group aggregate, join, and threshold filter
 
 ## Key Idea
 
-TODO
+Sum each account's transaction amounts, join the balances back to users, keep
+accounts above 10000, and return the required output column names.
 
 ## Mistake / Edge Case
 
-TODO
+No subjective mistake recorded. Edge case: aggregate by account before filtering
+so multiple transactions for one user are combined.
 
 ## Complexity
 
-- Time: TODO
-- Space: TODO
+- Time: O(t + u) expected for grouping, joining, and filtering
+- Space: O(t + u)
