@@ -13,17 +13,17 @@
 
 ## Pattern
 
-TODO
+Grouped distinct count
 
 ## Key Idea
 
-TODO
+Group by `teacher_id` and count distinct `subject_id` values with `nunique`.
 
 ## Mistake / Edge Case
 
-TODO
+No subjective mistake recorded. Edge case: duplicate teacher-subject rows should not increase the count.
 
 ## Complexity
 
-- Time: TODO
-- Space: TODO
+- Time: O(n) expected
+- Space: O(n)

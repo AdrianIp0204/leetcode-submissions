@@ -13,17 +13,17 @@
 
 ## Pattern
 
-TODO
+Join then grouped average
 
 ## Key Idea
 
-TODO
+Join project assignments to employee experience, group by `project_id`, and average `experience_years` rounded to two decimals.
 
 ## Mistake / Edge Case
 
-TODO
+No subjective mistake recorded. Edge case: compute the average after the join so each project assignment has an experience value.
 
 ## Complexity
 
-- Time: TODO
-- Space: TODO
+- Time: O(p + e) expected
+- Space: O(p + e)

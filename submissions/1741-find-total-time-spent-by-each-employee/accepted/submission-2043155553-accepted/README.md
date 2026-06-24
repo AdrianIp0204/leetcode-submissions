@@ -13,17 +13,17 @@
 
 ## Pattern
 
-TODO
+Duration then grouped sum
 
 ## Key Idea
 
-TODO
+Convert each row to a session duration with `out_time - in_time`, then sum by day and employee.
 
 ## Mistake / Edge Case
 
-TODO
+No subjective mistake recorded. Edge case: multiple sessions for the same employee on the same day must be summed.
 
 ## Complexity
 
-- Time: TODO
-- Space: TODO
+- Time: O(n) expected
+- Space: O(n)

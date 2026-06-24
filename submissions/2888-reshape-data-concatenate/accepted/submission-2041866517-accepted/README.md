@@ -12,17 +12,17 @@
 
 ## Pattern
 
-TODO
+Dataframe concatenation
 
 ## Key Idea
 
-TODO
+Use `pd.concat` to stack the rows of `df2` after the rows of `df1`.
 
 ## Mistake / Edge Case
 
-TODO
+No subjective mistake recorded. Edge case: this is vertical concatenation, not a key-based merge.
 
 ## Complexity
 
-- Time: TODO
-- Space: TODO
+- Time: O(n + m)
+- Space: O(n + m)

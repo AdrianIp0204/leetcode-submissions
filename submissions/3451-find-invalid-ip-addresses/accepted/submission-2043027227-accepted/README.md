@@ -13,17 +13,17 @@
 
 ## Pattern
 
-TODO
+String validation and frequency count
 
 ## Key Idea
 
-TODO
+Mark IP strings invalid when the split parts are not four components, a component has a leading zero, or a numeric component exceeds 255; then count and sort invalid IPs.
 
 ## Mistake / Edge Case
 
-TODO
+No subjective mistake recorded. Edge case: leading zeros are invalid even when the numeric value is within range.
 
 ## Complexity
 
-- Time: TODO
-- Space: TODO
+- Time: O(n * L + u log u)
+- Space: O(n + u)

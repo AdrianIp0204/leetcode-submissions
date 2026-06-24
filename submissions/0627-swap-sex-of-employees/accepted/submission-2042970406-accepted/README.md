@@ -13,17 +13,17 @@
 
 ## Pattern
 
-TODO
+Conditional column transform
 
 ## Key Idea
 
-TODO
+Apply a two-way mapping to the `sex` column: `m` becomes `f`, and every other recorded value in the accepted code becomes `m`.
 
 ## Mistake / Edge Case
 
-TODO
+No subjective mistake recorded. Edge case: only the `sex` column should change.
 
 ## Complexity
 
-- Time: TODO
-- Space: TODO
+- Time: O(n)
+- Space: O(1) extra aside from the updated column

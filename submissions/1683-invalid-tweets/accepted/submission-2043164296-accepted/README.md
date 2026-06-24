@@ -13,17 +13,17 @@
 
 ## Pattern
 
-TODO
+String length filter
 
 ## Key Idea
 
-TODO
+Return tweet ids whose content length is greater than 15.
 
 ## Mistake / Edge Case
 
-TODO
+No subjective mistake recorded. Edge case: length exactly 15 is not returned.
 
 ## Complexity
 
-- Time: TODO
-- Space: TODO
+- Time: O(n * L)
+- Space: O(n)

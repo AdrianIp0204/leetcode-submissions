@@ -12,17 +12,17 @@
 
 ## Pattern
 
-TODO
+Duplicate removal by key
 
 ## Key Idea
 
-TODO
+Drop duplicate rows using `email` as the duplicate key.
 
 ## Mistake / Edge Case
 
-TODO
+No subjective mistake recorded. Edge case: the first row for each email is kept by default.
 
 ## Complexity
 
-- Time: TODO
-- Space: TODO
+- Time: O(n) expected
+- Space: O(n)
