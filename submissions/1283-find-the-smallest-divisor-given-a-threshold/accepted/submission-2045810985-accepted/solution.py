@@ -1,0 +1,15 @@
+class Solution:
+    def smallestDivisor(self, nums: List[int], t: int) -> int:
+        l = 1
+        r = max(nums)
+        mid = 0
+        while l < r:
+            mid = l + (r-l)//2
+            s = 0
+            for n in nums:
+                s += ceil(n/mid)
+            if s > t: 
+                l = mid + 1
+            else: 
+                r = mid
+        return l
