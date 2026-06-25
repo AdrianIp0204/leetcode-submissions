@@ -1,0 +1,5 @@
+import pandas as pd
+
+def find_customers(customers: pd.DataFrame, orders: pd.DataFrame) -> pd.DataFrame:
+    customers.rename(columns={'id':'customerId', 'name': 'Customers'},inplace=True)
+    return customers.merge(orders, on='customerId', how='outer').query("id.isnull()")[['Customers']]
