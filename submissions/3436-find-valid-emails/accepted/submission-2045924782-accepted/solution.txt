@@ -1,0 +1,17 @@
+import pandas as pd
+
+import pandas as pd
+
+def find_valid_emails(users: pd.DataFrame) -> pd.DataFrame:
+
+    def is_valid(x: str)-> bool:
+
+        s = x.email.split('@')
+        if len(s) != 2: return False           
+
+        pref, suff = s                        
+        pref.replace('_', '')               
+                             
+        return all( (pref.isalnum(),suff[:-4].isalpha(),suff.endswith('.com')) )
+
+    return users[users.apply(is_valid, axis=1)].sort_values(['user_id'])
