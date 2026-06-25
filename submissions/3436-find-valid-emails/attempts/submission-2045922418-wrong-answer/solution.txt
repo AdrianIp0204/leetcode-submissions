@@ -1,0 +1,20 @@
+import pandas as pd
+
+def find_valid_emails(users: pd.DataFrame) -> pd.DataFrame:
+    wet1=set("qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM1234567890")
+    wet2=set("qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM_")
+    def check(row2):
+        row = row2
+        if row.count('@') != 1:
+            return None
+        elif not row.endswith('.com'):
+            return None
+        row = row[:len(row)-4]
+        row = row.split('@')
+        if not set(row[0]) <= wet1:
+            return None
+        elif not set(row[1]) <= wet2:
+            return None
+        return row2
+    users['email'] = users['email'].apply(check)
+    return users.dropna(subset=['email'])
