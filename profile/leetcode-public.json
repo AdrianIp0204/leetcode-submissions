@@ -1,10 +1,10 @@
 {
-  "fetchedAt": "2026-06-24T15:31:14.143Z",
+  "fetchedAt": "2026-06-25T15:31:31.927Z",
   "username": "AdrianIp",
   "profile": {
     "realName": "AdrianIp",
     "userAvatar": "https://assets.leetcode.com/users/default_avatar.jpg",
-    "ranking": 380633,
+    "ranking": 375655,
     "reputation": 2,
     "countryName": "Hong Kong",
     "company": null,
@@ -15,95 +15,159 @@
   "solvedByDifficulty": [
     {
       "difficulty": "All",
-      "count": 345,
-      "submissions": 399
+      "count": 353,
+      "submissions": 407
     },
     {
       "difficulty": "Easy",
-      "count": 278,
-      "submissions": 329
+      "count": 282,
+      "submissions": 333
     },
     {
       "difficulty": "Medium",
-      "count": 55,
-      "submissions": 58
+      "count": 58,
+      "submissions": 61
     },
     {
       "difficulty": "Hard",
-      "count": 12,
-      "submissions": 12
+      "count": 13,
+      "submissions": 13
     }
   ],
   "totalByDifficulty": [
     {
       "difficulty": "All",
-      "count": 346,
-      "submissions": 482
+      "count": 354,
+      "submissions": 497
     },
     {
       "difficulty": "Easy",
-      "count": 278,
-      "submissions": 378
+      "count": 282,
+      "submissions": 386
     },
     {
       "difficulty": "Medium",
-      "count": 55,
-      "submissions": 83
+      "count": 58,
+      "submissions": 88
     },
     {
       "difficulty": "Hard",
-      "count": 13,
-      "submissions": 21
+      "count": 14,
+      "submissions": 23
     }
   ],
   "summary": {
     "accepted": {
       "All": {
         "difficulty": "All",
-        "count": 345,
-        "submissions": 399
+        "count": 353,
+        "submissions": 407
       },
       "Easy": {
         "difficulty": "Easy",
-        "count": 278,
-        "submissions": 329
+        "count": 282,
+        "submissions": 333
       },
       "Medium": {
         "difficulty": "Medium",
-        "count": 55,
-        "submissions": 58
+        "count": 58,
+        "submissions": 61
       },
       "Hard": {
         "difficulty": "Hard",
-        "count": 12,
-        "submissions": 12
+        "count": 13,
+        "submissions": 13
       }
     },
     "total": {
       "All": {
         "difficulty": "All",
-        "count": 346,
-        "submissions": 482
+        "count": 354,
+        "submissions": 497
       },
       "Easy": {
         "difficulty": "Easy",
-        "count": 278,
-        "submissions": 378
+        "count": 282,
+        "submissions": 386
       },
       "Medium": {
         "difficulty": "Medium",
-        "count": 55,
-        "submissions": 83
+        "count": 58,
+        "submissions": 88
       },
       "Hard": {
         "difficulty": "Hard",
-        "count": 13,
-        "submissions": 21
+        "count": 14,
+        "submissions": 23
       }
     }
   },
   "contestRanking": null,
   "recentAccepted": [
+    {
+      "title": "Find Valid Emails",
+      "titleSlug": "find-valid-emails",
+      "timestamp": "1782400816",
+      "statusDisplay": "Accepted",
+      "lang": "pythondata",
+      "acceptedAt": "2026-06-25T15:20:16.000Z"
+    },
+    {
+      "title": "Merge k Sorted Lists",
+      "titleSlug": "merge-k-sorted-lists",
+      "timestamp": "1782399311",
+      "statusDisplay": "Accepted",
+      "lang": "python3",
+      "acceptedAt": "2026-06-25T14:55:11.000Z"
+    },
+    {
+      "title": "Find Target Indices After Sorting Array",
+      "titleSlug": "find-target-indices-after-sorting-array",
+      "timestamp": "1782395842",
+      "statusDisplay": "Accepted",
+      "lang": "python3",
+      "acceptedAt": "2026-06-25T13:57:22.000Z"
+    },
+    {
+      "title": "Find the Distance Value Between Two Arrays",
+      "titleSlug": "find-the-distance-value-between-two-arrays",
+      "timestamp": "1782395106",
+      "statusDisplay": "Accepted",
+      "lang": "python3",
+      "acceptedAt": "2026-06-25T13:45:06.000Z"
+    },
+    {
+      "title": "Find the Smallest Divisor Given a Threshold",
+      "titleSlug": "find-the-smallest-divisor-given-a-threshold",
+      "timestamp": "1782392787",
+      "statusDisplay": "Accepted",
+      "lang": "python3",
+      "acceptedAt": "2026-06-25T13:06:27.000Z"
+    },
+    {
+      "title": "Customers Who Never Order",
+      "titleSlug": "customers-who-never-order",
+      "timestamp": "1782365196",
+      "statusDisplay": "Accepted",
+      "lang": "pythondata",
+      "acceptedAt": "2026-06-25T05:26:36.000Z"
+    },
+    {
+      "title": "Odd Even Linked List",
+      "titleSlug": "odd-even-linked-list",
+      "timestamp": "1782363996",
+      "statusDisplay": "Accepted",
+      "lang": "python3",
+      "acceptedAt": "2026-06-25T05:06:36.000Z"
+    },
+    {
+      "title": "Count Subarrays With Majority Element I",
+      "titleSlug": "count-subarrays-with-majority-element-i",
+      "timestamp": "1782362931",
+      "statusDisplay": "Accepted",
+      "lang": "python3",
+      "acceptedAt": "2026-06-25T04:48:51.000Z"
+    },
     {
       "title": "Asteroid Collision",
       "titleSlug": "asteroid-collision",
@@ -199,70 +263,6 @@
       "statusDisplay": "Accepted",
       "lang": "pythondata",
       "acceptedAt": "2026-06-24T06:19:44.000Z"
-    },
-    {
-      "title": "Reshape Data: Melt",
-      "titleSlug": "reshape-data-melt",
-      "timestamp": "1782281835",
-      "statusDisplay": "Accepted",
-      "lang": "pythondata",
-      "acceptedAt": "2026-06-24T06:17:15.000Z"
-    },
-    {
-      "title": "Reshape Data: Pivot",
-      "titleSlug": "reshape-data-pivot",
-      "timestamp": "1782281538",
-      "statusDisplay": "Accepted",
-      "lang": "pythondata",
-      "acceptedAt": "2026-06-24T06:12:18.000Z"
-    },
-    {
-      "title": "Fill Missing Data",
-      "titleSlug": "fill-missing-data",
-      "timestamp": "1782281312",
-      "statusDisplay": "Accepted",
-      "lang": "pythondata",
-      "acceptedAt": "2026-06-24T06:08:32.000Z"
-    },
-    {
-      "title": "Drop Missing Data",
-      "titleSlug": "drop-missing-data",
-      "timestamp": "1782281107",
-      "statusDisplay": "Accepted",
-      "lang": "pythondata",
-      "acceptedAt": "2026-06-24T06:05:07.000Z"
-    },
-    {
-      "title": "Get the Size of a DataFrame",
-      "titleSlug": "get-the-size-of-a-dataframe",
-      "timestamp": "1782280828",
-      "statusDisplay": "Accepted",
-      "lang": "pythondata",
-      "acceptedAt": "2026-06-24T06:00:28.000Z"
-    },
-    {
-      "title": "Evaluate Reverse Polish Notation",
-      "titleSlug": "evaluate-reverse-polish-notation",
-      "timestamp": "1782280582",
-      "statusDisplay": "Accepted",
-      "lang": "python3",
-      "acceptedAt": "2026-06-24T05:56:22.000Z"
-    },
-    {
-      "title": "Number of ZigZag Arrays II",
-      "titleSlug": "number-of-zigzag-arrays-ii",
-      "timestamp": "1782277209",
-      "statusDisplay": "Accepted",
-      "lang": "python3",
-      "acceptedAt": "2026-06-24T05:00:09.000Z"
-    },
-    {
-      "title": "Create a DataFrame from List",
-      "titleSlug": "create-a-dataframe-from-list",
-      "timestamp": "1782276874",
-      "statusDisplay": "Accepted",
-      "lang": "pythondata",
-      "acceptedAt": "2026-06-24T04:54:34.000Z"
     }
   ],
   "source": "LeetCode public GraphQL; no login cookie or browser extension used."

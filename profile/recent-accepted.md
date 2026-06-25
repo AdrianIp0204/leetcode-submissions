@@ -2,26 +2,34 @@
 
 - Username: AdrianIp
 - Profile: https://leetcode.com/u/AdrianIp/
-- Fetched at: 2026-06-24T15:31:14.143Z
-- Ranking: 380633
+- Fetched at: 2026-06-25T15:31:31.927Z
+- Ranking: 375655
 - Display name: AdrianIp
 
 ## Solved
 
-- All: 345 solved / 399 accepted submissions
-- Easy: 278 solved / 329 accepted submissions
-- Medium: 55 solved / 58 accepted submissions
-- Hard: 12 solved / 12 accepted submissions
+- All: 353 solved / 407 accepted submissions
+- Easy: 282 solved / 333 accepted submissions
+- Medium: 58 solved / 61 accepted submissions
+- Hard: 13 solved / 13 accepted submissions
 
 ## Total Attempts
 
-- All: 346 attempted problems / 482 total submissions
-- Easy: 278 attempted problems / 378 total submissions
-- Medium: 55 attempted problems / 83 total submissions
-- Hard: 13 attempted problems / 21 total submissions
+- All: 354 attempted problems / 497 total submissions
+- Easy: 282 attempted problems / 386 total submissions
+- Medium: 58 attempted problems / 88 total submissions
+- Hard: 14 attempted problems / 23 total submissions
 
 ## Recent Accepted
 
+- 2026-06-25T15:20:16.000Z: [Find Valid Emails](https://leetcode.com/problems/find-valid-emails/) (pythondata)
+- 2026-06-25T14:55:11.000Z: [Merge k Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/) (python3)
+- 2026-06-25T13:57:22.000Z: [Find Target Indices After Sorting Array](https://leetcode.com/problems/find-target-indices-after-sorting-array/) (python3)
+- 2026-06-25T13:45:06.000Z: [Find the Distance Value Between Two Arrays](https://leetcode.com/problems/find-the-distance-value-between-two-arrays/) (python3)
+- 2026-06-25T13:06:27.000Z: [Find the Smallest Divisor Given a Threshold](https://leetcode.com/problems/find-the-smallest-divisor-given-a-threshold/) (python3)
+- 2026-06-25T05:26:36.000Z: [Customers Who Never Order](https://leetcode.com/problems/customers-who-never-order/) (pythondata)
+- 2026-06-25T05:06:36.000Z: [Odd Even Linked List](https://leetcode.com/problems/odd-even-linked-list/) (python3)
+- 2026-06-25T04:48:51.000Z: [Count Subarrays With Majority Element I](https://leetcode.com/problems/count-subarrays-with-majority-element-i/) (python3)
 - 2026-06-24T06:54:17.000Z: [Asteroid Collision](https://leetcode.com/problems/asteroid-collision/) (python3)
 - 2026-06-24T06:33:57.000Z: [Count Negative Numbers in a Sorted Matrix](https://leetcode.com/problems/count-negative-numbers-in-a-sorted-matrix/) (python3)
 - 2026-06-24T06:25:03.000Z: [Reshape Data: Concatenate](https://leetcode.com/problems/reshape-data-concatenate/) (pythondata)
@@ -34,11 +42,3 @@
 - 2026-06-24T06:20:59.000Z: [Display the First Three Rows](https://leetcode.com/problems/display-the-first-three-rows/) (pythondata)
 - 2026-06-24T06:20:25.000Z: [Create a DataFrame from List](https://leetcode.com/problems/create-a-dataframe-from-list/) (pythondata)
 - 2026-06-24T06:19:44.000Z: [Method Chaining](https://leetcode.com/problems/method-chaining/) (pythondata)
-- 2026-06-24T06:17:15.000Z: [Reshape Data: Melt](https://leetcode.com/problems/reshape-data-melt/) (pythondata)
-- 2026-06-24T06:12:18.000Z: [Reshape Data: Pivot](https://leetcode.com/problems/reshape-data-pivot/) (pythondata)
-- 2026-06-24T06:08:32.000Z: [Fill Missing Data](https://leetcode.com/problems/fill-missing-data/) (pythondata)
-- 2026-06-24T06:05:07.000Z: [Drop Missing Data](https://leetcode.com/problems/drop-missing-data/) (pythondata)
-- 2026-06-24T06:00:28.000Z: [Get the Size of a DataFrame](https://leetcode.com/problems/get-the-size-of-a-dataframe/) (pythondata)
-- 2026-06-24T05:56:22.000Z: [Evaluate Reverse Polish Notation](https://leetcode.com/problems/evaluate-reverse-polish-notation/) (python3)
-- 2026-06-24T05:00:09.000Z: [Number of ZigZag Arrays II](https://leetcode.com/problems/number-of-zigzag-arrays-ii/) (python3)
-- 2026-06-24T04:54:34.000Z: [Create a DataFrame from List](https://leetcode.com/problems/create-a-dataframe-from-list/) (pythondata)
