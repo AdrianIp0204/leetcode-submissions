@@ -1,10 +1,10 @@
 {
-  "fetchedAt": "2026-06-25T15:31:31.927Z",
+  "fetchedAt": "2026-06-26T15:31:11.459Z",
   "username": "AdrianIp",
   "profile": {
     "realName": "AdrianIp",
     "userAvatar": "https://assets.leetcode.com/users/default_avatar.jpg",
-    "ranking": 375655,
+    "ranking": 360695,
     "reputation": 2,
     "countryName": "Hong Kong",
     "company": null,
@@ -15,95 +15,127 @@
   "solvedByDifficulty": [
     {
       "difficulty": "All",
-      "count": 353,
-      "submissions": 407
+      "count": 357,
+      "submissions": 411
     },
     {
       "difficulty": "Easy",
-      "count": 282,
-      "submissions": 333
+      "count": 284,
+      "submissions": 335
     },
     {
       "difficulty": "Medium",
-      "count": 58,
-      "submissions": 61
+      "count": 59,
+      "submissions": 62
     },
     {
       "difficulty": "Hard",
-      "count": 13,
-      "submissions": 13
+      "count": 14,
+      "submissions": 14
     }
   ],
   "totalByDifficulty": [
     {
       "difficulty": "All",
-      "count": 354,
-      "submissions": 497
+      "count": 358,
+      "submissions": 501
     },
     {
       "difficulty": "Easy",
-      "count": 282,
-      "submissions": 386
+      "count": 284,
+      "submissions": 388
     },
     {
       "difficulty": "Medium",
-      "count": 58,
-      "submissions": 88
+      "count": 59,
+      "submissions": 89
     },
     {
       "difficulty": "Hard",
-      "count": 14,
-      "submissions": 23
+      "count": 15,
+      "submissions": 24
     }
   ],
   "summary": {
     "accepted": {
       "All": {
         "difficulty": "All",
-        "count": 353,
-        "submissions": 407
+        "count": 357,
+        "submissions": 411
       },
       "Easy": {
         "difficulty": "Easy",
-        "count": 282,
-        "submissions": 333
+        "count": 284,
+        "submissions": 335
       },
       "Medium": {
         "difficulty": "Medium",
-        "count": 58,
-        "submissions": 61
+        "count": 59,
+        "submissions": 62
       },
       "Hard": {
         "difficulty": "Hard",
-        "count": 13,
-        "submissions": 13
+        "count": 14,
+        "submissions": 14
       }
     },
     "total": {
       "All": {
         "difficulty": "All",
-        "count": 354,
-        "submissions": 497
+        "count": 358,
+        "submissions": 501
       },
       "Easy": {
         "difficulty": "Easy",
-        "count": 282,
-        "submissions": 386
+        "count": 284,
+        "submissions": 388
       },
       "Medium": {
         "difficulty": "Medium",
-        "count": 58,
-        "submissions": 88
+        "count": 59,
+        "submissions": 89
       },
       "Hard": {
         "difficulty": "Hard",
-        "count": 14,
-        "submissions": 23
+        "count": 15,
+        "submissions": 24
       }
     }
   },
   "contestRanking": null,
   "recentAccepted": [
+    {
+      "title": "Is Subsequence",
+      "titleSlug": "is-subsequence",
+      "timestamp": "1782448901",
+      "statusDisplay": "Accepted",
+      "lang": "python3",
+      "acceptedAt": "2026-06-26T04:41:41.000Z"
+    },
+    {
+      "title": "Kth Largest Element in an Array",
+      "titleSlug": "kth-largest-element-in-an-array",
+      "timestamp": "1782448315",
+      "statusDisplay": "Accepted",
+      "lang": "python3",
+      "acceptedAt": "2026-06-26T04:31:55.000Z"
+    },
+    {
+      "title": "Game Play Analysis I",
+      "titleSlug": "game-play-analysis-i",
+      "timestamp": "1782448043",
+      "statusDisplay": "Accepted",
+      "lang": "pythondata",
+      "acceptedAt": "2026-06-26T04:27:23.000Z"
+    },
+    {
+      "title": "Count Subarrays With Majority Element II",
+      "titleSlug": "count-subarrays-with-majority-element-ii",
+      "timestamp": "1782447742",
+      "statusDisplay": "Accepted",
+      "lang": "python3",
+      "acceptedAt": "2026-06-26T04:22:22.000Z"
+    },
     {
       "title": "Find Valid Emails",
       "titleSlug": "find-valid-emails",
@@ -231,38 +263,6 @@
       "statusDisplay": "Accepted",
       "lang": "pythondata",
       "acceptedAt": "2026-06-24T06:21:53.000Z"
-    },
-    {
-      "title": "Select Data",
-      "titleSlug": "select-data",
-      "timestamp": "1782282079",
-      "statusDisplay": "Accepted",
-      "lang": "pythondata",
-      "acceptedAt": "2026-06-24T06:21:19.000Z"
-    },
-    {
-      "title": "Display the First Three Rows",
-      "titleSlug": "display-the-first-three-rows",
-      "timestamp": "1782282059",
-      "statusDisplay": "Accepted",
-      "lang": "pythondata",
-      "acceptedAt": "2026-06-24T06:20:59.000Z"
-    },
-    {
-      "title": "Create a DataFrame from List",
-      "titleSlug": "create-a-dataframe-from-list",
-      "timestamp": "1782282025",
-      "statusDisplay": "Accepted",
-      "lang": "pythondata",
-      "acceptedAt": "2026-06-24T06:20:25.000Z"
-    },
-    {
-      "title": "Method Chaining",
-      "titleSlug": "method-chaining",
-      "timestamp": "1782281984",
-      "statusDisplay": "Accepted",
-      "lang": "pythondata",
-      "acceptedAt": "2026-06-24T06:19:44.000Z"
     }
   ],
   "source": "LeetCode public GraphQL; no login cookie or browser extension used."

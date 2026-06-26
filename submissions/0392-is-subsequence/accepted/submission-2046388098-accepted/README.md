@@ -12,17 +12,19 @@
 
 ## Pattern
 
-TODO
+Two pointers
 
 ## Key Idea
 
-TODO
+Scan `t` once while advancing an index through `s` only when the next needed
+character is matched.
 
 ## Mistake / Edge Case
 
-TODO
+The empty `s` case is already a subsequence, so return early before indexing
+`s[0]`.
 
 ## Complexity
 
-- Time: TODO
-- Space: TODO
+- Time: O(len(t))
+- Space: O(1)

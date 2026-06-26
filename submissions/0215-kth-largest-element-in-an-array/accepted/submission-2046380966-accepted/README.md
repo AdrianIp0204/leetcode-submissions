@@ -13,17 +13,19 @@
 
 ## Pattern
 
-TODO
+Heap / selection helper
 
 ## Key Idea
 
-TODO
+Use `heapq.nlargest(k, nums)` to keep the `k` largest values, then return the
+last value from that ordered selection.
 
 ## Mistake / Edge Case
 
-TODO
+Duplicates still count as separate elements in the ordering; the heap helper
+preserves that behavior.
 
 ## Complexity
 
-- Time: TODO
-- Space: TODO
+- Time: O(n log k)
+- Space: O(k)

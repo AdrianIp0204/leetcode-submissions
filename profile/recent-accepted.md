@@ -2,26 +2,30 @@
 
 - Username: AdrianIp
 - Profile: https://leetcode.com/u/AdrianIp/
-- Fetched at: 2026-06-25T15:31:31.927Z
-- Ranking: 375655
+- Fetched at: 2026-06-26T15:31:11.459Z
+- Ranking: 360695
 - Display name: AdrianIp
 
 ## Solved
 
-- All: 353 solved / 407 accepted submissions
-- Easy: 282 solved / 333 accepted submissions
-- Medium: 58 solved / 61 accepted submissions
-- Hard: 13 solved / 13 accepted submissions
+- All: 357 solved / 411 accepted submissions
+- Easy: 284 solved / 335 accepted submissions
+- Medium: 59 solved / 62 accepted submissions
+- Hard: 14 solved / 14 accepted submissions
 
 ## Total Attempts
 
-- All: 354 attempted problems / 497 total submissions
-- Easy: 282 attempted problems / 386 total submissions
-- Medium: 58 attempted problems / 88 total submissions
-- Hard: 14 attempted problems / 23 total submissions
+- All: 358 attempted problems / 501 total submissions
+- Easy: 284 attempted problems / 388 total submissions
+- Medium: 59 attempted problems / 89 total submissions
+- Hard: 15 attempted problems / 24 total submissions
 
 ## Recent Accepted
 
+- 2026-06-26T04:41:41.000Z: [Is Subsequence](https://leetcode.com/problems/is-subsequence/) (python3)
+- 2026-06-26T04:31:55.000Z: [Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array/) (python3)
+- 2026-06-26T04:27:23.000Z: [Game Play Analysis I](https://leetcode.com/problems/game-play-analysis-i/) (pythondata)
+- 2026-06-26T04:22:22.000Z: [Count Subarrays With Majority Element II](https://leetcode.com/problems/count-subarrays-with-majority-element-ii/) (python3)
 - 2026-06-25T15:20:16.000Z: [Find Valid Emails](https://leetcode.com/problems/find-valid-emails/) (pythondata)
 - 2026-06-25T14:55:11.000Z: [Merge k Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/) (python3)
 - 2026-06-25T13:57:22.000Z: [Find Target Indices After Sorting Array](https://leetcode.com/problems/find-target-indices-after-sorting-array/) (python3)
@@ -38,7 +42,3 @@
 - 2026-06-24T06:23:21.000Z: [Modify Columns](https://leetcode.com/problems/modify-columns/) (pythondata)
 - 2026-06-24T06:22:32.000Z: [Drop Duplicate Rows](https://leetcode.com/problems/drop-duplicate-rows/) (pythondata)
 - 2026-06-24T06:21:53.000Z: [Create a New Column](https://leetcode.com/problems/create-a-new-column/) (pythondata)
-- 2026-06-24T06:21:19.000Z: [Select Data](https://leetcode.com/problems/select-data/) (pythondata)
-- 2026-06-24T06:20:59.000Z: [Display the First Three Rows](https://leetcode.com/problems/display-the-first-three-rows/) (pythondata)
-- 2026-06-24T06:20:25.000Z: [Create a DataFrame from List](https://leetcode.com/problems/create-a-dataframe-from-list/) (pythondata)
-- 2026-06-24T06:19:44.000Z: [Method Chaining](https://leetcode.com/problems/method-chaining/) (pythondata)

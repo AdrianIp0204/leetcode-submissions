@@ -13,17 +13,19 @@
 
 ## Pattern
 
-TODO
+Group by / aggregate minimum
 
 ## Key Idea
 
-TODO
+Group rows by `player_id` and take the minimum `event_date` as each player's
+first login date.
 
 ## Mistake / Edge Case
 
-TODO
+The output needs one row per player, so aggregate after grouping instead of
+filtering a single global minimum date.
 
 ## Complexity
 
-- Time: TODO
-- Space: TODO
+- Time: O(n)
+- Space: O(p), where `p` is the number of players

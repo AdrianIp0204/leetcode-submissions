@@ -1,33 +1,30 @@
 # Next LeetCode Problems
 
-- Generated at: 2026-06-25T15:32:36.343Z
-- Public solved count: 353
-- Known solved by repo/public-recent evidence: 347
-- Sync warning: repo appears 17 problems behind the public solved count. Run **Collect Submission History** before treating coverage as exact.
+- Generated at: 2026-06-26T15:31:11.782Z
+- Public solved count: 357
+- Known solved by repo/public-recent evidence: 358
 
 ## Queue
 
 1. [424. Longest Repeating Character Replacement](https://leetcode.com/problems/longest-repeating-character-replacement/) - Medium, Sliding window
    - Why: Good first serious window invariant: window size minus max frequency.
-2. [150. Evaluate Reverse Polish Notation](https://leetcode.com/problems/evaluate-reverse-polish-notation/) - Medium, Stack
-   - Why: A direct stack simulation that catches order-of-operation mistakes.
-3. [739. Daily Temperatures](https://leetcode.com/problems/daily-temperatures/) - Medium, Monotonic stack
+2. [739. Daily Temperatures](https://leetcode.com/problems/daily-temperatures/) - Medium, Monotonic stack
    - Why: Important upgrade from simple stack to 'next greater' structure.
-4. [33. Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/) - Medium, Binary search invariant
+3. [33. Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/) - Medium, Binary search invariant
    - Why: Builds real binary-search boundary discipline.
-5. [200. Number of Islands](https://leetcode.com/problems/number-of-islands/) - Medium, Grid DFS/BFS
+4. [200. Number of Islands](https://leetcode.com/problems/number-of-islands/) - Medium, Grid DFS/BFS
    - Why: First must-have graph traversal shape.
-6. [102. Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/) - Medium, Tree BFS
+5. [102. Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/) - Medium, Tree BFS
    - Why: Basic tree traversal with queue state.
-7. [98. Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree/) - Medium, Tree recursion bounds
+6. [98. Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree/) - Medium, Tree recursion bounds
    - Why: Tests whether you preserve constraints through recursion.
-8. [207. Course Schedule](https://leetcode.com/problems/course-schedule/) - Medium, Topological sort
+7. [207. Course Schedule](https://leetcode.com/problems/course-schedule/) - Medium, Topological sort
    - Why: First serious directed-graph dependency problem.
-9. [198. House Robber](https://leetcode.com/problems/house-robber/) - Medium, Dynamic programming
+8. [198. House Robber](https://leetcode.com/problems/house-robber/) - Medium, Dynamic programming
    - Why: Smallest useful DP recurrence: choose/take state compression.
-10. [322. Coin Change](https://leetcode.com/problems/coin-change/) - Medium, Dynamic programming
+9. [322. Coin Change](https://leetcode.com/problems/coin-change/) - Medium, Dynamic programming
    - Why: Good test of bottom-up recurrence and impossible states.
-11. [300. Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence/) - Medium, DP / binary search
+10. [300. Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence/) - Medium, DP / binary search
    - Why: A strong later target after simpler DP feels stable.
 
 ## Rule

@@ -1,9 +1,9 @@
 # Model Answer Coverage
 
-- Generated at: 2026-06-25T15:36:49.595Z
-- Problems in repo: 336
-- Model-answer notes: 299
-- Missing model-answer notes: 37
+- Generated at: 2026-06-26T15:33:02.817Z
+- Problems in repo: 358
+- Model-answer notes: 303
+- Missing model-answer notes: 55
 - Incomplete model-answer notes: 0
 - Notes without matching problem folder: 0
 
@@ -15,13 +15,17 @@ The model-answer track is active. Keep adding notes in batches, prioritizing reu
 
 | Problem | Title | Reason |
 | --- | --- | --- |
+| [0023-merge-k-sorted-lists](../submissions/0023-merge-k-sorted-lists/) | Merge K Sorted Lists | uncovered |
 | [0035-search-insert-position](../submissions/0035-search-insert-position/) | Search Insert Position | uncovered |
 | [0046-permutations](../submissions/0046-permutations/) | Permutations | uncovered |
 | [0050-powx-n](../submissions/0050-powx-n/) | Powx N | uncovered |
+| [0150-evaluate-reverse-polish-notation](../submissions/0150-evaluate-reverse-polish-notation/) | Evaluate Reverse Polish Notation | uncovered |
 | [0182-duplicate-emails](../submissions/0182-duplicate-emails/) | Duplicate Emails | uncovered |
+| [0183-customers-who-never-order](../submissions/0183-customers-who-never-order/) | Customers Who Never Order | uncovered |
 | [0189-rotate-array](../submissions/0189-rotate-array/) | Rotate Array | uncovered |
 | [0196-delete-duplicate-emails](../submissions/0196-delete-duplicate-emails/) | Delete Duplicate Emails | uncovered |
 | [0231-power-of-two](../submissions/0231-power-of-two/) | Power Of Two | uncovered |
+| [0328-odd-even-linked-list](../submissions/0328-odd-even-linked-list/) | Odd Even Linked List | uncovered |
 | [0441-arranging-coins](../submissions/0441-arranging-coins/) | Arranging Coins | uncovered |
 | [0482-license-key-formatting](../submissions/0482-license-key-formatting/) | License Key Formatting | uncovered |
 | [0595-big-countries](../submissions/0595-big-countries/) | Big Countries | uncovered |
@@ -30,21 +34,17 @@ The model-answer track is active. Keep adding notes in batches, prioritizing reu
 | [0620-not-boring-movies](../submissions/0620-not-boring-movies/) | Not Boring Movies | uncovered |
 | [0704-binary-search](../submissions/0704-binary-search/) | Binary Search | uncovered |
 | [0724-find-pivot-index](../submissions/0724-find-pivot-index/) | Find Pivot Index | uncovered |
+| [0735-asteroid-collision](../submissions/0735-asteroid-collision/) | Asteroid Collision | uncovered |
 | [0744-find-smallest-letter-greater-than-target](../submissions/0744-find-smallest-letter-greater-than-target/) | Find Smallest Letter Greater Than Target | uncovered |
 | [1068-product-sales-analysis-i](../submissions/1068-product-sales-analysis-i/) | Product Sales Analysis I | uncovered |
 | [1070-product-sales-analysis-iii](../submissions/1070-product-sales-analysis-iii/) | Product Sales Analysis Iii | uncovered |
 | [1122-relative-sort-array](../submissions/1122-relative-sort-array/) | Relative Sort Array | uncovered |
+| [1283-find-the-smallest-divisor-given-a-threshold](../submissions/1283-find-the-smallest-divisor-given-a-threshold/) | Find The Smallest Divisor Given A Threshold | uncovered |
 | [1346-check-if-n-and-its-double-exist](../submissions/1346-check-if-n-and-its-double-exist/) | Check If N And Its Double Exist | uncovered |
+| [1351-count-negative-numbers-in-a-sorted-matrix](../submissions/1351-count-negative-numbers-in-a-sorted-matrix/) | Count Negative Numbers In A Sorted Matrix | uncovered |
+| [1385-find-the-distance-value-between-two-arrays](../submissions/1385-find-the-distance-value-between-two-arrays/) | Find The Distance Value Between Two Arrays | uncovered |
 | [1732-find-the-highest-altitude](../submissions/1732-find-the-highest-altitude/) | Find The Highest Altitude | uncovered |
 | [1773-count-items-matching-a-rule](../submissions/1773-count-items-matching-a-rule/) | Count Items Matching A Rule | uncovered |
-| [1833-maximum-ice-cream-bars](../submissions/1833-maximum-ice-cream-bars/) | Maximum Ice Cream Bars | uncovered |
-| [1840-maximum-building-height](../submissions/1840-maximum-building-height/) | Maximum Building Height | uncovered |
-| [1991-find-the-middle-index-in-array](../submissions/1991-find-the-middle-index-in-array/) | Find The Middle Index In Array | uncovered |
-| [2000-reverse-prefix-of-word](../submissions/2000-reverse-prefix-of-word/) | Reverse Prefix Of Word | uncovered |
-| [2032-two-out-of-three](../submissions/2032-two-out-of-three/) | Two Out Of Three | uncovered |
-| [2744-find-maximum-number-of-string-pairs](../submissions/2744-find-maximum-number-of-string-pairs/) | Find Maximum Number Of String Pairs | uncovered |
-| [2810-faulty-keyboard](../submissions/2810-faulty-keyboard/) | Faulty Keyboard | uncovered |
-| [2879-display-the-first-three-rows](../submissions/2879-display-the-first-three-rows/) | Display The First Three Rows | uncovered |
 
 ## Existing Model Answers
 
@@ -93,10 +93,10 @@ The model-answer track is active. Keep adding notes in batches, prioritizing reu
 | [0204-count-primes](../notes/model-answers/0204-count-primes.md) | Count Primes |
 | [0205-isomorphic-strings](../notes/model-answers/0205-isomorphic-strings.md) | Isomorphic Strings |
 | [0206-reverse-linked-list](../notes/model-answers/0206-reverse-linked-list.md) | Reverse Linked List |
+| [0215-kth-largest-element-in-an-array](../notes/model-answers/0215-kth-largest-element-in-an-array.md) | Kth Largest Element In An Array |
 | [0217-contains-duplicate](../notes/model-answers/0217-contains-duplicate.md) | Contains Duplicate |
 | [0219-contains-duplicate-ii](../notes/model-answers/0219-contains-duplicate-ii.md) | Contains Duplicate II |
 | [0224-basic-calculator](../notes/model-answers/0224-basic-calculator.md) | Basic Calculator |
 | [0234-palindrome-linked-list](../notes/model-answers/0234-palindrome-linked-list.md) | Palindrome Linked List |
 | [0238-product-of-array-except-self](../notes/model-answers/0238-product-of-array-except-self.md) | Product of Array Except Self |
 | [0242-valid-anagram](../notes/model-answers/0242-valid-anagram.md) | Valid Anagram |
-| [0258-add-digits](../notes/model-answers/0258-add-digits.md) | Add Digits |
