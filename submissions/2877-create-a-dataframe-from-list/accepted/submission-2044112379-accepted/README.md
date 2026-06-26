@@ -12,17 +12,19 @@
 
 ## Pattern
 
-TODO
+DataFrame construction with explicit schema
 
 ## Key Idea
 
-TODO
+Build the dataframe directly from the nested list and assign the required
+`student_id` and `age` column names.
 
 ## Mistake / Edge Case
 
-TODO
+No subjective mistake recorded. Edge case: preserve the given row order and use
+the exact requested column names.
 
 ## Complexity
 
-- Time: TODO
-- Space: TODO
+- Time: O(n)
+- Space: O(n)

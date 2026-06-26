@@ -1,9 +1,9 @@
 # Model Answer Coverage
 
-- Generated at: 2026-06-23T15:36:02.162Z
-- Problems in repo: 326
-- Model-answer notes: 297
-- Missing model-answer notes: 29
+- Generated at: 2026-06-25T15:36:49.595Z
+- Problems in repo: 336
+- Model-answer notes: 299
+- Missing model-answer notes: 37
 - Incomplete model-answer notes: 0
 - Notes without matching problem folder: 0
 
@@ -18,13 +18,21 @@ The model-answer track is active. Keep adding notes in batches, prioritizing reu
 | [0035-search-insert-position](../submissions/0035-search-insert-position/) | Search Insert Position | uncovered |
 | [0046-permutations](../submissions/0046-permutations/) | Permutations | uncovered |
 | [0050-powx-n](../submissions/0050-powx-n/) | Powx N | uncovered |
+| [0182-duplicate-emails](../submissions/0182-duplicate-emails/) | Duplicate Emails | uncovered |
 | [0189-rotate-array](../submissions/0189-rotate-array/) | Rotate Array | uncovered |
+| [0196-delete-duplicate-emails](../submissions/0196-delete-duplicate-emails/) | Delete Duplicate Emails | uncovered |
 | [0231-power-of-two](../submissions/0231-power-of-two/) | Power Of Two | uncovered |
 | [0441-arranging-coins](../submissions/0441-arranging-coins/) | Arranging Coins | uncovered |
 | [0482-license-key-formatting](../submissions/0482-license-key-formatting/) | License Key Formatting | uncovered |
+| [0595-big-countries](../submissions/0595-big-countries/) | Big Countries | uncovered |
+| [0596-classes-with-at-least-5-students](../submissions/0596-classes-with-at-least-5-students/) | Classes With At Least 5 Students | uncovered |
+| [0619-biggest-single-number](../submissions/0619-biggest-single-number/) | Biggest Single Number | uncovered |
+| [0620-not-boring-movies](../submissions/0620-not-boring-movies/) | Not Boring Movies | uncovered |
 | [0704-binary-search](../submissions/0704-binary-search/) | Binary Search | uncovered |
 | [0724-find-pivot-index](../submissions/0724-find-pivot-index/) | Find Pivot Index | uncovered |
 | [0744-find-smallest-letter-greater-than-target](../submissions/0744-find-smallest-letter-greater-than-target/) | Find Smallest Letter Greater Than Target | uncovered |
+| [1068-product-sales-analysis-i](../submissions/1068-product-sales-analysis-i/) | Product Sales Analysis I | uncovered |
+| [1070-product-sales-analysis-iii](../submissions/1070-product-sales-analysis-iii/) | Product Sales Analysis Iii | uncovered |
 | [1122-relative-sort-array](../submissions/1122-relative-sort-array/) | Relative Sort Array | uncovered |
 | [1346-check-if-n-and-its-double-exist](../submissions/1346-check-if-n-and-its-double-exist/) | Check If N And Its Double Exist | uncovered |
 | [1732-find-the-highest-altitude](../submissions/1732-find-the-highest-altitude/) | Find The Highest Altitude | uncovered |
@@ -37,13 +45,6 @@ The model-answer track is active. Keep adding notes in batches, prioritizing reu
 | [2744-find-maximum-number-of-string-pairs](../submissions/2744-find-maximum-number-of-string-pairs/) | Find Maximum Number Of String Pairs | uncovered |
 | [2810-faulty-keyboard](../submissions/2810-faulty-keyboard/) | Faulty Keyboard | uncovered |
 | [2879-display-the-first-three-rows](../submissions/2879-display-the-first-three-rows/) | Display The First Three Rows | uncovered |
-| [2881-create-a-new-column](../submissions/2881-create-a-new-column/) | Create A New Column | uncovered |
-| [2884-modify-columns](../submissions/2884-modify-columns/) | Modify Columns | uncovered |
-| [2885-rename-columns](../submissions/2885-rename-columns/) | Rename Columns | uncovered |
-| [3174-clear-digits](../submissions/3174-clear-digits/) | Clear Digits | uncovered |
-| [3612-process-string-with-special-operations-i](../submissions/3612-process-string-with-special-operations-i/) | Process String With Special Operations I | uncovered |
-| [3614-process-string-with-special-operations-ii](../submissions/3614-process-string-with-special-operations-ii/) | Process String With Special Operations Ii | uncovered |
-| [3712-sum-of-elements-with-frequency-divisible-by-k](../submissions/3712-sum-of-elements-with-frequency-divisible-by-k/) | Sum Of Elements With Frequency Divisible By K | uncovered |
 
 ## Existing Model Answers
 
