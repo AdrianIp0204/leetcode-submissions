@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-06-26T15:33:02.409Z",
+  "generatedAt": "2026-06-27T15:32:58.479Z",
   "totals": {
     "problemFolders": 358,
-    "publicSolved": 357,
-    "estimatedSolvedGap": 0,
+    "publicSolved": 365,
+    "estimatedSolvedGap": 7,
     "problemsWithAttempts": 48,
     "problemsNeedingReflection": 131,
     "problemsWithUnknownStatus": 137
@@ -6940,13 +6940,13 @@
     {
       "kind": "possible_problem_statement",
       "file": "profile/leetcode-public.json",
-      "line": 172,
+      "line": 236,
       "text": "\"title\": \"Find the Smallest Divisor Given a Threshold\","
     },
     {
       "kind": "possible_problem_statement",
       "file": "profile/recent-accepted.md",
-      "line": 33,
+      "line": 41,
       "text": "- 2026-06-25T13:06:27.000Z: [Find the Smallest Divisor Given a Threshold](https://leetcode.com/problems/find-the-smallest-divisor-given-a-threshold/) (python3)"
     },
     {
