@@ -1,51 +1,50 @@
 # Portfolio Audit
 
-- Generated at: 2026-06-27T15:32:58.479Z
-- Local problem folders: 358
-- Public solved count: 365
-- Estimated solved-count gap: 7
-- Problems with real attempt files: 48
-- Problems with multiple languages or recorded language variants: 54
-- Problems needing reflection cleanup: 131
-- Problems with unknown/missing status metadata: 137
+- Generated at: 2026-06-28T15:31:32.202Z
+- Local problem folders: 367
+- Public solved count: 366
+- Estimated solved-count gap: 0
+- Problems with real attempt files: 54
+- Problems with multiple languages or recorded language variants: 60
+- Problems needing reflection cleanup: 140
+- Problems with unknown/missing status metadata: 146
 
 ## Verdict
 
 This repo is close, but it should not be published until the blockers below are cleared. The public version should present the repo as a learning trace: accepted code, failed attempts when available, short reflections, weakness reports, and honest AI-assisted curation.
 
-Current blockers: the source-code sync gap, missing reflection fields, possible copied problem-statement flags.
+Current blockers: missing reflection fields, possible copied problem-statement flags.
 
 ## Language Coverage
 
 | Language | Problems |
 | --- | --- |
 | cpp | 10 |
-| md | 48 |
-| python | 223 |
-| sql-or-text | 9 |
+| md | 54 |
+| python | 228 |
+| sql-or-text | 10 |
 | typescript | 5 |
 
 ## Pattern Coverage
 
 | Pattern | Problems |
 | --- | --- |
-| arrays-and-strings | 95 |
+| arrays-and-strings | 96 |
 | binary-search | 1 |
 | dynamic-programming | 2 |
 | hashing-and-counting | 14 |
 | linked-list | 4 |
-| math-and-digits | 93 |
+| math-and-digits | 94 |
 | sql | 4 |
 | stack | 3 |
 | tree-and-graph | 1 |
 | two-pointers | 4 |
-| uncategorized | 137 |
+| uncategorized | 144 |
 
 ## Weakness Signals
 
-- 7 public solved problems are not yet represented by local source folders.
-- 131 of 358 problem READMEs still need real reflection.
-- 137 submissions have unknown or missing status metadata.
+- 140 of 367 problem READMEs still need real reflection.
+- 146 submissions have unknown or missing status metadata.
 - Failed attempts are preserved when real source exists; keep capturing them for new work.
 - A TypeScript track exists; expand it deliberately rather than scattering one-off language experiments.
 - Tree/graph/DP coverage is thin relative to array, string, math, and simple loop problems.
@@ -71,10 +70,13 @@ The scan is heuristic. Review flagged files manually before making the repositor
 
 | Problem | Status | Needs |
 | --- | --- | --- |
+| [0016-3sum-closest](../submissions/0016-3sum-closest/) | Not recorded | key idea, complexity |
 | [0023-merge-k-sorted-lists](../submissions/0023-merge-k-sorted-lists/) | Not recorded | key idea, complexity |
+| [0024-swap-nodes-in-pairs](../submissions/0024-swap-nodes-in-pairs/) | Not recorded | key idea, complexity |
 | [0035-search-insert-position](../submissions/0035-search-insert-position/) | Not recorded | key idea, complexity |
 | [0046-permutations](../submissions/0046-permutations/) | Not recorded | key idea, complexity |
 | [0050-powx-n](../submissions/0050-powx-n/) | Not recorded | key idea, complexity |
+| [0056-merge-intervals](../submissions/0056-merge-intervals/) | Not recorded | key idea, complexity |
 | [0077-combinations](../submissions/0077-combinations/) | Not recorded | key idea, complexity |
 | [0150-evaluate-reverse-polish-notation](../submissions/0150-evaluate-reverse-polish-notation/) | Not recorded | key idea, complexity |
 | [0182-duplicate-emails](../submissions/0182-duplicate-emails/) | Not recorded | key idea, complexity |
@@ -88,9 +90,6 @@ The scan is heuristic. Review flagged files manually before making the repositor
 | [0328-odd-even-linked-list](../submissions/0328-odd-even-linked-list/) | Not recorded | key idea, complexity |
 | [0367-valid-perfect-square](../submissions/0367-valid-perfect-square/) | Not recorded | key idea, complexity |
 | [0383-ransom-note](../submissions/0383-ransom-note/) | Not recorded | key idea, complexity |
-| [0392-is-subsequence](../submissions/0392-is-subsequence/) | Not recorded | key idea, complexity |
-| [0441-arranging-coins](../submissions/0441-arranging-coins/) | Not recorded | key idea, complexity |
-| [0442-find-all-duplicates-in-an-array](../submissions/0442-find-all-duplicates-in-an-array/) | Not recorded | key idea, complexity |
 
 ## AI-Assisted Disclosure Draft
 
