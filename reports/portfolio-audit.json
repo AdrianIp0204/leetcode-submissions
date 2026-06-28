@@ -1,32 +1,32 @@
 {
-  "generatedAt": "2026-06-25T15:36:15.698Z",
+  "generatedAt": "2026-06-27T15:32:58.479Z",
   "totals": {
-    "problemFolders": 336,
-    "publicSolved": 353,
-    "estimatedSolvedGap": 17,
-    "problemsWithAttempts": 44,
-    "problemsNeedingReflection": 109,
-    "problemsWithUnknownStatus": 115
+    "problemFolders": 358,
+    "publicSolved": 365,
+    "estimatedSolvedGap": 7,
+    "problemsWithAttempts": 48,
+    "problemsNeedingReflection": 131,
+    "problemsWithUnknownStatus": 137
   },
   "byLanguage": {
     "cpp": 10,
-    "md": 44,
-    "python": 221,
-    "sql-or-text": 7,
+    "md": 48,
+    "python": 223,
+    "sql-or-text": 9,
     "typescript": 5
   },
   "byPattern": {
-    "arrays-and-strings": 91,
+    "arrays-and-strings": 95,
     "binary-search": 1,
     "dynamic-programming": 2,
     "hashing-and-counting": 14,
-    "linked-list": 3,
-    "math-and-digits": 92,
+    "linked-list": 4,
+    "math-and-digits": 93,
     "sql": 4,
     "stack": 3,
     "tree-and-graph": 1,
     "two-pointers": 4,
-    "uncategorized": 121
+    "uncategorized": 137
   },
   "problems": [
     {
@@ -360,6 +360,28 @@
       "acceptedVariantFiles": [],
       "attemptFiles": [],
       "languages": [
+        "python"
+      ]
+    },
+    {
+      "id": 23,
+      "folder": "0023-merge-k-sorted-lists",
+      "slug": "merge-k-sorted-lists",
+      "title": "Merge K Sorted Lists",
+      "pattern": "uncategorized",
+      "hasReadme": false,
+      "status": "Not recorded",
+      "todoCount": 0,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [
+        "attempts/submission-2045897290-time-limit-exceeded/README.md",
+        "attempts/submission-2045897290-time-limit-exceeded/solution.py"
+      ],
+      "languages": [
+        "md",
         "python"
       ]
     },
@@ -736,6 +758,22 @@
       ]
     },
     {
+      "id": 150,
+      "folder": "0150-evaluate-reverse-polish-notation",
+      "slug": "evaluate-reverse-polish-notation",
+      "title": "Evaluate Reverse Polish Notation",
+      "pattern": "uncategorized",
+      "hasReadme": false,
+      "status": "Not recorded",
+      "todoCount": 0,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": []
+    },
+    {
       "id": 151,
       "folder": "0151-reverse-words-in-a-string",
       "slug": "reverse-words-in-a-string",
@@ -892,6 +930,22 @@
       "languages": []
     },
     {
+      "id": 183,
+      "folder": "0183-customers-who-never-order",
+      "slug": "customers-who-never-order",
+      "title": "Customers Who Never Order",
+      "pattern": "uncategorized",
+      "hasReadme": false,
+      "status": "Not recorded",
+      "todoCount": 0,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": []
+    },
+    {
       "id": 189,
       "folder": "0189-rotate-array",
       "slug": "rotate-array",
@@ -1032,6 +1086,22 @@
       "languages": [
         "python"
       ]
+    },
+    {
+      "id": 215,
+      "folder": "0215-kth-largest-element-in-an-array",
+      "slug": "kth-largest-element-in-an-array",
+      "title": "Kth Largest Element In An Array",
+      "pattern": "arrays-and-strings",
+      "hasReadme": false,
+      "status": "Not recorded",
+      "todoCount": 0,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": []
     },
     {
       "id": 217,
@@ -1308,6 +1378,22 @@
       "languages": []
     },
     {
+      "id": 328,
+      "folder": "0328-odd-even-linked-list",
+      "slug": "odd-even-linked-list",
+      "title": "Odd Even Linked List",
+      "pattern": "linked-list",
+      "hasReadme": false,
+      "status": "Not recorded",
+      "todoCount": 0,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": []
+    },
+    {
       "id": 342,
       "folder": "0342-power-of-four",
       "slug": "power-of-four",
@@ -1514,6 +1600,22 @@
         "md",
         "python"
       ]
+    },
+    {
+      "id": 392,
+      "folder": "0392-is-subsequence",
+      "slug": "is-subsequence",
+      "title": "Is Subsequence",
+      "pattern": "uncategorized",
+      "hasReadme": false,
+      "status": "Not recorded",
+      "todoCount": 0,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": []
     },
     {
       "id": 409,
@@ -1750,6 +1852,22 @@
       "languages": [
         "python"
       ]
+    },
+    {
+      "id": 511,
+      "folder": "0511-game-play-analysis-i",
+      "slug": "game-play-analysis-i",
+      "title": "Game Play Analysis I",
+      "pattern": "uncategorized",
+      "hasReadme": false,
+      "status": "Not recorded",
+      "todoCount": 0,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": []
     },
     {
       "id": 520,
@@ -2134,6 +2252,22 @@
       "languages": [
         "python"
       ]
+    },
+    {
+      "id": 735,
+      "folder": "0735-asteroid-collision",
+      "slug": "asteroid-collision",
+      "title": "Asteroid Collision",
+      "pattern": "uncategorized",
+      "hasReadme": false,
+      "status": "Not recorded",
+      "todoCount": 0,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": []
     },
     {
       "id": 744,
@@ -2790,6 +2924,30 @@
       ]
     },
     {
+      "id": 1283,
+      "folder": "1283-find-the-smallest-divisor-given-a-threshold",
+      "slug": "find-the-smallest-divisor-given-a-threshold",
+      "title": "Find The Smallest Divisor Given A Threshold",
+      "pattern": "uncategorized",
+      "hasReadme": false,
+      "status": "Not recorded",
+      "todoCount": 0,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [
+        "attempts/submission-2045801091-wrong-answer/README.md",
+        "attempts/submission-2045801091-wrong-answer/solution.py",
+        "attempts/submission-2045802288-time-limit-exceeded/README.md",
+        "attempts/submission-2045802288-time-limit-exceeded/solution.py"
+      ],
+      "languages": [
+        "md",
+        "python"
+      ]
+    },
+    {
       "id": 1295,
       "folder": "1295-find-numbers-with-even-number-of-digits",
       "slug": "find-numbers-with-even-number-of-digits",
@@ -2882,6 +3040,22 @@
       "languages": []
     },
     {
+      "id": 1351,
+      "folder": "1351-count-negative-numbers-in-a-sorted-matrix",
+      "slug": "count-negative-numbers-in-a-sorted-matrix",
+      "title": "Count Negative Numbers In A Sorted Matrix",
+      "pattern": "math-and-digits",
+      "hasReadme": false,
+      "status": "Not recorded",
+      "todoCount": 0,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": []
+    },
+    {
       "id": 1365,
       "folder": "1365-how-many-numbers-are-smaller-than-the-current-number",
       "slug": "how-many-numbers-are-smaller-than-the-current-number",
@@ -2906,6 +3080,22 @@
       "folder": "1374-generate-a-string-with-characters-that-have-odd-counts",
       "slug": "generate-a-string-with-characters-that-have-odd-counts",
       "title": "Generate A String With Characters That Have Odd Counts",
+      "pattern": "arrays-and-strings",
+      "hasReadme": false,
+      "status": "Not recorded",
+      "todoCount": 0,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": []
+    },
+    {
+      "id": 1385,
+      "folder": "1385-find-the-distance-value-between-two-arrays",
+      "slug": "find-the-distance-value-between-two-arrays",
+      "title": "Find The Distance Value Between Two Arrays",
       "pattern": "arrays-and-strings",
       "hasReadme": false,
       "status": "Not recorded",
@@ -3950,6 +4140,22 @@
       "languages": [
         "python"
       ]
+    },
+    {
+      "id": 2089,
+      "folder": "2089-find-target-indices-after-sorting-array",
+      "slug": "find-target-indices-after-sorting-array",
+      "title": "Find Target Indices After Sorting Array",
+      "pattern": "arrays-and-strings",
+      "hasReadme": false,
+      "status": "Not recorded",
+      "todoCount": 0,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": []
     },
     {
       "id": 2095,
@@ -5142,6 +5348,22 @@
       "languages": []
     },
     {
+      "id": 2878,
+      "folder": "2878-get-the-size-of-a-dataframe",
+      "slug": "get-the-size-of-a-dataframe",
+      "title": "Get The Size Of A Dataframe",
+      "pattern": "uncategorized",
+      "hasReadme": false,
+      "status": "Not recorded",
+      "todoCount": 0,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": []
+    },
+    {
       "id": 2879,
       "folder": "2879-display-the-first-three-rows",
       "slug": "display-the-first-three-rows",
@@ -5206,6 +5428,28 @@
       "languages": []
     },
     {
+      "id": 2883,
+      "folder": "2883-drop-missing-data",
+      "slug": "drop-missing-data",
+      "title": "Drop Missing Data",
+      "pattern": "uncategorized",
+      "hasReadme": false,
+      "status": "Not recorded",
+      "todoCount": 0,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [
+        "attempts/submission-2044194377-wrong-answer/README.md",
+        "attempts/submission-2044194377-wrong-answer/solution.txt"
+      ],
+      "languages": [
+        "md",
+        "sql-or-text"
+      ]
+    },
+    {
       "id": 2884,
       "folder": "2884-modify-columns",
       "slug": "modify-columns",
@@ -5254,10 +5498,74 @@
       "languages": []
     },
     {
+      "id": 2887,
+      "folder": "2887-fill-missing-data",
+      "slug": "fill-missing-data",
+      "title": "Fill Missing Data",
+      "pattern": "uncategorized",
+      "hasReadme": false,
+      "status": "Not recorded",
+      "todoCount": 0,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": []
+    },
+    {
       "id": 2888,
       "folder": "2888-reshape-data-concatenate",
       "slug": "reshape-data-concatenate",
       "title": "Reshape Data Concatenate",
+      "pattern": "uncategorized",
+      "hasReadme": false,
+      "status": "Not recorded",
+      "todoCount": 0,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": []
+    },
+    {
+      "id": 2889,
+      "folder": "2889-reshape-data-pivot",
+      "slug": "reshape-data-pivot",
+      "title": "Reshape Data Pivot",
+      "pattern": "uncategorized",
+      "hasReadme": false,
+      "status": "Not recorded",
+      "todoCount": 0,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": []
+    },
+    {
+      "id": 2890,
+      "folder": "2890-reshape-data-melt",
+      "slug": "reshape-data-melt",
+      "title": "Reshape Data Melt",
+      "pattern": "uncategorized",
+      "hasReadme": false,
+      "status": "Not recorded",
+      "todoCount": 0,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": []
+    },
+    {
+      "id": 2891,
+      "folder": "2891-method-chaining",
+      "slug": "method-chaining",
+      "title": "Method Chaining",
       "pattern": "uncategorized",
       "hasReadme": false,
       "status": "Not recorded",
@@ -5796,6 +6104,34 @@
       ]
     },
     {
+      "id": 3436,
+      "folder": "3436-find-valid-emails",
+      "slug": "find-valid-emails",
+      "title": "Find Valid Emails",
+      "pattern": "uncategorized",
+      "hasReadme": false,
+      "status": "Not recorded",
+      "todoCount": 0,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [
+        "attempts/submission-2045920640-wrong-answer/README.md",
+        "attempts/submission-2045920640-wrong-answer/solution.txt",
+        "attempts/submission-2045921794-wrong-answer/README.md",
+        "attempts/submission-2045921794-wrong-answer/solution.txt",
+        "attempts/submission-2045922418-wrong-answer/README.md",
+        "attempts/submission-2045922418-wrong-answer/solution.txt",
+        "attempts/submission-2045923150-wrong-answer/README.md",
+        "attempts/submission-2045923150-wrong-answer/solution.txt"
+      ],
+      "languages": [
+        "md",
+        "sql-or-text"
+      ]
+    },
+    {
       "id": 3451,
       "folder": "3451-find-invalid-ip-addresses",
       "slug": "find-invalid-ip-addresses",
@@ -6210,6 +6546,22 @@
       "languages": []
     },
     {
+      "id": 3700,
+      "folder": "3700-number-of-zigzag-arrays-ii",
+      "slug": "number-of-zigzag-arrays-ii",
+      "title": "Number Of Zigzag Arrays Ii",
+      "pattern": "arrays-and-strings",
+      "hasReadme": false,
+      "status": "Not recorded",
+      "todoCount": 0,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": []
+    },
+    {
       "id": 3701,
       "folder": "3701-compute-alternating-sum",
       "slug": "compute-alternating-sum",
@@ -6250,6 +6602,38 @@
       "folder": "3731-find-missing-elements",
       "slug": "find-missing-elements",
       "title": "Find Missing Elements",
+      "pattern": "uncategorized",
+      "hasReadme": false,
+      "status": "Not recorded",
+      "todoCount": 0,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": []
+    },
+    {
+      "id": 3737,
+      "folder": "3737-count-subarrays-with-majority-element-i",
+      "slug": "count-subarrays-with-majority-element-i",
+      "title": "Count Subarrays With Majority Element I",
+      "pattern": "uncategorized",
+      "hasReadme": false,
+      "status": "Not recorded",
+      "todoCount": 0,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": []
+    },
+    {
+      "id": 3739,
+      "folder": "3739-count-subarrays-with-majority-element-ii",
+      "slug": "count-subarrays-with-majority-element-ii",
+      "title": "Count Subarrays With Majority Element Ii",
       "pattern": "uncategorized",
       "hasReadme": false,
       "status": "Not recorded",
@@ -6556,19 +6940,37 @@
     {
       "kind": "possible_problem_statement",
       "file": "profile/leetcode-public.json",
-      "line": 140,
+      "line": 236,
       "text": "\"title\": \"Find the Smallest Divisor Given a Threshold\","
     },
     {
       "kind": "possible_problem_statement",
       "file": "profile/recent-accepted.md",
-      "line": 29,
+      "line": 41,
       "text": "- 2026-06-25T13:06:27.000Z: [Find the Smallest Divisor Given a Threshold](https://leetcode.com/problems/find-the-smallest-divisor-given-a-threshold/) (python3)"
+    },
+    {
+      "kind": "possible_problem_statement",
+      "file": "submissions/1283-find-the-smallest-divisor-given-a-threshold/accepted/submission-2045810985-accepted/README.md",
+      "line": 1,
+      "text": "# Find the Smallest Divisor Given a Threshold"
+    },
+    {
+      "kind": "possible_problem_statement",
+      "file": "submissions/1283-find-the-smallest-divisor-given-a-threshold/attempts/submission-2045801091-wrong-answer/README.md",
+      "line": 1,
+      "text": "# Find the Smallest Divisor Given a Threshold"
+    },
+    {
+      "kind": "possible_problem_statement",
+      "file": "submissions/1283-find-the-smallest-divisor-given-a-threshold/attempts/submission-2045802288-time-limit-exceeded/README.md",
+      "line": 1,
+      "text": "# Find the Smallest Divisor Given a Threshold"
     }
   ],
   "weaknessSignals": [
-    "109 of 336 problem READMEs still need real reflection.",
-    "115 submissions have unknown or missing status metadata.",
+    "131 of 358 problem READMEs still need real reflection.",
+    "137 submissions have unknown or missing status metadata.",
     "Failed attempts are preserved when real source exists; keep capturing them for new work.",
     "A TypeScript track exists; expand it deliberately rather than scattering one-off language experiments.",
     "Tree/graph/DP coverage is thin relative to array, string, math, and simple loop problems."

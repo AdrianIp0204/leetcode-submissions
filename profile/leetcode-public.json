@@ -1,10 +1,10 @@
 {
-  "fetchedAt": "2026-06-25T15:31:31.927Z",
+  "fetchedAt": "2026-06-27T15:31:18.831Z",
   "username": "AdrianIp",
   "profile": {
     "realName": "AdrianIp",
     "userAvatar": "https://assets.leetcode.com/users/default_avatar.jpg",
-    "ranking": 375655,
+    "ranking": 353012,
     "reputation": 2,
     "countryName": "Hong Kong",
     "company": null,
@@ -15,95 +15,191 @@
   "solvedByDifficulty": [
     {
       "difficulty": "All",
-      "count": 353,
-      "submissions": 407
+      "count": 365,
+      "submissions": 419
     },
     {
       "difficulty": "Easy",
-      "count": 282,
-      "submissions": 333
+      "count": 287,
+      "submissions": 338
     },
     {
       "difficulty": "Medium",
-      "count": 58,
-      "submissions": 61
+      "count": 64,
+      "submissions": 67
     },
     {
       "difficulty": "Hard",
-      "count": 13,
-      "submissions": 13
+      "count": 14,
+      "submissions": 14
     }
   ],
   "totalByDifficulty": [
     {
       "difficulty": "All",
-      "count": 354,
-      "submissions": 497
+      "count": 366,
+      "submissions": 516
     },
     {
       "difficulty": "Easy",
-      "count": 282,
-      "submissions": 386
+      "count": 287,
+      "submissions": 394
     },
     {
       "difficulty": "Medium",
-      "count": 58,
-      "submissions": 88
+      "count": 64,
+      "submissions": 98
     },
     {
       "difficulty": "Hard",
-      "count": 14,
-      "submissions": 23
+      "count": 15,
+      "submissions": 24
     }
   ],
   "summary": {
     "accepted": {
       "All": {
         "difficulty": "All",
-        "count": 353,
-        "submissions": 407
+        "count": 365,
+        "submissions": 419
       },
       "Easy": {
         "difficulty": "Easy",
-        "count": 282,
-        "submissions": 333
+        "count": 287,
+        "submissions": 338
       },
       "Medium": {
         "difficulty": "Medium",
-        "count": 58,
-        "submissions": 61
+        "count": 64,
+        "submissions": 67
       },
       "Hard": {
         "difficulty": "Hard",
-        "count": 13,
-        "submissions": 13
+        "count": 14,
+        "submissions": 14
       }
     },
     "total": {
       "All": {
         "difficulty": "All",
-        "count": 354,
-        "submissions": 497
+        "count": 366,
+        "submissions": 516
       },
       "Easy": {
         "difficulty": "Easy",
-        "count": 282,
-        "submissions": 386
+        "count": 287,
+        "submissions": 394
       },
       "Medium": {
         "difficulty": "Medium",
-        "count": 58,
-        "submissions": 88
+        "count": 64,
+        "submissions": 98
       },
       "Hard": {
         "difficulty": "Hard",
-        "count": 14,
-        "submissions": 23
+        "count": 15,
+        "submissions": 24
       }
     }
   },
   "contestRanking": null,
   "recentAccepted": [
+    {
+      "title": "Sort the Students by Their Kth Score",
+      "titleSlug": "sort-the-students-by-their-kth-score",
+      "timestamp": "1782571458",
+      "statusDisplay": "Accepted",
+      "lang": "python3",
+      "acceptedAt": "2026-06-27T14:44:18.000Z"
+    },
+    {
+      "title": "Find Indices of Stable Mountains",
+      "titleSlug": "find-indices-of-stable-mountains",
+      "timestamp": "1782571147",
+      "statusDisplay": "Accepted",
+      "lang": "python3",
+      "acceptedAt": "2026-06-27T14:39:07.000Z"
+    },
+    {
+      "title": "Maximum Average Subarray I",
+      "titleSlug": "maximum-average-subarray-i",
+      "timestamp": "1782564580",
+      "statusDisplay": "Accepted",
+      "lang": "python3",
+      "acceptedAt": "2026-06-27T12:49:40.000Z"
+    },
+    {
+      "title": "Merge Intervals",
+      "titleSlug": "merge-intervals",
+      "timestamp": "1782551308",
+      "statusDisplay": "Accepted",
+      "lang": "python3",
+      "acceptedAt": "2026-06-27T09:08:28.000Z"
+    },
+    {
+      "title": "Swap Nodes in Pairs",
+      "titleSlug": "swap-nodes-in-pairs",
+      "timestamp": "1782549881",
+      "statusDisplay": "Accepted",
+      "lang": "python3",
+      "acceptedAt": "2026-06-27T08:44:41.000Z"
+    },
+    {
+      "title": "3Sum Closest",
+      "titleSlug": "3sum-closest",
+      "timestamp": "1782549501",
+      "statusDisplay": "Accepted",
+      "lang": "python3",
+      "acceptedAt": "2026-06-27T08:38:21.000Z"
+    },
+    {
+      "title": "Fix Names in a Table",
+      "titleSlug": "fix-names-in-a-table",
+      "timestamp": "1782548359",
+      "statusDisplay": "Accepted",
+      "lang": "pythondata",
+      "acceptedAt": "2026-06-27T08:19:19.000Z"
+    },
+    {
+      "title": "Find the Maximum Number of Elements in Subset",
+      "titleSlug": "find-the-maximum-number-of-elements-in-subset",
+      "timestamp": "1782548006",
+      "statusDisplay": "Accepted",
+      "lang": "python3",
+      "acceptedAt": "2026-06-27T08:13:26.000Z"
+    },
+    {
+      "title": "Is Subsequence",
+      "titleSlug": "is-subsequence",
+      "timestamp": "1782448901",
+      "statusDisplay": "Accepted",
+      "lang": "python3",
+      "acceptedAt": "2026-06-26T04:41:41.000Z"
+    },
+    {
+      "title": "Kth Largest Element in an Array",
+      "titleSlug": "kth-largest-element-in-an-array",
+      "timestamp": "1782448315",
+      "statusDisplay": "Accepted",
+      "lang": "python3",
+      "acceptedAt": "2026-06-26T04:31:55.000Z"
+    },
+    {
+      "title": "Game Play Analysis I",
+      "titleSlug": "game-play-analysis-i",
+      "timestamp": "1782448043",
+      "statusDisplay": "Accepted",
+      "lang": "pythondata",
+      "acceptedAt": "2026-06-26T04:27:23.000Z"
+    },
+    {
+      "title": "Count Subarrays With Majority Element II",
+      "titleSlug": "count-subarrays-with-majority-element-ii",
+      "timestamp": "1782447742",
+      "statusDisplay": "Accepted",
+      "lang": "python3",
+      "acceptedAt": "2026-06-26T04:22:22.000Z"
+    },
     {
       "title": "Find Valid Emails",
       "titleSlug": "find-valid-emails",
@@ -167,102 +263,6 @@
       "statusDisplay": "Accepted",
       "lang": "python3",
       "acceptedAt": "2026-06-25T04:48:51.000Z"
-    },
-    {
-      "title": "Asteroid Collision",
-      "titleSlug": "asteroid-collision",
-      "timestamp": "1782284057",
-      "statusDisplay": "Accepted",
-      "lang": "python3",
-      "acceptedAt": "2026-06-24T06:54:17.000Z"
-    },
-    {
-      "title": "Count Negative Numbers in a Sorted Matrix",
-      "titleSlug": "count-negative-numbers-in-a-sorted-matrix",
-      "timestamp": "1782282837",
-      "statusDisplay": "Accepted",
-      "lang": "python3",
-      "acceptedAt": "2026-06-24T06:33:57.000Z"
-    },
-    {
-      "title": "Reshape Data: Concatenate",
-      "titleSlug": "reshape-data-concatenate",
-      "timestamp": "1782282303",
-      "statusDisplay": "Accepted",
-      "lang": "pythondata",
-      "acceptedAt": "2026-06-24T06:25:03.000Z"
-    },
-    {
-      "title": "Change Data Type",
-      "titleSlug": "change-data-type",
-      "timestamp": "1782282274",
-      "statusDisplay": "Accepted",
-      "lang": "pythondata",
-      "acceptedAt": "2026-06-24T06:24:34.000Z"
-    },
-    {
-      "title": "Rename Columns",
-      "titleSlug": "rename-columns",
-      "timestamp": "1782282244",
-      "statusDisplay": "Accepted",
-      "lang": "pythondata",
-      "acceptedAt": "2026-06-24T06:24:04.000Z"
-    },
-    {
-      "title": "Modify Columns",
-      "titleSlug": "modify-columns",
-      "timestamp": "1782282201",
-      "statusDisplay": "Accepted",
-      "lang": "pythondata",
-      "acceptedAt": "2026-06-24T06:23:21.000Z"
-    },
-    {
-      "title": "Drop Duplicate Rows",
-      "titleSlug": "drop-duplicate-rows",
-      "timestamp": "1782282152",
-      "statusDisplay": "Accepted",
-      "lang": "pythondata",
-      "acceptedAt": "2026-06-24T06:22:32.000Z"
-    },
-    {
-      "title": "Create a New Column",
-      "titleSlug": "create-a-new-column",
-      "timestamp": "1782282113",
-      "statusDisplay": "Accepted",
-      "lang": "pythondata",
-      "acceptedAt": "2026-06-24T06:21:53.000Z"
-    },
-    {
-      "title": "Select Data",
-      "titleSlug": "select-data",
-      "timestamp": "1782282079",
-      "statusDisplay": "Accepted",
-      "lang": "pythondata",
-      "acceptedAt": "2026-06-24T06:21:19.000Z"
-    },
-    {
-      "title": "Display the First Three Rows",
-      "titleSlug": "display-the-first-three-rows",
-      "timestamp": "1782282059",
-      "statusDisplay": "Accepted",
-      "lang": "pythondata",
-      "acceptedAt": "2026-06-24T06:20:59.000Z"
-    },
-    {
-      "title": "Create a DataFrame from List",
-      "titleSlug": "create-a-dataframe-from-list",
-      "timestamp": "1782282025",
-      "statusDisplay": "Accepted",
-      "lang": "pythondata",
-      "acceptedAt": "2026-06-24T06:20:25.000Z"
-    },
-    {
-      "title": "Method Chaining",
-      "titleSlug": "method-chaining",
-      "timestamp": "1782281984",
-      "statusDisplay": "Accepted",
-      "lang": "pythondata",
-      "acceptedAt": "2026-06-24T06:19:44.000Z"
     }
   ],
   "source": "LeetCode public GraphQL; no login cookie or browser extension used."

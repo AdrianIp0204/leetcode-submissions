@@ -1,12 +1,12 @@
 # Weakness Report
 
-- Generated at: 2026-06-25T15:36:15.698Z
-- Problems audited: 336
+- Generated at: 2026-06-27T15:32:58.479Z
+- Problems audited: 358
 
 ## Current Diagnosis
 
-- Reflection debt remains a public-readiness issue: 109 problem READMEs still need filled Key Idea and Complexity sections.
-- Status metadata still needs cleanup for 115 older submissions.
+- Reflection debt remains a public-readiness issue: 131 problem READMEs still need filled Key Idea and Complexity sections.
+- Status metadata still needs cleanup for 137 older submissions.
 - Failed attempts preserved in repo: yes. Keep capturing real failed attempts for new work instead of reconstructing old ones from memory.
 - TypeScript track present: yes. Expand it deliberately as part of JS/TS fluency for Morrow/Core work.
 
@@ -14,7 +14,7 @@
 
 | Area | Current Count | Action |
 | --- | --- | --- |
-| Linked list pointer work | 3 | Do list problems slowly and draw pointer movement before coding. |
+| Linked list pointer work | 4 | Do list problems slowly and draw pointer movement before coding. |
 | Stack and monotonic stack | 3 | Move from simple stack simulation into next-greater-element style problems. |
 | Binary search invariants | 1 | Practice writing the loop condition and boundary meaning before the code. |
 | Tree and graph traversal | 1 | Build DFS/BFS muscle after arrays and strings feel less shaky. |

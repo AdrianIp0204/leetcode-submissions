@@ -13,17 +13,20 @@
 
 ## Pattern
 
-TODO
+Prefix balance / online frequency counting
 
 ## Key Idea
 
-TODO
+Treat `target` as `+1` and every other value as `-1`; a subarray has target as
+the majority exactly when its balance is positive. Count prior prefix balances
+that are smaller than the current balance.
 
 ## Mistake / Edge Case
 
-TODO
+The prefix balance can be negative, so the implementation offsets it by `n`
+before using it as a list index.
 
 ## Complexity
 
-- Time: TODO
-- Space: TODO
+- Time: O(n)
+- Space: O(n)

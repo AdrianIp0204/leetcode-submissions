@@ -1,14 +1,14 @@
 {
-  "generatedAt": "2026-06-25T15:35:43.000Z",
+  "generatedAt": "2026-06-27T15:32:52.010Z",
   "username": "AdrianIp",
-  "profileFetchedAt": "2026-06-25T15:31:31.927Z",
-  "publicAcceptedSolved": 353,
-  "publicAcceptedSubmissions": 407,
-  "publicAttemptedProblems": 354,
-  "publicTotalSubmissions": 497,
-  "localProblemFolders": 336,
+  "profileFetchedAt": "2026-06-27T15:31:18.831Z",
+  "publicAcceptedSolved": 365,
+  "publicAcceptedSubmissions": 419,
+  "publicAttemptedProblems": 366,
+  "publicTotalSubmissions": 516,
+  "localProblemFolders": 358,
   "localCanonicalSolutions": 226,
-  "estimatedSolvedGap": 17,
+  "estimatedSolvedGap": 7,
   "status": "behind",
   "knownLocalProblems": [
     {
@@ -85,6 +85,11 @@
       "folder": "0021-merge-two-sorted-lists",
       "slug": "merge-two-sorted-lists",
       "hasCanonicalSolution": true
+    },
+    {
+      "folder": "0023-merge-k-sorted-lists",
+      "slug": "merge-k-sorted-lists",
+      "hasCanonicalSolution": false
     },
     {
       "folder": "0026-remove-duplicates-from-sorted-array",
@@ -182,6 +187,11 @@
       "hasCanonicalSolution": true
     },
     {
+      "folder": "0150-evaluate-reverse-polish-notation",
+      "slug": "evaluate-reverse-polish-notation",
+      "hasCanonicalSolution": false
+    },
+    {
       "folder": "0151-reverse-words-in-a-string",
       "slug": "reverse-words-in-a-string",
       "hasCanonicalSolution": true
@@ -222,6 +232,11 @@
       "hasCanonicalSolution": false
     },
     {
+      "folder": "0183-customers-who-never-order",
+      "slug": "customers-who-never-order",
+      "hasCanonicalSolution": false
+    },
+    {
       "folder": "0189-rotate-array",
       "slug": "rotate-array",
       "hasCanonicalSolution": false
@@ -255,6 +270,11 @@
       "folder": "0206-reverse-linked-list",
       "slug": "reverse-linked-list",
       "hasCanonicalSolution": true
+    },
+    {
+      "folder": "0215-kth-largest-element-in-an-array",
+      "slug": "kth-largest-element-in-an-array",
+      "hasCanonicalSolution": false
     },
     {
       "folder": "0217-contains-duplicate",
@@ -322,6 +342,11 @@
       "hasCanonicalSolution": false
     },
     {
+      "folder": "0328-odd-even-linked-list",
+      "slug": "odd-even-linked-list",
+      "hasCanonicalSolution": false
+    },
+    {
       "folder": "0342-power-of-four",
       "slug": "power-of-four",
       "hasCanonicalSolution": true
@@ -370,6 +395,11 @@
       "folder": "0389-find-the-difference",
       "slug": "find-the-difference",
       "hasCanonicalSolution": true
+    },
+    {
+      "folder": "0392-is-subsequence",
+      "slug": "is-subsequence",
+      "hasCanonicalSolution": false
     },
     {
       "folder": "0409-longest-palindrome",
@@ -430,6 +460,11 @@
       "folder": "0509-fibonacci-number",
       "slug": "fibonacci-number",
       "hasCanonicalSolution": true
+    },
+    {
+      "folder": "0511-game-play-analysis-i",
+      "slug": "game-play-analysis-i",
+      "hasCanonicalSolution": false
     },
     {
       "folder": "0520-detect-capital",
@@ -530,6 +565,11 @@
       "folder": "0728-self-dividing-numbers",
       "slug": "self-dividing-numbers",
       "hasCanonicalSolution": true
+    },
+    {
+      "folder": "0735-asteroid-collision",
+      "slug": "asteroid-collision",
+      "hasCanonicalSolution": false
     },
     {
       "folder": "0744-find-smallest-letter-greater-than-target",
@@ -697,6 +737,11 @@
       "hasCanonicalSolution": true
     },
     {
+      "folder": "1283-find-the-smallest-divisor-given-a-threshold",
+      "slug": "find-the-smallest-divisor-given-a-threshold",
+      "hasCanonicalSolution": false
+    },
+    {
       "folder": "1295-find-numbers-with-even-number-of-digits",
       "slug": "find-numbers-with-even-number-of-digits",
       "hasCanonicalSolution": true
@@ -722,6 +767,11 @@
       "hasCanonicalSolution": false
     },
     {
+      "folder": "1351-count-negative-numbers-in-a-sorted-matrix",
+      "slug": "count-negative-numbers-in-a-sorted-matrix",
+      "hasCanonicalSolution": false
+    },
+    {
       "folder": "1365-how-many-numbers-are-smaller-than-the-current-number",
       "slug": "how-many-numbers-are-smaller-than-the-current-number",
       "hasCanonicalSolution": true
@@ -729,6 +779,11 @@
     {
       "folder": "1374-generate-a-string-with-characters-that-have-odd-counts",
       "slug": "generate-a-string-with-characters-that-have-odd-counts",
+      "hasCanonicalSolution": false
+    },
+    {
+      "folder": "1385-find-the-distance-value-between-two-arrays",
+      "slug": "find-the-distance-value-between-two-arrays",
       "hasCanonicalSolution": false
     },
     {
@@ -1010,6 +1065,11 @@
       "folder": "2085-count-common-words-with-one-occurrence",
       "slug": "count-common-words-with-one-occurrence",
       "hasCanonicalSolution": true
+    },
+    {
+      "folder": "2089-find-target-indices-after-sorting-array",
+      "slug": "find-target-indices-after-sorting-array",
+      "hasCanonicalSolution": false
     },
     {
       "folder": "2095-delete-the-middle-node-of-a-linked-list",
@@ -1322,6 +1382,11 @@
       "hasCanonicalSolution": false
     },
     {
+      "folder": "2878-get-the-size-of-a-dataframe",
+      "slug": "get-the-size-of-a-dataframe",
+      "hasCanonicalSolution": false
+    },
+    {
       "folder": "2879-display-the-first-three-rows",
       "slug": "display-the-first-three-rows",
       "hasCanonicalSolution": false
@@ -1342,6 +1407,11 @@
       "hasCanonicalSolution": false
     },
     {
+      "folder": "2883-drop-missing-data",
+      "slug": "drop-missing-data",
+      "hasCanonicalSolution": false
+    },
+    {
       "folder": "2884-modify-columns",
       "slug": "modify-columns",
       "hasCanonicalSolution": false
@@ -1357,8 +1427,28 @@
       "hasCanonicalSolution": false
     },
     {
+      "folder": "2887-fill-missing-data",
+      "slug": "fill-missing-data",
+      "hasCanonicalSolution": false
+    },
+    {
       "folder": "2888-reshape-data-concatenate",
       "slug": "reshape-data-concatenate",
+      "hasCanonicalSolution": false
+    },
+    {
+      "folder": "2889-reshape-data-pivot",
+      "slug": "reshape-data-pivot",
+      "hasCanonicalSolution": false
+    },
+    {
+      "folder": "2890-reshape-data-melt",
+      "slug": "reshape-data-melt",
+      "hasCanonicalSolution": false
+    },
+    {
+      "folder": "2891-method-chaining",
+      "slug": "method-chaining",
       "hasCanonicalSolution": false
     },
     {
@@ -1497,6 +1587,11 @@
       "hasCanonicalSolution": true
     },
     {
+      "folder": "3436-find-valid-emails",
+      "slug": "find-valid-emails",
+      "hasCanonicalSolution": false
+    },
+    {
       "folder": "3451-find-invalid-ip-addresses",
       "slug": "find-invalid-ip-addresses",
       "hasCanonicalSolution": false
@@ -1602,6 +1697,11 @@
       "hasCanonicalSolution": false
     },
     {
+      "folder": "3700-number-of-zigzag-arrays-ii",
+      "slug": "number-of-zigzag-arrays-ii",
+      "hasCanonicalSolution": false
+    },
+    {
       "folder": "3701-compute-alternating-sum",
       "slug": "compute-alternating-sum",
       "hasCanonicalSolution": true
@@ -1614,6 +1714,16 @@
     {
       "folder": "3731-find-missing-elements",
       "slug": "find-missing-elements",
+      "hasCanonicalSolution": false
+    },
+    {
+      "folder": "3737-count-subarrays-with-majority-element-i",
+      "slug": "count-subarrays-with-majority-element-i",
+      "hasCanonicalSolution": false
+    },
+    {
+      "folder": "3739-count-subarrays-with-majority-element-ii",
+      "slug": "count-subarrays-with-majority-element-ii",
       "hasCanonicalSolution": false
     },
     {
