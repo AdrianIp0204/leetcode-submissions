@@ -13,17 +13,17 @@
 
 ## Pattern
 
-TODO
+sorting + fixed indices + two pointers
 
 ## Key Idea
 
-TODO
+Sort the array, fix the first two values, then use a left/right pointer search for the remaining pair while skipping duplicates.
 
 ## Mistake / Edge Case
 
-TODO
+Handles arrays shorter than four and skips repeated values at `i`, `j`, `left`, and `right` to avoid duplicate quadruplets.
 
 ## Complexity
 
-- Time: TODO
-- Space: TODO
+- Time: O(n^3)
+- Space: O(1) extra, ignoring output and sort internals

@@ -1,8 +1,8 @@
 # Next LeetCode Problems
 
-- Generated at: 2026-06-28T15:30:39.143Z
-- Public solved count: 366
-- Known solved by repo/public-recent evidence: 367
+- Generated at: 2026-06-29T15:31:09.674Z
+- Public solved count: 377
+- Known solved by repo/public-recent evidence: 378
 
 ## Queue
 

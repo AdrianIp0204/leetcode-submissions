@@ -12,17 +12,17 @@
 
 ## Pattern
 
-TODO
+string parsing / bounded integer simulation
 
 ## Key Idea
 
-TODO
+Trim leading spaces, read one optional sign, accumulate consecutive digits, and clamp the final value to the signed 32-bit range.
 
 ## Mistake / Edge Case
 
-TODO
+Handles empty trimmed input, non-digit termination, optional `+` or `-`, and overflow clamps.
 
 ## Complexity
 
-- Time: TODO
-- Space: TODO
+- Time: O(n)
+- Space: O(1)

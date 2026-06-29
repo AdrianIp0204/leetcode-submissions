@@ -1,10 +1,10 @@
 {
-  "fetchedAt": "2026-06-28T15:30:38.817Z",
+  "fetchedAt": "2026-06-29T15:31:00.442Z",
   "username": "AdrianIp",
   "profile": {
     "realName": "AdrianIp",
     "userAvatar": "https://assets.leetcode.com/users/default_avatar.jpg",
-    "ranking": 347120,
+    "ranking": 336792,
     "reputation": 2,
     "countryName": "Hong Kong",
     "company": null,
@@ -15,95 +15,191 @@
   "solvedByDifficulty": [
     {
       "difficulty": "All",
-      "count": 366,
-      "submissions": 420
+      "count": 377,
+      "submissions": 435
     },
     {
       "difficulty": "Easy",
-      "count": 287,
-      "submissions": 338
+      "count": 292,
+      "submissions": 347
     },
     {
       "difficulty": "Medium",
-      "count": 65,
-      "submissions": 68
+      "count": 70,
+      "submissions": 73
     },
     {
       "difficulty": "Hard",
-      "count": 14,
-      "submissions": 14
+      "count": 15,
+      "submissions": 15
     }
   ],
   "totalByDifficulty": [
     {
       "difficulty": "All",
-      "count": 367,
-      "submissions": 518
+      "count": 378,
+      "submissions": 539
     },
     {
       "difficulty": "Easy",
-      "count": 287,
-      "submissions": 394
+      "count": 292,
+      "submissions": 404
     },
     {
       "difficulty": "Medium",
-      "count": 65,
-      "submissions": 100
+      "count": 70,
+      "submissions": 110
     },
     {
       "difficulty": "Hard",
-      "count": 15,
-      "submissions": 24
+      "count": 16,
+      "submissions": 25
     }
   ],
   "summary": {
     "accepted": {
       "All": {
         "difficulty": "All",
-        "count": 366,
-        "submissions": 420
+        "count": 377,
+        "submissions": 435
       },
       "Easy": {
         "difficulty": "Easy",
-        "count": 287,
-        "submissions": 338
+        "count": 292,
+        "submissions": 347
       },
       "Medium": {
         "difficulty": "Medium",
-        "count": 65,
-        "submissions": 68
+        "count": 70,
+        "submissions": 73
       },
       "Hard": {
         "difficulty": "Hard",
-        "count": 14,
-        "submissions": 14
+        "count": 15,
+        "submissions": 15
       }
     },
     "total": {
       "All": {
         "difficulty": "All",
-        "count": 367,
-        "submissions": 518
+        "count": 378,
+        "submissions": 539
       },
       "Easy": {
         "difficulty": "Easy",
-        "count": 287,
-        "submissions": 394
+        "count": 292,
+        "submissions": 404
       },
       "Medium": {
         "difficulty": "Medium",
-        "count": 65,
-        "submissions": 100
+        "count": 70,
+        "submissions": 110
       },
       "Hard": {
         "difficulty": "Hard",
-        "count": 15,
-        "submissions": 24
+        "count": 16,
+        "submissions": 25
       }
     }
   },
   "contestRanking": null,
   "recentAccepted": [
+    {
+      "title": "Same Tree",
+      "titleSlug": "same-tree",
+      "timestamp": "1782732520",
+      "statusDisplay": "Accepted",
+      "lang": "python3",
+      "acceptedAt": "2026-06-29T11:28:40.000Z"
+    },
+    {
+      "title": "Maximum Depth of Binary Tree",
+      "titleSlug": "maximum-depth-of-binary-tree",
+      "timestamp": "1782731697",
+      "statusDisplay": "Accepted",
+      "lang": "python3",
+      "acceptedAt": "2026-06-29T11:14:57.000Z"
+    },
+    {
+      "title": "Binary Tree Inorder Traversal",
+      "titleSlug": "binary-tree-inorder-traversal",
+      "timestamp": "1782731333",
+      "statusDisplay": "Accepted",
+      "lang": "python3",
+      "acceptedAt": "2026-06-29T11:08:53.000Z"
+    },
+    {
+      "title": "Path Sum",
+      "titleSlug": "path-sum",
+      "timestamp": "1782730482",
+      "statusDisplay": "Accepted",
+      "lang": "python3",
+      "acceptedAt": "2026-06-29T10:54:42.000Z"
+    },
+    {
+      "title": "Remove Nth Node From End of List",
+      "titleSlug": "remove-nth-node-from-end-of-list",
+      "timestamp": "1782727674",
+      "statusDisplay": "Accepted",
+      "lang": "python3",
+      "acceptedAt": "2026-06-29T10:07:54.000Z"
+    },
+    {
+      "title": "4Sum",
+      "titleSlug": "4sum",
+      "timestamp": "1782726804",
+      "statusDisplay": "Accepted",
+      "lang": "python3",
+      "acceptedAt": "2026-06-29T09:53:24.000Z"
+    },
+    {
+      "title": "Letter Combinations of a Phone Number",
+      "titleSlug": "letter-combinations-of-a-phone-number",
+      "timestamp": "1782725340",
+      "statusDisplay": "Accepted",
+      "lang": "python3",
+      "acceptedAt": "2026-06-29T09:29:00.000Z"
+    },
+    {
+      "title": "Regular Expression Matching",
+      "titleSlug": "regular-expression-matching",
+      "timestamp": "1782724144",
+      "statusDisplay": "Accepted",
+      "lang": "python3",
+      "acceptedAt": "2026-06-29T09:09:04.000Z"
+    },
+    {
+      "title": "String to Integer (atoi)",
+      "titleSlug": "string-to-integer-atoi",
+      "timestamp": "1782723107",
+      "statusDisplay": "Accepted",
+      "lang": "python3",
+      "acceptedAt": "2026-06-29T08:51:47.000Z"
+    },
+    {
+      "title": "Binary Tree Right Side View",
+      "titleSlug": "binary-tree-right-side-view",
+      "timestamp": "1782718975",
+      "statusDisplay": "Accepted",
+      "lang": "python3",
+      "acceptedAt": "2026-06-29T07:42:55.000Z"
+    },
+    {
+      "title": "Actors and Directors Who Cooperated At Least Three Times",
+      "titleSlug": "actors-and-directors-who-cooperated-at-least-three-times",
+      "timestamp": "1782706071",
+      "statusDisplay": "Accepted",
+      "lang": "pythondata",
+      "acceptedAt": "2026-06-29T04:07:51.000Z"
+    },
+    {
+      "title": "Number of Strings That Appear as Substrings in Word",
+      "titleSlug": "number-of-strings-that-appear-as-substrings-in-word",
+      "timestamp": "1782705775",
+      "statusDisplay": "Accepted",
+      "lang": "python3",
+      "acceptedAt": "2026-06-29T04:02:55.000Z"
+    },
     {
       "title": "Maximum Element After Decreasing and Rearranging",
       "titleSlug": "maximum-element-after-decreasing-and-rearranging",
@@ -167,102 +263,6 @@
       "statusDisplay": "Accepted",
       "lang": "pythondata",
       "acceptedAt": "2026-06-27T08:19:19.000Z"
-    },
-    {
-      "title": "Find the Maximum Number of Elements in Subset",
-      "titleSlug": "find-the-maximum-number-of-elements-in-subset",
-      "timestamp": "1782548006",
-      "statusDisplay": "Accepted",
-      "lang": "python3",
-      "acceptedAt": "2026-06-27T08:13:26.000Z"
-    },
-    {
-      "title": "Is Subsequence",
-      "titleSlug": "is-subsequence",
-      "timestamp": "1782448901",
-      "statusDisplay": "Accepted",
-      "lang": "python3",
-      "acceptedAt": "2026-06-26T04:41:41.000Z"
-    },
-    {
-      "title": "Kth Largest Element in an Array",
-      "titleSlug": "kth-largest-element-in-an-array",
-      "timestamp": "1782448315",
-      "statusDisplay": "Accepted",
-      "lang": "python3",
-      "acceptedAt": "2026-06-26T04:31:55.000Z"
-    },
-    {
-      "title": "Game Play Analysis I",
-      "titleSlug": "game-play-analysis-i",
-      "timestamp": "1782448043",
-      "statusDisplay": "Accepted",
-      "lang": "pythondata",
-      "acceptedAt": "2026-06-26T04:27:23.000Z"
-    },
-    {
-      "title": "Count Subarrays With Majority Element II",
-      "titleSlug": "count-subarrays-with-majority-element-ii",
-      "timestamp": "1782447742",
-      "statusDisplay": "Accepted",
-      "lang": "python3",
-      "acceptedAt": "2026-06-26T04:22:22.000Z"
-    },
-    {
-      "title": "Find Valid Emails",
-      "titleSlug": "find-valid-emails",
-      "timestamp": "1782400816",
-      "statusDisplay": "Accepted",
-      "lang": "pythondata",
-      "acceptedAt": "2026-06-25T15:20:16.000Z"
-    },
-    {
-      "title": "Merge k Sorted Lists",
-      "titleSlug": "merge-k-sorted-lists",
-      "timestamp": "1782399311",
-      "statusDisplay": "Accepted",
-      "lang": "python3",
-      "acceptedAt": "2026-06-25T14:55:11.000Z"
-    },
-    {
-      "title": "Find Target Indices After Sorting Array",
-      "titleSlug": "find-target-indices-after-sorting-array",
-      "timestamp": "1782395842",
-      "statusDisplay": "Accepted",
-      "lang": "python3",
-      "acceptedAt": "2026-06-25T13:57:22.000Z"
-    },
-    {
-      "title": "Find the Distance Value Between Two Arrays",
-      "titleSlug": "find-the-distance-value-between-two-arrays",
-      "timestamp": "1782395106",
-      "statusDisplay": "Accepted",
-      "lang": "python3",
-      "acceptedAt": "2026-06-25T13:45:06.000Z"
-    },
-    {
-      "title": "Find the Smallest Divisor Given a Threshold",
-      "titleSlug": "find-the-smallest-divisor-given-a-threshold",
-      "timestamp": "1782392787",
-      "statusDisplay": "Accepted",
-      "lang": "python3",
-      "acceptedAt": "2026-06-25T13:06:27.000Z"
-    },
-    {
-      "title": "Customers Who Never Order",
-      "titleSlug": "customers-who-never-order",
-      "timestamp": "1782365196",
-      "statusDisplay": "Accepted",
-      "lang": "pythondata",
-      "acceptedAt": "2026-06-25T05:26:36.000Z"
-    },
-    {
-      "title": "Odd Even Linked List",
-      "titleSlug": "odd-even-linked-list",
-      "timestamp": "1782363996",
-      "statusDisplay": "Accepted",
-      "lang": "python3",
-      "acceptedAt": "2026-06-25T05:06:36.000Z"
     }
   ],
   "source": "LeetCode public GraphQL; no login cookie or browser extension used."

@@ -13,17 +13,17 @@
 
 ## Pattern
 
-TODO
+regular expression full match
 
 ## Key Idea
 
-TODO
+Use Python's regex engine with `re.fullmatch` so the whole input string must match the pattern.
 
 ## Mistake / Edge Case
 
-TODO
+The submitted code delegates `.` and `*` semantics to `re`; a model interview answer should usually spell out the DP state.
 
 ## Complexity
 
-- Time: TODO
-- Space: TODO
+- Time: Delegated to Python's regex engine
+- Space: Delegated to Python's regex engine

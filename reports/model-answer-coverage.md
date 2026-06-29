@@ -1,8 +1,8 @@
 # Model Answer Coverage
 
-- Generated at: 2026-06-28T15:31:32.552Z
-- Problems in repo: 367
-- Model-answer notes: 304
+- Generated at: 2026-06-29T15:33:51.900Z
+- Problems in repo: 374
+- Model-answer notes: 311
 - Missing model-answer notes: 63
 - Incomplete model-answer notes: 1
 - Notes without matching problem folder: 0
@@ -57,12 +57,17 @@ The model-answer track is active. Keep adding notes in batches, prioritizing reu
 | [0005-longest-palindromic-substring](../notes/model-answers/0005-longest-palindromic-substring.md) | Longest Palindromic Substring |
 | [0006-zigzag-conversion](../notes/model-answers/0006-zigzag-conversion.md) | Zigzag Conversion |
 | [0007-reverse-integer](../notes/model-answers/0007-reverse-integer.md) | Reverse Integer |
+| [0008-string-to-integer-atoi](../notes/model-answers/0008-string-to-integer-atoi.md) | String To Integer Atoi |
 | [0009-palindrome-number](../notes/model-answers/0009-palindrome-number.md) | Palindrome Number |
+| [0010-regular-expression-matching](../notes/model-answers/0010-regular-expression-matching.md) | Regular Expression Matching |
 | [0011-container-with-most-water](../notes/model-answers/0011-container-with-most-water.md) | Container With Most Water |
 | [0012-integer-to-roman](../notes/model-answers/0012-integer-to-roman.md) | Integer to Roman |
 | [0013-roman-to-integer](../notes/model-answers/0013-roman-to-integer.md) | Roman to Integer |
 | [0014-longest-common-prefix](../notes/model-answers/0014-longest-common-prefix.md) | Longest Common Prefix |
 | [0015-3sum](../notes/model-answers/0015-3sum.md) | 3Sum |
+| [0017-letter-combinations-of-a-phone-number](../notes/model-answers/0017-letter-combinations-of-a-phone-number.md) | Letter Combinations Of A Phone Number |
+| [0018-4sum](../notes/model-answers/0018-4sum.md) | 4sum |
+| [0019-remove-nth-node-from-end-of-list](../notes/model-answers/0019-remove-nth-node-from-end-of-list.md) | Remove Nth Node From End Of List |
 | [0020-valid-parentheses](../notes/model-answers/0020-valid-parentheses.md) | Valid Parentheses |
 | [0021-merge-two-sorted-lists](../notes/model-answers/0021-merge-two-sorted-lists.md) | Merge Two Sorted Lists |
 | [0026-remove-duplicates-from-sorted-array](../notes/model-answers/0026-remove-duplicates-from-sorted-array.md) | Remove Duplicates from Sorted Array |
@@ -90,16 +95,11 @@ The model-answer track is active. Keep adding notes in batches, prioritizing reu
 | [0181-employees-earning-more-than-their-managers](../notes/model-answers/0181-employees-earning-more-than-their-managers.md) | Employees Earning More Than Their Managers |
 | [0190-reverse-bits](../notes/model-answers/0190-reverse-bits.md) | Reverse Bits |
 | [0191-number-of-1-bits](../notes/model-answers/0191-number-of-1-bits.md) | Number Of 1 Bits |
+| [0199-binary-tree-right-side-view](../notes/model-answers/0199-binary-tree-right-side-view.md) | Binary Tree Right Side View |
 | [0204-count-primes](../notes/model-answers/0204-count-primes.md) | Count Primes |
 | [0205-isomorphic-strings](../notes/model-answers/0205-isomorphic-strings.md) | Isomorphic Strings |
 | [0206-reverse-linked-list](../notes/model-answers/0206-reverse-linked-list.md) | Reverse Linked List |
 | [0215-kth-largest-element-in-an-array](../notes/model-answers/0215-kth-largest-element-in-an-array.md) | Kth Largest Element In An Array |
-| [0217-contains-duplicate](../notes/model-answers/0217-contains-duplicate.md) | Contains Duplicate |
-| [0219-contains-duplicate-ii](../notes/model-answers/0219-contains-duplicate-ii.md) | Contains Duplicate II |
-| [0224-basic-calculator](../notes/model-answers/0224-basic-calculator.md) | Basic Calculator |
-| [0234-palindrome-linked-list](../notes/model-answers/0234-palindrome-linked-list.md) | Palindrome Linked List |
-| [0238-product-of-array-except-self](../notes/model-answers/0238-product-of-array-except-self.md) | Product of Array Except Self |
-| [0242-valid-anagram](../notes/model-answers/0242-valid-anagram.md) | Valid Anagram |
 
 ## Incomplete Notes
 

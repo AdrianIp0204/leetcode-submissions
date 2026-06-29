@@ -13,17 +13,17 @@
 
 ## Pattern
 
-TODO
+group by aggregate / filter
 
 ## Key Idea
 
-TODO
+Group rows by `(actor_id, director_id)`, count the rows in each group, keep groups with count at least three, and return only the id columns.
 
 ## Mistake / Edge Case
 
-TODO
+The submitted pandas solution uses the grouped `timestamp` count as the cooperation frequency.
 
 ## Complexity
 
-- Time: TODO
-- Space: TODO
+- Time: O(n) expected for grouping
+- Space: O(k), where `k` is the number of distinct actor/director pairs

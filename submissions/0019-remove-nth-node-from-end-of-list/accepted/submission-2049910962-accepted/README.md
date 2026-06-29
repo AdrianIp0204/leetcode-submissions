@@ -12,17 +12,17 @@
 
 ## Pattern
 
-TODO
+linked list length pass / reconstruction
 
 ## Key Idea
 
-TODO
+Count the list length, compute the zero-based index to remove, then build a new list while skipping that index.
 
 ## Mistake / Edge Case
 
-TODO
+The submitted solution copies node values into a new list instead of relinking the original nodes.
 
 ## Complexity
 
-- Time: TODO
-- Space: TODO
+- Time: O(n)
+- Space: O(n) for the rebuilt list
