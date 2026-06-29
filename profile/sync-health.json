@@ -1,15 +1,15 @@
 {
-  "generatedAt": "2026-06-27T15:32:52.010Z",
+  "generatedAt": "2026-06-28T15:31:32.071Z",
   "username": "AdrianIp",
-  "profileFetchedAt": "2026-06-27T15:31:18.831Z",
-  "publicAcceptedSolved": 365,
-  "publicAcceptedSubmissions": 419,
-  "publicAttemptedProblems": 366,
-  "publicTotalSubmissions": 516,
-  "localProblemFolders": 358,
+  "profileFetchedAt": "2026-06-28T15:30:38.817Z",
+  "publicAcceptedSolved": 366,
+  "publicAcceptedSubmissions": 420,
+  "publicAttemptedProblems": 367,
+  "publicTotalSubmissions": 518,
+  "localProblemFolders": 367,
   "localCanonicalSolutions": 226,
-  "estimatedSolvedGap": 7,
-  "status": "behind",
+  "estimatedSolvedGap": 0,
+  "status": "ok",
   "knownLocalProblems": [
     {
       "folder": "0001-two-sum",
@@ -77,6 +77,11 @@
       "hasCanonicalSolution": true
     },
     {
+      "folder": "0016-3sum-closest",
+      "slug": "3sum-closest",
+      "hasCanonicalSolution": false
+    },
+    {
       "folder": "0020-valid-parentheses",
       "slug": "valid-parentheses",
       "hasCanonicalSolution": true
@@ -89,6 +94,11 @@
     {
       "folder": "0023-merge-k-sorted-lists",
       "slug": "merge-k-sorted-lists",
+      "hasCanonicalSolution": false
+    },
+    {
+      "folder": "0024-swap-nodes-in-pairs",
+      "slug": "swap-nodes-in-pairs",
       "hasCanonicalSolution": false
     },
     {
@@ -124,6 +134,11 @@
     {
       "folder": "0050-powx-n",
       "slug": "powx-n",
+      "hasCanonicalSolution": false
+    },
+    {
+      "folder": "0056-merge-intervals",
+      "slug": "merge-intervals",
       "hasCanonicalSolution": false
     },
     {
@@ -527,6 +542,11 @@
       "hasCanonicalSolution": true
     },
     {
+      "folder": "0643-maximum-average-subarray-i",
+      "slug": "maximum-average-subarray-i",
+      "hasCanonicalSolution": false
+    },
+    {
       "folder": "0645-set-mismatch",
       "slug": "set-mismatch",
       "hasCanonicalSolution": true
@@ -887,6 +907,11 @@
       "hasCanonicalSolution": true
     },
     {
+      "folder": "1667-fix-names-in-a-table",
+      "slug": "fix-names-in-a-table",
+      "hasCanonicalSolution": false
+    },
+    {
       "folder": "1672-richest-customer-wealth",
       "slug": "richest-customer-wealth",
       "hasCanonicalSolution": true
@@ -974,6 +999,11 @@
     {
       "folder": "1840-maximum-building-height",
       "slug": "maximum-building-height",
+      "hasCanonicalSolution": false
+    },
+    {
+      "folder": "1846-maximum-element-after-decreasing-and-rearranging",
+      "slug": "maximum-element-after-decreasing-and-rearranging",
       "hasCanonicalSolution": false
     },
     {
@@ -1257,6 +1287,11 @@
       "hasCanonicalSolution": true
     },
     {
+      "folder": "2545-sort-the-students-by-their-kth-score",
+      "slug": "sort-the-students-by-their-kth-score",
+      "hasCanonicalSolution": false
+    },
+    {
       "folder": "2553-separate-the-digits-in-an-array",
       "slug": "separate-the-digits-in-an-array",
       "hasCanonicalSolution": true
@@ -1487,6 +1522,11 @@
       "hasCanonicalSolution": true
     },
     {
+      "folder": "3020-find-the-maximum-number-of-elements-in-subset",
+      "slug": "find-the-maximum-number-of-elements-in-subset",
+      "hasCanonicalSolution": false
+    },
+    {
       "folder": "3024-type-of-triangle",
       "slug": "type-of-triangle",
       "hasCanonicalSolution": true
@@ -1570,6 +1610,11 @@
       "folder": "3280-convert-date-to-binary",
       "slug": "convert-date-to-binary",
       "hasCanonicalSolution": true
+    },
+    {
+      "folder": "3285-find-indices-of-stable-mountains",
+      "slug": "find-indices-of-stable-mountains",
+      "hasCanonicalSolution": false
     },
     {
       "folder": "3289-the-two-sneaky-numbers-of-digitville",

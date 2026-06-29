@@ -13,11 +13,11 @@
 
 ## Pattern
 
-TODO
+Greedy counting / capped frequency buckets
 
 ## Key Idea
 
-TODO
+Values larger than `n` can be treated as `n`, because the final maximum cannot exceed the array length. Count each capped value, then scan upward while keeping the largest reachable valid value no more than both the current index and one more than the previous reachable value per available element.
 
 ## Mistake / Edge Case
 
@@ -25,5 +25,5 @@ TODO
 
 ## Complexity
 
-- Time: TODO
-- Space: TODO
+- Time: O(n)
+- Space: O(n)

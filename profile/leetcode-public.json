@@ -1,10 +1,10 @@
 {
-  "fetchedAt": "2026-06-27T15:31:18.831Z",
+  "fetchedAt": "2026-06-28T15:30:38.817Z",
   "username": "AdrianIp",
   "profile": {
     "realName": "AdrianIp",
     "userAvatar": "https://assets.leetcode.com/users/default_avatar.jpg",
-    "ranking": 353012,
+    "ranking": 347120,
     "reputation": 2,
     "countryName": "Hong Kong",
     "company": null,
@@ -15,8 +15,8 @@
   "solvedByDifficulty": [
     {
       "difficulty": "All",
-      "count": 365,
-      "submissions": 419
+      "count": 366,
+      "submissions": 420
     },
     {
       "difficulty": "Easy",
@@ -25,8 +25,8 @@
     },
     {
       "difficulty": "Medium",
-      "count": 64,
-      "submissions": 67
+      "count": 65,
+      "submissions": 68
     },
     {
       "difficulty": "Hard",
@@ -37,8 +37,8 @@
   "totalByDifficulty": [
     {
       "difficulty": "All",
-      "count": 366,
-      "submissions": 516
+      "count": 367,
+      "submissions": 518
     },
     {
       "difficulty": "Easy",
@@ -47,8 +47,8 @@
     },
     {
       "difficulty": "Medium",
-      "count": 64,
-      "submissions": 98
+      "count": 65,
+      "submissions": 100
     },
     {
       "difficulty": "Hard",
@@ -60,8 +60,8 @@
     "accepted": {
       "All": {
         "difficulty": "All",
-        "count": 365,
-        "submissions": 419
+        "count": 366,
+        "submissions": 420
       },
       "Easy": {
         "difficulty": "Easy",
@@ -70,8 +70,8 @@
       },
       "Medium": {
         "difficulty": "Medium",
-        "count": 64,
-        "submissions": 67
+        "count": 65,
+        "submissions": 68
       },
       "Hard": {
         "difficulty": "Hard",
@@ -82,8 +82,8 @@
     "total": {
       "All": {
         "difficulty": "All",
-        "count": 366,
-        "submissions": 516
+        "count": 367,
+        "submissions": 518
       },
       "Easy": {
         "difficulty": "Easy",
@@ -92,8 +92,8 @@
       },
       "Medium": {
         "difficulty": "Medium",
-        "count": 64,
-        "submissions": 98
+        "count": 65,
+        "submissions": 100
       },
       "Hard": {
         "difficulty": "Hard",
@@ -104,6 +104,14 @@
   },
   "contestRanking": null,
   "recentAccepted": [
+    {
+      "title": "Maximum Element After Decreasing and Rearranging",
+      "titleSlug": "maximum-element-after-decreasing-and-rearranging",
+      "timestamp": "1782610805",
+      "statusDisplay": "Accepted",
+      "lang": "python3",
+      "acceptedAt": "2026-06-28T01:40:05.000Z"
+    },
     {
       "title": "Sort the Students by Their Kth Score",
       "titleSlug": "sort-the-students-by-their-kth-score",
@@ -255,14 +263,6 @@
       "statusDisplay": "Accepted",
       "lang": "python3",
       "acceptedAt": "2026-06-25T05:06:36.000Z"
-    },
-    {
-      "title": "Count Subarrays With Majority Element I",
-      "titleSlug": "count-subarrays-with-majority-element-i",
-      "timestamp": "1782362931",
-      "statusDisplay": "Accepted",
-      "lang": "python3",
-      "acceptedAt": "2026-06-25T04:48:51.000Z"
     }
   ],
   "source": "LeetCode public GraphQL; no login cookie or browser extension used."

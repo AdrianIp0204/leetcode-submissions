@@ -2,26 +2,27 @@
 
 - Username: AdrianIp
 - Profile: https://leetcode.com/u/AdrianIp/
-- Fetched at: 2026-06-27T15:31:18.831Z
-- Ranking: 353012
+- Fetched at: 2026-06-28T15:30:38.817Z
+- Ranking: 347120
 - Display name: AdrianIp
 
 ## Solved
 
-- All: 365 solved / 419 accepted submissions
+- All: 366 solved / 420 accepted submissions
 - Easy: 287 solved / 338 accepted submissions
-- Medium: 64 solved / 67 accepted submissions
+- Medium: 65 solved / 68 accepted submissions
 - Hard: 14 solved / 14 accepted submissions
 
 ## Total Attempts
 
-- All: 366 attempted problems / 516 total submissions
+- All: 367 attempted problems / 518 total submissions
 - Easy: 287 attempted problems / 394 total submissions
-- Medium: 64 attempted problems / 98 total submissions
+- Medium: 65 attempted problems / 100 total submissions
 - Hard: 15 attempted problems / 24 total submissions
 
 ## Recent Accepted
 
+- 2026-06-28T01:40:05.000Z: [Maximum Element After Decreasing and Rearranging](https://leetcode.com/problems/maximum-element-after-decreasing-and-rearranging/) (python3)
 - 2026-06-27T14:44:18.000Z: [Sort the Students by Their Kth Score](https://leetcode.com/problems/sort-the-students-by-their-kth-score/) (python3)
 - 2026-06-27T14:39:07.000Z: [Find Indices of Stable Mountains](https://leetcode.com/problems/find-indices-of-stable-mountains/) (python3)
 - 2026-06-27T12:49:40.000Z: [Maximum Average Subarray I](https://leetcode.com/problems/maximum-average-subarray-i/) (python3)
@@ -41,4 +42,3 @@
 - 2026-06-25T13:06:27.000Z: [Find the Smallest Divisor Given a Threshold](https://leetcode.com/problems/find-the-smallest-divisor-given-a-threshold/) (python3)
 - 2026-06-25T05:26:36.000Z: [Customers Who Never Order](https://leetcode.com/problems/customers-who-never-order/) (pythondata)
 - 2026-06-25T05:06:36.000Z: [Odd Even Linked List](https://leetcode.com/problems/odd-even-linked-list/) (python3)
-- 2026-06-25T04:48:51.000Z: [Count Subarrays With Majority Element I](https://leetcode.com/problems/count-subarrays-with-majority-element-i/) (python3)
