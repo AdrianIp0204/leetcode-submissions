@@ -12,17 +12,17 @@
 
 ## Pattern
 
-TODO
+cartesian product / backtracking
 
 ## Key Idea
 
-TODO
+Map each digit to its letters and enumerate every letter choice for the submitted input length.
 
 ## Mistake / Edge Case
 
-TODO
+The code is explicitly unrolled for lengths 1 through 4 and assumes a non-empty `digits` string.
 
 ## Complexity
 
-- Time: TODO
-- Space: TODO
+- Time: O(4^n * n)
+- Space: O(4^n * n) for the returned combinations

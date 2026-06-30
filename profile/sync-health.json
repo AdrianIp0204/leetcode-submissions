@@ -1,15 +1,15 @@
 {
-  "generatedAt": "2026-06-28T15:31:32.071Z",
+  "generatedAt": "2026-06-29T15:33:51.873Z",
   "username": "AdrianIp",
-  "profileFetchedAt": "2026-06-28T15:30:38.817Z",
-  "publicAcceptedSolved": 366,
-  "publicAcceptedSubmissions": 420,
-  "publicAttemptedProblems": 367,
-  "publicTotalSubmissions": 518,
-  "localProblemFolders": 367,
+  "profileFetchedAt": "2026-06-29T15:31:00.442Z",
+  "publicAcceptedSolved": 377,
+  "publicAcceptedSubmissions": 435,
+  "publicAttemptedProblems": 378,
+  "publicTotalSubmissions": 539,
+  "localProblemFolders": 374,
   "localCanonicalSolutions": 226,
-  "estimatedSolvedGap": 0,
-  "status": "ok",
+  "estimatedSolvedGap": 3,
+  "status": "behind",
   "knownLocalProblems": [
     {
       "folder": "0001-two-sum",
@@ -47,9 +47,19 @@
       "hasCanonicalSolution": true
     },
     {
+      "folder": "0008-string-to-integer-atoi",
+      "slug": "string-to-integer-atoi",
+      "hasCanonicalSolution": false
+    },
+    {
       "folder": "0009-palindrome-number",
       "slug": "palindrome-number",
       "hasCanonicalSolution": true
+    },
+    {
+      "folder": "0010-regular-expression-matching",
+      "slug": "regular-expression-matching",
+      "hasCanonicalSolution": false
     },
     {
       "folder": "0011-container-with-most-water",
@@ -79,6 +89,21 @@
     {
       "folder": "0016-3sum-closest",
       "slug": "3sum-closest",
+      "hasCanonicalSolution": false
+    },
+    {
+      "folder": "0017-letter-combinations-of-a-phone-number",
+      "slug": "letter-combinations-of-a-phone-number",
+      "hasCanonicalSolution": false
+    },
+    {
+      "folder": "0018-4sum",
+      "slug": "4sum",
+      "hasCanonicalSolution": false
+    },
+    {
+      "folder": "0019-remove-nth-node-from-end-of-list",
+      "slug": "remove-nth-node-from-end-of-list",
       "hasCanonicalSolution": false
     },
     {
@@ -269,6 +294,11 @@
     {
       "folder": "0196-delete-duplicate-emails",
       "slug": "delete-duplicate-emails",
+      "hasCanonicalSolution": false
+    },
+    {
+      "folder": "0199-binary-tree-right-side-view",
+      "slug": "binary-tree-right-side-view",
       "hasCanonicalSolution": false
     },
     {
@@ -685,6 +715,11 @@
       "folder": "1046-last-stone-weight",
       "slug": "last-stone-weight",
       "hasCanonicalSolution": true
+    },
+    {
+      "folder": "1050-actors-and-directors-who-cooperated-at-least-three-times",
+      "slug": "actors-and-directors-who-cooperated-at-least-three-times",
+      "hasCanonicalSolution": false
     },
     {
       "folder": "1051-height-checker",

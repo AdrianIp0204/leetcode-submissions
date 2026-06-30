@@ -12,17 +12,17 @@
 
 ## Pattern
 
-TODO
+tree BFS / level-order traversal
 
 ## Key Idea
 
-TODO
+Traverse the tree level by level and record the last non-null node seen at each level.
 
 ## Mistake / Edge Case
 
-TODO
+The queue may contain `None` placeholders, but only non-null nodes are expanded or recorded.
 
 ## Complexity
 
-- Time: TODO
-- Space: TODO
+- Time: O(n)
+- Space: O(w), where `w` is the maximum level width

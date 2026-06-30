@@ -1,27 +1,27 @@
 # Portfolio Audit
 
-- Generated at: 2026-06-28T15:31:32.202Z
-- Local problem folders: 367
-- Public solved count: 366
-- Estimated solved-count gap: 0
-- Problems with real attempt files: 54
-- Problems with multiple languages or recorded language variants: 60
-- Problems needing reflection cleanup: 140
-- Problems with unknown/missing status metadata: 146
+- Generated at: 2026-06-29T15:33:51.852Z
+- Local problem folders: 374
+- Public solved count: 377
+- Estimated solved-count gap: 3
+- Problems with real attempt files: 56
+- Problems with multiple languages or recorded language variants: 62
+- Problems needing reflection cleanup: 147
+- Problems with unknown/missing status metadata: 153
 
 ## Verdict
 
 This repo is close, but it should not be published until the blockers below are cleared. The public version should present the repo as a learning trace: accepted code, failed attempts when available, short reflections, weakness reports, and honest AI-assisted curation.
 
-Current blockers: missing reflection fields, possible copied problem-statement flags.
+Current blockers: the source-code sync gap, missing reflection fields, possible copied problem-statement flags.
 
 ## Language Coverage
 
 | Language | Problems |
 | --- | --- |
 | cpp | 10 |
-| md | 54 |
-| python | 228 |
+| md | 56 |
+| python | 230 |
 | sql-or-text | 10 |
 | typescript | 5 |
 
@@ -29,22 +29,23 @@ Current blockers: missing reflection fields, possible copied problem-statement f
 
 | Pattern | Problems |
 | --- | --- |
-| arrays-and-strings | 96 |
+| arrays-and-strings | 97 |
 | binary-search | 1 |
 | dynamic-programming | 2 |
 | hashing-and-counting | 14 |
 | linked-list | 4 |
-| math-and-digits | 94 |
+| math-and-digits | 95 |
 | sql | 4 |
 | stack | 3 |
-| tree-and-graph | 1 |
+| tree-and-graph | 2 |
 | two-pointers | 4 |
-| uncategorized | 144 |
+| uncategorized | 148 |
 
 ## Weakness Signals
 
-- 140 of 367 problem READMEs still need real reflection.
-- 146 submissions have unknown or missing status metadata.
+- 3 public solved problems are not yet represented by local source folders.
+- 147 of 374 problem READMEs still need real reflection.
+- 153 submissions have unknown or missing status metadata.
 - Failed attempts are preserved when real source exists; keep capturing them for new work.
 - A TypeScript track exists; expand it deliberately rather than scattering one-off language experiments.
 - Tree/graph/DP coverage is thin relative to array, string, math, and simple loop problems.
@@ -61,7 +62,7 @@ Current blockers: missing reflection fields, possible copied problem-statement f
 
 ## Public Safety Scan
 
-- Possible copied problem-statement flags: 5
+- Possible copied problem-statement flags: 3
 - Possible sensitive-material flags: 0
 
 The scan is heuristic. Review flagged files manually before making the repository public.
@@ -70,7 +71,12 @@ The scan is heuristic. Review flagged files manually before making the repositor
 
 | Problem | Status | Needs |
 | --- | --- | --- |
+| [0008-string-to-integer-atoi](../submissions/0008-string-to-integer-atoi/) | Not recorded | key idea, complexity |
+| [0010-regular-expression-matching](../submissions/0010-regular-expression-matching/) | Not recorded | key idea, complexity |
 | [0016-3sum-closest](../submissions/0016-3sum-closest/) | Not recorded | key idea, complexity |
+| [0017-letter-combinations-of-a-phone-number](../submissions/0017-letter-combinations-of-a-phone-number/) | Not recorded | key idea, complexity |
+| [0018-4sum](../submissions/0018-4sum/) | Not recorded | key idea, complexity |
+| [0019-remove-nth-node-from-end-of-list](../submissions/0019-remove-nth-node-from-end-of-list/) | Not recorded | key idea, complexity |
 | [0023-merge-k-sorted-lists](../submissions/0023-merge-k-sorted-lists/) | Not recorded | key idea, complexity |
 | [0024-swap-nodes-in-pairs](../submissions/0024-swap-nodes-in-pairs/) | Not recorded | key idea, complexity |
 | [0035-search-insert-position](../submissions/0035-search-insert-position/) | Not recorded | key idea, complexity |
@@ -84,12 +90,7 @@ The scan is heuristic. Review flagged files manually before making the repositor
 | [0189-rotate-array](../submissions/0189-rotate-array/) | Not recorded | key idea, complexity |
 | [0191-number-of-1-bits](../submissions/0191-number-of-1-bits/) | Not recorded | key idea, complexity |
 | [0196-delete-duplicate-emails](../submissions/0196-delete-duplicate-emails/) | Not recorded | key idea, complexity |
-| [0215-kth-largest-element-in-an-array](../submissions/0215-kth-largest-element-in-an-array/) | Not recorded | key idea, complexity |
-| [0231-power-of-two](../submissions/0231-power-of-two/) | Not recorded | key idea, complexity |
-| [0326-power-of-three](../submissions/0326-power-of-three/) | Not recorded | key idea, complexity |
-| [0328-odd-even-linked-list](../submissions/0328-odd-even-linked-list/) | Not recorded | key idea, complexity |
-| [0367-valid-perfect-square](../submissions/0367-valid-perfect-square/) | Not recorded | key idea, complexity |
-| [0383-ransom-note](../submissions/0383-ransom-note/) | Not recorded | key idea, complexity |
+| [0199-binary-tree-right-side-view](../submissions/0199-binary-tree-right-side-view/) | Not recorded | key idea, complexity |
 
 ## AI-Assisted Disclosure Draft
 
