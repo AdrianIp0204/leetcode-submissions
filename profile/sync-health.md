@@ -1,16 +1,18 @@
 # LeetCode Sync Health
 
-- Generated at: 2026-07-02T03:04:19.376Z
-- Profile fetched at: 2026-07-02T03:00:34.824Z
+- Generated at: 2026-07-02T15:30:35.099Z
+- Profile fetched at: 2026-07-02T15:30:34.919Z
 - Username: AdrianIp
-- Public solved count: 380
-- Public accepted submissions: 438
-- Public attempted problems: 381
-- Public total submissions: 544
+- Public solved count: 382
+- Public accepted submissions: 440
+- Public attempted problems: 383
+- Public total submissions: 546
 - Local problem folders: 380
 - Local canonical solutions: 226
-- Estimated solved-count gap: 0
+- Estimated solved-count gap: 2
 
 ## Verdict
 
-- OK: local problem folders are not behind the public solved count.
+- Warning: LeetCode shows 382 solved problems, but this repo has 380 local problem folders.
+- Run the extension's **Collect Submission History** while logged in, then let the local watcher import the queue.
+- Recommendation quality is limited until the repo catches up, because local pattern coverage is incomplete.

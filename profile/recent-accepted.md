@@ -2,26 +2,28 @@
 
 - Username: AdrianIp
 - Profile: https://leetcode.com/u/AdrianIp/
-- Fetched at: 2026-07-02T03:00:34.824Z
-- Ranking: 327206
+- Fetched at: 2026-07-02T15:30:34.919Z
+- Ranking: 324690
 - Display name: AdrianIp
 
 ## Solved
 
-- All: 380 solved / 438 accepted submissions
+- All: 382 solved / 440 accepted submissions
 - Easy: 292 solved / 347 accepted submissions
-- Medium: 73 solved / 76 accepted submissions
+- Medium: 75 solved / 78 accepted submissions
 - Hard: 15 solved / 15 accepted submissions
 
 ## Total Attempts
 
-- All: 381 attempted problems / 544 total submissions
+- All: 383 attempted problems / 546 total submissions
 - Easy: 292 attempted problems / 404 total submissions
-- Medium: 73 attempted problems / 115 total submissions
+- Medium: 75 attempted problems / 117 total submissions
 - Hard: 16 attempted problems / 25 total submissions
 
 ## Recent Accepted
 
+- 2026-07-02T06:27:43.000Z: [Integer Break](https://leetcode.com/problems/integer-break/) (python3)
+- 2026-07-02T06:09:00.000Z: [Find a Safe Walk Through a Grid](https://leetcode.com/problems/find-a-safe-walk-through-a-grid/) (python3)
 - 2026-07-01T02:46:19.000Z: [Find the Safest Path in a Grid](https://leetcode.com/problems/find-the-safest-path-in-a-grid/) (python3)
 - 2026-06-30T15:36:34.000Z: [Second Highest Salary](https://leetcode.com/problems/second-highest-salary/) (pythondata)
 - 2026-06-30T14:51:48.000Z: [Number of Substrings Containing All Three Characters](https://leetcode.com/problems/number-of-substrings-containing-all-three-characters/) (python3)
@@ -40,5 +42,3 @@
 - 2026-06-28T01:40:05.000Z: [Maximum Element After Decreasing and Rearranging](https://leetcode.com/problems/maximum-element-after-decreasing-and-rearranging/) (python3)
 - 2026-06-27T14:44:18.000Z: [Sort the Students by Their Kth Score](https://leetcode.com/problems/sort-the-students-by-their-kth-score/) (python3)
 - 2026-06-27T14:39:07.000Z: [Find Indices of Stable Mountains](https://leetcode.com/problems/find-indices-of-stable-mountains/) (python3)
-- 2026-06-27T12:49:40.000Z: [Maximum Average Subarray I](https://leetcode.com/problems/maximum-average-subarray-i/) (python3)
-- 2026-06-27T09:08:28.000Z: [Merge Intervals](https://leetcode.com/problems/merge-intervals/) (python3)

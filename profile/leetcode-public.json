@@ -1,10 +1,10 @@
 {
-  "fetchedAt": "2026-07-02T03:00:34.824Z",
+  "fetchedAt": "2026-07-02T15:30:34.919Z",
   "username": "AdrianIp",
   "profile": {
     "realName": "AdrianIp",
     "userAvatar": "https://assets.leetcode.com/users/default_avatar.jpg",
-    "ranking": 327206,
+    "ranking": 324690,
     "reputation": 2,
     "countryName": "Hong Kong",
     "company": null,
@@ -15,8 +15,8 @@
   "solvedByDifficulty": [
     {
       "difficulty": "All",
-      "count": 380,
-      "submissions": 438
+      "count": 382,
+      "submissions": 440
     },
     {
       "difficulty": "Easy",
@@ -25,8 +25,8 @@
     },
     {
       "difficulty": "Medium",
-      "count": 73,
-      "submissions": 76
+      "count": 75,
+      "submissions": 78
     },
     {
       "difficulty": "Hard",
@@ -37,8 +37,8 @@
   "totalByDifficulty": [
     {
       "difficulty": "All",
-      "count": 381,
-      "submissions": 544
+      "count": 383,
+      "submissions": 546
     },
     {
       "difficulty": "Easy",
@@ -47,8 +47,8 @@
     },
     {
       "difficulty": "Medium",
-      "count": 73,
-      "submissions": 115
+      "count": 75,
+      "submissions": 117
     },
     {
       "difficulty": "Hard",
@@ -60,8 +60,8 @@
     "accepted": {
       "All": {
         "difficulty": "All",
-        "count": 380,
-        "submissions": 438
+        "count": 382,
+        "submissions": 440
       },
       "Easy": {
         "difficulty": "Easy",
@@ -70,8 +70,8 @@
       },
       "Medium": {
         "difficulty": "Medium",
-        "count": 73,
-        "submissions": 76
+        "count": 75,
+        "submissions": 78
       },
       "Hard": {
         "difficulty": "Hard",
@@ -82,8 +82,8 @@
     "total": {
       "All": {
         "difficulty": "All",
-        "count": 381,
-        "submissions": 544
+        "count": 383,
+        "submissions": 546
       },
       "Easy": {
         "difficulty": "Easy",
@@ -92,8 +92,8 @@
       },
       "Medium": {
         "difficulty": "Medium",
-        "count": 73,
-        "submissions": 115
+        "count": 75,
+        "submissions": 117
       },
       "Hard": {
         "difficulty": "Hard",
@@ -104,6 +104,22 @@
   },
   "contestRanking": null,
   "recentAccepted": [
+    {
+      "title": "Integer Break",
+      "titleSlug": "integer-break",
+      "timestamp": "1782973663",
+      "statusDisplay": "Accepted",
+      "lang": "python3",
+      "acceptedAt": "2026-07-02T06:27:43.000Z"
+    },
+    {
+      "title": "Find a Safe Walk Through a Grid",
+      "titleSlug": "find-a-safe-walk-through-a-grid",
+      "timestamp": "1782972540",
+      "statusDisplay": "Accepted",
+      "lang": "python3",
+      "acceptedAt": "2026-07-02T06:09:00.000Z"
+    },
     {
       "title": "Find the Safest Path in a Grid",
       "titleSlug": "find-the-safest-path-in-a-grid",
@@ -247,22 +263,6 @@
       "statusDisplay": "Accepted",
       "lang": "python3",
       "acceptedAt": "2026-06-27T14:39:07.000Z"
-    },
-    {
-      "title": "Maximum Average Subarray I",
-      "titleSlug": "maximum-average-subarray-i",
-      "timestamp": "1782564580",
-      "statusDisplay": "Accepted",
-      "lang": "python3",
-      "acceptedAt": "2026-06-27T12:49:40.000Z"
-    },
-    {
-      "title": "Merge Intervals",
-      "titleSlug": "merge-intervals",
-      "timestamp": "1782551308",
-      "statusDisplay": "Accepted",
-      "lang": "python3",
-      "acceptedAt": "2026-06-27T09:08:28.000Z"
     }
   ],
   "source": "LeetCode public GraphQL; no login cookie or browser extension used."
