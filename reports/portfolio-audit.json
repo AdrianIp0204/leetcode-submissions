@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-07-02T03:04:25.672Z",
+  "generatedAt": "2026-07-02T15:32:14.386Z",
   "totals": {
     "problemFolders": 380,
-    "publicSolved": 380,
-    "estimatedSolvedGap": 0,
+    "publicSolved": 382,
+    "estimatedSolvedGap": 2,
     "problemsWithAttempts": 59,
     "problemsNeedingReflection": 153,
     "problemsWithUnknownStatus": 159

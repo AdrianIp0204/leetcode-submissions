@@ -1,9 +1,9 @@
 # Portfolio Audit
 
-- Generated at: 2026-07-02T03:04:25.672Z
+- Generated at: 2026-07-02T15:32:14.386Z
 - Local problem folders: 380
-- Public solved count: 380
-- Estimated solved-count gap: 0
+- Public solved count: 382
+- Estimated solved-count gap: 2
 - Problems with real attempt files: 59
 - Problems with multiple languages or recorded language variants: 65
 - Problems needing reflection cleanup: 153
@@ -13,7 +13,7 @@
 
 This repo is close, but it should not be published until the blockers below are cleared. The public version should present the repo as a learning trace: accepted code, failed attempts when available, short reflections, weakness reports, and honest AI-assisted curation.
 
-Current blockers: missing reflection fields, possible copied problem-statement flags.
+Current blockers: the source-code sync gap, missing reflection fields, possible copied problem-statement flags.
 
 ## Language Coverage
 
@@ -43,6 +43,7 @@ Current blockers: missing reflection fields, possible copied problem-statement f
 
 ## Weakness Signals
 
+- 2 public solved problems are not yet represented by local source folders.
 - 153 of 380 problem READMEs still need real reflection.
 - 159 submissions have unknown or missing status metadata.
 - Failed attempts are preserved when real source exists; keep capturing them for new work.
