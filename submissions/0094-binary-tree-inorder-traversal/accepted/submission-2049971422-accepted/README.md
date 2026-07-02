@@ -13,17 +13,18 @@
 
 ## Pattern
 
-TODO
+Tree DFS / inorder traversal
 
 ## Key Idea
 
-TODO
+Visit the left subtree, append the current node value, then visit the right
+subtree.
 
 ## Mistake / Edge Case
 
-TODO
+No code-supported personal mistake recorded.
 
 ## Complexity
 
-- Time: TODO
-- Space: TODO
+- Time: O(n)
+- Space: O(h), where `h` is the tree height

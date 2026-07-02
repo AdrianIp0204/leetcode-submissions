@@ -13,17 +13,18 @@
 
 ## Pattern
 
-TODO
+Tree DFS / running sum
 
 ## Key Idea
 
-TODO
+Carry the root-to-current-node sum on the DFS stack and compare with the target
+only when the current node is a leaf.
 
 ## Mistake / Edge Case
 
-TODO
+No code-supported personal mistake recorded.
 
 ## Complexity
 
-- Time: TODO
-- Space: TODO
+- Time: O(n)
+- Space: O(n) worst case for the explicit stack

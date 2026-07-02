@@ -1,51 +1,50 @@
 # Portfolio Audit
 
-- Generated at: 2026-06-29T15:33:51.852Z
-- Local problem folders: 374
-- Public solved count: 377
-- Estimated solved-count gap: 3
-- Problems with real attempt files: 56
-- Problems with multiple languages or recorded language variants: 62
-- Problems needing reflection cleanup: 147
-- Problems with unknown/missing status metadata: 153
+- Generated at: 2026-07-02T03:04:25.672Z
+- Local problem folders: 380
+- Public solved count: 380
+- Estimated solved-count gap: 0
+- Problems with real attempt files: 59
+- Problems with multiple languages or recorded language variants: 65
+- Problems needing reflection cleanup: 153
+- Problems with unknown/missing status metadata: 159
 
 ## Verdict
 
 This repo is close, but it should not be published until the blockers below are cleared. The public version should present the repo as a learning trace: accepted code, failed attempts when available, short reflections, weakness reports, and honest AI-assisted curation.
 
-Current blockers: the source-code sync gap, missing reflection fields, possible copied problem-statement flags.
+Current blockers: missing reflection fields, possible copied problem-statement flags.
 
 ## Language Coverage
 
 | Language | Problems |
 | --- | --- |
 | cpp | 10 |
-| md | 56 |
-| python | 230 |
-| sql-or-text | 10 |
+| md | 59 |
+| python | 232 |
+| sql-or-text | 11 |
 | typescript | 5 |
 
 ## Pattern Coverage
 
 | Pattern | Problems |
 | --- | --- |
-| arrays-and-strings | 97 |
+| arrays-and-strings | 98 |
 | binary-search | 1 |
 | dynamic-programming | 2 |
 | hashing-and-counting | 14 |
 | linked-list | 4 |
-| math-and-digits | 95 |
+| math-and-digits | 96 |
 | sql | 4 |
 | stack | 3 |
-| tree-and-graph | 2 |
+| tree-and-graph | 5 |
 | two-pointers | 4 |
-| uncategorized | 148 |
+| uncategorized | 149 |
 
 ## Weakness Signals
 
-- 3 public solved problems are not yet represented by local source folders.
-- 147 of 374 problem READMEs still need real reflection.
-- 153 submissions have unknown or missing status metadata.
+- 153 of 380 problem READMEs still need real reflection.
+- 159 submissions have unknown or missing status metadata.
 - Failed attempts are preserved when real source exists; keep capturing them for new work.
 - A TypeScript track exists; expand it deliberately rather than scattering one-off language experiments.
 - Tree/graph/DP coverage is thin relative to array, string, math, and simple loop problems.
@@ -84,13 +83,13 @@ The scan is heuristic. Review flagged files manually before making the repositor
 | [0050-powx-n](../submissions/0050-powx-n/) | Not recorded | key idea, complexity |
 | [0056-merge-intervals](../submissions/0056-merge-intervals/) | Not recorded | key idea, complexity |
 | [0077-combinations](../submissions/0077-combinations/) | Not recorded | key idea, complexity |
+| [0094-binary-tree-inorder-traversal](../submissions/0094-binary-tree-inorder-traversal/) | Not recorded | key idea, complexity |
+| [0100-same-tree](../submissions/0100-same-tree/) | Not recorded | key idea, complexity |
+| [0104-maximum-depth-of-binary-tree](../submissions/0104-maximum-depth-of-binary-tree/) | Not recorded | key idea, complexity |
+| [0112-path-sum](../submissions/0112-path-sum/) | Not recorded | key idea, complexity |
 | [0150-evaluate-reverse-polish-notation](../submissions/0150-evaluate-reverse-polish-notation/) | Not recorded | key idea, complexity |
+| [0176-second-highest-salary](../submissions/0176-second-highest-salary/) | Not recorded | key idea, complexity |
 | [0182-duplicate-emails](../submissions/0182-duplicate-emails/) | Not recorded | key idea, complexity |
-| [0183-customers-who-never-order](../submissions/0183-customers-who-never-order/) | Not recorded | key idea, complexity |
-| [0189-rotate-array](../submissions/0189-rotate-array/) | Not recorded | key idea, complexity |
-| [0191-number-of-1-bits](../submissions/0191-number-of-1-bits/) | Not recorded | key idea, complexity |
-| [0196-delete-duplicate-emails](../submissions/0196-delete-duplicate-emails/) | Not recorded | key idea, complexity |
-| [0199-binary-tree-right-side-view](../submissions/0199-binary-tree-right-side-view/) | Not recorded | key idea, complexity |
 
 ## AI-Assisted Disclosure Draft
 

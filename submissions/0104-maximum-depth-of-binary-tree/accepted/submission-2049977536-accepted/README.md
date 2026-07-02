@@ -12,17 +12,18 @@
 
 ## Pattern
 
-TODO
+Tree DFS / postorder recursion
 
 ## Key Idea
 
-TODO
+An empty subtree has depth zero; a non-empty subtree has depth one plus the
+larger depth of its two children.
 
 ## Mistake / Edge Case
 
-TODO
+No code-supported personal mistake recorded.
 
 ## Complexity
 
-- Time: TODO
-- Space: TODO
+- Time: O(n)
+- Space: O(h), where `h` is the tree height

@@ -1,8 +1,8 @@
 # Model Answer Coverage
 
-- Generated at: 2026-06-29T15:33:51.900Z
-- Problems in repo: 374
-- Model-answer notes: 311
+- Generated at: 2026-07-02T03:04:32.408Z
+- Problems in repo: 380
+- Model-answer notes: 317
 - Missing model-answer notes: 63
 - Incomplete model-answer notes: 1
 - Notes without matching problem folder: 0
@@ -81,6 +81,10 @@ The model-answer track is active. Keep adding notes in batches, prioritizing reu
 | [0070-climbing-stairs](../notes/model-answers/0070-climbing-stairs.md) | Climbing Stairs |
 | [0077-combinations](../notes/model-answers/0077-combinations.md) | Combinations |
 | [0083-remove-duplicates-from-sorted-list](../notes/model-answers/0083-remove-duplicates-from-sorted-list.md) | Remove Duplicates from Sorted List |
+| [0094-binary-tree-inorder-traversal](../notes/model-answers/0094-binary-tree-inorder-traversal.md) | Binary Tree Inorder Traversal |
+| [0100-same-tree](../notes/model-answers/0100-same-tree.md) | Same Tree |
+| [0104-maximum-depth-of-binary-tree](../notes/model-answers/0104-maximum-depth-of-binary-tree.md) | Maximum Depth Of Binary Tree |
+| [0112-path-sum](../notes/model-answers/0112-path-sum.md) | Path Sum |
 | [0118-pascals-triangle](../notes/model-answers/0118-pascals-triangle.md) | Pascal's Triangle |
 | [0121-best-time-to-buy-and-sell-stock](../notes/model-answers/0121-best-time-to-buy-and-sell-stock.md) | Best Time to Buy and Sell Stock |
 | [0125-valid-palindrome](../notes/model-answers/0125-valid-palindrome.md) | Valid Palindrome |
@@ -92,14 +96,10 @@ The model-answer track is active. Keep adding notes in batches, prioritizing reu
 | [0171-excel-sheet-column-number](../notes/model-answers/0171-excel-sheet-column-number.md) | Excel Sheet Column Number |
 | [0172-factorial-trailing-zeroes](../notes/model-answers/0172-factorial-trailing-zeroes.md) | Factorial Trailing Zeroes |
 | [0175-combine-two-tables](../notes/model-answers/0175-combine-two-tables.md) | Combine Two Tables |
+| [0176-second-highest-salary](../notes/model-answers/0176-second-highest-salary.md) | Second Highest Salary |
 | [0181-employees-earning-more-than-their-managers](../notes/model-answers/0181-employees-earning-more-than-their-managers.md) | Employees Earning More Than Their Managers |
 | [0190-reverse-bits](../notes/model-answers/0190-reverse-bits.md) | Reverse Bits |
 | [0191-number-of-1-bits](../notes/model-answers/0191-number-of-1-bits.md) | Number Of 1 Bits |
-| [0199-binary-tree-right-side-view](../notes/model-answers/0199-binary-tree-right-side-view.md) | Binary Tree Right Side View |
-| [0204-count-primes](../notes/model-answers/0204-count-primes.md) | Count Primes |
-| [0205-isomorphic-strings](../notes/model-answers/0205-isomorphic-strings.md) | Isomorphic Strings |
-| [0206-reverse-linked-list](../notes/model-answers/0206-reverse-linked-list.md) | Reverse Linked List |
-| [0215-kth-largest-element-in-an-array](../notes/model-answers/0215-kth-largest-element-in-an-array.md) | Kth Largest Element In An Array |
 
 ## Incomplete Notes
 

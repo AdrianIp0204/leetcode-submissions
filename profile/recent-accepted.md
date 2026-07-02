@@ -2,26 +2,29 @@
 
 - Username: AdrianIp
 - Profile: https://leetcode.com/u/AdrianIp/
-- Fetched at: 2026-06-29T15:31:00.442Z
-- Ranking: 336792
+- Fetched at: 2026-07-02T03:00:34.824Z
+- Ranking: 327206
 - Display name: AdrianIp
 
 ## Solved
 
-- All: 377 solved / 435 accepted submissions
+- All: 380 solved / 438 accepted submissions
 - Easy: 292 solved / 347 accepted submissions
-- Medium: 70 solved / 73 accepted submissions
+- Medium: 73 solved / 76 accepted submissions
 - Hard: 15 solved / 15 accepted submissions
 
 ## Total Attempts
 
-- All: 378 attempted problems / 539 total submissions
+- All: 381 attempted problems / 544 total submissions
 - Easy: 292 attempted problems / 404 total submissions
-- Medium: 70 attempted problems / 110 total submissions
+- Medium: 73 attempted problems / 115 total submissions
 - Hard: 16 attempted problems / 25 total submissions
 
 ## Recent Accepted
 
+- 2026-07-01T02:46:19.000Z: [Find the Safest Path in a Grid](https://leetcode.com/problems/find-the-safest-path-in-a-grid/) (python3)
+- 2026-06-30T15:36:34.000Z: [Second Highest Salary](https://leetcode.com/problems/second-highest-salary/) (pythondata)
+- 2026-06-30T14:51:48.000Z: [Number of Substrings Containing All Three Characters](https://leetcode.com/problems/number-of-substrings-containing-all-three-characters/) (python3)
 - 2026-06-29T11:28:40.000Z: [Same Tree](https://leetcode.com/problems/same-tree/) (python3)
 - 2026-06-29T11:14:57.000Z: [Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/) (python3)
 - 2026-06-29T11:08:53.000Z: [Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal/) (python3)
@@ -39,6 +42,3 @@
 - 2026-06-27T14:39:07.000Z: [Find Indices of Stable Mountains](https://leetcode.com/problems/find-indices-of-stable-mountains/) (python3)
 - 2026-06-27T12:49:40.000Z: [Maximum Average Subarray I](https://leetcode.com/problems/maximum-average-subarray-i/) (python3)
 - 2026-06-27T09:08:28.000Z: [Merge Intervals](https://leetcode.com/problems/merge-intervals/) (python3)
-- 2026-06-27T08:44:41.000Z: [Swap Nodes in Pairs](https://leetcode.com/problems/swap-nodes-in-pairs/) (python3)
-- 2026-06-27T08:38:21.000Z: [3Sum Closest](https://leetcode.com/problems/3sum-closest/) (python3)
-- 2026-06-27T08:19:19.000Z: [Fix Names in a Table](https://leetcode.com/problems/fix-names-in-a-table/) (pythondata)

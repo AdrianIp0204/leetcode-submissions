@@ -13,17 +13,19 @@
 
 ## Pattern
 
-TODO
+Brute-force substring scan
 
 ## Key Idea
 
-TODO
+For each starting index, extend the right edge until all three characters have
+appeared, then count the valid suffix extensions.
 
 ## Mistake / Edge Case
 
-TODO
+Mechanical issue: repeatedly scanning forward from each start can take
+quadratic time on long strings.
 
 ## Complexity
 
-- Time: TODO
-- Space: TODO
+- Time: O(n^2) worst case
+- Space: O(1)

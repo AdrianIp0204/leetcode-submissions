@@ -13,17 +13,18 @@
 
 ## Pattern
 
-TODO
+Pandas distinct values / sorting
 
 ## Key Idea
 
-TODO
+The code removes duplicate salaries and sorts before selecting a row.
 
 ## Mistake / Edge Case
 
-TODO
+Mechanical issue: sorting ascending selects the second-lowest distinct salary,
+not the second-highest salary.
 
 ## Complexity
 
-- Time: TODO
-- Space: TODO
+- Time: O(n log n)
+- Space: O(n)
