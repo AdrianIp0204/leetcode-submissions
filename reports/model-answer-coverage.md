@@ -1,10 +1,10 @@
 # Model Answer Coverage
 
-- Generated at: 2026-07-02T15:32:14.745Z
+- Generated at: 2026-07-03T15:32:17.437Z
 - Problems in repo: 380
 - Model-answer notes: 317
 - Missing model-answer notes: 63
-- Incomplete model-answer notes: 1
+- Incomplete model-answer notes: 0
 - Notes without matching problem folder: 0
 
 ## Verdict
@@ -100,9 +100,3 @@ The model-answer track is active. Keep adding notes in batches, prioritizing reu
 | [0181-employees-earning-more-than-their-managers](../notes/model-answers/0181-employees-earning-more-than-their-managers.md) | Employees Earning More Than Their Managers |
 | [0190-reverse-bits](../notes/model-answers/0190-reverse-bits.md) | Reverse Bits |
 | [0191-number-of-1-bits](../notes/model-answers/0191-number-of-1-bits.md) | Number Of 1 Bits |
-
-## Incomplete Notes
-
-| Note | Missing |
-| --- | --- |
-| [1846-maximum-element-after-decreasing-and-rearranging](../notes/model-answers/1846-maximum-element-after-decreasing-and-rearranging.md) | why |
