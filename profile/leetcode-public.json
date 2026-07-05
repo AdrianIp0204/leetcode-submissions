@@ -1,10 +1,10 @@
 {
-  "fetchedAt": "2026-07-03T15:30:53.525Z",
+  "fetchedAt": "2026-07-05T15:31:05.992Z",
   "username": "AdrianIp",
   "profile": {
     "realName": "AdrianIp",
     "userAvatar": "https://assets.leetcode.com/users/default_avatar.jpg",
-    "ranking": 324948,
+    "ranking": 321263,
     "reputation": 2,
     "countryName": "Hong Kong",
     "company": null,
@@ -15,95 +15,159 @@
   "solvedByDifficulty": [
     {
       "difficulty": "All",
-      "count": 382,
-      "submissions": 440
+      "count": 386,
+      "submissions": 449
     },
     {
       "difficulty": "Easy",
-      "count": 292,
-      "submissions": 347
+      "count": 293,
+      "submissions": 353
     },
     {
       "difficulty": "Medium",
-      "count": 75,
-      "submissions": 78
+      "count": 77,
+      "submissions": 80
     },
     {
       "difficulty": "Hard",
-      "count": 15,
-      "submissions": 15
+      "count": 16,
+      "submissions": 16
     }
   ],
   "totalByDifficulty": [
     {
       "difficulty": "All",
-      "count": 383,
-      "submissions": 546
+      "count": 387,
+      "submissions": 555
     },
     {
       "difficulty": "Easy",
-      "count": 292,
-      "submissions": 404
+      "count": 293,
+      "submissions": 410
     },
     {
       "difficulty": "Medium",
-      "count": 75,
-      "submissions": 117
+      "count": 77,
+      "submissions": 119
     },
     {
       "difficulty": "Hard",
-      "count": 16,
-      "submissions": 25
+      "count": 17,
+      "submissions": 26
     }
   ],
   "summary": {
     "accepted": {
       "All": {
         "difficulty": "All",
-        "count": 382,
-        "submissions": 440
+        "count": 386,
+        "submissions": 449
       },
       "Easy": {
         "difficulty": "Easy",
-        "count": 292,
-        "submissions": 347
+        "count": 293,
+        "submissions": 353
       },
       "Medium": {
         "difficulty": "Medium",
-        "count": 75,
-        "submissions": 78
+        "count": 77,
+        "submissions": 80
       },
       "Hard": {
         "difficulty": "Hard",
-        "count": 15,
-        "submissions": 15
+        "count": 16,
+        "submissions": 16
       }
     },
     "total": {
       "All": {
         "difficulty": "All",
-        "count": 383,
-        "submissions": 546
+        "count": 387,
+        "submissions": 555
       },
       "Easy": {
         "difficulty": "Easy",
-        "count": 292,
-        "submissions": 404
+        "count": 293,
+        "submissions": 410
       },
       "Medium": {
         "difficulty": "Medium",
-        "count": 75,
-        "submissions": 117
+        "count": 77,
+        "submissions": 119
       },
       "Hard": {
         "difficulty": "Hard",
-        "count": 16,
-        "submissions": 25
+        "count": 17,
+        "submissions": 26
       }
     }
   },
   "contestRanking": null,
   "recentAccepted": [
+    {
+      "title": "Big Countries",
+      "titleSlug": "big-countries",
+      "timestamp": "1783257401",
+      "statusDisplay": "Accepted",
+      "lang": "mysql",
+      "acceptedAt": "2026-07-05T13:16:41.000Z"
+    },
+    {
+      "title": "Find Customer Referee",
+      "titleSlug": "find-customer-referee",
+      "timestamp": "1783257186",
+      "statusDisplay": "Accepted",
+      "lang": "mysql",
+      "acceptedAt": "2026-07-05T13:13:06.000Z"
+    },
+    {
+      "title": "Recyclable and Low Fat Products",
+      "titleSlug": "recyclable-and-low-fat-products",
+      "timestamp": "1783257091",
+      "statusDisplay": "Accepted",
+      "lang": "mysql",
+      "acceptedAt": "2026-07-05T13:11:31.000Z"
+    },
+    {
+      "title": "Find Customer Referee",
+      "titleSlug": "find-customer-referee",
+      "timestamp": "1783257005",
+      "statusDisplay": "Accepted",
+      "lang": "mysql",
+      "acceptedAt": "2026-07-05T13:10:05.000Z"
+    },
+    {
+      "title": "Recyclable and Low Fat Products",
+      "titleSlug": "recyclable-and-low-fat-products",
+      "timestamp": "1783256782",
+      "statusDisplay": "Accepted",
+      "lang": "mysql",
+      "acceptedAt": "2026-07-05T13:06:22.000Z"
+    },
+    {
+      "title": "Sum of Two Integers",
+      "titleSlug": "sum-of-two-integers",
+      "timestamp": "1783244874",
+      "statusDisplay": "Accepted",
+      "lang": "python3",
+      "acceptedAt": "2026-07-05T09:47:54.000Z"
+    },
+    {
+      "title": "Number of Paths with Max Score",
+      "titleSlug": "number-of-paths-with-max-score",
+      "timestamp": "1783244707",
+      "statusDisplay": "Accepted",
+      "lang": "python3",
+      "acceptedAt": "2026-07-05T09:45:07.000Z"
+    },
+    {
+      "title": "Minimum Score of a Path Between Two Cities",
+      "titleSlug": "minimum-score-of-a-path-between-two-cities",
+      "timestamp": "1783173727",
+      "statusDisplay": "Accepted",
+      "lang": "python3",
+      "acceptedAt": "2026-07-04T14:02:07.000Z"
+    },
     {
       "title": "Integer Break",
       "titleSlug": "integer-break",
@@ -199,70 +263,6 @@
       "statusDisplay": "Accepted",
       "lang": "python3",
       "acceptedAt": "2026-06-29T09:29:00.000Z"
-    },
-    {
-      "title": "Regular Expression Matching",
-      "titleSlug": "regular-expression-matching",
-      "timestamp": "1782724144",
-      "statusDisplay": "Accepted",
-      "lang": "python3",
-      "acceptedAt": "2026-06-29T09:09:04.000Z"
-    },
-    {
-      "title": "String to Integer (atoi)",
-      "titleSlug": "string-to-integer-atoi",
-      "timestamp": "1782723107",
-      "statusDisplay": "Accepted",
-      "lang": "python3",
-      "acceptedAt": "2026-06-29T08:51:47.000Z"
-    },
-    {
-      "title": "Binary Tree Right Side View",
-      "titleSlug": "binary-tree-right-side-view",
-      "timestamp": "1782718975",
-      "statusDisplay": "Accepted",
-      "lang": "python3",
-      "acceptedAt": "2026-06-29T07:42:55.000Z"
-    },
-    {
-      "title": "Actors and Directors Who Cooperated At Least Three Times",
-      "titleSlug": "actors-and-directors-who-cooperated-at-least-three-times",
-      "timestamp": "1782706071",
-      "statusDisplay": "Accepted",
-      "lang": "pythondata",
-      "acceptedAt": "2026-06-29T04:07:51.000Z"
-    },
-    {
-      "title": "Number of Strings That Appear as Substrings in Word",
-      "titleSlug": "number-of-strings-that-appear-as-substrings-in-word",
-      "timestamp": "1782705775",
-      "statusDisplay": "Accepted",
-      "lang": "python3",
-      "acceptedAt": "2026-06-29T04:02:55.000Z"
-    },
-    {
-      "title": "Maximum Element After Decreasing and Rearranging",
-      "titleSlug": "maximum-element-after-decreasing-and-rearranging",
-      "timestamp": "1782610805",
-      "statusDisplay": "Accepted",
-      "lang": "python3",
-      "acceptedAt": "2026-06-28T01:40:05.000Z"
-    },
-    {
-      "title": "Sort the Students by Their Kth Score",
-      "titleSlug": "sort-the-students-by-their-kth-score",
-      "timestamp": "1782571458",
-      "statusDisplay": "Accepted",
-      "lang": "python3",
-      "acceptedAt": "2026-06-27T14:44:18.000Z"
-    },
-    {
-      "title": "Find Indices of Stable Mountains",
-      "titleSlug": "find-indices-of-stable-mountains",
-      "timestamp": "1782571147",
-      "statusDisplay": "Accepted",
-      "lang": "python3",
-      "acceptedAt": "2026-06-27T14:39:07.000Z"
     }
   ],
   "source": "LeetCode public GraphQL; no login cookie or browser extension used."
