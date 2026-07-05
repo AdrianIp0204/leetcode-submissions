@@ -1,9 +1,9 @@
 # Model Answer Coverage
 
-- Generated at: 2026-07-03T15:32:17.437Z
+- Generated at: 2026-07-05T15:34:27.457Z
 - Problems in repo: 380
-- Model-answer notes: 317
-- Missing model-answer notes: 63
+- Model-answer notes: 318
+- Missing model-answer notes: 62
 - Incomplete model-answer notes: 0
 - Notes without matching problem folder: 0
 
@@ -31,7 +31,6 @@ The model-answer track is active. Keep adding notes in batches, prioritizing reu
 | [0328-odd-even-linked-list](../submissions/0328-odd-even-linked-list/) | Odd Even Linked List | uncovered |
 | [0441-arranging-coins](../submissions/0441-arranging-coins/) | Arranging Coins | uncovered |
 | [0482-license-key-formatting](../submissions/0482-license-key-formatting/) | License Key Formatting | uncovered |
-| [0595-big-countries](../submissions/0595-big-countries/) | Big Countries | uncovered |
 | [0596-classes-with-at-least-5-students](../submissions/0596-classes-with-at-least-5-students/) | Classes With At Least 5 Students | uncovered |
 | [0619-biggest-single-number](../submissions/0619-biggest-single-number/) | Biggest Single Number | uncovered |
 | [0620-not-boring-movies](../submissions/0620-not-boring-movies/) | Not Boring Movies | uncovered |
@@ -45,6 +44,7 @@ The model-answer track is active. Keep adding notes in batches, prioritizing reu
 | [1122-relative-sort-array](../submissions/1122-relative-sort-array/) | Relative Sort Array | uncovered |
 | [1283-find-the-smallest-divisor-given-a-threshold](../submissions/1283-find-the-smallest-divisor-given-a-threshold/) | Find The Smallest Divisor Given A Threshold | uncovered |
 | [1346-check-if-n-and-its-double-exist](../submissions/1346-check-if-n-and-its-double-exist/) | Check If N And Its Double Exist | uncovered |
+| [1351-count-negative-numbers-in-a-sorted-matrix](../submissions/1351-count-negative-numbers-in-a-sorted-matrix/) | Count Negative Numbers In A Sorted Matrix | uncovered |
 
 ## Existing Model Answers
 

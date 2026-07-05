@@ -13,17 +13,19 @@
 
 ## Pattern
 
-TODO
+Database filter
 
 ## Key Idea
 
-TODO
+Return countries whose area is at least 3,000,000 or whose population is at
+least 25,000,000, projecting only `name`, `population`, and `area`.
 
 ## Mistake / Edge Case
 
-TODO
+No subjective mistake recorded. Edge case: the two qualifying conditions are an
+OR condition.
 
 ## Complexity
 
-- Time: TODO
-- Space: TODO
+- Time: O(n)
+- Space: O(n)

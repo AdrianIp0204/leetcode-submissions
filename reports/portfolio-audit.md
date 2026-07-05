@@ -1,9 +1,9 @@
 # Portfolio Audit
 
-- Generated at: 2026-07-03T15:32:17.070Z
+- Generated at: 2026-07-05T15:34:27.094Z
 - Local problem folders: 380
-- Public solved count: 382
-- Estimated solved-count gap: 2
+- Public solved count: 386
+- Estimated solved-count gap: 6
 - Problems with real attempt files: 59
 - Problems with multiple languages or recorded language variants: 65
 - Problems needing reflection cleanup: 153
@@ -43,7 +43,7 @@ Current blockers: the source-code sync gap, missing reflection fields, possible 
 
 ## Weakness Signals
 
-- 2 public solved problems are not yet represented by local source folders.
+- 6 public solved problems are not yet represented by local source folders.
 - 153 of 380 problem READMEs still need real reflection.
 - 159 submissions have unknown or missing status metadata.
 - Failed attempts are preserved when real source exists; keep capturing them for new work.
