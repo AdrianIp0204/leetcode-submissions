@@ -13,17 +13,18 @@
 
 ## Pattern
 
-TODO
+Sliding window / count suffixes
 
 ## Key Idea
 
-TODO
+Maintain a window with counts of `a`, `b`, and `c`; whenever all three are
+present, every suffix extension from the current right edge is valid.
 
 ## Mistake / Edge Case
 
-TODO
+No code-supported personal mistake recorded.
 
 ## Complexity
 
-- Time: TODO
-- Space: TODO
+- Time: O(n)
+- Space: O(1)

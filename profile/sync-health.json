@@ -1,14 +1,14 @@
 {
-  "generatedAt": "2026-06-29T15:33:51.873Z",
+  "generatedAt": "2026-07-06T15:31:39.912Z",
   "username": "AdrianIp",
-  "profileFetchedAt": "2026-06-29T15:31:00.442Z",
-  "publicAcceptedSolved": 377,
-  "publicAcceptedSubmissions": 435,
-  "publicAttemptedProblems": 378,
-  "publicTotalSubmissions": 539,
-  "localProblemFolders": 374,
+  "profileFetchedAt": "2026-07-06T15:30:49.376Z",
+  "publicAcceptedSolved": 386,
+  "publicAcceptedSubmissions": 449,
+  "publicAttemptedProblems": 387,
+  "publicTotalSubmissions": 555,
+  "localProblemFolders": 380,
   "localCanonicalSolutions": 226,
-  "estimatedSolvedGap": 3,
+  "estimatedSolvedGap": 6,
   "status": "behind",
   "knownLocalProblems": [
     {
@@ -202,6 +202,26 @@
       "hasCanonicalSolution": true
     },
     {
+      "folder": "0094-binary-tree-inorder-traversal",
+      "slug": "binary-tree-inorder-traversal",
+      "hasCanonicalSolution": false
+    },
+    {
+      "folder": "0100-same-tree",
+      "slug": "same-tree",
+      "hasCanonicalSolution": false
+    },
+    {
+      "folder": "0104-maximum-depth-of-binary-tree",
+      "slug": "maximum-depth-of-binary-tree",
+      "hasCanonicalSolution": false
+    },
+    {
+      "folder": "0112-path-sum",
+      "slug": "path-sum",
+      "hasCanonicalSolution": false
+    },
+    {
       "folder": "0118-pascals-triangle",
       "slug": "pascals-triangle",
       "hasCanonicalSolution": true
@@ -260,6 +280,11 @@
       "folder": "0175-combine-two-tables",
       "slug": "combine-two-tables",
       "hasCanonicalSolution": true
+    },
+    {
+      "folder": "0176-second-highest-salary",
+      "slug": "second-highest-salary",
+      "hasCanonicalSolution": false
     },
     {
       "folder": "0181-employees-earning-more-than-their-managers",
@@ -824,6 +849,11 @@
     {
       "folder": "1351-count-negative-numbers-in-a-sorted-matrix",
       "slug": "count-negative-numbers-in-a-sorted-matrix",
+      "hasCanonicalSolution": false
+    },
+    {
+      "folder": "1358-number-of-substrings-containing-all-three-characters",
+      "slug": "number-of-substrings-containing-all-three-characters",
       "hasCanonicalSolution": false
     },
     {

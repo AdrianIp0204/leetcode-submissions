@@ -12,17 +12,18 @@
 
 ## Pattern
 
-TODO
+Tree DFS / inorder traversal comparison
 
 ## Key Idea
 
-TODO
+The code compares inorder value lists from both trees.
 
 ## Mistake / Edge Case
 
-TODO
+Mechanical issue: inorder values alone do not preserve tree shape, so different
+structures can produce the same list.
 
 ## Complexity
 
-- Time: TODO
-- Space: TODO
+- Time: O(n + m)
+- Space: O(n + m)

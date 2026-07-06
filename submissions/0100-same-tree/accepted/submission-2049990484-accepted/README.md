@@ -12,17 +12,18 @@
 
 ## Pattern
 
-TODO
+Tree DFS / structural recursion
 
 ## Key Idea
 
-TODO
+Two subtrees match only when both roots exist or both are empty, root values
+match, and both child pairs match recursively.
 
 ## Mistake / Edge Case
 
-TODO
+No code-supported personal mistake recorded.
 
 ## Complexity
 
-- Time: TODO
-- Space: TODO
+- Time: O(n)
+- Space: O(h), where `h` is the recursion depth

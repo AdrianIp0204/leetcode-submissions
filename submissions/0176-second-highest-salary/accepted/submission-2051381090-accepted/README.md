@@ -13,17 +13,18 @@
 
 ## Pattern
 
-TODO
+Pandas distinct values / sorting
 
 ## Key Idea
 
-TODO
+Remove duplicate salaries, sort salaries descending, and return the second row
+when it exists; otherwise return a single null value.
 
 ## Mistake / Edge Case
 
-TODO
+No code-supported personal mistake recorded.
 
 ## Complexity
 
-- Time: TODO
-- Space: TODO
+- Time: O(n log n)
+- Space: O(n)
