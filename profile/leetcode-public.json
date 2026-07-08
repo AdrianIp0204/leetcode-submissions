@@ -1,10 +1,10 @@
 {
-  "fetchedAt": "2026-07-06T15:30:49.376Z",
+  "fetchedAt": "2026-07-08T07:48:15.760Z",
   "username": "AdrianIp",
   "profile": {
     "realName": "AdrianIp",
     "userAvatar": "https://assets.leetcode.com/users/default_avatar.jpg",
-    "ranking": 320190,
+    "ranking": 317808,
     "reputation": 2,
     "countryName": "Hong Kong",
     "company": null,
@@ -15,18 +15,18 @@
   "solvedByDifficulty": [
     {
       "difficulty": "All",
-      "count": 386,
-      "submissions": 449
+      "count": 388,
+      "submissions": 453
     },
     {
       "difficulty": "Easy",
-      "count": 293,
-      "submissions": 353
+      "count": 294,
+      "submissions": 356
     },
     {
       "difficulty": "Medium",
-      "count": 77,
-      "submissions": 80
+      "count": 78,
+      "submissions": 81
     },
     {
       "difficulty": "Hard",
@@ -37,18 +37,18 @@
   "totalByDifficulty": [
     {
       "difficulty": "All",
-      "count": 387,
-      "submissions": 555
+      "count": 389,
+      "submissions": 560
     },
     {
       "difficulty": "Easy",
-      "count": 293,
-      "submissions": 410
+      "count": 294,
+      "submissions": 413
     },
     {
       "difficulty": "Medium",
-      "count": 77,
-      "submissions": 119
+      "count": 78,
+      "submissions": 121
     },
     {
       "difficulty": "Hard",
@@ -60,18 +60,18 @@
     "accepted": {
       "All": {
         "difficulty": "All",
-        "count": 386,
-        "submissions": 449
+        "count": 388,
+        "submissions": 453
       },
       "Easy": {
         "difficulty": "Easy",
-        "count": 293,
-        "submissions": 353
+        "count": 294,
+        "submissions": 356
       },
       "Medium": {
         "difficulty": "Medium",
-        "count": 77,
-        "submissions": 80
+        "count": 78,
+        "submissions": 81
       },
       "Hard": {
         "difficulty": "Hard",
@@ -82,18 +82,18 @@
     "total": {
       "All": {
         "difficulty": "All",
-        "count": 387,
-        "submissions": 555
+        "count": 389,
+        "submissions": 560
       },
       "Easy": {
         "difficulty": "Easy",
-        "count": 293,
-        "submissions": 410
+        "count": 294,
+        "submissions": 413
       },
       "Medium": {
         "difficulty": "Medium",
-        "count": 77,
-        "submissions": 119
+        "count": 78,
+        "submissions": 121
       },
       "Hard": {
         "difficulty": "Hard",
@@ -104,6 +104,38 @@
   },
   "contestRanking": null,
   "recentAccepted": [
+    {
+      "title": "Replace Employee ID With The Unique Identifier",
+      "titleSlug": "replace-employee-id-with-the-unique-identifier",
+      "timestamp": "1783361999",
+      "statusDisplay": "Accepted",
+      "lang": "mysql",
+      "acceptedAt": "2026-07-06T18:19:59.000Z"
+    },
+    {
+      "title": "Invalid Tweets",
+      "titleSlug": "invalid-tweets",
+      "timestamp": "1783361619",
+      "statusDisplay": "Accepted",
+      "lang": "mysql",
+      "acceptedAt": "2026-07-06T18:13:39.000Z"
+    },
+    {
+      "title": "Article Views I",
+      "titleSlug": "article-views-i",
+      "timestamp": "1783361425",
+      "statusDisplay": "Accepted",
+      "lang": "mysql",
+      "acceptedAt": "2026-07-06T18:10:25.000Z"
+    },
+    {
+      "title": "Remove Covered Intervals",
+      "titleSlug": "remove-covered-intervals",
+      "timestamp": "1783360871",
+      "statusDisplay": "Accepted",
+      "lang": "python3",
+      "acceptedAt": "2026-07-06T18:01:11.000Z"
+    },
     {
       "title": "Big Countries",
       "titleSlug": "big-countries",
@@ -231,38 +263,6 @@
       "statusDisplay": "Accepted",
       "lang": "python3",
       "acceptedAt": "2026-06-29T11:08:53.000Z"
-    },
-    {
-      "title": "Path Sum",
-      "titleSlug": "path-sum",
-      "timestamp": "1782730482",
-      "statusDisplay": "Accepted",
-      "lang": "python3",
-      "acceptedAt": "2026-06-29T10:54:42.000Z"
-    },
-    {
-      "title": "Remove Nth Node From End of List",
-      "titleSlug": "remove-nth-node-from-end-of-list",
-      "timestamp": "1782727674",
-      "statusDisplay": "Accepted",
-      "lang": "python3",
-      "acceptedAt": "2026-06-29T10:07:54.000Z"
-    },
-    {
-      "title": "4Sum",
-      "titleSlug": "4sum",
-      "timestamp": "1782726804",
-      "statusDisplay": "Accepted",
-      "lang": "python3",
-      "acceptedAt": "2026-06-29T09:53:24.000Z"
-    },
-    {
-      "title": "Letter Combinations of a Phone Number",
-      "titleSlug": "letter-combinations-of-a-phone-number",
-      "timestamp": "1782725340",
-      "statusDisplay": "Accepted",
-      "lang": "python3",
-      "acceptedAt": "2026-06-29T09:29:00.000Z"
     }
   ],
   "source": "LeetCode public GraphQL; no login cookie or browser extension used."

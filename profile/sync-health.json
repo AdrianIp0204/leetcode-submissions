@@ -1,14 +1,14 @@
 {
-  "generatedAt": "2026-07-06T15:31:39.912Z",
+  "generatedAt": "2026-07-08T07:48:15.948Z",
   "username": "AdrianIp",
-  "profileFetchedAt": "2026-07-06T15:30:49.376Z",
-  "publicAcceptedSolved": 386,
-  "publicAcceptedSubmissions": 449,
-  "publicAttemptedProblems": 387,
-  "publicTotalSubmissions": 555,
-  "localProblemFolders": 380,
+  "profileFetchedAt": "2026-07-08T07:48:15.760Z",
+  "publicAcceptedSolved": 388,
+  "publicAcceptedSubmissions": 453,
+  "publicAttemptedProblems": 389,
+  "publicTotalSubmissions": 560,
+  "localProblemFolders": 387,
   "localCanonicalSolutions": 226,
-  "estimatedSolvedGap": 6,
+  "estimatedSolvedGap": 1,
   "status": "behind",
   "knownLocalProblems": [
     {
@@ -422,6 +422,11 @@
       "hasCanonicalSolution": true
     },
     {
+      "folder": "0343-integer-break",
+      "slug": "integer-break",
+      "hasCanonicalSolution": false
+    },
+    {
       "folder": "0344-reverse-string",
       "slug": "reverse-string",
       "hasCanonicalSolution": true
@@ -449,6 +454,11 @@
     {
       "folder": "0367-valid-perfect-square",
       "slug": "valid-perfect-square",
+      "hasCanonicalSolution": false
+    },
+    {
+      "folder": "0371-sum-of-two-integers",
+      "slug": "sum-of-two-integers",
       "hasCanonicalSolution": false
     },
     {
@@ -559,6 +569,11 @@
     {
       "folder": "0577-employee-bonus",
       "slug": "employee-bonus",
+      "hasCanonicalSolution": false
+    },
+    {
+      "folder": "0584-find-customer-referee",
+      "slug": "find-customer-referee",
       "hasCanonicalSolution": false
     },
     {
@@ -825,6 +840,11 @@
       "folder": "1295-find-numbers-with-even-number-of-digits",
       "slug": "find-numbers-with-even-number-of-digits",
       "hasCanonicalSolution": true
+    },
+    {
+      "folder": "1301-number-of-paths-with-max-score",
+      "slug": "number-of-paths-with-max-score",
+      "hasCanonicalSolution": false
     },
     {
       "folder": "1304-find-n-unique-integers-sum-up-to-zero",
@@ -1332,6 +1352,11 @@
       "hasCanonicalSolution": true
     },
     {
+      "folder": "2492-minimum-score-of-a-path-between-two-cities",
+      "slug": "minimum-score-of-a-path-between-two-cities",
+      "hasCanonicalSolution": false
+    },
+    {
       "folder": "2520-count-the-digits-that-divide-a-number",
       "slug": "count-the-digits-that-divide-a-number",
       "hasCanonicalSolution": true
@@ -1449,6 +1474,11 @@
     {
       "folder": "2810-faulty-keyboard",
       "slug": "faulty-keyboard",
+      "hasCanonicalSolution": false
+    },
+    {
+      "folder": "2812-find-the-safest-path-in-a-grid",
+      "slug": "find-the-safest-path-in-a-grid",
       "hasCanonicalSolution": false
     },
     {
@@ -1679,6 +1709,11 @@
     {
       "folder": "3285-find-indices-of-stable-mountains",
       "slug": "find-indices-of-stable-mountains",
+      "hasCanonicalSolution": false
+    },
+    {
+      "folder": "3286-find-a-safe-walk-through-a-grid",
+      "slug": "find-a-safe-walk-through-a-grid",
       "hasCanonicalSolution": false
     },
     {
