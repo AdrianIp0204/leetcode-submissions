@@ -2,26 +2,27 @@
 
 - Username: AdrianIp
 - Profile: https://leetcode.com/u/AdrianIp/
-- Fetched at: 2026-07-08T15:30:52.736Z
-- Ranking: 318039
+- Fetched at: 2026-07-09T15:31:07.279Z
+- Ranking: 316947
 - Display name: AdrianIp
 
 ## Solved
 
-- All: 388 solved / 453 accepted submissions
+- All: 389 solved / 454 accepted submissions
 - Easy: 294 solved / 356 accepted submissions
-- Medium: 78 solved / 81 accepted submissions
+- Medium: 79 solved / 82 accepted submissions
 - Hard: 16 solved / 16 accepted submissions
 
 ## Total Attempts
 
-- All: 389 attempted problems / 560 total submissions
+- All: 390 attempted problems / 561 total submissions
 - Easy: 294 attempted problems / 413 total submissions
-- Medium: 78 attempted problems / 121 total submissions
+- Medium: 79 attempted problems / 122 total submissions
 - Hard: 17 attempted problems / 26 total submissions
 
 ## Recent Accepted
 
+- 2026-07-08T17:17:05.000Z: [Concatenate Non-Zero Digits and Multiply by Sum II](https://leetcode.com/problems/concatenate-non-zero-digits-and-multiply-by-sum-ii/) (python3)
 - 2026-07-06T18:19:59.000Z: [Replace Employee ID With The Unique Identifier](https://leetcode.com/problems/replace-employee-id-with-the-unique-identifier/) (mysql)
 - 2026-07-06T18:13:39.000Z: [Invalid Tweets](https://leetcode.com/problems/invalid-tweets/) (mysql)
 - 2026-07-06T18:10:25.000Z: [Article Views I](https://leetcode.com/problems/article-views-i/) (mysql)
@@ -41,4 +42,3 @@
 - 2026-06-30T14:51:48.000Z: [Number of Substrings Containing All Three Characters](https://leetcode.com/problems/number-of-substrings-containing-all-three-characters/) (python3)
 - 2026-06-29T11:28:40.000Z: [Same Tree](https://leetcode.com/problems/same-tree/) (python3)
 - 2026-06-29T11:14:57.000Z: [Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/) (python3)
-- 2026-06-29T11:08:53.000Z: [Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal/) (python3)

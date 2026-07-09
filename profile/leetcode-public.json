@@ -1,10 +1,10 @@
 {
-  "fetchedAt": "2026-07-08T15:30:52.736Z",
+  "fetchedAt": "2026-07-09T15:31:07.279Z",
   "username": "AdrianIp",
   "profile": {
     "realName": "AdrianIp",
     "userAvatar": "https://assets.leetcode.com/users/default_avatar.jpg",
-    "ranking": 318039,
+    "ranking": 316947,
     "reputation": 2,
     "countryName": "Hong Kong",
     "company": null,
@@ -15,8 +15,8 @@
   "solvedByDifficulty": [
     {
       "difficulty": "All",
-      "count": 388,
-      "submissions": 453
+      "count": 389,
+      "submissions": 454
     },
     {
       "difficulty": "Easy",
@@ -25,8 +25,8 @@
     },
     {
       "difficulty": "Medium",
-      "count": 78,
-      "submissions": 81
+      "count": 79,
+      "submissions": 82
     },
     {
       "difficulty": "Hard",
@@ -37,8 +37,8 @@
   "totalByDifficulty": [
     {
       "difficulty": "All",
-      "count": 389,
-      "submissions": 560
+      "count": 390,
+      "submissions": 561
     },
     {
       "difficulty": "Easy",
@@ -47,8 +47,8 @@
     },
     {
       "difficulty": "Medium",
-      "count": 78,
-      "submissions": 121
+      "count": 79,
+      "submissions": 122
     },
     {
       "difficulty": "Hard",
@@ -60,8 +60,8 @@
     "accepted": {
       "All": {
         "difficulty": "All",
-        "count": 388,
-        "submissions": 453
+        "count": 389,
+        "submissions": 454
       },
       "Easy": {
         "difficulty": "Easy",
@@ -70,8 +70,8 @@
       },
       "Medium": {
         "difficulty": "Medium",
-        "count": 78,
-        "submissions": 81
+        "count": 79,
+        "submissions": 82
       },
       "Hard": {
         "difficulty": "Hard",
@@ -82,8 +82,8 @@
     "total": {
       "All": {
         "difficulty": "All",
-        "count": 389,
-        "submissions": 560
+        "count": 390,
+        "submissions": 561
       },
       "Easy": {
         "difficulty": "Easy",
@@ -92,8 +92,8 @@
       },
       "Medium": {
         "difficulty": "Medium",
-        "count": 78,
-        "submissions": 121
+        "count": 79,
+        "submissions": 122
       },
       "Hard": {
         "difficulty": "Hard",
@@ -104,6 +104,14 @@
   },
   "contestRanking": null,
   "recentAccepted": [
+    {
+      "title": "Concatenate Non-Zero Digits and Multiply by Sum II",
+      "titleSlug": "concatenate-non-zero-digits-and-multiply-by-sum-ii",
+      "timestamp": "1783531025",
+      "statusDisplay": "Accepted",
+      "lang": "python3",
+      "acceptedAt": "2026-07-08T17:17:05.000Z"
+    },
     {
       "title": "Replace Employee ID With The Unique Identifier",
       "titleSlug": "replace-employee-id-with-the-unique-identifier",
@@ -255,14 +263,6 @@
       "statusDisplay": "Accepted",
       "lang": "python3",
       "acceptedAt": "2026-06-29T11:14:57.000Z"
-    },
-    {
-      "title": "Binary Tree Inorder Traversal",
-      "titleSlug": "binary-tree-inorder-traversal",
-      "timestamp": "1782731333",
-      "statusDisplay": "Accepted",
-      "lang": "python3",
-      "acceptedAt": "2026-06-29T11:08:53.000Z"
     }
   ],
   "source": "LeetCode public GraphQL; no login cookie or browser extension used."
