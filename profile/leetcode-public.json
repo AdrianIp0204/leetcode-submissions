@@ -1,10 +1,10 @@
 {
-  "fetchedAt": "2026-07-09T15:31:07.279Z",
+  "fetchedAt": "2026-07-10T15:31:08.382Z",
   "username": "AdrianIp",
   "profile": {
     "realName": "AdrianIp",
     "userAvatar": "https://assets.leetcode.com/users/default_avatar.jpg",
-    "ranking": 316947,
+    "ranking": 317174,
     "reputation": 2,
     "countryName": "Hong Kong",
     "company": null,
@@ -16,12 +16,12 @@
     {
       "difficulty": "All",
       "count": 389,
-      "submissions": 454
+      "submissions": 455
     },
     {
       "difficulty": "Easy",
       "count": 294,
-      "submissions": 356
+      "submissions": 357
     },
     {
       "difficulty": "Medium",
@@ -38,12 +38,12 @@
     {
       "difficulty": "All",
       "count": 390,
-      "submissions": 561
+      "submissions": 562
     },
     {
       "difficulty": "Easy",
       "count": 294,
-      "submissions": 413
+      "submissions": 414
     },
     {
       "difficulty": "Medium",
@@ -61,12 +61,12 @@
       "All": {
         "difficulty": "All",
         "count": 389,
-        "submissions": 454
+        "submissions": 455
       },
       "Easy": {
         "difficulty": "Easy",
         "count": 294,
-        "submissions": 356
+        "submissions": 357
       },
       "Medium": {
         "difficulty": "Medium",
@@ -83,12 +83,12 @@
       "All": {
         "difficulty": "All",
         "count": 390,
-        "submissions": 561
+        "submissions": 562
       },
       "Easy": {
         "difficulty": "Easy",
         "count": 294,
-        "submissions": 413
+        "submissions": 414
       },
       "Medium": {
         "difficulty": "Medium",
@@ -104,6 +104,14 @@
   },
   "contestRanking": null,
   "recentAccepted": [
+    {
+      "title": "Product Sales Analysis I",
+      "titleSlug": "product-sales-analysis-i",
+      "timestamp": "1783687391",
+      "statusDisplay": "Accepted",
+      "lang": "mysql",
+      "acceptedAt": "2026-07-10T12:43:11.000Z"
+    },
     {
       "title": "Concatenate Non-Zero Digits and Multiply by Sum II",
       "titleSlug": "concatenate-non-zero-digits-and-multiply-by-sum-ii",
@@ -255,14 +263,6 @@
       "statusDisplay": "Accepted",
       "lang": "python3",
       "acceptedAt": "2026-06-29T11:28:40.000Z"
-    },
-    {
-      "title": "Maximum Depth of Binary Tree",
-      "titleSlug": "maximum-depth-of-binary-tree",
-      "timestamp": "1782731697",
-      "statusDisplay": "Accepted",
-      "lang": "python3",
-      "acceptedAt": "2026-06-29T11:14:57.000Z"
     }
   ],
   "source": "LeetCode public GraphQL; no login cookie or browser extension used."
