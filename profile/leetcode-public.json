@@ -1,10 +1,10 @@
 {
-  "fetchedAt": "2026-07-10T15:31:08.382Z",
+  "fetchedAt": "2026-07-11T15:30:48.778Z",
   "username": "AdrianIp",
   "profile": {
     "realName": "AdrianIp",
     "userAvatar": "https://assets.leetcode.com/users/default_avatar.jpg",
-    "ranking": 317174,
+    "ranking": 316053,
     "reputation": 2,
     "countryName": "Hong Kong",
     "company": null,
@@ -15,13 +15,13 @@
   "solvedByDifficulty": [
     {
       "difficulty": "All",
-      "count": 389,
-      "submissions": 455
+      "count": 390,
+      "submissions": 456
     },
     {
       "difficulty": "Easy",
-      "count": 294,
-      "submissions": 357
+      "count": 295,
+      "submissions": 358
     },
     {
       "difficulty": "Medium",
@@ -37,13 +37,13 @@
   "totalByDifficulty": [
     {
       "difficulty": "All",
-      "count": 390,
-      "submissions": 562
+      "count": 391,
+      "submissions": 564
     },
     {
       "difficulty": "Easy",
-      "count": 294,
-      "submissions": 414
+      "count": 295,
+      "submissions": 416
     },
     {
       "difficulty": "Medium",
@@ -60,13 +60,13 @@
     "accepted": {
       "All": {
         "difficulty": "All",
-        "count": 389,
-        "submissions": 455
+        "count": 390,
+        "submissions": 456
       },
       "Easy": {
         "difficulty": "Easy",
-        "count": 294,
-        "submissions": 357
+        "count": 295,
+        "submissions": 358
       },
       "Medium": {
         "difficulty": "Medium",
@@ -82,13 +82,13 @@
     "total": {
       "All": {
         "difficulty": "All",
-        "count": 390,
-        "submissions": 562
+        "count": 391,
+        "submissions": 564
       },
       "Easy": {
         "difficulty": "Easy",
-        "count": 294,
-        "submissions": 414
+        "count": 295,
+        "submissions": 416
       },
       "Medium": {
         "difficulty": "Medium",
@@ -104,6 +104,14 @@
   },
   "contestRanking": null,
   "recentAccepted": [
+    {
+      "title": "Degree of an Array",
+      "titleSlug": "degree-of-an-array",
+      "timestamp": "1783750255",
+      "statusDisplay": "Accepted",
+      "lang": "python3",
+      "acceptedAt": "2026-07-11T06:10:55.000Z"
+    },
     {
       "title": "Product Sales Analysis I",
       "titleSlug": "product-sales-analysis-i",
@@ -255,14 +263,6 @@
       "statusDisplay": "Accepted",
       "lang": "python3",
       "acceptedAt": "2026-06-30T14:51:48.000Z"
-    },
-    {
-      "title": "Same Tree",
-      "titleSlug": "same-tree",
-      "timestamp": "1782732520",
-      "statusDisplay": "Accepted",
-      "lang": "python3",
-      "acceptedAt": "2026-06-29T11:28:40.000Z"
     }
   ],
   "source": "LeetCode public GraphQL; no login cookie or browser extension used."

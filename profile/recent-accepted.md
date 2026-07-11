@@ -2,26 +2,27 @@
 
 - Username: AdrianIp
 - Profile: https://leetcode.com/u/AdrianIp/
-- Fetched at: 2026-07-10T15:31:08.382Z
-- Ranking: 317174
+- Fetched at: 2026-07-11T15:30:48.778Z
+- Ranking: 316053
 - Display name: AdrianIp
 
 ## Solved
 
-- All: 389 solved / 455 accepted submissions
-- Easy: 294 solved / 357 accepted submissions
+- All: 390 solved / 456 accepted submissions
+- Easy: 295 solved / 358 accepted submissions
 - Medium: 79 solved / 82 accepted submissions
 - Hard: 16 solved / 16 accepted submissions
 
 ## Total Attempts
 
-- All: 390 attempted problems / 562 total submissions
-- Easy: 294 attempted problems / 414 total submissions
+- All: 391 attempted problems / 564 total submissions
+- Easy: 295 attempted problems / 416 total submissions
 - Medium: 79 attempted problems / 122 total submissions
 - Hard: 17 attempted problems / 26 total submissions
 
 ## Recent Accepted
 
+- 2026-07-11T06:10:55.000Z: [Degree of an Array](https://leetcode.com/problems/degree-of-an-array/) (python3)
 - 2026-07-10T12:43:11.000Z: [Product Sales Analysis I](https://leetcode.com/problems/product-sales-analysis-i/) (mysql)
 - 2026-07-08T17:17:05.000Z: [Concatenate Non-Zero Digits and Multiply by Sum II](https://leetcode.com/problems/concatenate-non-zero-digits-and-multiply-by-sum-ii/) (python3)
 - 2026-07-06T18:19:59.000Z: [Replace Employee ID With The Unique Identifier](https://leetcode.com/problems/replace-employee-id-with-the-unique-identifier/) (mysql)
@@ -41,4 +42,3 @@
 - 2026-07-01T02:46:19.000Z: [Find the Safest Path in a Grid](https://leetcode.com/problems/find-the-safest-path-in-a-grid/) (python3)
 - 2026-06-30T15:36:34.000Z: [Second Highest Salary](https://leetcode.com/problems/second-highest-salary/) (pythondata)
 - 2026-06-30T14:51:48.000Z: [Number of Substrings Containing All Three Characters](https://leetcode.com/problems/number-of-substrings-containing-all-three-characters/) (python3)
-- 2026-06-29T11:28:40.000Z: [Same Tree](https://leetcode.com/problems/same-tree/) (python3)
