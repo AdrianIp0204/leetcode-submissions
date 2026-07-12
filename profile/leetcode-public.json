@@ -1,10 +1,10 @@
 {
-  "fetchedAt": "2026-07-11T15:30:48.778Z",
+  "fetchedAt": "2026-07-12T15:31:06.654Z",
   "username": "AdrianIp",
   "profile": {
     "realName": "AdrianIp",
     "userAvatar": "https://assets.leetcode.com/users/default_avatar.jpg",
-    "ranking": 316053,
+    "ranking": 316360,
     "reputation": 2,
     "countryName": "Hong Kong",
     "company": null,
@@ -15,18 +15,18 @@
   "solvedByDifficulty": [
     {
       "difficulty": "All",
-      "count": 390,
-      "submissions": 456
+      "count": 394,
+      "submissions": 462
     },
     {
       "difficulty": "Easy",
-      "count": 295,
-      "submissions": 358
+      "count": 299,
+      "submissions": 363
     },
     {
       "difficulty": "Medium",
       "count": 79,
-      "submissions": 82
+      "submissions": 83
     },
     {
       "difficulty": "Hard",
@@ -37,18 +37,18 @@
   "totalByDifficulty": [
     {
       "difficulty": "All",
-      "count": 391,
-      "submissions": 564
+      "count": 395,
+      "submissions": 572
     },
     {
       "difficulty": "Easy",
-      "count": 295,
-      "submissions": 416
+      "count": 299,
+      "submissions": 422
     },
     {
       "difficulty": "Medium",
       "count": 79,
-      "submissions": 122
+      "submissions": 124
     },
     {
       "difficulty": "Hard",
@@ -60,18 +60,18 @@
     "accepted": {
       "All": {
         "difficulty": "All",
-        "count": 390,
-        "submissions": 456
+        "count": 394,
+        "submissions": 462
       },
       "Easy": {
         "difficulty": "Easy",
-        "count": 295,
-        "submissions": 358
+        "count": 299,
+        "submissions": 363
       },
       "Medium": {
         "difficulty": "Medium",
         "count": 79,
-        "submissions": 82
+        "submissions": 83
       },
       "Hard": {
         "difficulty": "Hard",
@@ -82,18 +82,18 @@
     "total": {
       "All": {
         "difficulty": "All",
-        "count": 391,
-        "submissions": 564
+        "count": 395,
+        "submissions": 572
       },
       "Easy": {
         "difficulty": "Easy",
-        "count": 295,
-        "submissions": 416
+        "count": 299,
+        "submissions": 422
       },
       "Medium": {
         "difficulty": "Medium",
         "count": 79,
-        "submissions": 122
+        "submissions": 124
       },
       "Hard": {
         "difficulty": "Hard",
@@ -104,6 +104,54 @@
   },
   "contestRanking": null,
   "recentAccepted": [
+    {
+      "title": "Product Sales Analysis III",
+      "titleSlug": "product-sales-analysis-iii",
+      "timestamp": "1783865068",
+      "statusDisplay": "Accepted",
+      "lang": "mysql",
+      "acceptedAt": "2026-07-12T14:04:28.000Z"
+    },
+    {
+      "title": "User Activity for the Past 30 Days I",
+      "titleSlug": "user-activity-for-the-past-30-days-i",
+      "timestamp": "1783864419",
+      "statusDisplay": "Accepted",
+      "lang": "mysql",
+      "acceptedAt": "2026-07-12T13:53:39.000Z"
+    },
+    {
+      "title": "Number of Unique Subjects Taught by Each Teacher",
+      "titleSlug": "number-of-unique-subjects-taught-by-each-teacher",
+      "timestamp": "1783863877",
+      "statusDisplay": "Accepted",
+      "lang": "mysql",
+      "acceptedAt": "2026-07-12T13:44:37.000Z"
+    },
+    {
+      "title": "Rising Temperature",
+      "titleSlug": "rising-temperature",
+      "timestamp": "1783863644",
+      "statusDisplay": "Accepted",
+      "lang": "mysql",
+      "acceptedAt": "2026-07-12T13:40:44.000Z"
+    },
+    {
+      "title": "Customer Who Visited but Did Not Make Any Transactions",
+      "titleSlug": "customer-who-visited-but-did-not-make-any-transactions",
+      "timestamp": "1783862684",
+      "statusDisplay": "Accepted",
+      "lang": "mysql",
+      "acceptedAt": "2026-07-12T13:24:44.000Z"
+    },
+    {
+      "title": "Rank Transform of an Array",
+      "titleSlug": "rank-transform-of-an-array",
+      "timestamp": "1783861861",
+      "statusDisplay": "Accepted",
+      "lang": "python3",
+      "acceptedAt": "2026-07-12T13:11:01.000Z"
+    },
     {
       "title": "Degree of an Array",
       "titleSlug": "degree-of-an-array",
@@ -215,54 +263,6 @@
       "statusDisplay": "Accepted",
       "lang": "python3",
       "acceptedAt": "2026-07-05T09:45:07.000Z"
-    },
-    {
-      "title": "Minimum Score of a Path Between Two Cities",
-      "titleSlug": "minimum-score-of-a-path-between-two-cities",
-      "timestamp": "1783173727",
-      "statusDisplay": "Accepted",
-      "lang": "python3",
-      "acceptedAt": "2026-07-04T14:02:07.000Z"
-    },
-    {
-      "title": "Integer Break",
-      "titleSlug": "integer-break",
-      "timestamp": "1782973663",
-      "statusDisplay": "Accepted",
-      "lang": "python3",
-      "acceptedAt": "2026-07-02T06:27:43.000Z"
-    },
-    {
-      "title": "Find a Safe Walk Through a Grid",
-      "titleSlug": "find-a-safe-walk-through-a-grid",
-      "timestamp": "1782972540",
-      "statusDisplay": "Accepted",
-      "lang": "python3",
-      "acceptedAt": "2026-07-02T06:09:00.000Z"
-    },
-    {
-      "title": "Find the Safest Path in a Grid",
-      "titleSlug": "find-the-safest-path-in-a-grid",
-      "timestamp": "1782873979",
-      "statusDisplay": "Accepted",
-      "lang": "python3",
-      "acceptedAt": "2026-07-01T02:46:19.000Z"
-    },
-    {
-      "title": "Second Highest Salary",
-      "titleSlug": "second-highest-salary",
-      "timestamp": "1782833794",
-      "statusDisplay": "Accepted",
-      "lang": "pythondata",
-      "acceptedAt": "2026-06-30T15:36:34.000Z"
-    },
-    {
-      "title": "Number of Substrings Containing All Three Characters",
-      "titleSlug": "number-of-substrings-containing-all-three-characters",
-      "timestamp": "1782831108",
-      "statusDisplay": "Accepted",
-      "lang": "python3",
-      "acceptedAt": "2026-06-30T14:51:48.000Z"
     }
   ],
   "source": "LeetCode public GraphQL; no login cookie or browser extension used."

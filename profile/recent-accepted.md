@@ -2,26 +2,32 @@
 
 - Username: AdrianIp
 - Profile: https://leetcode.com/u/AdrianIp/
-- Fetched at: 2026-07-11T15:30:48.778Z
-- Ranking: 316053
+- Fetched at: 2026-07-12T15:31:06.654Z
+- Ranking: 316360
 - Display name: AdrianIp
 
 ## Solved
 
-- All: 390 solved / 456 accepted submissions
-- Easy: 295 solved / 358 accepted submissions
-- Medium: 79 solved / 82 accepted submissions
+- All: 394 solved / 462 accepted submissions
+- Easy: 299 solved / 363 accepted submissions
+- Medium: 79 solved / 83 accepted submissions
 - Hard: 16 solved / 16 accepted submissions
 
 ## Total Attempts
 
-- All: 391 attempted problems / 564 total submissions
-- Easy: 295 attempted problems / 416 total submissions
-- Medium: 79 attempted problems / 122 total submissions
+- All: 395 attempted problems / 572 total submissions
+- Easy: 299 attempted problems / 422 total submissions
+- Medium: 79 attempted problems / 124 total submissions
 - Hard: 17 attempted problems / 26 total submissions
 
 ## Recent Accepted
 
+- 2026-07-12T14:04:28.000Z: [Product Sales Analysis III](https://leetcode.com/problems/product-sales-analysis-iii/) (mysql)
+- 2026-07-12T13:53:39.000Z: [User Activity for the Past 30 Days I](https://leetcode.com/problems/user-activity-for-the-past-30-days-i/) (mysql)
+- 2026-07-12T13:44:37.000Z: [Number of Unique Subjects Taught by Each Teacher](https://leetcode.com/problems/number-of-unique-subjects-taught-by-each-teacher/) (mysql)
+- 2026-07-12T13:40:44.000Z: [Rising Temperature](https://leetcode.com/problems/rising-temperature/) (mysql)
+- 2026-07-12T13:24:44.000Z: [Customer Who Visited but Did Not Make Any Transactions](https://leetcode.com/problems/customer-who-visited-but-did-not-make-any-transactions/) (mysql)
+- 2026-07-12T13:11:01.000Z: [Rank Transform of an Array](https://leetcode.com/problems/rank-transform-of-an-array/) (python3)
 - 2026-07-11T06:10:55.000Z: [Degree of an Array](https://leetcode.com/problems/degree-of-an-array/) (python3)
 - 2026-07-10T12:43:11.000Z: [Product Sales Analysis I](https://leetcode.com/problems/product-sales-analysis-i/) (mysql)
 - 2026-07-08T17:17:05.000Z: [Concatenate Non-Zero Digits and Multiply by Sum II](https://leetcode.com/problems/concatenate-non-zero-digits-and-multiply-by-sum-ii/) (python3)
@@ -36,9 +42,3 @@
 - 2026-07-05T13:06:22.000Z: [Recyclable and Low Fat Products](https://leetcode.com/problems/recyclable-and-low-fat-products/) (mysql)
 - 2026-07-05T09:47:54.000Z: [Sum of Two Integers](https://leetcode.com/problems/sum-of-two-integers/) (python3)
 - 2026-07-05T09:45:07.000Z: [Number of Paths with Max Score](https://leetcode.com/problems/number-of-paths-with-max-score/) (python3)
-- 2026-07-04T14:02:07.000Z: [Minimum Score of a Path Between Two Cities](https://leetcode.com/problems/minimum-score-of-a-path-between-two-cities/) (python3)
-- 2026-07-02T06:27:43.000Z: [Integer Break](https://leetcode.com/problems/integer-break/) (python3)
-- 2026-07-02T06:09:00.000Z: [Find a Safe Walk Through a Grid](https://leetcode.com/problems/find-a-safe-walk-through-a-grid/) (python3)
-- 2026-07-01T02:46:19.000Z: [Find the Safest Path in a Grid](https://leetcode.com/problems/find-the-safest-path-in-a-grid/) (python3)
-- 2026-06-30T15:36:34.000Z: [Second Highest Salary](https://leetcode.com/problems/second-highest-salary/) (pythondata)
-- 2026-06-30T14:51:48.000Z: [Number of Substrings Containing All Three Characters](https://leetcode.com/problems/number-of-substrings-containing-all-three-characters/) (python3)
