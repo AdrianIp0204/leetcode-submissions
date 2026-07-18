@@ -1,9 +1,9 @@
 # Model Answer Coverage
 
-- Generated at: 2026-07-06T15:31:40.408Z
-- Problems in repo: 380
-- Model-answer notes: 318
-- Missing model-answer notes: 62
+- Generated at: 2026-07-13T15:32:04.098Z
+- Problems in repo: 387
+- Model-answer notes: 323
+- Missing model-answer notes: 64
 - Incomplete model-answer notes: 0
 - Notes without matching problem folder: 0
 
@@ -39,12 +39,12 @@ The model-answer track is active. Keep adding notes in batches, prioritizing reu
 | [0724-find-pivot-index](../submissions/0724-find-pivot-index/) | Find Pivot Index | uncovered |
 | [0735-asteroid-collision](../submissions/0735-asteroid-collision/) | Asteroid Collision | uncovered |
 | [0744-find-smallest-letter-greater-than-target](../submissions/0744-find-smallest-letter-greater-than-target/) | Find Smallest Letter Greater Than Target | uncovered |
-| [1068-product-sales-analysis-i](../submissions/1068-product-sales-analysis-i/) | Product Sales Analysis I | uncovered |
-| [1070-product-sales-analysis-iii](../submissions/1070-product-sales-analysis-iii/) | Product Sales Analysis Iii | uncovered |
 | [1122-relative-sort-array](../submissions/1122-relative-sort-array/) | Relative Sort Array | uncovered |
 | [1283-find-the-smallest-divisor-given-a-threshold](../submissions/1283-find-the-smallest-divisor-given-a-threshold/) | Find The Smallest Divisor Given A Threshold | uncovered |
+| [1301-number-of-paths-with-max-score](../submissions/1301-number-of-paths-with-max-score/) | Number Of Paths With Max Score | uncovered |
 | [1346-check-if-n-and-its-double-exist](../submissions/1346-check-if-n-and-its-double-exist/) | Check If N And Its Double Exist | uncovered |
 | [1351-count-negative-numbers-in-a-sorted-matrix](../submissions/1351-count-negative-numbers-in-a-sorted-matrix/) | Count Negative Numbers In A Sorted Matrix | uncovered |
+| [1385-find-the-distance-value-between-two-arrays](../submissions/1385-find-the-distance-value-between-two-arrays/) | Find The Distance Value Between Two Arrays | uncovered |
 
 ## Existing Model Answers
 

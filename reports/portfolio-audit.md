@@ -1,13 +1,13 @@
 # Portfolio Audit
 
-- Generated at: 2026-07-06T15:31:40.047Z
-- Local problem folders: 380
-- Public solved count: 386
-- Estimated solved-count gap: 6
+- Generated at: 2026-07-13T15:32:03.720Z
+- Local problem folders: 387
+- Public solved count: 394
+- Estimated solved-count gap: 7
 - Problems with real attempt files: 59
 - Problems with multiple languages or recorded language variants: 65
-- Problems needing reflection cleanup: 153
-- Problems with unknown/missing status metadata: 159
+- Problems needing reflection cleanup: 160
+- Problems with unknown/missing status metadata: 166
 
 ## Verdict
 
@@ -34,18 +34,18 @@ Current blockers: the source-code sync gap, missing reflection fields, possible 
 | dynamic-programming | 2 |
 | hashing-and-counting | 14 |
 | linked-list | 4 |
-| math-and-digits | 96 |
+| math-and-digits | 99 |
 | sql | 4 |
 | stack | 3 |
 | tree-and-graph | 5 |
 | two-pointers | 4 |
-| uncategorized | 149 |
+| uncategorized | 153 |
 
 ## Weakness Signals
 
-- 6 public solved problems are not yet represented by local source folders.
-- 153 of 380 problem READMEs still need real reflection.
-- 159 submissions have unknown or missing status metadata.
+- 7 public solved problems are not yet represented by local source folders.
+- 160 of 387 problem READMEs still need real reflection.
+- 166 submissions have unknown or missing status metadata.
 - Failed attempts are preserved when real source exists; keep capturing them for new work.
 - A TypeScript track exists; expand it deliberately rather than scattering one-off language experiments.
 - Tree/graph/DP coverage is thin relative to array, string, math, and simple loop problems.

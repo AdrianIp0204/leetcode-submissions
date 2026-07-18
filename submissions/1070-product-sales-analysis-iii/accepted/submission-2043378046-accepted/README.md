@@ -13,17 +13,19 @@
 
 ## Pattern
 
-TODO
+Group by minimum year, then join back to source rows
 
 ## Key Idea
 
-TODO
+Find each product's earliest `year`, merge those `(product_id, year)` pairs
+back into `sales`, then return the first-year rows with quantity and price.
 
 ## Mistake / Edge Case
 
-TODO
+No subjective mistake recorded. Edge case: multiple sales rows can share the
+same earliest year for a product, and all first-year rows should be retained.
 
 ## Complexity
 
-- Time: TODO
-- Space: TODO
+- Time: O(n) expected for grouping and merge
+- Space: O(n)

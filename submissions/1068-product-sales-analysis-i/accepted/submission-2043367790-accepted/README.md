@@ -13,11 +13,12 @@
 
 ## Pattern
 
-TODO
+join / select columns
 
 ## Key Idea
 
-TODO
+Join `product` to `sales` on `product_id`, then project only the requested
+`product_name`, `year`, and `price` columns.
 
 ## Mistake / Edge Case
 
@@ -25,5 +26,5 @@ TODO
 
 ## Complexity
 
-- Time: TODO
-- Space: TODO
+- Time: O(p + s) expected for the merge
+- Space: O(p + s) for the joined frame
