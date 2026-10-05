@@ -1,13 +1,13 @@
 # Portfolio Audit
 
-- Generated at: 2026-07-13T15:32:03.720Z
-- Local problem folders: 387
-- Public solved count: 394
-- Estimated solved-count gap: 7
-- Problems with real attempt files: 59
-- Problems with multiple languages or recorded language variants: 65
-- Problems needing reflection cleanup: 160
-- Problems with unknown/missing status metadata: 166
+- Generated at: 2026-10-04T05:22:27.970Z
+- Local problem folders: 454
+- Public solved count: 457
+- Estimated solved-count gap: 3
+- Problems with real attempt files: 72
+- Problems with multiple languages or recorded language variants: 78
+- Problems needing reflection cleanup: 227
+- Problems with unknown/missing status metadata: 233
 
 ## Verdict
 
@@ -19,33 +19,34 @@ Current blockers: the source-code sync gap, missing reflection fields, possible 
 
 | Language | Problems |
 | --- | --- |
+| c | 1 |
 | cpp | 10 |
-| md | 59 |
-| python | 232 |
-| sql-or-text | 11 |
+| md | 72 |
+| python | 242 |
+| sql-or-text | 13 |
 | typescript | 5 |
 
 ## Pattern Coverage
 
 | Pattern | Problems |
 | --- | --- |
-| arrays-and-strings | 98 |
+| arrays-and-strings | 103 |
 | binary-search | 1 |
 | dynamic-programming | 2 |
 | hashing-and-counting | 14 |
-| linked-list | 4 |
-| math-and-digits | 99 |
+| linked-list | 8 |
+| math-and-digits | 121 |
 | sql | 4 |
-| stack | 3 |
-| tree-and-graph | 5 |
-| two-pointers | 4 |
-| uncategorized | 153 |
+| stack | 6 |
+| tree-and-graph | 7 |
+| two-pointers | 5 |
+| uncategorized | 183 |
 
 ## Weakness Signals
 
-- 7 public solved problems are not yet represented by local source folders.
-- 160 of 387 problem READMEs still need real reflection.
-- 166 submissions have unknown or missing status metadata.
+- 3 public solved problems are not yet represented by local source folders.
+- 227 of 454 problem READMEs still need real reflection.
+- 233 submissions have unknown or missing status metadata.
 - Failed attempts are preserved when real source exists; keep capturing them for new work.
 - A TypeScript track exists; expand it deliberately rather than scattering one-off language experiments.
 - Tree/graph/DP coverage is thin relative to array, string, math, and simple loop problems.
@@ -77,20 +78,20 @@ The scan is heuristic. Review flagged files manually before making the repositor
 | [0017-letter-combinations-of-a-phone-number](../submissions/0017-letter-combinations-of-a-phone-number/) | Not recorded | key idea, complexity |
 | [0018-4sum](../submissions/0018-4sum/) | Not recorded | key idea, complexity |
 | [0019-remove-nth-node-from-end-of-list](../submissions/0019-remove-nth-node-from-end-of-list/) | Not recorded | key idea, complexity |
+| [0022-generate-parentheses](../submissions/0022-generate-parentheses/) | Not recorded | key idea, complexity |
 | [0023-merge-k-sorted-lists](../submissions/0023-merge-k-sorted-lists/) | Not recorded | key idea, complexity |
 | [0024-swap-nodes-in-pairs](../submissions/0024-swap-nodes-in-pairs/) | Not recorded | key idea, complexity |
+| [0025-reverse-nodes-in-k-group](../submissions/0025-reverse-nodes-in-k-group/) | Not recorded | key idea, complexity |
+| [0027-remove-element](../submissions/0027-remove-element/) | Not recorded | key idea, complexity |
+| [0032-longest-valid-parentheses](../submissions/0032-longest-valid-parentheses/) | Not recorded | key idea, complexity |
 | [0035-search-insert-position](../submissions/0035-search-insert-position/) | Not recorded | key idea, complexity |
+| [0039-combination-sum](../submissions/0039-combination-sum/) | Not recorded | key idea, complexity |
+| [0040-combination-sum-ii](../submissions/0040-combination-sum-ii/) | Not recorded | key idea, complexity |
 | [0046-permutations](../submissions/0046-permutations/) | Not recorded | key idea, complexity |
 | [0050-powx-n](../submissions/0050-powx-n/) | Not recorded | key idea, complexity |
+| [0053-maximum-subarray](../submissions/0053-maximum-subarray/) | Not recorded | key idea, complexity |
 | [0056-merge-intervals](../submissions/0056-merge-intervals/) | Not recorded | key idea, complexity |
-| [0077-combinations](../submissions/0077-combinations/) | Not recorded | key idea, complexity |
-| [0094-binary-tree-inorder-traversal](../submissions/0094-binary-tree-inorder-traversal/) | Not recorded | key idea, complexity |
-| [0100-same-tree](../submissions/0100-same-tree/) | Not recorded | key idea, complexity |
-| [0104-maximum-depth-of-binary-tree](../submissions/0104-maximum-depth-of-binary-tree/) | Not recorded | key idea, complexity |
-| [0112-path-sum](../submissions/0112-path-sum/) | Not recorded | key idea, complexity |
-| [0150-evaluate-reverse-polish-notation](../submissions/0150-evaluate-reverse-polish-notation/) | Not recorded | key idea, complexity |
-| [0176-second-highest-salary](../submissions/0176-second-highest-salary/) | Not recorded | key idea, complexity |
-| [0182-duplicate-emails](../submissions/0182-duplicate-emails/) | Not recorded | key idea, complexity |
+| [0061-rotate-list](../submissions/0061-rotate-list/) | Not recorded | key idea, complexity |
 
 ## AI-Assisted Disclosure Draft
 

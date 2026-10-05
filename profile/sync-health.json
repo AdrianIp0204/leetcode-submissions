@@ -1,14 +1,14 @@
 {
-  "generatedAt": "2026-07-13T15:32:03.583Z",
+  "generatedAt": "2026-10-04T05:19:27.879Z",
   "username": "AdrianIp",
-  "profileFetchedAt": "2026-07-13T15:31:10.910Z",
-  "publicAcceptedSolved": 394,
-  "publicAcceptedSubmissions": 462,
-  "publicAttemptedProblems": 395,
-  "publicTotalSubmissions": 572,
-  "localProblemFolders": 387,
+  "profileFetchedAt": "2026-10-04T05:19:10.391Z",
+  "publicAcceptedSolved": 457,
+  "publicAcceptedSubmissions": 550,
+  "publicAttemptedProblems": 457,
+  "publicTotalSubmissions": 677,
+  "localProblemFolders": 454,
   "localCanonicalSolutions": 226,
-  "estimatedSolvedGap": 7,
+  "estimatedSolvedGap": 3,
   "status": "behind",
   "knownLocalProblems": [
     {
@@ -117,6 +117,11 @@
       "hasCanonicalSolution": true
     },
     {
+      "folder": "0022-generate-parentheses",
+      "slug": "generate-parentheses",
+      "hasCanonicalSolution": false
+    },
+    {
       "folder": "0023-merge-k-sorted-lists",
       "slug": "merge-k-sorted-lists",
       "hasCanonicalSolution": false
@@ -127,9 +132,19 @@
       "hasCanonicalSolution": false
     },
     {
+      "folder": "0025-reverse-nodes-in-k-group",
+      "slug": "reverse-nodes-in-k-group",
+      "hasCanonicalSolution": false
+    },
+    {
       "folder": "0026-remove-duplicates-from-sorted-array",
       "slug": "remove-duplicates-from-sorted-array",
       "hasCanonicalSolution": true
+    },
+    {
+      "folder": "0027-remove-element",
+      "slug": "remove-element",
+      "hasCanonicalSolution": false
     },
     {
       "folder": "0028-find-the-index-of-the-first-occurrence-in-a-string",
@@ -142,8 +157,23 @@
       "hasCanonicalSolution": true
     },
     {
+      "folder": "0032-longest-valid-parentheses",
+      "slug": "longest-valid-parentheses",
+      "hasCanonicalSolution": false
+    },
+    {
       "folder": "0035-search-insert-position",
       "slug": "search-insert-position",
+      "hasCanonicalSolution": false
+    },
+    {
+      "folder": "0039-combination-sum",
+      "slug": "combination-sum",
+      "hasCanonicalSolution": false
+    },
+    {
+      "folder": "0040-combination-sum-ii",
+      "slug": "combination-sum-ii",
       "hasCanonicalSolution": false
     },
     {
@@ -162,6 +192,11 @@
       "hasCanonicalSolution": false
     },
     {
+      "folder": "0053-maximum-subarray",
+      "slug": "maximum-subarray",
+      "hasCanonicalSolution": false
+    },
+    {
       "folder": "0056-merge-intervals",
       "slug": "merge-intervals",
       "hasCanonicalSolution": false
@@ -175,6 +210,11 @@
       "folder": "0060-permutation-sequence",
       "slug": "permutation-sequence",
       "hasCanonicalSolution": true
+    },
+    {
+      "folder": "0061-rotate-list",
+      "slug": "rotate-list",
+      "hasCanonicalSolution": false
     },
     {
       "folder": "0066-plus-one",
@@ -197,9 +237,34 @@
       "hasCanonicalSolution": false
     },
     {
+      "folder": "0078-subsets",
+      "slug": "subsets",
+      "hasCanonicalSolution": false
+    },
+    {
+      "folder": "0079-word-search",
+      "slug": "word-search",
+      "hasCanonicalSolution": false
+    },
+    {
+      "folder": "0082-remove-duplicates-from-sorted-list-ii",
+      "slug": "remove-duplicates-from-sorted-list-ii",
+      "hasCanonicalSolution": false
+    },
+    {
       "folder": "0083-remove-duplicates-from-sorted-list",
       "slug": "remove-duplicates-from-sorted-list",
       "hasCanonicalSolution": true
+    },
+    {
+      "folder": "0090-subsets-ii",
+      "slug": "subsets-ii",
+      "hasCanonicalSolution": false
+    },
+    {
+      "folder": "0093-restore-ip-addresses",
+      "slug": "restore-ip-addresses",
+      "hasCanonicalSolution": false
     },
     {
       "folder": "0094-binary-tree-inorder-traversal",
@@ -212,8 +277,18 @@
       "hasCanonicalSolution": false
     },
     {
+      "folder": "0102-binary-tree-level-order-traversal",
+      "slug": "binary-tree-level-order-traversal",
+      "hasCanonicalSolution": false
+    },
+    {
       "folder": "0104-maximum-depth-of-binary-tree",
       "slug": "maximum-depth-of-binary-tree",
+      "hasCanonicalSolution": false
+    },
+    {
+      "folder": "0111-minimum-depth-of-binary-tree",
+      "slug": "minimum-depth-of-binary-tree",
       "hasCanonicalSolution": false
     },
     {
@@ -242,6 +317,11 @@
       "hasCanonicalSolution": true
     },
     {
+      "folder": "0131-palindrome-partitioning",
+      "slug": "palindrome-partitioning",
+      "hasCanonicalSolution": false
+    },
+    {
       "folder": "0136-single-number",
       "slug": "single-number",
       "hasCanonicalSolution": true
@@ -255,6 +335,11 @@
       "folder": "0151-reverse-words-in-a-string",
       "slug": "reverse-words-in-a-string",
       "hasCanonicalSolution": true
+    },
+    {
+      "folder": "0165-compare-version-numbers",
+      "slug": "compare-version-numbers",
+      "hasCanonicalSolution": false
     },
     {
       "folder": "0167-two-sum-ii-input-array-is-sorted",
@@ -322,8 +407,23 @@
       "hasCanonicalSolution": false
     },
     {
+      "folder": "0197-rising-temperature",
+      "slug": "rising-temperature",
+      "hasCanonicalSolution": false
+    },
+    {
       "folder": "0199-binary-tree-right-side-view",
       "slug": "binary-tree-right-side-view",
+      "hasCanonicalSolution": false
+    },
+    {
+      "folder": "0200-number-of-islands",
+      "slug": "number-of-islands",
+      "hasCanonicalSolution": false
+    },
+    {
+      "folder": "0203-remove-linked-list-elements",
+      "slug": "remove-linked-list-elements",
       "hasCanonicalSolution": false
     },
     {
@@ -344,6 +444,11 @@
     {
       "folder": "0215-kth-largest-element-in-an-array",
       "slug": "kth-largest-element-in-an-array",
+      "hasCanonicalSolution": false
+    },
+    {
+      "folder": "0216-combination-sum-iii",
+      "slug": "combination-sum-iii",
       "hasCanonicalSolution": false
     },
     {
@@ -395,6 +500,11 @@
       "folder": "0268-missing-number",
       "slug": "missing-number",
       "hasCanonicalSolution": true
+    },
+    {
+      "folder": "0278-first-bad-version",
+      "slug": "first-bad-version",
+      "hasCanonicalSolution": false
     },
     {
       "folder": "0283-move-zeroes",
@@ -459,6 +569,11 @@
     {
       "folder": "0371-sum-of-two-integers",
       "slug": "sum-of-two-integers",
+      "hasCanonicalSolution": false
+    },
+    {
+      "folder": "0374-guess-number-higher-or-lower",
+      "slug": "guess-number-higher-or-lower",
       "hasCanonicalSolution": false
     },
     {
@@ -552,6 +667,11 @@
       "hasCanonicalSolution": true
     },
     {
+      "folder": "0547-number-of-provinces",
+      "slug": "number-of-provinces",
+      "hasCanonicalSolution": false
+    },
+    {
       "folder": "0551-student-attendance-record-i",
       "slug": "student-attendance-record-i",
       "hasCanonicalSolution": true
@@ -574,6 +694,11 @@
     {
       "folder": "0584-find-customer-referee",
       "slug": "find-customer-referee",
+      "hasCanonicalSolution": false
+    },
+    {
+      "folder": "0586-customer-placing-the-largest-number-of-orders",
+      "slug": "customer-placing-the-largest-number-of-orders",
       "hasCanonicalSolution": false
     },
     {
@@ -637,8 +762,23 @@
       "hasCanonicalSolution": true
     },
     {
+      "folder": "0695-max-area-of-island",
+      "slug": "max-area-of-island",
+      "hasCanonicalSolution": false
+    },
+    {
       "folder": "0704-binary-search",
       "slug": "binary-search",
+      "hasCanonicalSolution": false
+    },
+    {
+      "folder": "0705-design-hashset",
+      "slug": "design-hashset",
+      "hasCanonicalSolution": false
+    },
+    {
+      "folder": "0706-design-hashmap",
+      "slug": "design-hashmap",
       "hasCanonicalSolution": false
     },
     {
@@ -657,6 +797,11 @@
       "hasCanonicalSolution": true
     },
     {
+      "folder": "0733-flood-fill",
+      "slug": "flood-fill",
+      "hasCanonicalSolution": false
+    },
+    {
       "folder": "0735-asteroid-collision",
       "slug": "asteroid-collision",
       "hasCanonicalSolution": false
@@ -670,6 +815,11 @@
       "folder": "0747-largest-number-at-least-twice-of-others",
       "slug": "largest-number-at-least-twice-of-others",
       "hasCanonicalSolution": true
+    },
+    {
+      "folder": "0752-open-the-lock",
+      "slug": "open-the-lock",
+      "hasCanonicalSolution": false
     },
     {
       "folder": "0771-jewels-and-stones",
@@ -687,9 +837,19 @@
       "hasCanonicalSolution": true
     },
     {
+      "folder": "0841-keys-and-rooms",
+      "slug": "keys-and-rooms",
+      "hasCanonicalSolution": false
+    },
+    {
       "folder": "0867-transpose-matrix",
       "slug": "transpose-matrix",
       "hasCanonicalSolution": true
+    },
+    {
+      "folder": "0876-middle-of-the-linked-list",
+      "slug": "middle-of-the-linked-list",
+      "hasCanonicalSolution": false
     },
     {
       "folder": "0884-uncommon-words-from-two-sentences",
@@ -700,6 +860,11 @@
       "folder": "0896-monotonic-array",
       "slug": "monotonic-array",
       "hasCanonicalSolution": true
+    },
+    {
+      "folder": "0908-smallest-range-i",
+      "slug": "smallest-range-i",
+      "hasCanonicalSolution": false
     },
     {
       "folder": "0917-reverse-only-letters",
@@ -727,6 +892,11 @@
       "hasCanonicalSolution": true
     },
     {
+      "folder": "0994-rotting-oranges",
+      "slug": "rotting-oranges",
+      "hasCanonicalSolution": false
+    },
+    {
       "folder": "1002-find-common-characters",
       "slug": "find-common-characters",
       "hasCanonicalSolution": true
@@ -735,6 +905,11 @@
       "folder": "1015-smallest-integer-divisible-by-k",
       "slug": "smallest-integer-divisible-by-k",
       "hasCanonicalSolution": true
+    },
+    {
+      "folder": "1020-number-of-enclaves",
+      "slug": "number-of-enclaves",
+      "hasCanonicalSolution": false
     },
     {
       "folder": "1021-remove-outermost-parentheses",
@@ -792,6 +967,11 @@
       "hasCanonicalSolution": false
     },
     {
+      "folder": "1091-shortest-path-in-binary-matrix",
+      "slug": "shortest-path-in-binary-matrix",
+      "hasCanonicalSolution": false
+    },
+    {
       "folder": "1108-defanging-an-ip-address",
       "slug": "defanging-an-ip-address",
       "hasCanonicalSolution": true
@@ -799,6 +979,11 @@
     {
       "folder": "1122-relative-sort-array",
       "slug": "relative-sort-array",
+      "hasCanonicalSolution": false
+    },
+    {
+      "folder": "1141-user-activity-for-the-past-30-days-i",
+      "slug": "user-activity-for-the-past-30-days-i",
       "hasCanonicalSolution": false
     },
     {
@@ -827,6 +1012,16 @@
       "hasCanonicalSolution": true
     },
     {
+      "folder": "1251-average-selling-price",
+      "slug": "average-selling-price",
+      "hasCanonicalSolution": false
+    },
+    {
+      "folder": "1260-shift-2d-grid",
+      "slug": "shift-2d-grid",
+      "hasCanonicalSolution": false
+    },
+    {
       "folder": "1281-subtract-the-product-and-sum-of-digits-of-an-integer",
       "slug": "subtract-the-product-and-sum-of-digits-of-an-integer",
       "hasCanonicalSolution": true
@@ -834,6 +1029,16 @@
     {
       "folder": "1283-find-the-smallest-divisor-given-a-threshold",
       "slug": "find-the-smallest-divisor-given-a-threshold",
+      "hasCanonicalSolution": false
+    },
+    {
+      "folder": "1288-remove-covered-intervals",
+      "slug": "remove-covered-intervals",
+      "hasCanonicalSolution": false
+    },
+    {
+      "folder": "1290-convert-binary-number-in-a-linked-list-to-integer",
+      "slug": "convert-binary-number-in-a-linked-list-to-integer",
       "hasCanonicalSolution": false
     },
     {
@@ -855,6 +1060,16 @@
       "folder": "1323-maximum-69-number",
       "slug": "maximum-69-number",
       "hasCanonicalSolution": true
+    },
+    {
+      "folder": "1331-rank-transform-of-an-array",
+      "slug": "rank-transform-of-an-array",
+      "hasCanonicalSolution": false
+    },
+    {
+      "folder": "1342-number-of-steps-to-reduce-a-number-to-zero",
+      "slug": "number-of-steps-to-reduce-a-number-to-zero",
+      "hasCanonicalSolution": false
     },
     {
       "folder": "1344-angle-between-hands-of-a-clock",
@@ -884,6 +1099,11 @@
     {
       "folder": "1374-generate-a-string-with-characters-that-have-odd-counts",
       "slug": "generate-a-string-with-characters-that-have-odd-counts",
+      "hasCanonicalSolution": false
+    },
+    {
+      "folder": "1378-replace-employee-id-with-the-unique-identifier",
+      "slug": "replace-employee-id-with-the-unique-identifier",
       "hasCanonicalSolution": false
     },
     {
@@ -957,6 +1177,16 @@
       "hasCanonicalSolution": false
     },
     {
+      "folder": "1517-find-users-with-valid-e-mails",
+      "slug": "find-users-with-valid-e-mails",
+      "hasCanonicalSolution": false
+    },
+    {
+      "folder": "1523-count-odd-numbers-in-an-interval-range",
+      "slug": "count-odd-numbers-in-an-interval-range",
+      "hasCanonicalSolution": false
+    },
+    {
       "folder": "1528-shuffle-string",
       "slug": "shuffle-string",
       "hasCanonicalSolution": true
@@ -967,9 +1197,19 @@
       "hasCanonicalSolution": false
     },
     {
+      "folder": "1539-kth-missing-positive-number",
+      "slug": "kth-missing-positive-number",
+      "hasCanonicalSolution": false
+    },
+    {
       "folder": "1550-three-consecutive-odds",
       "slug": "three-consecutive-odds",
       "hasCanonicalSolution": true
+    },
+    {
+      "folder": "1581-customer-who-visited-but-did-not-make-any-transactions",
+      "slug": "customer-who-visited-but-did-not-make-any-transactions",
+      "hasCanonicalSolution": false
     },
     {
       "folder": "1587-bank-account-summary-ii",
@@ -980,6 +1220,16 @@
       "folder": "1588-sum-of-all-odd-length-subarrays",
       "slug": "sum-of-all-odd-length-subarrays",
       "hasCanonicalSolution": true
+    },
+    {
+      "folder": "1608-special-array-with-x-elements-greater-than-or-equal-x",
+      "slug": "special-array-with-x-elements-greater-than-or-equal-x",
+      "hasCanonicalSolution": false
+    },
+    {
+      "folder": "1614-maximum-nesting-depth-of-the-parentheses",
+      "slug": "maximum-nesting-depth-of-the-parentheses",
+      "hasCanonicalSolution": false
     },
     {
       "folder": "1636-sort-array-by-increasing-frequency",
@@ -1027,6 +1277,11 @@
       "hasCanonicalSolution": false
     },
     {
+      "folder": "1729-find-followers-count",
+      "slug": "find-followers-count",
+      "hasCanonicalSolution": false
+    },
+    {
       "folder": "1732-find-the-highest-altitude",
       "slug": "find-the-highest-altitude",
       "hasCanonicalSolution": false
@@ -1054,6 +1309,11 @@
     {
       "folder": "1773-count-items-matching-a-rule",
       "slug": "count-items-matching-a-rule",
+      "hasCanonicalSolution": false
+    },
+    {
+      "folder": "1807-evaluate-the-bracket-pairs-of-a-string",
+      "slug": "evaluate-the-bracket-pairs-of-a-string",
       "hasCanonicalSolution": false
     },
     {
@@ -1100,6 +1360,11 @@
       "folder": "1866-number-of-ways-to-rearrange-sticks-with-k-sticks-visible",
       "slug": "number-of-ways-to-rearrange-sticks-with-k-sticks-visible",
       "hasCanonicalSolution": true
+    },
+    {
+      "folder": "1873-calculate-special-bonus",
+      "slug": "calculate-special-bonus",
+      "hasCanonicalSolution": false
     },
     {
       "folder": "1890-the-latest-login-in-2020",
@@ -1187,6 +1452,11 @@
       "hasCanonicalSolution": false
     },
     {
+      "folder": "2094-finding-3-digit-even-numbers",
+      "slug": "finding-3-digit-even-numbers",
+      "hasCanonicalSolution": false
+    },
+    {
       "folder": "2095-delete-the-middle-node-of-a-linked-list",
       "slug": "delete-the-middle-node-of-a-linked-list",
       "hasCanonicalSolution": false
@@ -1247,6 +1517,11 @@
       "hasCanonicalSolution": true
     },
     {
+      "folder": "2181-merge-nodes-in-between-zeros",
+      "slug": "merge-nodes-in-between-zeros",
+      "hasCanonicalSolution": false
+    },
+    {
       "folder": "2185-counting-words-with-a-given-prefix",
       "slug": "counting-words-with-a-given-prefix",
       "hasCanonicalSolution": true
@@ -1279,6 +1554,11 @@
     {
       "folder": "2315-count-asterisks",
       "slug": "count-asterisks",
+      "hasCanonicalSolution": false
+    },
+    {
+      "folder": "2351-first-letter-to-appear-twice",
+      "slug": "first-letter-to-appear-twice",
       "hasCanonicalSolution": false
     },
     {
@@ -1367,6 +1647,11 @@
       "hasCanonicalSolution": true
     },
     {
+      "folder": "2529-maximum-count-of-positive-integer-and-negative-integer",
+      "slug": "maximum-count-of-positive-integer-and-negative-integer",
+      "hasCanonicalSolution": false
+    },
+    {
       "folder": "2535-difference-between-element-sum-and-digit-sum-of-an-array",
       "slug": "difference-between-element-sum-and-digit-sum-of-an-array",
       "hasCanonicalSolution": true
@@ -1375,6 +1660,11 @@
       "folder": "2540-minimum-common-value",
       "slug": "minimum-common-value",
       "hasCanonicalSolution": true
+    },
+    {
+      "folder": "2544-alternating-digit-sum",
+      "slug": "alternating-digit-sum",
+      "hasCanonicalSolution": false
     },
     {
       "folder": "2545-sort-the-students-by-their-kth-score",
@@ -1399,6 +1689,11 @@
     {
       "folder": "2620-counter",
       "slug": "counter",
+      "hasCanonicalSolution": false
+    },
+    {
+      "folder": "2651-calculate-delayed-arrival-time",
+      "slug": "calculate-delayed-arrival-time",
       "hasCanonicalSolution": false
     },
     {
@@ -1470,6 +1765,11 @@
       "folder": "2798-number-of-employees-who-met-the-target",
       "slug": "number-of-employees-who-met-the-target",
       "hasCanonicalSolution": true
+    },
+    {
+      "folder": "2807-insert-greatest-common-divisors-in-linked-list",
+      "slug": "insert-greatest-common-divisors-in-linked-list",
+      "hasCanonicalSolution": false
     },
     {
       "folder": "2810-faulty-keyboard",
@@ -1627,6 +1927,11 @@
       "hasCanonicalSolution": true
     },
     {
+      "folder": "3099-harshad-number",
+      "slug": "harshad-number",
+      "hasCanonicalSolution": false
+    },
+    {
       "folder": "3110-score-of-a-string",
       "slug": "score-of-a-string",
       "hasCanonicalSolution": true
@@ -1727,6 +2032,11 @@
       "hasCanonicalSolution": true
     },
     {
+      "folder": "3345-smallest-divisible-digit-product-i",
+      "slug": "smallest-divisible-digit-product-i",
+      "hasCanonicalSolution": false
+    },
+    {
       "folder": "3370-smallest-number-with-all-set-bits",
       "slug": "smallest-number-with-all-set-bits",
       "hasCanonicalSolution": true
@@ -1749,6 +2059,11 @@
     {
       "folder": "3467-transform-array-by-parity",
       "slug": "transform-array-by-parity",
+      "hasCanonicalSolution": false
+    },
+    {
+      "folder": "3471-find-the-largest-almost-missing-integer",
+      "slug": "find-the-largest-almost-missing-integer",
       "hasCanonicalSolution": false
     },
     {
@@ -1780,6 +2095,11 @@
       "folder": "3541-find-most-frequent-vowel-and-consonant",
       "slug": "find-most-frequent-vowel-and-consonant",
       "hasCanonicalSolution": true
+    },
+    {
+      "folder": "3550-smallest-index-with-digit-sum-equal-to-index",
+      "slug": "smallest-index-with-digit-sum-equal-to-index",
+      "hasCanonicalSolution": false
     },
     {
       "folder": "3558-number-of-ways-to-assign-edge-weights-i",
@@ -1882,6 +2202,11 @@
       "hasCanonicalSolution": true
     },
     {
+      "folder": "3756-concatenate-non-zero-digits-and-multiply-by-sum-ii",
+      "slug": "concatenate-non-zero-digits-and-multiply-by-sum-ii",
+      "hasCanonicalSolution": false
+    },
+    {
       "folder": "3760-maximum-substrings-with-distinct-start",
       "slug": "maximum-substrings-with-distinct-start",
       "hasCanonicalSolution": true
@@ -1912,6 +2237,11 @@
       "hasCanonicalSolution": true
     },
     {
+      "folder": "3870-count-commas-in-range",
+      "slug": "count-commas-in-range",
+      "hasCanonicalSolution": false
+    },
+    {
       "folder": "3884-first-matching-character-from-both-ends",
       "slug": "first-matching-character-from-both-ends",
       "hasCanonicalSolution": false
@@ -1925,6 +2255,11 @@
       "folder": "3898-find-the-degree-of-each-vertex",
       "slug": "find-the-degree-of-each-vertex",
       "hasCanonicalSolution": true
+    },
+    {
+      "folder": "3904-smallest-stable-index-ii",
+      "slug": "smallest-stable-index-ii",
+      "hasCanonicalSolution": false
     },
     {
       "folder": "3925-concatenate-array-with-reverse",
