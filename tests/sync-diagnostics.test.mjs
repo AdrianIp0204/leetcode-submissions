@@ -129,3 +129,35 @@ test("diagnosis distinguishes queued, processed, incomplete and invalid handoffs
   assert.equal(existsSync(path.join(inbox, "queue", "processed")), false);
   assert.equal(existsSync(path.join(root, "submissions")), false);
 });
+
+test("diagnosis applies the watcher's text-bundle filename rules separately to queue and processed", async (t) => {
+  const root = await fixture(t, [
+    { titleSlug: "queued-text-smoke" },
+    { titleSlug: "prefixed-text-smoke" },
+  ]);
+  const inbox = path.join(root, "inbox");
+  const bundle = (slug) => JSON.stringify({
+    schema: "leetcode-submissions.export-bundle.v1",
+    exports: [{
+      status: "Accepted",
+      path: `submissions/9999-${slug}/accepted/submission-1-accepted/solution.py`,
+      code: privateCodeMarker,
+    }],
+  });
+  await write(inbox, "queue/leetcode-exports-review.txt.dropboxignore", bundle("queued-text-smoke"));
+  const prefixed = "123-leetcode-exports-review.txt.dropboxignore";
+  const content = bundle("prefixed-text-smoke");
+  await write(inbox, `_queue/${prefixed}`, content);
+  const queuedOutput = diagnose(root, inbox);
+  assert.match(queuedOutput, /Handoff bundles: 1/);
+  assert.match(queuedOutput, /queued-text-smoke.*queued source 1, processed source 0/);
+  assert.match(queuedOutput, /prefixed-text-smoke.*queued source 0, processed source 0/);
+
+  await write(inbox, `_queue/processed/${prefixed}`, content);
+  const processedOutput = diagnose(root, inbox);
+  assert.match(processedOutput, /Handoff bundles: 2/);
+  assert.match(processedOutput, /prefixed-text-smoke.*queued source 0, processed source 1/);
+  assert.equal(await readFile(path.join(inbox, "_queue", prefixed), "utf8"), content);
+  assert.equal(await readFile(path.join(inbox, "_queue", "processed", prefixed), "utf8"), content);
+  assert.equal(existsSync(path.join(root, "submissions")), false);
+});

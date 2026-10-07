@@ -49,9 +49,11 @@ async function inspectLocalProblems() {
   return problems;
 }
 
-function isBundleFilename(name) {
+function isBundleFilename(name, archived = false) {
+  // The watcher adds a timestamp only when moving a bundle into processed.
+  const originalName = archived ? name.replace(/^\d+-/, "") : name;
   return /\.json(?:\.dropboxignore)?$/i.test(name)
-    || /^(?:\d+-)?leetcode-exports-.+\.txt(?:\.dropboxignore)?$/i.test(name);
+    || /^leetcode-exports-.+\.txt(?:\.dropboxignore)?$/i.test(originalName);
 }
 
 function acceptedSourceSlug(payload) {
@@ -72,14 +74,14 @@ async function inspectBundles(inbox) {
   let incompleteCount = 0;
   let invalidCount = 0;
 
-  async function inspect(directory, sourceMap) {
+  async function inspect(directory, sourceMap, archived = false) {
     for (const entry of await entriesIfPresent(directory)) {
       if (!entry.isFile()) continue;
       if (/\.(?:crdownload|tmp)$/i.test(entry.name)) {
         incompleteCount += 1;
         continue;
       }
-      if (!isBundleFilename(entry.name)) continue;
+      if (!isBundleFilename(entry.name, archived)) continue;
       let bundle;
       try {
         bundle = JSON.parse(await readFile(path.join(directory, entry.name), "utf8"));
@@ -105,7 +107,7 @@ async function inspectBundles(inbox) {
   for (const name of ["queue", "_queue", ".queue"]) {
     const directory = path.join(inbox, name);
     await inspect(directory, queued);
-    await inspect(path.join(directory, "processed"), processed);
+    await inspect(path.join(directory, "processed"), processed, true);
   }
   return { queued, processed, bundleCount, incompleteCount, invalidCount };
 }
