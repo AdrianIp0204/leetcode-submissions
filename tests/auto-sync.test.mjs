@@ -6,6 +6,7 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 import assert from "node:assert/strict";
 import test from "node:test";
+import vm from "node:vm";
 
 const projectRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 
@@ -156,4 +157,79 @@ test("auto-sync preserves multiple accepted submissions from legacy root solutio
     "class Solution:\n    def twoSum(self, nums, target):\n        return [1, 0]\n",
   );
   assert.equal(existsSync(path.join(root, "submissions", "0001-two-sum", "solution.py")), false);
+});
+
+test("extension retries an interrupted handoff and its completed bundle reaches the watcher", async (t) => {
+  const root = await createTempRepo(t);
+  const downloadsRoot = path.join(root, "tmp", "downloads");
+  const inbox = path.join(downloadsRoot, "leetcode-submissions");
+  const storage = {};
+  const downloads = new Map();
+  let messageListener;
+  let downloadId = 0;
+  const chrome = {
+    storage: { local: {
+      async get(defaults) { return structuredClone({ ...defaults, ...storage }); },
+      async set(values) { Object.assign(storage, structuredClone(values)); },
+    } },
+    runtime: {
+      onInstalled: { addListener() {} },
+      onMessage: { addListener(listener) { messageListener = listener; } },
+    },
+    downloads: {
+      download(options, callback) {
+        const id = ++downloadId;
+        const filename = path.join(downloadsRoot, options.filename);
+        if (id === 1) {
+          downloads.set(id, { state: "interrupted", error: "FILE_FAILED", filename });
+          callback(id);
+          return;
+        }
+        const contents = decodeURIComponent(options.url.slice(options.url.indexOf(",") + 1));
+        mkdir(path.dirname(filename), { recursive: true })
+          .then(() => writeFile(filename, contents))
+          .then(() => {
+            downloads.set(id, { state: "complete", filename });
+            callback(id);
+          });
+      },
+      search(query, callback) { callback([downloads.get(query.id)]); },
+    },
+  };
+  const source = await readFile(path.join(projectRoot, "extension", "leetcode-exporter", "background.js"), "utf8");
+  vm.runInNewContext(source, { chrome, setTimeout });
+  const send = (message) => new Promise((resolve) => messageListener(message, {}, resolve));
+  const payload = {
+    title: "Sync Smoke",
+    slug: "sync-smoke",
+    status: "Accepted",
+    submissionId: "999",
+    path: "submissions/9999-sync-smoke/accepted/submission-999-accepted/solution.py",
+    readmePath: "submissions/9999-sync-smoke/accepted/submission-999-accepted/README.md",
+    code: "# Synthetic handoff fixture\npass",
+    readme: "# Sync Smoke\n",
+  };
+  const message = { type: "auto-captured-solution", payload };
+  const failed = await send(message);
+  assert.equal(failed.ok, true);
+  assert.match(failed.payload.autoDownloadError, /Download interrupted: FILE_FAILED/);
+  assert.equal(failed.payload.pendingHandoff, 1);
+  assert.equal(Object.values(storage.exportsByKey)[0].handedOffAt, undefined);
+
+  const retried = await send(message);
+  assert.equal(retried.ok, true);
+  assert.equal(retried.payload.skipped, 1);
+  assert.equal(retried.payload.autoDownloaded, 1);
+  assert.equal(retried.payload.pendingHandoff, 0);
+  assert.ok(Object.values(storage.exportsByKey)[0].handedOffAt);
+  const bundle = JSON.parse(await readFile(retried.payload.handoffFilename, "utf8"));
+  assert.equal(bundle.schema, "leetcode-submissions.export-bundle.v1");
+  assert.equal(bundle.exports[0].submissionId, "999");
+  assert.equal(bundle.exports[0].code, payload.code);
+
+  run(process.execPath, ["scripts/auto-sync.mjs", "--once", "--inbox", inbox], root);
+  assert.equal(await readFile(path.join(root, payload.path), "utf8"), `${payload.code}\n`);
+  assert.equal(existsSync(retried.payload.handoffFilename), false);
+  assert.equal((await readdir(path.join(inbox, "queue", "processed"))).length, 1);
+  assert.match(run("git", ["log", "--oneline", "-1"], root).stdout, /Auto-sync LeetCode submissions/);
 });
