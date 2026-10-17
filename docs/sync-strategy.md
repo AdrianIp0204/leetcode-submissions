@@ -98,6 +98,30 @@ watcher process, or logs. If those are unavailable and no handoff contains the
 source, the failing boundary remains unverified; public metadata cannot recover
 the accepted solution. Keep the archive-gap warning and backfill via the extension.
 
+## Guarded Standalone Publishing
+
+`npm run sync:auto -- --push` enables publishing from this standalone checkout
+to `AdrianIp0204/leetcode-submissions` on `main`. The repository and branch may
+also be supplied through `LEETCODE_SYNC_PUSH_REPOSITORY` and
+`LEETCODE_SYNC_PUSH_BRANCH`; an unexpected value stops the run before import.
+The publisher checks the GitHub account, destination, write access, branch,
+remote URLs and every unpublished content commit. It refuses unrelated changes,
+credential-like content, symbolic links, rewritten URLs and divergent history.
+It pushes the reviewed commit SHA with an explicit refspec and never forces.
+
+Failed pushes retain local commits and retry during idle cycles, even when no
+new submission arrives. An initial publishing error also leaves a resident
+watcher running. A one-shot `--once` invocation returns an error for diagnosis.
+Remote-ahead or divergent branches still need reviewed reconciliation; the
+watcher does not automatically rewrite local or remote history.
+
+The existing Windows Startup launcher owns one watcher through a lifetime
+mutex. Keep the redundant `LeetCodeSubmissionsAutoSync` scheduled task disabled
+and update the existing launcher configuration when changing its checkout;
+do not start a competing watcher or rerun the legacy installer. The browser
+handoff inbox remains `Downloads/leetcode-submissions`. Startup automation runs
+while Windows is signed in and the computer is awake.
+
 ## Portfolio Rules
 
 Before making this public:

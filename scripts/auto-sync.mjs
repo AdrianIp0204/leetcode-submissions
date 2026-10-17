@@ -6,9 +6,12 @@ import { spawnSync } from "node:child_process";
 import os from "node:os";
 import path from "node:path";
 import process from "node:process";
+import { contentRoot, gitWorkspace, gitPaths, isManagedContentPath, assertSafeContentPath, assertNoCredentials, assertSafeChangedFiles } from "./workspace.mjs";
+import { createGuardedPush } from "./guarded-push.mjs";
 
-const root = process.cwd();
-const syncLockDir = path.join(root, ".git", "leetcode-auto-sync.lock");
+const root = contentRoot;
+const { gitRoot, gitDir, prefix } = gitWorkspace();
+const syncLockDir = path.join(gitDir, "leetcode-auto-sync.lock");
 const staleLockMs = 10 * 60 * 1000;
 
 function hasFlag(name) {
@@ -26,7 +29,7 @@ function readArg(name) {
 
 function run(command, args, options = {}) {
   const result = spawnSync(command, args, {
-    cwd: root,
+    cwd: gitRoot,
     stdio: options.capture ? "pipe" : "inherit",
     encoding: "utf8",
   });
@@ -37,7 +40,7 @@ function run(command, args, options = {}) {
 }
 
 function gitOutput(args) {
-  return run("git", args, { capture: true }).stdout.trim();
+  return run("git", args, { capture: true }).stdout;
 }
 
 async function acquireSyncLock() {
@@ -71,7 +74,6 @@ async function releaseSyncLock() {
 }
 
 function gitBusyReason() {
-  const gitDir = path.join(root, ".git");
   const busyPaths = [
     "index.lock",
     "HEAD.lock",
@@ -86,36 +88,31 @@ function gitBusyReason() {
   return busyPaths.join(", ");
 }
 
-const syncManagedPrefixes = ["submissions/", "notes/", "profile/"];
-
 function normalizeGitPath(value) {
   return String(value || "").replace(/\\/g, "/").replace(/^\.\/+/, "");
 }
 
 function isSyncManagedPath(value) {
   const normalized = normalizeGitPath(value);
-  return syncManagedPrefixes.some((prefix) => normalized.startsWith(prefix));
+  return normalized.startsWith(prefix) && isManagedContentPath(normalized.slice(prefix.length));
 }
 
 function splitGitLines(value) {
-  return String(value || "")
-    .split("\n")
-    .map((line) => line.trim())
-    .filter(Boolean);
+  return gitPaths(value);
 }
 
 function gitChangedPaths() {
   const changed = [
-    ...splitGitLines(gitOutput(["diff", "--name-only"])),
-    ...splitGitLines(gitOutput(["diff", "--cached", "--name-only"])),
-    ...splitGitLines(gitOutput(["ls-files", "--others", "--exclude-standard"])),
+    ...splitGitLines(gitOutput(["diff", "--name-only", "-z"])),
+    ...splitGitLines(gitOutput(["diff", "--cached", "--name-only", "-z"])),
+    ...splitGitLines(gitOutput(["ls-files", "--others", "--exclude-standard", "-z"])),
   ].map(normalizeGitPath);
 
   return [...new Set(changed)];
 }
 
 function gitStagedPaths() {
-  return splitGitLines(gitOutput(["diff", "--cached", "--name-only"])).map(normalizeGitPath);
+  return splitGitLines(gitOutput(["diff", "--cached", "--name-only", "-z"])).map(normalizeGitPath);
 }
 
 function ensureRepoRoot() {
@@ -125,11 +122,6 @@ function ensureRepoRoot() {
   });
   if (result.status !== 0) {
     throw new Error("Run auto-sync from a cloned leetcode-submissions git repo root.");
-  }
-
-  const gitRoot = path.resolve(result.stdout.trim());
-  if (gitRoot !== path.resolve(root)) {
-    throw new Error(`Run auto-sync from the repo root, not ${root}`);
   }
 
   const expectedFiles = [
@@ -165,7 +157,9 @@ async function copyTree(sourceRoot, targetRoot) {
 
       if (!entry.isFile()) continue;
       if (entry.name.endsWith(".dropboxignore")) continue;
-      if (!/^(submissions|notes|profile)\//.test(normalizedRelativePath)) continue;
+      if (!isManagedContentPath(normalizedRelativePath)) continue;
+      assertSafeContentPath(normalizedRelativePath);
+      assertNoCredentials(await readFile(sourcePath, "utf8"));
 
       await mkdir(path.dirname(targetPath), { recursive: true });
       await copyFile(sourcePath, targetPath);
@@ -178,18 +172,22 @@ async function copyTree(sourceRoot, targetRoot) {
 }
 
 function safeRepoPath(relativePath) {
-  const normalized = path.normalize(String(relativePath || "").replace(/\\/g, "/"));
-  if (!normalized || normalized.startsWith("..") || path.isAbsolute(normalized)) {
-    throw new Error(`Unsafe export path: ${relativePath}`);
-  }
+  return assertSafeContentPath(relativePath);
+}
 
-  const targetPath = path.resolve(root, normalized);
-  const rootPath = path.resolve(root);
-  if (targetPath !== rootPath && !targetPath.startsWith(`${rootPath}${path.sep}`)) {
-    throw new Error(`Export path escapes repo: ${relativePath}`);
+function validateExport(inputPayload) {
+  const payload = normalizeExportPayload(inputPayload);
+  if (!payload.path || !payload.code) return;
+  if (!/^submissions\//.test(payload.path)) throw new Error("Bundle exports must target LeetCode submissions.");
+  safeRepoPath(payload.path);
+  assertNoCredentials(payload.code);
+  if (payload.readmePath && payload.readme) {
+    safeRepoPath(payload.readmePath);
+    if (path.posix.dirname(payload.readmePath) !== path.posix.dirname(payload.path) || path.posix.basename(payload.readmePath) !== "README.md") {
+      throw new Error("Export README must accompany its solution.");
+    }
+    assertNoCredentials(payload.readme);
   }
-
-  return targetPath;
 }
 
 function canonicalSolutionCode(value) {
@@ -304,11 +302,17 @@ async function importExportBundles(inbox) {
       if (!entry.isFile() || !isExportBundleFile(entry.name)) continue;
 
       const bundlePath = path.join(queueDir, entry.name);
-      const bundle = JSON.parse(await readFile(bundlePath, "utf8"));
+      let bundle;
+      try {
+        bundle = JSON.parse(await readFile(bundlePath, "utf8"));
+      } catch {
+        throw new Error("Could not read a handoff bundle as JSON; bundle retained and contents were not logged.");
+      }
       if (bundle.schema !== "leetcode-submissions.export-bundle.v1" || !Array.isArray(bundle.exports)) {
         continue;
       }
 
+      for (const payload of bundle.exports) validateExport(payload);
       for (const payload of bundle.exports) {
         const result = await writeExport(payload);
         files += result.files;
@@ -337,6 +341,8 @@ async function syncOnce({ inbox, push }) {
       return;
     }
 
+    const startingHead = push ? push.assertReady() : undefined;
+
     const imported = await importExportBundles(inbox);
     const copied = await copyTree(inbox, root);
     const busyBeforeCommit = gitBusyReason();
@@ -355,6 +361,7 @@ async function syncOnce({ inbox, push }) {
       } else {
         console.log("No downloaded files or git changes.");
       }
+      if (push) push.pushPending();
       return;
     }
 
@@ -371,6 +378,7 @@ async function syncOnce({ inbox, push }) {
 
     if (!syncManagedPaths.length) {
       console.log("No sync-managed file changes to commit.");
+      if (push) push.pushPending();
       return;
     }
 
@@ -379,20 +387,25 @@ async function syncOnce({ inbox, push }) {
       console.log(
         `Unrelated staged changes are present (${unmanagedStaged.join(", ")}); leaving sync files uncommitted for the next interval.`,
       );
+      if (push) push.pushPending();
       return;
     }
 
-    run("git", ["add", "--", ...syncManagedPaths]);
+    if (push) push.assertReady({ expectedHead: startingHead });
+    assertSafeChangedFiles(gitRoot, syncManagedPaths, prefix);
+    run("git", ["--literal-pathspecs", "add", "--", ...syncManagedPaths]);
     const staged = gitStagedPaths().filter(isSyncManagedPath);
     if (!staged.length) {
       console.log("No staged changes after applying .gitignore.");
+      if (push) push.pushPending();
       return;
     }
 
+    if (push) push.assertReady({ expectedHead: startingHead });
     const stamp = new Date().toISOString().replace(/:\d{2}\.\d{3}Z$/, "Z");
-    run("git", ["commit", "-m", `Auto-sync LeetCode submissions ${stamp}`]);
+    run("git", ["--literal-pathspecs", "commit", "--only", "-m", `Auto-sync LeetCode submissions ${stamp}`, "--", ...staged]);
 
-    if (push) run("git", ["push"]);
+    if (push) push.pushPending();
     else console.log("Committed locally. Push skipped; start with --push to publish automatically.");
   } finally {
     await releaseSyncLock();
@@ -404,14 +417,31 @@ async function main() {
 
   const inbox = path.resolve(readArg("inbox") || path.join(os.homedir(), "Downloads", "leetcode-submissions"));
   const intervalMs = Math.max(30_000, Number(readArg("interval") || 300_000));
-  const push = hasFlag("push") || process.env.LEETCODE_SYNC_PUSH === "1";
+  const pushEnabled = hasFlag("push") || process.env.LEETCODE_SYNC_PUSH === "1";
+  const push = pushEnabled ? createGuardedPush({
+    gitRoot,
+    prefix,
+    repository: process.env.LEETCODE_SYNC_PUSH_REPOSITORY ?? "AdrianIp0204/leetcode-submissions",
+    branch: process.env.LEETCODE_SYNC_PUSH_BRANCH ?? "main",
+  }) : null;
 
   console.log(`Watching ${inbox}`);
   console.log(`Repo ${root}`);
+  console.log(`Git root ${gitRoot}`);
   console.log(push ? "Auto-push enabled." : "Auto-push disabled.");
 
-  await syncOnce({ inbox, push });
-  if (hasFlag("once")) return;
+  if (hasFlag("once")) {
+    await syncOnce({ inbox, push });
+    return;
+  }
+
+  if (push) {
+    await syncOnce({ inbox, push }).catch((error) => {
+      console.error(error.stack || error.message);
+    });
+  } else {
+    await syncOnce({ inbox, push });
+  }
 
   setInterval(() => {
     syncOnce({ inbox, push }).catch((error) => {

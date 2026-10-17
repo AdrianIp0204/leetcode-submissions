@@ -34,7 +34,9 @@ async function createTempRepo(t) {
   await mkdir(path.join(root, "extension", "leetcode-exporter"), { recursive: true });
   await mkdir(path.join(root, "submissions"), { recursive: true });
 
-  await copyFile(path.join(projectRoot, "scripts", "auto-sync.mjs"), path.join(root, "scripts", "auto-sync.mjs"));
+  for (const script of ["auto-sync.mjs", "workspace.mjs", "guarded-push.mjs"]) {
+    await copyFile(path.join(projectRoot, "scripts", script), path.join(root, "scripts", script));
+  }
   await writeFile(
     path.join(root, "extension", "leetcode-exporter", "manifest.json"),
     '{"manifest_version":3,"name":"Test","version":"0.0.0"}\n',
