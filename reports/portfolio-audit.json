@@ -1,32 +1,33 @@
 {
-  "generatedAt": "2026-07-13T15:32:03.720Z",
+  "generatedAt": "2026-10-04T05:22:27.970Z",
   "totals": {
-    "problemFolders": 387,
-    "publicSolved": 394,
-    "estimatedSolvedGap": 7,
-    "problemsWithAttempts": 59,
-    "problemsNeedingReflection": 160,
-    "problemsWithUnknownStatus": 166
+    "problemFolders": 454,
+    "publicSolved": 457,
+    "estimatedSolvedGap": 3,
+    "problemsWithAttempts": 72,
+    "problemsNeedingReflection": 227,
+    "problemsWithUnknownStatus": 233
   },
   "byLanguage": {
+    "c": 1,
     "cpp": 10,
-    "md": 59,
-    "python": 232,
-    "sql-or-text": 11,
+    "md": 72,
+    "python": 242,
+    "sql-or-text": 13,
     "typescript": 5
   },
   "byPattern": {
-    "arrays-and-strings": 98,
+    "arrays-and-strings": 103,
     "binary-search": 1,
     "dynamic-programming": 2,
     "hashing-and-counting": 14,
-    "linked-list": 4,
-    "math-and-digits": 99,
+    "linked-list": 8,
+    "math-and-digits": 121,
     "sql": 4,
-    "stack": 3,
-    "tree-and-graph": 5,
-    "two-pointers": 4,
-    "uncategorized": 153
+    "stack": 6,
+    "tree-and-graph": 7,
+    "two-pointers": 5,
+    "uncategorized": 183
   },
   "problems": [
     {
@@ -456,7 +457,11 @@
         "attempts/submission-2005418446-wrong-answer/README.md",
         "attempts/submission-2005418446-wrong-answer/solution.py",
         "attempts/submission-2005419854-wrong-answer/README.md",
-        "attempts/submission-2005419854-wrong-answer/solution.py"
+        "attempts/submission-2005419854-wrong-answer/solution.py",
+        "attempts/submission-2158859403-wrong-answer/README.md",
+        "attempts/submission-2158859403-wrong-answer/solution.py",
+        "attempts/submission-2158865744-runtime-error/README.md",
+        "attempts/submission-2158865744-runtime-error/solution.py"
       ],
       "languages": [
         "md",
@@ -482,6 +487,22 @@
       "languages": [
         "python"
       ]
+    },
+    {
+      "id": 22,
+      "folder": "0022-generate-parentheses",
+      "slug": "generate-parentheses",
+      "title": "Generate Parentheses",
+      "pattern": "stack",
+      "hasReadme": false,
+      "status": "Not recorded",
+      "todoCount": 0,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": []
     },
     {
       "id": 23,
@@ -522,6 +543,22 @@
       "languages": []
     },
     {
+      "id": 25,
+      "folder": "0025-reverse-nodes-in-k-group",
+      "slug": "reverse-nodes-in-k-group",
+      "title": "Reverse Nodes In K Group",
+      "pattern": "uncategorized",
+      "hasReadme": false,
+      "status": "Not recorded",
+      "todoCount": 0,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": []
+    },
+    {
       "id": 26,
       "folder": "0026-remove-duplicates-from-sorted-array",
       "slug": "remove-duplicates-from-sorted-array",
@@ -540,6 +577,22 @@
       "languages": [
         "python"
       ]
+    },
+    {
+      "id": 27,
+      "folder": "0027-remove-element",
+      "slug": "remove-element",
+      "title": "Remove Element",
+      "pattern": "uncategorized",
+      "hasReadme": false,
+      "status": "Not recorded",
+      "todoCount": 0,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": []
     },
     {
       "id": 28,
@@ -586,6 +639,22 @@
       ]
     },
     {
+      "id": 32,
+      "folder": "0032-longest-valid-parentheses",
+      "slug": "longest-valid-parentheses",
+      "title": "Longest Valid Parentheses",
+      "pattern": "stack",
+      "hasReadme": false,
+      "status": "Not recorded",
+      "todoCount": 0,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": []
+    },
+    {
       "id": 35,
       "folder": "0035-search-insert-position",
       "slug": "search-insert-position",
@@ -600,6 +669,44 @@
       "acceptedVariantFiles": [],
       "attemptFiles": [],
       "languages": []
+    },
+    {
+      "id": 39,
+      "folder": "0039-combination-sum",
+      "slug": "combination-sum",
+      "title": "Combination Sum",
+      "pattern": "math-and-digits",
+      "hasReadme": false,
+      "status": "Not recorded",
+      "todoCount": 0,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": []
+    },
+    {
+      "id": 40,
+      "folder": "0040-combination-sum-ii",
+      "slug": "combination-sum-ii",
+      "title": "Combination Sum Ii",
+      "pattern": "math-and-digits",
+      "hasReadme": false,
+      "status": "Not recorded",
+      "todoCount": 0,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [
+        "attempts/submission-2154919590-time-limit-exceeded/README.md",
+        "attempts/submission-2154919590-time-limit-exceeded/solution.py"
+      ],
+      "languages": [
+        "md",
+        "python"
+      ]
     },
     {
       "id": 46,
@@ -652,6 +759,30 @@
       "acceptedVariantFiles": [],
       "attemptFiles": [],
       "languages": []
+    },
+    {
+      "id": 53,
+      "folder": "0053-maximum-subarray",
+      "slug": "maximum-subarray",
+      "title": "Maximum Subarray",
+      "pattern": "arrays-and-strings",
+      "hasReadme": false,
+      "status": "Not recorded",
+      "todoCount": 0,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [
+        "attempts/submission-2159885924-wrong-answer/README.md",
+        "attempts/submission-2159885924-wrong-answer/solution.py",
+        "attempts/submission-2159886759-wrong-answer/README.md",
+        "attempts/submission-2159886759-wrong-answer/solution.py"
+      ],
+      "languages": [
+        "md",
+        "python"
+      ]
     },
     {
       "id": 56,
@@ -714,6 +845,22 @@
       "languages": [
         "python"
       ]
+    },
+    {
+      "id": 61,
+      "folder": "0061-rotate-list",
+      "slug": "rotate-list",
+      "title": "Rotate List",
+      "pattern": "uncategorized",
+      "hasReadme": false,
+      "status": "Not recorded",
+      "todoCount": 0,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": []
     },
     {
       "id": 66,
@@ -788,8 +935,70 @@
       "hasComplexity": false,
       "solutionFiles": [],
       "acceptedVariantFiles": [],
+      "attemptFiles": [
+        "attempts/submission-2154895226-wrong-answer/README.md",
+        "attempts/submission-2154895226-wrong-answer/solution.py"
+      ],
+      "languages": [
+        "md",
+        "python"
+      ]
+    },
+    {
+      "id": 78,
+      "folder": "0078-subsets",
+      "slug": "subsets",
+      "title": "Subsets",
+      "pattern": "uncategorized",
+      "hasReadme": false,
+      "status": "Not recorded",
+      "todoCount": 0,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [],
+      "acceptedVariantFiles": [],
       "attemptFiles": [],
       "languages": []
+    },
+    {
+      "id": 79,
+      "folder": "0079-word-search",
+      "slug": "word-search",
+      "title": "Word Search",
+      "pattern": "arrays-and-strings",
+      "hasReadme": false,
+      "status": "Not recorded",
+      "todoCount": 0,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": []
+    },
+    {
+      "id": 82,
+      "folder": "0082-remove-duplicates-from-sorted-list-ii",
+      "slug": "remove-duplicates-from-sorted-list-ii",
+      "title": "Remove Duplicates From Sorted List Ii",
+      "pattern": "linked-list",
+      "hasReadme": false,
+      "status": "Not recorded",
+      "todoCount": 0,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [
+        "attempts/submission-2071176412-runtime-error/README.md",
+        "attempts/submission-2071176412-runtime-error/solution.py",
+        "attempts/submission-2071177297-runtime-error/README.md",
+        "attempts/submission-2071177297-runtime-error/solution.py"
+      ],
+      "languages": [
+        "md",
+        "python"
+      ]
     },
     {
       "id": 83,
@@ -810,6 +1019,38 @@
       "languages": [
         "python"
       ]
+    },
+    {
+      "id": 90,
+      "folder": "0090-subsets-ii",
+      "slug": "subsets-ii",
+      "title": "Subsets Ii",
+      "pattern": "uncategorized",
+      "hasReadme": false,
+      "status": "Not recorded",
+      "todoCount": 0,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": []
+    },
+    {
+      "id": 93,
+      "folder": "0093-restore-ip-addresses",
+      "slug": "restore-ip-addresses",
+      "title": "Restore Ip Addresses",
+      "pattern": "uncategorized",
+      "hasReadme": false,
+      "status": "Not recorded",
+      "todoCount": 0,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": []
     },
     {
       "id": 94,
@@ -850,10 +1091,48 @@
       ]
     },
     {
+      "id": 102,
+      "folder": "0102-binary-tree-level-order-traversal",
+      "slug": "binary-tree-level-order-traversal",
+      "title": "Binary Tree Level Order Traversal",
+      "pattern": "tree-and-graph",
+      "hasReadme": false,
+      "status": "Not recorded",
+      "todoCount": 0,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [
+        "attempts/submission-2159080140-wrong-answer/README.md",
+        "attempts/submission-2159080140-wrong-answer/solution.py"
+      ],
+      "languages": [
+        "md",
+        "python"
+      ]
+    },
+    {
       "id": 104,
       "folder": "0104-maximum-depth-of-binary-tree",
       "slug": "maximum-depth-of-binary-tree",
       "title": "Maximum Depth Of Binary Tree",
+      "pattern": "tree-and-graph",
+      "hasReadme": false,
+      "status": "Not recorded",
+      "todoCount": 0,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": []
+    },
+    {
+      "id": 111,
+      "folder": "0111-minimum-depth-of-binary-tree",
+      "slug": "minimum-depth-of-binary-tree",
+      "title": "Minimum Depth Of Binary Tree",
       "pattern": "tree-and-graph",
       "hasReadme": false,
       "status": "Not recorded",
@@ -966,6 +1245,22 @@
       ]
     },
     {
+      "id": 131,
+      "folder": "0131-palindrome-partitioning",
+      "slug": "palindrome-partitioning",
+      "title": "Palindrome Partitioning",
+      "pattern": "two-pointers",
+      "hasReadme": false,
+      "status": "Not recorded",
+      "todoCount": 0,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": []
+    },
+    {
       "id": 136,
       "folder": "0136-single-number",
       "slug": "single-number",
@@ -1020,6 +1315,22 @@
       "languages": [
         "python"
       ]
+    },
+    {
+      "id": 165,
+      "folder": "0165-compare-version-numbers",
+      "slug": "compare-version-numbers",
+      "title": "Compare Version Numbers",
+      "pattern": "math-and-digits",
+      "hasReadme": false,
+      "status": "Not recorded",
+      "todoCount": 0,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": []
     },
     {
       "id": 167,
@@ -1270,11 +1581,59 @@
       "languages": []
     },
     {
+      "id": 197,
+      "folder": "0197-rising-temperature",
+      "slug": "rising-temperature",
+      "title": "Rising Temperature",
+      "pattern": "math-and-digits",
+      "hasReadme": false,
+      "status": "Not recorded",
+      "todoCount": 0,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": []
+    },
+    {
       "id": 199,
       "folder": "0199-binary-tree-right-side-view",
       "slug": "binary-tree-right-side-view",
       "title": "Binary Tree Right Side View",
       "pattern": "tree-and-graph",
+      "hasReadme": false,
+      "status": "Not recorded",
+      "todoCount": 0,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": []
+    },
+    {
+      "id": 200,
+      "folder": "0200-number-of-islands",
+      "slug": "number-of-islands",
+      "title": "Number Of Islands",
+      "pattern": "math-and-digits",
+      "hasReadme": false,
+      "status": "Not recorded",
+      "todoCount": 0,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": []
+    },
+    {
+      "id": 203,
+      "folder": "0203-remove-linked-list-elements",
+      "slug": "remove-linked-list-elements",
+      "title": "Remove Linked List Elements",
+      "pattern": "linked-list",
       "hasReadme": false,
       "status": "Not recorded",
       "todoCount": 0,
@@ -1370,6 +1729,22 @@
       "languages": []
     },
     {
+      "id": 216,
+      "folder": "0216-combination-sum-iii",
+      "slug": "combination-sum-iii",
+      "title": "Combination Sum Iii",
+      "pattern": "math-and-digits",
+      "hasReadme": false,
+      "status": "Not recorded",
+      "todoCount": 0,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": []
+    },
+    {
       "id": 217,
       "folder": "0217-contains-duplicate",
       "slug": "contains-duplicate",
@@ -1434,7 +1809,9 @@
         "attempts/submission-2004440475-runtime-error/README.md",
         "attempts/submission-2004440475-runtime-error/solution.py",
         "attempts/submission-2004469927-runtime-error/README.md",
-        "attempts/submission-2004469927-runtime-error/solution.py"
+        "attempts/submission-2004469927-runtime-error/solution.py",
+        "attempts/submission-2072065337-wrong-answer/README.md",
+        "attempts/submission-2072065337-wrong-answer/solution.py"
       ],
       "languages": [
         "md",
@@ -1584,6 +1961,22 @@
       "languages": [
         "python"
       ]
+    },
+    {
+      "id": 278,
+      "folder": "0278-first-bad-version",
+      "slug": "first-bad-version",
+      "title": "First Bad Version",
+      "pattern": "uncategorized",
+      "hasReadme": false,
+      "status": "Not recorded",
+      "todoCount": 0,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": []
     },
     {
       "id": 283,
@@ -1822,6 +2215,22 @@
       "folder": "0371-sum-of-two-integers",
       "slug": "sum-of-two-integers",
       "title": "Sum Of Two Integers",
+      "pattern": "math-and-digits",
+      "hasReadme": false,
+      "status": "Not recorded",
+      "todoCount": 0,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": []
+    },
+    {
+      "id": 374,
+      "folder": "0374-guess-number-higher-or-lower",
+      "slug": "guess-number-higher-or-lower",
+      "title": "Guess Number Higher Or Lower",
       "pattern": "math-and-digits",
       "hasReadme": false,
       "status": "Not recorded",
@@ -2188,6 +2597,22 @@
       ]
     },
     {
+      "id": 547,
+      "folder": "0547-number-of-provinces",
+      "slug": "number-of-provinces",
+      "title": "Number Of Provinces",
+      "pattern": "math-and-digits",
+      "hasReadme": false,
+      "status": "Not recorded",
+      "todoCount": 0,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": []
+    },
+    {
       "id": 551,
       "folder": "0551-student-attendance-record-i",
       "slug": "student-attendance-record-i",
@@ -2269,6 +2694,22 @@
       "slug": "find-customer-referee",
       "title": "Find Customer Referee",
       "pattern": "uncategorized",
+      "hasReadme": false,
+      "status": "Not recorded",
+      "todoCount": 0,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": []
+    },
+    {
+      "id": 586,
+      "folder": "0586-customer-placing-the-largest-number-of-orders",
+      "slug": "customer-placing-the-largest-number-of-orders",
+      "title": "Customer Placing The Largest Number Of Orders",
+      "pattern": "math-and-digits",
       "hasReadme": false,
       "status": "Not recorded",
       "todoCount": 0,
@@ -2518,11 +2959,59 @@
       ]
     },
     {
+      "id": 695,
+      "folder": "0695-max-area-of-island",
+      "slug": "max-area-of-island",
+      "title": "Max Area Of Island",
+      "pattern": "uncategorized",
+      "hasReadme": false,
+      "status": "Not recorded",
+      "todoCount": 0,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": []
+    },
+    {
       "id": 704,
       "folder": "0704-binary-search",
       "slug": "binary-search",
       "title": "Binary Search",
       "pattern": "binary-search",
+      "hasReadme": false,
+      "status": "Not recorded",
+      "todoCount": 0,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": []
+    },
+    {
+      "id": 705,
+      "folder": "0705-design-hashset",
+      "slug": "design-hashset",
+      "title": "Design Hashset",
+      "pattern": "uncategorized",
+      "hasReadme": false,
+      "status": "Not recorded",
+      "todoCount": 0,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": []
+    },
+    {
+      "id": 706,
+      "folder": "0706-design-hashmap",
+      "slug": "design-hashmap",
+      "title": "Design Hashmap",
+      "pattern": "uncategorized",
       "hasReadme": false,
       "status": "Not recorded",
       "todoCount": 0,
@@ -2590,6 +3079,22 @@
       ]
     },
     {
+      "id": 733,
+      "folder": "0733-flood-fill",
+      "slug": "flood-fill",
+      "title": "Flood Fill",
+      "pattern": "uncategorized",
+      "hasReadme": false,
+      "status": "Not recorded",
+      "todoCount": 0,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": []
+    },
+    {
       "id": 735,
       "folder": "0735-asteroid-collision",
       "slug": "asteroid-collision",
@@ -2638,6 +3143,28 @@
       "acceptedVariantFiles": [],
       "attemptFiles": [],
       "languages": [
+        "python"
+      ]
+    },
+    {
+      "id": 752,
+      "folder": "0752-open-the-lock",
+      "slug": "open-the-lock",
+      "title": "Open The Lock",
+      "pattern": "uncategorized",
+      "hasReadme": false,
+      "status": "Not recorded",
+      "todoCount": 0,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [
+        "attempts/submission-2151927641-wrong-answer/README.md",
+        "attempts/submission-2151927641-wrong-answer/solution.py"
+      ],
+      "languages": [
+        "md",
         "python"
       ]
     },
@@ -2698,6 +3225,22 @@
       ]
     },
     {
+      "id": 841,
+      "folder": "0841-keys-and-rooms",
+      "slug": "keys-and-rooms",
+      "title": "Keys And Rooms",
+      "pattern": "uncategorized",
+      "hasReadme": false,
+      "status": "Not recorded",
+      "todoCount": 0,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": []
+    },
+    {
       "id": 867,
       "folder": "0867-transpose-matrix",
       "slug": "transpose-matrix",
@@ -2716,6 +3259,22 @@
       "languages": [
         "python"
       ]
+    },
+    {
+      "id": 876,
+      "folder": "0876-middle-of-the-linked-list",
+      "slug": "middle-of-the-linked-list",
+      "title": "Middle Of The Linked List",
+      "pattern": "linked-list",
+      "hasReadme": false,
+      "status": "Not recorded",
+      "todoCount": 0,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": []
     },
     {
       "id": 884,
@@ -2755,6 +3314,28 @@
       "attemptFiles": [],
       "languages": [
         "python"
+      ]
+    },
+    {
+      "id": 908,
+      "folder": "0908-smallest-range-i",
+      "slug": "smallest-range-i",
+      "title": "Smallest Range I",
+      "pattern": "uncategorized",
+      "hasReadme": false,
+      "status": "Not recorded",
+      "todoCount": 0,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [
+        "attempts/submission-2122743862-wrong-answer/README.md",
+        "attempts/submission-2122743862-wrong-answer/solution.c"
+      ],
+      "languages": [
+        "c",
+        "md"
       ]
     },
     {
@@ -2862,6 +3443,22 @@
       ]
     },
     {
+      "id": 994,
+      "folder": "0994-rotting-oranges",
+      "slug": "rotting-oranges",
+      "title": "Rotting Oranges",
+      "pattern": "uncategorized",
+      "hasReadme": false,
+      "status": "Not recorded",
+      "todoCount": 0,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": []
+    },
+    {
       "id": 1002,
       "folder": "1002-find-common-characters",
       "slug": "find-common-characters",
@@ -2908,6 +3505,22 @@
         "md",
         "python"
       ]
+    },
+    {
+      "id": 1020,
+      "folder": "1020-number-of-enclaves",
+      "slug": "number-of-enclaves",
+      "title": "Number Of Enclaves",
+      "pattern": "math-and-digits",
+      "hasReadme": false,
+      "status": "Not recorded",
+      "todoCount": 0,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": []
     },
     {
       "id": 1021,
@@ -3060,7 +3673,9 @@
       "acceptedVariantFiles": [],
       "attemptFiles": [
         "attempts/submission-2043371489-wrong-answer/README.md",
-        "attempts/submission-2043371489-wrong-answer/solution.txt"
+        "attempts/submission-2043371489-wrong-answer/solution.txt",
+        "attempts/submission-2065056683-wrong-answer/README.md",
+        "attempts/submission-2065056683-wrong-answer/solution.sql"
       ],
       "languages": [
         "md",
@@ -3132,6 +3747,22 @@
       ]
     },
     {
+      "id": 1091,
+      "folder": "1091-shortest-path-in-binary-matrix",
+      "slug": "shortest-path-in-binary-matrix",
+      "title": "Shortest Path In Binary Matrix",
+      "pattern": "uncategorized",
+      "hasReadme": false,
+      "status": "Not recorded",
+      "todoCount": 0,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": []
+    },
+    {
       "id": 1108,
       "folder": "1108-defanging-an-ip-address",
       "slug": "defanging-an-ip-address",
@@ -3166,6 +3797,28 @@
       "acceptedVariantFiles": [],
       "attemptFiles": [],
       "languages": []
+    },
+    {
+      "id": 1141,
+      "folder": "1141-user-activity-for-the-past-30-days-i",
+      "slug": "user-activity-for-the-past-30-days-i",
+      "title": "User Activity For The Past 30 Days I",
+      "pattern": "uncategorized",
+      "hasReadme": false,
+      "status": "Not recorded",
+      "todoCount": 0,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [
+        "attempts/submission-2065052164-wrong-answer/README.md",
+        "attempts/submission-2065052164-wrong-answer/solution.sql"
+      ],
+      "languages": [
+        "md",
+        "sql-or-text"
+      ]
     },
     {
       "id": 1148,
@@ -3256,6 +3909,44 @@
       ]
     },
     {
+      "id": 1251,
+      "folder": "1251-average-selling-price",
+      "slug": "average-selling-price",
+      "title": "Average Selling Price",
+      "pattern": "uncategorized",
+      "hasReadme": false,
+      "status": "Not recorded",
+      "todoCount": 0,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [
+        "attempts/submission-2071140182-wrong-answer/README.md",
+        "attempts/submission-2071140182-wrong-answer/solution.sql"
+      ],
+      "languages": [
+        "md",
+        "sql-or-text"
+      ]
+    },
+    {
+      "id": 1260,
+      "folder": "1260-shift-2d-grid",
+      "slug": "shift-2d-grid",
+      "title": "Shift 2d Grid",
+      "pattern": "uncategorized",
+      "hasReadme": false,
+      "status": "Not recorded",
+      "todoCount": 0,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": []
+    },
+    {
       "id": 1281,
       "folder": "1281-subtract-the-product-and-sum-of-digits-of-an-integer",
       "slug": "subtract-the-product-and-sum-of-digits-of-an-integer",
@@ -3298,6 +3989,44 @@
         "md",
         "python"
       ]
+    },
+    {
+      "id": 1288,
+      "folder": "1288-remove-covered-intervals",
+      "slug": "remove-covered-intervals",
+      "title": "Remove Covered Intervals",
+      "pattern": "uncategorized",
+      "hasReadme": false,
+      "status": "Not recorded",
+      "todoCount": 0,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [
+        "attempts/submission-2058404588-wrong-answer/README.md",
+        "attempts/submission-2058404588-wrong-answer/solution.py"
+      ],
+      "languages": [
+        "md",
+        "python"
+      ]
+    },
+    {
+      "id": 1290,
+      "folder": "1290-convert-binary-number-in-a-linked-list-to-integer",
+      "slug": "convert-binary-number-in-a-linked-list-to-integer",
+      "title": "Convert Binary Number In A Linked List To Integer",
+      "pattern": "math-and-digits",
+      "hasReadme": false,
+      "status": "Not recorded",
+      "todoCount": 0,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": []
     },
     {
       "id": 1295,
@@ -3374,6 +4103,38 @@
       "languages": [
         "python"
       ]
+    },
+    {
+      "id": 1331,
+      "folder": "1331-rank-transform-of-an-array",
+      "slug": "rank-transform-of-an-array",
+      "title": "Rank Transform Of An Array",
+      "pattern": "arrays-and-strings",
+      "hasReadme": false,
+      "status": "Not recorded",
+      "todoCount": 0,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": []
+    },
+    {
+      "id": 1342,
+      "folder": "1342-number-of-steps-to-reduce-a-number-to-zero",
+      "slug": "number-of-steps-to-reduce-a-number-to-zero",
+      "title": "Number Of Steps To Reduce A Number To Zero",
+      "pattern": "math-and-digits",
+      "hasReadme": false,
+      "status": "Not recorded",
+      "todoCount": 0,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": []
     },
     {
       "id": 1344,
@@ -3471,6 +4232,22 @@
       "slug": "generate-a-string-with-characters-that-have-odd-counts",
       "title": "Generate A String With Characters That Have Odd Counts",
       "pattern": "arrays-and-strings",
+      "hasReadme": false,
+      "status": "Not recorded",
+      "todoCount": 0,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": []
+    },
+    {
+      "id": 1378,
+      "folder": "1378-replace-employee-id-with-the-unique-identifier",
+      "slug": "replace-employee-id-with-the-unique-identifier",
+      "title": "Replace Employee Id With The Unique Identifier",
+      "pattern": "uncategorized",
       "hasReadme": false,
       "status": "Not recorded",
       "todoCount": 0,
@@ -3756,6 +4533,38 @@
       "languages": []
     },
     {
+      "id": 1517,
+      "folder": "1517-find-users-with-valid-e-mails",
+      "slug": "find-users-with-valid-e-mails",
+      "title": "Find Users With Valid E Mails",
+      "pattern": "uncategorized",
+      "hasReadme": false,
+      "status": "Not recorded",
+      "todoCount": 0,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": []
+    },
+    {
+      "id": 1523,
+      "folder": "1523-count-odd-numbers-in-an-interval-range",
+      "slug": "count-odd-numbers-in-an-interval-range",
+      "title": "Count Odd Numbers In An Interval Range",
+      "pattern": "math-and-digits",
+      "hasReadme": false,
+      "status": "Not recorded",
+      "todoCount": 0,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": []
+    },
+    {
       "id": 1528,
       "folder": "1528-shuffle-string",
       "slug": "shuffle-string",
@@ -3792,6 +4601,22 @@
       "languages": []
     },
     {
+      "id": 1539,
+      "folder": "1539-kth-missing-positive-number",
+      "slug": "kth-missing-positive-number",
+      "title": "Kth Missing Positive Number",
+      "pattern": "math-and-digits",
+      "hasReadme": false,
+      "status": "Not recorded",
+      "todoCount": 0,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": []
+    },
+    {
       "id": 1550,
       "folder": "1550-three-consecutive-odds",
       "slug": "three-consecutive-odds",
@@ -3810,6 +4635,22 @@
       "languages": [
         "python"
       ]
+    },
+    {
+      "id": 1581,
+      "folder": "1581-customer-who-visited-but-did-not-make-any-transactions",
+      "slug": "customer-who-visited-but-did-not-make-any-transactions",
+      "title": "Customer Who Visited But Did Not Make Any Transactions",
+      "pattern": "uncategorized",
+      "hasReadme": false,
+      "status": "Not recorded",
+      "todoCount": 0,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": []
     },
     {
       "id": 1587,
@@ -3846,6 +4687,38 @@
       "languages": [
         "python"
       ]
+    },
+    {
+      "id": 1608,
+      "folder": "1608-special-array-with-x-elements-greater-than-or-equal-x",
+      "slug": "special-array-with-x-elements-greater-than-or-equal-x",
+      "title": "Special Array With X Elements Greater Than Or Equal X",
+      "pattern": "arrays-and-strings",
+      "hasReadme": false,
+      "status": "Not recorded",
+      "todoCount": 0,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": []
+    },
+    {
+      "id": 1614,
+      "folder": "1614-maximum-nesting-depth-of-the-parentheses",
+      "slug": "maximum-nesting-depth-of-the-parentheses",
+      "title": "Maximum Nesting Depth Of The Parentheses",
+      "pattern": "stack",
+      "hasReadme": false,
+      "status": "Not recorded",
+      "todoCount": 0,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": []
     },
     {
       "id": 1636,
@@ -4016,6 +4889,22 @@
       "languages": []
     },
     {
+      "id": 1729,
+      "folder": "1729-find-followers-count",
+      "slug": "find-followers-count",
+      "title": "Find Followers Count",
+      "pattern": "uncategorized",
+      "hasReadme": false,
+      "status": "Not recorded",
+      "todoCount": 0,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": []
+    },
+    {
       "id": 1732,
       "folder": "1732-find-the-highest-altitude",
       "slug": "find-the-highest-altitude",
@@ -4105,6 +4994,22 @@
       "slug": "count-items-matching-a-rule",
       "title": "Count Items Matching A Rule",
       "pattern": "uncategorized",
+      "hasReadme": false,
+      "status": "Not recorded",
+      "todoCount": 0,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": []
+    },
+    {
+      "id": 1807,
+      "folder": "1807-evaluate-the-bracket-pairs-of-a-string",
+      "slug": "evaluate-the-bracket-pairs-of-a-string",
+      "title": "Evaluate The Bracket Pairs Of A String",
+      "pattern": "arrays-and-strings",
       "hasReadme": false,
       "status": "Not recorded",
       "todoCount": 0,
@@ -4284,6 +5189,22 @@
       "languages": [
         "python"
       ]
+    },
+    {
+      "id": 1873,
+      "folder": "1873-calculate-special-bonus",
+      "slug": "calculate-special-bonus",
+      "title": "Calculate Special Bonus",
+      "pattern": "uncategorized",
+      "hasReadme": false,
+      "status": "Not recorded",
+      "todoCount": 0,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": []
     },
     {
       "id": 1890,
@@ -4594,6 +5515,22 @@
       "languages": []
     },
     {
+      "id": 2094,
+      "folder": "2094-finding-3-digit-even-numbers",
+      "slug": "finding-3-digit-even-numbers",
+      "title": "Finding 3 Digit Even Numbers",
+      "pattern": "math-and-digits",
+      "hasReadme": false,
+      "status": "Not recorded",
+      "todoCount": 0,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": []
+    },
+    {
       "id": 2095,
       "folder": "2095-delete-the-middle-node-of-a-linked-list",
       "slug": "delete-the-middle-node-of-a-linked-list",
@@ -4830,6 +5767,22 @@
       ]
     },
     {
+      "id": 2181,
+      "folder": "2181-merge-nodes-in-between-zeros",
+      "slug": "merge-nodes-in-between-zeros",
+      "title": "Merge Nodes In Between Zeros",
+      "pattern": "uncategorized",
+      "hasReadme": false,
+      "status": "Not recorded",
+      "todoCount": 0,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": []
+    },
+    {
       "id": 2185,
       "folder": "2185-counting-words-with-a-given-prefix",
       "slug": "counting-words-with-a-given-prefix",
@@ -4962,6 +5915,22 @@
       "folder": "2315-count-asterisks",
       "slug": "count-asterisks",
       "title": "Count Asterisks",
+      "pattern": "uncategorized",
+      "hasReadme": false,
+      "status": "Not recorded",
+      "todoCount": 0,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": []
+    },
+    {
+      "id": 2351,
+      "folder": "2351-first-letter-to-appear-twice",
+      "slug": "first-letter-to-appear-twice",
+      "title": "First Letter To Appear Twice",
       "pattern": "uncategorized",
       "hasReadme": false,
       "status": "Not recorded",
@@ -5292,6 +6261,22 @@
       ]
     },
     {
+      "id": 2529,
+      "folder": "2529-maximum-count-of-positive-integer-and-negative-integer",
+      "slug": "maximum-count-of-positive-integer-and-negative-integer",
+      "title": "Maximum Count Of Positive Integer And Negative Integer",
+      "pattern": "math-and-digits",
+      "hasReadme": false,
+      "status": "Not recorded",
+      "todoCount": 0,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": []
+    },
+    {
       "id": 2535,
       "folder": "2535-difference-between-element-sum-and-digit-sum-of-an-array",
       "slug": "difference-between-element-sum-and-digit-sum-of-an-array",
@@ -5334,6 +6319,22 @@
         "md",
         "python"
       ]
+    },
+    {
+      "id": 2544,
+      "folder": "2544-alternating-digit-sum",
+      "slug": "alternating-digit-sum",
+      "title": "Alternating Digit Sum",
+      "pattern": "math-and-digits",
+      "hasReadme": false,
+      "status": "Not recorded",
+      "todoCount": 0,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": []
     },
     {
       "id": 2545,
@@ -5416,6 +6417,22 @@
       "folder": "2620-counter",
       "slug": "counter",
       "title": "Counter",
+      "pattern": "uncategorized",
+      "hasReadme": false,
+      "status": "Not recorded",
+      "todoCount": 0,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": []
+    },
+    {
+      "id": 2651,
+      "folder": "2651-calculate-delayed-arrival-time",
+      "slug": "calculate-delayed-arrival-time",
+      "title": "Calculate Delayed Arrival Time",
       "pattern": "uncategorized",
       "hasReadme": false,
       "status": "Not recorded",
@@ -5684,6 +6701,28 @@
       "acceptedVariantFiles": [],
       "attemptFiles": [],
       "languages": [
+        "python"
+      ]
+    },
+    {
+      "id": 2807,
+      "folder": "2807-insert-greatest-common-divisors-in-linked-list",
+      "slug": "insert-greatest-common-divisors-in-linked-list",
+      "title": "Insert Greatest Common Divisors In Linked List",
+      "pattern": "linked-list",
+      "hasReadme": false,
+      "status": "Not recorded",
+      "todoCount": 0,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [
+        "attempts/submission-2072145197-wrong-answer/README.md",
+        "attempts/submission-2072145197-wrong-answer/solution.py"
+      ],
+      "languages": [
+        "md",
         "python"
       ]
     },
@@ -6238,6 +7277,22 @@
       ]
     },
     {
+      "id": 3099,
+      "folder": "3099-harshad-number",
+      "slug": "harshad-number",
+      "title": "Harshad Number",
+      "pattern": "math-and-digits",
+      "hasReadme": false,
+      "status": "Not recorded",
+      "todoCount": 0,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": []
+    },
+    {
       "id": 3110,
       "folder": "3110-score-of-a-string",
       "slug": "score-of-a-string",
@@ -6624,6 +7679,22 @@
       ]
     },
     {
+      "id": 3345,
+      "folder": "3345-smallest-divisible-digit-product-i",
+      "slug": "smallest-divisible-digit-product-i",
+      "title": "Smallest Divisible Digit Product I",
+      "pattern": "math-and-digits",
+      "hasReadme": false,
+      "status": "Not recorded",
+      "todoCount": 0,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": []
+    },
+    {
       "id": 3370,
       "folder": "3370-smallest-number-with-all-set-bits",
       "slug": "smallest-number-with-all-set-bits",
@@ -6724,6 +7795,30 @@
       "acceptedVariantFiles": [],
       "attemptFiles": [],
       "languages": []
+    },
+    {
+      "id": 3471,
+      "folder": "3471-find-the-largest-almost-missing-integer",
+      "slug": "find-the-largest-almost-missing-integer",
+      "title": "Find The Largest Almost Missing Integer",
+      "pattern": "math-and-digits",
+      "hasReadme": false,
+      "status": "Not recorded",
+      "todoCount": 0,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [
+        "attempts/submission-2111493954-wrong-answer/README.md",
+        "attempts/submission-2111493954-wrong-answer/solution.py",
+        "attempts/submission-2111495027-wrong-answer/README.md",
+        "attempts/submission-2111495027-wrong-answer/solution.py"
+      ],
+      "languages": [
+        "md",
+        "python"
+      ]
     },
     {
       "id": 3492,
@@ -6840,6 +7935,22 @@
       "languages": [
         "python"
       ]
+    },
+    {
+      "id": 3550,
+      "folder": "3550-smallest-index-with-digit-sum-equal-to-index",
+      "slug": "smallest-index-with-digit-sum-equal-to-index",
+      "title": "Smallest Index With Digit Sum Equal To Index",
+      "pattern": "math-and-digits",
+      "hasReadme": false,
+      "status": "Not recorded",
+      "todoCount": 0,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": []
     },
     {
       "id": 3558,
@@ -7226,6 +8337,22 @@
       ]
     },
     {
+      "id": 3756,
+      "folder": "3756-concatenate-non-zero-digits-and-multiply-by-sum-ii",
+      "slug": "concatenate-non-zero-digits-and-multiply-by-sum-ii",
+      "title": "Concatenate Non Zero Digits And Multiply By Sum Ii",
+      "pattern": "math-and-digits",
+      "hasReadme": false,
+      "status": "Not recorded",
+      "todoCount": 0,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": []
+    },
+    {
       "id": 3760,
       "folder": "3760-maximum-substrings-with-distinct-start",
       "slug": "maximum-substrings-with-distinct-start",
@@ -7338,6 +8465,22 @@
       ]
     },
     {
+      "id": 3870,
+      "folder": "3870-count-commas-in-range",
+      "slug": "count-commas-in-range",
+      "title": "Count Commas In Range",
+      "pattern": "uncategorized",
+      "hasReadme": false,
+      "status": "Not recorded",
+      "todoCount": 0,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [],
+      "languages": []
+    },
+    {
       "id": 3884,
       "folder": "3884-first-matching-character-from-both-ends",
       "slug": "first-matching-character-from-both-ends",
@@ -7396,6 +8539,28 @@
       "acceptedVariantFiles": [],
       "attemptFiles": [],
       "languages": [
+        "python"
+      ]
+    },
+    {
+      "id": 3904,
+      "folder": "3904-smallest-stable-index-ii",
+      "slug": "smallest-stable-index-ii",
+      "title": "Smallest Stable Index Ii",
+      "pattern": "uncategorized",
+      "hasReadme": false,
+      "status": "Not recorded",
+      "todoCount": 0,
+      "hasKeyIdea": false,
+      "hasComplexity": false,
+      "solutionFiles": [],
+      "acceptedVariantFiles": [],
+      "attemptFiles": [
+        "attempts/submission-2131622035-time-limit-exceeded/README.md",
+        "attempts/submission-2131622035-time-limit-exceeded/solution.py"
+      ],
+      "languages": [
+        "md",
         "python"
       ]
     },
@@ -7497,8 +8662,8 @@
     }
   ],
   "weaknessSignals": [
-    "160 of 387 problem READMEs still need real reflection.",
-    "166 submissions have unknown or missing status metadata.",
+    "227 of 454 problem READMEs still need real reflection.",
+    "233 submissions have unknown or missing status metadata.",
     "Failed attempts are preserved when real source exists; keep capturing them for new work.",
     "A TypeScript track exists; expand it deliberately rather than scattering one-off language experiments.",
     "Tree/graph/DP coverage is thin relative to array, string, math, and simple loop problems."

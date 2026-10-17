@@ -77,7 +77,7 @@ function readmeTodoCount(readme) {
 }
 
 function hasFilledSection(readme, heading) {
-  const value = String(readme || "");
+  const value = String(readme || "").replace(/\r\n/g, "\n");
   const pattern = new RegExp(`## ${heading}\\n\\n([\\s\\S]*?)(?:\\n## |$)`, "i");
   const match = value.match(pattern);
   if (!match) return false;
@@ -324,7 +324,7 @@ function renderReport({ generatedAt, profile, problems, trackedFileFlags }) {
   return lines.join("\n");
 }
 
-function renderWeaknessReport({ generatedAt, problems }) {
+function renderWeaknessReport({ generatedAt, problems, nextProblems }) {
   const byPattern = tally(problems, (problem) => problem.pattern);
   const byLanguage = tally(problems, (problem) => problem.languages);
   const needsReflection = problems.filter((problem) => problem.todoCount > 0 || !problem.hasKeyIdea || !problem.hasComplexity).length;
@@ -375,16 +375,10 @@ function renderWeaknessReport({ generatedAt, problems }) {
     "",
     "## Next Problem Priorities",
     "",
-    "1. 206. Reverse Linked List - pointer rewiring.",
-    "2. 21. Merge Two Sorted Lists - list merge discipline.",
-    "3. 49. Group Anagrams - canonical hash key design.",
-    "4. 238. Product of Array Except Self - prefix/suffix invariants.",
-    "5. 128. Longest Consecutive Sequence - avoid repeated work with set starts.",
-    "6. 15. 3Sum - duplicate control and two pointers.",
-    "7. 424. Longest Repeating Character Replacement - sliding-window invariant.",
-    "8. 739. Daily Temperatures - monotonic stack.",
-    "9. 33. Search in Rotated Sorted Array - binary-search boundaries.",
-    "10. 200. Number of Islands - grid DFS/BFS.",
+    "See [Next LeetCode Problems](../notes/next-problems.md) for the snapshot date and sync warning. Regenerate that queue before this audit.",
+    "",
+    nextProblems.match(/## Queue\r?\n([\s\S]*?)(?:\r?\n## |$)/)?.[1]?.trim()
+      || "Run `npm run recommend:next` to generate the current unsolved recommendation queue.",
     "",
     "## What To Avoid While Coding",
     "",
@@ -438,6 +432,7 @@ async function scanTrackedText() {
 async function main() {
   const generatedAt = new Date().toISOString();
   const profile = await readJsonIfExists(profilePath);
+  const nextProblems = await readTextIfExists(path.join(root, "notes", "next-problems.md"));
   const problems = await inspectProblems();
   const trackedFileFlags = await scanTrackedText();
   const publicSolved = profile?.solvedByDifficulty?.find((item) => item.difficulty === "All")?.count ?? null;
@@ -462,7 +457,7 @@ async function main() {
   await mkdir(reportsDir, { recursive: true });
   await writeFile(path.join(reportsDir, "portfolio-audit.json"), `${JSON.stringify(audit, null, 2)}\n`, "utf8");
   await writeFile(path.join(reportsDir, "portfolio-audit.md"), renderReport({ generatedAt, profile, problems, trackedFileFlags }), "utf8");
-  await writeFile(path.join(reportsDir, "weakness-report.md"), renderWeaknessReport({ generatedAt, problems }), "utf8");
+  await writeFile(path.join(reportsDir, "weakness-report.md"), renderWeaknessReport({ generatedAt, problems, nextProblems }), "utf8");
   console.log(`Portfolio audit: ${problems.length} problems, ${audit.totals.problemsNeedingReflection} need reflection cleanup.`);
 }
 

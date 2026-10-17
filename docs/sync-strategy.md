@@ -53,6 +53,51 @@ Possible later option: authenticated local scraper using a LeetCode session cook
 
 Bad default: GitHub Actions with a LeetCode session cookie stored in GitHub Secrets. That moves the sensitive credential off the Mac and gives little privacy upside.
 
+## Trace A Missing Accepted Solution
+
+Run this on the computer where the extension and watcher run, from the cloned
+repo root:
+
+```bash
+npm run sync:diagnose
+# If the browser uses another download directory:
+npm run sync:diagnose -- --inbox /path/to/Downloads/leetcode-submissions
+```
+
+This read-only check names recent public acceptances without nonempty canonical
+or archived accepted source, and checks the watcher's `queue`, `_queue`, `.queue`,
+and their `processed` directories. It retains the estimated archive-gap warning;
+the recent public list is incomplete, and a folder or failed attempt alone does
+not prove accepted code is archived. It never prints submitted code or imports,
+archives, commits, or pushes anything.
+
+Trace the boundaries in order:
+
+1. **Capture:** `content.js` fetches submission details through the logged-in
+   LeetCode tab. If code is absent from both repo and handoff, reload the unpacked
+   extension and the LeetCode tab, then use **Collect Submission History**.
+2. **Handoff:** `background.js` queues exports in extension storage, downloads a
+   `leetcode-submissions.export-bundle.v1` bundle, and marks it handed off only
+   after Chrome reports download completion. **Hand Off Queue To Sync** re-exports
+   the queue, including previously handed-off entries. Compare the actual completed
+   filename shown in the popup with the diagnostic's inbox; the browser can use a
+   custom download location. A completed download is not proof of watcher import.
+3. **Import:** `auto-sync.mjs` reads completed bundles in the three queue directories,
+   writes source, and moves bundles to `processed`. If source is queued, run
+   `npm run sync:auto -- --once` with the same `--inbox` and inspect its output.
+   If only a processed bundle has source, check the watcher repo path and logs
+   before re-handing off the extension queue. Malformed bundles and incomplete
+   downloads are reported by the diagnostic, not changed.
+4. **Publish:** the watcher commits locally by default. Check its commit output
+   and local git history; publication needs `git push` or an explicitly enabled
+   `--push` watcher. Check git-busy and unrelated-staged-change messages if imports
+   remain uncommitted.
+
+The command cannot inspect another computer's extension storage, downloads,
+watcher process, or logs. If those are unavailable and no handoff contains the
+source, the failing boundary remains unverified; public metadata cannot recover
+the accepted solution. Keep the archive-gap warning and backfill via the extension.
+
 ## Portfolio Rules
 
 Before making this public:

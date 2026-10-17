@@ -1,12 +1,12 @@
 # Weakness Report
 
-- Generated at: 2026-07-13T15:32:03.720Z
-- Problems audited: 387
+- Generated at: 2026-10-04T05:22:27.970Z
+- Problems audited: 454
 
 ## Current Diagnosis
 
-- Reflection debt remains a public-readiness issue: 160 problem READMEs still need filled Key Idea and Complexity sections.
-- Status metadata still needs cleanup for 166 older submissions.
+- Reflection debt remains a public-readiness issue: 227 problem READMEs still need filled Key Idea and Complexity sections.
+- Status metadata still needs cleanup for 233 older submissions.
 - Failed attempts preserved in repo: yes. Keep capturing real failed attempts for new work instead of reconstructing old ones from memory.
 - TypeScript track present: yes. Expand it deliberately as part of JS/TS fluency for Morrow/Core work.
 
@@ -14,10 +14,10 @@
 
 | Area | Current Count | Action |
 | --- | --- | --- |
-| Linked list pointer work | 4 | Do list problems slowly and draw pointer movement before coding. |
-| Stack and monotonic stack | 3 | Move from simple stack simulation into next-greater-element style problems. |
+| Linked list pointer work | 8 | Do list problems slowly and draw pointer movement before coding. |
+| Stack and monotonic stack | 6 | Move from simple stack simulation into next-greater-element style problems. |
 | Binary search invariants | 1 | Practice writing the loop condition and boundary meaning before the code. |
-| Tree and graph traversal | 5 | Build DFS/BFS muscle after arrays and strings feel less shaky. |
+| Tree and graph traversal | 7 | Build DFS/BFS muscle after arrays and strings feel less shaky. |
 | Dynamic programming | 2 | Delay harder DP until recurrence writing is deliberate, not guessed. |
 
 ## What Adrian Should Learn Next
@@ -30,16 +30,24 @@
 
 ## Next Problem Priorities
 
-1. 206. Reverse Linked List - pointer rewiring.
-2. 21. Merge Two Sorted Lists - list merge discipline.
-3. 49. Group Anagrams - canonical hash key design.
-4. 238. Product of Array Except Self - prefix/suffix invariants.
-5. 128. Longest Consecutive Sequence - avoid repeated work with set starts.
-6. 15. 3Sum - duplicate control and two pointers.
-7. 424. Longest Repeating Character Replacement - sliding-window invariant.
-8. 739. Daily Temperatures - monotonic stack.
-9. 33. Search in Rotated Sorted Array - binary-search boundaries.
-10. 200. Number of Islands - grid DFS/BFS.
+See [Next LeetCode Problems](../notes/next-problems.md) for the snapshot date and sync warning. Regenerate that queue before this audit.
+
+1. [424. Longest Repeating Character Replacement](https://leetcode.com/problems/longest-repeating-character-replacement/) - Medium, Sliding window
+   - Why: Good first serious window invariant: window size minus max frequency.
+2. [739. Daily Temperatures](https://leetcode.com/problems/daily-temperatures/) - Medium, Monotonic stack
+   - Why: Important upgrade from simple stack to 'next greater' structure.
+3. [33. Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/) - Medium, Binary search invariant
+   - Why: Builds real binary-search boundary discipline.
+4. [98. Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree/) - Medium, Tree recursion bounds
+   - Why: Tests whether you preserve constraints through recursion.
+5. [207. Course Schedule](https://leetcode.com/problems/course-schedule/) - Medium, Topological sort
+   - Why: First serious directed-graph dependency problem.
+6. [198. House Robber](https://leetcode.com/problems/house-robber/) - Medium, Dynamic programming
+   - Why: Smallest useful DP recurrence: choose/take state compression.
+7. [322. Coin Change](https://leetcode.com/problems/coin-change/) - Medium, Dynamic programming
+   - Why: Good test of bottom-up recurrence and impossible states.
+8. [300. Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence/) - Medium, DP / binary search
+   - Why: A strong later target after simpler DP feels stable.
 
 ## What To Avoid While Coding
 
