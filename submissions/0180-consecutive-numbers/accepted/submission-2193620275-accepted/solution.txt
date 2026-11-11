@@ -1,0 +1,15 @@
+import pandas as pd
+
+def consecutive_numbers(logs: pd.DataFrame) -> pd.DataFrame:
+    tmp = set()
+    curr = ''
+    c = 0
+    for n in logs.num:
+        if n != curr:
+            curr = n
+            c = 1
+        else:
+            c += 1
+            if c >= 3:
+                tmp.add(n)
+    return pd.DataFrame({'ConsecutiveNums':list(tmp)})
